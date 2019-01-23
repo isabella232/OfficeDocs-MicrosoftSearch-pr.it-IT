@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 195160e7208366f761fa1dc17b28d0e5b100b090
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378897"
----
 # [Microsoft Search](microsoft-search.md)
 # [Informazioni generali](why-microsoft-search.md)
 ## [Funzionalità](features.md)
