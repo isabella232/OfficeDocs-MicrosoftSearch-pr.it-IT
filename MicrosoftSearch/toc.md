@@ -36,7 +36,7 @@
 # [Manuale dell'utente adozione](user-adoption-guide.md)
 # [Ottenere informazioni](get-insights.md)
 # Domande frequenti
-# [Ottenere supporto](get-support.md).
+# [Ottenere supporto](get-support.md)
 # [Utilizzo](use/about-microsoft-search.md)
 ## [Come Microsoft Search consente di mantenere le informazioni protette](use/how-microsoft-search-keeps-your-info-secure.md)
 ## Accedi
