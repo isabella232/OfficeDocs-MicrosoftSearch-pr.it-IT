@@ -1,12 +1,4 @@
----
-ms.openlocfilehash: 195160e7208366f761fa1dc17b28d0e5b100b090
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378897"
----
-# [Microsoft Search](microsoft-search.md)
+# Microsoft Search
 # [Informazioni generali](why-microsoft-search.md)
 ## [Funzionalità](features.md)
 ## [Sicurezza](security.md)
@@ -26,7 +18,7 @@ ms.locfileid: "29378897"
 ## [Impostare il browser predefinito](set-default-browser.md)
 ## [Aggiunta di una casella di ricerca a un sito intranet](add-a-search-box-to-your-intranet-site.md)
 ## [Pianificare il contenuto](plan-your-content.md)
-# [Segnalibri](create-and-manage-bookmarks.md)
+# Segnalibri
 ## [Creare segnalibri](create-bookmarks.md)
 ## [Gestire i segnalibri](manage-bookmarks.md)
 ## [Pubblicare i segnalibri predefiniti](publish-default-bookmarks.md)
@@ -37,17 +29,17 @@ ms.locfileid: "29378897"
 ## [Creare Q&As](create-qas.md)
 ## [Gestire Q&As](manage-qas.md)
 ## [Blocco creare Q&As](bulk-create-qas.md)
-# [Percorsi](locations.md)
+# Percorsi
 ## [Aggiungere una posizione](add-a-location.md)
 ## [Gestire i percorsi](manage-locations.md)
 ## [Blocco creare percorsi](bulk-create-locations.md)
 # [Manuale dell'utente adozione](user-adoption-guide.md)
 # [Ottenere informazioni](get-insights.md)
-# [Domande frequenti](faqs.md)
-# [Ottenere supporto](get-support.md)
+# Domande frequenti
+# [Ottenere supporto](get-support.md).
 # [Utilizzo](use/about-microsoft-search.md)
 ## [Come Microsoft Search consente di mantenere le informazioni protette](use/how-microsoft-search-keeps-your-info-secure.md)
-## [Accedi](use/sign-in.md)
+## Accedi
 ## [Perché l'utente è possibile eseguire nuovamente l'accesso?](use/why-am-i-automatically-signed-in.md)
 ## [Ricerche consigliate](use/suggested-searches.md)
 ## [Trova utenti e gruppi](use/find-people-and-groups.md)
@@ -56,4 +48,4 @@ ms.locfileid: "29378897"
 ## [Individuazione dei file](use/find-files.md)
 ## [Ricerca di conversazioni](use/find-conversations.md)
 ## [Individuare i percorsi](use/find-locations.md)
-## [Invia commento](use/send-feedback.md)
+## Invia commento

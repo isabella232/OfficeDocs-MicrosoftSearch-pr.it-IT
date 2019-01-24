@@ -14,18 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: Informazioni su Microsoft Search ricerca contenuti organizzazione intelligenti per il luogo di lavoro moderno.
-ms.openlocfilehash: 79a2974d036ea71b7b2d17bc8598f6070209c8b5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: c75670a14f2d5382aa7dccbf38d65584a291d93f
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378918"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442297"
 ---
 # <a name="why-microsoft-search"></a>Perché Microsoft ricerca
 
 Trasformare le persone modo nella ricerca dell'organizzazione di informazioni con Microsoft Search. 
   
 Questa ricerca contenuti organizzazione riscontrare aumentare la produttività e consente di risparmiare tempo recapitando i risultati di ricerca più pertinenti per il luogo di lavoro. Microsoft Search in modo sicuro vengono recuperate le informazioni dalla propria società, scuola o organizzazione, ovvero come file, dati aziendali, informazioni di persone e i siti, nonché i risultati dei web pubblici e li visualizza in un'esperienza single.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## <a name="save-time-with-intelligent-search"></a>Risparmiare tempo e con ricerca intelligente
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 description: I requisiti di Office 365 e le sottoscrizioni necessarie per consentono a Microsoft Search
-ms.openlocfilehash: 1e1ebd167ed91767d849187979cfe673273d9715
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 1cab7b7617eb965e1130f6b56c3a0169259f5b8e
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378881"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442281"
 ---
 # <a name="requirements-for-microsoft-search"></a>Requisiti per la ricerca di Microsoft
 
@@ -68,7 +68,25 @@ Per abilitare Microsoft Search per l'organizzazione, deve essere tenant di Offic
 - Francia
     
 - Germania
+  
+- Spagna
     
+- Messico
+    
+- Italia
+    
+- Brasile
+    
+- Paesi Bassi
+    
+- Russia
+    
+- Giappone
+
+- Cina
+ 
+Attualmente Microsoft Search è ottimizzato per l'inglese. Supporto completo per altre lingue saranno presto disponibili.
+
 Dopo aver abilitato il prodotto, non è richiesto località per gli amministratori di Microsoft Search o gli utenti. Per informazioni dettagliate sull'abilitazione viene, vedere [veloce impostare per la ricerca di Microsoft](quick-set-up.md) . 
 
   
