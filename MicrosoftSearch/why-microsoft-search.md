@@ -7,19 +7,19 @@ ms.date: 9/14/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: Informazioni su Microsoft Search ricerca contenuti organizzazione intelligenti per il luogo di lavoro moderno.
-ms.openlocfilehash: c75670a14f2d5382aa7dccbf38d65584a291d93f
-ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
+ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442297"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612384"
 ---
 # <a name="why-microsoft-search"></a>Perché Microsoft ricerca
 

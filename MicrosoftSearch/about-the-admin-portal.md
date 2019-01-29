@@ -1,5 +1,5 @@
 ---
-title: Relativi al portale di amministrazione
+title: Informazioni sul portale di amministrazione
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: Panoramica dell'amministratore della funzionalità del portale e le autorizzazioni disponibili in Microsoft Search di accesso
-ms.openlocfilehash: 1bb219798a68553bd359ba15452cb4bb4ae74cbf
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b1a0173a12d921a789ccf1c01e788f9abae2916
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378875"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612450"
 ---
-# <a name="about-the-admin-portal"></a>Relativi al portale di amministrazione
+# <a name="about-the-admin-portal"></a>Informazioni sul portale di amministrazione
 
 Microsoft Search consente di utilizzare Bing per la ricerca dell'organizzazione per i siti di SharePoint e file, siti Web interni, utenti, gruppi di Office 365 e altro ancora. Utilizzare il portale di amministrazione per gestire tutti gli aspetti di Microsoft Search.
   
@@ -35,11 +35,11 @@ Il portale di amministrazione di ricerca Microsoft è organizzato tenendo in que
     
     Creare i risultati alzati di livello per consentire agli utenti di trovare importanti strumenti e risorse all'interno dell'organizzazione in cui vengono posizionati nella parte superiore dei risultati di Bing
     
-- [Q&As](create-and-manage-qas.md)
+- [Domande e risposte](create-and-manage-qas.md)
     
     Rispondere alle domande più frequenti all'interno dell'organizzazione
     
-- [Percorsi](add-a-location.md)
+- [Posizioni](add-a-location.md)
     
     Mostra i risultati della mappa e informazioni sugli indirizzi edifici, uffici, campus e altre posizioni importanti
     

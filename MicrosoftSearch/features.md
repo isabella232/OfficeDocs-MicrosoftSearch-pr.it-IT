@@ -7,19 +7,19 @@ ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: Caratteristiche principali di Microsoft Search per gli amministratori e utenti finali includono i segnalibri e Q&As e alla gestione e sui concetti di dati
-ms.openlocfilehash: a95d2727d6802041dd1cbd5498560dd17866f150
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378880"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612430"
 ---
 # <a name="features-of-microsoft-search"></a>Funzionalità di ricerca di Microsoft
 
@@ -37,7 +37,7 @@ ms.locfileid: "29378880"
     
     Semplificare la creazione e l'aggiornamento di massa importazione, esportazione e modifica
 
-- [Percorsi](locations.md)
+- [Posizioni](locations.md)
     
     Individuazione degli indirizzi e individuare edifici dell'organizzazione, uffici e altre aree di lavoro in una mappa
     
@@ -83,7 +83,7 @@ ms.locfileid: "29378880"
     
     Trovare i risultati contestuali e di interesse da public e le conversazioni di gruppo
 
-- [Percorsi](use/find-locations.md)
+- [Posizioni](use/find-locations.md)
     
     Trovare l'indirizzo ed eseguire il mapping dei risultati di edifici, uffici, campus e altro ancora
     

@@ -7,25 +7,25 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Tutte le informazioni per che necessarie distribuire Microsoft Search all'organizzazione
-ms.openlocfilehash: 0a9a37577d4c5cda98c51499994dc402e9ac8953
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378891"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612402"
 ---
 # <a name="set-up-microsoft-search"></a>Configurazione di Microsoft Search
 
 Come parte di Office 365, Microsoft Search viene distribuito con facilità da abilitare nell'interfaccia di amministrazione di Microsoft 365. Una volta abilitata, una configurazione per impostare un logo, nome e il colore e fornire agli utenti l'accesso rapida è tutto ciò che serve per configurare le impostazioni. A questo punto, gli utenti autorizzati possono accedere a Bing con un account di lavoro o della scuola e ottenere i risultati di lavoro durante la ricerca.
 
-- [Impostare rapido](quick-set-up.md)
+- [Configurazione rapida](quick-set-up.md)
     
     Completare i quattro passaggi per consentire facilmente Microsoft Search
 
@@ -37,7 +37,7 @@ Come parte di Office 365, Microsoft Search viene distribuito con facilità da ab
     
     Gestire l'accesso al portale per gli amministratori e gli editor e fornire o limitare l'accesso a Microsoft Search all'interno dell'organizzazione
     
-- [Strumenti di amministrazione del portale](admin-portal-tools.md)
+- [Strumenti del portale di amministrazione](admin-portal-tools.md)
     
     Utilizzare le estensioni del browser e altri strumenti per creare e importare il contenuto, ridurre al minimo il numero di volte in cui gli utenti vengono richiesto di eseguire l'accesso e lavoro risultati di ricerca in Bing
     
