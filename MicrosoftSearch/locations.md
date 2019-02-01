@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Panoramica di tutte le operazioni che è possibile includere i risultati di lavoro di Microsoft Searc percorsi dell'organizzazione
-ms.openlocfilehash: 6b96fd405fc78d77f9b61408909b380cc45ec95e
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Panoramica di tutte le operazioni che è possibile includere i percorsi dell'organizzazione nei risultati di lavoro di Microsoft Search
+ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
+ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378868"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690659"
 ---
 # <a name="locations"></a>Percorsi
 
@@ -31,11 +31,11 @@ Percorsi consentono agli utenti di trovare indirizzi e individuare edifici dell'
     
     Aggiungere un edificio, office, campus o altre aree di lavoro
     
-- [Blocco creare percorsi](bulk-create-locations.md)
+- [Creare posizioni in blocco](bulk-create-locations.md)
     
     Aggiungere posizioni in un file CSV e importarli in blocco
     
-## <a name="manage-locations"></a>Gestire i percorsi
+## <a name="manage-locations"></a>Gestire le posizioni
 
 Utilizzare lo stato, posizione, strumenti di filtro e gli strumenti di importazione/esportazione per [trovare e aggiornare i percorsi](manage-locations.md), incluso il nome di indirizzo e la posizione in blocco
   
