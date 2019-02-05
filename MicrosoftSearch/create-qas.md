@@ -1,5 +1,5 @@
 ---
-title: Creare Q&As
+title: Creare domande e risposte
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,121 +13,121 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
-description: Modi per creare le risposte alle domande frequenti per i Microsoft Search funzionano dei risultati
+description: Come creare risposte alle domande frequenti per i risultati del lavoro in Microsoft Search
 ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612498"
 ---
-# <a name="create-qas"></a>Creare Q&As
+# <a name="create-qas"></a>Creare domande e risposte
 
-Q&As fornire una risposta o info agli utenti incluso un collegamento facoltativo. In teoria un Q&A include tutti i dettagli che gli utenti stanno cercando in modo che non è necessario passare all'origine. È possibile formattare il contenuto Q&A e includere le immagini, elenchi e tabelle.
+Le domande e risposte forniscono una risposta o informazioni agli utenti, compreso un collegamento facoltativo. In teoria, una domanda e risposta include tutti i dettagli che gli utenti stanno cercando, evitando loro di consultare l'origine. È possibile formattare il contenuto delle domande e risposte e includere immagini, elenchi e tabelle.
   
-## <a name="create-a-qa"></a>Creare un Q&A
+## <a name="create-a-qa"></a>Creare una domanda e risposta
 
-Per informazioni sulla creazione dei titoli efficace, descrizioni, parole chiave e altro ancora, vedere [pianificare il contenuto.](plan-your-content.md)
+Per informazioni sulla creazione di titoli, descrizioni e parole chiave efficaci e altro ancora, vedere [Pianificare il contenuto](plan-your-content.md).
   
-1. Accedere al portale di amministrazione di ricerca Microsoft
+1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **Q&As**
+2. Nel riquadro di spostamento fare clic su **Domande e risposte**
     
-3. Nella parte superiore della pagina, fare clic su **Aggiungi Q&A**
+3. Nella parte superiore della pagina fare clic su **Aggiungi domande e risposte**.
     
-    Verrà visualizzata la pagina Modifica Q&A con un'anteprima dell'aspetto il Q&A su Bing. Quando si aggiungono le informazioni necessarie, verrà aggiornati automaticamente l'anteprima.
+    Viene visualizzata la pagina Modifica domande e risposte, con un'anteprima dell'aspetto della domanda e risposta in Bing. Quando si aggiungono le informazioni necessarie, l'anteprima verrà aggiornata automaticamente.
     
-4. Immettere un **titolo**
+4. Immettere un **Titolo**
     
-    Il titolo è il titolo viene visualizzato nel risultato. Può trattarsi di un massimo di 120 caratteri e si consiglia di utilizzare un formato domanda.
+    Questo titolo è l'intestazione che viene visualizzata nel risultato. Può contenere fino a 120 caratteri ed è consigliabile usare un formato di domanda.
     
-5. Se necessario, immettere l' **URL** della pagina, sito o il segnalibro verrà collegato al percorso 
+5. Se necessario, immettere l'**URL** della pagina, del sito o del percorso a cui rimanderà il segnalibro 
     
-    Gli utenti questo consente che richiede informazioni aggiuntive facilmente visualizzare l'origine per saperne di più.
+    In questo modo gli utenti che hanno bisogno di ulteriori informazioni possono raggiungere facilmente l'origine per saperne di più.
     
-6. Immettere una **descrizione di risposta**
+6. Immettere una **Descrizione** della risposta
     
-    Questo deve rispondere alla domanda formulata del titolo. È possibile copiare contenuto HTML esistente e incollarlo qui. Verrà ignorato qualsiasi tag non supportate.
+    Dovrebbe rispondere alla domanda che viene posta nel titolo. È possibile copiare il contenuto HTML esistente e incollarlo qui. Eventuali tag non supportati verranno ignorati.
     
-7. Utilizzare le opzioni predefinite e i tag HTML per formattare il testo, aggiungere immagini, elenchi, tabelle e altro ancora
+7. Usare i tag HTML e le opzioni predefinite per formattare il testo, aggiungere immagini, elenchi, tabelle e altro ancora
     
-    Utilizzare l'anteprima nella parte superiore della pagina per visualizzare come i tag e formattazione viene visualizzato in Bing. Per informazioni su:
+    Usare l'anteprima nella parte superiore della pagina per vedere come verranno visualizzati i tag e la formattazione in Bing. Per informazioni su:
     
-  - Tag HTML, vedere l'elenco di tag HTML supportato seguente
+  - Tag HTML, vedere l'elenco seguente dei tag HTML supportati
     
-  - Le opzioni predefinite, fare clic su **Guida ribasso** (icona a forma punto interrogativo) 
+  - Opzioni predefinite, fare clic su **Guida di Markdown** (icona con il punto interrogativo) 
     
-8. Immettere **parole chiave** che si desidera attivare questo Q&A 
+8. Immettere le **Parole chiave** cui si vuole associare l'attivazione della domanda e risposta 
     
-    Ad esempio un segnalibro, quando un utente esegue la ricerca per una qualsiasi delle parole chiave che è stato incluso, questo Q&A verranno inclusi nei risultati di lavoro. Provare ad aggiungere varianti il maggior numero possibile, tra cui il titolo del Q&A.
+    Come succede con i segnalibri, quando un utente cerca le parole chiave che sono stati incluse, la domanda e risposta verrà inclusa nei risultati del lavoro. Provare ad aggiungere tutte le varianti possibili, incluso il titolo della domanda e risposta.
     
-9. Seleziona **automaticamente corrispondono a parole chiave simili** per espandere il gruppo di parole chiave 
+9. Selezionare **Associa automaticamente le parole chiave simili** per espandere il set di parole chiave 
     
-    In questo modo una più ampia corrispondenza dei termini di ricerca e consente di garantire che questo Q&A è incluso nei risultati di lavoro pertinente.
+    Questo abilita una corrispondenza più ampia dei termini di ricerca e assicura che la domanda e risposta venga inclusa nei risultati di lavoro pertinenti.
     
-10. Immettere **parole chiave riservate**
+10. Immettere le **Parole chiave riservate**
     
-    Se una parola chiave genera più Q&As, Microsoft Search sarà quello più popolari nella parte superiore e visualizzare gli altri argomenti correlati. Utilizzare uno o più parole riservate per garantire che un Q&A viene sempre visualizzata come risultato superiore. Parole riservate non possono essere condivise tra Q&As. Inoltre, non è consigliabile condivisione parole riservate tra Q&As e segnalibri. Se un segnalibro e un Q&A condividere una parola chiave o una parola chiave riservata, il segnalibro avranno sempre la precedenza e il Q&A non verrà visualizzato.
+    Se una parola chiave attiva più domande e risposte, Microsoft Search posizionerà quella più popolare in alto e mostrerà le altre come collegamenti correlati. Usare una o più parole chiave riservate per fare in modo che una domanda e risposta venga sempre visualizzata come primo risultato. Le parole chiave riservate non possono essere condivise tra le domande e risposte. Inoltre, non è consigliabile condividere le parole chiave riservate tra le domande e risposte e i segnalibri. Se un segnalibro e una domanda e risposta condividono una parola chiave o una parola chiave riservata, il segnalibro avrà sempre la precedenza e la domanda e risposta non verrà visualizzata.
     
-## <a name="add-qa-settings"></a>Aggiungere impostazioni Q&A
+## <a name="add-qa-settings"></a>Aggiungere le impostazioni delle domande e risposte
 
-Impostazioni Q&A offrono ulteriore controllo su quando viene visualizzato un Q&A e che vengono visualizzati.
+Le impostazioni delle domande e risposte offrono un maggior controllo su quando viene visualizzata una domanda e risposta e su chi la vede.
   
 - Date
     
-    Impostare una data di inizio e su come data di fine facoltativo per controllare se un Q&A verranno pubblicati o scadenza.
+    Impostare una data di inizio e una data di fine facoltativa per controllare quando una domanda e risposta verrà pubblicata o quando scadrà.
     
-- Paese
+- Paese/area geografica
     
-    Se si seleziona paesi o aree geografiche, verranno visualizzato solo gli utenti alle posizioni che Q&A.
+    Se si selezionano paesi o aree geografiche, solo gli utenti in quelle posizioni vedranno la domanda e risposta.
     
 - Gruppi
     
-    Utilizzare i gruppi di impostazione per rendere disponibile un risultato Q&A solo ai membri di un gruppo selezionato. Ad esempio, se si sta creando Q&As relativi ai dipendenti del reparto risorse Umane, è possibile mappare questa impostazione al gruppo di protezione di risorse Umane appropriato.
+    Usare le impostazioni dei gruppi per rendere disponibile un risultato di domanda e risposta solo ai membri di un determinato gruppo. Ad esempio, se si creano le domande e risposte relative solo ai dipendenti del reparto risorse Umane, è possibile mappare questa impostazione al gruppo di sicurezza delle risorse Umane pertinente.
     
-- Dispositivo &amp; sistema operativo
+- Dispositivo e sistema operativo
     
-    Se si seleziona tipi di dispositivi o sistemi operativi, verrà visualizzato solo la ricerca in tali dispositivi o con i sistemi che Q&A.
+    Se si selezionano tipi di dispositivi o sistemi operativi, solo gli utenti che usano quei dispositivi o sistemi operativi vedranno la domanda e risposta.
     
-- Varianti di destinazione
+- Varianti mirate
     
-    Utilizzare questa impostazione per variare il contenuto di Q&A basati su dispositivo e il percorso dell'utente.
+    Usare questa impostazione per modificare il contenuto della domanda e risposta in base al dispositivo e alla posizione dell'utente.
     
-## <a name="use-a-browser-extension-to-create-content"></a>Utilizzare un'estensione del browser per creare il contenuto
+## <a name="use-a-browser-extension-to-create-content"></a>Usare un'estensione del browser per creare contenuto
 
-Dalla sezione strumenti del portale di amministrazione di scaricare e installare l'estensione del browser creatore del contenuto per i server perimetrali o Chrome. Per utilizzare l'estensione, eseguire l'accesso e passare a un sito o una pagina che si desidera aggiungere come un esame Q&A e modificare il contenuto consigliato, incluse le parole chiave, aggiungere contenuto aggiuntivo e salvare il Q&A.
+Scaricare e installare l'estensione del browser per autori di contenuti per Microsoft Edge o Chrome dalla sezione Strumenti del portale di amministrazione. Per usare l'estensione, accedere e passare alla pagina o al sito che si vuole aggiungere come domanda e risposta. Rivedere e modificare il contenuto suggerito, comprese le parole chiave, aggiungere eventuale altro contenuto e salvare la domanda e risposta.
   
-Se vengono rilevati più Q&As, esaminare ciascuno di essi e determinare se si desidera pubblicare, Salva come bozza o Salva tutto per bozza.
+Se vengono trovate più domande e risposte, esaminare ognuna di esse e stabilire se si vuole pubblicarla, salvarla come bozza o salvarle tutte come bozza.
   
 ## <a name="supported-html-tags"></a>Tag HTML supportati
 
-È possibile utilizzare contenuto HTML esistente o aggiungere i tag HTML per la descrizione di risposta. Tag non supportati vengono ignorati.
+È possibile usare contenuto HTML esistente o aggiungere tag HTML alla descrizione della risposta. I tag non supportati vengono ignorati.
   
-- BLOCKQUOTE
+- blockquote
     
 - div
     
-- MT
+- em
     
-- H1, h2, h3 e h4
+- h1, h2, h3, and h4
     
-- OL, ul e li
+- ol, ul, and li
     
 - p
     
-- precedente
+- pre
     
-- intervallo
+- span
     
-- complessa
+- strong
     
-- tabella, thead, tbody, tr, esima e td
+- table, thead, tbody, tr, th, and td
     
 - u
     
 - a
     
-- codice
+- code
     
 - br
     

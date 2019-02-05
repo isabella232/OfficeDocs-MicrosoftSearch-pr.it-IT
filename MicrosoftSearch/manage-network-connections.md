@@ -1,5 +1,5 @@
 ---
-title: Gestire le connessioni di rete.
+title: Gestire le connessioni di rete
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
-description: Aggiungere l'elenco consentono questi URL e dei domini per il firewall in modo che gli utenti devono accedere facilmente Microsoft Search
+description: Aggiungere questi URL e domini all'elenco di indirizzi consentiti del firewall per consentire agli utenti di accedere facilmente a Microsoft Search
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612546"
 ---
-# <a name="manage-network-connections"></a>Gestire le connessioni di rete.
+# <a name="manage-network-connections"></a>Gestire le connessioni di rete
 
-Per verificare che i singoli utenti possano connettersi agli endpoint di Microsoft Search, aggiungere che questi URL al firewall consentono gli elenchi.
+Per assicurarsi che tutti gli utenti possano connettersi agli endpoint Microsoft Search, aggiungere questi URL agli elenchi di indirizzi consentiti del firewall.
   
-## <a name="for-the-microsoft-search-admin-portal"></a>Per il portale di amministrazione di ricerca Microsoft:
+## <a name="for-the-microsoft-search-admin-portal"></a>Per il portale di amministrazione di Microsoft Search:
 
 - `www.bingatwork.com`
     
@@ -39,7 +39,7 @@ Per verificare che i singoli utenti possano connettersi agli endpoint di Microso
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a>Per la ricerca di Microsoft di Bing:
+## <a name="for-microsoft-search-in-bing"></a>Per Microsoft Search in Bing:
 
 - `business.bing.com`
     
