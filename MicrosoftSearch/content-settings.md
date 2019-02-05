@@ -1,5 +1,5 @@
 ---
-title: Impostazioni del contenuto
+title: Impostazioni contenuto
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,48 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
-description: Aggiungere un logo, il nome della società e altro ancora per i Microsoft Search utilizzare risultati
+description: Informazioni su come aggiungere un logo, il nome della società e altro ancora ai risultati del lavoro di Microsoft Search
 ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612459"
 ---
-# <a name="content-settings"></a>Impostazioni del contenuto
+# <a name="content-settings"></a>Impostazioni contenuto
 
-Con Microsoft Search, è possibile garantire un aspetto familiare per ottenere i risultati provenienti da origini di contenuto all'interno dell'organizzazione, ad esempio SharePoint, OneDrive for Business o alla rete intranet aziendale. 
+Con Microsoft Search è possibile definire impostazioni per conferire un aspetto familiare ai risultati provenienti da origini di contenuto interne all'organizzazione, ad esempio SharePoint, OneDrive for Business o l'intranet aziendale. 
   
-- Nome dell'organizzazione:
+- Nome dell'organizzazione
     
-    Nella maggior parte dei casi Microsoft Search viene utilizzato il nome dell'organizzazione definito nell'interfaccia di amministrazione di Microsoft 365. Per modificare il nome visualizzato con i risultati del lavoro, immettere un nome diverso. Può essere fino a 50 caratteri.
+    Nella maggior parte dei casi Microsoft Search in Bing usa il nome dell'organizzazione definito nell'interfaccia di amministrazione di Microsoft 365. Per modificare il nome visualizzato con i risultati del lavoro, immettere un nuovo nome composto da un massimo di 50 caratteri.
     
-- logo
+- Logo
     
-    Viene visualizzato il logo in tutti i risultati di Microsoft Search per l'organizzazione. Logo deve essere file PNG o GIF. I file non devono superare 1 MB le dimensioni o superare i 48px in altezza. Immagini vengono adattate alle 48px per mantenere le proporzioni. Dimensioni immagine non vengano visualizzate correttamente.
+    Il logo viene visualizzato in tutti i risultati di Microsoft Search per l'organizzazione. Deve essere un file in formato PNG o GIF. I file non devono superare 1 MB e l'altezza non deve superare 48 px. Le immagini verranno ridimensionate a 48 px per mantenere le proporzioni. Le immagini di dimensioni superiori potrebbero non essere visualizzate correttamente.
     
-- Colori
+- Colore
     
-    Utilizzare la tavolozza di colori per selezionare il colore di evidenziazione per i risultati di lavoro dell'organizzazione.
+    Usare la tavolozza dei colori per selezionare il colore principale per i risultati di lavoro dell'organizzazione.
     
-- Indirizzo di posta elettronica di commenti e suggerimenti
+- Indirizzo di posta elettronica per feedback
     
-    Microsoft Search risultati includono un collegamento di commenti e suggerimenti per i suggerimenti e commenti degli utenti. Nel campo commenti e suggerimenti messaggio di posta elettronica indirizzo immettere l'indirizzo di commenti e suggerimenti devono essere inviati a.
+    I risultati di Microsoft Search includono un collegamento per inviare per suggerimenti e commenti. Nel campo Indirizzo di posta elettronica per feedback immettere l'indirizzo a cui inviare commenti e suggerimenti.
     
 - Suggerimenti di query
     
-    Le ricerche per i nuovi utenti di Microsoft Search provare i suggerimenti. Immettere fino a cinque ricerche di esempio che sono probabile che restituiscono risultati per tutti gli utenti.
+    È possibile suggerire ricerche di esempio per i nuovi utenti di Microsoft Search. Immettere un massimo di cinque ricerche di esempio che è probabile restituiscano risultati per tutti gli utenti.
     
-- Risultati di Business
+- Risultati aziendali
     
-    Decidere se si desidera visualizzare risultati lavoro ogni volta che gli utenti di ricerca.
+    Scegliere se si vuole che i risultati di lavoro vengano visualizzati ogni volta che gli utenti eseguono una ricerca.
     
-- Risultati della conversazione
+- Risultati conversazione
     
-    Includere pertinente pubblica o dei risultati della conversazione di gruppo da Microsoft Teams o Microsoft Yammer quando gli utenti di ricerca.
+    Consente di includere risultati pertinenti di conversazioni pubbliche o di gruppo di Microsoft Teams o Microsoft Yammer quando gli utenti eseguono una ricerca.
     
-Configurare le impostazioni nel portale di amministrazione di ricerca Microsoft, fare clic su impostazioni per il contenuto nel riquadro di spostamento.
+Per configurare queste impostazioni nel portale di amministrazione di Microsoft Search, fare clic su Impostazioni contenuto nel riquadro di spostamento.
   
-Solo gli amministratori globali di Microsoft 365 o gli amministratori di Microsoft Search possono modificare le impostazioni del contenuto. Editor Microsoft Search possa visualizzarli ma possibile modificarli.
+Solo gli amministratori globali di Microsoft 365 o gli amministratori di Microsoft Search possono modificare le impostazioni del contenuto. Gli editor di Microsoft Search possono visualizzarle ma non modificarle.
 
 
