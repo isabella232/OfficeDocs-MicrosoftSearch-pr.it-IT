@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search è un'esperienza di ricerca dell'organizzazione che comporta un aumento della produttività e di risparmiare tempo recapitando i risultati di ricerca più pertinenti per l'organizzazione
+description: Microsoft Search è un'esperienza di ricerca di contenuti dell'organizzazione che permette di aumentare la produttività e risparmiare tempo, fornendo risultati della ricerca più pertinenti
 ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612354"
@@ -45,8 +45,8 @@ ms.locfileid: "29612354"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Perché Microsoft ricerca</h2>
-                        <p>Ottenere un'esperienza di ricerca dell'organizzazione che comporta un aumento della produttività e di risparmiare tempo recapitando i risultati di ricerca più pertinenti per l'organizzazione</p>
+                        <h2>Perché scegliere Microsoft Search</h2>
+                        <p>Per ottenere un'esperienza di ricerca di contenuti dell'organizzazione che permette di aumentare la produttività e risparmiare tempo, fornendo risultati della ricerca più pertinenti</p>
                         <p><a href="why-microsoft-search.md">Ecco come fare</a></p>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ ms.locfileid: "29612354"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Caratteristiche principali</h3>
-                        <p>Vedere le funzionalità disponibili per gli amministratori e utenti, inclusi il contento quando esegue la ricerca</p>
+                        <h3>Funzionalità principali</h3>
+                        <p>Le funzionalità disponibili per amministratori e utenti, compresi i risultati visualizzati quando si esegue una ricerca</p>
                         <p><a href="features.md">Per saperne di più</a></p>
                     </div>
                 </div>
@@ -86,9 +86,9 @@ ms.locfileid: "29612354"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Impostare veloce di amministrazione</h3>
-                        <p>Informazioni su come attivare Microsoft Search e configurarla per l'organizzazione in quattro passaggi semplice</p>
-                        <p><a href="quick-set-up.md">Iniziare:</a></p>
+                        <h3>Configurazione rapida per amministratori</h3>
+                        <p>Informazioni su come attivare Microsoft Search e configurarlo per l'organizzazione in quattro semplici passaggi</p>
+                        <p><a href="quick-set-up.md">Attività iniziali</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29612354"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utilizzare la ricerca di Microsoft</h2>
-                        <p>Microsoft Search è un modo semplice, rapido e sicuro per informazioni, aumentare la produttività e lavorare con maggiore efficienza</p>
+                        <h2>Usare Microsoft Search</h2>
+                        <p>Microsoft Search è un modo semplice, veloce e più sicuro per trovare informazioni, aumentare la produttività e lavorare con maggiore efficienza</p>
                         <p><a href="use/about-microsoft-search.md">Ecco come fare</a></p>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ ms.locfileid: "29612354"
                     <div class="cardText">
                         <p><a href="quick-set-up.md">Configurazione rapida</a></p>
                         <p><a href="connected-services.md">Servizi connessi</a></p>
-                        <p><a href="set-up-microsoft-search.md">Configurazione di Microsoft Search</a></p>
+                        <p><a href="set-up-microsoft-search.md">Configurare Microsoft Search</a></p>
                     </div>
                 </div>
             </div>
