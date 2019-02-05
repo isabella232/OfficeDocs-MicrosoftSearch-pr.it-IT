@@ -13,131 +13,131 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
-description: Fornire contenuto qualità senza la necessità di risorse aggiuntive quando si utilizza Microsoft Search
+description: Fornire contenuti di qualità senza la necessità di risorse aggiuntive quando si usa Microsoft Search
 ms.openlocfilehash: 898ba99ebf4751c47da96b23d6cb9bac058f6ffd
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612482"
 ---
 # <a name="plan-your-content"></a>Pianificare i contenuti
 
-Prima di pianificare il contenuto, informazioni sui quali è possibile aggiungere a Microsoft Search possono rivelarsi utili:
+Prima di pianificare i contenuti, è utile sapere cosa si può aggiungere a Microsoft Search:
   
 - Segnalibri
     
-    Rapidamente offrono agli utenti un collegamento a un sito interno, pagina o strumento di cui è possibile ottenere informazioni aggiuntive.
+    Consentono di fornire rapidamente agli utenti un collegamento a un sito, una pagina o uno strumento interni in cui è possibile ottenere altre informazioni.
     
-- Q&As
+- Domande e risposte
     
-    Fornire una risposta o info agli utenti, incluso un collegamento facoltativo. In teoria un Q&A include tutti i dettagli che gli utenti stanno cercando in modo che non è necessario passare all'origine. È possibile formattare il contenuto Q&A e includere le immagini, elenchi e tabelle.
+    Consentono di fornire una risposta o informazioni agli utenti compreso un collegamento facoltativo. Idealmente, le domande e risposte includono tutti i dettagli cercati dagli utenti in modo che non sia necessario accedere all'origine. È possibile formattare il contenuto delle domande e risposte includendo immagini, elenchi e tabelle.
     
-## <a name="identify-information-your-users-need"></a>Identificare le informazioni che necessarie agli utenti
+## <a name="identify-information-your-users-need"></a>Identificare le informazioni necessarie agli utenti
 
-Prendere in considerazione questi concetti:
+Prendere in considerazione questi scenari:
   
-- [Principali query e risultati alzati di livello SharePoint importazione](import-sharepoint-promoted-results-and-top-queries.md) sotto forma di segnalibri 
+- [Importare i risultati evidenziati e le query principali di SharePoint](import-sharepoint-promoted-results-and-top-queries.md) come segnalibri 
     
-- Utilizzare la ricerca intranet i registri per determinare i siti e pagine che ricevono la maggior parte del traffico
+- Usare i log di ricerca intranet per determinare i siti e le pagine con maggior traffico
     
-- Determinare l'App, siti e gli strumenti utilizzati nelle quotidianamente o settimana
+- Determinare quali sono le app, i siti e gli strumenti usati ogni giorno o ogni settimana
     
-- Raccogliere informazioni sul principali benefit o di un collegamento diretto a tali
+- Raccogliere le informazioni sui benefici principali dei dipendenti e fornire i relativi collegamenti diretti
     
-- Trovare i criteri e i processi gli utenti devono essere a conoscenza
+- Cercare le direttive e i processi di cui gli utenti devono essere a conoscenza
     
-- Stabilire chi e come gli utenti devono contattare il supporto tecnico
+- Stabilire i canali e i metodi di comunicazione degli utenti per il supporto tecnico
     
-- Ottenere informazioni necessarie in base a ricorrente, eseguire una fluttuazioni stagionali o in base ai cicli di business
+- Raccogliere le informazioni necessarie regolarmente, in base a determinati periodi dell'anno o ai cicli del business
   
-Ad esempio, persone cercando strumenti al momento della Rubrica o trimestrali aggiornamenti finanziari
+Ad esempio, le persone che cercano gli strumenti per prenotare le ferie oppure i report finanziari trimestrali
     
-- Raccogliere i criteri per gli utenti regionali o per dispositivi mobili quali vantaggi che variano in base alla posizione
+- Raccogliere le direttive per gli utenti locali o mobili, come i vantaggi a seconda della località
     
-- Determinare i siti interni e le informazioni per le ricerche web comuni
+- Determinare i siti interni e le informazioni per le ricerche comuni sul Web
   
-Ad esempio, il traffico, informazioni pubbliche transito, meteo locale, disponibile dal partner aziendali e programmi di integrità e idoneità delle riduzioni previste
+Ad esempio, traffico, informazioni sui trasporti pubblici, meteo locale, sconti disponibili presso i partner aziendali e programmi di salute e fitness
     
-- Informazioni sugli eventi finanziato dalla società, conferenze o ritorna
+- Trovare le informazioni sugli eventi, le conferenze o gli incontri organizzati dall'azienda
     
-- Ricerca comune IT, risorse Umane, problemi e domande frequenti e le risposte e supporto tecnico
+- Ricercare problemi comuni nonché domande frequenti e risposte relativi a IT, risorse umane e supporto tecnico
     
 ## <a name="build-a-support-team"></a>Creare un team di supporto
 
- **Esperti in materia sfruttare**
+ **Sfruttare le competenze degli esperti**
   
-Creare un team di supporto che include esperti delle risorse Umane, supporto, vendite e altre aree principali. Per consentire la PMI di collaborare direttamente al contenuto, aggiungerli come editors nel portale di amministrazione. In questo modo è possibile implementare la scalabilità della quantità di contenuto disponibile senza la necessità di personale aggiuntivo.
+Creare un team di supporto con esperti di risorse umane, supporto, vendite e altre aree principali. Per consentire agli esperti di contribuire direttamente ai contenuti, è possibile aggiungerli come editor nel portale di amministrazione. In questo modo è possibile aumentare la quantità di contenuto disponibile senza gravare eccessivamente sul team.
   
  **Coinvolgere gli utenti**
   
-Che riguardano gli utenti nel processo di creazione dei contenuti incoraggia loro di utilizzare Microsoft Search. Chiedere di utilizzare il collegamento commenti nei risultati di lavoro o l'estensione di search server perimetrali o Chrome per proporre i segnalibri e Q&As. Oltre a suggerire contenuto, possono segnalati errori come i collegamenti interrotti o non validi e inviare gli altri commenti e suggerimenti.
+Il coinvolgimento degli utenti nel processo di creazione dei contenuti li incoraggia a usare Microsoft Search. Chiedere agli utenti di usare il collegamento per i commenti e suggerimenti presente nei risultati di lavoro o l'estensione di ricerca di Microsoft Edge o Chrome per suggerire segnalibri e domande e risposte. Oltre a suggerire contenuti, possono segnalare errori, come collegamenti interrotti o non validi, e fornire altri commenti e suggerimenti.
   
-## <a name="create-high-quality-content"></a>Creare il contenuto di alta qualità
+## <a name="create-high-quality-content"></a>Creare contenuti di alta qualità
 
  **Titoli e descrizioni**
   
-Utenti di utilizzare i segnalibri o Q&A titoli e descrizioni per determinare se si riferiscono le finalità di ricerca o se si desidera provare una ricerca diversa. Titoli e descrizioni devono indicare lo scopo di base del risultato.
+Le persone usano i segnalibri o i titoli e le descrizioni di domande e risposte per determinare se soddisfano il proprio intento di ricerca o se è necessario provare una ricerca diversa. I titoli e le descrizioni devono riflettere lo scopo principale del risultato.
   
-Un ottimo esempio di un titolo potrebbe essere "Vantaggi per i figli' con una descrizione di": informazioni sui vantaggi offerti da per pagare costi legati alle terapie figlio." Informa gli utenti che cercano 'strutture' che vantaggi valuta supporto, disponibili e viene loro un collegamento a ulteriori.
+Un buon esempio di un titolo potrebbe essere "Sussidi per l'assistenza all'infanzia", con la descrizione "Informazioni sui sussidi per coprire i costi di assistenza all'infanzia". Questo contenuto informa gli utenti che cercano "assistenza all'infanzia" che sono disponibili sussidi e fornisce loro un collegamento per avere maggiori informazioni.
   
-Titoli Q&A devono specificare una domanda e la descrizione deve fornire una risposta breve, ma utile. Se non vi sono ulteriori informazioni che potrebbero essere utile, collegamento ad essa.
+I titoli di domande e risposte devono porre una domanda e la descrizione deve fornire una risposta breve ma utile. Nel caso di altre informazioni utili, è possibile creare un collegamento a tali informazioni.
   
  **Parole chiave**
   
-Parole chiave sono le persone termini della ricerca dell'organizzazione per su Bing per individuare i risultati di lavoro. Rendere più semplice trovare includendo le parole chiave destra Q&As e i segnalibri. Per identificare le parole chiave, avviare fornendo una risposta alle domande seguenti:
+Le parole chiave sono i termini che le persone dell'organizzazione cercano su Bing per scoprire i risultati di lavoro. È possibile semplificare la ricerca dei segnalibri e delle domande e risposte usando le parole chiave giuste. Per individuare queste parole chiave, rispondere alle domande seguenti:
   
-- Consentono di trovare le informazioni di che avere identificato i termini di ricerca?
+- Quali termini di ricerca consentono di trovare le informazioni identificate?
     
-    Utilizzare qualsiasi tassonomia esistente nell'organizzazione vengono utilizzati, nonché le variazioni relative, gli acronimi, oggetti e gli argomenti.
+    Usare qualsiasi tassonomia attuale, varianti correlate, acronimi, temi e argomenti usati dall'organizzazione.
     
-- Quali altri varianti o parole si utilizza per descrivere il concetto di queste informazioni?
+- Quali altre varianti o parole si usano quando si parla di queste informazioni?
     
-    Sfruttare il team di supporto per determinare le parole chiave.
+    Servirsi del team di supporto per determinare queste parole chiave.
     
-Ad esempio, se si crea un risultato che collega a uno strumento per l'invio di richieste ferie, parole chiave, ad esempio 'ferie' e 'inviare richieste ferie/permessi richiesta' sono buone opzioni da includere. È possibile che gli utenti dell'organizzazione utilizzano "festività" o "ora disattivato" per descrivere o cercare informazioni relative a richieste ferie/permessi. Aggiunta di parole chiave like 'ferie' ',' 'submit richiesta festività' e 'richiedere tempo ' come parole chiave più semplice per più di agli utenti di individuare il risultato.
+Ad esempio, se si sta creando un risultato che include un collegamento a uno strumento per l'invio di richieste di ferie, parole chiave come "ferie" e "richiesta di ferie" sono opzioni da includere. È possibile che gli utenti dell'organizzazione usino "vacanza" o "permesso" per descrivere o cercare informazioni correlate alle ferie. Aggiungere parole chiavi come "vacanza", "permesso", "richiesta di ferie", "chiedere un permesso" rende il risultato più facile da individuare per un maggior numero di utenti.
   
  **Parole chiave riservate**
   
-Microsoft Search determina quali i segnalibri sono visualizzati come i risultati principali lavoro basati su dati di utilizzo. Quando è necessario un risultato specifico venga visualizzato come risultato superiore, utilizzare le parole chiave riservate. Una parola chiave riservata è univoco parola o frase che identifica un segnalibro o un risultato Q&A. Quando un utente immette una parola chiave riservata nella casella Cerca, tale segnalibro o Q&A sarà il primo risultato viene visualizzato. Parole chiave per riservato solo in casi particolari per consentire a Microsoft Search scoprire in base all'utilizzo.
+Microsoft Search determina quali segnalibri vengono visualizzati ai primi posti tra i risultati di lavoro in base all'utilizzo. Se si vuole che un risultato specifico venga visualizzato al primo posto, è possibile usare parole chiave riservate. Una parola chiave riservata è una parola o frase univoca che identifica un risultato di segnalibro o di domanda e risposta. Quando un utente immette una parola chiave riservata nella casella di ricerca, quel segnalibro o domanda e risposta saranno i primi risultati visualizzati. Usare le parole riservate con moderazione per permettere a Microsoft Search di imparare in base all'utilizzo.
   
  **Parole chiave suggerite**
   
-Creare un insieme di parole chiave per un risultato iniziale utilizzando i suggerimenti di parola chiave automatica. Questi suggerimenti sono basati sul titolo e l'URL per il segnalibro o Q&A.
+Creare un set iniziale di parole chiave per ottenere un risultato con suggerimenti automatici delle parole chiave. Questi suggerimenti sono basati sul titolo e l'URL del proprio segnalibro o domanda e risposta.
   
- **Negli argomenti di gruppo**
+ **Argomenti di gruppo**
   
-Se si desidera che gli utenti per individuare i set di contenuti correlati durante la ricerca, provare a utilizzare la stessa parola chiave per tutti i segnalibri e Q&As sull'argomento corrispondente. Se si aggiungono risultati sui processi e strumenti attorno le modifiche dello stato di vita, ad esempio, si può includere una parola chiave like 'personale' loro per raggruppare i risultati ottimali se utilizzati insieme sull'aggiornamento dei vantaggi, informazioni fiscali e modifiche relative a nome e alias.
+Se si vuole che gli utenti trovino i contenuti associati quando eseguono una ricerca, provare a usare la stessa parola chiave per tutti i segnalibri e domande e risposte su tale argomento. Ad esempio, se si aggiungono i risultati per i processi e gli strumenti relativi al cambiamento dello stato civile, è possibile includere una parola chiave come "matrimonio" per raggruppare i risultati su sussidi, informazioni fiscali e cambiamenti di nome e alias.
   
-## <a name="test-your-content-and-search-experience"></a>Testare l'esperienza dell'utente contenuto e la ricerca
+## <a name="test-your-content-and-search-experience"></a>Provare l'esperienza di ricerca del contenuto
 
-Dopo aver pubblicato i risultati, è importante verificare:
+Dopo avere pubblicato i risultati, è importante verificare quanto segue:
   
-- Il segnalibro corretto o Q&A viene visualizzato come risultato principale
+- Il segnalibro o la domande e risposta corretti vengono visualizzati come i risultati migliori
     
-- Tutti i relativi segnalibri o Q&As sono rilevanti
+- Tutti i segnalibri o le domande e risposte associati sono pertinenti
     
-- Nessun risultati imprevisti sono inclusi
+- Non ci sono risultati imprevisti
     
-- Titoli dei risultati e descrizioni di forniscono le informazioni e gli utenti sono alla ricerca di ulteriori informazioni
+- Le descrizioni e i titoli dei risultati forniscono le informazioni e i dettagli che gli utenti stanno cercando
     
-Il team di supporto è un'ottima risorsa per testare e convalidare l'esperienza di contenuto e la ricerca.
+Il team di supporto è una valida risorsa per provare e verificare l'esperienza di ricerca del contenuto.
   
 ## <a name="review-and-update-periodically"></a>Rivedere e aggiornare periodicamente
 
-Mantenere l'accuratezza e l'aggiornamento dei risultati è importante quando si fornisce informazioni rilevanti per l'organizzazione. Eseguire periodicamente revisioni per:
+Mantenere l'accuratezza e l'aggiornamento dei risultati è fondamentale quando si forniscono informazioni rilevanti per l'organizzazione. Effettuare revisioni periodiche per:
   
-- Correggere o rimuovere gli URL interrotti o non validi
+- Correggere o rimuovere URL interrotti o non validi
     
-- Rimuove il contenuto che non è più rilevante
+- Rimuovere contenuti non più pertinenti
     
-- Inesatti o non sia aggiornati titoli e descrizioni, incluse modifiche ai nomi di team, sito o dello strumento di aggiornamento
+- Aggiornare titoli e descrizioni imprecisi od obsoleti, inclusi cambiamenti di strumenti, siti o nomi di gruppo
     
-- Esaminare le query con clickthrough tariffe e determinare se il segnalibro o Q&A contenuto deve essere aggiornato
+- Esaminare le query con basse percentuali di clic e determinare se il contenuto del segnalibro o della domanda e risposta deve essere aggiornato
     
-- Revisione SharePoint Online e le query di ricerca locale, incluse le query popolari o superiore, abbandonati query e query senza comprendere quali gli utenti di ricerca per e, se vi sono spazi vuoti
+- Esaminare le query di ricerca di SharePoint Online e locali, incluse le più popolari o migliori, le query abbandonate e le no query per capire cosa cercano gli utenti e le possibili lacune
     
-Per rapidamente blocco modificare i risultati, utilizzare l'esportazione e importazione funzionalità nel portale di amministrazione.
+Per modificare rapidamente i propri risultati in blocco, usare le funzioni di esportazione e importazione nel portale di amministrazione.
 
   
 
