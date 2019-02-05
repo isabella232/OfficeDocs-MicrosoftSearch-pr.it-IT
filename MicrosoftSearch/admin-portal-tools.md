@@ -13,37 +13,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
-description: Panoramica degli strumenti di Microsoft Search per creare e importare i risultati, accedere automaticamente e di ricerca da qualsiasi luogo
+description: Panoramica degli strumenti di Microsoft Search per creare e importare risultati, accedere automaticamente e cercare ovunque
 ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612378"
 ---
 # <a name="admin-portal-tools"></a>Strumenti del portale di amministrazione
 
-Il portale di amministrazione di ricerca Microsoft include risorse e strumenti progettati per gli amministratori, redattori e gli utenti, tra cui:
+Il portale di amministrazione di Microsoft Search include strumenti e risorse progettate per amministratori, editor e utenti, tra cui:
   
-- Estensioni browser creatore del contenuto
+- Estensione del browser per autori di contenuti
     
-    Disponibile per gli amministratori e gli editor, utilizzare l'estensione Chrome o Edge da [creare segnalibri](create-bookmarks.md) in modo semplice e [Q&As](create-qas.md) semplicemente visualizzare tramite un sito o una pagina. 
+    Usare l'estensione per Chrome o Microsoft Edge, disponibile per editor e amministratori, per [creare segnalibri](create-bookmarks.md) e [domande e risposte](create-qas.md) semplicemente facendo clic su un sito o una pagina. 
     
-- Microsoft Search di estensione di ricerca Bing
+- Microsoft Search nell'estensione di ricerca Bing
     
-    Disponibile per gli utenti autorizzati, utilizzare l'estensione Chrome o Edge per accedere rapidamente aziendale Microsoft Search ricerca senza lasciare la pagina o si è in un sito.
+    Usare l'estensione per Microsoft Edge o Chrome, disponibile per gli utenti autorizzati, per accedere rapidamente alla ricerca di contenuti dell'organizzazione di Microsoft Search senza chiudere la pagina o il sito in cui ci si trova.
     
-- Windows 10 e AAD accesso interno per Chrome
+- Estensione di accesso di Windows 10 e AAD per Chrome
     
-    Disponibile per gli utenti autorizzati, utilizzare l'estensione Chrome per l'autenticazione con facilità con Azure Active Directory durante l'accesso a siti, tra cui Office 365 e Bing è supportato. È consigliabile distribuire questa estensione quando si [verifica single sign-on](test-single-sign-on.md).
+    Usare l'estensione per Chrome, disponibile per gli utenti autorizzati, per eseguire facilmente l'autenticazione con Azure Active Directory quando si accede ai siti supportati, tra cui Office 365 e Bing. È consigliabile distribuire l'estensione per [testare l'accesso Single Sign-On](test-single-sign-on.md).
     
-- Importare principali query di SharePoint come segnalibri
+- Importare le query principali di SharePoint come segnalibri
     
-    Disponibile per gli amministratori, utilizzare questo script di PowerShell per [importare SharePoint principali query](import-sharepoint-promoted-results-and-top-queries.md) come segnalibri bozza. Scaricare lo script e aprire il file Leggimi per informazioni sui requisiti, esempi e parametri disponibili. 
+    Gli amministratori possono usare questo script di PowerShell per [importare le query principali di SharePoint](import-sharepoint-promoted-results-and-top-queries.md) come segnalibri bozza. Scaricare lo script e aprire il file Leggimi per informazioni su requisiti, esempi e parametri disponibili. 
     
-- Importare le regole di Query risultati alzati di livello di SharePoint come segnalibri
+- Importare le regole di query per i risultati promossi di SharePoint come segnalibri
     
-    Disponibile per gli amministratori, [importare i risultati alzati di livello di SharePoint](import-sharepoint-promoted-results-and-top-queries.md) e top query o elementi di maggiore rilevanza, come suggeriti segnalibri. 
+    Gli amministratori possono [importare i risultati di SharePoint alzati di livello](import-sharepoint-promoted-results-and-top-queries.md) e le query principali o gli elementi di maggiore rilevanza come segnalibri suggeriti. 
 
   
 

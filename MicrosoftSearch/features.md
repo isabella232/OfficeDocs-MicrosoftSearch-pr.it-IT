@@ -1,5 +1,5 @@
 ---
-title: Funzionalità di ricerca di Microsoft
+title: Funzionalità di Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,80 +13,80 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: Caratteristiche principali di Microsoft Search per gli amministratori e utenti finali includono i segnalibri e Q&As e alla gestione e sui concetti di dati
+description: Le principali funzionalità di Microsoft Search per amministratori e utenti finali includono segnalibri, domande e risposte, gestione e informazioni dettagliate sui dati
 ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612430"
 ---
-# <a name="features-of-microsoft-search"></a>Funzionalità di ricerca di Microsoft
+# <a name="features-of-microsoft-search"></a>Funzionalità di Microsoft Search
 
-## <a name="key-admin-features-include"></a>Le caratteristiche chiave amministrazione includono:
+## <a name="key-admin-features-include"></a>Le funzionalità principali per amministratori includono:
 
-- [Segnalibri Enterprise](create-and-manage-bookmarks.md)
+- [Segnalibri aziendali](create-and-manage-bookmarks.md)
     
-    Trovare i siti, gli strumenti e altre informazioni all'interno dell'azienda
+    Trovare siti, strumenti e altre informazioni all'interno dell'azienda
     
-- [Q&As Enterprise](create-and-manage-qas.md)
+- [Domande e risposte aziendali](create-and-manage-qas.md)
     
-    Rispondere alle domande più frequenti all'interno dell'organizzazione
+    Rispondere alle domande frequenti poste all'interno dell'organizzazione
     
-- Importare ed esportare [i segnalibri](bulk-create-bookmarks.md) e [Q&As](bulk-create-qas.md)
+- Importazione ed esportazione di [segnalibri](bulk-create-bookmarks.md) e [domande e risposte](bulk-create-qas.md)
     
-    Semplificare la creazione e l'aggiornamento di massa importazione, esportazione e modifica
+    Semplificare la creazione e l'aggiornamento con importazione, esportazione o modifica in blocco
 
 - [Posizioni](locations.md)
     
-    Individuazione degli indirizzi e individuare edifici dell'organizzazione, uffici e altre aree di lavoro in una mappa
+    Trovare indirizzi e individuare edifici, uffici e altre aree di lavoro dell'organizzazione su una mappa
     
 - [Gestione](set-up-microsoft-search.md)
     
-    Configurare, creare il contenuto e definire parole chiave e frasi
+    Configurare, creare contenuto e definire parole chiave e frasi per la ricerca
     
 - [Utenti e autorizzazioni](add-users.md)
     
-    L'amministratore globale o un amministratore di Microsoft Search autorizza aggiuntive agli amministratori che gestiscono configurazione Microsoft Search, editors che creano contenuto e gli utenti finali che hanno accesso a Microsoft Search
+    L'amministratore globale o l'amministratore di Microsoft Search autorizzano altri amministratori che gestiscono la configurazione di Microsoft Search, editor che creano contenuto e utenti finali che hanno accesso a Microsoft Search
     
-- [Analitica](get-insights.md) 
+- [Analisi](get-insights.md) 
     
-    Informazioni su come l'organizzazione utilizza Microsoft Search 
+    Comprendere come l'organizzazione usa Microsoft Search 
     
-## <a name="key-end-user-features-include"></a>Caratteristiche chiave dell'utente finale:
+## <a name="key-end-user-features-include"></a>Le funzionalità principali per gli utenti finali includono:
 
-- [Persone](use/find-people-and-groups.md)
+- [Utenti](use/find-people-and-groups.md)
     
-    Trovare e acquisire familiarità con il proprio ruolo all'interno dell'azienda, che stanno eseguendo e metodi per contattarli
+    Trovare utenti, conoscerne il ruolo all'interno dell'azienda e sapere su cosa stanno lavorando e come contattarli
     
 - [Organigrammi](use/find-people-and-groups.md)
     
-    Informazioni sul posto di una persona all'interno della società ed esplorare facilmente le forme di pari livello, gestione e subalterni
+    Conoscere il ruolo di un utente all'interno dell'azienda e individuarne facilmente pari grado, responsabili e subalterni
     
 - [File](use/find-files.md)
     
-    Trovare contestuali e relativi file salvati in SharePoint e OneDrive for Business
+    Trovare file contestuali e pertinenti salvati in SharePoint e OneDrive for Business
     
 - [Gruppi di Office 365](use/find-people-and-groups.md)
     
-    Trovare un gruppo tramite il relativo nome o i membri, esplorare gruppi a cui appartiene un utente e Sfoglia il contenuto condiviso
+    Trovare un gruppo in base al nome o ai membri, esplorare i gruppi a cui un utente appartiene e visualizzare il contenuto condiviso
     
 - [Risorse e strumenti](use/find-resources-tools-and-more.md)
     
-    Collegamenti a risorse interne ed esterne, strumenti e altro ancora per trovare più facilmente le informazioni che necessarie
+    Collegamenti a risorse interne ed esterne, strumenti e altro ancora per trovare facilmente le informazioni desiderate
     
 - [Siti di SharePoint](use/find-sharepoint-sites.md)
     
-    Cercare un sito in base al nome o visualizzare i risultati per un utente o gruppo
+    Cercare un sito in base al nome o visualizzare risultati per un utente o un gruppo
     
-- [I team e le conversazioni di Yammer](use/find-conversations.md)
+- [Conversazioni di Yammer e Teams](use/find-conversations.md)
     
-    Trovare i risultati contestuali e di interesse da public e le conversazioni di gruppo
+    Trovare risultati contestuali pertinenti da conversazioni pubbliche e di gruppo
 
 - [Posizioni](use/find-locations.md)
     
-    Trovare l'indirizzo ed eseguire il mapping dei risultati di edifici, uffici, campus e altro ancora
+    Trovare indirizzi e risultati sulla mappa per edifici, uffici, campus e altro ancora
     
-- Prima esecuzione
+- Esperienza alla prima esecuzione
     
-    La prima volta che un utente accede a Microsoft Search e passa alla Bing, si otterranno informazioni sull'utilizzo e i tipi di risultati di lavoro che saranno disponibili durante la ricerca
+    La prima volta che un utente accede a Microsoft Search e poi a Bing, riceverà informazioni sull'uso e sui tipi di risultati di lavoro visualizzati quando esegue una ricerca

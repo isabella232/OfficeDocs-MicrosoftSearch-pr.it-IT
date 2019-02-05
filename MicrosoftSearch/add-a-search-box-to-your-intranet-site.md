@@ -1,5 +1,5 @@
 ---
-title: Aggiungere una casella di ricerca al sito intranet
+title: Aggiungere una casella di ricerca al sito Intranet
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
-description: Ottenere suggerimenti per la ricerca pertinente e trovare più rapidamente i risultati di lavoro mediante l'aggiunta di una casella di ricerca Microsoft Search a un sito intranet o una pagina.
+description: Ottenere suggerimenti di ricerca pertinenti e trovare i risultati di lavoro più velocemente aggiungendo una casella di ricerca Microsoft Search a un sito Intranet o una pagina.
 ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612418"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a>Aggiungere una casella di ricerca al sito intranet
+# <a name="add-a-search-box-to-your-intranet-site"></a>Aggiungere una casella di ricerca al sito Intranet
 
-Per l'accesso rapido a suggerimenti per la ricerca pertinente e i risultati di lavoro, aggiungere una casella di ricerca Microsoft Search a qualsiasi sito intranet o una pagina.
+Aggiungere una casella di ricerca Microsoft Search a qualsiasi pagina o sito Intranet per accedere rapidamente a suggerimenti di ricerca e risultati di lavoro pertinenti.
   
-## <a name="add-a-search-box-to-an-intranet-page"></a>Aggiungere una casella di ricerca a una pagina intranet
+## <a name="add-a-search-box-to-an-intranet-page"></a>Aggiungere una casella di ricerca a una pagina Intranet
 
-È necessario aggiungere due elementi alla pagina: per la casella di ricerca e lo script che si un contenitore.
+È necessario aggiungere due elementi alla pagina: un contenitore per la casella di ricerca e lo script che la fa funzionare.
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -39,11 +39,11 @@ Per l'accesso rapido a suggerimenti per la ricerca pertinente e i risultati di l
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-In un sito SharePoint classico, aggiungere una Web Editor di Script Part e caduta lo script.
+In un sito di SharePoint classico, aggiungere una Web part Editor di script e inserire lo script al suo interno.
   
-## <a name="enable-the-search-box-for-mobile"></a>Selezionare la casella di ricerca per dispositivi mobili
+## <a name="enable-the-search-box-for-mobile"></a>Abilitare la casella di ricerca per i dispositivi mobili
 
-Per i siti intranet o pagine disponibili per gli utenti mobili, aggiungere isMobile: true per l'oggetto impostazioni:
+Per i siti Intranet o le pagine disponibili per gli utenti mobili, aggiungere isMobile:true all'oggetto impostazioni:
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -56,9 +56,9 @@ Per i siti intranet o pagine disponibili per gli utenti mobili, aggiungere isMob
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a>Rendere attiva la casella di ricerca per impostazione predefinita
+## <a name="put-focus-on-the-search-box-by-default"></a>Configurare lo stato attivo sulla casella di ricerca per impostazione predefinita
 
-Per consentire agli utenti di ricerca più veloce, quando i carichi di pagina o del sito posizionare il cursore nella casella di ricerca aggiungendo lo stato attivo: true per l'oggetto impostazioni:
+Per consentire agli utenti di eseguire ricerche più velocemente, durante il caricamento della pagina o del sito posizionare il cursore nella casella di ricerca aggiungendo focus:true all'oggetto impostazioni:
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -71,9 +71,9 @@ Per consentire agli utenti di ricerca più veloce, quando i carichi di pagina o 
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a>Utilizzare un iFrame per incorporare una casella di ricerca
+## <a name="use-an-iframe-to-embed-a-search-box"></a>Usare un iFrame per incorporare una casella di ricerca
 
-Se incorporare uno script, non è un'opzione per il sito, utilizzare un iFrame per aggiungere la casella di ricerca:
+Se non è possibile incorporare uno script nel sito, usare un iFrame per aggiungere la casella di ricerca:
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>

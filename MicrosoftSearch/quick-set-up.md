@@ -1,5 +1,5 @@
 ---
-title: Rapido per Microsoft Search
+title: Configurazione rapida per Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,75 +13,75 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: Informazioni sui quattro semplici passaggi necessari per abilitare e utilizzare Microsoft Search.
+description: Come abilitare e usare Microsoft Search in quattro semplici passaggi.
 ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612355"
 ---
-# <a name="quick-set-up-for-microsoft-search"></a>Rapido per Microsoft Search
+# <a name="quick-set-up-for-microsoft-search"></a>Configurazione rapida per Microsoft Search
 
-Risparmiare tempo portare il meglio del sito web ed è possibile utilizzare per l'organizzazione.
+Risparmiare tempo, portando il meglio del Web e delle informazioni di lavoro nell'organizzazione.
   
-## <a name="step-1-turn-on-microsoft-search"></a>Passaggio 1: Attivare il servizio di ricerca Microsoft
+## <a name="step-1-turn-on-microsoft-search"></a>Passaggio 1: Abilitare Microsoft Search
 
-1. Nel menu di spostamento nell'interfaccia di amministrazione di Microsoft 365, passare a **Impostazioni** \> **servizi &amp; componenti aggiuntivi**
+1. Nel menu di spostamento dell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** \> **Servizi &amp; componenti aggiuntivi**
     
-2. Fare clic sul servizio di **Ricerca di Microsoft** 
+2. Fare clic sul servizio **Microsoft Search** 
     
-3. Nel riquadro destro, attivare **Attivare Microsoft Search**
+3. Nel riquadro destro selezionare **Attivare Microsoft Search**
     
 4. Fare clic su **Salva**.
     
-5. Fare clic su **Guida introduttiva**
+5. Fare clic su **Inizia**
   
-Verrà visualizzata per il portale di amministrazione di ricerca Microsoft per completare la procedura di configurazione.
+Verrà visualizzato il portale di amministrazione di Microsoft Search, in cui completare la procedura di configurazione.
     
-## <a name="step-2-enable-connected-services"></a>Passaggio 2: Abilitare servizi connessi
+## <a name="step-2-enable-connected-services"></a>Passaggio 2: Abilitare i servizi connessi
 
-È possibile ottenere un'esperienza di ricerca organizzazione completo che curates informazioni tra diversi servizi Microsoft.
+Ottenere un'esperienza di ricerca di contenuti dell'organizzazione completa che cura informazioni provenienti da diversi servizi Microsoft.
   
-1. Accedere al [portale di amministrazione di ricerca Microsoft](https://www.bingforbusiness.com/admin)
+1. Passare al [portale di amministrazione di Microsoft Search](https://www.bingforbusiness.com/admin)
     
-2. Nel riquadro di spostamento fare clic su **servizi connessi**
+2. Nel riquadro di spostamento fare clic su **Servizi connessi**
     
-    Per informazioni sul contenuto associata a ogni servizio connesso, vedere [servizi connessi](connected-services.md).
+    Per informazioni sul contenuto associato a ogni servizio connesso, vedere [Servizi connessi](connected-services.md).
     
-3. Per ogni servizio che si desidera connettersi, fare clic **su**
+3. Per ogni servizio a cui connettersi, fare clic su **Attivato**
     
-    La ricerca utenti potrebbe richiedere fino a 48 ore da attivare.
+    L'attivazione della ricerca utenti può richiedere fino a 48 ore.
     
 ## <a name="step-3-customize-content-settings"></a>Passaggio 3: Personalizzare le impostazioni del contenuto
 
-Impostazioni relative al contenuto garantiscono un aspetto familiare per i risultati di lavoro. 
+Le impostazioni relative al contenuto assicurano un aspetto familiare per i risultati di lavoro. 
   
-1. Nel riquadro di spostamento fare clic su **impostazioni relative al contenuto**
+1. Nel riquadro di spostamento fare clic su **Impostazioni contenuto**
     
-2. Per informazioni dettagliate su ogni impostazione, vedere [le impostazioni del contenuto](content-settings.md)
+2. Per informazioni dettagliate su ogni impostazione, vedere [Impostazioni contenuto](content-settings.md)
     
-## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>Passaggio 4: Importazione di maggiore rilevanza sotto forma di segnalibri consigliati
+## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>Passaggio 4: Importare gli elementi di maggiore rilevanza come segnalibri suggeriti
 
-Se l'organizzazione dispone di elementi di maggiore rilevanza configurazione di SharePoint, è possibile importarli facilmente in Microsoft Search. Lo strumento di importazione supporta attualmente sharepoint.com e sharepoint.com/search raccolte siti. 
+Se l'organizzazione ha configurato in SharePoint gli elementi di maggiore rilevanza, è possibile importarli facilmente in Microsoft Search. Lo strumento di importazione attualmente supporta le raccolte siti di sharepoint.com e sharepoint.com/search. 
   
 1. Nel riquadro di spostamento fare clic su **Strumenti**
     
-2. Per l'importazione SharePoint promossi risultati le regole di Query come strumento segnalibri, fare clic su **Importa**
+2. Per lo strumento Importare le regole di query per i risultati promossi di SharePoint come segnalibri, fare clic su **Importa**
     
-    Durante l'importazione, viene visualizzato uno stato di programmazione. Il tempo necessario varia in base al numero di elementi di maggiore rilevanza l'importazione.
+    Durante l'importazione viene visualizzato lo stato Pianificato. Il tempo necessario varia in base al numero di elementi di maggiore rilevanza da importare.
     
-3. Per ulteriori informazioni, vedere [Strumenti di amministrazione del portale](admin-portal-tools.md)
+3. Per informazioni dettagliate, vedere [Strumenti del portale di amministrazione](admin-portal-tools.md)
     
-Dopo aver completato questa rapidità di configurazione e [aggiungere gli utenti](add-users.md), è possibile accedere ai Bing.com e la ricerca per i risultati di lavoro. 
+Dopo aver completato la configurazione rapida e [aggiunto utenti](add-users.md), questi possono accedere a Bing.com e cercare risultati di lavoro. 
   
-## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Come ottenere per il portale di amministrazione di ricerca di Microsoft?
+## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Come si accede al portale di amministrazione di Microsoft Search?
 
-Per ottenere il portale di amministrazione in qualsiasi momento:
+Per accedere al portale di amministrazione in qualsiasi momento:
   
-- Passare alla pagina [Esplora Microsoft Search](https://www.bing.com/business/explore) e fare clic su **account di accesso di amministrazione**
+- Passare alla pagina [Esplora Microsoft Search](https://www.bing.com/business/explore) e fare clic su **Accesso amministratore**
     
-- Nell'interfaccia di amministrazione di Microsoft 365 nel riquadro sinistro passare a **amministrazione allineato al centro** \> **Microsoft Search**
+- Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft 365 passare a **Interfacce di amministrazione** \> **Microsoft Search**
 
   
 

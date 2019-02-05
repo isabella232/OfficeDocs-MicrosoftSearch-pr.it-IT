@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla ricerca di Microsoft
+title: Informazioni su Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,57 +12,57 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
-description: Panoramica di tutte le informazioni sono disponibili quando si utilizza Microsoft Search
+description: Panoramica di tutte le informazioni disponibili quando si usa Microsoft Search
 ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612374"
 ---
-# <a name="about-microsoft-search"></a>Informazioni sulla ricerca di Microsoft
+# <a name="about-microsoft-search"></a>Informazioni su Microsoft Search
 
-Microsoft Search senza sforzo permette di utilizzare la ricerca ufficio e il web tra un'esperienza. Utilizzare Microsoft Search per un modo semplice, fast, potente e più sicuro per ottenere le informazioni corrette al momento giusto in qualsiasi browser e con qualsiasi dispositivo.
+Microsoft Search consente di unificare con la massima semplicità la ricerca sul Web e di informazioni di lavoro in una sola esperienza. Microsoft Search offre un modo semplice, veloce, efficace e sicuro per ottenere le informazioni giuste al momento giusto, in qualsiasi browser e su qualsiasi dispositivo.
   
-Se si esegue la ricerca di utenti, i file, organigrammi, i siti interni e risorse o risposte a domande comuni, è possibile utilizzare Microsoft Search nell'intera giornata lavorativa per ottenere risposte più veloci, aumentare la produttività e lavorare con maggiore efficienza. Per ottenere risultati di lavoro, passare a [bing.com/business](https://www.bing.com/business), accedere con l'ufficio o account scuola e ricerca. 
+Che si cerchino persone, file, organigrammi, siti e risorse interne oppure risposte alle domande frequenti, si può usare Microsoft Search nell'intera giornata lavorativa per ottenere risposte più velocemente, aumentare la produttività e lavorare in modo più efficiente. Per ottenere risultati di lavoro, passare a [bing.com/business](https://www.bing.com/business), accedere con l'account aziendale o dell'istituto di istruzione e avviare la ricerca. 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a>È possibile trovare
+## <a name="what-you-can-find"></a>Cosa si può trovare
   
-Utilizzare Microsoft Search per trovare:
+Usare Microsoft Search per trovare:
   
-- [Persone](find-people-and-groups.md)
+- [Utenti](find-people-and-groups.md)
     
-    Trovare più facilmente informazioni sui contatti, riunioni future, che è necessario contemporaneamente, dettagli grafico org, appartenenze a gruppi e altri file
+    Trovare facilmente informazioni di contatto, future riunioni congiunte, dettagli sull'organigramma, appartenenze a gruppi e altri file
     
 - [Gruppi](find-people-and-groups.md)
     
-    Trovare un gruppo tramite il relativo nome o i membri, esplorare gruppi a cui appartiene un utente e individuare il contenuto condiviso
+    Trovare un gruppo in base al nome o ai membri, esplorare i gruppi a cui un utente appartiene ed esplorare il contenuto condiviso
     
 - [Risorse e strumenti](find-resources-tools-and-more.md)
     
-    Ricercare con facilità le risorse interne, strumenti e altro ancora
+    Individuare facilmente interne, strumenti e altro ancora
     
 - [Siti di SharePoint](find-sharepoint-sites.md)
     
-    Trovare i siti di SharePoint o creati gruppi o collaboratori che si dispone dell'autorizzazione per visualizzare i siti di SharePoint
+    Trovare i propri siti di SharePoint o quelli creati da gruppi o colleghi che si è autorizzati a visualizzare
     
 - [File](find-files.md)
     
-    Trovare rapidamente file o il contenuto creato da collaboratori che si dispone dell'autorizzazione per visualizzare o modificare
+    Trovare rapidamente i propri file o il contenuto creato da colleghi che si è autorizzati a visualizzare o modificare
     
 - [Conversazioni](find-conversations.md)
     
-    Trovare un Teams Microsoft o Microsoft Yammer conversazioni o conversazioni tra colleghi che disporre dell'autorizzazione alla visualizzazione privata
+    Trovare le proprie conversazioni private di Microsoft Teams o Microsoft Yammer o le conversazioni tra colleghi che si è autorizzati a visualizzare
     
 - [Posizioni](find-locations.md)
     
-    Mapping dei risultati della ricerca degli indirizzi di edifici, uffici, campus e altro ancora, facilmente stradali e vedere What's adiacente    
+    Trovare indirizzi e risultati sulla mappa per edifici, uffici, campus e altro ancora, ottenere facilmente indicazioni stradali e vedere cosa c'è nelle vicinanze    
     
-È possibile visualizzare solo funzionamento dei risultati quando si è effettuato l'accesso a Bing con l'account di lavoro o della scuola. Questo è lo stesso account che consente di accedere a Outlook sul web, SharePoint e altre applicazioni di Office 365. 
+È possibile vedere risultati di lavoro solo quando si accede a Bing con l'account aziendale o dell'istituto di istruzione. Si tratta dello stesso account che si usa per accedere a Outlook sul web, SharePoint e altre app di Office 365. 
   
-Microsoft Search verranno restituite solo le informazioni e i file che si dispone dell'autorizzazione per visualizzare. Si potrebbe disporre dell'autorizzazione perché è stato creato il file o informazioni, è stato condiviso con l'utente o a un gruppo di dimensioni maggiore che include si o sono archiviati nella scelta tra cartelle o percorsi che si dispone dell'autorizzazione di accesso.
+Microsoft Search restituirà solo le informazioni e i file che l'utente è autorizzato a visualizzare. Può essere autorizzato perché ha creato personalmente i file o le informazioni, perché sono stati condivisi con lui o con un gruppo a cui appartiene o perché sono archiviati in cartelle o percorsi a cui è autorizzato ad accedere.
 
   
 

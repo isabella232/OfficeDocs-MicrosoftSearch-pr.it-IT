@@ -13,76 +13,76 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
-description: Creare segnalibri o utente un'estensione del browser per aggiungerli ai risultati del lavoro Microsoft Search
+description: Creare segnalibri o usare un'estensione del browser per aggiungerli ai risultati di lavoro di Microsoft Search
 ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612410"
 ---
 # <a name="create-bookmarks"></a>Creare segnalibri
 
-Segnalibri consentono agli utenti di trovare rapidamente gli strumenti, siti e le risorse importanti. Ogni segnalibro include un titolo, un URL e un insieme di parole chiave in grado di attivarla.
+I segnalibri consentono di trovare rapidamente siti, strumenti e risorse importanti. Ogni segnalibro include un titolo, un URL e un set di parole chiave che lo attivano.
   
 ## <a name="create-a-bookmark"></a>Creare un segnalibro
 
-Per informazioni sulla creazione dei titoli efficace, descrizioni, parole chiave e altro ancora, vedere [pianificazione del contenuto](plan-your-content.md).
+Per informazioni sulla creazione di titoli, descrizioni e parole chiave efficaci e altro ancora, vedere [Pianificazione del contenuto](plan-your-content.md).
   
-1. Accedere al portale di amministrazione di ricerca Microsoft
+1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **segnalibri**
+2. Nel riquadro di spostamento fare clic su **Segnalibri**
     
-3. Nella parte superiore della pagina, fare clic su **Aggiungi segnalibro**
+3. Nella parte superiore della pagina fare clic su **Aggiungi segnalibro**.
     
-    Viene visualizzata la pagina di segnalibro modifica, con un'anteprima dell'aspetto del segnalibro su Bing. Quando si aggiungono le informazioni necessarie, verrà aggiornati automaticamente l'anteprima.
+    Viene visualizzata la pagina Modifica segnalibro, con un'anteprima dell'aspetto che avrà il segnalibro in Bing. Aggiungendo le informazioni necessarie, l'anteprima verrà aggiornata automaticamente.
     
-4. Immettere un **titolo del segnalibro**
+4. Immettere un **Titolo del segnalibro**
     
-    Il titolo è il titolo viene visualizzato nel risultato. Può essere lunga fino a 60 caratteri.
+    Questo titolo è l'intestazione visualizzata nel risultato. Può essere lungo fino a 60 caratteri.
     
-5. Immettere l' **URL** della pagina, sito o il segnalibro verrà collegato al percorso 
+5. Immettere l'**URL** della pagina o sito o il percorso a cui collegherà il segnalibro 
     
 6. Immettere una **Descrizione segnalibro**
     
-    Una descrizione consente agli utenti di acquisire familiarità con il segnalibro collegamento a. Può essere lunga fino a 300 caratteri.
+    La descrizione consente agli utenti di comprendere a cosa collega il segnalibro. Può avere una lunghezza massima di 300 caratteri.
     
-7. Immettere **parole chiave** che si desidera attivare il segnalibro 
+7. Immettere **Parole chiave** per attivare il segnalibro 
     
-    Quando un utente esegue la ricerca per una qualsiasi delle parole chiave che è incluso, il segnalibro verrà inclusi nei risultati di lavoro.
+    Quando un utente cerca una delle parole chiave incluse, il segnalibro verrà incluso nei risultati di lavoro.
     
-8. Seleziona **automaticamente corrispondono a parole chiave simili** per espandere il gruppo di parole chiave 
+8. Selezionare **Associa automaticamente le parole chiave simili** per espandere il set di parole chiave 
     
-    In questo modo una più ampia corrispondenza dei termini di ricerca e consente di garantire che il segnalibro è incluso nei risultati di lavoro pertinente.
+    Questo abilita una corrispondenza più ampia dei termini di ricerca e assicura che il segnalibro venga incluso nei risultati di lavoro pertinenti.
     
-9. Immettere **parole chiave riservate**
+9. Immettere le **Parole chiave riservate**
     
-    Se una parola chiave genera più segnalibri, Microsoft Search sarà quello più popolari nella parte superiore e visualizzare gli altri argomenti correlati. Utilizzare uno o più parole riservate per garantire che un segnalibro viene sempre visualizzata come risultato superiore. Parole riservate non possono essere condivise tra i segnalibri.
+    Se una parola chiave attiva più segnalibri, Microsoft Search inserirà il più popolare per primo e visualizzerà gli altri come collegamenti correlati. Usare una o più parole riservate per assicurarsi che un segnalibro venga sempre visualizzato come primo risultato. Le parole riservate non possono essere condivise tra segnalibri.
     
 ## <a name="add-bookmark-settings"></a>Aggiungere impostazioni segnalibro
 
-Impostazioni segnalibro consentono controllo aggiuntivo quando viene visualizzato un segnalibro e che vengono visualizzati.
+Le impostazioni segnalibro offrono un maggior controllo su quando viene visualizzato un segnalibro e su chi lo vede.
   
 - Date
     
-    Impostare una data di inizio e su come data di fine facoltativo per controllare se un segnalibro verranno pubblicati o scadenza. 
+    Impostare una data di inizio e una data di fine facoltativa per controllare quando un segnalibro verrà pubblicato o quando scadrà. 
     
-- Paese
+- Paese/area geografica
     
-    Se si seleziona paesi o aree geografiche, solo gli utenti in tali percorsi vedranno il segnalibro.
+    Se si selezionano paesi o aree geografiche, solo gli utenti in quelle posizioni vedranno il segnalibro.
     
 - Gruppi
     
-    Utilizzare i gruppi di impostazione per rendere disponibile un risultato segnalibro solo ai membri di un gruppo selezionato. Ad esempio, se si sta creando i segnalibri relativi ai dipendenti del reparto risorse Umane, è possibile mappare questa impostazione al gruppo di protezione di risorse Umane appropriato.
+    Usare le impostazioni dei gruppi per rendere disponibile un risultato di segnalibro solo ai membri di un gruppo selezionato. Ad esempio, se si creano segnalibri che riguardano solo i dipendenti del reparto Risorse umane, è possibile eseguire il mapping di questa impostazione al gruppo di sicurezza delle Risorse umane pertinente.
     
-- Dispositivo &amp; sistema operativo
+- Dispositivi e sistemi operativi
     
-    Se si fa clic su tipi di dispositivi o sistemi operativi, solo gli utenti la ricerca in tali dispositivi o con i sistemi vedranno il segnalibro.
+    Se si selezionano tipi di dispositivi o sistemi operativi, solo gli utenti che usano quei dispositivi o sistemi operativi vedranno il segnalibro.
     
-- Varianti di destinazione
+- Varianti mirate
     
-    Utilizzare questa impostazione per variare il contenuto del segnalibro basato su dispositivo e il percorso dell'utente.
+    Usare questa impostazione per modificare il contenuto del segnalibro in base al dispositivo e alla posizione dell'utente.
     
-## <a name="use-a-browser-extension-to-create-content"></a>Utilizzare un'estensione del browser per creare il contenuto
+## <a name="use-a-browser-extension-to-create-content"></a>Usare un'estensione del browser per creare contenuto
 
-Dalla sezione strumenti del portale di amministrazione di scaricare e installare l'estensione del browser creatore del contenuto per i server perimetrali o Chrome. Per utilizzare l'estensione, eseguire l'accesso e passare a un sito o una pagina che si desidera aggiungere come un segnalibro. Esaminare e modificare il contenuto consigliato, incluse le parole chiave, aggiungere contenuto aggiuntivo e salvare il segnalibro.
+Scaricare e installare l'estensione del browser per autori di contenuti per Microsoft Edge o Chrome dalla sezione Strumenti del portale di amministrazione. Per usare l'estensione, accedere e passare alla pagina o al sito che si vuole aggiungere come segnalibro. Rivedere e modificare il contenuto suggerito, comprese le parole chiave, aggiungere eventuale altro contenuto e salvare il segnalibro.
