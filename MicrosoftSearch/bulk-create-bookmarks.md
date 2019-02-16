@@ -1,5 +1,5 @@
 ---
-title: Blocco creare segnalibri
+title: Creare segnalibri in blocco
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,39 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
-description: Creare una quantità elevata di segnalibri contemporaneamente con gli strumenti di importazione per il portale di amministrazione di ricerca Microsoft
-ms.openlocfilehash: e5af84daf2619e58e2cb3299de1b9d9df9966673
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Creare un numero elevato di segnalibri contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
+ms.openlocfilehash: 07694de1f546a1431f371fa24ffc5721ea66337c
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378867"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068403"
 ---
-# <a name="bulk-create-bookmarks"></a>Blocco creare segnalibri
+# <a name="bulk-create-bookmarks"></a>Creare segnalibri in blocco
 
-Scaricare e utilizzare il modello con estensione CSV da blocco creare, modificare e salvare i segnalibri. Per i segnalibri esistenti di modifica in blocco, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
+Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocco i segnalibri. Per modificare in blocco i segnalibri esistenti, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
   
-1. Nell'angolo superiore destro della sezione segnalibri, fare clic su **Importa**
+1. Nell'angolo in alto a destra della sezione Segnalibri fare clic su **Importa** .
     
-2. Fare clic su **Download del modello di segnalibri (con estensione csv)**
+2. Fare clic su **Scarica modello di segnalibri (. csv)**
     
-3. Salvare e aprire il file CSV
+3. Salvare e aprire il file. csv
     
-4. Aggiungere il segnalibro contenuto e le impostazioni e salvare il file
+4. Aggiungere il contenuto e le impostazioni dei segnalibri e salvare il file
     
-5. Nell'angolo superiore destro della sezione segnalibri, fare clic su **Importa**
+5. Nell'angolo in alto a destra della sezione Segnalibri fare clic su **Importa** .
     
-6. Nel riquadro dei segnalibri importazione, fare clic su **Sfoglia** e selezionare il file con estensione CSV da importare 
+6. Nel riquadro Importa segnalibri fare clic su **Sfoglia** e passare al file CSV che si desidera importare. 
     
 7. Fare clic su **Importa**
-    
-Verrà visualizzato un errore se i dati necessari sono mancante o non valido. A seconda dell'errore, un file di registro può essere generato con ulteriori informazioni sulle righe e colonne da correggere. Apportare eventuali modifiche necessarie e riprovare l'importazione del file.
-  
-Nota: Fino a quando non vengono risolti tutti gli errori, è Impossibile creare o modificare eventuali segnalibro.
-  
-I campi nei modelli di segnalibro importazione ed esportazione sono gli stessi. È possibile esportare, modifica in blocco e importare le modifiche o avvia un modello vuoto per blocco creare nuovi segnalibri.
-  
-Non tutti i campi obbligatori e campi obbligatori variano in base allo stato segnalibro. In base al campo dello stato, segnalibri verranno salvati come bozza suggerito, pianificate o verranno pubblicati automaticamente. Per ulteriori informazioni sui campi obbligatori e consigliati [creare segnalibri](create-bookmarks.md).
 
-  
+# <a name="prevent-import-errors"></a>Prevenire gli errori di importazione      
+Se i dati richiesti sono mancanti o non validi, verrà visualizzato un messaggio di errore. A seconda dell'errore, è possibile che venga generato un file di registro con ulteriori informazioni sulle righe e le colonne che devono essere corrette. Apportare le modifiche necessarie e provare a importare di nuovo il file.
 
+> [!NOTE]
+> Fino a quando non vengono risolti tutti gli errori, non è possibile creare o modificare i segnalibri. 
+
+Per evitare errori, verificare che il file di importazione sia formattato correttamente:
+- Include la riga di intestazione inclusa nel modello di importazione
+- Include tutte le colonne incluse nel modello di importazione
+- L'ordine di colonna è lo stesso del modello di importazione
+- Tali colonne possono essere vuote: ID, Ultima modifica e Ultima modifica da
+- La colonna dello stato non può essere vuota, queste informazioni sono obbligatorie  
+In base al campo dello stato, i segnalibri verranno salvati come bozza, suggeriti, pianificati o verranno pubblicati automaticamente.
+
+Inoltre, se si include l'ID di un segnalibro esistente, verrà sostituito con le informazioni contenute nel file di importazione.
+
+Per le organizzazioni con tenant di più, è possibile esportare i segnalibri da un tenant e importarli in un altro. È tuttavia necessario rimuovere tutti i dati nella colonna ID prima di essere importati.
+
+Per ulteriori informazioni sui campi richiesti e consigliati, vedere [creare segnalibri](create-bookmarks.md).

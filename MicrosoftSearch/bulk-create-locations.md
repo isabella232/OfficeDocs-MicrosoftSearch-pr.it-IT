@@ -1,5 +1,5 @@
 ---
-title: Blocco creare percorsi
+title: Creare posizioni in blocco
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,40 +13,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: Aggiungere una quantità elevata di posizioni contemporaneamente con gli strumenti per il portale di amministrazione di ricerca Microsoft di importazione
-ms.openlocfilehash: af91dbc4a0efdaabb2bf91672c0e665683d2a6ab
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Aggiungere un numero elevato di posizioni contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
+ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378907"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068411"
 ---
-# <a name="bulk-create-locations"></a>Blocco creare percorsi
+# <a name="bulk-create-locations"></a>Creare posizioni in blocco
 
-Scaricare e utilizzare il modello con estensione CSV da blocco creare, modificare e salvare le posizioni. Per modifica percorsi esistenti in blocco, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
+Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocco le posizioni. 
   
-1. Nell'angolo superiore destro della sezione percorsi, fare clic su **Importa**
+1. Nell'angolo in alto a destra della sezione posizioni fare clic su **Importa** .
     
-2. Fare clic su **Download del modello di posizioni (con estensione csv)**
+2. Fare clic su **download template locations (. csv)**
     
-3. Salvare e aprire il file CSV
+3. Salvare e aprire il file. csv
     
-4. Aggiungere contenuto posizione e salvare il file
+4. Aggiungere il contenuto del percorso e salvare il file
     
-5. Nell'angolo superiore destro della sezione percorsi, fare clic su **Importa**
+5. Nell'angolo in alto a destra della sezione posizioni fare clic su **Importa** .
     
-6. Nel riquadro dei percorsi importazione, fare clic su **Sfoglia** e selezionare il file con estensione CSV da importare 
+6. Nel riquadro Importa percorsi fare clic su **Sfoglia** e passare al file CSV che si desidera importare. 
     
 7. Fare clic su **Importa**
-    
-Verrà visualizzato un errore se i dati necessari sono mancante o non valido. A seconda dell'errore, un file di registro può essere generato con ulteriori informazioni sulle righe e colonne da correggere. Apportare eventuali modifiche necessarie e riprovare l'importazione del file.
+
+I campi nei modelli delle posizioni di importazione ed esportazione sono gli stessi. È possibile esportare, modificare in blocco e importare le modifiche o iniziare con un modello vuoto per creare in blocco nuove posizioni. Per modificare in blocco le posizioni esistenti, esportarle dal portale di amministrazione, apportare le modifiche necessarie e quindi importarle.
+
+# <a name="prevent-import-errors"></a>Prevenire gli errori di importazione  
+Se i dati richiesti sono mancanti o non validi, verrà visualizzato un messaggio di errore. A seconda dell'errore, è possibile che venga generato un file di registro con ulteriori informazioni sulle righe e le colonne che devono essere corrette. Apportare le modifiche necessarie e provare a importare di nuovo il file.
   
 > [!NOTE]
-> Fino a quando non vengono risolti tutti gli errori, è Impossibile creare o modificare le posizioni. 
+> Fino a quando non vengono risolti tutti gli errori, non è possibile creare o modificare posizioni. 
+
+Per evitare errori, verificare che il file di importazione sia formattato correttamente:
+- Include la riga di intestazione inclusa nel modello di importazione
+- Include tutte le colonne incluse nel modello di importazione
+- L'ordine di colonna è lo stesso del modello di importazione
+- Tali colonne possono essere vuote: ID, last modified, last modified by e Lat/Long  
+Si cercherà di determinare Lat/Long in base all'indirizzo se il campo è vuoto.
+- La colonna dello stato non può essere vuota, queste informazioni sono obbligatorie  
+In base al campo dello stato, i percorsi verranno salvati come bozza, suggeriti, pianificati o verranno pubblicati automaticamente.
+
+Inoltre, se si include l'ID di un percorso esistente, verrà sostituito con le informazioni contenute nel file di importazione.
+
+Per le organizzazioni con tenant di più, è possibile esportare i percorsi da un tenant e importarli in un altro. È tuttavia necessario rimuovere tutti i dati nella colonna ID prima di essere importati.
   
-I campi nei modelli di percorsi di importazione ed esportazione sono gli stessi. È possibile esportare, modifica in blocco e importare le modifiche o avvia un modello vuoto per blocco creare nuovi percorsi.
-  
-Non tutti i campi obbligatori e campi obbligatori variano a seconda dello stato di posizione. In base al campo dello stato, percorsi verranno salvati come bozza suggerito, pianificate o verranno pubblicati automaticamente. Per ulteriori informazioni sui campi obbligatori e consigliati, vedere [Manage percorsi](manage-locations.md).
+Per ulteriori informazioni sui campi richiesti e consigliati, vedere [aggiungere un percorso](add-a-location.md).
 
   
 
