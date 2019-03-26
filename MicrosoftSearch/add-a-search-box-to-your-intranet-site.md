@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 description: Ottenere suggerimenti di ricerca pertinenti e trovare i risultati di lavoro più velocemente aggiungendo una casella di ricerca Microsoft Search a un sito Intranet o una pagina.
-ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: a66c0cea71cf637209d298f49542864755e92ec9
+ms.sourcegitcommit: c18809f57f957de958a87e940dc3904061fe0bd0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612418"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789314"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="16ab9-103">Aggiungere una casella di ricerca al sito Intranet</span><span class="sxs-lookup"><span data-stu-id="16ab9-103">Add a search box to your intranet site</span></span>
+# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="00f1c-103">Aggiungere una casella di ricerca al sito Intranet</span><span class="sxs-lookup"><span data-stu-id="00f1c-103">Add a search box to your intranet site</span></span>
 
-<span data-ttu-id="16ab9-104">Aggiungere una casella di ricerca Microsoft Search a qualsiasi pagina o sito Intranet per accedere rapidamente a suggerimenti di ricerca e risultati di lavoro pertinenti.</span><span class="sxs-lookup"><span data-stu-id="16ab9-104">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
+<span data-ttu-id="00f1c-104">Aggiungere una casella di ricerca Microsoft Search a qualsiasi pagina o sito Intranet per accedere rapidamente a suggerimenti di ricerca e risultati di lavoro pertinenti.</span><span class="sxs-lookup"><span data-stu-id="00f1c-104">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
   
-## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="16ab9-105">Aggiungere una casella di ricerca a una pagina Intranet</span><span class="sxs-lookup"><span data-stu-id="16ab9-105">Add a search box to your intranet site</span></span>
+## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="00f1c-105">Aggiungere una casella di ricerca a una pagina Intranet</span><span class="sxs-lookup"><span data-stu-id="00f1c-105">Add a search box to an intranet page</span></span>
 
-<span data-ttu-id="16ab9-106">È necessario aggiungere due elementi alla pagina: un contenitore per la casella di ricerca e lo script che la fa funzionare.</span><span class="sxs-lookup"><span data-stu-id="16ab9-106">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
+<span data-ttu-id="00f1c-106">È necessario aggiungere due elementi alla pagina: un contenitore per la casella di ricerca e lo script che la fa funzionare.</span><span class="sxs-lookup"><span data-stu-id="00f1c-106">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -39,11 +39,11 @@ ms.locfileid: "29612418"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-<span data-ttu-id="16ab9-107">In un sito di SharePoint classico, aggiungere una Web part Editor di script e inserire lo script al suo interno.</span><span class="sxs-lookup"><span data-stu-id="16ab9-107">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
+<span data-ttu-id="00f1c-107">In un sito di SharePoint classico, aggiungere una Web part Editor di script e inserire lo script al suo interno.</span><span class="sxs-lookup"><span data-stu-id="00f1c-107">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
   
-## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="16ab9-108">Abilitare la casella di ricerca per i dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="16ab9-108">Enable the search box for mobile</span></span>
+## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="00f1c-108">Abilitare la casella di ricerca per i dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="00f1c-108">Enable the search box for mobile</span></span>
 
-<span data-ttu-id="16ab9-109">Per i siti Intranet o le pagine disponibili per gli utenti mobili, aggiungere isMobile:true all'oggetto impostazioni:</span><span class="sxs-lookup"><span data-stu-id="16ab9-109">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
+<span data-ttu-id="00f1c-109">Per i siti Intranet o le pagine disponibili per gli utenti mobili, aggiungere isMobile:true all'oggetto impostazioni:</span><span class="sxs-lookup"><span data-stu-id="00f1c-109">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -56,9 +56,9 @@ ms.locfileid: "29612418"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="16ab9-110">Configurare lo stato attivo sulla casella di ricerca per impostazione predefinita</span><span class="sxs-lookup"><span data-stu-id="16ab9-110">Put focus on the search box by default</span></span>
+## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="00f1c-110">Configurare lo stato attivo sulla casella di ricerca per impostazione predefinita</span><span class="sxs-lookup"><span data-stu-id="00f1c-110">Put focus on the search box by default</span></span>
 
-<span data-ttu-id="16ab9-111">Per consentire agli utenti di eseguire ricerche più velocemente, durante il caricamento della pagina o del sito posizionare il cursore nella casella di ricerca aggiungendo focus:true all'oggetto impostazioni:</span><span class="sxs-lookup"><span data-stu-id="16ab9-111">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
+<span data-ttu-id="00f1c-111">Per consentire agli utenti di eseguire ricerche più velocemente, durante il caricamento della pagina o del sito posizionare il cursore nella casella di ricerca aggiungendo focus:true all'oggetto impostazioni:</span><span class="sxs-lookup"><span data-stu-id="00f1c-111">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -71,9 +71,32 @@ ms.locfileid: "29612418"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="16ab9-112">Usare un iFrame per incorporare una casella di ricerca</span><span class="sxs-lookup"><span data-stu-id="16ab9-112">Use an iFrame to embed a search box</span></span>
+## <a name="customize-the-appearance-of-the-search-box"></a><span data-ttu-id="00f1c-112">Personalizzare l'aspetto della casella di ricerca</span><span class="sxs-lookup"><span data-stu-id="00f1c-112">Customize the appearance of the search box</span></span> 
 
-<span data-ttu-id="16ab9-113">Se non è possibile incorporare uno script nel sito, usare un iFrame per aggiungere la casella di ricerca:</span><span class="sxs-lookup"><span data-stu-id="16ab9-113">If embedding a script isn't an option for the site, use an iFrame to add the search box:</span></span>
+<span data-ttu-id="00f1c-113">Sono disponibili numerose opzioni di configurazione per adattare meglio la casella di ricerca allo stile della Intranet.</span><span class="sxs-lookup"><span data-stu-id="00f1c-113">To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use.</span></span> <span data-ttu-id="00f1c-114">Combinare le opzioni in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="00f1c-114">Mix and match options to suit your needs.</span></span>
+
+```html
+<div id="bfb_searchbox"></div>
+<script>
+    var bfbSearchBoxConfig = {
+        containerSelector: "bfb_searchbox",
+        width: 560,                             // default: 560, min: 360, max: 650
+        height: 40,                             // default: 40, min: 40, max: 72
+        cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
+        strokeOutline: true,                    // default: true
+        dropShadow: true,                       // default: true
+        iconColor: "#067FA6",                   // default: #067FA6
+        companyNameInGhostText: "Contoso"       // default: not specified
+                                                // when absent, ghost text will be "Search work and the web"
+                                                // when specified, text will be "Search the web and [Contoso]"
+    };
+</script>
+<script async src="https://www.bing.com/business/s?k=sb"></script>
+```
+
+## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="00f1c-115">Usare un iFrame per incorporare una casella di ricerca</span><span class="sxs-lookup"><span data-stu-id="00f1c-115">Use an iFrame to embed a search box</span></span>
+
+<span data-ttu-id="00f1c-116">Se non è possibile incorporare uno script nel sito, usare un iFrame per aggiungere la casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="00f1c-116">If embedding a script isn't an option for the site, use an iFrame to add the search box:</span></span> <span data-ttu-id="00f1c-117">Non sarà però possibile personalizzare l'aspetto della casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="00f1c-117">You won't be able to customize the appearance of the search box.</span></span>
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
