@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search è un'esperienza di ricerca dell'organizzazione che comporta un aumento della produttività e di risparmiare tempo recapitando i risultati di ricerca più pertinenti per l'organizzazione
-ms.openlocfilehash: 9ef8153979a31bbcb2ed6014055e99dc8dbc793a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Microsoft Search è un'esperienza di ricerca aziendale che aumenta la produttività e consente di risparmiare tempo fornendo risultati di ricerca più rilevanti per la propria organizzazione.
+ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378883"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746399"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,8 +45,8 @@ ms.locfileid: "29378883"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Perché Microsoft ricerca</h2>
-                        <p>Ottenere un'esperienza di ricerca dell'organizzazione che comporta un aumento della produttività e di risparmiare tempo recapitando i risultati di ricerca più pertinenti per l'organizzazione</p>
+                        <h2>Perché scegliere Microsoft Search</h2>
+                        <p>Ottenere un'esperienza di ricerca aziendale che aumenti la produttività e risparmi tempo fornendo risultati di ricerca più rilevanti per la propria organizzazione</p>
                         <p><a href="why-microsoft-search.md">Ecco come fare</a></p>
                     </div>
                 </div>
@@ -69,8 +69,8 @@ ms.locfileid: "29378883"
                     </div>
                     <div class="cardText">
                         <h3>Caratteristiche principali</h3>
-                        <p>Vedere le funzionalità disponibili per gli amministratori e utenti, inclusi il contento quando esegue la ricerca</p>
-                        <p><a href="features.md">Per saperne di più</a></p>
+                        <p>Vedere quali funzionalità sono disponibili per gli amministratori e gli utenti, tra cui quello che troverete quando si esegue una ricerca</p>
+                        <p><a href="features.md">Ulteriori informazioni</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "29378883"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Impostare veloce di amministrazione</h3>
-                        <p>Informazioni su come attivare Microsoft Search e configurarla per l'organizzazione in quattro passaggi semplice</p>
-                        <p><a href="quick-set-up.md">Iniziare:</a></p>
+                        <h3>Configurazione rapida per l'amministratore</h3>
+                        <p>Informazioni su come abilitare Microsoft Search e configurarlo per l'organizzazione in quattro semplici passaggi</p>
+                        <p><a href="quick-set-up.md">Inizia subito</a></p>
                     </div>
                 </div>
             </div>
@@ -105,8 +105,8 @@ ms.locfileid: "29378883"
                     </div>
                     <div class="cardText">
                         <h3>Domande frequenti</h3>
-                        <p>Risposte ad alcune domande frequenti su Microsoft Search</p>
-                        <p><a href="faqs.md">Esplorare le domande frequenti</a></p>
+                        <p>Ottenere le risposte alle domande più frequenti su Microsoft Search</p>
+                        <p><a href="faqs.md">Consultare le domande frequenti</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29378883"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utilizzare la ricerca di Microsoft</h2>
-                        <p>Microsoft Search è un modo semplice, rapido e sicuro per informazioni, aumentare la produttività e lavorare con maggiore efficienza</p>
+                        <h2>Utilizzo di Microsoft Search</h2>
+                        <p>Microsoft Search è un metodo semplice, rapido e sicuro per trovare informazioni, essere più produttivo e lavorare in modo più efficiente</p>
                         <p><a href="use/about-microsoft-search.md">Ecco come fare</a></p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ ms.locfileid: "29378883"
                     <div class="cardText">
                         <p><a href="security.md">Sicurezza</a></p>
                         <p><a href="requirements.md">Requisiti</a></p>  
-                        <p><a href="about-the-admin-portal.md">Relativi al portale di amministrazione</a></p>
+                        <p><a href="about-the-admin-portal.md">Informazioni sul portale di amministrazione</a></p>
                     </div>
                 </div>
             </div>
@@ -165,9 +165,9 @@ ms.locfileid: "29378883"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">Impostare rapido</a></p>
+                        <p><a href="quick-set-up.md">Configurazione rapida</a></p>
                         <p><a href="connected-services.md">Servizi connessi</a></p>
-                        <p><a href="set-up-microsoft-search.md">Configurazione di Microsoft Search</a></p>
+                        <p><a href="set-up-microsoft-search.md">Configurare Microsoft Search</a></p>
                     </div>
                 </div>
             </div>
@@ -179,8 +179,8 @@ ms.locfileid: "29378883"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">Creare segnalibri</a></p>
-                        <p><a href="create-qas.md">Creare Q&As</a></p>
-                        <p><a href="add-users.md">Aggiungere utenti</a></p>
+                        <p><a href="create-qas.md">Creare domande e risposte</a></p>
+                        <p><a href="add-users.md">Gestire gli utenti</a></p>
                     </div>
                 </div>
             </div>
