@@ -14,28 +14,28 @@ search.appverid:
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Tutte le informazioni necessarie per distribuire Microsoft Search nell'organizzazione
-ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612402"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746351"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
-Come parte di Office 365, Microsoft Search si distribuisce facilmente abilitandolo dall'interfaccia di amministrazione di Microsoft 365. Una volta abilitato, basta seguire una procedura di configurazione rapida per impostare un logo, un nome, un colore e per consentire l'accesso agli utenti. Fatto questo, gli utenti autorizzati potranno accedere a Bing con un account aziendale o dell'istituto di istruzione e ottenere risultati di lavoro quando eseguono una ricerca.
+Nell'ambito di Office 365, Microsoft Search può essere distribuito facilmente abilitandolo nell'interfaccia di amministrazione di Microsoft 365. Una volta abilitato, basta seguire una rapida procedura di configurazione per impostare un logo, un nome, un colore e per consentire l'accesso agli amministratori ed editor. Successivamente, gli utenti possono accedere a Bing con l'account aziendale o dell'istituto di istruzione e ottenere i risultati di lavoro quando eseguono una ricerca.
 
 - [Configurazione rapida](quick-set-up.md)
     
-    Quattro passaggi da completare per abilitare facilmente Microsoft Search
+    Completare quattro passaggi per abilitare facilmente Microsoft Search
 
-- [Impostazioni del contenuto](content-settings.md)
+- [Impostazioni relative al contenuto](content-settings.md)
     
     Controllare l'aspetto dei risultati di Microsoft Search
     
-- [Aggiunta di utenti](add-users.md)
+- [Gestione degli utenti](add-users.md)
     
-    Gestire l'accesso al portale per gli amministratori e gli editor e fornire o limitare l'accesso a Microsoft Search all'interno dell'organizzazione
+    Gestire l'accesso al portale per amministratori ed editor
     
 - [Strumenti del portale di amministrazione](admin-portal-tools.md)
     

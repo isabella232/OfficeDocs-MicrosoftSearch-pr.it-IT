@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: Panoramica degli strumenti di Microsoft Search per creare e importare risultati, accedere automaticamente e cercare ovunque
-ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612378"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746391"
 ---
 # <a name="admin-portal-tools"></a>Strumenti del portale di amministrazione
 
@@ -31,11 +31,11 @@ Il portale di amministrazione di Microsoft Search include strumenti e risorse pr
     
 - Microsoft Search nell'estensione di ricerca Bing
     
-    Usare l'estensione per Microsoft Edge o Chrome, disponibile per gli utenti autorizzati, per accedere rapidamente alla ricerca di contenuti dell'organizzazione di Microsoft Search senza chiudere la pagina o il sito in cui ci si trova.
+    Usare l'estensione per Microsoft Edge o Chrome per accedere rapidamente alla ricerca di contenuti dell'organizzazione di Microsoft Search senza chiudere la pagina o il sito in cui ci si trova.
     
 - Estensione di accesso di Windows 10 e AAD per Chrome
     
-    Usare l'estensione per Chrome, disponibile per gli utenti autorizzati, per eseguire facilmente l'autenticazione con Azure Active Directory quando si accede ai siti supportati, tra cui Office 365 e Bing. È consigliabile distribuire l'estensione per [testare l'accesso Single Sign-On](test-single-sign-on.md).
+    Usare l'estensione di Chrome per eseguire facilmente l'autenticazione con Azure Active Directory quando si accede ai siti supportati, tra cui Office 365 e Bing. È consigliabile distribuire questa estensione quando si [testa l'accesso Single Sign-On](test-single-sign-on.md).
     
 - Importare le query principali di SharePoint come segnalibri
     

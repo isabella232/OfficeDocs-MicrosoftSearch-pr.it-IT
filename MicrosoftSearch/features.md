@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: Le principali funzionalità di Microsoft Search per amministratori e utenti finali includono segnalibri, domande e risposte, gestione e informazioni dettagliate sui dati
-ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612430"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746375"
 ---
 # <a name="features-of-microsoft-search"></a>Funzionalità di Microsoft Search
 
@@ -37,7 +37,7 @@ ms.locfileid: "29612430"
     
     Semplificare la creazione e l'aggiornamento con importazione, esportazione o modifica in blocco
 
-- [Posizioni](locations.md)
+- [Sedi](locations.md)
     
     Trovare indirizzi e individuare edifici, uffici e altre aree di lavoro dell'organizzazione su una mappa
     
@@ -47,21 +47,21 @@ ms.locfileid: "29612430"
     
 - [Utenti e autorizzazioni](add-users.md)
     
-    L'amministratore globale o l'amministratore di Microsoft Search autorizzano altri amministratori che gestiscono la configurazione di Microsoft Search, editor che creano contenuto e utenti finali che hanno accesso a Microsoft Search
+    L'amministratore globale o l'amministratore di Microsoft Search autorizzano altri amministratori che gestiscono la configurazione di Microsoft Search ed editor che creano contenuto
     
-- [Analisi](get-insights.md) 
+- [Analisi ](get-insights.md) 
     
     Comprendere come l'organizzazione usa Microsoft Search 
     
 ## <a name="key-end-user-features-include"></a>Le funzionalità principali per gli utenti finali includono:
 
-- [Utenti](use/find-people-and-groups.md)
+- [Persone](use/find-people-and-groups.md)
     
     Trovare utenti, conoscerne il ruolo all'interno dell'azienda e sapere su cosa stanno lavorando e come contattarli
     
 - [Organigrammi](use/find-people-and-groups.md)
     
-    Conoscere il ruolo di un utente all'interno dell'azienda e individuarne facilmente pari grado, responsabili e subalterni
+    Conoscere il ruolo di un utente all'interno dell'azienda e individuarne facilmente i colleghi, direttori e dipendenti diretti
     
 - [File](use/find-files.md)
     
@@ -69,11 +69,11 @@ ms.locfileid: "29612430"
     
 - [Gruppi di Office 365](use/find-people-and-groups.md)
     
-    Trovare un gruppo in base al nome o ai membri, esplorare i gruppi a cui un utente appartiene e visualizzare il contenuto condiviso
+    Trovare un gruppo in base al nome o ai membri, esplorare i gruppi cui appartiene un utente e visualizzare il contenuto condiviso
     
 - [Risorse e strumenti](use/find-resources-tools-and-more.md)
     
-    Collegamenti a risorse interne ed esterne, strumenti e altro ancora per trovare facilmente le informazioni desiderate
+    Ottenere collegamenti a risorse interne ed esterne, strumenti e altro ancora per trovare facilmente le informazioni necessarie
     
 - [Siti di SharePoint](use/find-sharepoint-sites.md)
     
@@ -83,7 +83,7 @@ ms.locfileid: "29612430"
     
     Trovare risultati contestuali pertinenti da conversazioni pubbliche e di gruppo
 
-- [Posizioni](use/find-locations.md)
+- [Sedi](use/find-locations.md)
     
     Trovare indirizzi e risultati sulla mappa per edifici, uffici, campus e altro ancora
     
