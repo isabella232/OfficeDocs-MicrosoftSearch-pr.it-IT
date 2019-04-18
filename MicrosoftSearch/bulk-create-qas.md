@@ -1,5 +1,5 @@
 ---
-title: Creazione in blocco di Q&As
+title: Creare in blocco domande e risposte
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 description: Aggiungere rapidamente le risposte alle domande frequenti con gli strumenti di importazione nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 53f1d167948f6b621ad139620553df51b0cb91c2
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068395"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901817"
 ---
-# <a name="bulk-create-qas"></a>Creazione in blocco di Q&As
+# <a name="bulk-create-qas"></a>Creare in blocco domande e risposte
 
 Scaricare e utilizzare il modello. csv per creare o modificare in blocco la massa di Q&As. È anche un modo semplice per salvare in blocco Draft Q&As che richiedono ulteriori modifiche o aggiornamenti. Se è necessario modificare in blocco i Q&As esistenti, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
   
@@ -32,6 +32,8 @@ Scaricare e utilizzare il modello. csv per creare o modificare in blocco la mass
 3. Salvare e aprire il file. csv
     
 4. Aggiungere il contenuto e le impostazioni di Q&A e salvare il file
+
+    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
     
 5. Nell'angolo in alto a destra della sezione Q&As, fare clic su **Importa**
     

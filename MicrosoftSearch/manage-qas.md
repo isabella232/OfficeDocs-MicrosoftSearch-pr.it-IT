@@ -1,5 +1,5 @@
 ---
-title: Gestire Q&As
+title: Gestire le domande e risposte
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,53 +13,53 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Trovare e aggiornare singolarmente risposte o utilizzare gli strumenti di Microsoft Search disponibili per la modifica con un'unica operazione
-ms.openlocfilehash: c0f6b42aa1e0ad8c4736d37ec4dcc8cff6025dbc
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Trovare e aggiornare le risposte singolarmente o utilizzare gli strumenti di ricerca di Microsoft disponibili per modificarli contemporaneamente
+ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378905"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901833"
 ---
-# <a name="manage-qas"></a>Gestire Q&As
+# <a name="manage-qas"></a>Gestire le domande e risposte
 
-Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e del contenuto per mantenere pertinenti un Q&A.
+Nel tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di Q&A's in modo da renderlo pertinente.
   
 ## <a name="filter-qas"></a>Filtro Q&As
 
-Utilizzare l'opzione di filtro nell'angolo superiore destro della pagina Q&As per trovare Q&As per data e che ha modificato. Ad esempio, impostare il dispositivo di scorrimento data 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco di Q&As è stato creato o modificato in quel momento.
+Utilizzare l'opzione filtro nell'angolo in alto a destra della pagina Q&As per trovare Q&As per data e gli utenti che li hanno modificati. Ad esempio, impostare il dispositivo di scorrimento data su 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco di Q&As che sono stati creati o modificati in quel momento.
   
-## <a name="change-qa-content-or-settings"></a>Modificare le impostazioni o Q&A contenuto
+## <a name="change-qa-content-or-settings"></a>Modificare il contenuto o le impostazioni di Q&A
 
-1. Accedere al portale di amministrazione di ricerca Microsoft
+1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **Q&As**
+2. Nel riquadro di spostamento fare clic su **Domande e risposte**
     
-3. Per trovare un Q&A, di ricerca e filtro oppure fare clic su uno stato Q&A per restringere i risultati
+3. Per trovare un Q&A, ricercare, filtrare o fare clic su uno stato di Q&A per limitare i risultati
     
 4. Per modificare o aggiornare un Q&A, fare clic sul titolo
     
-5. Apportare le modifiche o aggiornamenti del contenuto o le impostazioni e anteprima come verranno visualizzate
+5. Apportare le modifiche o gli aggiornamenti al contenuto o alle impostazioni e visualizzare in anteprima la modalità di visualizzazione
     
 6. Fare clic su **Salva**.
     
-## <a name="bulk-export-and-edit-qas"></a>Esportazione in blocco e la modifica Q&As
+## <a name="bulk-export-and-edit-qas"></a>Esportazione e modifica in blocco di Q&As
 
-Non modificare i dati in tali campi:
+Non modificare mai i dati in questi campi:
   
-- Id
+- ID
     
 - Ultima modifica
     
-- Autore ultima modificata
+- Ultima modifica di
     
-ID è un identificatore univoco per ogni Q&A e non deve mai essere modificati. I campi Data ultima modifica e Autore ultima modifica devono essere utilizzati solo di ordinare e cercare Q&As.
+ID è un identificatore univoco per ogni Q&A e non deve mai essere modificato. Gli ultimi campi modificati e modificati per l'ultima volta devono essere utilizzati solo per ordinare e trovare Q&As.
   
-1. Se si desidera esportare un sottoinsieme del Q&As, filtrarli
+1. Se si desidera esportare un sottoinsieme di Q&As, filtrarli
     
-2. Nell'angolo superiore destro della pagina Q&As, fare clic su **Esporta**
+2. Nell'angolo in alto a destra della pagina Q&As fare clic su **Esporta**
     
-3. Salva o si apre il file CSV
+3. Salvare o aprire il file. csv
     
 4. Modificare i dati in uno di questi campi:
     
@@ -71,7 +71,7 @@ ID è un identificatore univoco per ogni Q&A e non deve mai essere modificati. I
     
    - Stato
     
-   - Descrizione di risposta
+   - Descrizione della risposta
     
    - Parole chiave riservate
     
@@ -79,28 +79,30 @@ ID è un identificatore univoco per ogni Q&A e non deve mai essere modificati. I
     
    - Data di fine
     
-   - Paese
+   - Paese/area geoGrafica
     
    - Gruppi
     
-   - Dispositivo&amp;sistema operativo
+   - Sistema&amp;operativo del dispositivo
     
-   - Varianti di destinazione
+   - Varianti mirate
     
-5. Salvare il file CSV
+5. Salvare il file. csv
+
+    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
     
-6. Nell'angolo superiore destro della pagina Q&As fare clic su **Importa**
+6. Nell'angolo in alto a destra della pagina Q&As fare clic su **Importa** .
     
-7. Nel riquadro Q&As importazione fare clic su **Sfoglia** e selezionare il file CSV modificate 
+7. Nel riquadro Importa Q&As, fare clic su **Sfoglia** e selezionare il file CSV modificato 
     
 8. Fare clic su **Importa**
     
-Verrà visualizzato un errore se i dati necessari sono mancante o non valido. A seconda dell'errore, un file di registro può essere generato con ulteriori informazioni sulle righe e colonne da correggere. Apportare eventuali modifiche necessarie e riprovare l'importazione del file.
+Se i dati richiesti sono mancanti o non validi, verrà visualizzato un messaggio di errore. A seconda dell'errore, è possibile che venga generato un file di registro con ulteriori informazioni sulle righe e le colonne che devono essere corrette. Apportare le modifiche necessarie e provare a importare di nuovo il file.
   
 > [!NOTE]
-> Fino a quando non vengono risolti tutti gli errori, è Impossibile creare o modificare qualsiasi Q&As. 
+> Fino a quando non vengono risolti tutti gli errori, non è possibile creare o modificare Q&As. 
   
-Non tutti i campi obbligatori e campi obbligatori variano in base allo stato Q&A. In base al campo dello stato, Q&As verrà salvato come bozza suggerito, pianificate o verranno pubblicati automaticamente. Per ulteriori informazioni sui campi obbligatori e consigliati [creare Q&As](create-qas.md).
+Non tutti i campi sono obbligatori e i campi obbligatori variano a seconda dello stato Q&A. In base al campo dello stato, Q&As verrà salvato come bozza, suggerito, pianificato o verrà pubblicato automaticamente. Per ulteriori informazioni sui campi richiesti e consigliati, vedere [create Q&As](create-qas.md).
 
   
 

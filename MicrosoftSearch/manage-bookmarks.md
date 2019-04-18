@@ -13,53 +13,53 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Trovare i segnalibri che devono essere aggiornati e modalità di blocco di risultati segnalibro modifica per Microsoft Search
-ms.openlocfilehash: c0688373a22005d4919614c1ffc2958c9b8b2e3f
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Individuare i segnalibri che devono essere aggiornati e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
+ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378899"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901801"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
-Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e del contenuto per mantenere pertinenti un segnalibro. 
+Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di un segnalibro per renderlo pertinente. 
   
-## <a name="filter-bookmarks"></a>Filtrare i segnalibri
+## <a name="filter-bookmarks"></a>Segnalibri del filtro
 
-Utilizzare l'opzione di filtro nell'angolo superiore destro della pagina di segnalibri per trovare i segnalibri per data e che ha modificato. Ad esempio, impostare il dispositivo di scorrimento data 30 giorni e selezionare un amministratore o un editor di visualizzare l'elenco dei segnalibri vengono creati o modificati in quel momento.
+Utilizzare l'opzione filtro nell'angolo in alto a destra della pagina segnalibri per individuare i segnalibri per data e gli utenti che li hanno modificati. Ad esempio, impostare il dispositivo di scorrimento data su 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco dei segnalibri creati o modificati in quel momento.
   
-## <a name="change-bookmark-content-or-settings"></a>Modifica segnalibro contenuto o le impostazioni
+## <a name="change-bookmark-content-or-settings"></a>Modificare il contenuto o le impostazioni del segnalibro
 
-1. Accedere al portale di amministrazione di ricerca Microsoft
+1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **segnalibri**
+2. Nel riquadro di spostamento fare clic su **Segnalibri**
     
-3. Per trovare un segnalibro, di ricerca e filtro oppure fare clic su uno stato segnalibro per restringere i risultati
+3. Per trovare un segnalibro, ricercare, filtrare o fare clic su uno stato del segnalibro per limitare i risultati
     
 4. Per modificare o aggiornare un segnalibro, fare clic sul titolo
     
-5. Apportare le modifiche o aggiornamenti del contenuto o le impostazioni e anteprima come verranno visualizzate 
+5. Apportare le modifiche o gli aggiornamenti al contenuto o alle impostazioni e visualizzare in anteprima la modalità di visualizzazione 
     
 6. Fare clic su **Salva**.
     
-## <a name="bulk-export-and-edit-bookmarks"></a>Esportazione in massa e modificare i segnalibri
+## <a name="bulk-export-and-edit-bookmarks"></a>Esportazione e modifica in blocco di segnalibri
 
-Non modificare i dati in tali campi:
+Non modificare mai i dati in questi campi:
   
-- Id
+- ID
     
 - Ultima modifica
     
-- Autore ultima modificata
+- Ultima modifica di
     
-ID è un identificatore univoco per ogni segnalibro e non deve mai essere modificati. I campi Data ultima modifica e Autore ultima modifica devono essere utilizzati solo di ordinare e cercare i segnalibri.
+ID è un identificatore univoco per ogni segnalibro e non deve mai essere modificato. Gli ultimi campi modificati e modificati in base all'Ultima modifica devono essere utilizzati solo per ordinare e trovare i segnalibri.
   
 1. Se si desidera esportare un sottoinsieme di segnalibri, filtrarli
     
-2. Nell'angolo superiore destro della pagina di segnalibri, fare clic su **Esporta**
+2. Nell'angolo in alto a destra della pagina dei segnalibri fare clic su **Esporta** .
     
-3. Salva o si apre il file CSV
+3. Salvare o aprire il file. csv
     
 4. Modificare i dati in uno di questi campi:
    - Titolo
@@ -78,18 +78,20 @@ ID è un identificatore univoco per ogni segnalibro e non deve mai essere modifi
     
    - Data di fine
     
-   - Paese
+   - Paese/area geoGrafica
     
    - Gruppi
     
-   - Dispositivo&amp;sistema operativo
+   - Sistema&amp;operativo del dispositivo
     
-   - Varianti di destinazione
+   - Varianti mirate
     
-5. Salvare il file CSV
+5. Salvare il file. csv
+
+    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
     
-6. Nell'angolo superiore destro della pagina di segnalibri, fare clic su **Importa**
+6. Nell'angolo in alto a destra della pagina segnalibri fare clic su **Importa** .
     
-7. Nel riquadro dei segnalibri importazione, fare clic su **Sfoglia** e selezionare il file CSV modificate 
+7. Nel riquadro Importa segnalibri fare clic su **Sfoglia** e selezionare il file CSV modificato 
     
 8. Fare clic su **Importa**

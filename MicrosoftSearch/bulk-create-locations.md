@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
 description: Aggiungere un numero elevato di posizioni contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
-ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068411"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901809"
 ---
 # <a name="bulk-create-locations"></a>Creare posizioni in blocco
 
@@ -32,6 +32,8 @@ Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocc
 3. Salvare e aprire il file. csv
     
 4. Aggiungere il contenuto del percorso e salvare il file
+
+    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
     
 5. Nell'angolo in alto a destra della sezione posizioni fare clic su **Importa** .
     

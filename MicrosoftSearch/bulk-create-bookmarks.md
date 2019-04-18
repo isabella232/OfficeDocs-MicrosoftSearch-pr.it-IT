@@ -1,5 +1,5 @@
 ---
-title: Creare segnalibri in blocco
+title: Creare in blocco i segnalibri
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: Creare un numero elevato di segnalibri contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 07694de1f546a1431f371fa24ffc5721ea66337c
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068403"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901793"
 ---
-# <a name="bulk-create-bookmarks"></a>Creare segnalibri in blocco
+# <a name="bulk-create-bookmarks"></a>Creare in blocco i segnalibri
 
 Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocco i segnalibri. Per modificare in blocco i segnalibri esistenti, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
   
@@ -32,6 +32,8 @@ Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocc
 3. Salvare e aprire il file. csv
     
 4. Aggiungere il contenuto e le impostazioni dei segnalibri e salvare il file
+
+    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
     
 5. Nell'angolo in alto a destra della sezione Segnalibri fare clic su **Importa** .
     
