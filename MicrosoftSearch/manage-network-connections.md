@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
 description: Aggiungere questi URL e domini all'elenco di indirizzi consentiti del firewall per consentire agli utenti di accedere facilmente a Microsoft Search
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612546"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508738"
 ---
 # <a name="manage-network-connections"></a>Gestire le connessioni di rete
 

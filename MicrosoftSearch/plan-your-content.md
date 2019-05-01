@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Fornire contenuti di qualità senza la necessità di risorse aggiuntive quando si usa Microsoft Search
 ms.openlocfilehash: 898ba99ebf4751c47da96b23d6cb9bac058f6ffd
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612482"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508602"
 ---
 # <a name="plan-your-content"></a>Pianificare i contenuti
 

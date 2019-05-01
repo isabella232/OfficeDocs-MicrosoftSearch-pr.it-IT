@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
 description: Informazioni su come personalizzare i risultati di lavoro visualizzati quando si usa Microsoft Search.
 ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612434"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508710"
 ---
 # <a name="connected-services"></a>Servizi connessi
 
