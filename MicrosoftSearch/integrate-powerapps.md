@@ -13,49 +13,49 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Includere applicazioni basate su browser nei risultati di segnalibri per Microsoft Search
+description: Includere le app basate su browser nei risultati dei segnalibri per Microsoft Search
 ms.openlocfilehash: d8d9d099848e719c86e0f3cadee330263566d243
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378893"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508826"
 ---
 # <a name="integrate-powerapps"></a>Integrare PowerApps
 
-Consentono agli utenti di completare le attività, ad esempio immettere il tempo di richieste ferie/permessi o report spese integrando PowerApps esistente nei segnalibri. PowerApps integrata vengono visualizzati all'interno di un risultato segnalibro, eliminando la necessità di accedere a un altro sito o aprire uno strumento separato, che consente di salvare tempi e attività.
+Aiutare gli utenti a completare le attività, ad esempio il tempo di ferie o le spese per le relazioni, integrando PowerApps esistenti nei segnalibri. I PowerApps integrati vengono visualizzati all'interno di un risultato di segnalibro, eliminando la necessità di accedere a un altro sito o di aprire uno strumento separato, che consente di risparmiare tempo e fatica.
   
-## <a name="what-are-powerapps"></a>Che cosa sono PowerApps?
+## <a name="what-are-powerapps"></a>Che cos'è PowerApps?
 
-PowerApps è un servizio che consente di creare applicazioni aziendali di eseguire in un browser o in un cellulare o tablet non codifica esperienza necessaria. Ulteriori informazioni:
+PowerApps è un servizio che consente di creare app aziendali che vengono eseguite in un browser o su un telefono o tablet senza che sia necessaria alcuna esperienza di codifica. Ulteriori informazioni:
   
-- [Apprendimento interattiva](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- [Apprendimento guidato](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
     
 - [Documentazione](https://docs.microsoft.com/en-us/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere un PowerApp a un segnalibro
 
-PowerApps lavorare in qualsiasi browser e in tutti i dispositivi e richiedere meno di un minuto da aggiungere.
+PowerApps funziona in qualsiasi browser e su qualsiasi dispositivo e impiega meno di un minuto per aggiungerlo.
   
-1. [Cercare l'ID di applicazione per il PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) che si desidera integrare 
+1. [Trovare l'ID app per il PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) che si desidera integrare 
     
-2. Nel portale dei Microsoft SearchAdmin, passare a **segnalibri**
+2. Nel portale di Microsoft SearchAdmin, accedere a **segnalibri**
     
-3. Aggiungere un segnalibro o trovare un segnalibro esistente che si desidera aggiungere un PowerApp a
+3. Aggiungere un segnalibro o individuare un segnalibro esistente per il quale si desidera aggiungere un PowerApp
     
-4. Nelle impostazioni del segnalibro, fare clic su **App Power**e quindi fare clic su **Aggiungi un'App Power**
+4. Nelle impostazioni dei segnalibri, fare clic su **Power app**, quindi fare clic su **Aggiungi un'app Power**
     
-5. Consente di immettere o incollare l'ID applicazione
+5. Immettere o incollare l'ID app
     
-    L'altezza e larghezza vengono aggiunte automaticamente. I segnalibri in grado di supportare orientamenti sia verticale e orizzontale, ma attualmente non è possibile modificare le dimensioni.
+    L'altezza e la larghezza vengono aggiunte automaticamente. I segnalibri sono in grado di supportare gli orientamenti verticale e orizzontale, ma al momento non è possibile modificare le dimensioni.
     
-6. L'anteprima segnalibro Mostra come il PowerApp verranno visualizzate nei risultati segnalibro
+6. L'anteprima del segnalibro illustra il modo in cui il PowerApp verrà visualizzato nel risultato del segnalibro.
     
-    PowerApp nel riquadro di anteprima è completamente funzionante per semplificare il test e utilizzare.
+    Il PowerApp nell'anteprima è completamente funzionante per semplificare la verifica e l'utilizzo.
     
 7. Fare clic su **pubblica**
     
-Quando un utente autorizzato Microsoft Search Cerca in Bing una qualsiasi delle parole chiave o parole riservate il segnalibro, il PowerApp saranno visualizzate nel risultato segnalibro.
+Quando un utente di Microsoft Search autorizzato esegue una ricerca su Bing per qualsiasi parola chiave o parola chiave riservata del segnalibro, il PowerApp verrà visualizzato nel risultato del segnalibro.
 
   
 

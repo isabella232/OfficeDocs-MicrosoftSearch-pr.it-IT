@@ -1,5 +1,5 @@
 ---
-title: Risorse, strumenti e altro ancora
+title: Trovare risorse, strumenti e altro
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Utilizzare Microsoft Search per siti intranet, risorse, strumenti e collegamenti a informazioni interne
+description: Utilizzare Microsoft Search per trovare siti Intranet, risorse, strumenti e collegamenti a informazioni interne
 ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378885"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508842"
 ---
-# <a name="find-resources-tools-and-more"></a>Risorse, strumenti e altro ancora
+# <a name="find-resources-tools-and-more"></a>Trovare risorse, strumenti e altro
 
-Il reparto IT crea e pubblica i segnalibri a risorse interne ed esterne, strumenti, pagine e altre applicazioni che consentono di trovare le informazioni che necessarie.
+Il reparto IT consente di creare e pubblicare i segnalibri in risorse interne ed esterne, strumenti, pagine e altro ancora per individuare le informazioni necessarie.
   
-Segnalibro risultati includono una breve descrizione del sito o risorsa con un collegamento a esso. Ad esempio, la maggior parte delle organizzazioni creerà segnalibri per risorse Umane, info carriera, supporto IT, ora disattivare la segnalazione e vantaggi.
+I risultati dei segnalibri includono una breve descrizione del sito o della risorsa insieme a un collegamento. La maggior parte delle organizzazioni, ad esempio, creerà segnalibri per vantaggi, risorse umane, informazioni sulla carriera, supporto IT e report di timeout.
   
-Risultati Q&A verranno in genere includono queste informazioni stesse, nonché una risposta breve contenenti le informazioni che necessarie e un collegamento per ulteriori informazioni.
+I risultati di Q&A includono generalmente le stesse informazioni e una breve risposta che potrebbe avere le informazioni necessarie e un collegamento se si vuole saperne di più.
   
-1. Accedere al proprio account di lavoro o della scuola in Bing 
+1. Accedere all'account aziendale o dell'Istituto di istruzione su Bing 
     
-2. Cercare un elemento
+2. Cercare qualcosa
     
-    Ad esempio, cercare 'vantaggi,' 'Risorse Umane,' 'carriera info,' 'Supporto IT' o 'segnala ora '.
+    Ad esempio, provare a cercare ' vantaggi ',' HR ','' Career info,'' IT Support ' o ' report time off '.
     
-3. Un segnalibro o Q&A risultati viene visualizzato nella parte superiore della pagina o colonna a destra
+3. Un segnalibro o un risultato Q&A viene visualizzato nella parte superiore della colonna pagina o destra.
     
-    Altri risultati web vengono visualizzati sotto di esso. Non sono specifiche dell'organizzazione.
+    Gli altri risultati Web vengono visualizzati sotto di esso. Non sono specifiche per l'organizzazione.
 
   
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
 description: Aggiungere un numero elevato di posizioni contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
 ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901809"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508562"
 ---
 # <a name="bulk-create-locations"></a>Creare posizioni in blocco
 

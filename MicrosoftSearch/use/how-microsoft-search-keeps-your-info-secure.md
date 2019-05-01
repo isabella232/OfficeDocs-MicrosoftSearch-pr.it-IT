@@ -1,5 +1,5 @@
 ---
-title: Come Microsoft Search consente di mantenere le informazioni protette
+title: In che modo Microsoft Search mantiene sicure le informazioni
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
-description: Come le informazioni e i file sono protetti quando si utilizza Microsoft Search
+description: Modalità di protezione delle informazioni e dei file quando si utilizza Microsoft Search
 ms.openlocfilehash: 52dbf65d3c7414eaa2c4a3770def3f4f00edc40c
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378884"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508850"
 ---
-# <a name="how-microsoft-search-keeps-your-info-secure"></a>Come Microsoft Search consente di mantenere le informazioni protette
+# <a name="how-microsoft-search-keeps-your-info-secure"></a>In che modo Microsoft Search mantiene sicure le informazioni
 
-Microsoft Search utilizza diversi metodi per proteggere il contenuto e informazioni:
+Microsoft Search utilizza diversi metodi per proteggere il contenuto e le informazioni:
   
-- Microsoft Search risultati provengono direttamente dal Cloud attendibili stesso utilizzati da Office 365. Bing non viene memorizzato alcun contenuto di lavoro o informazioni nell'indice web pubblici.
+- I risultati della ricerca Microsoft provengono direttamente dallo stesso cloud attendibile utilizzato da Office 365. Bing non archivia contenuti o informazioni di lavoro nell'indice web pubblico.
     
-- È possibile visualizzare solo utilizzare i risultati dopo aver effettuato con l'account di lavoro o della scuola.
+- È possibile visualizzare solo i risultati del lavoro quando si è connessi con il proprio account aziendale o dell'Istituto di istruzione.
     
-- Microsoft Search verranno restituite solo le informazioni si dispone dell'autorizzazione per visualizzare. Si potrebbe disporre dell'autorizzazione perché è stato creato il file o informazioni, è stato condiviso con l'utente o a un gruppo di dimensioni maggiore, che include o sono archiviati nelle cartelle o percorsi si dispone dell'autorizzazione di accesso.
+- Microsoft Search restituirà solo informazioni di cui si dispone dell'autorizzazione per l'accesso. Potrebbe essere necessario disporre dell'autorizzazione perché sono stati creati i file o le informazioni, che sono stati condivisi con l'utente o con un gruppo di dimensioni superiori che include l'utente oppure che sono archiviati in cartelle o posizioni in cui si dispone dell'autorizzazione per l'accesso.
     
-- Microsoft Search non utilizza le ricerche di lavoro per migliorare i risultati web pubblici o per migliorare Bing.
+- Microsoft Search non utilizza le ricerche di lavoro per migliorare i risultati del Web pubblico o migliorare Bing.
     
-- Microsoft Search non consentire inserzionisti chiunque all'interno dell'organizzazione di destinazione.
+- Microsoft Search non consente agli inserzionisti di rivolgersi all'utente o a qualsiasi persona all'interno dell'organizzazione.
 
   
 

@@ -13,45 +13,45 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: Aggiungere posizioni in modo che gli uffici dell'organizzazione, edifici e altre aree di lavoro vengono visualizzati nel Microsoft Search operano risultati
+description: Aggiungere posizioni in modo che gli uffici, gli edifici e altre aree di lavoro dell'organizzazione vengano visualizzati nei risultati dei lavori di ricerca di Microsoft
 ms.openlocfilehash: ad9aa274e7934917a2c4fee05ad2c24af3d117f4
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378889"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508546"
 ---
 # <a name="add-a-location"></a>Aggiungere una posizione
 
-Aggiungere un percorso e quando gli utenti esegue la ricerca che verrà visualizzato l'indirizzo dell'edificio, office, o sul posto e la posizione in un mapping. È inoltre possibile utilizzare Bing Maps per ottenere indicazioni, vedere What's vicino e altro ancora.
+Aggiungere una posizione e quando gli utenti eseguono la ricerca vedranno l'indirizzo dell'edificio, dell'ufficio o del luogo e la sua posizione su una mappa. È inoltre possibile utilizzare Bing Maps per ottenere indicazioni stradali, vedere What ' s nelle vicinanze e altro ancora.
   
-1. Accedere al portale di amministrazione di ricerca Microsoft
+1. Passare al portale di amministrazione di Microsoft Search
     
 2. Nel riquadro di spostamento fare clic su **percorsi**
     
-3. Nella parte superiore della pagina, fare clic su **Aggiungi percorso**
+3. Nella parte superiore della pagina fare clic su **Aggiungi percorso**
     
-    Viene visualizzata la pagina di modifica posizione con una mappa interattiva.
+    Viene visualizzata la pagina Modifica percorso con una mappa interattiva.
     
-4. Selezionare un **Paese/area geografica**
+4. Scegliere un **paese/area geografica**
     
-5. Immettere l' **indirizzo**
+5. Immettere l' **Indirizzo**
     
-    Verrà visualizzato un indicatore di posizione nella mappa dell'indirizzo. Questo è il mapping utenti vedranno durante la ricerca per questa posizione.
+    Verrà visualizzato un indicatore di posizione sulla mappa per l'indirizzo. Questa è la mappa che gli utenti vedranno quando eseguono la ricerca di questo percorso.
     
-6. Se necessario, immettere le informazioni di **Unità/famiglia di prodotti/Floor** 
+6. Se necessario, immettere tutte le informazioni su gruppo **/unità/piano** 
     
 7. Immettere un **nome di percorso**
     
-    Descrivere il modo in cui che gli utenti in genere farvi riferimento questa posizione. Ad esempio, un nome predefinito o numero. Non ripetere l'indirizzo.
+    Descrivere questo percorso come gli utenti in genere si riferiscono. Ad esempio, un nome di edificio o un numero. Non ripetere l'indirizzo.
     
-8. Immettere **parole chiave** che si desidera attivare questa posizione 
+8. Immettere le **parole chiave** che si desidera attivare per questo percorso 
     
-    Includere parole o frasi utenti verranno utilizzare per trovare il percorso o aree in essa contenuti, ad esempio: Headquarters, creazione 9 o café ovest.
+    Includere parole o frasi che verranno utilizzate dalle persone per trovare questo percorso o aree all'interno di esso, ad esempio: quartier generale, Building 9 o West Cafe.
     
-9. Immettere **parole chiave riservate**
+9. Immettere le **Parole chiave riservate**
     
-    Utilizzare uno o più parole riservate per garantire che un percorso viene sempre visualizzata come risultati più pertinenti. Parole riservate non possono essere condivisi tra diverse ubicazioni.
+    Utilizzare una o più parole chiave riservate per garantire che un percorso venga visualizzato sempre come risultato più pertinente. Le parole chiave riservate non possono essere condivise tra le posizioni.
 
   
 

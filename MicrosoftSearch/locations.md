@@ -13,55 +13,55 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Panoramica di tutte le operazioni che è possibile includere i percorsi dell'organizzazione nei risultati di lavoro di Microsoft Search
+description: Panoramica di tutti i modi in cui è possibile includere le posizioni dell'organizzazione nei risultati del lavoro di ricerca di Microsoft
 ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
-ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690659"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508810"
 ---
 # <a name="locations"></a>Percorsi
 
 ## <a name="add-locations"></a>Aggiungere posizioni
 
-Percorsi consentono agli utenti di trovare indirizzi e individuare edifici dell'organizzazione, uffici e altre aree di lavoro in una mappa. È inoltre possibile utilizzare Bing Maps per ottenere indicazioni, vedere What's vicino e altro ancora.
+Le posizioni consentono agli utenti di trovare gli indirizzi e individuare gli edifici, gli uffici e altre aree di lavoro dell'organizzazione su una mappa. È inoltre possibile utilizzare Bing Maps per ottenere indicazioni stradali, vedere What ' s nelle vicinanze e altro ancora.
   
 - [Aggiungere una posizione](add-a-location.md)
     
-    Aggiungere un edificio, office, campus o altre aree di lavoro
+    Aggiungere un oggetto Building, Office, campus o un'altra area di lavoro
     
 - [Creare posizioni in blocco](bulk-create-locations.md)
     
-    Aggiungere posizioni in un file CSV e importarli in blocco
+    Aggiungere posizioni a un file con estensione CSV e importarle in blocco
     
 ## <a name="manage-locations"></a>Gestire le posizioni
 
-Utilizzare lo stato, posizione, strumenti di filtro e gli strumenti di importazione/esportazione per [trovare e aggiornare i percorsi](manage-locations.md), incluso il nome di indirizzo e la posizione in blocco
+Utilizzare lo stato del percorso, gli strumenti di filtro e gli strumenti di esportazione/importazione in blocco per [individuare e aggiornare i percorsi](manage-locations.md), compresi l'indirizzo e il nome della posizione
   
-## <a name="location-status"></a>Stato di posizione
+## <a name="location-status"></a>Stato posizione
 
 Nel portale di amministrazione, è possibile visualizzare le posizioni in base allo stato corrente:
   
 - Pubblicato
     
-    Percorsi pubblicati vengono visualizzati nei risultati di ricerca Bing quando un utente autorizzato cerca una parola chiave.
+    I percorsi pubblicati vengono visualizzati nei risultati di ricerca di Bing quando un utente autorizzato cerca una parola chiave.
     
-- Draft 
+- Progetto
     
-    Se una posizione non è pronta per la pubblicazione, salvarlo come bozza. Bozza percorsi non verranno visualizzato in Bing.
+    Se una posizione non è pronta per la pubblicazione, salvarla come bozza. Le posizioni di sformo non verranno visualizzate in Bing.
     
-- Pianificate
+- Scheduled
     
-    Percorsi pianificati vengono pubblicati automaticamente anche in futuro.
+    I percorsi pianificati vengono pubblicati automaticamente in una data futura.
     
 - Scaduto
     
-    Percorsi scaduti automaticamente sono state rimosse dal contenuto pubblicato in base alle date di scadenza.
+    I percorsi scaduti sono stati rimossi automaticamente dal contenuto pubblicato in base alle date di scadenza.
     
-- Consigliato
+- Suggeriti
     
-    Percorsi suggeriti si basano sui commenti degli utenti. Suggerimenti predefinito Microsoft può inoltre essere visualizzata.
+    Le posizioni consigliate si basano sui commenti e suggerimenti degli utenti. È inoltre possibile visualizzare i suggerimenti predefiniti di Microsoft.
 
   
 

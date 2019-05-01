@@ -1,5 +1,5 @@
 ---
-title: Individuazione dei file
+title: Trovare file
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,40 +12,40 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: Utilizzare Microsoft Search per trovare i file di Office e documenti PDF e le informazioni che verrà visualizzato
+description: Utilizzare Microsoft Search per trovare file e documenti di Office e le informazioni che verranno visualizzate
 ms.openlocfilehash: f46796c015137a5bc1a24a52f7eb35cd2675a09d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378878"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508938"
 ---
-# <a name="find-files"></a>Individuazione dei file
+# <a name="find-files"></a>Trovare file
 
-Cercare i file o cercare il contenuto creato da collaboratori che è possibile accedere al. I risultati includono il nome di file e il percorso e può inoltre essere visualizzata una breve frammento di codice del contenuto che ha modificato ultimo e quando.
+Cercare i propri file o cercare il contenuto creato dai colleghi a cui si ha accesso. I risultati includono il nome e il percorso del file ed è possibile che venga visualizzato anche un breve frammento del contenuto, che l'ha modificato per ultimo e quando.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AsoN?autoplay=false]
   
-È possibile trovare SharePoint e OneDrive per i file di Business, tra cui:
+È possibile trovare i file di SharePoint e OneDrive for business, tra cui:
   
 - Documenti di Word
     
-- Fogli di calcolo Excel
+- Fogli di calcolo di Excel
     
 - Presentazioni di PowerPoint
     
 - Blocchi appunti di OneNote
     
-- File PDF
+- PDF
     
-1. Accedere al proprio account di lavoro o della scuola in Bing
+1. Accedere all'account aziendale o dell'Istituto di istruzione su Bing
     
-2. Cercare "documenti,' 'presentazioni,' o che includono un argomento o nome di una persona
+2. Cerca ' documenti,'' presentazioni personali ' o Includi un argomento o un nome di qualcuno
     
-    Ad esempio, 'documenti sui codici"o"file di John."
+    Ad esempio,' docs about tax codes ' o ' files by John .'
     
-3. I risultati di file viene visualizzata nella parte superiore della pagina dei risultati
+3. Risultati file vengono visualizzati nella parte superiore della pagina dei risultati
     
-    Altri risultati web vengono visualizzati sotto di esso. Non sono specifiche dell'organizzazione.
+    Gli altri risultati Web vengono visualizzati sotto di esso. Non sono specifiche per l'organizzazione.
 
 

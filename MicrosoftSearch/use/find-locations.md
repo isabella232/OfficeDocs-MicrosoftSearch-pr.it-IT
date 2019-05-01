@@ -1,5 +1,5 @@
 ---
-title: Individuare i percorsi
+title: Trovare i percorsi
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: Utilizzare Microsoft Search per individuare office, creazione e altre posizioni dell'area di lavoro, ottengono le direzioni e altro ancora
+description: Utilizzare Microsoft Search per trovare posizioni di Office, Building e altre aree di lavoro, ottenere indicazioni stradali e altro ancora.
 ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378876"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508962"
 ---
-# <a name="find-locations"></a>Individuare i percorsi
+# <a name="find-locations"></a>Trovare i percorsi
 
-Cercare edifici, uffici, campus e altro ancora per visualizzare un risultato della mappa e un indirizzo. È possibile facilmente stradali e vedere What's vicina Bing Maps.
+Ricerca di edifici, uffici, campus e altro per visualizzare un risultato e un indirizzo della mappa. È possibile ottenere facilmente le indicazioni stradali e vedere cosa c'è nelle vicinanze su Bing Maps.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
-1. Accedere al proprio account di lavoro o della scuola in Bing
+1. Accedere all'account aziendale o dell'Istituto di istruzione su Bing
     
 2. Cercare il nome della posizione
     
-    Ad esempio, "Edificio 9" o 'West café'.
+    Ad esempio,' Building 9' o ' West Cafe '.
     
-3. Una mappa viene visualizzata nella parte superiore della pagina dei risultati che mostra il percorso e il numero civico
+3. Nella parte superiore della pagina dei risultati viene visualizzata una mappa che mostra la posizione e l'indirizzo della strada
     
-    Altri risultati web vengono visualizzati sotto di esso. Non sono specifiche dell'organizzazione.
+    Gli altri risultati Web vengono visualizzati sotto di esso. Non sono specifiche per l'organizzazione.
 
   
 
