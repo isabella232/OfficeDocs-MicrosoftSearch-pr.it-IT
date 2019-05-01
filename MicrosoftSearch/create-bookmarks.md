@@ -15,74 +15,74 @@ search.appverid:
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 description: Creare segnalibri o usare un'estensione del browser per aggiungerli ai risultati di lavoro di Microsoft Search
 ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612410"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508731"
 ---
-# <a name="create-bookmarks"></a><span data-ttu-id="af522-103">Creare segnalibri</span><span class="sxs-lookup"><span data-stu-id="af522-103">Create bookmarks</span></span>
+# <a name="create-bookmarks"></a><span data-ttu-id="44122-103">Creare segnalibri</span><span class="sxs-lookup"><span data-stu-id="44122-103">Create bookmarks</span></span>
 
-<span data-ttu-id="af522-p101">I segnalibri consentono di trovare rapidamente siti, strumenti e risorse importanti. Ogni segnalibro include un titolo, un URL e un set di parole chiave che lo attivano.</span><span class="sxs-lookup"><span data-stu-id="af522-p101">Bookmarks help people quickly find important resources, sites, and tools. Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span>
+<span data-ttu-id="44122-p101">I segnalibri consentono di trovare rapidamente siti, strumenti e risorse importanti. Ogni segnalibro include un titolo, un URL e un set di parole chiave che lo attivano.</span><span class="sxs-lookup"><span data-stu-id="44122-p101">Bookmarks help people quickly find important resources, sites, and tools. Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span>
   
-## <a name="create-a-bookmark"></a><span data-ttu-id="af522-106">Creare un segnalibro</span><span class="sxs-lookup"><span data-stu-id="af522-106">Create a bookmark</span></span>
+## <a name="create-a-bookmark"></a><span data-ttu-id="44122-106">Creare un segnalibro</span><span class="sxs-lookup"><span data-stu-id="44122-106">Create a bookmark</span></span>
 
-<span data-ttu-id="af522-107">Per informazioni sulla creazione di titoli, descrizioni e parole chiave efficaci e altro ancora, vedere [Pianificazione del contenuto](plan-your-content.md).</span><span class="sxs-lookup"><span data-stu-id="af522-107">For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](plan-your-content.md).</span></span>
+<span data-ttu-id="44122-107">Per informazioni sulla creazione di titoli, descrizioni e parole chiave efficaci e altro ancora, vedere [Pianificazione del contenuto](plan-your-content.md).</span><span class="sxs-lookup"><span data-stu-id="44122-107">For information about creating effective titles, descriptions, keywords, and more, see [Planning your content](plan-your-content.md).</span></span>
   
-1. <span data-ttu-id="af522-108">Passare al portale di amministrazione di Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="af522-108">Go to the Microsoft Search Admin portal</span></span>
+1. <span data-ttu-id="44122-108">Passare al portale di amministrazione di Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="44122-108">Go to the Microsoft Search Admin portal</span></span>
     
-2. <span data-ttu-id="af522-109">Nel riquadro di spostamento fare clic su **Segnalibri**</span><span class="sxs-lookup"><span data-stu-id="af522-109">In the left navigation pane, click **Groups**.</span></span>
+2. <span data-ttu-id="44122-109">Nel riquadro di spostamento fare clic su **Segnalibri**</span><span class="sxs-lookup"><span data-stu-id="44122-109">In the navigation pane, click **Bookmarks**</span></span>
     
-3. <span data-ttu-id="af522-110">Nella parte superiore della pagina fare clic su **Aggiungi segnalibro**.</span><span class="sxs-lookup"><span data-stu-id="af522-110">At the top of the page, click **Add bookmark**</span></span>
+3. <span data-ttu-id="44122-110">Nella parte superiore della pagina fare clic su **Aggiungi segnalibro**.</span><span class="sxs-lookup"><span data-stu-id="44122-110">At the top of the page, click **Add bookmark**</span></span>
     
-    <span data-ttu-id="af522-p102">Viene visualizzata la pagina Modifica segnalibro, con un'anteprima dell'aspetto che avrà il segnalibro in Bing. Aggiungendo le informazioni necessarie, l'anteprima verrà aggiornata automaticamente.</span><span class="sxs-lookup"><span data-stu-id="af522-p102">The Edit bookmark page appears, with a preview of how the bookmark will look on Bing. As you add the required information, the preview will automatically update.</span></span>
+    <span data-ttu-id="44122-p102">Viene visualizzata la pagina Modifica segnalibro, con un'anteprima dell'aspetto che avrà il segnalibro in Bing. Aggiungendo le informazioni necessarie, l'anteprima verrà aggiornata automaticamente.</span><span class="sxs-lookup"><span data-stu-id="44122-p102">The Edit bookmark page appears, with a preview of how the bookmark will look on Bing. As you add the required information, the preview will automatically update.</span></span>
     
-4. <span data-ttu-id="af522-113">Immettere un **Titolo del segnalibro**</span><span class="sxs-lookup"><span data-stu-id="af522-113">Enter a **Bookmark title**</span></span>
+4. <span data-ttu-id="44122-113">Immettere un **Titolo del segnalibro**</span><span class="sxs-lookup"><span data-stu-id="44122-113">Enter a **Bookmark title**</span></span>
     
-    <span data-ttu-id="af522-p103">Questo titolo è l'intestazione visualizzata nel risultato. Può essere lungo fino a 60 caratteri.</span><span class="sxs-lookup"><span data-stu-id="af522-p103">The title is the heading that appears in the result. It can be up to 60 characters long.</span></span>
+    <span data-ttu-id="44122-p103">Questo titolo è l'intestazione visualizzata nel risultato. Può essere lungo fino a 60 caratteri.</span><span class="sxs-lookup"><span data-stu-id="44122-p103">The title is the heading that appears in the result. It can be up to 60 characters long.</span></span>
     
-5. <span data-ttu-id="af522-116">Immettere l'**URL** della pagina o sito o il percorso a cui collegherà il segnalibro</span><span class="sxs-lookup"><span data-stu-id="af522-116">Enter the **URL** of the page, site, or location the bookmark will link to</span></span> 
+5. <span data-ttu-id="44122-116">Immettere l'**URL** della pagina o sito o il percorso a cui collegherà il segnalibro</span><span class="sxs-lookup"><span data-stu-id="44122-116">Enter the **URL** of the page, site, or location the bookmark will link to</span></span> 
     
-6. <span data-ttu-id="af522-117">Immettere una **Descrizione segnalibro**</span><span class="sxs-lookup"><span data-stu-id="af522-117">**Notes** Enter a description.</span></span>
+6. <span data-ttu-id="44122-117">Immettere una **Descrizione segnalibro**</span><span class="sxs-lookup"><span data-stu-id="44122-117">Enter a **Bookmark description**</span></span>
     
-    <span data-ttu-id="af522-p104">La descrizione consente agli utenti di comprendere a cosa collega il segnalibro. Può avere una lunghezza massima di 300 caratteri.</span><span class="sxs-lookup"><span data-stu-id="af522-p104">A description helps users understand what the bookmark is linking to. It can be up to 300 characters long.</span></span>
+    <span data-ttu-id="44122-p104">La descrizione consente agli utenti di comprendere a cosa collega il segnalibro. Può avere una lunghezza massima di 300 caratteri.</span><span class="sxs-lookup"><span data-stu-id="44122-p104">A description helps users understand what the bookmark is linking to. It can be up to 300 characters long.</span></span>
     
-7. <span data-ttu-id="af522-120">Immettere **Parole chiave** per attivare il segnalibro</span><span class="sxs-lookup"><span data-stu-id="af522-120">Enter **Keywords** you want to trigger this bookmark</span></span> 
+7. <span data-ttu-id="44122-120">Immettere **Parole chiave** per attivare il segnalibro</span><span class="sxs-lookup"><span data-stu-id="44122-120">Enter **Keywords** you want to trigger this bookmark</span></span> 
     
-    <span data-ttu-id="af522-121">Quando un utente cerca una delle parole chiave incluse, il segnalibro verrà incluso nei risultati di lavoro.</span><span class="sxs-lookup"><span data-stu-id="af522-121">When a user searches for any of the keywords you've included, this bookmark will be included in their work results.</span></span>
+    <span data-ttu-id="44122-121">Quando un utente cerca una delle parole chiave incluse, il segnalibro verrà incluso nei risultati di lavoro.</span><span class="sxs-lookup"><span data-stu-id="44122-121">When a user searches for any of the keywords you've included, this bookmark will be included in their work results.</span></span>
     
-8. <span data-ttu-id="af522-122">Selezionare **Associa automaticamente le parole chiave simili** per espandere il set di parole chiave</span><span class="sxs-lookup"><span data-stu-id="af522-122">Select **Automatically match similar keywords** to expand your set of keywords</span></span> 
+8. <span data-ttu-id="44122-122">Selezionare **Associa automaticamente le parole chiave simili** per espandere il set di parole chiave</span><span class="sxs-lookup"><span data-stu-id="44122-122">Select **Automatically match similar keywords** to expand your set of keywords</span></span> 
     
-    <span data-ttu-id="af522-123">Questo abilita una corrispondenza più ampia dei termini di ricerca e assicura che il segnalibro venga incluso nei risultati di lavoro pertinenti.</span><span class="sxs-lookup"><span data-stu-id="af522-123">This enables a broader matching of search terms and helps ensure this bookmark is included in relevant work results.</span></span>
+    <span data-ttu-id="44122-123">Questo abilita una corrispondenza più ampia dei termini di ricerca e assicura che il segnalibro venga incluso nei risultati di lavoro pertinenti.</span><span class="sxs-lookup"><span data-stu-id="44122-123">This enables a broader matching of search terms and helps ensure this bookmark is included in relevant work results.</span></span>
     
-9. <span data-ttu-id="af522-124">Immettere le **Parole chiave riservate**</span><span class="sxs-lookup"><span data-stu-id="af522-124">Enter **Reserved keywords**</span></span>
+9. <span data-ttu-id="44122-124">Immettere le **Parole chiave riservate**</span><span class="sxs-lookup"><span data-stu-id="44122-124">Enter **Reserved keywords**</span></span>
     
-    <span data-ttu-id="af522-p105">Se una parola chiave attiva più segnalibri, Microsoft Search inserirà il più popolare per primo e visualizzerà gli altri come collegamenti correlati. Usare una o più parole riservate per assicurarsi che un segnalibro venga sempre visualizzato come primo risultato. Le parole riservate non possono essere condivise tra segnalibri.</span><span class="sxs-lookup"><span data-stu-id="af522-p105">If a keyword triggers multiple bookmarks, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure that a bookmark always appears as the top result. Reserved keywords can't be shared across bookmarks.</span></span>
+    <span data-ttu-id="44122-p105">Se una parola chiave attiva più segnalibri, Microsoft Search inserirà il più popolare per primo e visualizzerà gli altri come collegamenti correlati. Usare una o più parole riservate per assicurarsi che un segnalibro venga sempre visualizzato come primo risultato. Le parole riservate non possono essere condivise tra segnalibri.</span><span class="sxs-lookup"><span data-stu-id="44122-p105">If a keyword triggers multiple bookmarks, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure that a bookmark always appears as the top result. Reserved keywords can't be shared across bookmarks.</span></span>
     
-## <a name="add-bookmark-settings"></a><span data-ttu-id="af522-128">Aggiungere impostazioni segnalibro</span><span class="sxs-lookup"><span data-stu-id="af522-128">Add bookmark settings</span></span>
+## <a name="add-bookmark-settings"></a><span data-ttu-id="44122-128">Aggiungere impostazioni segnalibro</span><span class="sxs-lookup"><span data-stu-id="44122-128">Add bookmark settings</span></span>
 
-<span data-ttu-id="af522-129">Le impostazioni segnalibro offrono un maggior controllo su quando viene visualizzato un segnalibro e su chi lo vede.</span><span class="sxs-lookup"><span data-stu-id="af522-129">Bookmark settings give you additional control over when a bookmark appears and who sees it.</span></span>
+<span data-ttu-id="44122-129">Le impostazioni segnalibro offrono un maggior controllo su quando viene visualizzato un segnalibro e su chi lo vede.</span><span class="sxs-lookup"><span data-stu-id="44122-129">Bookmark settings give you additional control over when a bookmark appears and who sees it.</span></span>
   
-- <span data-ttu-id="af522-130">Date</span><span class="sxs-lookup"><span data-stu-id="af522-130">Dates</span></span>
+- <span data-ttu-id="44122-130">Date</span><span class="sxs-lookup"><span data-stu-id="44122-130">Dates</span></span>
     
-    <span data-ttu-id="af522-131">Impostare una data di inizio e una data di fine facoltativa per controllare quando un segnalibro verrà pubblicato o quando scadrà.</span><span class="sxs-lookup"><span data-stu-id="af522-131">Set a start date as well as an optional end date to control when a bookmark will be published or expire.</span></span> 
+    <span data-ttu-id="44122-131">Impostare una data di inizio e una data di fine facoltativa per controllare quando un segnalibro verrà pubblicato o quando scadrà.</span><span class="sxs-lookup"><span data-stu-id="44122-131">Set a start date as well as an optional end date to control when a bookmark will be published or expire.</span></span> 
     
-- <span data-ttu-id="af522-132">Paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="af522-132">Country/region</span></span>
+- <span data-ttu-id="44122-132">Paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="44122-132">Country/region</span></span>
     
-    <span data-ttu-id="af522-133">Se si selezionano paesi o aree geografiche, solo gli utenti in quelle posizioni vedranno il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="af522-133">If you select countries or regions, only users in those locations will see that bookmark.</span></span>
+    <span data-ttu-id="44122-133">Se si selezionano paesi o aree geografiche, solo gli utenti in quelle posizioni vedranno il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="44122-133">If you select countries or regions, only users in those locations will see that bookmark.</span></span>
     
-- <span data-ttu-id="af522-134">Gruppi</span><span class="sxs-lookup"><span data-stu-id="af522-134">Groups</span></span>
+- <span data-ttu-id="44122-134">Gruppi</span><span class="sxs-lookup"><span data-stu-id="44122-134">Groups</span></span>
     
-    <span data-ttu-id="af522-p106">Usare le impostazioni dei gruppi per rendere disponibile un risultato di segnalibro solo ai membri di un gruppo selezionato. Ad esempio, se si creano segnalibri che riguardano solo i dipendenti del reparto Risorse umane, è possibile eseguire il mapping di questa impostazione al gruppo di sicurezza delle Risorse umane pertinente.</span><span class="sxs-lookup"><span data-stu-id="af522-p106">Use the Groups setting to make a bookmark result available only to members of a selected group. For example, if you're creating bookmarks that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
+    <span data-ttu-id="44122-p106">Usare le impostazioni dei gruppi per rendere disponibile un risultato di segnalibro solo ai membri di un gruppo selezionato. Ad esempio, se si creano segnalibri che riguardano solo i dipendenti del reparto Risorse umane, è possibile eseguire il mapping di questa impostazione al gruppo di sicurezza delle Risorse umane pertinente.</span><span class="sxs-lookup"><span data-stu-id="44122-p106">Use the Groups setting to make a bookmark result available only to members of a selected group. For example, if you're creating bookmarks that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
     
-- <span data-ttu-id="af522-137">Dispositivi e sistemi operativi</span><span class="sxs-lookup"><span data-stu-id="af522-137">Device OS</span></span>
+- <span data-ttu-id="44122-137">Dispositivi e sistemi operativi</span><span class="sxs-lookup"><span data-stu-id="44122-137">Device &amp; OS</span></span>
     
-    <span data-ttu-id="af522-138">Se si selezionano tipi di dispositivi o sistemi operativi, solo gli utenti che usano quei dispositivi o sistemi operativi vedranno il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="af522-138">If you select device types or operating systems, only users searching on those devices or using those systems will see that bookmark.</span></span>
+    <span data-ttu-id="44122-138">Se si selezionano tipi di dispositivi o sistemi operativi, solo gli utenti che usano quei dispositivi o sistemi operativi vedranno il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="44122-138">If you select device types or operating systems, only users searching on those devices or using those systems will see that bookmark.</span></span>
     
-- <span data-ttu-id="af522-139">Varianti mirate</span><span class="sxs-lookup"><span data-stu-id="af522-139">Targeted variations</span></span>
+- <span data-ttu-id="44122-139">Varianti mirate</span><span class="sxs-lookup"><span data-stu-id="44122-139">Targeted variations</span></span>
     
-    <span data-ttu-id="af522-140">Usare questa impostazione per modificare il contenuto del segnalibro in base al dispositivo e alla posizione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="af522-140">Use this setting to vary the content of the bookmark based on a user's device and location.</span></span>
+    <span data-ttu-id="44122-140">Usare questa impostazione per modificare il contenuto del segnalibro in base al dispositivo e alla posizione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="44122-140">Use this setting to vary the content of the bookmark based on a user's device and location.</span></span>
     
-## <a name="use-a-browser-extension-to-create-content"></a><span data-ttu-id="af522-141">Usare un'estensione del browser per creare contenuto</span><span class="sxs-lookup"><span data-stu-id="af522-141">Use a browser extension to create content</span></span>
+## <a name="use-a-browser-extension-to-create-content"></a><span data-ttu-id="44122-141">Usare un'estensione del browser per creare contenuto</span><span class="sxs-lookup"><span data-stu-id="44122-141">Use a browser extension to create content</span></span>
 
-<span data-ttu-id="af522-p107">Scaricare e installare l'estensione del browser per autori di contenuti per Microsoft Edge o Chrome dalla sezione Strumenti del portale di amministrazione. Per usare l'estensione, accedere e passare alla pagina o al sito che si vuole aggiungere come segnalibro. Rivedere e modificare il contenuto suggerito, comprese le parole chiave, aggiungere eventuale altro contenuto e salvare il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="af522-p107">From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page you want to add as a bookmark. Review and change the suggested content, including keywords, add any additional content, and save the bookmark.</span></span>
+<span data-ttu-id="44122-p107">Scaricare e installare l'estensione del browser per autori di contenuti per Microsoft Edge o Chrome dalla sezione Strumenti del portale di amministrazione. Per usare l'estensione, accedere e passare alla pagina o al sito che si vuole aggiungere come segnalibro. Rivedere e modificare il contenuto suggerito, comprese le parole chiave, aggiungere eventuale altro contenuto e salvare il segnalibro.</span><span class="sxs-lookup"><span data-stu-id="44122-p107">From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page you want to add as a bookmark. Review and change the suggested content, including keywords, add any additional content, and save the bookmark.</span></span>
