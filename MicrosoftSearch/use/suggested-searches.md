@@ -1,5 +1,5 @@
 ---
-title: Ricerche consigliate
+title: Ricerche suggerite
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: Sulle ricerche esempio viene visualizzato quando si utilizza Microsoft Search
+description: Informazioni sulle ricerche di esempio che vengono visualizzate quando si utilizza Microsoft Search
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378906"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508506"
 ---
-# <a name="suggested-searches"></a><span data-ttu-id="1c0c6-103">Ricerche consigliate</span><span class="sxs-lookup"><span data-stu-id="1c0c6-103">Suggested searches</span></span>
+# <a name="suggested-searches"></a><span data-ttu-id="48fbe-103">Ricerche suggerite</span><span class="sxs-lookup"><span data-stu-id="48fbe-103">Suggested searches</span></span>
 
-<span data-ttu-id="1c0c6-p101">La prima volta che si accede a Bing con l'account di lavoro o della scuola, si verrà visualizzato un messaggio di benvenuto nella parte superiore della pagina con le ricerche consigliate. Tali ricerche sono state progettate per acquisire familiarità con Microsoft Search e i tipi di risultati di lavoro che saranno disponibili quando esegue la ricerca.</span><span class="sxs-lookup"><span data-stu-id="1c0c6-p101">The first time you sign in to Bing with your work or school account, you'll see a welcome message at the top of the page with suggested searches. These searches are designed to help familiarize you with Microsoft Search and the types of work results you'll find when you search.</span></span>
+<span data-ttu-id="48fbe-104">La prima volta che accedi a Bing con l'account aziendale o dell'Istituto di istruzione, vedrai un messaggio di benvenuto nella parte superiore della pagina con le ricerche consigliate.</span><span class="sxs-lookup"><span data-stu-id="48fbe-104">The first time you sign in to Bing with your work or school account, you'll see a welcome message at the top of the page with suggested searches.</span></span> <span data-ttu-id="48fbe-105">Tali ricerche consentono di acquisire familiarità con Microsoft Search e i tipi di risultati del lavoro che verranno individuati durante la ricerca.</span><span class="sxs-lookup"><span data-stu-id="48fbe-105">These searches are designed to help familiarize you with Microsoft Search and the types of work results you'll find when you search.</span></span>
   
-<span data-ttu-id="1c0c6-106">Per renderli più pertinenti e delle altre persone nell'organizzazione, il reparto IT ha ne o creato i propri.</span><span class="sxs-lookup"><span data-stu-id="1c0c6-106">To make them more relevant to you and other people in your organization, your IT department has reviewed them or created their own.</span></span>
+<span data-ttu-id="48fbe-106">Per renderle più rilevanti per l'utente e per gli altri utenti dell'organizzazione, il reparto IT ha esaminato o creato i propri.</span><span class="sxs-lookup"><span data-stu-id="48fbe-106">To make them more relevant to you and other people in your organization, your IT department has reviewed them or created their own.</span></span>
   
-<span data-ttu-id="1c0c6-p102">In alcuni casi, vedrai messaggi annuncio nuove funzionalità o indicante informazioni su Microsoft Search. Sempre ci sono un collegamento a ulteriori informazioni, oppure è possibile passare a [Esplora Microsoft Search](https://www.bing.com/business/explore) per ulteriori informazioni.</span><span class="sxs-lookup"><span data-stu-id="1c0c6-p102">Occasionally, you'll see messages announcing new features or telling you more about Microsoft Search. We'll always give you a link to learn more or you can go to [Explore Microsoft Search](https://www.bing.com/business/explore) for more information.</span></span> 
+<span data-ttu-id="48fbe-107">In alcuni casi, verranno visualizzati messaggi che annunciano nuove funzionalità o informazioni su Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="48fbe-107">Occasionally, you'll see messages announcing new features or telling you more about Microsoft Search.</span></span> <span data-ttu-id="48fbe-108">Ti daremo sempre un collegamento per ulteriori informazioni oppure puoi andare alla pagina per [esplorare Microsoft Search](https://www.bing.com/business/explore) per ottenere ulteriori dettagli.</span><span class="sxs-lookup"><span data-stu-id="48fbe-108">We'll always give you a link to learn more or you can go to [Explore Microsoft Search](https://www.bing.com/business/explore) for more information.</span></span> 
 
   
 
