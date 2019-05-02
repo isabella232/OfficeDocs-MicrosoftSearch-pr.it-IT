@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search è un'esperienza di ricerca di contenuti dell'organizzazione che permette di aumentare la produttività e risparmiare tempo, fornendo risultati della ricerca più pertinenti
 ms.openlocfilehash: 904a54998900e1c702d273dc71ceb605929269ed
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746383"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509101"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -46,7 +46,7 @@ ms.locfileid: "31746383"
                 <div class="card">
                     <div class="cardText">
                         <h2>Perché scegliere Microsoft Search</h2>
-                        <p>Per ottenere un'esperienza di ricerca aziendale che aumenta la produttività e che consente di risparmiare tempo fornendo risultati più pertinenti per l'organizzazione</p>
+                        <p>Per ottenere un'esperienza di ricerca di contenuti dell'organizzazione che permette di aumentare la produttività e risparmiare tempo, fornendo risultati della ricerca più pertinenti</p>
                         <p><a href="why-microsoft-search.md">Ecco come fare</a></p>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ ms.locfileid: "31746383"
                     </div>
                     <div class="cardText">
                         <h3>Funzionalità principali</h3>
-                        <p>Informazioni sulle funzionalità disponibili per amministratori e utenti, compresi i risultati visualizzati quando si esegue una ricerca</p>
+                        <p>Le funzionalità disponibili per amministratori e utenti, compresi i risultati visualizzati quando si esegue una ricerca</p>
                         <p><a href="features.md">Per saperne di più</a></p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ ms.locfileid: "31746383"
                     <div class="cardText">
                         <h3>Configurazione rapida per amministratori</h3>
                         <p>Informazioni su come attivare Microsoft Search e configurarlo per l'organizzazione in quattro semplici passaggi</p>
-                        <p><a href="quick-set-up.md">Iniziare subito</a></p>
+                        <p><a href="quick-set-up.md">Attività iniziali</a></p>
                     </div>
                 </div>
             </div>
