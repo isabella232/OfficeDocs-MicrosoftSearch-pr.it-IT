@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Tutte le informazioni necessarie per distribuire Microsoft Search nell'organizzazione
 ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746351"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508954"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -27,9 +27,9 @@ Nell'ambito di Office 365, Microsoft Search può essere distribuito facilmente a
 
 - [Configurazione rapida](quick-set-up.md)
     
-    Completare quattro passaggi per abilitare facilmente Microsoft Search
+    Quattro passaggi da completare per abilitare facilmente Microsoft Search
 
-- [Impostazioni relative al contenuto](content-settings.md)
+- [Impostazioni del contenuto](content-settings.md)
     
     Controllare l'aspetto dei risultati di Microsoft Search
     
