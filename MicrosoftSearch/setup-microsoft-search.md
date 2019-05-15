@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
+ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858273"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970131"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -30,7 +30,11 @@ Per altre informazioni sulle funzionalità di **Microsoft Search**, vedere [Pano
 
 **Microsoft Search** viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Basta eseguire l'accesso con un account aziendale o dell'istituto di istruzione e usare un browser con Bing impostato come provider di ricerca predefinito.
 
-Gli amministratori devono però considerare alcuni aspetti che possono rendere l'esperienza di **Microsoft Search** più efficiente e intuitiva nell'organizzazione.
+È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l'account di accesso con le credenziali di amministratore, quindi selezionare il riquadro **Amministratore** nell'**icona di avvio delle app**. Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
+
+**Nota:** se viene visualizzato il portale di amministrazione legacy e si vuole passare alla nuova interfaccia di amministrazione, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
+
+Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di **Microsoft Search** più efficiente e intuitiva nell'organizzazione.
 
 ### <a name="step-1-check-access-level-of-your-users"></a>Passaggio 1: Verificare il livello di accesso degli utenti
 
@@ -42,13 +46,13 @@ Altre informazioni sulla [pianificazione delle autorizzazioni](https://docs.micr
 
 Nell'**interfaccia di amministrazione di Microsoft** sono disponibili due nuovi ruoli: l'amministratore della ricerca e l'editor della ricerca.  L'amministratore globale, che dispone di privilegi completi, assegna i ruoli di amministratore agli utenti, incluso il ruolo di amministratore della ricerca. Gli amministratori della ricerca possono delegare i ruoli di amministratore della ricerca o di editor della ricerca ad altri utenti. Per altre informazioni sui diversi ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
+**Nota:** questi due nuovi ruoli, ovvero l'amministratore della ricerca e l'editor della ricerca, sono disponibili solo nell'**interfaccia di amministrazione di Microsoft 365**, non nel portale di amministrazione legacy. 
+
 Gli amministratori della ricerca influiscono direttamente sull'esperienza di ricerca per gli utenti finali, ad esempio scegliendo i tipi di risultati che gli utenti possono visualizzare. Può risultare difficile scegliere e creare contenuti rilevanti nei numerosi argomenti diversi che gli utenti cercano in un'organizzazione. È consigliabile sfruttare le competenze e le conoscenze degli SME e di altri utenti aggiungendoli come editor. 
 
 In **Microsoft Search** è possibile gestire i contenuti e le impostazioni di ricerca e dell'organizzazione usando due nuovi ruoli:
 1. **Amministratore della ricerca:** questo ruolo può creare e gestire i contenuti dei risultati della ricerca e definire le impostazioni query per migliorare i risultati all'interno dell'organizzazione. L'amministratore della ricerca gestisce la configurazione di **Microsoft Search** e designa gli editor della ricerca, che creano i contenuti.
 2. **Editor della ricerca:** crea, gestisce ed elimina i contenuti per **Microsoft Search** nell'interfaccia di amministrazione di Microsoft 365. Questo ruolo può creare e gestire contenuti editoriali, ad esempio domande frequenti, luoghi e località importanti, siti e app cercati e usati di frequente e così via. Non dispone però delle autorizzazioni di accesso per gestire le impostazioni di ricerca.
-
-**Nota:** questi due nuovi ruoli, ovvero l'amministratore della ricerca e l'editor della ricerca, sono disponibili solo nell'**interfaccia di amministrazione di Microsoft 365**, non nel portale di amministrazione legacy.
 
 Per assegnare i ruoli di amministratore, vedere [Assegnare diritti di amministratore in Office 365 per le aziende](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
