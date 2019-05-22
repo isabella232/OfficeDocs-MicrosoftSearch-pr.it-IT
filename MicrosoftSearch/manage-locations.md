@@ -13,37 +13,40 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
-description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per renderlo pertinente.
-ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
+ms.openlocfilehash: 0e23cf3d3d3d05fe86cdc3e09ce808e54242d670
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508666"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968430"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
-Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per renderlo pertinente. 
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
+Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente. 
   
-## <a name="filter-locations"></a>Percorsi del filtro
+## <a name="filter-locations"></a>Filtrare le posizioni
 
-Utilizzare l'opzione filtro nell'angolo in alto a destra della pagina posizioni per individuare le posizioni per data e vedere chi li ha modificati. Ad esempio, impostare il dispositivo di scorrimento data su 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco delle posizioni che hanno creato o modificato in quel periodo.
+Usare l'opzione del filtro nell'angolo superiore destro della pagina Posizioni per trovarle in base alla data e all'autore delle modifiche. Ad esempio, impostare il dispositivo di scorrimento della data su 30 giorni e selezionare un amministratore o un editor per vedere l'elenco di posizioni che ha creato o modificato in quell'intervallo di tempo.
   
-## <a name="change-location-content"></a>Modifica del contenuto della posizione
+## <a name="change-location-content"></a>Modificare il contenuto della posizione
 
 1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **percorsi**
+2. Nel riquadro di spostamento fare clic su **Posizioni**
     
-3. Per trovare una posizione, una ricerca, un filtro oppure fare clic su uno stato percorso per limitare i risultati
+3. Per trovare una posizione, cercare, filtrare o selezionare lo stato delle posizioni per limitare i risultati.
     
-4. Per modificare o aggiornare un percorso, fare clic sul nome del percorso.
+4. Per cambiare o aggiornare una posizione, fare clic sul nome.
     
-5. Apportare le modifiche o gli aggiornamenti al contenuto e visualizzare in anteprima il modo in cui verranno visualizzati 
+5. Modificare o aggiornare il contenuto e vederne in anteprima gli effetti. 
     
-6. Fare clic su **Salva**.
+6. Fare clic su **Salva**
     
-## <a name="bulk-export-and-edit-locations"></a>Esportazione e modifica in blocco delle posizioni
+## <a name="bulk-export-and-edit-locations"></a>Esportare in blocco e modificare posizioni
 
 Non modificare mai i dati in questi campi:
   
@@ -51,27 +54,27 @@ Non modificare mai i dati in questi campi:
     
 - Ultima modifica
     
-- Ultima modifica di
+- Autore ultima modifica
     
-ID è un identificatore univoco per ogni posizione e non deve mai essere modificato. Gli ultimi campi modificati e modificati in base all'Ultima modifica devono essere utilizzati solo per ordinare e trovare le posizioni.
+L'ID è un identificatore univoco per ogni posizione e non può essere modificato. I campi Ultima modifica e Autore ultima modifica devono essere usati solo per ordinare e trovare posizioni.
   
-1. Se si desidera esportare un sottoinsieme delle posizioni, filtrarli
+1. Se si vuole esportare un subset di posizioni, usare il filtro.
     
-2. Nell'angolo in alto a destra della pagina posizioni, fare clic su **Esporta**
+2. Nell'angolo superiore destro della pagina Posizioni fare clic su **Esporta**.
     
-3. Salvare o aprire il file. csv
+3. Salvare o aprire il file CSV
     
-4. Modificare i dati in uno di questi campi:
+4. Modificare i dati in questi campi:
     
-   - Name
+   - Nome
     
-   - Riga indirizzo 1
+   - Riga 1 indirizzo
     
-   - Riga indirizzo 2
+   - Riga 2 indirizzo
     
    - Città
     
-   - Stato dell'indirizzo
+   - Provincia indirizzo
     
    - CAP
     
@@ -89,13 +92,13 @@ ID è un identificatore univoco per ogni posizione e non deve mai essere modific
     
    - Stato
     
-5. Salvare il file. csv
+5. Salvare il file CSV
 
-    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
+    Il file CSV deve essere salvato come file UTF-8 CSV, altre codifiche e/o tipi di file potrebbero causare errori di importazione
     
-6. Nell'angolo in alto a destra della pagina posizioni, fare clic su **Importa**
+6. Nell'angolo superiore destro della pagina Posizioni fare clic su **Importa**
     
-7. Nel riquadro Importa percorsi fare clic su **Sfoglia** e selezionare il file CSV modificato 
+7. Nel riquadro Importa posizioni fare clic su **Sfoglia **e selezionare il file CSV modificato 
     
 8. Fare clic su **Importa**
 

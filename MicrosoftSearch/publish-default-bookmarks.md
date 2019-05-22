@@ -14,44 +14,47 @@ search.appverid:
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
 description: Segnalibri predefiniti disponibili nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 0105cf33fdf274a6a856615b992e5bc0e0cc02e8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508683"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968355"
 ---
 # <a name="publish-default-bookmarks"></a>Pubblicare i segnalibri predefiniti
 
-Per visualizzare rapidamente la modalità di visualizzazione dei segnalibri su Bing, pubblicare le impostazioni predefinite specificate. Utilizzarli come riferimento per comprendere come assegnare un nome ai segnalibri e creare parole chiave valide.
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
+Per vedere rapidamente come vengono visualizzati i segnalibri in Bing, pubblicare quelli predefiniti forniti. Usarli come riferimento per determinare come assegnare un nome ai segnalibri e creare parole chiave valide.
   
-È consigliabile esaminare i due set di segnalibri predefiniti:
+È consigliabile rivedere i due gruppi di segnalibri predefiniti:
   
-- Segnalibri predefiniti pubblicati
+- Segnalibri pubblicati predefiniti
     
-    Sono inclusi i risultati relativi alla ricerca e alla guida di Microsoft per le app di Windows e Office. Dopo che Microsoft Search è stato abilitato nell'interfaccia di amministrazione di Microsoft 365, questi vengono pubblicati automaticamente e verranno visualizzati in Bing. È possibile modificarli o eliminarli in qualsiasi momento.
+    Includono risultati su Microsoft Search e assistenza per le app di Windows e Office. Una volta abilitato Microsoft Search nell'interfaccia di amministrazione di Microsoft 365, vengono pubblicati automaticamente e vengono visualizzati su Bing. Possono essere modificati o eliminati in qualsiasi momento.
     
-- Segnalibri predefiniti consigliati
+- Segnalibri suggeriti predefiniti
     
-    Tra questi sono riportati i risultati per le ricerche comuni relative al lavoro, inclusi i vantaggi per i dipendenti, i tempi e i rapporti di spesa, l'invio degli ordini di acquisto e la guida dei servizi IT.
+    Includono risultati per ricerche correlate al lavoro comuni, tra cui benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e richieste di assistenza ai servizi IT.
     
-Se si trova un segnalibro esistente con lo stesso titolo o URL di un segnalibro predefinito, il valore predefinito verrà ignorato. Non è possibile modificare il segnalibro esistente in alcun modo, pubblicare il segnalibro predefinito o includere il segnalibro predefinito nell'elenco suggerito.
+Se viene trovato un segnalibro esistente con lo stesso titolo o URL di un segnalibro predefinito, quest'ultimo viene ignorato. Microsoft non modifica il segnalibro esistente, pubblica il segnalibro predefinito o lo include nell'elenco Suggeriti.
   
-## <a name="update-and-publish-a-default-suggested-bookmark"></a>Aggiornare e pubblicare un segnalibro consigliato predefinito
+## <a name="update-and-publish-a-default-suggested-bookmark"></a>Aggiornare e pubblicare un segnalibro suggerito predefinito
 
 1. Passare al portale di amministrazione di Microsoft Search
     
 2. Nel riquadro di spostamento fare clic su **Segnalibri**
     
-3. Nella BookmarksPage, fare clic su **suggerito**
+3. Nella pagina dei segnalibri fare clic su **Suggeriti**.
     
-4. Selezionato un segnalibro consigliato e fare clic su **modifica**
+4. Selezionare un segnalibro suggerito e fare clic su **Modifica**.
     
-5. Esaminare il contenuto del segnalibro e apportare le modifiche necessarie
+5. Esaminare il contenuto del segnalibro e apportare le eventuali modifiche necessarie.
     
-6. Aggiungere informazioni mancanti, ad esempio un URL o una descrizione
+6. Aggiungere le informazioni mancanti, ad esempio un URL o una descrizione.
     
-7. Fare clic su **pubblica**
+7. Fare clic su **Pubblica**.
     
 Attualmente, i segnalibri predefiniti sono disponibili solo in inglese. 
 

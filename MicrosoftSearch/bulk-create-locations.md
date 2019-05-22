@@ -13,56 +13,59 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: Aggiungere un numero elevato di posizioni contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Aggiungere più posizioni contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
+ms.openlocfilehash: 1d360fda2851083def0bcbd8fcffd77cfa15240e
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508562"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968292"
 ---
 # <a name="bulk-create-locations"></a>Creare posizioni in blocco
 
-Scaricare e utilizzare il modello. csv per creare, modificare e salvare in blocco le posizioni. 
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
+Scaricare e usare il modello CSV per creare, modificare e salvare in blocco le posizioni. 
   
-1. Nell'angolo in alto a destra della sezione posizioni fare clic su **Importa** .
+1. Nell'angolo superiore destro della sezione Posizioni, fare clic su **Importa**.
     
-2. Fare clic su **download template locations (. csv)**
+2. Fare clic su **Scarica il modello delle posizioni (.CSV)**
     
-3. Salvare e aprire il file. csv
+3. Salvare e aprire il file CSV
     
-4. Aggiungere il contenuto del percorso e salvare il file
+4. Aggiungere il contenuto della posizione e salvare il file
 
-    Il file. csv deve essere salvato come file UTF-8 CSV, altri tipi di file e o codifiche possono causare errori di importazione
+    Il file CSV deve essere salvato come file UTF-8 CSV, altre codifiche e/o tipi di file potrebbero causare errori di importazione
     
-5. Nell'angolo in alto a destra della sezione posizioni fare clic su **Importa** .
+5. Nell'angolo superiore destro della sezione Posizioni, fare clic su **Importa**.
     
-6. Nel riquadro Importa percorsi fare clic su **Sfoglia** e passare al file CSV che si desidera importare. 
+6. Nel riquadro Importa posizioni fare clic su **Sfoglia **e passare al file CSV da importare. 
     
-7. Fare clic su **Importa**
+7. Fare clic su **Importa**.
 
-I campi nei modelli delle posizioni di importazione ed esportazione sono gli stessi. È possibile esportare, modificare in blocco e importare le modifiche o iniziare con un modello vuoto per creare in blocco nuove posizioni. Per modificare in blocco le posizioni esistenti, esportarle dal portale di amministrazione, apportare le modifiche necessarie e quindi importarle.
+I campi nei modelli di importazione ed esportazione sono gli stessi. È possibile esportare, modificare in blocco e importare le modifiche oppure iniziare con un modello vuoto per creare in blocco nuove posizioni. Per modificare in blocco posizioni esistenti, esportarle dal portale di amministrazione, apportare le modifiche necessarie e quindi importarle.
 
-# <a name="prevent-import-errors"></a>Prevenire gli errori di importazione  
-Se i dati richiesti sono mancanti o non validi, verrà visualizzato un messaggio di errore. A seconda dell'errore, è possibile che venga generato un file di registro con ulteriori informazioni sulle righe e le colonne che devono essere corrette. Apportare le modifiche necessarie e provare a importare di nuovo il file.
+# <a name="prevent-import-errors"></a>Evitare gli errori di importazione  
+Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore. A seconda dell'errore, può essere generato un file di log con altre informazioni sulle righe e sulle colonne da correggere. Apportare le modifiche necessarie e ritentare l'importazione del file.
   
 > [!NOTE]
-> Fino a quando non vengono risolti tutti gli errori, non è possibile creare o modificare posizioni. 
+> Fino a quando non sono stati risolti tutti gli errori, non è possibile creare o modificare le posizioni. 
 
-Per evitare errori, verificare che il file di importazione sia formattato correttamente:
-- Include la riga di intestazione inclusa nel modello di importazione
-- Include tutte le colonne incluse nel modello di importazione
-- L'ordine di colonna è lo stesso del modello di importazione
-- Tali colonne possono essere vuote: ID, last modified, last modified by e Lat/Long  
-Si cercherà di determinare Lat/Long in base all'indirizzo se il campo è vuoto.
-- La colonna dello stato non può essere vuota, queste informazioni sono obbligatorie  
-In base al campo dello stato, i percorsi verranno salvati come bozza, suggeriti, pianificati o verranno pubblicati automaticamente.
+Per evitare errori, verificare che il file di importazione sia formattato correttamente, ossia che:
+- Includa la riga di intestazione presente nel modello di importazione
+- Includa tutte le colonne presenti nel modello di importazione
+- L'ordine delle colonne equivalga a quello del modello di importazione
+- Queste colonne possono essere vuote: ID, Ultima modifica, Autore ultima modifica e Latitudine/longitudine  
+Sse il campo è vuoto, si proverà a determinare la latitudine e la longitudine in base all'indirizzo
+- La colonna Stato non può essere vuota, perché si tratta di informazioni obbligatorie  
+In base al campo Stato, le posizioni saranno salvate come bozza, suggerite o pianificate, oppure saranno pubblicate automaticamente.
 
-Inoltre, se si include l'ID di un percorso esistente, verrà sostituito con le informazioni contenute nel file di importazione.
+Se si include l'Id di una posizione esistente, verrà sostituito con le informazioni presenti nel file di importazione.
 
-Per le organizzazioni con tenant di più, è possibile esportare i percorsi da un tenant e importarli in un altro. È tuttavia necessario rimuovere tutti i dati nella colonna ID prima di essere importati.
+Per le organizzazioni con più tenant, è possibile esportare le posizioni da un tenant e importarle in un altro. È tuttavia necessario rimuovere i dati dalla colonna Id prima dell'importazione.
   
-Per ulteriori informazioni sui campi richiesti e consigliati, vedere [aggiungere un percorso](add-a-location.md).
+Per altre informazioni sui campi obbligatori e consigliati, vedere [Aggiungere una posizione](add-a-location.md).
 
   
 

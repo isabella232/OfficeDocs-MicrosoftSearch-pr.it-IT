@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: Informazioni sulle ricerche di esempio che vengono visualizzate quando si utilizza Microsoft Search
+description: Informazioni sulle ricerche di esempio che è possibile visualizzare quando si usa Microsoft Search
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
 ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/01/2019
 ms.locfileid: "33508506"
 ---
 # <a name="suggested-searches"></a>Ricerche suggerite
 
-La prima volta che accedi a Bing con l'account aziendale o dell'Istituto di istruzione, vedrai un messaggio di benvenuto nella parte superiore della pagina con le ricerche consigliate. Tali ricerche consentono di acquisire familiarità con Microsoft Search e i tipi di risultati del lavoro che verranno individuati durante la ricerca.
+La prima volta che si accede a Bing con l'account aziendale o dell'istituto di istruzione, viene visualizzato un messaggio di benvenuto nella parte superiore della pagina con ricerche suggerite. Tali ricerche aiutano l'utente ad acquisire familiarità con Microsoft Search e i tipi di risultati di lavoro trovati durante la ricerca.
   
-Per renderle più rilevanti per l'utente e per gli altri utenti dell'organizzazione, il reparto IT ha esaminato o creato i propri.
+Per renderli più pertinenti per l'utente e le altre persone dell'organizzazione, il reparto IT le ha controllate o create appositamente.
   
-In alcuni casi, verranno visualizzati messaggi che annunciano nuove funzionalità o informazioni su Microsoft Search. Ti daremo sempre un collegamento per ulteriori informazioni oppure puoi andare alla pagina per [esplorare Microsoft Search](https://www.bing.com/business/explore) per ottenere ulteriori dettagli. 
+In alcuni casi, verranno visualizzati messaggi che annunciano nuove funzionalità o che forniscono maggiori informazioni su Microsoft Search. Verrà sempre fornito un collegamento per avere maggiori informazioni; in alternativa, è possibile accedere a [Esplora Microsoft Search](https://www.bing.com/business/explore) per ulteriori informazioni. 
 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Creare e gestire Q&As
+title: Creare e gestire le domande e risposte
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,54 +14,57 @@ search.appverid:
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
 description: Panoramica di tutti i modi per creare risposte alle domande frequenti nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508746"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968435"
 ---
-# <a name="create-and-manage-qas"></a>Creare e gestire Q&As
+# <a name="create-and-manage-qas"></a>Creare e gestire le domande e risposte
 
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
 ## <a name="create-qas"></a>Creare domande e risposte
 
-Q&As fornire la migliore risposta possibile per le domande relative al lavoro dell'utente. Gli utenti possono scoprirli facilmente quando immettono parole chiave associate a Bing.
+Le domande e risposte sono lo strumento ideale per rispondere nel miglior modo possibile alle domande correlate al lavoro degli utenti. Gli utenti possono trovarle facilmente inserendo le parole chiave associate ad esse su Bing.
   
-- [Creare Q&As](create-qas.md)
+- [Creare domande e risposte](create-qas.md)
     
-    Aggiungere singoli Q&As.
+    Aggiungere singole domande e risposte.
     
-- [Creazione e importazione in blocco di Q&As](bulk-create-qas.md)
+- [Creare in blocco e importare domande e risposte](bulk-create-qas.md)
     
-    Creare Q&As in un file con estensione CSV e quindi importarli in blocco.
+    Creare domande e risposte in un file CSV e importarle in blocco.
     
 ## <a name="manage-qas"></a>Gestire le domande e risposte
 
-Utilizzare lo stato Q&A, gli strumenti di filtro e gli strumenti di esportazione/importazione in blocco per [individuare e aggiornare il contenuto di Q&A](manage-qas.md), tra cui title, answer, keywords e URLs.
+Usare lo stato delle domande e risposte, gli strumenti di filtro e gli strumenti di importazione/esportazione in blocco per [trovare e aggiornare i contenuti delle domande e risposte](manage-qas.md), tra cui titolo, risposta, parole chiave e URL.
   
-## <a name="qa-status"></a>Stato Q&A
+## <a name="qa-status"></a>Stato delle domande e risposte
 
-Nel portale di amministrazione, è possibile visualizzare Q&As in base allo stato corrente:
+Nel portale di amministrazione è possibile visualizzare le domande e risposte suddivise per stato corrente:
   
 - Pubblicato
     
-    I Q&As pubblicati vengono visualizzati nei risultati di ricerca di Bing quando un utente autorizzato cerca una parola chiave.
+    Le domande e risposte pubblicate vengono visualizzate nei risultati della ricerca in Bing quando un utente autorizzato cerca una parola chiave.
     
-- Progetto
+- Bozza
     
-    Se un Q&A non è pronto per la pubblicazione, salvarlo come bozza. La bozza di Q&As non verrà visualizzata su Bing.
+    Se non è possibile pubblicare domande e risposte specifiche, salvarle come bozza. Le bozze di domande e risposte non vengono visualizzate su Bing.
     
-- Scheduled
+- Programmato
     
-    Le Q&As pianificate vengono pubblicate automaticamente in una data futura.
+    Le domande e risposte programmate vengono pubblicate automaticamente in una data futura.
     
 - Scaduto
     
-    I Q&As scaduti sono stati rimossi automaticamente dal contenuto pubblicato in base alla data di scadenza.
+    Le domande e risposte scadute vengono rimosse automaticamente dai contenuti pubblicati in base alle loro date di scadenza.
     
-- Suggeriti
+- Suggerito
     
-    Le Q&As consigliate si basano su commenti e suggerimenti degli utenti.
+    Le domande e risposte suggerite sono basate sul feedback degli utenti.
 
   
 

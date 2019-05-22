@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
-description: Inviare commenti e suggerimenti su Microsoft Search al reparto IT o Microsoft
+description: Inviare feedback e commenti su Microsoft Search al reparto IT o a Microsoft
 ms.openlocfilehash: cbf4aab91116e2f34d54aa39d5cba9f5d505fc11
 ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/01/2019
 ms.locfileid: "33508890"
 ---
 # <a name="send-feedback"></a>Inviare feedback
 
-I commenti e suggerimenti consentono di migliorare la ricerca di Microsoft. In un risultato di lavoro, utilizzare il collegamento commenti e suggerimenti su ciò che si desidera, non piace o suggerire nuove funzionalità o risultati che si desidera aggiungere. È inoltre possibile utilizzare il collegamento per segnalare qualsiasi problema o problemi riscontrati.
+Il feedback degli utenti contribuisce a migliorare Microsoft Search. In un risultato di lavoro, usare il collegamento Feedback per inviare commenti o suggerimenti sulle nuove funzionalità o sui risultati che si vogliono aggiungere. È anche possibile usare il collegamento per segnalare eventuali problemi riscontrati.
   
-## <a name="send-feedback-about-work-results"></a>Inviare commenti e suggerimenti sui risultati del lavoro
+## <a name="send-feedback-about-work-results"></a>Inviare feedback sui risultati di lavoro
 
-Per inviare commenti e suggerimenti, nella parte inferiore di qualsiasi risultato del lavoro, fare clic su **commenti e suggerimenti**. A seconda del tipo di risultato, è possibile che vengano visualizzate le opzioni per inviare commenti e suggerimenti al reparto IT o a Microsoft.
+Per inviare feedback, nella parte inferiore di un risultato di lavoro fare clic su **Feedback**. A seconda del tipo di risultato, è possibile vedere opzioni per inviare feedback al reparto IT o a Microsoft.
   
-I commenti inviati a Microsoft sono pubblicati nel nostro widget UserVoice. Chiunque invii commenti e suggerimenti potrebbe essere in grado di leggere e sottoscrivere i propri commenti.
+I feedback inviati a Microsoft vengono pubblicati nel widget UserVoice. Chiunque invii feedback potrebbe essere in grado di leggere e sottoscrivere i commenti.
   
-I commenti e suggerimenti inviati al reparto IT non sono condivisi direttamente con Microsoft.
+I feedback inviati al reparto IT non vengono condivisi direttamente con Microsoft.
   
-## <a name="send-feedback-about-web-results"></a>Inviare commenti e suggerimenti sui risultati Web
+## <a name="send-feedback-about-web-results"></a>Inviare feedback sui risultati Web
 
-Quando si utilizza Microsoft Search, è possibile che si verifichino commenti e suggerimenti sui risultati Web visualizzati. Per inviare commenti e suggerimenti, fare clic su **commenti e suggerimenti** nella parte inferiore di qualsiasi pagina Bing. Questo feedback non è condiviso con l'organizzazione. Bing esamina tutti i commenti e suggerimenti, ma non riceverà una risposta personale. 
+Quando si usa Microsoft Search, è possibile avere dei feedback sui risultati Web visualizzati. Per inviare tali feedback, fare clic su **Feedback** nella parte inferiore di qualsiasi pagina. Il feedback non viene condiviso con l'organizzazione. Bing esamina tutto il feedback, ma non si riceverà una risposta personale. 
 
   
 

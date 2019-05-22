@@ -13,122 +13,122 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
-description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
+description: Metodi e processi per una corretta implementazione di Microsoft Search nell'organizzazione
 ms.openlocfilehash: d77fca51b98c80e1e05287c7a9bd77eaa3f9af57
 ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/01/2019
 ms.locfileid: "33508880"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
-Queste informazioni sono destinate agli amministratori di Microsoft Search, ai responsabili della gestione delle modifiche e ai proprietari di aziende.
+Queste informazioni sono destinate agli amministratori di Microsoft Search, ai responsabili della gestione del cambiamento e ai proprietari di aziende.
   
-Per eseguire il rollforward e garantire la corretta adozione di Microsoft Search nell'organizzazione, è consigliabile questo processo in quattro fasi.
+Per implementare correttamente Microsoft Search e garantire il successo dell'adozione all'interno dell'organizzazione, è consigliabile seguire questo processo in quattro fasi.
   
-## <a name="stage-1-stakeholders"></a>Passaggio 1: parti interessate
+## <a name="stage-1-stakeholders"></a>Fase 1: stakeholder
 
-Per garantire un'implementazione senza problemi e aumentare l'adozione da parte degli utenti di Microsoft Search, identificare gli utenti che possono contribuire al supporto e alla guida del processo.
+Per garantire un'implementazione priva di problemi e aumentare l'adozione di Microsoft Search da parte degli utenti, identificare le persone che possono supportare e favorire il processo.
   
-Nella tabella viene illustrata la gerarchia del team e ciò che ogni persona contribuisce. 
+La tabella mostra la gerarchia del team e il contributo di ogni persona. 
   
- **Ruoli e responsabilità del team di adozione degli utenti**
+ **Ruoli e responsabilità del team responsabile dell'adozione da parte degli utenti**
   
-|**Ruolo**|**Responsabilità**|**Department**|
+|**Ruolo**|**Responsabilità**|**Reparto**|
 |:-----|:-----|:-----|
-|Sponsor esecutivo  <br/> |Comprendere la visione di alto livello e il valore di Microsoft Search per la propria organizzazione  <br/> Fornire supporto per la leadership al team IT/Business  <br/> Allocare le risorse  <br/> Comunicare direttamente con i dipendenti  <br/> |Leadership esecutiva  <br/> |
-|Proprietario dell'azienda  <br/> |Identificare gli scenari di prodotti e utenti  <br/> Determinare la metrica di esito positivo per i reparti e l'organizzazione  <br/> |Qualsiasi  <br/> |
-|Modifica del team di gestione  <br/> |Verificare che il valore del prodotto sia facile da comprendere  <br/> Creare un piano per l'implementazione  <br/> |IT  <br/> |
-|Campioni  <br/> |Evangelizzare il prodotto ai peer e ai team  <br/> |Qualsiasi (personale)  <br/> |
-|Amministratore ricerca  <br/> |Identificare i membri del team di base per l'adozione degli utenti  <br/> Amministrare la ricerca Microsoft, tra cui l'aspetto dell'esperienza e la gestione continua  <br/> Guidare le discussioni per mostrare il valore di Microsoft Search  <br/> |IT  <br/> |
-|Editors  <br/> |Creare contenuto nel portale di amministrazione  <br/> |IT/any  <br/> |
+|Sponsor esecutivo  <br/> |Comprendere la visione ad alto livello e il valore di Microsoft Search per l'organizzazione  <br/> Offrire supporto direzionale al team IT/aziendale  <br/> Assegnare risorse  <br/> Comunicare direttamente con i dipendenti  <br/> |Leadership esecutiva  <br/> |
+|Titolare dell'azienda  <br/> |Identificare scenari relativi al prodotto e agli utenti  <br/> Determinare le metriche di successo per i reparti e l'organizzazione  <br/> |Qualsiasi  <br/> |
+|Team di gestione del cambiamento  <br/> |Assicurarsi che il valore del prodotto sia semplice da comprendere  <br/> Creare un piano per l'implementazione  <br/> |IT  <br/> |
+|Promotori  <br/> |Promuovere il prodotto presso colleghi e team  <br/> |Qualsiasi (personale)  <br/> |
+|Amministratore della ricerca  <br/> |Identificare i membri del team di base responsabile dell'adozione da parte degli utenti  <br/> Amministrare Microsoft Search, inclusi l'aspetto e la gestione continuativa dell'esperienza  <br/> Promuovere discussioni per mostrare il valore di Microsoft Search  <br/> |IT  <br/> |
+|Editor  <br/> |Creare contenuto nel portale di amministrazione  <br/> |IT/Qualsiasi  <br/> |
    
-## <a name="stage-2-scenarios"></a>Passaggio 2: scenari
+## <a name="stage-2-scenarios"></a>Fase 2: scenari
 
-Per garantire l'adozione da parte dell'utente, è importante determinare e definire scenari per gli utenti finali. Questi dovrebbero includere esempi concreti del modo in cui gli utenti possono utilizzare Microsoft Search per trovare le informazioni necessarie, rispondere alle domande e completare le attività più velocemente. Per misurare l'esito positivo dell'implementazione e dell'adozione dell'utente, è importante determinare anche le metriche che verranno utilizzate prima di iniziare.
+Per garantire l'adozione, è essenziale determinare e definire scenari per gli utenti finali. Questi dovrebbero includere esempi reali di come gli utenti possono usare Microsoft Search per trovare le informazioni necessarie, rispondere alle domande e completare più rapidamente le attività. Per misurare il successo dell'implementazione e l'adozione da parte degli utenti, è anche importante determinare le metriche da usare prima di iniziare.
   
- **Comprendere cosa è necessario e come gli utenti desiderano**
+ **Comprendere le necessità e i desideri degli utenti**
   
-Quando si tratta di trovare informazioni e ottenere risposte, conoscere le esigenze dell'utente e i punti di dolore è la chiave. È possibile utilizzare metodi quantitativi, come i dati provenienti da Office 365 e l'utilizzo della ricerca di SharePoint, o metodi qualitativi, ad esempio i sondaggi e i gruppi di Focus utente per ottenere questi dati. Ciò consentirà di determinare quando, dove e come Microsoft Search può fornire valore.
+Per quanto concerne la ricerca di informazioni e risposte, conoscere le esigenze degli utenti e le aree di criticità è essenziale. Per ottenere questi dati è possibile usare metodi quantitativi, ad esempio dati sull'utilizzo di Office 365 e della ricerca di SharePoint, o metodi qualitativi, come sondaggi e focus group. Questo consentirà di determinare quando, dove e come Microsoft Search può fornire valore.
   
-Per diversi ruoli e team nell'organizzazione, prendere in considerazione quanto segue:
+Per i diversi ruoli e team nell'organizzazione, considerare:
   
-- Punti di dolore per gli utenti esistenti durante la ricerca di informazioni.
+- Le attuali criticità percepite dagli utenti durante la ricerca di informazioni.
     
 - App, strumenti, siti e altre fonti di informazioni di uso frequente.
     
-- Che cosa gli utenti desiderano vedere quando si tratta di cercare informazioni.
+- Aspettative degli utenti nell'ambito della ricerca di informazioni.
     
-- Modalità di applicazione dei vantaggi di Microsoft Search all'organizzazione. Per ulteriori informazioni, vedere [Why Microsoft Search](why-microsoft-search.md).
+- Vantaggi di Microsoft Search applicati all'organizzazione. Per altre informazioni, vedere [Perché scegliere Microsoft Search](why-microsoft-search.md).
     
-Scegliere gli scenari utente che avranno il maggiore impatto positivo per gli utenti.
+Scegliere gli scenari utente che avranno il massimo impatto positivo sugli utenti.
   
- **Identificare le metriche di esito positivo**
+ **Identificare le metriche di successo**
   
-Per aiutarti a soddisfare gli obiettivi di roll-out e mostrare un impatto positivo per la tua organizzazione, è importante determinare le metriche di successo principali prima di iniziare. Mantenere i propri obiettivi semplici e misurabili e valutare le prestazioni su base regolare in modo da poter rispondere rapidamente, se necessario.
+Per favorire il raggiungimento degli obiettivi di implementazione e dimostrare un impatto positivo per la propria organizzazione, è essenziale determinare le metriche di successo chiave prima di iniziare. Mantenere gli obiettivi semplici e misurabili e valutare le prestazioni regolarmente, in modo da poter rispondere rapidamente qualora necessario.
   
-1. **Gestione delle modifiche:** Determinare in che modo si misurerà la consapevolezza di Microsoft Search e il successo delle comunicazioni. 
+1. **Gestione del cambiamento**: stabilire come misurare la sensibilizzazione in merito a Microsoft Search e il successo delle comunicazioni in proposito. 
     
-2. **Utilizzo:** È possibile utilizzare i dati del dashboard Insights, compresi gli utenti attivi giornalieri e mensili (DAU e MAU), i tipi di contenuto che stanno ottenendo la maggior parte delle visualizzazioni e le parole chiave di ricerca principali per misurare l'utilizzo nel tempo. Per ulteriori informazioni, vedere [use the Insights dashboard](get-insights.md).
+2. **Utilizzo:** per misurare l'utilizzo nel tempo è possibile usare i dati offerti dal dashboard degli approfondimenti, tra cui numero di utenti attivi giornalieri e mensili, tipi di contenuto che ottengono il maggior numero di visualizzazioni e parole chiave di ricerca più frequenti. Per altre informazioni, vedere [Uso del dashboard degli approfondimenti](get-insights.md).
     
-3. **Soddisfazione degli utenti:** Utilizzare i dati raccolti da sondaggi e gruppi di attenzione per determinare la linea di base. NET Satisfaction (NSAT) e Net Promoter scores (NPS) può anche fornire misure utili. Indipendentemente dal metodo utilizzato, mantenerlo coerente in modo che sia possibile visualizzare l'impatto nel tempo. 
+3. **Soddisfazione degli utenti:** usare i dati raccolti dai sondaggi e dai focus group per determinare la baseline. Misure utili sono offerte anche dal punteggio relativo alla soddisfazione netta degli utenti (NSAT) e dal valore Net Promoter Score (NPS). Indipendentemente dal metodo usato, mantenerlo coerente in modo da poter vedere l'impatto nel tempo. 
     
-4. **Altre misure:** Utilizzare i dati cronologici e/o correnti per le richieste di supporto e la quantità di tempo necessario per la ricerca. 
+4. **Altre misurazioni:** usare dati storici e/o correnti relativi alle richieste di supporto e alla quantità di tempo dedicato alla ricerca. 
     
 ## <a name="stage-3-readiness"></a>Fase 3: preparazione
 
-Investire tempo per prepararsi per l'implementazione di Microsoft Search provocherà un impatto positivo per la propria organizzazione. 
+Dedicare del tempo a preparare l'implementazione di Microsoft Search avrà certamente un impatto positivo sull'organizzazione. 
   
- **Preparazione del contenuto e del prodotto**
+ **Preparazione del prodotto e dei contenuti**
   
-Gli amministratori influiscono direttamente sull'esperienza di ricerca per gli utenti finali e determinano la modalità di ricerca dell'organizzazione da parte di Microsoft Search. Questo include la scelta dei tipi di risultati che si desidera visualizzare in superficie per gli utenti. Controllarlo attivando o disattivando i risultati per documenti, siti, persone, gruppi o conversazioni.
+Gli amministratori influiscono direttamente sull'esperienza di ricerca per gli utenti finali e stabiliscono l'aspetto che Microsoft Search avrà all'interno dell'organizzazione. Ad esempio, scelgono i tipi di risultati che vengono mostrati agli utenti. Controllare questa impostazione attivando o disattivando i risultati per documenti, siti, persone, gruppi o conversazioni.
   
-Per ulteriori informazioni, vedere [configurare Microsoft Search](set-up-microsoft-search.md).
+Per altre informazioni, vedere [Configurare Microsoft Search](set-up-microsoft-search.md).
   
-Gli editori sono esperti in materia che consentono di gestire i segnalibri e Q&As all'interno delle aree di competenza. Gli editor devono creare contenuto che affronti gli scenari degli utenti precedentemente identificati.
+Gli editor sono esperti in materia che aiutano a gestire i segnalibri e le domande e risposte nelle proprie aree di competenza. Gli editor devono creare contenuti mirati agli scenari utente identificati in precedenza.
   
-Per ulteriori informazioni, vedere [pianificare il contenuto](plan-your-content.md).
+Per altre informazioni, vedere [Pianificare i contenuti](plan-your-content.md).
   
  **Accesso**
   
-Gli utenti di Microsoft Search devono accedere a Bing con un account aziendale o dell'Istituto di istruzione. Per rendere l'accesso il più semplice possibile per gli utenti:
+Gli utenti di Microsoft Search devono accedere a Bing con un account aziendale o dell'istituto di istruzione. Per fare in modo che l'accesso sia più semplice possibile per gli utenti:
   
-- Verificare che le configurazioni di Azure Active Directory siano impostate correttamente, che alcuni utenti tentino di accedere. Per ulteriori informazioni, vedere [test Single Sign-on](test-single-sign-on.md).
+- Assicurarsi che le configurazioni di Azure Active Directory siano impostate correttamente, facendo eseguire l'accesso ad alcuni utenti. Per altre informazioni, vedere [Testare l'accesso Single Sign-On](test-single-sign-on.md).
     
-- Impostare le impostazioni predefinite del browser per i dispositivi gestiti dall'azienda su Bing. Per ulteriori informazioni, vedere [set default browser](set-default-browser.md).
+- Configurare Bing come browser predefinito per i dispositivi gestiti dall'azienda. Per altre informazioni, vedere [Impostare il browser predefinito](set-default-browser.md).
     
-- Distribuire le estensioni di ricerca per gli utenti di Edge e Chrome tramite criteri di gruppo. Per ulteriori informazioni, vedere [admin Portal Tools](admin-portal-tools.md).
+- Distribuire le estensioni di ricerca per gli utenti di Microsoft Edge e Chrome tramite Criteri di gruppo. Per altre informazioni, vedere [Strumenti del portale di amministrazione](admin-portal-tools.md).
     
- **Bozze di comunicazione**
+ **Creare un piano di comunicazione**
   
-Utilizzare gli scenari del mondo reale per informare gli utenti sulla ricerca di Microsoft e su come aiutarli a risparmiare tempo. Il team di gestione delle modifiche può contribuire alla creazione di una strategia di implementazione e alla preparazione di garanzie e campagne per la preparazione degli utenti finali.
+Usare gli scenari reali identificati in precedenza per parlare agli utenti di Microsoft Search e del modo in cui li aiuterà a risparmiare tempo. Il team di gestione del cambiamento può aiutare a creare una strategia di implementazione e a preparare campagne e materiale di marketing per preparare gli utenti finali.
   
-Iniziare a pianificare le comunicazioni e gli eventi per l'organizzazione:
+Iniziare a pianificare comunicazioni ed eventi per l'organizzazione:
   
-- Banner, poster o opuscoli inseriti in posizioni prominenti
+- Esporre banner, poster e opuscoli in posizioni altamente visibili
     
-- Demo o cabine di prodotti in-person
+- Predisporre stand dimostrativi o dimostrazioni del prodotto in prima persona
     
-- Eventi online per team locali e remoti
+- Organizzare eventi online per team locali e remoti
     
-- Fare in modo che il proprio sponsor esecutivo incontri una riunione del Municipio o invii un messaggio di posta elettronica
+- Fare in modo che lo sponsor esecutivo organizzi una riunione di tutto il personale o invii un'e-mail di annuncio
     
-- Condividere la documentazione self-help sull'utilizzo di Microsoft Search
+- Condividere documentazione di supporto self-help sull'uso di Microsoft Search
     
-Tutte le comunicazioni devono informare gli utenti su come possono accedere a Bing per trovare i risultati del lavoro.
+Tutte le comunicazioni devono essere mirate a insegnare agli utenti come accedere a Bing per trovare risultati di lavoro.
   
- **Coinvolgere i team di partner**
+ **Coinvolgere team partner**
   
-Come parte integrante di Microsoft 365, Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [Security for Microsoft Search](security.md).
+Come parte integrante di Microsoft 365, Microsoft Search è conforme al GDPR e alle linee guida per il Livello C. A seconda dell'organizzazione, può essere necessario condividere informazioni su Microsoft Search con i team addetti alla privacy e alla sicurezza. Per altre informazioni, vedere [Sicurezza per Microsoft Search](security.md).
   
-Verificare che il supporto tecnico conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare più efficacemente gli utenti. Per ulteriori informazioni, vedere [use Microsoft Search](use/about-microsoft-search.md) and [FAQs](faqs.md).
+Assicurarsi che l'help desk conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti per l'accesso, in modo da supportare gli utenti in modo più efficace. Per altre informazioni, vedere [Usare Microsoft Search](use/about-microsoft-search.md) e le [domande frequenti](faqs.md).
   
- **Valutare con gli utenti pilota**
+ **Valutare il prodotto con utenti pilota**
   
-Iniziare con un piccolo gruppo di utenti per valutare l'impatto di Microsoft Search e raccogliere commenti e suggerimenti precoci. In questo modo è possibile modificare il contenuto, aggiornare le comunicazioni e impostare le aspettative per l'implementazione generale. Gli utenti di Power Search o Early Adopter sono grandi candidati per questo.
+Iniziare con un piccolo gruppo di utenti per valutare l'impatto di Microsoft Search e raccogliere un feedback iniziale. Questo darà il tempo di modificare i contenuti, aggiornare le comunicazioni e definire le aspettative per l'implementazione su vasta scala. Utenti esperti di Microsoft Search o early adopter sono candidati ideali.
   
-Per aiutare a trovare gli utenti pilota:
+Per trovare gli utenti pilota:
   
 - Collaborare con uno sponsor aziendale all'interno dell'organizzazione
     
@@ -138,61 +138,61 @@ Per aiutare a trovare gli utenti pilota:
     
 - Identificare gli utenti in aree geografiche diverse, anche a livello internazionale
     
-Chiedere agli utenti pilota di fornire input utilizzando le opzioni di feedback in Microsoft Search o tramite sondaggi semplici.
+Chiedere agli utenti del programma pilota di fornire input usando le opzioni di feedback in Microsoft Search o tramite semplici sondaggi.
   
-Domande del sondaggio da porsi: 
+Domande da porre nei sondaggi: 
   
-- Sono disponibili informazioni su come accedere e utilizzare Microsoft Search.
+- Sapete come eseguire l'accesso e come usare Microsoft Search?
     
 - Funziona come previsto?
     
-- Quali funzionalità ti piacciono?
+- Quali funzionalità avete apprezzato?
     
-- Sono stati in grado di trovare risultati di lavoro?
+- Siete riusciti a trovare risultati di lavoro?
     
-- I risultati del lavoro sono stati utili?
+- I risultati di lavoro sono stati utili?
     
-- Le comunicazioni su Microsoft Search sono chiare e comprensibili?
+- Le comunicazioni relative a Microsoft Search sono chiare e comprensibili?
     
-Questo è un ottimo momento per iniziare a misurare l'efficacia delle metriche identificate nel passaggio 2.
+Questo è il momento giusto per iniziare a misurare l'efficacia delle metriche identificate nella Fase 2.
   
-Quando si avvia la fase pilota, prendere in considerazione la possibilità di condividere una sneak peek di Microsoft Search con l'organizzazione più ampia.
+Quando si avvia la fase pilota, è consigliabile condividere un'anteprima di Microsoft Search con l'intera organizzazione.
   
-## <a name="stage-4-roll-out"></a>Passaggio 4: implementazione
+## <a name="stage-4-roll-out"></a>Fase 4: implementazione
 
-Ogni organizzazione pensa che il prodotto graduali in modo diverso. Di seguito sono riportate alcune considerazioni.
+Ogni organizzazione pianifica l'implementazione dei prodotti in modo diverso. Ecco alcuni aspetti da considerare.
   
- **Distribuzione generale**
+ **Distribuzione su larga scala**
   
-Quando si è pronti, è possibile consentire a tutti gli utenti dell'organizzazione di accedere a Microsoft Search o utilizzare un approccio graduale per eseguire una distribuzione più lenta. 
+Quando si è pronti, è possibile consentire a tutti gli utenti dell'organizzazione di accedere a Microsoft Search o usare un approccio in fasi per un'implementazione più lenta. 
   
- **Generare consapevolezza**
+ **Generare sensibilizzazione**
   
-Creare emozioni nell'organizzazione in merito a Microsoft Search:
+Suscitare entusiasmo rispetto a Microsoft Search nell'organizzazione:
   
-- Integrare gli utenti pilota per fornire assistenza e competenze peer-to-peer.
+- Chiedere agli utenti pilota di fornire assistenza e consulenza ai colleghi.
     
-- Seguire le comunicazioni e gli eventi che sono stati pianificati nel passaggio 3.
+- Portare avanti il piano di comunicazione e gli eventi pianificati nella Fase 3.
     
- **Comunicazione in uscita**
+ **Comunicazione continuativa**
   
-Per le prime settimane e i mesi, mantenere un ritmo di comunicazione per incoraggiare l'impegno con Microsoft Search. Questo mantiene gli utenti informati e coinvolge nuovi utenti. Ogni comunicazione deve spiegare perché Microsoft Search può essere utile per il proprio lavoro.
+Per le prime settimane e mesi, è importante mantenere un ritmo costante delle comunicazioni per favorire il coinvolgimento rispetto a Microsoft Search. Questo consente di mantenere gli utenti informati e di coinvolgere nuovi utenti. Ogni comunicazione dovrebbe spiegare perché Microsoft Search può essere utile nel lavoro di tutti i giorni.
   
-Inviare comunicazioni in continuo che evidenziano le caratteristiche e le ricerche da provare, nonché le storie di successo degli utenti.
+Inviare comunicazioni continuative con suggerimenti di funzionalità e ricerche da provare, oltre a storie di successo degli utenti.
   
- **Raccogliere commenti e suggerimenti**
+ **Raccogliere feedback e migliorare**
   
-Supportare gli utenti e far loro sapere che si cura ascoltando e agendo sui loro commenti e suggerimenti.
+Supportare gli utenti e agire in base al feedback ricevuto.
   
-Utilizzare il dashboard Insights per visualizzare la modalità di esecuzione del prodotto e del contenuto. Utilizzare queste informazioni per aggiornare i segnalibri, Q&As e altre comunicazioni. Questo aiuterà anche:
+Usare il dashboard degli approfondimenti per valutare le prestazioni del prodotto e del contenuto. Utilizzare queste informazioni per aggiornare segnalibri, domande e risposte e altre comunicazioni. Questo consentirà anche di:
   
-1. Migliorare la qualità del contenuto: esaminare i titoli, le descrizioni e gli URL, ottimizzare le parole chiave, rimuovere informazioni obsolete e aggiungere nuove informazioni
+1. Migliorare la qualità del contenuto: rivedere titoli, descrizioni e URL, ottimizzare le parole chiave, rimuovere le informazioni obsolete e aggiungere nuove informazioni
     
-2. Determinare quali funzionalità sono più frequentemente, o raramente, utilizzate
+2. Individuare le funzionalità usate più di frequente o raramente
     
-3. Eseguire sondaggi, gruppi di Focus e sessioni di feedback per capire cosa pensano gli utenti di Microsoft Search, aumentare l'adozione e identificare le aree di miglioramento
+3. Organizzare sondaggi, focus group e sessioni di feedback per comprendere cosa pensano gli utenti di Microsoft Search, aumentare l'adozione e identificare le aree di miglioramento
     
-L'istruzione e il feedback sono processi iterativi. Potrebbe essere necessario apportare modifiche al contenuto e alle comunicazioni quando gli utenti adottano Microsoft Search. 
+Quello di formazione e feedback è un processo iterativo. Man mano che gli utenti adottano Microsoft Search, può essere necessario apportare modifiche al contenuto e alle comunicazioni. 
 
   
 

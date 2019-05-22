@@ -13,45 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: Aggiungere posizioni in modo che gli uffici, gli edifici e altre aree di lavoro dell'organizzazione vengano visualizzati nei risultati dei lavori di ricerca di Microsoft
-ms.openlocfilehash: ad9aa274e7934917a2c4fee05ad2c24af3d117f4
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Aggiungere posizioni in modo che gli uffici, gli edifici e altre aree di lavoro dell'organizzazione compaiano nei risultati del lavoro di Microsoft Search
+ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508546"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968180"
 ---
 # <a name="add-a-location"></a>Aggiungere una posizione
 
-Aggiungere una posizione e quando gli utenti eseguono la ricerca vedranno l'indirizzo dell'edificio, dell'ufficio o del luogo e la sua posizione su una mappa. È inoltre possibile utilizzare Bing Maps per ottenere indicazioni stradali, vedere What ' s nelle vicinanze e altro ancora.
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
+Aggiungere una posizione in modo che quando gli utenti eseguono la ricerca vedano l'indirizzo dell'edificio, dell'ufficio o del luogo desiderato e la relativa posizione su una mappa. Gli utenti possono anche usare Bing Maps per ottenere indicazioni stradali, vedere cosa c'è nelle vicinanze e altro ancora.
   
 1. Passare al portale di amministrazione di Microsoft Search
     
-2. Nel riquadro di spostamento fare clic su **percorsi**
+2. Nel riquadro di spostamento fare clic su **Posizioni**
     
-3. Nella parte superiore della pagina fare clic su **Aggiungi percorso**
+3. Nella parte superiore della pagina fare clic su **Aggiungi posizione**.
     
-    Viene visualizzata la pagina Modifica percorso con una mappa interattiva.
+    Viene visualizzata la pagina Modifica posizione, con una mappa interattiva.
     
-4. Scegliere un **paese/area geografica**
+4. Selezionare un **paese/area geografica**
     
-5. Immettere l' **Indirizzo**
+5. Immettere l'**indirizzo**
     
-    Verrà visualizzato un indicatore di posizione sulla mappa per l'indirizzo. Questa è la mappa che gli utenti vedranno quando eseguono la ricerca di questo percorso.
+    Sulla mappa compare un indicatore di posizione per l'indirizzo. Si tratta della mappa che gli utenti vedranno quando cercano questa posizione.
     
-6. Se necessario, immettere tutte le informazioni su gruppo **/unità/piano** 
+6. Se necessario, immettere le informazioni relative a **Appartamento/Unità/Piano** 
     
-7. Immettere un **nome di percorso**
+7. Immettere un **Nome posizione**
     
-    Descrivere questo percorso come gli utenti in genere si riferiscono. Ad esempio, un nome di edificio o un numero. Non ripetere l'indirizzo.
+    Descrivere questa posizione nel modo in cui in genere fanno gli utenti. Ad esempio, usare un numero di edificio o un numero. Non ripetere l'indirizzo.
     
-8. Immettere le **parole chiave** che si desidera attivare per questo percorso 
+8. Immettere **Parole chiave** per attivare la posizione 
     
-    Includere parole o frasi che verranno utilizzate dalle persone per trovare questo percorso o aree all'interno di esso, ad esempio: quartier generale, Building 9 o West Cafe.
+    Includere le parole o le frasi che le persone useranno per trovare questa posizione o le zone al suo interno, ad esempio, sede centrale, edificio 9 o caffetteria Ovest.
     
 9. Immettere le **Parole chiave riservate**
     
-    Utilizzare una o più parole chiave riservate per garantire che un percorso venga visualizzato sempre come risultato più pertinente. Le parole chiave riservate non possono essere condivise tra le posizioni.
+    Usare una o più parole chiave riservate per garantire che una posizione venga sempre visualizzata come risultato più pertinente. Le parole chiave riservate non possono essere condivise tra più posizioni.
 
   
 

@@ -13,19 +13,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Panoramica di tutti i modi in cui è possibile aggiungere e creare segnalibri per i risultati del lavoro di ricerca di Microsoft
-ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Panoramica di tutti i modi con cui è possibile aggiungere e creare segnalibri per i risultati di lavoro di Microsoft Search
+ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508658"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968375"
 ---
 # <a name="create-and-manage-bookmarks"></a>Creare e gestire i segnalibri
 
+> [!IMPORTANT]
+> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+    
 ## <a name="create-bookmarks"></a>Creare segnalibri
 
-I segnalibri consentono di promuovere i risultati migliori per le query correlate al lavoro dell'utente. Maggiore è il numero di segnalibri pubblicati, maggiore è il valore e vantaggio aggiunto per gli utenti.
+I segnalibri consentono di alzare di livello i migliori risultati possibili per le query relative al lavoro degli utenti. Più segnalibri vengono pubblicati, maggiori saranno il valore e i vantaggi per gli utenti.
   
 - [Creare segnalibri](create-bookmarks.md)
     
@@ -33,15 +36,15 @@ I segnalibri consentono di promuovere i risultati migliori per le query correlat
     
 - [Pubblicare i segnalibri predefiniti](publish-default-bookmarks.md)
     
-    Esaminare e aggiungere segnalibri suggeriti che indirizzano le ricerche comuni.
+    Rivedere e aggiungere segnalibri suggeriti che rispondano a ricerche comuni.
     
 - [Importare i risultati alzati di livello e le query principali di SharePoint](import-sharepoint-promoted-results-and-top-queries.md)
     
-    Sfruttare le query degli utenti e i risultati delle migliori scommesse esistenti per creare segnalibri suggeriti.
+    Sfruttare le query degli utenti e i risultati degli elementi di maggiore rilevanza per creare i segnalibri suggeriti.
     
-- [Creare in blocco i segnalibri](bulk-create-bookmarks.md)
+- [Creare segnalibri in blocco](bulk-create-bookmarks.md)
     
-    Creare segnalibri in un file con estensione CSV e importarli in blocco.
+    Creare segnalibri in un file CSV e importarli in blocco.
     
 - [Integrare PowerApps](integrate-powerapps.md)
     
@@ -49,31 +52,31 @@ I segnalibri consentono di promuovere i risultati migliori per le query correlat
     
 ## <a name="manage-bookmarks"></a>Gestire i segnalibri
 
-Utilizzare lo stato del segnalibro, gli strumenti di filtro e gli strumenti di esportazione/importazione in blocco per [individuare e aggiornare il contenuto](manage-bookmarks.md)dei segnalibri, inclusi titolo, parole chiave e URL.
+Usare lo stato dei segnalibri, gli strumenti di filtro e gli strumenti di importazione/esportazione in blocco per [trovare e aggiornare i contenuti dei segnalibri](manage-bookmarks.md), tra cui titolo, parole chiave e URL.
   
-## <a name="bookmark-status"></a>Stato del segnalibro
+## <a name="bookmark-status"></a>Stato dei segnalibri
 
-Nel portale di amministrazione, è possibile visualizzare i segnalibri in base allo stato corrente:
+Nel portale di amministrazione, è possibile visualizzare i segnalibri suddivisi per stato corrente:
   
 - Pubblicato
     
-    I segnalibri pubblicati vengono visualizzati nei risultati di ricerca di Bing quando un utente autorizzato cerca una parola chiave.
+    I segnalibri pubblicati compaiono nei risultati della ricerca in Bing quando un utente autorizzato cerca una parola chiave.
     
-- Progetto
+- Bozza
     
-    Se un segnalibro non è pronto per la pubblicazione, salvarlo come bozza. Le bozze di segnalibri non verranno visualizzate in Bing.
+    Se un segnalibro non è pronto per la pubblicazione, salvarlo come bozza. Le bozze di segnalibri non vengono visualizzate su Bing.
     
-- Scheduled
+- Programmato
     
-    I segnalibri pianificati vengono pubblicati automaticamente in una data futura.
+    I segnalibri programmati vengono pubblicati automaticamente in una data futura.
     
 - Scaduto
     
-    I segnalibri scaduti sono stati rimossi automaticamente dal contenuto pubblicato in base alle date di scadenza.
+    I segnalibri scaduti vengono rimossi automaticamente dai contenuti pubblicati in base alle loro date di scadenza.
     
-- Suggeriti
+- Suggerito
     
-    I segnalibri suggeriti sono basati su commenti e suggerimenti degli utenti. È inoltre possibile visualizzare i suggerimenti predefiniti di Microsoft.
+    I segnalibri suggeriti sono basati sul feedback degli utenti. È possibile visualizzare anche suggerimenti predefiniti di Microsoft.
 
   
 
