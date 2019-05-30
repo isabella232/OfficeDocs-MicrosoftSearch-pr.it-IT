@@ -92,7 +92,7 @@ Possono usare Microsoft Search solo utenti con account attivi che hanno **effett
 ## <a name="what-can-users-find-with-microsoft-search"></a>Cosa trovano gli utenti con Microsoft Search? 
 Microsoft Search consente di cercare in contenuti archiviati in Outlook, OneDrive e SharePoint Online, incluse le persone nell'elenco indirizzi globale e nei gruppi di Office 365. Se si usa la ricerca ibrida nel cloud per configurare un ambiente di SharePoint ibrido, gli utenti di Microsoft Search possono visualizzare risultati dai contenuti di SharePoint locale, inclusi tutti i contenuti esterni connessi all'ambiente di SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](https://docs.microsoft.com/it-IT/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Durante la ricerca degli utenti dalla pagina iniziale di SharePoint o Office.com, Microsoft Search cerca all'interno dell'organizzazione e visualizza tutti i risultati trovati. Questa funzionalità è nota come ambito di ricerca globale.
+Quando gli utenti cercano nella pagina iniziale di SharePoint o Office.com, Microsoft Search cerca all'interno dell'organizzazione e mostra tutti i risultati trovati. Questa funzionalità è nota come ambito di ricerca globale.
 
 Durante la ricerca da Bing, Microsoft Search cerca sia nell'organizzazione che nel Web pubblico. Viene visualizzata una vasta gamma dei risultati più pertinenti dell'organizzazione incorporata nell'elenco dei risultati. Se è necessario visualizzare tutti i risultati dell'organizzazione, l'ambito di ricerca globale è a portata di clic.
 
@@ -114,7 +114,7 @@ Ecco una panoramica dei tipi di risultati che gli utenti possono visualizzare in
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personalizzazione di Microsoft Search in base alle esigenze dell'organizzazione
 
-Gli amministratori possono semplificare la ricerca per consentire agli utenti di ottenere risultati specifici dell'organizzazione durante la ricerca dalla pagina iniziale di SharePoint, da Office.com o da Bing. È possibile amministrare Microsoft Search dalla sezione di Microsoft Search nell'interfaccia di amministrazione di Microsoft 365.
+Gli amministratori possono semplificare la ricerca per consentire agli utenti di ottenere risultati specifici dell'organizzazione durante la ricerca dalla pagina iniziale di SharePoint, da Office.com o da Bing. È possibile gestire Microsoft Search dalla sezione di Microsoft Search nell'interfaccia di amministrazione di Microsoft 365.
 
 **Mostrare contenuti utili**: consentire agli utenti di trovare strumenti e risorse utili all'interno dell'organizzazione aggiungendoli ai segnalibri. Così come è possibile creare un segnalibro in una pagina Web pubblica, è possibile creare un segnalibro per qualsiasi pagina Web interna che gli utenti possono cercare. È anche possibile integrare una Power App nel segnalibro per consentire agli utenti di completare le attività direttamente dal segnalibro.
 
@@ -132,7 +132,7 @@ I risultati della pagina che gli utenti sono autorizzati a vedere vengono visual
 ## <a name="microsoft-search-in-sharepoint"></a>Microsoft Search in SharePoint 
 Microsoft Search è l'esperienza di ricerca moderna disponibile in SharePoint Online. In SharePoint Online è disponibile anche un'esperienza di ricerca classica. L'amministratore della ricerca non può attivare o disattivare l'esperienza di ricerca classica né quella moderna. Sono entrambe attivate per impostazione predefinita. Il tipo di esperienza di ricerca visualizzata dagli utenti varia in base alla posizione in cui effettuano la ricerca:
 
-- La casella di Microsoft Search viene visualizzata nella pagina iniziale di SharePoint, nei siti hub, nei siti di comunicazione e nei siti del team moderni.
+- La casella di Microsoft Search viene visualizzata nella pagina iniziale, nei siti hub, nei siti di comunicazione e nei siti dei team moderni di SharePoint.
 - La casella di ricerca classica viene invece visualizzata nei siti di pubblicazione, nei siti dei team classici e nel Centro ricerche.
 
 Entrambe le esperienze di ricerca consentono di trovare risultati da contenuti in SharePoint e OneDrive for Business e utenti in Office 365.
