@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
+ROBOTS: NoIndex
 description: Come creare risposte alle domande frequenti per i risultati del lavoro in Microsoft Search
-ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508626"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591495"
 ---
 # <a name="create-qas"></a>Creare domande e risposte
+
+> [!IMPORTANT]
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 Le domande e risposte forniscono una risposta o informazioni agli utenti, compreso un collegamento facoltativo. In teoria, una domanda e risposta include tutti i dettagli che gli utenti stanno cercando, evitando loro di consultare l'origine. È possibile formattare il contenuto delle domande e risposte e includere immagini, elenchi e tabelle.
   

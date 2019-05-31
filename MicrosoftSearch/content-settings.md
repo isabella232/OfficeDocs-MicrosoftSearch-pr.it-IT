@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
+ROBOTS: NoIndex
 description: Informazioni su come aggiungere un logo, il nome della società e altro ancora ai risultati del lavoro di Microsoft Search
-ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508642"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591243"
 ---
 # <a name="content-settings"></a>Impostazioni contenuto
 
+> [!IMPORTANT]
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+    
 Con Microsoft Search è possibile definire impostazioni per conferire un aspetto familiare ai risultati provenienti da origini di contenuto interne all'organizzazione, ad esempio SharePoint, OneDrive for Business o l'intranet aziendale. 
   
 - Nome dell'organizzazione

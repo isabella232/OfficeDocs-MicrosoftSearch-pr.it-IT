@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
+ROBOTS: NOINDEX
 description: Ridurre il numero di volte che agli utenti di Windows 10 viene richiesto di accedere a Microsoft Search e Office 365
-ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: c05a8ffcc973926add551bdbb20273b41ea23bc0
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508930"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591045"
 ---
 # <a name="test-single-sign-on"></a>Testare l'accesso Single Sign-On
 
+> [!IMPORTANT]
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+    
 Il Single Sign-On consente di ridurre il numero volte in cui agli utenti viene richiesto di effettuare l'accesso. Testare il Single Sign-On con un piccolo gruppo di utenti aiuta a identificare eventuali problemi di configurazione che impediscono l'accesso. 
   
 Per gli utenti di Chrome in Windows 10, il Single Sign-On funziona solo se è installata l'estensione di accesso di Windows 10 e AAD per Chrome. 
