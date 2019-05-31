@@ -3,7 +3,7 @@ title: Gestire le posizioni
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 11/08/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,93 +14,51 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
-ms.openlocfilehash: 0e23cf3d3d3d05fe86cdc3e09ce808e54242d670
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968430"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591558"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
-> [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
-    
-Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente. 
-  
-## <a name="filter-locations"></a>Filtrare le posizioni
+## <a name="location"></a>Posizione
+Posizione consente agli utenti di trovare indirizzi e individuare gli edifici dell'organizzazione indicando la posizione precisa di uffici, campus ed edifici, oltre alle indicazioni di navigazione. Gli amministratori dovranno aggiungere tutte le posizioni importanti dell'organizzazione. A differenza dei segnalibri e delle domande e risposte, l'indice non verrà aggiornato immediatamente e la visualizzazione delle posizioni nuove o modificate nei risultati della ricerca può richiedere diverse ore.
 
-Usare l'opzione del filtro nell'angolo superiore destro della pagina Posizioni per trovarle in base alla data e all'autore delle modifiche. Ad esempio, impostare il dispositivo di scorrimento della data su 30 giorni e selezionare un amministratore o un editor per vedere l'elenco di posizioni che ha creato o modificato in quell'intervallo di tempo.
-  
-## <a name="change-location-content"></a>Modificare il contenuto della posizione
+### <a name="add-or-edit-a-single-location"></a>Aggiungere o modificare una singola posizione
+1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
+1. Nel riquadro di spostamento passare a **Impostazioni** e selezionare **Microsoft Search**.
+1. Selezionare la scheda **Posizioni**. Per impostazione predefinita, la scheda **Segnalibri** è selezionata nella pagina **Microsoft Search**.
+1. Per aggiungere una nuova posizione, fare clic su **Aggiungi nuovo**.
+1. Per modificare una posizione, selezionarla nell'elenco di posizioni pertinenti.
+1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
+1. Salvare le modifiche.
 
-1. Passare al portale di amministrazione di Microsoft Search
-    
-2. Nel riquadro di spostamento fare clic su **Posizioni**
-    
-3. Per trovare una posizione, cercare, filtrare o selezionare lo stato delle posizioni per limitare i risultati.
-    
-4. Per cambiare o aggiornare una posizione, fare clic sul nome.
-    
-5. Modificare o aggiornare il contenuto e vederne in anteprima gli effetti. 
-    
-6. Fare clic su **Salva**
-    
-## <a name="bulk-export-and-edit-locations"></a>Esportare in blocco e modificare posizioni
+### <a name="bulk-add-or-edit-locations"></a>Aggiungere o modificare in blocco le posizioni
+Gli amministratori possono usare le funzionalità di importazione o esportazione per aggiungere o modificare in blocco le posizioni. 
 
-Non modificare mai i dati in questi campi:
-  
-- ID
-    
-- Ultima modifica
-    
-- Autore ultima modifica
-    
-L'ID è un identificatore univoco per ogni posizione e non può essere modificato. I campi Ultima modifica e Autore ultima modifica devono essere usati solo per ordinare e trovare posizioni.
-  
-1. Se si vuole esportare un subset di posizioni, usare il filtro.
-    
-2. Nell'angolo superiore destro della pagina Posizioni fare clic su **Esporta**.
-    
-3. Salvare o aprire il file CSV
-    
-4. Modificare i dati in questi campi:
-    
-   - Nome
-    
-   - Riga 1 indirizzo
-    
-   - Riga 2 indirizzo
-    
-   - Città
-    
-   - Provincia indirizzo
-    
-   - CAP
-    
-   - Paese
-    
-   - Indirizzo completo
-    
-   - Latitudine
-    
-   - Longitudine
-    
-   - Parole chiave
-    
-   - Parole chiave riservate
-    
-   - Stato
-    
-5. Salvare il file CSV
+Usare la funzionalità di importazione/esportazione per:
+1. Aggiungere posizioni in blocco: aggiungere i dettagli nel file modello delle posizioni e quindi importarlo. 
+1. Modificare le posizioni in blocco: esportare le posizioni in un file CSV, quindi modificare i dettagli delle posizioni nel file CSV esportato e infine importare il file CSV aggiornato.
+1. Effettuare il backup delle posizioni: esportare le posizioni esistenti in un file CSV.
 
-    Il file CSV deve essere salvato come file UTF-8 CSV, altre codifiche e/o tipi di file potrebbero causare errori di importazione
-    
-6. Nell'angolo superiore destro della pagina Posizioni fare clic su **Importa**
-    
-7. Nel riquadro Importa posizioni fare clic su **Sfoglia **e selezionare il file CSV modificato 
-    
-8. Fare clic su **Importa**
+Per esportare o importare posizioni:
+1. In alto a destra della scheda **Posizioni**, selezionare **Importa**.
+Selezionare **Esporta** per scaricare le posizioni esistenti in un file CSV.
+1. Nel riquadro destro, scegliere l'opzione per importare con un file CSV. Scaricare il file modello per un elenco di campi obbligatori e i dettagli.
+1. Aggiungere o modificare i dettagli della posizione nel file modello e quindi salvarlo nel computer. 
+1. Nel riquadro **Importa** posizioni, selezionare **Sfoglia** e quindi il file CSV da importare.
+1. Selezionare **Importa**.
 
-  
+Ecco alcuni punti importanti riguardanti il file modello:
+- Non modificare i dati in questi campi: *Id*, *Data ultima modifica* e *Autore ultima modifica*
+- Se si include l'*Id* di un segnalibro esistente, verrà sostituito con le informazioni presenti nel file di importazione.
+- Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.
+- Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
+- In base al campo *Stato*, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.
+- Per le organizzazioni con più tenant, è possibile esportare i segnalibri da un tenant e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
 
+**Nota:** non è possibile importare posizioni se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie. 
+
+Per altre informazioni su come evitare errori, vedere [Evitare gli errori di importazione](manage-bookmarks.md#prevent-import-errors).

@@ -1,9 +1,9 @@
 ---
 title: Gestire le domande e risposte
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,98 +14,70 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Trovare e aggiornare le risposte singolarmente oppure usare gli strumenti di Microsoft Search disponibili per modificarle tutte contemporaneamente
-ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968468"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591522"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
-> [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
-    
-Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di domande e risposte per fare in modo che rimangano pertinenti.
-  
-## <a name="filter-qas"></a>Filtrare domande e risposte
+Creare domande e risposte è simile alla creazione di segnalibri. Le Domande e risposte consentono di rispondere alla domanda di un utente anziché limitarsi a fornire un collegamento a una pagina Web. È possibile formattare la risposta in testo RTF con gli strumenti disponibili. Se un segnalibro e una domanda con risposta condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come per i segnalibri, l'indice delle domande e risposte verrà aggiornato immediatamente dopo che è stata aggiunta o modificata una domanda con risposta. 
 
-Usare l'opzione del filtro nell'angolo superiore destro della pagina delle domande e risposte per trovarle in base alla data e all'autore delle modifiche. Ad esempio, impostare il dispositivo di scorrimento della data su 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco di domande e risposte che ha creato o modificato in quell'intervallo di tempo.
-  
-## <a name="change-qa-content-or-settings"></a>Modificare le impostazioni o il contenuto delle domande e risposte
+## <a name="add-or-edit-a-single-qa"></a>Aggiungere o modificare una singola domanda con risposta
+1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
+1. Nel riquadro di spostamento passare a **Impostazioni** e selezionare **Microsoft Search**.
+1. Selezionare la scheda **Domande e risposte**. Per impostazione predefinita, è già selezionata la prima scheda (**Segnalibri**).
+1. Per aggiungere una domanda con risposta, selezionare **Aggiungi nuovo**.
+Per modificare una domanda con risposta, selezionarla nell'elenco di domande e risposte pertinente.
+1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
+1. Salvare le modifiche.
 
-1. Passare al portale di amministrazione di Microsoft Search
-    
-2. Nel riquadro di spostamento fare clic su **Domande e risposte**
-    
-3. Per trovare domande e risposte specifiche, cercare, filtrare o selezionare lo stato delle domande e risposte per limitare i risultati.
-    
-4. Per modificare o aggiornare domande e risposte specifiche, fare clic sul titolo.
-    
-5. Modificare o aggiornare i contenuti o le impostazioni e vederne in anteprima gli effetti.
-    
-6. Fare clic su **Salva**.
-    
-## <a name="bulk-export-and-edit-qas"></a>Esportare in blocco e modificare domande e risposte
+### <a name="supported-html-tags"></a>Tag HTML supportati
+È possibile usare contenuto HTML esistente o aggiungere tag HTML alla risposta (descrizione). I tag non supportati vengono ignorati.  
+Sono supportati i tag HTML seguenti:
+- blockquote
+- div
+- em
+- h1, h2, h3, and h4
+- ol, ul, and li
+- p
+- pre
+- span
+- strong
+- table, thead, tbody, tr, th, and td
+- u
+- a
+- code
+- br
+- hr
+- img
 
-Non modificare mai i dati in questi campi:
-  
-- ID
-    
-- Ultima modifica
-    
-- Autore ultima modifica
-    
-L'ID è un identificatore univoco per ogni domanda e risposta e non può essere modificato. I campi Ultima modifica e Autore ultima modifica vanno usati solo per ordinare e trovare domande e risposte.
-  
-1. Se si vuole esportare un subset di domande e risposte, usare il filtro
-    
-2. Nell'angolo superiore destro della pagina delle domande e risposte, fare clic su **Esporta**.
-    
-3. Salvare o aprire il file CSV.
-    
-4. Modificare i dati in questi campi:
-    
-   - Domanda
-    
-   - URL
-      
-   - Parole chiave
-    
-   - Stato
-    
-   - Descrizione della risposta
-    
-   - Parole chiave riservate
-    
-   - Data di inizio
-    
-   - Data di fine
-    
-   - Paese/area geografica
-    
-   - Gruppi
-    
-   - Dispositivo e sistemi operativi
-    
-   - Varianti mirate
-    
-5. Salvare il file CSV
+## <a name="bulk-add-or-edit-qas"></a>Aggiungere o modificare in blocco le domande e risposte
+Gli amministratori possono usare le funzionalità di importazione o esportazione per creare o modificare in blocco le domande e risposte. È una funzionalità utile quando gli amministratori devono aggiungere o modificare un numero elevato di domande e risposte. 
 
-    Il file CSV deve essere salvato come file UTF-8 CSV, altre codifiche e/o tipi di file potrebbero causare errori di importazione
-    
-6. Nell'angolo superiore destro della pagina Domande e risposte fare clic su **Importa**
-    
-7. Nel riquadro Importa domande e risposte fare clic su **Sfoglia** e selezionare il file CSV modificato 
-    
-8. Fare clic su **Importa**
-    
-Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore. A seconda dell'errore, può essere generato un file di log con altre informazioni sulle righe e sulle colonne da correggere. Apportare le modifiche necessarie e ritentare l'importazione del file.
-  
-> [!NOTE]
-> Fino a quando non sono stati risolti tutti gli errori, non è possibile creare o modificare le domande e risposte. 
-  
-Non tutti i campi sono obbligatori e i campi obbligatori variano in base allo stato delle domande e risposte. In base al campo Stato, le domande e risposte saranno salvate come bozza, suggerite o pianificate, oppure saranno pubblicate automaticamente. Per altre informazioni sui campi obbligatori e consigliati, vedere [Creare domande e risposte](create-qas.md).
+Usare la funzionalità di importazione/esportazione per:
+1. Aggiungere domande e risposte in blocco: aggiungere i dettagli nel file modello delle domande e risposte e quindi importarlo.
+1. Modificare domande e risposte in blocco: esportare le domande e risposte in un file CSV, quindi modificare i relativi dettagli nel file CSV esportato e infine importare il file CSV aggiornato.
+1. Eseguire il backup di domande e risposte: esportare le domande e risposte in un file CSV.
 
-  
+Per importare o esportare domande e risposte:
+1. In alto a destra della scheda Domande e risposte, selezionare **Importa**. Selezionare **Esporta** per scaricare tutte le domande e risposte esistenti in un file CSV.
+1. Nel riquadro destro, scegliere l'opzione per importare con un file CSV.
+Scaricare il file modello per un elenco di campi obbligatori e i dettagli. 
+1. Aggiungere o modificare i dettagli delle domande e risposte nel file modello e salvarlo nel computer. 
+1. Nel riquadro di **importazione domande e risposte**, selezionare **Sfoglia** e quindi il file CSV da importare.
+1. Selezionare **Importa**.
 
+Ecco alcuni punti importanti riguardanti il file modello:
+- Non modificare i dati in questi campi: *Id*, *Data ultima modifica* e *Autore ultima modifica*
+- Se si include l'*Id* di un segnalibro esistente, verrà sostituito con le informazioni presenti nel file di importazione.
+- Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.
+- Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
+- In base al campo Stato, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.
+- Per le organizzazioni con più tenant, è possibile esportare i segnalibri da un tenant e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
+
+**Nota:** non è possibile importare domande e risposte se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie. 
+
+Per altre informazioni su come evitare errori, vedere [Evitare gli errori di importazione](manage-bookmarks.md#prevent-import-errors).

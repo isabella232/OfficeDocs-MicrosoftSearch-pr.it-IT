@@ -3,7 +3,7 @@ title: Configurare **Microsoft Search**
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 04/30/2019
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
-ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
+ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970131"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591054"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -30,9 +30,9 @@ Per altre informazioni sulle funzionalità di **Microsoft Search**, vedere [Pano
 
 **Microsoft Search** viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Basta eseguire l'accesso con un account aziendale o dell'istituto di istruzione e usare un browser con Bing impostato come provider di ricerca predefinito.
 
-È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l'account di accesso con le credenziali di amministratore, quindi selezionare il riquadro **Amministratore** nell'**icona di avvio delle app**. Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
+È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l’account di accesso con le credenziali di amministratore e selezionare il riquadro Amministratore nell'elenco delle app di Office 365 (per l’elenco delle app, fare clic sull'icona di **avvio delle app** nell'angolo in alto a sinistra). Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
 
-**Nota:** se viene visualizzato il portale di amministrazione legacy e si vuole passare alla nuova interfaccia di amministrazione, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
+**Nota:** se viene visualizzato **Microsoft Search** in **Impostazioni** nell’**interfaccia di amministrazione di Microsoft 365**, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di **Microsoft Search** più efficiente e intuitiva nell'organizzazione.
 
@@ -54,7 +54,7 @@ In **Microsoft Search** è possibile gestire i contenuti e le impostazioni di ri
 1. **Amministratore della ricerca:** questo ruolo può creare e gestire i contenuti dei risultati della ricerca e definire le impostazioni query per migliorare i risultati all'interno dell'organizzazione. L'amministratore della ricerca gestisce la configurazione di **Microsoft Search** e designa gli editor della ricerca, che creano i contenuti.
 2. **Editor della ricerca:** crea, gestisce ed elimina i contenuti per **Microsoft Search** nell'interfaccia di amministrazione di Microsoft 365. Questo ruolo può creare e gestire contenuti editoriali, ad esempio domande frequenti, luoghi e località importanti, siti e app cercati e usati di frequente e così via. Non dispone però delle autorizzazioni di accesso per gestire le impostazioni di ricerca.
 
-Per assegnare i ruoli di amministratore, vedere [Assegnare diritti di amministratore in Office 365 per le aziende](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Per assegnare i ruoli di amministratore, vedere [Assegnare diritti di amministratore in Office 365 per le aziende](https://docs.microsoft.com/it-IT/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 ### <a name="step-3-make-content-easy-to-find"></a>Passaggio 3: Facilitare la ricerca del contenuto 
 
@@ -86,7 +86,7 @@ Definire le risorse in modalità self-service a cui i dipendenti possono acceder
 - [Trovare le informazioni necessarie con Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Area risorse di Office 365](https://support.office.com/office-training-center)
 - 
-  [Microsoft Search Center](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+  [Microsoft Search Center](https://support.office.com/it-IT/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
 ### <a name="trying-out-microsoft-search-in-bing"></a>Provare **Microsoft Search** in Bing 
 L'amministratore di **Microsoft Search** può disattivare **Microsoft Search** in Bing. Se questa funzione viene disattivata, gli utenti non possono visualizzare i contenuti dell'organizzazione nella ricerca Bing. Per impostazione predefinita, **Microsoft Search** è attivato in Bing. È consigliabile tenere **Microsoft Search** attivato in Bing per un'esperienza utente migliore. 
