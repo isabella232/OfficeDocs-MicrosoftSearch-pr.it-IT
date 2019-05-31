@@ -13,19 +13,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
+ROBOTS: NOINDEX
 description: Aggiungere questi URL e domini all'elenco di indirizzi consentiti del firewall per consentire agli utenti di accedere facilmente a Microsoft Search
-ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 08e98dbde4d9a32827ac000b0b922aab53abc681
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508738"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591531"
 ---
-# <a name="manage-network-connections"></a><span data-ttu-id="952c3-103">Gestire le connessioni di rete</span><span class="sxs-lookup"><span data-stu-id="952c3-103">Manage network connections</span></span>
+# <a name="manage-network-connections"></a><span data-ttu-id="4ddc7-103">Gestire le connessioni di rete</span><span class="sxs-lookup"><span data-stu-id="4ddc7-103">Manage network connections</span></span>
 
-<span data-ttu-id="952c3-104">Per assicurarsi che tutti gli utenti possano connettersi agli endpoint Microsoft Search, aggiungere questi URL agli elenchi di indirizzi consentiti del firewall.</span><span class="sxs-lookup"><span data-stu-id="952c3-104">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="4ddc7-104">Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing.</span><span class="sxs-lookup"><span data-stu-id="4ddc7-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="4ddc7-105">Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso.</span><span class="sxs-lookup"><span data-stu-id="4ddc7-105">We’re moving the portal to the Microsoft 365 admin center, and then it will be removed.</span></span> <span data-ttu-id="4ddc7-106">Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="4ddc7-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="4ddc7-107">[Panoramica di Microsoft Search](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="4ddc7-107">Overview of Microsoft Search</span></span>
+    
+<span data-ttu-id="4ddc7-108">Per assicurarsi che tutti gli utenti possano connettersi agli endpoint Microsoft Search, aggiungere questi URL agli elenchi di indirizzi consentiti del firewall.</span><span class="sxs-lookup"><span data-stu-id="4ddc7-108">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
   
-## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="952c3-105">Per il portale di amministrazione di Microsoft Search:</span><span class="sxs-lookup"><span data-stu-id="952c3-105">For the Microsoft Search Admin portal:</span></span>
+## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="4ddc7-109">Per il portale di amministrazione di Microsoft Search:</span><span class="sxs-lookup"><span data-stu-id="4ddc7-109">For the Microsoft Search Admin portal:</span></span>
 
 - `www.bingatwork.com`
     
@@ -39,7 +43,7 @@ ms.locfileid: "33508738"
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="952c3-106">Per Microsoft Search in Bing:</span><span class="sxs-lookup"><span data-stu-id="952c3-106">For Microsoft Search in Bing:</span></span>
+## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="4ddc7-110">Per Microsoft Search in Bing:</span><span class="sxs-lookup"><span data-stu-id="4ddc7-110">For Microsoft Search in Bing:</span></span>
 
 - `business.bing.com`
     
