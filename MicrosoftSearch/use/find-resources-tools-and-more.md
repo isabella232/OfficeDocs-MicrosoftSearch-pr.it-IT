@@ -12,31 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Usare Microsoft Search per trovare siti Intranet, risorse, strumenti e collegamenti alle informazioni interne
-ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Utilizzare Microsoft Search per trovare siti Intranet, risorse, strumenti e collegamenti a informazioni interne
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508842"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590865"
 ---
 # <a name="find-resources-tools-and-more"></a>Trovare risorse, strumenti e altro
 
-Il reparto IT crea e pubblica segnalibri per risorse interne ed esterne, strumenti, pagine e altro per agevolare la ricerca delle informazioni necessarie.
+Il reparto IT consente di creare e pubblicare i segnalibri in risorse interne ed esterne, strumenti, pagine e altro ancora per individuare le informazioni necessarie.
   
-I risultati dei segnalibri includono una breve descrizione del sito o della risorsa e un collegamento associato. Ad esempio, la maggior parte delle organizzazioni crea segnalibri per benefit, risorse umane, informazioni professionali, supporto IT e report su ferie e permessi.
+I risultati dei segnalibri includono una breve descrizione del sito o della risorsa insieme a un collegamento. La maggior parte delle organizzazioni, ad esempio, creerà segnalibri per vantaggi, risorse umane, informazioni sulla carriera, supporto IT e report di timeout.
   
-In genere, i risultati delle domande e risposte includono queste stesse informazioni, oltre a una breve risposta che potrebbe contenere le informazioni di cui si ha bisogno e un collegamento associato se si desidera saperne di più.
+I risultati di Q&A includono generalmente le stesse informazioni e una breve risposta che potrebbe avere le informazioni necessarie e un collegamento se si vuole saperne di più.
   
-1. Accedere all'account aziendale o dell'istituto di istruzione in Bing 
+1. Accedere all'account aziendale o dell'Istituto di istruzione su Bing 
     
-2. Eseguire una ricerca
+2. Cercare qualcosa
     
-    Ad esempio, provare a cercare "benefit", "risorse umane", "informazioni professionali", "supporto IT" o "report su ferie e permessi".
+    Ad esempio, provare a cercare ' vantaggi ',' HR ','' Career info,'' IT Support ' o ' report time off '.
     
-3. Verrà visualizzato un risultato relativo a segnalibri o domande e risposte nella parte superiore della pagina o nella colonna a destra
+3. Un segnalibro o un risultato Q&A viene visualizzato nella parte superiore della colonna pagina o destra.
     
-    Altri risultati dal Web vengono visualizzati sotto. Non sono specifici dell'organizzazione.
+    Gli altri risultati Web vengono visualizzati sotto di esso. Non sono specifiche per l'organizzazione.
 
   
 

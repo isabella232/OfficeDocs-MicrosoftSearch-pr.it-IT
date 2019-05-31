@@ -12,21 +12,22 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: Usare Microsoft Search per trovare file di Office e PDF e visualizzare le relative informazioni
-ms.openlocfilehash: f46796c015137a5bc1a24a52f7eb35cd2675a09d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Utilizzare Microsoft Search per trovare file e documenti di Office e le informazioni che verranno visualizzate
+ms.openlocfilehash: cd6d166c99f226b9182d9201866d936b58f7c57a
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508938"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590964"
 ---
 # <a name="find-files"></a>Trovare file
 
-È possibile cercare i propri file oppure i contenuti creati da colleghi a cui si ha accesso. I risultati includono il nome e il percorso del file, oltre a un breve frammento del contenuto, l'autore dell'ultima modifica e la data.
+Cercare i propri file o cercare il contenuto creato dai colleghi a cui si ha accesso. I risultati includono il nome e il percorso del file ed è possibile che venga visualizzato anche un breve frammento del contenuto, che l'ha modificato per ultimo e quando.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AsoN?autoplay=false]
   
-È possibile trovare file di SharePoint e OneDrive for Business, inclusi:
+È possibile trovare i file di SharePoint e OneDrive for business, tra cui:
   
 - Documenti di Word
     
@@ -38,14 +39,14 @@ ms.locfileid: "33508938"
     
 - PDF
     
-1. Accedere all'account aziendale o dell'istituto di istruzione in Bing
+1. Accedere all'account aziendale o dell'Istituto di istruzione su Bing
     
-2. Cercare "miei documenti", "mie presentazioni" oppure includere un argomento o il nome di qualcuno
+2. Cerca ' documenti,'' presentazioni personali ' o Includi un argomento o un nome di qualcuno
     
-    Ad esempio, "documenti su codici tributo" o "'file di Luca".
+    Ad esempio,' docs about tax codes ' o ' files by John .'
     
-3. I risultati sui file vengono visualizzati nella parte superiore della pagina dei risultati
+3. Risultati file vengono visualizzati nella parte superiore della pagina dei risultati
     
-    Altri risultati dal Web vengono visualizzati sotto. Non sono specifici dell'organizzazione.
+    Gli altri risultati Web vengono visualizzati sotto di esso. Non sono specifiche per l'organizzazione.
 
 

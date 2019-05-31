@@ -1,5 +1,5 @@
 ---
-title: Perché si è connessi automaticamente?
+title: Perché si è eseguito l'accesso automaticamente?
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,44 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
-description: Informazioni sul modo in cui l'accesso automatico a Microsoft Search può aiutare a trovare rapidamente e facilmente risultati di lavoro
-ms.openlocfilehash: 999341f10c0b75009246451f7e48f9fc4706d86a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Informazioni su come l'accesso automatico a Microsoft Search può aiutare a trovare rapidamente e facilmente i risultati del lavoro
+ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508834"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591036"
 ---
-# <a name="why-am-i-automatically-signed-in"></a>Perché si è connessi automaticamente?
+# <a name="why-am-i-automatically-signed-in"></a>Perché si è eseguito l'accesso automaticamente?
 
-Per consentire agli utenti di trovare le informazioni necessarie in modo semplice e rapido, l'organizzazione è configurata per l'accesso automatico a Microsoft Search.
+Per trovare le informazioni necessarie rapidamente e facilmente, l'organizzazione è configurata per l'accesso automatico a Microsoft Search.
   
 ## <a name="about-microsoft-search"></a>Informazioni su Microsoft Search
 
-Microsoft Search raggruppa in Bing tutto il contenuto raccolto dall'organizzazione o dall'istituto di istruzione. Vedere [Informazioni su Microsoft Search](about-microsoft-search.md).
+Microsoft Search fornisce il contenuto necessario dall'Istituto di istruzione o dal posto di lavoro in Bing. Per ulteriori [informazioni, vedere Microsoft Search](about-microsoft-search.md).
   
 ## <a name="privacy-and-security"></a>Privacy e sicurezza
 
-Con Microsoft Search, solo le persone a cui è stato concesso l'accesso vedranno i file condivisi. Altri risultati, come organigrammi e informazioni sulle persone, saranno visibili solo agli altri utenti dell'organizzazione.
+Con Microsoft Search, solo gli utenti a cui è stato concesso l'accesso vedranno i file condivisi. Altri risultati come gli organigrammi e le informazioni sugli utenti verranno visualizzati solo per gli altri utenti dell'organizzazione.
   
-Microsoft Search contribuisce a proteggere la privacy, salvaguardando la cronologia di ricerca. La cronologia di ricerca non viene condivisa con altri utenti dell'organizzazione, neanche quando si è effettuato l'accesso e si cercano informazioni correlate al lavoro o all'istituto di istruzione.
+Microsoft Search consente di proteggere la privacy salvaguardando la cronologia delle ricerche. La cronologia delle ricerche non è condivisa con altre persone dell'organizzazione, anche quando è stato eseguito l'accesso e cerca informazioni relative al lavoro o all'Istituto di istruzione.
   
-Per migliorare l'esperienza di ricerca, Bing segnala le ricerche frequenti effettuate da più utenti agli amministratori dell'organizzazione. Solo gli amministratori possono visualizzare questi dati, che non sono riconducibili a utenti specifici e compaiono solo quando più utenti hanno eseguito la stessa ricerca.
+Per migliorare l'esperienza di ricerca, Bing segnala frequenti ricerche effettuate da più utenti agli amministratori dell'organizzazione. Solo gli amministratori possono visualizzare i dati, non sono collegati a utenti specifici e vengono visualizzati solo quando più utenti hanno cercato la stessa cosa.
   
-Ogni organizzazione è diversa e Microsoft non può garantire il modo in cui ognuna gestisce le ricerche e altri dati all'esterno di Microsoft Search.
+Ogni organizzazione è diversa e Microsoft non è in grado di garantire la modalità di gestione delle ricerche e di altri dati all'esterno di Microsoft Search.
   
 ## <a name="sign-out-of-microsoft-search"></a>Disconnettersi da Microsoft Search
 
-È possibile disconnettersi da Bing in qualsiasi momento: nell'angolo in alto a destra di qualsiasi pagina di Bing, fare clic sul profilo e quindi fare clic su **Disconnetti**.
+È possibile disconnettersi da Bing in qualsiasi momento: nell'angolo in alto a destra di qualsiasi pagina Bing, fare clic sul profilo, quindi fare clic su **Esci**.
   
-Non si sarà più connessi automaticamente sul dispositivo in uso. Se sono stati usati altri browser o dispositivi per accedere a Microsoft Search, è necessario disconnettersi anche in quelle posizioni. 
+Il dispositivo non verrà più firmato automaticamente. Se sono stati utilizzati altri browser o dispositivi per accedere a Microsoft Search, è necessario eseguire l'accesso anche in questo caso. 
   
-Dopo la disconnessione, le ricerche non usufruiranno di protezioni aggiuntive. Saranno trattate come ricerche standard di Bing e disciplinate dall'[Informativa sulla privacy di Microsof](https://privacy.microsoft.com/en-us/privacystatement).
+Dopo aver eseguito l'accesso, le ricerche non riceveranno ulteriore protezione. Sono considerati come ricerche standard per i consumatori Bing e sono disciplinati dall' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/en-us/privacystatement).
   
-## <a name="view-your-search-history"></a>Visualizzare la cronologia di ricerca
+## <a name="view-your-search-history"></a>Visualizzare la cronologia delle ricerche
 
-Per visualizzare la cronologia di Microsoft Search per gli ultimi 30 giorni, passare alla [cronologia di ricerca](https://ssl.bing.com/profile/history) e quindi fare clic su **Esporta**in Microsoft Search in Bing. Le ricerche risalenti a più di 30 giorni vengono cancellate automaticamente dalla cronologia.
+Per visualizzare la cronologia delle ricerche di Microsoft negli ultimi 30 giorni, passare alla [cronologia delle ricerche](https://ssl.bing.com/profile/history)e, in Microsoft Search in Bing, fare clic su **Esporta**. Le ricerche precedenti a 30 giorni vengono cancellate automaticamente dalla cronologia.
 
   
 
