@@ -12,31 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Usare Microsoft Search per trovare siti Intranet, risorse, strumenti e collegamenti alle informazioni interne
-ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Utilizzare Microsoft Search per trovare siti Intranet, risorse, strumenti e collegamenti a informazioni interne
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508842"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590865"
 ---
-# <a name="find-resources-tools-and-more"></a><span data-ttu-id="c5fa8-103">Trovare risorse, strumenti e altro</span><span class="sxs-lookup"><span data-stu-id="c5fa8-103">Find resources, tools, and more</span></span>
+# <a name="find-resources-tools-and-more"></a><span data-ttu-id="a530a-103">Trovare risorse, strumenti e altro</span><span class="sxs-lookup"><span data-stu-id="a530a-103">Find resources, tools, and more</span></span>
 
-<span data-ttu-id="c5fa8-104">Il reparto IT crea e pubblica segnalibri per risorse interne ed esterne, strumenti, pagine e altro per agevolare la ricerca delle informazioni necessarie.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-104">Your IT department creates and publishes bookmarks to internal and external resources, tools, pages, and more to help you find the information you need.</span></span>
+<span data-ttu-id="a530a-104">Il reparto IT consente di creare e pubblicare i segnalibri in risorse interne ed esterne, strumenti, pagine e altro ancora per individuare le informazioni necessarie.</span><span class="sxs-lookup"><span data-stu-id="a530a-104">Your IT department creates and publishes bookmarks to internal and external resources, tools, pages, and more to help you find the information you need.</span></span>
   
-<span data-ttu-id="c5fa8-105">I risultati dei segnalibri includono una breve descrizione del sito o della risorsa e un collegamento associato.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-105">Bookmark results include a brief description of the site or resource along with a link to it.</span></span> <span data-ttu-id="c5fa8-106">Ad esempio, la maggior parte delle organizzazioni crea segnalibri per benefit, risorse umane, informazioni professionali, supporto IT e report su ferie e permessi.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-106">For example, most organizations will create bookmarks for benefits, HR, career info, IT support, and time off reporting.</span></span>
+<span data-ttu-id="a530a-105">I risultati dei segnalibri includono una breve descrizione del sito o della risorsa insieme a un collegamento.</span><span class="sxs-lookup"><span data-stu-id="a530a-105">Bookmark results include a brief description of the site or resource along with a link to it.</span></span> <span data-ttu-id="a530a-106">La maggior parte delle organizzazioni, ad esempio, creerà segnalibri per vantaggi, risorse umane, informazioni sulla carriera, supporto IT e report di timeout.</span><span class="sxs-lookup"><span data-stu-id="a530a-106">For example, most organizations will create bookmarks for benefits, HR, career info, IT support, and time off reporting.</span></span>
   
-<span data-ttu-id="c5fa8-107">In genere, i risultati delle domande e risposte includono queste stesse informazioni, oltre a una breve risposta che potrebbe contenere le informazioni di cui si ha bisogno e un collegamento associato se si desidera saperne di più.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-107">Q&A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.</span></span>
+<span data-ttu-id="a530a-107">I risultati di Q&A includono generalmente le stesse informazioni e una breve risposta che potrebbe avere le informazioni necessarie e un collegamento se si vuole saperne di più.</span><span class="sxs-lookup"><span data-stu-id="a530a-107">Q&A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.</span></span>
   
-1. <span data-ttu-id="c5fa8-108">Accedere all'account aziendale o dell'istituto di istruzione in Bing</span><span class="sxs-lookup"><span data-stu-id="c5fa8-108">Sign in to Office 365 for business with your work or school account.</span></span> 
+1. <span data-ttu-id="a530a-108">Accedere all'account aziendale o dell'Istituto di istruzione su Bing</span><span class="sxs-lookup"><span data-stu-id="a530a-108">Sign in to your work or school account on Bing</span></span> 
     
-2. <span data-ttu-id="c5fa8-109">Eseguire una ricerca</span><span class="sxs-lookup"><span data-stu-id="c5fa8-109">Search for something</span></span>
+2. <span data-ttu-id="a530a-109">Cercare qualcosa</span><span class="sxs-lookup"><span data-stu-id="a530a-109">Search for something</span></span>
     
-    <span data-ttu-id="c5fa8-110">Ad esempio, provare a cercare "benefit", "risorse umane", "informazioni professionali", "supporto IT" o "report su ferie e permessi".</span><span class="sxs-lookup"><span data-stu-id="c5fa8-110">For example, try searching for 'benefits,' 'HR,' 'career info,' 'IT support,' or 'report time off.'</span></span>
+    <span data-ttu-id="a530a-110">Ad esempio, provare a cercare ' vantaggi ',' HR ','' Career info,'' IT Support ' o ' report time off '.</span><span class="sxs-lookup"><span data-stu-id="a530a-110">For example, try searching for 'benefits,' 'HR,' 'career info,' 'IT support,' or 'report time off.'</span></span>
     
-3. <span data-ttu-id="c5fa8-111">Verrà visualizzato un risultato relativo a segnalibri o domande e risposte nella parte superiore della pagina o nella colonna a destra</span><span class="sxs-lookup"><span data-stu-id="c5fa8-111">A bookmark or Q&A result appears at the top of the page or right column</span></span>
+3. <span data-ttu-id="a530a-111">Un segnalibro o un risultato Q&A viene visualizzato nella parte superiore della colonna pagina o destra.</span><span class="sxs-lookup"><span data-stu-id="a530a-111">A bookmark or Q&A result appears at the top of the page or right column</span></span>
     
-    <span data-ttu-id="c5fa8-112">Altri risultati dal Web vengono visualizzati sotto.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-112">Other web results appear under it.</span></span> <span data-ttu-id="c5fa8-113">Non sono specifici dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c5fa8-113">They aren't specific to your organization.</span></span>
+    <span data-ttu-id="a530a-112">Gli altri risultati Web vengono visualizzati sotto di esso.</span><span class="sxs-lookup"><span data-stu-id="a530a-112">Other web results appear under it.</span></span> <span data-ttu-id="a530a-113">Non sono specifiche per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="a530a-113">They aren't specific to your organization.</span></span>
 
   
 
