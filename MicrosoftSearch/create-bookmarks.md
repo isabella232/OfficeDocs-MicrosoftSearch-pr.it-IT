@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
+ROBOTS: NoIndex
 description: Creare segnalibri o usare un'estensione del browser per aggiungerli ai risultati di lavoro di Microsoft Search
-ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508731"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590712"
 ---
 # <a name="create-bookmarks"></a>Creare segnalibri
 
+> [!IMPORTANT]
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+    
 I segnalibri consentono di trovare rapidamente siti, strumenti e risorse importanti. Ogni segnalibro include un titolo, un URL e un set di parole chiave che lo attivano.
   
 ## <a name="create-a-bookmark"></a>Creare un segnalibro

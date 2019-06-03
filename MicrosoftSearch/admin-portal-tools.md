@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
+ROBOTS: NoIndex
 description: Panoramica degli strumenti di Microsoft Search per creare e importare risultati, accedere automaticamente e cercare ovunque
-ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508722"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591351"
 ---
 # <a name="admin-portal-tools"></a>Strumenti del portale di amministrazione
 
+> [!IMPORTANT]
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+    
 Il portale di amministrazione di Microsoft Search include strumenti e risorse progettate per amministratori, editor e utenti, tra cui:
   
 - Estensione del browser per autori di contenuti

@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: Creare più segnalibri contemporaneamente con gli strumenti di importazione per il portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968349"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591423"
 ---
 # <a name="bulk-create-bookmarks"></a>Creare in blocco i segnalibri
 
 > [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
     
 Scaricare e usare il modello CSV per creare, modificare e salvare in blocco i segnalibri. Per modificare in blocco segnalibri esistenti, esportarli dal portale di amministrazione, apportare le modifiche necessarie e quindi importarli.
   

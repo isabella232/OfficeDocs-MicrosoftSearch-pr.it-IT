@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
+ROBOTS: NOINDEX
 description: Includere app basate sul browser nei risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: 96b409274e3fa06cef7dcc6f1c43360a3e6b9d34
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 655b8c8c6f4a9729461447112b21ca7c6c7864f9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968381"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591612"
 ---
 # <a name="integrate-powerapps"></a>Integrare PowerApps
 
 > [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
     
 Aiutare gli utenti a completare le attività, ad esempio immettere ferie o segnalare le spese integrando le PowerApp esistenti con i segnalibri. Le PowerApp integrate sono visualizzate all’interno di un risultato di segnalibri, senza dover passare a un altro sito o aprire un altro strumento, evitando di perdere tempo e risorse.
   
