@@ -1,9 +1,9 @@
 ---
 title: Gestire i segnalibri
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/08/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,88 +13,86 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Trovare segnalibri da aggiornare e modi per modificare in blocco i risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+description: Creare e aggiornare i segnalibri e modi per modificare in blocco i risultati di segnalibri per Microsoft Search
+ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968484"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591621"
 ---
-# <a name="manage-bookmarks"></a><span data-ttu-id="83496-103">Gestire i segnalibri</span><span class="sxs-lookup"><span data-stu-id="83496-103">Manage bookmarks</span></span>
+# <a name="manage-bookmarks"></a><span data-ttu-id="531e9-103">Gestire i segnalibri</span><span class="sxs-lookup"><span data-stu-id="531e9-103">Manage bookmarks</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="83496-104">Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="83496-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="83496-105">Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="83496-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="83496-106">Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di un segnalibro per fare in modo che rimanga pertinente.</span><span class="sxs-lookup"><span data-stu-id="83496-106">Over time, you may need to update a bookmark's status and content to keep it relevant.</span></span> 
-  
-## <a name="filter-bookmarks"></a><span data-ttu-id="83496-107">Filtrare i segnalibri</span><span class="sxs-lookup"><span data-stu-id="83496-107">Filter bookmarks</span></span>
+<span data-ttu-id="531e9-104">È possibile creare un segnalibro in pochi passaggi.</span><span class="sxs-lookup"><span data-stu-id="531e9-104">You can create a bookmark in just a few steps.</span></span> <span data-ttu-id="531e9-105">Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione.</span><span class="sxs-lookup"><span data-stu-id="531e9-105">Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span> <span data-ttu-id="531e9-106">Un segnalibro può contenere diverse parole chiave e più segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa.</span><span class="sxs-lookup"><span data-stu-id="531e9-106">A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared.</span></span> <span data-ttu-id="531e9-107">Quando si crea o modifica un segnalibro, l'indice di ricerca viene immediatamente aggiornato e il segnalibro è reso subito disponibile agli utenti.</span><span class="sxs-lookup"><span data-stu-id="531e9-107">When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.</span></span>
 
-<span data-ttu-id="83496-108">Usare l'opzione del filtro nell'angolo superiore destro della pagina dei segnalibri per trovarli in base alla data e all'autore delle modifiche.</span><span class="sxs-lookup"><span data-stu-id="83496-108">Use the filter option in the upper-right corner of the Bookmarks page to find bookmarks by date and who modified them.</span></span> <span data-ttu-id="83496-109">Ad esempio, impostare il dispositivo di scorrimento della data su 30 giorni e selezionare un amministratore o un editor per visualizzare l'elenco di segnalibri che ha creato o modificato in quell'intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="83496-109">For example, set the date slider to 30 days and select an admin or editor to see the list of bookmarks they've created or changed in that time.</span></span>
-  
-## <a name="change-bookmark-content-or-settings"></a><span data-ttu-id="83496-110">Modificare le impostazioni o il contenuto dei segnalibri</span><span class="sxs-lookup"><span data-stu-id="83496-110">Change bookmark content or settings</span></span>
+<span data-ttu-id="531e9-108">Se l'organizzazione ha configurato Risultati alzati di livello in SharePoint, è possibile importarli in **Microsoft Search** e rendere disponibile il contenuto importato agli utenti.</span><span class="sxs-lookup"><span data-stu-id="531e9-108">If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users.</span></span> <span data-ttu-id="531e9-109">Si tratta di un modo semplice per inserire rapidamente i risultati della ricerca quando si configura **Microsoft Search** e renderlo più efficiente per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="531e9-109">This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users.</span></span> <span data-ttu-id="531e9-110">È consigliabile usare i risultati alzati di livello di SharePoint come riferimento per determinare come assegnare un nome e creare i risultati della ricerca rilevanti.</span><span class="sxs-lookup"><span data-stu-id="531e9-110">We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results.</span></span> 
 
-1. <span data-ttu-id="83496-111">Passare al portale di amministrazione di Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="83496-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="83496-112">Nel riquadro di spostamento fare clic su **Segnalibri**</span><span class="sxs-lookup"><span data-stu-id="83496-112">In the navigation pane, click **Bookmarks**</span></span>
-    
-3. <span data-ttu-id="83496-113">Per trovare un segnalibro, cercare, filtrare o selezionare lo stato dei segnalibri per limitare i risultati</span><span class="sxs-lookup"><span data-stu-id="83496-113">To find a bookmark, search, filter, or click a bookmark status to narrow your results</span></span>
-    
-4. <span data-ttu-id="83496-114">Per modificare o aggiornare un segnalibro, fare clic sul titolo</span><span class="sxs-lookup"><span data-stu-id="83496-114">To change or update a bookmark, click the title</span></span>
-    
-5. <span data-ttu-id="83496-115">Modificare o aggiornare i contenuti o le impostazioni e vederne in anteprima gli effetti.</span><span class="sxs-lookup"><span data-stu-id="83496-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span> 
-    
-6. <span data-ttu-id="83496-116">Fare clic su **Salva**.</span><span class="sxs-lookup"><span data-stu-id="83496-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-bookmarks"></a><span data-ttu-id="83496-117">Esportare in blocco e modificare segnalibri</span><span class="sxs-lookup"><span data-stu-id="83496-117">Bulk export and edit bookmarks</span></span>
+## <a name="add-or-edit-a-single-bookmark"></a><span data-ttu-id="531e9-111">Aggiungere o modificare un singolo segnalibro</span><span class="sxs-lookup"><span data-stu-id="531e9-111">Add or edit a single bookmark</span></span>
+1. <span data-ttu-id="531e9-112">Passare all'**interfaccia di amministrazione di Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="531e9-112">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="531e9-113">Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare \*\*\*\*Microsoft Search\*\*\*\*.</span><span class="sxs-lookup"><span data-stu-id="531e9-113">In the navigation pane, go to **Settings**, and then select \*\*\*\*Microsoft Search\*\*\*\*.</span></span>
+<span data-ttu-id="531e9-114">Per impostazione predefinita, è già selezionata la scheda **Segnalibri**.</span><span class="sxs-lookup"><span data-stu-id="531e9-114">By default, the **Bookmarks** tab is selected.</span></span>
+1. <span data-ttu-id="531e9-115">Per aggiungere un segnalibro, selezionare **Aggiungi nuovo**.</span><span class="sxs-lookup"><span data-stu-id="531e9-115">To add a bookmark, select **Add new**.</span></span> <span data-ttu-id="531e9-116">Per modificare un segnalibro, selezionarlo nell'elenco di segnalibri pertinente.</span><span class="sxs-lookup"><span data-stu-id="531e9-116">To edit a bookmark, select the bookmark in the relevant bookmark list.</span></span> 
+1. <span data-ttu-id="531e9-117">Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.</span><span class="sxs-lookup"><span data-stu-id="531e9-117">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="531e9-118">Salvare le modifiche.</span><span class="sxs-lookup"><span data-stu-id="531e9-118">Save your changes.</span></span>
 
-<span data-ttu-id="83496-118">Non modificare mai i dati in questi campi:</span><span class="sxs-lookup"><span data-stu-id="83496-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="83496-119">ID</span><span class="sxs-lookup"><span data-stu-id="83496-119">ID</span></span>
-    
-- <span data-ttu-id="83496-120">Ultima modifica</span><span class="sxs-lookup"><span data-stu-id="83496-120">Last modified</span></span>
-    
-- <span data-ttu-id="83496-121">Autore ultima modifica</span><span class="sxs-lookup"><span data-stu-id="83496-121">Last modified by</span></span>
-    
-<span data-ttu-id="83496-122">L'ID è un identificatore univoco per ogni segnalibro e non può essere modificato.</span><span class="sxs-lookup"><span data-stu-id="83496-122">Id is a unique identifier for each bookmark and should never be edited.</span></span> <span data-ttu-id="83496-123">I campi Ultima modifica e Autore ultima modifica devono essere usati solo per ordinare e trovare segnalibri.</span><span class="sxs-lookup"><span data-stu-id="83496-123">The Last Modified and Last Modified By fields should only be used to sort and find bookmarks.</span></span>
-  
-1. <span data-ttu-id="83496-124">Se si desidera esportare un sottoinsieme di segnalibri, usare il filtro.</span><span class="sxs-lookup"><span data-stu-id="83496-124">If you want to export a subset of your bookmarks, filter them</span></span>
-    
-2. <span data-ttu-id="83496-125">Nell'angolo superiore destro della pagina dei segnalibri, fare clic su **Esporta**.</span><span class="sxs-lookup"><span data-stu-id="83496-125">In the upper-right corner of the Bookmarks page, click **Export**</span></span>
-    
-3. <span data-ttu-id="83496-126">Salvare o aprire il file CSV.</span><span class="sxs-lookup"><span data-stu-id="83496-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="83496-127">Modificare i dati in questi campi:</span><span class="sxs-lookup"><span data-stu-id="83496-127">Edit data in any of these fields:</span></span>
-   - <span data-ttu-id="83496-128">Titolo</span><span class="sxs-lookup"><span data-stu-id="83496-128">Title</span></span>
-    
-   - <span data-ttu-id="83496-129">URL</span><span class="sxs-lookup"><span data-stu-id="83496-129">URL</span></span>
-    
-   - <span data-ttu-id="83496-130">Parole chiave</span><span class="sxs-lookup"><span data-stu-id="83496-130">Keywords</span></span>
-    
-   - <span data-ttu-id="83496-131">Stato</span><span class="sxs-lookup"><span data-stu-id="83496-131">State</span></span>
-    
-   - <span data-ttu-id="83496-132">Descrizione</span><span class="sxs-lookup"><span data-stu-id="83496-132">Description</span></span>
-    
-   - <span data-ttu-id="83496-133">Parole chiave riservate</span><span class="sxs-lookup"><span data-stu-id="83496-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="83496-134">Data di inizio</span><span class="sxs-lookup"><span data-stu-id="83496-134">Start Date</span></span>
-    
-   - <span data-ttu-id="83496-135">Data di fine</span><span class="sxs-lookup"><span data-stu-id="83496-135">End date</span></span>
-    
-   - <span data-ttu-id="83496-136">Paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="83496-136">Country/region</span></span>
-    
-   - <span data-ttu-id="83496-137">Gruppi</span><span class="sxs-lookup"><span data-stu-id="83496-137">Groups</span></span>
-    
-   - <span data-ttu-id="83496-138">Dispositivo e sistemi operativi</span><span class="sxs-lookup"><span data-stu-id="83496-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="83496-139">Varianti mirate</span><span class="sxs-lookup"><span data-stu-id="83496-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="83496-140">Salvare il file CSV</span><span class="sxs-lookup"><span data-stu-id="83496-140">Save the file as a .csv or .txt file.</span></span>
+## <a name="add-or-edit-bookmark-using-browser-extensions"></a><span data-ttu-id="531e9-119">Aggiungere o modificare il segnalibro usando le estensioni del browser</span><span class="sxs-lookup"><span data-stu-id="531e9-119">Add or edit bookmark using browser extensions</span></span>
+<span data-ttu-id="531e9-120">Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser.</span><span class="sxs-lookup"><span data-stu-id="531e9-120">Search administrators can create search content easily by using browser extensions.</span></span> <span data-ttu-id="531e9-121">Installare l'estensione del browser e quindi passare al sito per aggiungerlo come segnalibro.</span><span class="sxs-lookup"><span data-stu-id="531e9-121">Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.</span></span>
 
-    <span data-ttu-id="83496-141">Il file CSV deve essere salvato come file UTF-8 CSV, altre codifiche e/o tipi di file potrebbero causare errori di importazione</span><span class="sxs-lookup"><span data-stu-id="83496-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="83496-142">Nell'angolo superiore destro della pagina Segnalibri fare clic su **Importa**</span><span class="sxs-lookup"><span data-stu-id="83496-142">In the upper-right corner of the Bookmarks page, click **Import**</span></span>
-    
-7. <span data-ttu-id="83496-143">Nel riquadro Importa segnalibri fare clic su **Sfoglia** e selezionare il file CSV modificato</span><span class="sxs-lookup"><span data-stu-id="83496-143">In the Import bookmarks pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="83496-144">Fare clic su **Importa**</span><span class="sxs-lookup"><span data-stu-id="83496-144">Click **Import**.</span></span>
+<span data-ttu-id="531e9-122">Le estensioni dei browser sono attualmente disponibili per Microsoft Edge e Chrome.</span><span class="sxs-lookup"><span data-stu-id="531e9-122">Currently, browser extensions are available for Edge and Chrome.</span></span> 
+- <span data-ttu-id="531e9-123">Per scaricare l'estensione di Microsoft Edge, passare a [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.</span><span class="sxs-lookup"><span data-stu-id="531e9-123">To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.</span></span>
+- <span data-ttu-id="531e9-124">Per scaricare l'estensione di Chrome, passare al [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e scaricare l'app.</span><span class="sxs-lookup"><span data-stu-id="531e9-124">To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.</span></span>
+
+## <a name="bulk-add-or-edit-bookmarks"></a><span data-ttu-id="531e9-125">Aggiungere o modificare in blocco i segnalibri</span><span class="sxs-lookup"><span data-stu-id="531e9-125">Bulk add or edit bookmarks</span></span>
+<span data-ttu-id="531e9-126">L'amministratore della ricerca può usare le funzionalità di importazione o esportazione per creare o modificare in blocco i segnalibri.</span><span class="sxs-lookup"><span data-stu-id="531e9-126">Search administrator can use the Import or Export features to bulk create or edit bookmarks.</span></span> <span data-ttu-id="531e9-127">È una funzionalità molto utile quando si vuole aggiungere o modificare un numero elevato di segnalibri.</span><span class="sxs-lookup"><span data-stu-id="531e9-127">This is a very useful feature when an administrator wants to add or edit a large number of bookmarks.</span></span> 
+
+<span data-ttu-id="531e9-128">Usare la funzionalità di importazione/esportazione per:</span><span class="sxs-lookup"><span data-stu-id="531e9-128">Use the import/export feature to:</span></span>
+- <span data-ttu-id="531e9-129">Aggiungere segnalibri in blocco: aggiungere i dettagli nel file modello del segnalibro e quindi importarlo.</span><span class="sxs-lookup"><span data-stu-id="531e9-129">Bulk add bookmarks - Add details in the bookmark template file, and then import it.</span></span>
+- <span data-ttu-id="531e9-130">Modificare i segnalibri in blocco: esportare i segnalibri in un file CSV, quindi modificare i dettagli del segnalibro nel file CSV esportato e infine importare il file CSV aggiornato.</span><span class="sxs-lookup"><span data-stu-id="531e9-130">Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.</span></span>
+- <span data-ttu-id="531e9-131">Importare i siti alzati di livello da SharePoint.</span><span class="sxs-lookup"><span data-stu-id="531e9-131">Import promoted sites from SharePoint.</span></span>
+- <span data-ttu-id="531e9-132">Eseguire il backup dei segnalibri: esportare i segnalibri in un file CSV.</span><span class="sxs-lookup"><span data-stu-id="531e9-132">Backup bookmarks - Export bookmarks to a .csv file.</span></span>
+
+<span data-ttu-id="531e9-133">Per importare o esportare segnalibri:</span><span class="sxs-lookup"><span data-stu-id="531e9-133">To import or export bookmarks:</span></span>
+1. <span data-ttu-id="531e9-134">In alto a destra della scheda **Segnalibri**, selezionare **Importa**.</span><span class="sxs-lookup"><span data-stu-id="531e9-134">In the upper-right corner of **Bookmarks** tab, select **Import**.</span></span> <span data-ttu-id="531e9-135">Selezionare **Esporta** per scaricare tutti i segnalibri esistenti in un file CSV.</span><span class="sxs-lookup"><span data-stu-id="531e9-135">Select **Export** to download all the existing bookmarks in a .csv file.</span></span>
+1. <span data-ttu-id="531e9-136">Nel riquadro destro, scegliere l'opzione per importare con un file CSV o da SharePoint.</span><span class="sxs-lookup"><span data-stu-id="531e9-136">In the right pane, choose the option to import using a .csv file or from SharePoint.</span></span>
+<span data-ttu-id="531e9-137">Scaricare il file modello per un elenco di campi obbligatori e i dettagli.</span><span class="sxs-lookup"><span data-stu-id="531e9-137">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="531e9-138">Aggiungere o modificare i dettagli del segnalibro nel file modello e quindi salvarlo nel computer.</span><span class="sxs-lookup"><span data-stu-id="531e9-138">Add or edit bookmark details in the template file, and then save it on your computer.</span></span> 
+1. <span data-ttu-id="531e9-139">Nel riquadro **Importa segnalibri**, selezionare **Sfoglia** e quindi il file CSV da importare.</span><span class="sxs-lookup"><span data-stu-id="531e9-139">In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="531e9-140">Selezionare **Importa**.</span><span class="sxs-lookup"><span data-stu-id="531e9-140">Select **Import**.</span></span>
+
+<span data-ttu-id="531e9-141">Ecco alcuni punti importanti da tenere presenti per il file modello:</span><span class="sxs-lookup"><span data-stu-id="531e9-141">Here are some important points to be noted regarding the template file:</span></span>
+- <span data-ttu-id="531e9-142">Non modificare i dati in questi campi: *Id*, *Data ultima modifica* e *Autore ultima modifica*</span><span class="sxs-lookup"><span data-stu-id="531e9-142">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="531e9-143">Se si include l'*Id* di un segnalibro esistente, verrà sostituito con le informazioni presenti nel file di importazione.</span><span class="sxs-lookup"><span data-stu-id="531e9-143">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="531e9-144">Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.</span><span class="sxs-lookup"><span data-stu-id="531e9-144">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="531e9-145">Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.</span><span class="sxs-lookup"><span data-stu-id="531e9-145">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="531e9-146">In base al campo *Stato*, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.</span><span class="sxs-lookup"><span data-stu-id="531e9-146">Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="531e9-147">Per le organizzazioni con più tenant, è possibile esportare i segnalibri da un tenant e importarli in un altro.</span><span class="sxs-lookup"><span data-stu-id="531e9-147">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="531e9-148">È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.</span><span class="sxs-lookup"><span data-stu-id="531e9-148">But you must remove the data in the *Id* column before you import.</span></span>
+
+### <a name="prevent-import-errors"></a><span data-ttu-id="531e9-149">Evitare gli errori di importazione</span><span class="sxs-lookup"><span data-stu-id="531e9-149">Prevent import errors</span></span>
+<span data-ttu-id="531e9-150">Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore e viene generato un file di log con altre informazioni sulle righe e sulle colonne da correggere.</span><span class="sxs-lookup"><span data-stu-id="531e9-150">You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected.</span></span> <span data-ttu-id="531e9-151">Apportare le modifiche necessarie e riprovare l'importazione del file.</span><span class="sxs-lookup"><span data-stu-id="531e9-151">Make necessary edits and try importing the file again.</span></span> <span data-ttu-id="531e9-152">Non è possibile importare o salvare alcun segnalibro finché non saranno stati risolti tutti gli errori.</span><span class="sxs-lookup"><span data-stu-id="531e9-152">You cannot import or save any bookmarks until all errors are resolved.</span></span>
+
+<span data-ttu-id="531e9-153">Per evitare errori, verificare che il file di importazione sia formattato correttamente e che:</span><span class="sxs-lookup"><span data-stu-id="531e9-153">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="531e9-154">Includa la riga di intestazione e tutte le colonne presenti nel modello di importazione</span><span class="sxs-lookup"><span data-stu-id="531e9-154">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="531e9-155">L'ordine delle colonne equivalga a quello del modello di importazione</span><span class="sxs-lookup"><span data-stu-id="531e9-155">The column order is the same as the import template</span></span>
+- <span data-ttu-id="531e9-156">Tutte le colonne contengano valori, a eccezione di tre colonne che possono essere vuote: *Id*, *Data ultima modifica* e *Autore ultima modifica*</span><span class="sxs-lookup"><span data-stu-id="531e9-156">All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*</span></span> 
+- <span data-ttu-id="531e9-157">La colonna *Stato* non è vuota, perché si tratta di informazioni obbligatorie</span><span class="sxs-lookup"><span data-stu-id="531e9-157">The *State* column is not empty, as this information is required</span></span>
+
+## <a name="powerapps"></a><span data-ttu-id="531e9-158">PowerApps</span><span class="sxs-lookup"><span data-stu-id="531e9-158">PowerApps</span></span>
+<span data-ttu-id="531e9-159">È possibile aiutare gli utenti a completare le attività, ad esempio immettere ferie o segnalare le spese, aggiungendo le PowerApp esistenti ai segnalibri.</span><span class="sxs-lookup"><span data-stu-id="531e9-159">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> 
+
+### <a name="what-are-powerapps"></a><span data-ttu-id="531e9-160">Cosa sono le PowerApp?</span><span class="sxs-lookup"><span data-stu-id="531e9-160">What are PowerApps?</span></span>
+<span data-ttu-id="531e9-161">PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione.</span><span class="sxs-lookup"><span data-stu-id="531e9-161">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="531e9-162">PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l’aggiunta richiede meno di un minuto.</span><span class="sxs-lookup"><span data-stu-id="531e9-162">PowerApps work in any browser and on any device and take less than a minute to add.</span></span> <span data-ttu-id="531e9-163">Per altre informazioni su PowerApps, vedere:</span><span class="sxs-lookup"><span data-stu-id="531e9-163">For more on PowerApps, see:</span></span>
+- <span data-ttu-id="531e9-164">
+  [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="531e9-164">[Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)</span></span>
+- <span data-ttu-id="531e9-165">
+  [Documentazione](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid)</span><span class="sxs-lookup"><span data-stu-id="531e9-165">[Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)</span></span>
+- [<span data-ttu-id="531e9-166">Home page di PowerApps</span><span class="sxs-lookup"><span data-stu-id="531e9-166">PowerApps Home</span></span>](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+
+### <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="531e9-167">Aggiungere una PowerApp a un segnalibro</span><span class="sxs-lookup"><span data-stu-id="531e9-167">Add a PowerApp to a bookmark</span></span>
+1. <span data-ttu-id="531e9-168">Trovare l'[ID di applicazione per la PowerApp](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) da aggiungere.</span><span class="sxs-lookup"><span data-stu-id="531e9-168">Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span>
+1. <span data-ttu-id="531e9-169">Accedere e passare all'**interfaccia di amministrazione di Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="531e9-169">Sign in and go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="531e9-170">Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.</span><span class="sxs-lookup"><span data-stu-id="531e9-170">In the navigation pane, go to **Settings**, and then select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="531e9-171">Aggiungere un segnalibro o trovare un segnalibro esistente a cui si vuole aggiungere una **PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="531e9-171">Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.</span></span>
+1. <span data-ttu-id="531e9-172">In **Impostazioni Segnalibro**, selezionare **PowerApp** e quindi **Aggiungi una PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="531e9-172">In **Bookmark settings**, select **Power App**, and then **Add a Power App**.</span></span>
+1. <span data-ttu-id="531e9-173">Immettere o incollare l'**ID dell’app**.</span><span class="sxs-lookup"><span data-stu-id="531e9-173">Enter or paste the **App ID**.</span></span>
+    <span data-ttu-id="531e9-174">Vengono regolate automaticamente l'altezza e la larghezza.</span><span class="sxs-lookup"><span data-stu-id="531e9-174">The height and width are automatically adjusted.</span></span> <span data-ttu-id="531e9-175">I segnalibri possono supportare orientamento orizzontale e verticale, ma attualmente non è possibile modificare le dimensioni.</span><span class="sxs-lookup"><span data-stu-id="531e9-175">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span> <span data-ttu-id="531e9-176">L'anteprima del segnalibro mostra una PowerApp completamente funzionante, per renderla semplice da testare.</span><span class="sxs-lookup"><span data-stu-id="531e9-176">The bookmark preview shows a fully functional PowerApp to make it easy to test.</span></span>
+1. <span data-ttu-id="531e9-177">Selezionare **Pubblica** o **Salva come bozza**.</span><span class="sxs-lookup"><span data-stu-id="531e9-177">Select **Publish** or **Save to Draft**.</span></span>
