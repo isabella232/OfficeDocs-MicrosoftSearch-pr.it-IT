@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
 description: Informazioni su come configurare un browser predefinito per la società con Microsoft Search.
-ms.openlocfilehash: daff7f66bd38bdd56179e44c36092a2c4fd42b42
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591162"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727844"
 ---
 # <a name="set-default-browser"></a>Impostare il browser predefinito
 
-> [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
-    
+  
 La configurazione del browser predefinito, del motore di ricerca predefinito e della home page predefinita consente agli utenti di scoprire le funzionalità di Microsoft Search, incoraggiarli a un utilizzo maggiore e fornire loro un'esperienza ottimale.
   
 Per impostare il browser predefinito per l'organizzazione, eseguire la procedura seguente.

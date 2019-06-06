@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591054"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728006"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -30,19 +30,19 @@ Per altre informazioni sulle funzionalità di **Microsoft Search**, vedere [Pano
 
 **Microsoft Search** viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Basta eseguire l'accesso con un account aziendale o dell'istituto di istruzione e usare un browser con Bing impostato come provider di ricerca predefinito.
 
-È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l’account di accesso con le credenziali di amministratore e selezionare il riquadro Amministratore nell'elenco delle app di Office 365 (per l’elenco delle app, fare clic sull'icona di **avvio delle app** nell'angolo in alto a sinistra). Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
+È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l’account di accesso con le credenziali di amministratore e selezionare il riquadro **Amministratore** nell'elenco delle app di Office 365 (per l’elenco delle app, fare clic sull'icona di **avvio delle app** nell'angolo in alto a sinistra). Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
 
 **Nota:** se viene visualizzato **Microsoft Search** in **Impostazioni** nell’**interfaccia di amministrazione di Microsoft 365**, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di **Microsoft Search** più efficiente e intuitiva nell'organizzazione.
 
-### <a name="step-1-check-access-level-of-your-users"></a>Passaggio 1: Verificare il livello di accesso degli utenti
+## <a name="step-1-check-access-level-of-your-users"></a>Passaggio 1: Verificare il livello di accesso degli utenti
 
 **Microsoft Search** rispetta le impostazioni di sicurezza dell'origine contenuto. Gli elementi visualizzati nei risultati della ricerca dipendono dalle autorizzazioni e dai livelli di accesso degli utenti. Esaminare il livello di accesso degli utenti dell'organizzazione per assicurarsi che gli utenti trovino solo i contenuti cui sono autorizzati ad accedere.
 
 Altre informazioni sulla [pianificazione delle autorizzazioni](https://docs.microsoft.com/it-IT/sharepoint/plan-your-permissions-strategy) e sulla [creazione dei livelli di autorizzazione](https://docs.microsoft.com/it-IT/sharepoint/how-to-create-and-edit-permission-levels).
 
-### <a name="step-2-assign-search-admin-and-search-editor"></a>Passaggio 2: Assegnare l'amministratore della ricerca e l'editor della ricerca
+## <a name="step-2-assign-search-admin-and-search-editor"></a>Passaggio 2: Assegnare l'amministratore della ricerca e l'editor della ricerca
 
 Nell'**interfaccia di amministrazione di Microsoft** sono disponibili due nuovi ruoli: l'amministratore della ricerca e l'editor della ricerca.  L'amministratore globale, che dispone di privilegi completi, assegna i ruoli di amministratore agli utenti, incluso il ruolo di amministratore della ricerca. Gli amministratori della ricerca possono delegare i ruoli di amministratore della ricerca o di editor della ricerca ad altri utenti. Per altre informazioni sui diversi ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
@@ -56,7 +56,7 @@ In **Microsoft Search** è possibile gestire i contenuti e le impostazioni di ri
 
 Per assegnare i ruoli di amministratore, vedere [Assegnare diritti di amministratore in Office 365 per le aziende](https://docs.microsoft.com/it-IT/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
-### <a name="step-3-make-content-easy-to-find"></a>Passaggio 3: Facilitare la ricerca del contenuto 
+## <a name="step-3-make-content-easy-to-find"></a>Passaggio 3: Facilitare la ricerca del contenuto 
 
 **Microsoft Search** offre agli amministratori strumenti utili per creare un'esperienza di ricerca solida per gli utenti. In **Microsoft Search** gli amministratori possono creare tre diversi contenuti di ricerca per garantire una migliore esperienza di ricerca e ottimizzare la reperibilità dei contenuti:
 - **Segnalibro:** i segnalibri sono simili ai risultati promossi in SharePoint e consentono di promuovere i migliori risultati possibili per le query degli utenti nella parte superiore dei risultati della ricerca. Consentono inoltre agli utenti di cercare facilmente siti interni importanti. 
@@ -72,7 +72,7 @@ Ecco alcuni esempi di contenuti che è consigliabile aggiungere ai segnalibri pe
 
 Per la creazione e la gestione dei contenuti della ricerca, vedere [Facilitare la ricerca dei contenuti](make-content-easy-to-find.md).
 
-### <a name="step-4-test-single-sign-on"></a>Passaggio 4: Testare l'accesso Single Sign-On
+## <a name="step-4-test-single-sign-on"></a>Passaggio 4: Testare l'accesso Single Sign-On
 **Microsoft Search** usa Azure Active Directory (AAD) per autenticare e autorizzare l'accesso ai dati dell'organizzazione.  Gli utenti possono accedere automaticamente con l'account aziendale o dell'istituto di istruzione quando si è effettuato l'accesso a un'app di Office 365 o a Windows 10.
 
 È consigliabile che gli utenti di **Microsoft Search** usino l'accesso Single Sign-On per ridurre il numero di volte in cui viene loro richiesto di accedere. Gli amministratori devono testare l'accesso Single Sign-On con un piccolo gruppo di utenti per consentire di identificare eventuali problemi di configurazione. 
@@ -81,14 +81,14 @@ Per gli utenti di Chrome in Windows 10, l'accesso Single Sign-On funziona solo q
 
 Per scaricare e installare l'estensione di accesso di Windows 10 e AAD per Chrome, passare a [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
 
-### <a name="step-5-training-and-communication"></a>Passaggio 5: Formazione e comunicazione
+## <a name="step-5-training-and-communication"></a>Passaggio 5: Formazione e comunicazione
 Definire le risorse in modalità self-service a cui i dipendenti possono accedere in modo facile e autonomo. Questo consentirà di ridurre il carico complessivo sull'amministratore e sul team incaricato delle comunicazioni e supporterà la formazione autonoma dei dipendenti. Fornire agli utenti comunicazioni, domande frequenti, video e corsi di formazione o webinar registrati. Ecco alcuni collegamenti utili per iniziare:
 - [Trovare le informazioni necessarie con Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Area risorse di Office 365](https://support.office.com/office-training-center)
 - 
   [Microsoft Search Center](https://support.office.com/it-IT/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-### <a name="trying-out-microsoft-search-in-bing"></a>Provare **Microsoft Search** in Bing 
+## <a name="trying-out-microsoft-search-in-bing"></a>Provare **Microsoft Search** in Bing 
 L'amministratore di **Microsoft Search** può disattivare **Microsoft Search** in Bing. Se questa funzione viene disattivata, gli utenti non possono visualizzare i contenuti dell'organizzazione nella ricerca Bing. Per impostazione predefinita, **Microsoft Search** è attivato in Bing. È consigliabile tenere **Microsoft Search** attivato in Bing per un'esperienza utente migliore. 
 
 Se si intende provare **Microsoft Search** su un tenant di test o si vuole testare l'esperienza di ricerca prima di renderla disponibile a tutti gli utenti, è possibile disattivare **Microsoft Search**.
