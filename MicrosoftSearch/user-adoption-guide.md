@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 967c5876fe1a559041ec88d5d038d5739fd77280
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590838"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727907"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
-
-> [!IMPORTANT]
-> Questo articolo si applica a Microsoft Search nel portale di amministrazione di Bing. Si sta spostando il portale nell'interfaccia di amministrazione di Microsoft 365 e quindi verrà rimosso. Per iniziare, è consigliabile utilizzare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 Queste informazioni sono destinate agli amministratori di Microsoft Search, ai responsabili della gestione delle modifiche e ai proprietari di aziende.
   
@@ -88,9 +85,9 @@ Investire tempo per prepararsi per l'implementazione di Microsoft Search provoch
   
 Gli amministratori influiscono direttamente sull'esperienza di ricerca per gli utenti finali e determinano la modalità di ricerca dell'organizzazione da parte di Microsoft Search. ad esempio scegliendo i tipi di risultati che gli utenti possono visualizzare. Controllarlo attivando o disattivando i risultati per documenti, siti, persone, gruppi o conversazioni.
   
-Per ulteriori informazioni, vedere [configurare Microsoft Search](set-up-microsoft-search.md).
+Per ulteriori informazioni, vedere [configurare Microsoft Search](setup-microsoft-search.md).
   
-Gli editori sono esperti in materia che consentono di gestire i segnalibri e Q&As all'interno delle aree di competenza. Gli editor devono creare contenuto che affronti gli scenari degli utenti precedentemente identificati.
+Gli editor sono esperti in materia che consentono di gestire i segnalibri e Q&come all'interno delle aree di competenza. Gli editor devono creare contenuto che affronti gli scenari degli utenti precedentemente identificati.
   
 Per ulteriori informazioni, vedere [pianificare il contenuto](plan-your-content.md).
   
@@ -196,7 +193,4 @@ Utilizzare il dashboard Insights per visualizzare la modalità di esecuzione del
     
 3. Eseguire sondaggi, gruppi di Focus e sessioni di feedback per capire cosa pensano gli utenti di Microsoft Search, aumentare l'adozione e identificare le aree di miglioramento
     
-L'istruzione e il feedback sono processi iterativi. Potrebbe essere necessario apportare modifiche al contenuto e alle comunicazioni quando gli utenti adottano Microsoft Search. 
-
-  
-
+L'istruzione e il feedback sono processi iterativi. Potrebbe essere necessario apportare modifiche al contenuto e alle comunicazioni quando gli utenti adottano Microsoft Search.
