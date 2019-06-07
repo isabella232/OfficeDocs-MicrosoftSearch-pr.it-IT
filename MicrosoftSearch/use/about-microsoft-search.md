@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 ROBOTS: NOINDEX
 description: Panoramica di tutte le informazioni disponibili quando si usa Microsoft Search
-ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a6bda23da00ac302287787b1c48a3e578f0bb335
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590982"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727936"
 ---
-# <a name="about-microsoft-search"></a>Informazioni su Microsoft Search
+# <a name="using-microsoft-search"></a>Usare Microsoft Search
 
 Microsoft Search consente di unificare con la massima semplicità la ricerca sul Web e di informazioni di lavoro in una sola esperienza. Microsoft Search offre un modo semplice, veloce, efficace e sicuro per ottenere le informazioni giuste al momento giusto, in qualsiasi browser e su qualsiasi dispositivo.
   
