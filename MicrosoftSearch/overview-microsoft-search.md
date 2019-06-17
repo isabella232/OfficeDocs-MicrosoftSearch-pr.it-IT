@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica di Microsoft Search, che include informazioni sui vantaggi e le app in cui Microsoft Search è attualmente disponibile.
-ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767191"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003138"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -147,12 +147,11 @@ Dal momento che le ricerche aziendali possono essere riservate, Microsoft Search
 
 Indipendentemente dal fatto che una query utente contenga uno o più risultati di lavoro nella risposta risultante, vengono adottate le misure seguenti:
 
-**Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e archiviati separatamente dal traffico pubblico, non di Microsoft Search. Vengono conservati per 18 mesi e l'accesso è limitato solo ai fini del debug. Le query in questi log non vengono usate per modellare o eseguire il traning delle funzionalità pubbliche, ad esempio i suggerimenti automatici o le ricerche correlate per il Web pubblico. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
+**Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi. Le query archiviate in questi log di sistema verranno usate solo per modellare ed eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
 
 **Cronologia di ricerca**: quando l'utente accede con un account aziendale o dell'istituto di istruzione, la cronologia di ricerca non sarà disponibile in altri computer o dispositivi.
 
 **Pubblicità**: le query di ricerca di contenuti nell'organizzazione non vengono mai condivise né suggerite agli inserzionisti.
-I log di Cerca inserzioni relativi a Microsoft Search vengono archiviati separatamente dal traffico pubblico.
 Le inserzioni non vengono mai personalizzate in base all'identità professionale o all'azienda di un utente.
 
 ## <a name="see-also"></a>Vedere anche

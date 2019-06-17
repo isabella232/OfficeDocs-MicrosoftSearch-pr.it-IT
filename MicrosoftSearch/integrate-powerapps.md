@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: Includere app basate sul browser nei risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: 1f4cf7512ee176015537be2fbe2f59429cde6578
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727970"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003120"
 ---
 # <a name="integrate-powerapps"></a>Integrare PowerApps
 
@@ -63,6 +63,3 @@ PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l'aggiunta
 7. Fare clic su **Pubblica**
     
 Quando un utente di Microsoft Search autorizzato cerca in Bing le parole chiave o le parole chiave riservate del segnalibro, la PowerApp verrà visualizzata nel risultato del segnalibro.
-
-  
-

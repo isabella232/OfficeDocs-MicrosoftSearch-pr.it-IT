@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: c95cc0d11d60e3d4d9a509dc691c01858ede7262
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34728006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947744"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -32,7 +32,7 @@ Per altre informazioni sulle funzionalità di **Microsoft Search**, vedere [Pano
 
 È possibile amministrare **Microsoft Search** dall'**interfaccia di amministrazione di Microsoft 365**. Per accedere, usare l’account di accesso con le credenziali di amministratore e selezionare il riquadro **Amministratore** nell'elenco delle app di Office 365 (per l’elenco delle app, fare clic sull'icona di **avvio delle app** nell'angolo in alto a sinistra). Nell'**interfaccia di amministrazione di Microsoft 365** selezionare **Microsoft Search** sotto **Impostazioni** nel riquadro di spostamento sinistro. 
 
-**Nota:** se viene visualizzato **Microsoft Search** in **Impostazioni** nell’**interfaccia di amministrazione di Microsoft 365**, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
+**Nota:** se NON viene visualizzato **Microsoft Search** in **Impostazioni** nell'**interfaccia di amministrazione di Microsoft 365**, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra dell'interfaccia di amministrazione. 
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di **Microsoft Search** più efficiente e intuitiva nell'organizzazione.
 
