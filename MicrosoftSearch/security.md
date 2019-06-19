@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Microsoft Search consente di proteggere i dati e gli utenti aziendali, fornendo informazioni agli utenti autorizzati
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003111"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009096"
 ---
 # <a name="security-for-microsoft-search"></a>Sicurezza per Microsoft Search
 
@@ -33,7 +33,7 @@ Microsoft Search garantisce l'invio delle richieste su HTTPS. Questa misura di p
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Autenticazione e autorizzazione con Azure Active Directory
 
-L'autenticazione per Microsoft Search è collegata ad Azure Active Directory. Quando gli utenti di Microsoft Search visitano Bing, la relativa intestazione mostra opzioni di accesso per un account Microsoft oltre che per un account aziendale o dell'istituto di istruzione. Se Bing non riesce a determinare se è un partecipante idoneo, l'utente potrà passare alla pagina [Esplora Microsoft Search](https://www.bing.com/business/explore), dove sarà automaticamente reindirizzato alla pagina di accesso dell'organizzazione. 
+L'autenticazione per Microsoft Search è collegata ad Azure Active Directory. Quando gli utenti di Microsoft Search visitano Bing, la relativa intestazione mostra opzioni di accesso per un account Microsoft oltre che per un account aziendale o dell'istituto di istruzione. Se Bing non riesce a determinare se è un partecipante idoneo, l'utente potrà passare alla pagina [Esplora Microsoft Search](https://www.bing.com/business/explore), dove sarà automaticamente reindirizzato alla pagina di accesso dell'organizzazione.
   
 Gli utenti possono accedere a Microsoft Search solo con un account aziendale o dell'istituto di istruzione e con le stesse credenziali usate per accedere ai servizi di Office 365, ad esempio SharePoint o Outlook. Non è possibile accedere a Microsoft Search con un account Microsoft personale.
   
@@ -57,14 +57,14 @@ Dal momento che le ricerche aziendali possono essere riservate, Microsoft Search
   
 Indipendentemente dal fatto che una query utente contenga uno o più risultati di lavoro nella risposta risultante, vengono adottate le misure seguenti:
   
-- Registrazione
-    
+- Registrazione 
   - Tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi.
   - Le query archiviate in questi log di sistema verranno usate solo per modellare e eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono soddisfatte le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
   - L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
-    
-- Pubblicità
-    
+- Cronologia di ricerca    
+  - Quando l'utente accede con un account aziendale o dell'istituto di istruzione, la cronologia di ricerca non sarà disponibile in altri computer o dispositivi.
+ 
+- Pubblicità   
   - Le query di ricerca di contenuti nell'organizzazione non vengono mai condivise o suggerite agli inserzionisti.
   - Le inserzioni non vengono mai personalizzate in base all'identità professionale o all'azienda di un utente.
     
