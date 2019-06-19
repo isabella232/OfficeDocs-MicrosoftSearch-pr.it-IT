@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Microsoft Search consente di proteggere i dati e gli utenti aziendali, fornendo informazioni agli utenti autorizzati
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727942"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003111"
 ---
 # <a name="security-for-microsoft-search"></a>Sicurezza per Microsoft Search
 
@@ -59,26 +59,15 @@ Indipendentemente dal fatto che una query utente contenga uno o più risultati d
   
 - Registrazione
     
-  - Tutti i log di ricerca relativi al traffico di Microsoft Search vengono privati degli elementi identificativi e archiviati separatamente dal traffico pubblico non relativo a Microsoft Search, quindi conservati per 18 mesi, con accesso limitato solo ai fini del debug.
-    
-  - Le query in questi log non vengono usate per modellare o eseguire il traning delle funzionalità pubbliche, ad esempio i suggerimenti automatici o le ricerche correlate per il Web pubblico.
-    
+  - Tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi.
+  - Le query archiviate in questi log di sistema verranno usate solo per modellare e eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono soddisfatte le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
   - L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
-    
-- Cronologia di ricerca
-    
-  - Quando l'utente accede con un account aziendale o dell'istituto di istruzione, la cronologia di ricerca non sarà disponibile in altri computer o dispositivi.
     
 - Pubblicità
     
   - Le query di ricerca di contenuti nell'organizzazione non vengono mai condivise o suggerite agli inserzionisti.
-    
-  - I log di Cerca inserzioni relativi a Microsoft Search vengono archiviati separatamente dal traffico pubblico.
-    
   - Le inserzioni non vengono mai personalizzate in base all'identità professionale o all'azienda di un utente.
     
 ## <a name="gdpr"></a>GDPR
 
 Il [post di blog del 21 maggio 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) riflette l'impegno di Microsoft nei confronti della conformità al GDPR e il modo in cui aiuta le aziende e le organizzazioni ad adempiere ai propri obblighi in materia di conformità al GDPR. Altre informazioni dettagliate sono disponibili nelle [domande frequenti del Centro protezione](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) di Microsoft. Le query di Microsoft Search eseguite in base ai dati del cliente aziendale nell'ambito dei servizi online soddisferanno anche gli impegni del responsabile del trattamento delineati nell'Articolo 28, come si evince dalle [domande frequenti del Centro protezione](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Per quanto riguarda le query di Microsoft Search indirizzate a Bing pubblico, Microsoft funge da titolare del trattamento dei dati e ha implementato misure per deidentificare le query come indicato nel GDPR.
-
-
