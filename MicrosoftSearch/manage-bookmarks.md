@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare i segnalibri e modi per modificare in blocco i risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591621"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170321"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -29,7 +29,7 @@ Se l'organizzazione ha configurato Risultati alzati di livello in SharePoint, è
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Aggiungere o modificare un singolo segnalibro
 1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare ****Microsoft Search****.
+1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.
 Per impostazione predefinita, è già selezionata la scheda **Segnalibri**.
 1. Per aggiungere un segnalibro, selezionare **Aggiungi nuovo**. Per modificare un segnalibro, selezionarlo nell'elenco di segnalibri pertinente. 
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
