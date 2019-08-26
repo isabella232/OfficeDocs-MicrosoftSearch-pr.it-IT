@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
+ROBOTS: NoIndex
 description: Aggiungere posizioni in modo che gli uffici, gli edifici e altre aree di lavoro dell'organizzazione compaiano nei risultati del lavoro di Microsoft Search
-ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: be55112453289a3cb10736750ecdf1c706fe5458
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968180"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591342"
 ---
 # <a name="add-a-location"></a>Aggiungere una posizione
 
 > [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
     
 Aggiungere una posizione in modo che quando gli utenti eseguono la ricerca vedano l'indirizzo dell'edificio, dell'ufficio o del luogo desiderato e la relativa posizione su una mappa. Gli utenti possono anche usare Bing Maps per ottenere indicazioni stradali, vedere cosa c'è nelle vicinanze e altro ancora.
   

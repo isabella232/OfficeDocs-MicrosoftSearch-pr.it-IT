@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
+ROBOTS: NOINDEX
 description: Segnalibri predefiniti disponibili nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968355"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591189"
 ---
 # <a name="publish-default-bookmarks"></a>Pubblicare i segnalibri predefiniti
 
 > [!IMPORTANT]
-> Le impostazioni di Microsoft Search in Bing sono ora disponibili nell'interfaccia di amministrazione di Microsoft 365. Per iniziare, [assegnare amministratori della ricerca](https://docs.microsoft.com/it-IT/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) nell'interfaccia di amministrazione.
-    
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+
 Per vedere rapidamente come vengono visualizzati i segnalibri in Bing, pubblicare quelli predefiniti forniti. Usarli come riferimento per determinare come assegnare un nome ai segnalibri e creare parole chiave valide.
   
 È consigliabile rivedere i due gruppi di segnalibri predefiniti:
