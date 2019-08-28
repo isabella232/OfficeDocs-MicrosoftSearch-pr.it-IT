@@ -15,29 +15,24 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: Includere app basate sul browser nei risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003120"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639848"
 ---
 # <a name="integrate-powerapps"></a>Integrare PowerApps
-
-> [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
-    
+   
 Aiutare gli utenti a completare le attività, ad esempio immettere ferie o segnalare le spese integrando le PowerApp esistenti con i segnalibri. Le PowerApp integrate sono visualizzate all’interno di un risultato di segnalibri, senza dover passare a un altro sito o aprire un altro strumento, evitando di perdere tempo e risorse.
   
 ## <a name="what-are-powerapps"></a>Cosa sono le PowerApp?
 
 PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione. Altre informazioni:
   
-- 
-  [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)
+- [Formazione guidata](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- 
-  [Documentazione](https://docs.microsoft.com/it-IT/powerapps/)
+- [Documentazione](https://docs.microsoft.com/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere una PowerApp a un segnalibro
 
