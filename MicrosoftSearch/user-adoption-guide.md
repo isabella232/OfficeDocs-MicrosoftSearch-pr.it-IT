@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170312"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639884"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -79,7 +79,7 @@ Per aiutarti a soddisfare gli obiettivi di roll-out e mostrare un impatto positi
     
 ## <a name="stage-3-readiness"></a>Fase 3: preparazione
 
-Investire tempo per prepararsi per l'implementazione di Microsoft Search provocherà un impatto positivo per la propria organizzazione. Microsoft fornisce un <a href="https://aka.ms/MicrosoftSearch/Adoption">Kit di adozione</a> che contiene indicazioni sulla pianificazione, annunci di posta elettronica personalizzabili, modelli di sondaggio, presentazioni esecutive e altro ancora. È disponibile anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centro risorse di Microsoft Search</a> in cui gli implementatori it possono trovare altre risorse di formazione e adozione progettate per contribuire a rendere l'implementazione di Microsoft Search di successo.
+Investire tempo per prepararsi per l'implementazione di Microsoft Search provocherà un impatto positivo per la propria organizzazione. Microsoft fornisce un <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Kit di adozione</a> che contiene indicazioni sulla pianificazione, annunci di posta elettronica personalizzabili, modelli di sondaggio, presentazioni esecutive e altro ancora. È disponibile anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centro risorse di Microsoft Search</a> in cui gli implementatori it possono trovare altre risorse di formazione e adozione progettate per contribuire a rendere l'implementazione di Microsoft Search di successo.
   
  **Preparazione del contenuto e del prodotto**
   
