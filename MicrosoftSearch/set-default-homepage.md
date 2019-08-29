@@ -1,8 +1,8 @@
 ---
 title: Impostare la home page predefinita
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -15,22 +15,56 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Informazioni su come impostare Bing come home page predefinita per la società con Microsoft Search.
-ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727997"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639830"
 ---
-# <a name="set-default-homepage"></a>Impostare la home page predefinita
+# <a name="make-bingcom-the-default-home-page"></a>Impostare Bing.com come home page predefinita
 
-La configurazione del browser predefinito, del motore di ricerca predefinito e della home page predefinita consente agli utenti di scoprire le funzionalità di Microsoft Search, incoraggiarli a un utilizzo maggiore e fornire loro un'esperienza ottimale.
+Questo articolo spiega come impostare Bing.com come home page predefinita per i browser Microsoft Edge, Google Chrome e Internet Explorer. 
   
-Per impostare la home page predefinita per l'organizzazione, eseguire la procedura seguente.
-  
-## <a name="internet-explorer"></a>Internet Explorer
+ 
+## <a name="microsoft-edge-on-windows-10-version-1511-or-later"></a>Microsoft Edge in Windows 10 versione 1511 o successiva
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 o versioni successive
+Gli utenti non potranno modificare la home page dopo aver impostato questo criterio. 
+
+1. Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo. 
+1. Passare a **Modelli amministrativi\Componenti di Windows\Microsoft Edge**.    
+1. Fare doppio clic su **Configura pagine iniziali**, impostarlo su **Abilitato** e immettere `https://www.bing.com/business`
+1.  Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
+
+  
+## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Google Chrome in Windows XP SP2 o versioni successive
+
+
+L'articolo del supporto di Windows sulla gestione dei file ADMX e i file ADMX più recenti per le diverse versioni di Windows sono disponibili nel sito del [Supporto tecnico Microsoft](https://support.microsoft.com/it-IT/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+
+È necessario anche il file di criteri Google più recente, disponibile nella [Guida di Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
+  
+Se le impostazioni descritte in questa sezione non sono disponibili all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'[archivio centrale](https://docs.microsoft.com/it-IT/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella conforme alla convenzione di denominazione seguente:
+  
+ **%systemroot%\sysvol\\<dominio\>\policies\PolicyDefinitions**
+  
+Ogni dominio gestito dal controller deve ottenere una cartella separata. Per copiare il file ADMX dal prompt dei comandi, usare il comando seguente:
+  
+ `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
+  
+1. Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo.
+1. Verificare che le cartelle seguenti vengono visualizzate nella sezione **Modelli amministrativi** di *Configurazione utente/computer*: Google Chrome e Google Chrome - Impostazioni predefinite (gli utenti possono eseguire l'override).
+   - Le impostazioni della prima sezione sono fisse e gli amministratori locali non possono modificarle.
+   - Le impostazioni dell'ultima sezione dei criteri possono essere modificate dagli utenti nelle impostazioni del browser. È necessario decidere se gli utenti possono eseguire l'override dell'impostazione predefinita. Nella procedura seguente modificare l'impostazione nella cartella corrispondente ai criteri e alle esigenze dell'organizzazione. Nella procedura seguente si usa Google Chrome - Impostazioni predefinite come valore predefinito.
+
+1. Passare a **&lt;Configurazione computer/utente&gt;\Modelli amministrativi\Google Chrome - Impostazioni predefinite\Home page**. 
+1. Fare doppio clic su **Usa la pagina Nuova scheda come Pagina iniziale** e impostarlo su **Abilitato**. 
+1. Passare a **&lt;Configurazione computer/utente&gt;\Modelli amministrativi\Google Chrome - Impostazioni predefinite\Pagina Nuova scheda**. 
+1. Fare doppio clic su **Configura l'URL della pagina iniziale**, impostarlo su **Abilitato** e immettere `https://www.bing.com/business?form=BFBSPR` 
+1. Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
+
+## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 o versioni successive
+Gli utenti possono comunque modificare la home page dopo aver impostato questo criterio. 
 
 1. Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo.
     
@@ -58,57 +92,3 @@ Per impostare la home page predefinita per l'organizzazione, eseguire la procedu
 6. Premere **F6** nell'impostazione della home page e immettere `https://www.bing.com/business?form=BFBSPR`
     
 7. Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
-    
-> [!NOTE]
-> Gli utenti possono comunque modificare la home page dopo aver impostato questo criterio. 
-  
-## <a name="microsoft-edge"></a>Microsoft Edge
-
-### <a name="windows-10-version-1511-or-later"></a>Windows 10 versione 1511 o successiva
-
-1. Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo.
-    
-2. Passare a **Modelli amministrativi\Componenti di Windows\Microsoft Edge**
-    
-1. Fare doppio clic su **Configura pagine iniziali**, impostarlo su **Abilitato** e immettere `https://www.bing.com/business`
-    
-3. Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
-    
-> [!CAUTION]
-> Gli utenti non potranno modificare il provider di ricerca dopo aver impostato il criterio. 
-  
-## <a name="google-chrome"></a>Google Chrome
-
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 o versioni successive
-
-L'articolo del supporto di Windows sulla gestione dei file ADMX e i file ADMX più recenti per le diverse versioni di Windows sono disponibili nel sito del [Supporto tecnico Microsoft](https://support.microsoft.com/it-IT/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
-
-È necessario anche il file di criteri Google più recente, disponibile nella [Guida di Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
-  
-Se le impostazioni descritte in questa sezione non sono disponibili all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'[archivio centrale](https://docs.microsoft.com/it-IT/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella conforme alla convenzione di denominazione seguente:
-  
- **%systemroot%\sysvol\\<dominio\>\policies\PolicyDefinitions**
-  
-Ogni dominio gestito dal controller deve ottenere una cartella separata. Per copiare il file ADMX dal prompt dei comandi, usare il comando seguente:
-  
- `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
-  
-1. Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo.
-    
-2. Verificare che le cartelle seguenti vengono visualizzate nella sezione **Modelli amministrativi** di *Configurazione utente/computer*: Google Chrome e Google Chrome - Impostazioni predefinite (gli utenti possono eseguire l'override).
-    
-   - Le impostazioni della prima sezione sono fisse e gli amministratori locali non possono modificarle.
-    
-   - Le impostazioni dell'ultima sezione dei criteri possono essere modificate dagli utenti nelle impostazioni del browser. È necessario decidere se gli utenti possono eseguire l'override dell'impostazione predefinita. Nella procedura seguente modificare l'impostazione nella cartella corrispondente ai criteri e alle esigenze dell'organizzazione. Nella procedura seguente si usa Google Chrome - Impostazioni predefinite come valore predefinito.
-    
-3. Passare a **&lt;Configurazione computer/utente&gt;\Modelli amministrativi\Google Chrome - Impostazioni predefinite\Home page**.
-    
-4. Fare doppio clic su **Usa la pagina Nuova scheda come Pagina iniziale** e impostarlo su **Abilitato**.
-    
-5. Passare a **&lt;Configurazione computer/utente&gt;\Modelli amministrativi\Google Chrome - Impostazioni predefinite\Pagina Nuova scheda**.
-    
-6. Fare doppio clic su **Configura l'URL della pagina iniziale**, impostarlo su **Abilitato** e immettere `https://www.bing.com/business?form=BFBSPR`
-    
-7. Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
-    
-Gli utenti potranno modificare la home page dopo aver impostato il criterio.
