@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 ROBOTS: NOINDEX
 description: Microsoft Search offre ricerca di contenuti dell'organizzazione intelligente per gli ambienti di lavoro moderni.
-ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 392e004fef54d1bdbec302b780dd79ecc4668cb9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590748"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639389"
 ---
 # <a name="why-microsoft-search"></a>Perché scegliere Microsoft Search
 
 Trasformare il modo in cui le persone della propria organizzazione cercano informazioni con Microsoft Search. 
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
   
 Questa esperienza di ricerca di contenuti dell'organizzazione aumenta la produttività e fa risparmiare tempo offrendo risultati di ricerca più pertinenti per il luogo di lavoro. Microsoft Search recupera in modo sicuro le informazioni dall'azienda, dall'istituto scolastico o organizzazione, come file, dati aziendali, informazioni sulle persone e siti, nonché risultati Web pubblici e li visualizza in un'unica esperienza.
 

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 ROBOTS: NOINDEX
 description: Informazioni sui requisiti e gli abbonamenti di Office 365 necessari per abilitare Microsoft Search
-ms.openlocfilehash: 029bab5b88a800786f137941df1077b28d4398b7
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5fbdd306c4ed34ff4dea14cd1b53ad1d55715e32
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591216"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639875"
 ---
 # <a name="requirements-for-microsoft-search"></a>Requisiti di Microsoft Search
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 Ecco i requisiti del tenant Office 365 per abilitare Microsoft Search: 
   

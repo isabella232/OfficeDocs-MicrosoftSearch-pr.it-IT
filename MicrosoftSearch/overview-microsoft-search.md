@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica di Microsoft Search, che include informazioni sui vantaggi e le app in cui Microsoft Search è attualmente disponibile.
-ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003138"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639587"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -62,24 +62,25 @@ Se i suggerimenti nella casella di ricerca non corrispondono all'elemento cercat
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>App in cui è attualmente disponibile Microsoft Search
 
- Microsoft Search è attualmente disponibile nelle app di Office 365 seguenti:
+ Microsoft Search è attivato per impostazione predefinita per tutte le app Microsoft che lo supportano. Basta eseguire l'accesso con un account aziendale o dell'istituto di istruzione.
 
+Microsoft Search è attualmente disponibile nelle app seguenti:
 - SharePoint Online
 - OneDrive for Business
 - Outlook sul web
 - App di Office in Windows
 
-Microsoft Search è disponibile anche in:
+Microsoft Search è disponibile per gli utenti connessi anche in:
 
-- Bing
+- Home page di Bing
 - Office.com
 - Pagine iniziali di Word, Excel e PowerPoint Online
 
-È anche possibile avviare una ricerca in Bing dalla barra degli indirizzi di Edge.
+È anche possibile avviare una ricerca in Bing dalla barra degli indirizzi di Edge, se si usa Bing come motore di ricerca predefinito.
 
 ## <a name="requirements"></a>Requisiti
 
-L'organizzazione deve disporre di un tenant di Office 365 con uno dei seguenti abbonamenti:
+È necessario avere uno degli abbonamenti seguenti a Office 365 o Microsoft 365:
 
 - Office 365 Business Essentials e Business Premium
 - Office 365 A1/A3/A5
@@ -90,11 +91,11 @@ L'organizzazione deve disporre di un tenant di Office 365 con uno dei seguenti a
 - Microsoft 365 A3/A5
 - Microsoft 365 F1/E3/E5
 
-Gli utenti e gli amministratori di ricerca devono avere una licenza per uno di questi abbonamenti. Possono usare Microsoft Search solo utenti con account attivi che hanno **effettuato l'accesso**.
+È necessario assegnare una di queste licenze sia agli utenti che agli amministratori della ricerca. Possono usare Microsoft Search solo utenti con account attivi che abbiano eseguito l'**accesso** perché Microsoft Search richiede Azure Active Directory
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personalizzazione di Microsoft Search in base alle esigenze dell'organizzazione
 
-Gli amministratori possono semplificare la ricerca per consentire agli utenti di ottenere risultati specifici dell'organizzazione durante la ricerca dalla pagina iniziale di SharePoint, da Office.com o da Bing. È possibile amministrare Microsoft Search nell'interfaccia di amministrazione di Microsoft 365.
+Gli amministratori possono semplificare la ricerca per consentire agli utenti di ottenere risultati specifici dell'organizzazione durante la ricerca dalla pagina iniziale di SharePoint, da Office.com o da Bing. A questo scopo, si possono definire le risposte visualizzate da Microsoft Search in risposta a determinate parole chiave usate nelle query. È possibile definire diversi tipi di risposte: 
 
 **Mostrare contenuti utili**: consentire agli utenti di trovare strumenti e risorse utili all'interno dell'organizzazione aggiungendoli ai segnalibri. Così come è possibile creare un segnalibro in una pagina Web pubblica, è possibile creare un segnalibro per qualsiasi pagina Web interna che gli utenti possono cercare. È anche possibile integrare una Power App nel segnalibro per consentire agli utenti di completare le attività direttamente dal segnalibro.
 
@@ -102,11 +103,15 @@ Gli amministratori possono semplificare la ricerca per consentire agli utenti di
 
 **Mostrare posizioni utili**: visualizzare i risultati nella mappa e le informazioni sugli indirizzi per gli edifici, gli uffici e per altre aree di lavoro dell'organizzazione. Gli utenti possono usare le mappe per ottenere indicazioni stradali, vedere cosa c'è nelle vicinanze e altro ancora.
 
+È possibile visualizzare le statistiche di utilizzo che mostrano in che modo gli utenti interagiscono con le risposte e se riescono a trovare quello che cercano. In base a questi dati, è quindi possibile ottimizzare le risposte esistenti o aggiungere nuove risposte.
+
+Per altre informazioni sull'uso di parole chiave e parole chiave riservate, vedere [Facilitare la ricerca del contenuto](make-content-easy-to-find.md).
+
 ## <a name="what-content-is-searched"></a>Contenuto cercato
 
-Microsoft Search consente di cercare in contenuti archiviati in SharePoint Online, OneDrive for Business ed Exchange, incluse le persone nell'elenco indirizzi globale e nei gruppi di Office 365. Se l’organizzazione ha configurato un ambiente di SharePoint ibrido con la ricerca ibrida nel cloud, Microsoft Search restituisce risultati di ricerca dai contenuti di SharePoint locale e online, inclusi tutti i contenuti esterni connessi all'ambiente di SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search consente di cercare in contenuti archiviati dall'organizzazione in SharePoint Online, OneDrive for Business ed Exchange, inclusi l'elenco di indirizzi globale e i gruppi di Office 365. Microsoft Search non esegue la ricerca nei tenant né visualizza risultati presenti in contenuti condivisi dalle organizzazioni. Se l'organizzazione ha configurato un ambiente di SharePoint ibrido con la ricerca ibrida nel cloud, Microsoft Search restituisce risultati di ricerca dai contenuti di SharePoint in locale e online, inclusi tutti i contenuti esterni connessi all'ambiente di SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Quando gli utenti cercano nella pagina iniziale di SharePoint o Office.com, Microsoft Search cerca in tutto il contenuto all'interno dell'organizzazione e mostra tutti i risultati trovati. Questa funzionalità è nota come **ambito di ricerca globale**.
+Quando gli utenti cercano nella pagina iniziale di SharePoint o in Office.com, Microsoft Search esegue la ricerca in tutto il contenuto all'interno dell'organizzazione e mostra i risultati che l'utente è autorizzato a visualizzare. Questa funzionalità è nota come **ambito di ricerca globale**.
 
 Quando gli utenti cercano in Bing, ottengono i risultati più rilevanti da tutto il contenuto dell'organizzazione incorporato nell'elenco dei risultati dal **Web.** Se è necessario visualizzare **tutti** i risultati dell'organizzazione, l'ambito di ricerca globale è a portata di clic.
 
@@ -130,7 +135,9 @@ Gli utenti trovano i seguenti tipi di risultati quando eseguono una ricerca in:
 
 Quando un utente esegue una ricerca, Microsoft Search elabora la query e analizza l'intento della ricerca da frasi più lunghe, usando l'intelligenza artificiale (AI) per apprendere le frasi superflue comuni che gli utenti aggiungono alle query e che non influiscono sull'intento della ricerca. Ad esempio, quando un utente cerca "come cambiare la password", le parole meno importanti vengono estratte dalla query e viene attivata la ricerca in base a quelle più pertinenti, ad esempio "cambiare la password".  
 
-I risultati della pagina che gli utenti sono **autorizzati** a vedere vengono visualizzati nella pagina dei risultati della ricerca. Microsoft Search usa algoritmi di classificazione intelligenti per ordinare i risultati in base alla pertinenza.
+Microsoft Search non crea un nuovo indice, ma cerca negli indici esistenti dei contenuti di SharePoint Online, OneDrive for Business ed Exchange.
+
+I risultati della ricerca che gli utenti sono **autorizzati** a vedere vengono visualizzati nella pagina dei risultati della ricerca. Microsoft Search usa algoritmi di classificazione intelligenti per ordinare i risultati in base alla pertinenza.
 
 ## <a name="microsoft-search-in-sharepoint"></a>Microsoft Search in SharePoint
 
@@ -143,9 +150,11 @@ Microsoft Search in SharePoint è l'esperienza di ricerca moderna disponibile in
 
 ## <a name="microsoft-search-in-bing"></a>Microsoft Search in Bing
 
-Dal momento che le ricerche aziendali possono essere riservate, Microsoft Search usa una serie di misure di protezione per la gestione delle stesse da parte dei risultati Web pubblici di Bing.
+Dal momento che le ricerche aziendali possono essere riservate, Microsoft Search usa una serie di misure di protezione per la gestione di tali ricerche da parte dei risultati Web pubblici di Bing.
 
-Indipendentemente dal fatto che una query utente contenga uno o più risultati di lavoro nella risposta risultante, vengono adottate le misure seguenti:
+Le richieste di Microsoft Search vengono effettuate tramite HTTPS. Questa caratteristica garantisce una connessione crittografata end-to-end per una sicurezza avanzata. Inoltre, tutti i log di ricerca correlati al traffico di Microsoft Search vengono resi anonimi e archiviati separatamente dal traffico pubblico, non di Microsoft Search.
+
+Indipendentemente dal fatto che una query utente contenga uno o più risultati correlati al lavoro nella risposta risultante, vengono adottate le misure seguenti:
 
 **Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi. Le query archiviate in questi log di sistema verranno usate solo per modellare ed eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
 

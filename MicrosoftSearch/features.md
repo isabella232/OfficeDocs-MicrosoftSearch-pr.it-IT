@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 ROBOTS: NoIndex
 description: Le principali funzionalità di Microsoft Search per amministratori e utenti finali includono segnalibri, domande e risposte, gestione e informazioni dettagliate sui dati
-ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 2bcc922e6f9915494434098d6418dcceea264354
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591486"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639641"
 ---
 # <a name="features-of-microsoft-search"></a>Funzionalità di Microsoft Search
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 ## <a name="key-admin-features-include"></a>Le funzionalità principali per amministratori includono:
 

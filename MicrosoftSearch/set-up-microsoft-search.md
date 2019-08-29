@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 ROBOTS: NOINDEX
 description: Tutte le informazioni necessarie per distribuire Microsoft Search nell'organizzazione
-ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: e5d67700e5f7f145634d61fd336c959114819b35
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591090"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639398"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
     
 Nell'ambito di Office 365, Microsoft Search può essere distribuito facilmente abilitandolo nell'interfaccia di amministrazione di Microsoft 365. Una volta abilitato, basta seguire una rapida procedura di configurazione per impostare un logo, un nome, un colore e per consentire l'accesso agli amministratori ed editor. Successivamente, gli utenti possono accedere a Bing con l'account aziendale o dell'istituto di istruzione e ottenere i risultati di lavoro quando eseguono una ricerca.
 

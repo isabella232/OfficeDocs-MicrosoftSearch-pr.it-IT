@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
 ROBOTS: NOINDEX
 description: Panoramica di tutti i modi in cui è possibile includere le posizioni dell'organizzazione nei risultati di lavoro di Microsoft Search
-ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1c8aed7931eb3586bbf2b79251afa94152656cd3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591576"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639866"
 ---
 # <a name="locations"></a>Posizioni
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
     
 ## <a name="add-locations"></a>Aggiungere posizioni
 

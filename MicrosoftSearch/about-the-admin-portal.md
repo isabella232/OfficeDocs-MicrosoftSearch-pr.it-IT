@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 ROBOTS: NoIndex
 description: Panoramica delle funzionalità del portale di amministrazione e delle autorizzazioni di accesso disponibili con Microsoft Search
-ms.openlocfilehash: 4edfbce7b5858a3e8cd3aad30109177d71d45d7b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 3451f7fb8c5c2cd7245cdefd362910a8a712b3f8
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590721"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639425"
 ---
 # <a name="about-the-admin-portal"></a>Informazioni sul portale di amministrazione
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
     
 Microsoft Search consente di usare Bing per cercare nell'organizzazione siti e file di SharePoint, siti Web interni, persone, gruppi di Office 365 e altro ancora. Usare il portale di amministrazione per gestire tutti gli aspetti di Microsoft Search.

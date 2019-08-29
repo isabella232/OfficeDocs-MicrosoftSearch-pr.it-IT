@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
 ROBOTS: NOINDEX
 description: Segnalibri predefiniti disponibili nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f158912993a2e127c1c3a25bcad3513be05874e0
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591189"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639893"
 ---
 # <a name="publish-default-bookmarks"></a>Pubblicare i segnalibri predefiniti
 
 > [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Stiamo trasferendo il portale nell’interfaccia di amministrazione di Microsoft 365, e lo stesso sarà poi rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
+> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 Per vedere rapidamente come vengono visualizzati i segnalibri in Bing, pubblicare quelli predefiniti forniti. Usarli come riferimento per determinare come assegnare un nome ai segnalibri e creare parole chiave valide.
   

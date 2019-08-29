@@ -3,7 +3,7 @@ title: Configurare Microsoft Search
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
+ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 55ff009a17f63bfdaa1edf1e14fddfe132e20000
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917579"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639502"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -56,19 +56,14 @@ Microsoft Search rispetta le impostazioni di sicurezza dell'origine contenuto. G
 
 ## <a name="step-2-assign-search-admin-and-search-editor"></a>Passaggio 2: Assegnare l'amministratore della ricerca e l'editor della ricerca
 
-Sono disponibili due ruoli di amministratore limitati che consentono di supportare Microsoft Search, ossia **Amministratore della ricerca** e **Editor della ricerca**.
-
-> [!NOTE]
-> I ruoli dell’amministratore della ricerca e dell'editor della ricerca concedono autorizzazioni solo nell'interfaccia di amministrazione di Microsoft 365 e non nel **portale di amministrazione legacy di Microsoft Search in Bing**. È necessario essere un amministratore globale per gestire Microsoft Search nel portale legacy.
-
-Gli amministratori della ricerca influiscono direttamente sull'esperienza di ricerca per gli utenti finali, ad esempio scegliendo i tipi di risultati che gli utenti possono visualizzare. Può risultare difficile scegliere e creare contenuti rilevanti nei numerosi argomenti diversi che gli utenti cercano in un'organizzazione. È consigliabile sfruttare le competenze e le conoscenze degli esperti in materia di Microsoft (SME) e di altri utenti aggiungendoli come editor della ricerca.
-
 In Microsoft Search è possibile gestire i contenuti e le impostazioni di ricerca dell'organizzazione attribuendo questi ruoli agli utenti:
 
 1. **Amministratore della ricerca:** questo ruolo può creare e gestire i contenuti dei risultati della ricerca e definire le impostazioni query per migliorare i risultati all'interno dell'organizzazione. L'amministratore della ricerca gestisce la configurazione di Microsoft Search ed è in grado di eseguire tutte le attività di gestione del contenuto che possono essere eseguite dall'editor della ricerca.
 2. **Editor della ricerca:** crea, gestisce ed elimina i contenuti per Microsoft Search nell'interfaccia di amministrazione di Microsoft 365. Questo ruolo può creare e gestire contenuti editoriali, ad esempio domande frequenti, luoghi e località importanti, siti e app cercati e usati di frequente.
 
 Attualmente, i ruoli di amministratore della ricerca e di editor della ricerca devono essere assegnati da un amministratore globale. Per altre informazioni, vedere [Assegnare ruoli di amministrazione](https://docs.microsoft.com/it-IT/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+
+Gli amministratori della ricerca influiscono direttamente sull'esperienza di ricerca per gli utenti finali, ad esempio scegliendo i tipi di risultati che gli utenti possono visualizzare. Può risultare difficile scegliere e creare contenuti rilevanti nei numerosi argomenti diversi che gli utenti cercano in un'organizzazione. È consigliabile sfruttare le competenze e le conoscenze degli SME (Subject Matter Expert) e di altri utenti aggiungendoli come editor della ricerca.
 
 ## <a name="step-3-make-content-easy-to-find"></a>Passaggio 3: Facilitare la ricerca del contenuto
 
@@ -86,19 +81,9 @@ Ecco alcuni esempi di contenuti che è consigliabile aggiungere ai segnalibri pe
 - Contenuti informativi disponibili per tutti gli utenti, ad esempio informazioni sulla società, guida per le app di Windows e Office e così via.
 - Contenuti che gli utenti dell'organizzazione generalmente cercano durante le attività quotidiane. Le ricerche correlate al lavoro includono benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e assistenza dei servizi IT.
 
-Per la creazione e la gestione dei contenuti della ricerca, vedere [Facilitare la ricerca dei contenuti](make-content-easy-to-find.md).
+Per la creazione e la gestione dei contenuti della ricerca, vedere [Facilitare la ricerca del contenuto](make-content-easy-to-find.md).
 
-## <a name="step-4-test-single-sign-on"></a>Passaggio 4: Testare l'accesso Single Sign-On
-
-Microsoft Search usa Azure Active Directory (AAD) per autenticare e autorizzare l'accesso ai dati dell'organizzazione. Gli utenti possono accedere automaticamente con l'account aziendale o dell'istituto di istruzione quando si è effettuato l'accesso a un'app di Office 365 o a Windows 10.
-
-È consigliabile che gli utenti di Microsoft Search usino l'accesso Single Sign-On per ridurre il numero di volte in cui viene loro richiesto di accedere. Gli amministratori devono testare l'accesso Single Sign-On con un piccolo gruppo di utenti per consentire di identificare eventuali problemi di configurazione.
-
-Per gli utenti di Chrome in Windows 10, l'accesso Single Sign-On funziona solo quando è installata l'estensione di accesso di Windows 10 e AAD per Chrome. Dopo l'installazione è possibile usare l'estensione di Chrome per eseguire facilmente l'autenticazione con AAD quando si accede ai siti supportati, tra cui Office 365 e Bing. Questa funzionalità è disponibile solo per gli utenti autorizzati.
-
-Per scaricare e installare l'estensione di accesso di Windows 10 e AAD per Chrome, passare a [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
-
-## <a name="step-5-training-and-communication"></a>Passaggio 5: Formazione e comunicazione
+## <a name="step-4-training-and-communication"></a>Passaggio 4: Formazione e comunicazione
 
 Definire le risorse in modalità self-service a cui i dipendenti possono accedere in modo facile e autonomo. Questo consentirà di ridurre il carico complessivo sull'amministratore e sul team incaricato delle comunicazioni e supporterà la formazione autonoma dei dipendenti. Fornire agli utenti comunicazioni, domande frequenti, video e corsi di formazione o webinar registrati. Ecco alcuni collegamenti utili per iniziare:
 
@@ -106,9 +91,3 @@ Definire le risorse in modalità self-service a cui i dipendenti possono acceder
 - [Area risorse di Office 365](https://support.office.com/office-training-center)
 - 
   [Microsoft Search Center](https://support.office.com/it-IT/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
-
-## <a name="trying-out-microsoft-search-in-bing"></a>Provare Microsoft Search in Bing
-
-È possibile disattivare **Microsoft Search in Bing**. Se questa funzione viene disattivata, gli utenti non possono visualizzare i contenuti dell'organizzazione nella ricerca Bing. Microsoft Search in Bing è attivato per impostazione predefinita. È consigliabile tenere Microsoft Search attivato in Bing per un'esperienza utente migliore.
-
-Per attivarlo o disattivarlo, andare a **Impostazioni** > **Servizi e componenti aggiuntivi** > **Microsoft Search in Bing**.
