@@ -81,10 +81,8 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 
 ### <a name="what-are-powerapps"></a>Cosa sono le PowerApp?
 PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione. PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l’aggiunta richiede meno di un minuto. Per altre informazioni su PowerApps, vedere:
-- 
-  [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)
-- 
-  [Documentazione](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid)
+- [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)
+- [Documentazione](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid)
 - [Home page di PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere una PowerApp a un segnalibro

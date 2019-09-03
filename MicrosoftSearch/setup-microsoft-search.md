@@ -48,9 +48,7 @@ Microsoft Search rispetta le impostazioni di sicurezza dell'origine contenuto. G
 | Persone          | È possibile nascondere alcuni utenti dalle ricerche nell'elenco di indirizzi impostando il parametro `HiddenFromAddressListEnabled` su `true` con il cmdlet [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user). |
 | Microsoft Teams | [Gestione degli accessi utente per Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Gestire la condivisione](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | 
-  [Pianificazione delle autorizzazioni](https://docs.microsoft.com/it-IT/sharepoint/plan-your-permissions-strategy)<br> 
-  [Creare livelli di autorizzazione](https://docs.microsoft.com/it-IT/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Pianificazione delle autorizzazioni](https://docs.microsoft.com/it-IT/sharepoint/plan-your-permissions-strategy)<br> [Creare livelli di autorizzazione](https://docs.microsoft.com/it-IT/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | Non è possibile eseguire ricerche nei file incorporati in OneNote. [Modificare le autorizzazioni per un blocco appunti in OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Impostazioni di sicurezza di Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -89,5 +87,4 @@ Definire le risorse in modalità self-service a cui i dipendenti possono acceder
 
 - [Trovare le informazioni necessarie con Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Area risorse di Office 365](https://support.office.com/office-training-center)
-- 
-  [Microsoft Search Center](https://support.office.com/it-IT/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft Search Center](https://support.office.com/it-IT/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
