@@ -47,7 +47,6 @@ Insegnare agli utenti a eseguire la ricerca dalla pagina iniziale di SharePoint 
 ## <a name="see-also"></a>Vedere anche
 [Panoramica di Microsoft Search](overview-microsoft-search.md)
 
-
-  [Informazioni sull'esperienza di ricerca in SharePoint](https://docs.microsoft.com/it-IT/sharepoint/overview-of-search).
+[Informazioni sull'esperienza di ricerca in SharePoint](https://docs.microsoft.com/it-IT/sharepoint/overview-of-search).
 
 [Quando usare una determinata esperienza di ricerca in SharePoint](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
