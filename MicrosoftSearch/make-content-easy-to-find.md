@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare segnalibri, posizioni, domande e risposte per facilitare la ricerca del contenuto dell'organizzazione.
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639857"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288920"
 ---
 # <a name="make-content-easy-to-find"></a>Facilitare la ricerca del contenuto
 
@@ -116,7 +116,7 @@ Per impostazione predefinita, è già selezionata la scheda **Segnalibri**.
 Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Installare l'estensione del browser e quindi passare al sito per aggiungerlo come segnalibro.
 
 Le estensioni dei browser sono attualmente disponibili per Microsoft Edge e Chrome. 
-- Per scaricare l'estensione di Microsoft Edge, passare a [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
+- Per scaricare l'estensione di Microsoft Edge, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
 - Per scaricare l'estensione di Chrome, passare al [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e scaricare l'app.
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>Aggiungere o modificare in blocco i segnalibri
@@ -161,13 +161,13 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 #### <a name="what-are-powerapps"></a>Cosa sono le PowerApp?
 
 PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione. PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l’aggiunta richiede meno di un minuto. Per altre informazioni su PowerApps, vedere:
-- [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)
-- [Documentazione](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid)
+- [Formazione guidata](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Documentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Home page di PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere una PowerApp a un segnalibro
 
-1. Trovare l'[ID di applicazione per la PowerApp](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) da aggiungere.
+1. Trovare l'[ID di applicazione per la PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) da aggiungere.
 1. Accedere e passare all'**interfaccia di amministrazione di Microsoft 365**.
 1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.
 1. Aggiungere un segnalibro o trovare un segnalibro esistente a cui si vuole aggiungere una **PowerApp**.

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: Informazioni su come impostare Bing come motore di ricerca predefinito dell'organizzazione con Microsoft Search.
-ms.openlocfilehash: cc03e3aa280ea621702ce99c2cc8eb530b310251
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 7c7ec8be726f2ac12a0e07f3d70c4b6515366bf3
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639839"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289019"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Impostare Bing come motore di ricerca predefinito
   
@@ -30,9 +30,9 @@ Questo articolo spiega come impostare Bing come motore di ricerca predefinito pe
 
 Anche se si imposta Bing come motore di ricerca predefinito, Microsoft Edge consente agli utenti di modificare le impostazioni per usare un altro motore di ricerca.
   
-Per i file ADMX più recenti per varie versioni di Windows, vedere [Come creare e gestire l'archivio centrale per i modelli amministrativi di Criteri di gruppo in Windows](https://support.microsoft.com/it-IT/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+Per i file ADMX più recenti per varie versioni di Windows, vedere [Come creare e gestire l'archivio centrale per i modelli amministrativi di Criteri di gruppo in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Se l'impostazione descritta in questa sezione non è disponibile all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'archivio centrale. Per altre informazioni, vedere [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/it-IT/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) (Modifica di oggetti Criteri di gruppo basati su dominio con i file ADMX). L'archivio centrale sul controller è una cartella con la convenzione di denominazione seguente:
+Se l'impostazione descritta in questa sezione non è disponibile all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'archivio centrale. Per altre informazioni, vedere [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) (Modifica di oggetti Criteri di gruppo basati su dominio con i file ADMX). L'archivio centrale sul controller è una cartella con la convenzione di denominazione seguente:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
@@ -55,7 +55,7 @@ Gli utenti non potranno modificare il motore di ricerca predefinito dopo aver im
   
 Chrome include un proprio set di impostazioni di criteri di gruppo, scaricabile sotto forma di file ADMX dalla [Guida di Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202). Se si usano i sistemi operativi Windows Vista/Server 2008 o versioni successive per gestire gli oggetti Criteri di gruppo per il dominio, il file ADMX fornito in questo pacchetto si occupa delle impostazioni di Chrome in Windows XP SP2 o versioni successive.
   
-Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per altre informazioni, vedere [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/it-IT/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) (Modifica di oggetti Criteri di gruppo basati su dominio con i file ADMX). L'archivio centrale sul controller è una cartella con la convenzione di denominazione seguente:
+Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per altre informazioni, vedere [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) (Modifica di oggetti Criteri di gruppo basati su dominio con i file ADMX). L'archivio centrale sul controller è una cartella con la convenzione di denominazione seguente:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   

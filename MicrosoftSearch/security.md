@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Microsoft Search consente di proteggere i dati e gli utenti aziendali, fornendo informazioni agli utenti autorizzati
-ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 759fc49a4196e336d3a6016a91aa588fa1278b4d
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639616"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289001"
 ---
 # <a name="security-for-microsoft-search"></a>Sicurezza per Microsoft Search
 
@@ -72,4 +72,4 @@ Indipendentemente dal fatto che una query utente contenga uno o più risultati d
     
 ## <a name="gdpr"></a>GDPR
 
-Il [post di blog del 21 maggio 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) riflette l'impegno di Microsoft nei confronti della conformità al GDPR e il modo in cui aiuta le aziende e le organizzazioni ad adempiere ai propri obblighi in materia di conformità al GDPR. Altre informazioni dettagliate sono disponibili nelle [domande frequenti del Centro protezione](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) di Microsoft. Le query di Microsoft Search eseguite in base ai dati del cliente aziendale nell'ambito dei servizi online soddisferanno anche gli impegni del responsabile del trattamento delineati nell'Articolo 28, come si evince dalle [domande frequenti del Centro protezione](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Per quanto riguarda le query di Microsoft Search indirizzate a Bing pubblico, Microsoft funge da titolare del trattamento dei dati e ha implementato misure per deidentificare le query come indicato nel GDPR.
+Il [post di blog del 21 maggio 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) riflette l'impegno di Microsoft nei confronti della conformità al GDPR e il modo in cui aiuta le aziende e le organizzazioni ad adempiere ai propri obblighi in materia di conformità al GDPR. Altre informazioni dettagliate sono disponibili nelle [domande frequenti del Centro protezione](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs) di Microsoft. Le query di Microsoft Search eseguite in base ai dati del cliente aziendale nell'ambito dei servizi online soddisferanno anche gli impegni del responsabile del trattamento delineati nell'Articolo 28, come si evince dalle [domande frequenti del Centro protezione](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs). Per quanto riguarda le query di Microsoft Search indirizzate a Bing pubblico, Microsoft funge da titolare del trattamento dei dati e ha implementato misure per deidentificare le query come indicato nel GDPR.
