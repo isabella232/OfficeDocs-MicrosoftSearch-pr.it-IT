@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica di Microsoft Search, che include informazioni sui vantaggi e le app in cui Microsoft Search è attualmente disponibile.
-ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639587"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289046"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -48,7 +48,7 @@ Se i suggerimenti nella casella di ricerca non corrispondono all'elemento cercat
 
 ## <a name="benefits-of-microsoft-search"></a>Vantaggi di Microsoft Search
 
-**Esecuzione di ricerche in Microsoft 365 da qualsiasi casella Microsoft Search**: gli utenti possono eseguire ricerche da qualsiasi casella Microsoft Search e tornare rapidamente alle proprie attività. Microsoft Search riunisce i risultati di varie origini dati in Office 365, tra cui SharePoint, OneDrive for Business ed Exchange.
+**Esecuzione di ricerche in Microsoft 365 da qualsiasi casella Microsoft Search**: gli utenti possono eseguire ricerche da qualsiasi casella Microsoft Search e tornare rapidamente alle proprie attività. Microsoft Search riunisce in Office 365 i risultati di varie origini dati, tra cui SharePoint, OneDrive for Business ed Exchange.
 
 **Ricerca semplificata**: Microsoft Search suggerisce i risultati direttamente nella casella di ricerca in base alle attività precedenti degli utenti in Office 365.
 
@@ -118,7 +118,7 @@ Quando gli utenti cercano in Bing, ottengono i risultati più rilevanti da tutto
 ## <a name="what-types-of-results-can-users-find"></a>Quali tipi di risultati possono essere trovati dagli utenti?
 Gli utenti trovano i seguenti tipi di risultati quando eseguono una ricerca in:
 
-**SharePoint**: file, cartelle, persone nell'organizzazione, organigrammi, siti, pagine del sito, notizie, elenchi e voci di elenco. Se definiti, risposte alle domande comuni, segnalibri relativi a informazioni rilevanti, posizioni in una mappa e strumenti. [Informazioni sui tipi di file che è possibile trovare](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+**SharePoint**: file, cartelle, persone nell'organizzazione, organigrammi, siti, pagine del sito, notizie, elenchi e voci di elenco. Se definiti, risposte alle domande comuni, segnalibri relativi a informazioni rilevanti, posizioni in una mappa e strumenti. [Informazioni sui tipi di file che è possibile trovare](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 **Pagine iniziali di Office.com, Word, Excel e PowerPoint Online**: app, file, cartelle, persone, organigrammi, siti di SharePoint, pagine del sito, elenchi e voci di elenco. Se definiti, risposte alle domande comuni, segnalibri relativi a informazioni rilevanti, posizioni in una mappa e strumenti. Vengono trovati file dello stesso tipo di SharePoint.
 
@@ -145,7 +145,7 @@ Microsoft Search in SharePoint è l'esperienza di ricerca moderna disponibile in
 - La casella di Microsoft Search viene visualizzata nella pagina iniziale, nei siti hub, nei siti di comunicazione e nei siti dei team moderni di SharePoint.
 - La casella di ricerca classica viene invece visualizzata nei siti di pubblicazione, nei siti dei team classici e nel Centro ricerche.
 
-È possibile personalizzare l'esperienza di ricerca, ad esempio aggiungendo affinamenti personalizzati per la pagina dei risultati o visualizzando un determinato tipo di risultati in modo diverso. Non è possibile personalizzare l'esperienza di Microsoft Search in questo modo. Alcune delle personalizzazioni apportate alla ricerca classica potrebbero influire su Microsoft Search in SharePoint. Se l'organizzazione userà entrambe le esperienze di ricerca in SharePoint, [ottenere informazioni sulle differenze e su come evitare di influire su Microsoft Search in SharePoint](https://docs.microsoft.com/it-IT/sharepoint/differences-classic-modern-search).
+È possibile personalizzare l'esperienza di ricerca, ad esempio aggiungendo affinamenti personalizzati per la pagina dei risultati o visualizzando un determinato tipo di risultati in modo diverso. Non è possibile personalizzare l'esperienza di Microsoft Search in questo modo. Alcune delle personalizzazioni apportate alla ricerca classica potrebbero influire su Microsoft Search in SharePoint. Se l'organizzazione userà entrambe le esperienze di ricerca in SharePoint, [ottenere informazioni sulle differenze e su come evitare di influire su Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
 ## <a name="microsoft-search-in-bing"></a>Microsoft Search in Bing
 
@@ -155,7 +155,7 @@ Le richieste di Microsoft Search vengono effettuate tramite HTTPS. Questa caratt
 
 Indipendentemente dal fatto che una query utente contenga uno o più risultati correlati al lavoro nella risposta risultante, vengono adottate le misure seguenti:
 
-**Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi. Le query archiviate in questi log di sistema verranno usate solo per modellare ed eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
+**Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi. Le query archiviate in questi log di sistema verranno usate solo per modellare e eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono soddisfatte le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
 
 **Cronologia di ricerca**: quando l'utente accede con un account aziendale o dell'istituto di istruzione, la cronologia di ricerca non sarà disponibile in altri computer o dispositivi.
 
