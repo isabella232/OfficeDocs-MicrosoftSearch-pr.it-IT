@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
 ROBOTS: NOINDEX
 description: Informazioni su come l'accesso automatico a Microsoft Search può aiutare a trovare rapidamente e facilmente i risultati del lavoro
-ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 31177e8a6c565cbb002a69ac50e16de3056008b4
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591036"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288965"
 ---
 # <a name="why-am-i-automatically-signed-in"></a>Perché si è eseguito l'accesso automaticamente?
 
@@ -45,7 +45,7 @@ Ogni organizzazione è diversa e Microsoft non è in grado di garantire la modal
   
 Il dispositivo non verrà più firmato automaticamente. Se sono stati utilizzati altri browser o dispositivi per accedere a Microsoft Search, è necessario eseguire l'accesso anche in questo caso. 
   
-Dopo aver eseguito l'accesso, le ricerche non riceveranno ulteriore protezione. Sono considerati come ricerche standard per i consumatori Bing e sono disciplinati dall' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/en-us/privacystatement).
+Dopo aver eseguito l'accesso, le ricerche non riceveranno ulteriore protezione. Sono considerati come ricerche standard per i consumatori Bing e sono disciplinati dall' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
   
 ## <a name="view-your-search-history"></a>Visualizzare la cronologia delle ricerche
 

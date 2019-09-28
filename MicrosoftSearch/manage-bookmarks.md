@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Creare e aggiornare i segnalibri e modi per modificare in blocco i risultati di segnalibri per Microsoft Search
-ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
-ms.translationtype: HT
+description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
+ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170321"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288974"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
 È possibile creare un segnalibro in pochi passaggi. Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione. Un segnalibro può contenere diverse parole chiave e più segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa. Quando si crea o modifica un segnalibro, l'indice di ricerca viene immediatamente aggiornato e il segnalibro è reso subito disponibile agli utenti.
 
-Se l'organizzazione ha configurato Risultati alzati di livello in SharePoint, è possibile importarli in **Microsoft Search** e rendere disponibile il contenuto importato agli utenti. Si tratta di un modo semplice per inserire rapidamente i risultati della ricerca quando si configura **Microsoft Search** e renderlo più efficiente per gli utenti. È consigliabile usare i risultati alzati di livello di SharePoint come riferimento per determinare come assegnare un nome e creare i risultati della ricerca rilevanti. 
+Se nell'organizzazione sono stati promossi i risultati configurati in SharePoint, è possibile importare i risultati promossi in **Microsoft Search** e rendere il contenuto importato disponibile per gli utenti. Si tratta di un modo semplice per inserire rapidamente i risultati della ricerca quando si configura **Microsoft Search** e renderlo più efficiente per gli utenti. È consigliabile usare i risultati alzati di livello di SharePoint come riferimento per determinare come assegnare un nome e creare i risultati della ricerca rilevanti. 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Aggiungere o modificare un singolo segnalibro
 1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
@@ -39,7 +39,7 @@ Per impostazione predefinita, è già selezionata la scheda **Segnalibri**.
 Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Installare l'estensione del browser e quindi passare al sito per aggiungerlo come segnalibro.
 
 Le estensioni dei browser sono attualmente disponibili per Microsoft Edge e Chrome. 
-- Per scaricare l'estensione di Microsoft Edge, passare a [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
+- Per scaricare l'estensione di Microsoft Edge, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
 - Per scaricare l'estensione di Chrome, passare al [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e scaricare l'app.
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>Aggiungere o modificare in blocco i segnalibri
@@ -81,12 +81,13 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 
 ### <a name="what-are-powerapps"></a>Cosa sono le PowerApp?
 PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione. PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l’aggiunta richiede meno di un minuto. Per altre informazioni su PowerApps, vedere:
-- [Formazione guidata](https://docs.microsoft.com/it-IT/learn/browse/?products=powerapps)
-- [Documentazione](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid)
+- 
+  [Formazione guidata](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Documentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Home page di PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere una PowerApp a un segnalibro
-1. Trovare l'[ID di applicazione per la PowerApp](https://docs.microsoft.com/it-IT/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) da aggiungere.
+1. Trovare l'[ID di applicazione per la PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) da aggiungere.
 1. Accedere e passare all'**interfaccia di amministrazione di Microsoft 365**.
 1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.
 1. Aggiungere un segnalibro o trovare un segnalibro esistente a cui si vuole aggiungere una **PowerApp**.

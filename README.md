@@ -14,6 +14,6 @@ Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui
 Le licenze per questo progetto non consentono di utilizzare i nomi, i loghi o i marchi di Microsoft.
 Le linee guida relative ai marchi generali di Microsoft http://go.microsoft.com/fwlink/?LinkID=254653sono disponibili all'indirizzo.
 
-Le informazioni sulla privacy sono reperibili all'indirizzohttps://privacy.microsoft.com/en-us/
+Le informazioni sulla privacy sono reperibili all'indirizzohttps://privacy.microsoft.com/en-us
 
 Microsoft e tutti i collaboratori predispongono tutti gli altri diritti, sia in base ai rispettivi diritti d'autore, brevetti o marchi, sia per implicazione, preclusione o altro.
