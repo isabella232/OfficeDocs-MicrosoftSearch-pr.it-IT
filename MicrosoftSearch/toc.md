@@ -10,7 +10,6 @@
 ##[Gestire i segnalibri](manage-bookmarks.md)
 ##[Gestire domande e risposte](manage-qas.md)
 ##[Gestire le posizioni](manage-locations.md)
-##[Gestire le planimetrie](manage-floorplans.md)
 #[Guida all'adozione da parte degli utenti](user-adoption-guide.md)
 #[Domande frequenti](faqs.md)
 #[Usare Microsoft Search](use/about-microsoft-search.md)
