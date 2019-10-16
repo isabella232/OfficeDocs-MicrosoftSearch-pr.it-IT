@@ -12,15 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
 ROBOTS: NoIndex
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: 3b30980c76915405767381fb3b6397468bdd1b68
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: d3cf7e4a6f252711f94e90a4e6561c8f25769c27
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639503"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502930"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -59,3 +58,8 @@ No.
 ## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>Dove è possibile trovare informazioni su categorie e livelli di conformità di Office 365 e Microsoft 365?
 
 Per informazioni dettagliate, vedere [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (download in formato PDF).
+
+## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Gli utenti possono guadagnare punti di Microsoft Rewards con l'account aziendale o dell'istituto di istruzione?
+
+Gli utenti aziendali di Microsoft Search devono accedere con un account aziendale o dell'istituto di istruzione. Non possono però partecipare al programma Microsoft Rewards o accedervi con tali account. Esiste però un caso in cui gli utenti aziendali possono accumulare punti di Microsoft Rewards, ovvero quando un utente di Microsoft Search ha un account Rewards creato con un <a href="https://www.microsoft.com/en-us/welcome?rtc=1">account Microsoft</a>. L'indirizzo di posta elettronica associato a un account Microsoft può provenire da Outlook.com, Hotmail.com, Gmail, Yahoo o altri provider. Se gli utenti accedono sia con l'account aziendale che con l'account Microsoft nella stessa sessione del browser, possono accumulare punti nell'account Rewards. L'accumulo dei punti durante la ricerca con Microsoft Search viene interrotto quando si cancellano i cookie. 
+

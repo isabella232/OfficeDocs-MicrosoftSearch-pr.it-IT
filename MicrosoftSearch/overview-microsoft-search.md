@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica di Microsoft Search, che include informazioni sui vantaggi e le app in cui Microsoft Search è attualmente disponibile.
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289046"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502939"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -29,7 +29,7 @@ Microsoft Search consente agli utenti di trovare le risposte, le persone e i con
 - Gli utenti visualizzano i risultati pertinenti nel **contesto** dell'app da cui eseguono la ricerca. Ad esempio, quando eseguono una ricerca in Outlook, trovano messaggi di posta elettronica ma non siti di SharePoint. Quando eseguono una ricerca in SharePoint, trovano file, pagine e siti.
 - Indipendentemente dall'app aperta, Microsoft Search è **personale**.  Microsoft Search usa le informazioni dettagliate di Microsoft Graph per visualizzare i risultati pertinenti per ogni utente. Ogni utente può visualizzare risultati diversi, anche se due utenti cercano le stesse parole. Gli utenti visualizzano solo quello i contenuti a cui hanno già accesso dal momento che Microsoft Search non modifica le autorizzazioni.
 - Gli utenti non devono ricordare dove si trovano le informazioni. Ad esempio, se un utente sta lavorando in Word e vuole usare le informazioni di una presentazione condivisa da un collega da OneDrive, non deve più passare a OneDrive e cercare quella presentazione, ma può cercarla direttamente da Word.  
-- In Bing gli utenti ottengono risultati sia dal Web pubblico sia dall'interno dell'organizzazione.
+- In [Bing](https://bing.com) gli utenti ottengono risultati sia dal Web pubblico sia dall'interno dell'organizzazione.
 
 ## <a name="what-users-see"></a>Cosa vedono gli utenti
 
@@ -147,20 +147,14 @@ Microsoft Search in SharePoint è l'esperienza di ricerca moderna disponibile in
 
 È possibile personalizzare l'esperienza di ricerca, ad esempio aggiungendo affinamenti personalizzati per la pagina dei risultati o visualizzando un determinato tipo di risultati in modo diverso. Non è possibile personalizzare l'esperienza di Microsoft Search in questo modo. Alcune delle personalizzazioni apportate alla ricerca classica potrebbero influire su Microsoft Search in SharePoint. Se l'organizzazione userà entrambe le esperienze di ricerca in SharePoint, [ottenere informazioni sulle differenze e su come evitare di influire su Microsoft Search in SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
-## <a name="microsoft-search-in-bing"></a>Microsoft Search in Bing
-
-Dal momento che le ricerche aziendali possono essere riservate, Microsoft Search usa una serie di misure di protezione per la gestione di tali ricerche da parte dei risultati Web pubblici di Bing.
-
-Le richieste di Microsoft Search vengono effettuate tramite HTTPS. Questa caratteristica garantisce una connessione crittografata end-to-end per una sicurezza avanzata. Inoltre, tutti i log di ricerca correlati al traffico di Microsoft Search vengono resi anonimi e archiviati separatamente dal traffico pubblico, non di Microsoft Search.
-
-Indipendentemente dal fatto che una query utente contenga uno o più risultati correlati al lavoro nella risposta risultante, vengono adottate le misure seguenti:
-
-**Registrazione**: tutti i log di ricerca appartenenti al traffico di Microsoft Search vengono privati degli elementi identificativi e mantenuti per 18 mesi. Le query archiviate in questi log di sistema verranno usate solo per modellare e eseguire il training di funzionalità pubbliche, come i suggerimenti automatici o le ricerche correlate per i risultati di siti Web pubblici, quando vengono soddisfatte le soglie di frequenza e i set di restrizioni, in modo da essere certi che queste query siano comuni e non specifiche di una determinata organizzazione. La query deve apparire un numero significativo di volte nella correlazione dei dati di utenti non di Microsoft Search e non deve attivare esclusivamente risultati della ricerca aziendali. Le query che non soddisfano questi requisiti verranno archiviate separatamente dal traffico pubblico non di Microsoft Search. L'accesso limitato viene gestito usando vari meccanismi di sicurezza, inclusi i gruppi di sicurezza e altri livelli del sistema di progettazione.
-
-**Cronologia di ricerca**: quando l'utente accede con un account aziendale o dell'istituto di istruzione, la cronologia di ricerca non sarà disponibile in altri computer o dispositivi.
-
-**Pubblicità**: le query di ricerca di contenuti nell'organizzazione non vengono mai condivise né suggerite agli inserzionisti.
-Le inserzioni non vengono mai personalizzate in base all'identità professionale o all'azienda di un utente.
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing protegge le ricerche aziendali 
+Quando un utente immette una query di ricerca aziendale in Microsoft Search, vengono eseguite due ricerche contemporaneamente: (1) una nelle risorse aziendali interne e (2) una separata nei risultati pubblici di Bing.com. Poiché le ricerche aziendali potrebbero essere dati sensibili, Microsoft Search ha implementato un set di misure di attendibilità che descrivono la gestione delle ricerche separate nei risultati pubblici di Bing.com. 
+-   **Registrazione**
+    - Tutti i log di ricerca che si riferiscono al traffico di Microsoft Search vengono disassociati dall'identità professionale.
+    - Se viene soddisfatta una serie di restrizioni o di soglie di frequenza per cui siamo certi che la query non è specifica di una data organizzazione, la query verrà trattata come descritto nella sezione dell'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) relativa ai servizi Bing. Tali query, ad esempio, verranno usate per modellare ed eseguire il traning di funzionalità pubbliche, quali i suggerimenti automatici o le ricerche correlate. 
+    - Le query che non soddisfano la serie di restrizioni o soglie di frequenza verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
+-   **Pubblicità**
+    - Gli annunci pubblicitari visualizzati in Bing.com in relazione alle ricerche aziendali sono correlati esclusivamente al contenuto delle query di ricerca. Le inserzioni non vengono mai personalizzate in base all'identità professionale degli utenti.
 
 ## <a name="see-also"></a>Vedere anche
 
