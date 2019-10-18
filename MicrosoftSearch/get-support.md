@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/30/2019
 ms.locfileid: "34591594"
 ---
-# <a name="get-support"></a><span data-ttu-id="b1c84-103">Ottenere supporto</span><span class="sxs-lookup"><span data-stu-id="b1c84-103">Get support</span></span>
+# <a name="get-support"></a><span data-ttu-id="3e62d-103">Ottenere supporto</span><span class="sxs-lookup"><span data-stu-id="3e62d-103">Get support</span></span>
 
-<span data-ttu-id="b1c84-104">Sfruttare il bagaglio di conoscenze collettivo di altri amministratori di Microsoft Search, scambiarsi informazioni utili con altri utenti ed esperti e condividere le proprie esperienze nella sezione su Microsoft Search del [sito Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span><span class="sxs-lookup"><span data-stu-id="b1c84-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
+<span data-ttu-id="3e62d-104">Sfruttare il bagaglio di conoscenze collettivo di altri amministratori di Microsoft Search, scambiarsi informazioni utili con altri utenti ed esperti e condividere le proprie esperienze nella sezione su Microsoft Search del [sito Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span><span class="sxs-lookup"><span data-stu-id="3e62d-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
 
   
 
