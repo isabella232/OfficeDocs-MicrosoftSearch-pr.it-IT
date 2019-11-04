@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639884"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949357"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -43,7 +43,7 @@ Nella tabella viene illustrata la gerarchia del team e ciò che ogni persona con
 |Modifica del team di gestione  <br/> |Verificare che il valore del prodotto sia facile da comprendere  <br/> Creare un piano per l'implementazione  <br/> |IT  <br/> |
 |Campioni  <br/> |Evangelizzare il prodotto ai peer e ai team  <br/> |Qualsiasi (personale)  <br/> |
 |Amministratore ricerca  <br/> |Identificare i membri del team di base per l'adozione degli utenti  <br/> Amministrare la ricerca Microsoft, tra cui l'aspetto dell'esperienza e la gestione continua  <br/> Guidare le discussioni per mostrare il valore di Microsoft Search  <br/> |IT  <br/> |
-|Editors  <br/> |Creare contenuto nel portale di amministrazione  <br/> |IT/any  <br/> |
+|Editors  <br/> |Creare contenuto nell'interfaccia di amministrazione  <br/> |IT/any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Passaggio 2: scenari
 
@@ -121,7 +121,7 @@ Tutte le comunicazioni devono informare gli utenti su come possono accedere a Bi
   
  **Coinvolgere i team di partner**
   
-Come parte integrante di Microsoft 365, Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [Security for Microsoft Search](security.md).
+Come parte integrante di Microsoft 365, Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
 Verificare che il supporto tecnico conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare più efficacemente gli utenti. Per ulteriori informazioni, vedere [use Microsoft Search](use/about-microsoft-search.md) and [FAQs](faqs.md).
   

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: fa1da7d120522ea76d68c1a84f7bee7590701c88
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288974"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949222"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -65,7 +65,7 @@ Ecco alcuni punti importanti da tenere presenti per il file modello:
 - Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.
 - Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
 - In base al campo *Stato*, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.
-- Per le organizzazioni con più tenant, è possibile esportare i segnalibri da un tenant e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
+- Per i partner che gestiscono più organizzazioni, è possibile esportare i segnalibri da un'organizzazione e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
 
 ### <a name="prevent-import-errors"></a>Evitare gli errori di importazione
 Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore e viene generato un file di log con altre informazioni sulle righe e sulle colonne da correggere. Apportare le modifiche necessarie e riprovare l'importazione del file. Non è possibile importare o salvare alcun segnalibro finché non saranno stati risolti tutti gli errori.
@@ -81,8 +81,7 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 
 ### <a name="what-are-powerapps"></a>Cosa sono le PowerApp?
 PowerApps è un servizio che consente di creare applicazioni aziendali che vengono eseguite in un browser o in un telefono o tablet senza richiedere esperienza di programmazione. PowerApps funziona con qualsiasi browser e su qualsiasi dispositivo e l’aggiunta richiede meno di un minuto. Per altre informazioni su PowerApps, vedere:
-- 
-  [Formazione guidata](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Formazione guidata](https://docs.microsoft.com/learn/browse/?products=powerapps)
 - [Documentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Home page di PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 

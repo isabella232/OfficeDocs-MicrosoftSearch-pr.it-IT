@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: Rispondere rapidamente alle domande frequenti con gli strumenti di importazione nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639776"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949033"
 ---
 # <a name="bulk-create-qas"></a>Creare in blocco domande e risposte
 
@@ -45,7 +45,7 @@ Scaricare e usare il modello CSV per creare o modificare in blocco domande e ris
     
 7. Fare clic su **Importa**.
 
-# <a name="prevent-import-errors"></a>Evitare gli errori di importazione      
+## <a name="prevent-import-errors"></a>Evitare gli errori di importazione      
 Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore. A seconda dell'errore, può essere generato un file di log con altre informazioni sulle righe e sulle colonne da correggere. Apportare le modifiche necessarie e ritentare l'importazione del file.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ In base al campo Stato, le domande e risposte saranno salvate come bozza, sugger
 
 Se si include l'Id di una domanda e risposta esistente, verrà sostituito con le informazioni presenti nel file di importazione.
 
-Per le organizzazioni con più tenant, è possibile esportare le domande e risposte da un tenant e importarle in un altro. È tuttavia necessario rimuovere i dati dalla colonna Id prima dell'importazione.
+Per i partner che gestiscono più organizzazioni, è possibile esportare le&Q come da una org e importarle in un'altra. È tuttavia necessario rimuovere i dati dalla colonna Id prima dell'importazione.
 
 Per altre informazioni sui campi obbligatori e consigliati, vedere [Creare domande e risposte](create-qas.md).
 
