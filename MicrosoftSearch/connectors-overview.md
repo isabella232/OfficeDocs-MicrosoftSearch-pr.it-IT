@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per la ricerca Microsfot
-ms.openlocfilehash: c60154e5769e96cf8a6a4a399d344da259f4e7b0
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c372d4750c6644f0f98054a2531b6431fb8cd334
+ms.sourcegitcommit: 90f82efc3671c477536cbe8d8846132910b64600
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949858"
+ms.locfileid: "37961955"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
 
 Microsoft Search indicizza tutti i dati di Microsoft 365 per renderlo ricercabile per gli utenti. Con i connettori Microsoft Graph, l'organizzazione può indicizzare i dati di terze parti in modo che vengano visualizzati nei risultati della ricerca Microsoft. I dati di terze parti possono essere ospitati in locale o in un cloud pubblico o privato. I connettori espandono i tipi di origini di contenuto che sono disponibili per la ricerca nelle app di produttività Microsoft 365 e nel più vasto ecosistema di Microsoft.
 
 > [!IMPORTANT]
-> **Dichiarazione**di non responsabilità: i connettori Microsoft Graph, le API di indicizzazione e le API di ricerca sono attualmente in anteprima. Per ulteriori informazioni sull'anteprima, vedere l'articolo relativo all' [anteprima dei connettori](connectors-preview.md). Per partecipare all'anteprima, è necessario prima di tutto inviare il [modulo di iscrizione all'anteprima dei connettori Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> **Dichiarazione**di non responsabilità: Microsoft Graph Connectors e Microsoft Search Apis (index and search) sono attualmente in anteprima. Per ulteriori informazioni sull'anteprima, vedere [anteprima dei connettori di Microsoft Graph](connectors-preview.md). Per partecipare all'anteprima, è necessario prima di tutto inviare il [modulo di iscrizione all'anteprima dei connettori Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="architecture"></a>Architettura
 Nel diagramma architetturale seguente della piattaforma Microsoft Graph viene mostrato come il contenuto del connettore scorre nell'indicizzazione del contenuto ai risultati degli utenti nei client di [ricerca di Microsoft](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) . In questo articolo vengono illustrati i principali blocchi predefiniti del processo di flusso di dati dei connettori di Microsoft Graph.
 
-[VEDERE DIAGRAMMA TEMPORANEO SEGUENTE]![](media/highlevel-connectors_FINAL.jpg)
+![](media/highlevel-connectors_FINAL.png)
 
-L'API crea un'istanza di una connessione per origine dati. Successivamente, i dati di origine passano attraverso l'API di indicizzazione del contenuto di Microsoft per essere indicizzati e archiviati. Le connessioni stabilite interagiscono con Microsoft Search, quindi gli utenti possono ottenere i risultati della ricerca.
+L'API crea un'istanza di una connessione per origine dati. Quindi l'API indicizza e archivia i dati. Le connessioni stabilite interagiscono con Microsoft Search, quindi gli utenti possono ottenere i risultati della ricerca.
 
 È possibile configurare tutti i connettori Microsoft incorporati nell'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com). L'interfaccia di amministrazione semplifica la configurazione del connettore con un semplice utente.
 
@@ -42,7 +42,7 @@ Attualmente sono presenti 6 connettori Microsoft-built e più di 100 connettori 
 
 Per visualizzare in anteprima i connettori provenienti da uno dei partner ecosistemici, contattarli direttamente. Per ulteriori informazioni, vedere la [raccolta di connettori di Microsoft Graph](connectors-gallery.md).
 
-È inoltre possibile creare un connettore personalizzato con l' [API di indicizzazione di Microsoft Graph](/graph/search-index-overview).
+È inoltre possibile [creare un connettore personalizzato](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="connectors-by-microsoft"></a>Connettori Microsoft
 La versione di anteprima dei connettori Microsoft Graph include 6 connettori basati su Microsoft. È possibile configurarli nell'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) e informazioni su come [configurare il connettore basato su Microsoft](configure-connector.md).
@@ -72,10 +72,10 @@ Sono disponibili più di 100 connettori per l'anteprima dei partner ecosistemici
 Per ulteriori informazioni sui connettori dei partner della [raccolta Microsoft Graph Connectors](connectors-gallery.md).
 
 ### <a name="build-your-own-connector"></a>Creare il proprio connettore
-Per indicizzare i tipi di dati personalizzati o i file, gli sviluppatori possono creare connettori in [Microsoft Graph](https://developer.microsoft.com/graph/). Un connettore è un'applicazione in cui viene utilizzata l'API di indicizzazione di Microsoft Graph per creare una connessione e inserire gli elementi nell'indice di ricerca di Microsoft. Per ulteriori informazioni, vedere [Panoramica dell'API di indicizzazione di Microsoft Graph](https://docs.microsoft.com/graph/search-index-overview).
+Per indicizzare i tipi di dati personalizzati o i file, gli sviluppatori possono creare connettori in [Microsoft Graph](https://developer.microsoft.com/graph/). Un connettore è un'applicazione che [Crea una connessione](https://docs.microsoft.com/graph/search-index-manage-connections) e inserisce gli elementi nell'indice di ricerca di Microsoft. Per ulteriori informazioni, vedere l'articolo [introduttivo per estendere l'esperienza di ricerca di Microsoft per le app in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="search-results-with-your-custom-built-connector"></a>Risultati della ricerca con il connettore personalizzato
-Dopo l'indicizzazione dei dati personalizzati, gli sviluppatori possono eseguire query sui dati utilizzando l'API di ricerca in Microsoft Graph. È possibile visualizzare i dati in qualsiasi applicazione. Per ulteriori informazioni, vedere [Panoramica dell'API di ricerca di Microsoft Graph](https://docs.microsoft.com/graph/api/resources/indexing-api-overview).
+Dopo l'indicizzazione dei dati personalizzati, gli sviluppatori possono [eseguire query su tali dati](https://docs.microsoft.com/graph/search-concept-custom-types). È possibile visualizzare i dati in qualsiasi applicazione. Per ulteriori informazioni, vedere l'articolo [introduttivo per estendere l'esperienza di ricerca di Microsoft per le app in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## <a name="license-requirements"></a>Requisiti di licenza
 Per visualizzare i dati dai connettori nei risultati di ricerca, gli utenti devono disporre di una delle sottoscrizioni di Microsoft 365 seguenti:
