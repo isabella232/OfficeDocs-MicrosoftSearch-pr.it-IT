@@ -3,7 +3,6 @@ title: Connettore condivisione file per Microsoft Search
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di condivisione file per Microsoft Search.
-ms.openlocfilehash: d5fbc1af2868ce7baa70017f617a9731340fb19a
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9791ee3460eb174fd7a478baa6a9beb45f1b1aab
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949845"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310717"
 ---
 # <a name="file-share-connector"></a>Connettore condivisione file
 
@@ -27,13 +26,15 @@ Con il connettore di condivisione file, gli utenti dell'organizzazione possono e
 Questo articolo è per gli amministratori di Microsoft 365 o per tutti gli utenti che configurano, eseguono e monitora un connettore di condivisione file. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.
 
 ## <a name="install-a-data-gateway"></a>Installare un gateway di dati
-Per accedere ai dati di terze parti, è necessario installare e configurare un gateway Microsoft Power BI. Per ulteriori informazioni, vedere [Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
+Per accedere ai dati di terze parti, è necessario installare e configurare un gateway Microsoft Power BI. Per ulteriori informazioni, vedere [installare un gateway locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
+
+## <a name="content-requirements"></a>Requisiti per il contenuto
+**Tipi di file**. Solo i file in questi formati possono essere indicizzati e cercati: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, xlb, xlc, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS e ZIP. Solo il contenuto testuale di questi formati è indicizzato. Tutto il contenuto multimediale viene ignorato.
+ 
+**Limiti**relativi alle dimensioni dei file. La dimensione massima del file supportato è 100 MB. I file che superano i 100 MB vengono ignorati dall'indicizzazione. Il limite massimo di dimensioni successive all'elaborazione è pari a 4 MB. L'elaborazione si interrompe quando la dimensione di un file raggiunge i 4 MB. Di conseguenza, alcune frasi presenti nel file potrebbero non funzionare per la ricerca.
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
-Nella pagina **Connetti a origine dati** creare una cartella e specificare un percorso per la condivisione file. Selezionare quindi il gateway precedentemente installato. Immettere le credenziali per un account utente di Windows con **accesso in lettura** a tutti i file della condivisione. È quindi possibile verificare i file presenti nella condivisione e visualizzare tutti i metadati recuperati.
-
-## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
-Il connettore di condivisione file supporta solo le autorizzazioni di ricerca visibili a **tutti**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+Nella pagina **Connetti a origine dati** selezionare **condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva, specificare il percorso della condivisione file e selezionare il gateway precedentemente installato. Immettere le credenziali per un account utente di Windows con accesso in lettura a tutti i file della condivisione. Passare attraverso le altre impostazioni e pubblicare la connessione.
 
 ## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 L'intervallo di pianificazione di aggiornamento predefinito consigliato è 15 minuti, ma è possibile modificarlo in un altro intervallo preferito.
@@ -111,5 +112,5 @@ Se si verifica un errore critico in una connessione, il relativo stato viene vis
 ## <a name="limitations"></a>Limitazioni
 Il connettore di condivisione file ha queste limitazioni nella versione di anteprima:
 * È possibile indicizzare solo i file con proprietà fisse, non i file con proprietà personalizzate.
-* Gli elenchi di controllo di accesso alla condivisione file (ACL) non sono attualmente supportati.
+* Gli elenchi di controllo di accesso alla condivisione file (ACL) non sono attualmente supportati. Sono supportati solo gli ACL NTFS dei file.
 * Le identità esterne non sono supportate. È necessario eseguire il mapping delle identità di Azure Active Directory.
