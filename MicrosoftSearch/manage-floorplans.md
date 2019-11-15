@@ -3,7 +3,6 @@ title: Gestire i piani di piano
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La caratteristica planimetria di Microsoft Search aiuta gli utenti a trovare persone, uffici e altre amenità all'interno di un edificio.
-ms.openlocfilehash: 68912a8f440443c14cbc27019c7b30dc2d7a34c6
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9871cda3790f210dc0c406d1d29abe2c571c1085
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949866"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626793"
 ---
 # <a name="manage-floor-plans"></a>Gestire i piani di piano
 
@@ -90,7 +89,7 @@ Per essere mappato a planimetrie, tutte le posizioni di Office e i dati di Offic
 
 ## <a name="troubleshoot-errors"></a>Risoluzione dei problemi relativi agli errori
 
-Non è possibile passare al passaggio successivo della definizione di informazioni su piano, ala e sala finché non vengono corretti tutti gli errori. Nel file di tabella seguente vengono caricati i messaggi di errore e le azioni per risolvere i problemi.
+Non è possibile passare al passaggio successivo della definizione di informazioni su piano, ala e sala finché non vengono corretti tutti gli errori. Nella tabella seguente sono elencati i messaggi di errore per il caricamento dei file e le azioni per risolvere i problemi.
 
 | Messaggio di errore   | Tipo    | Azione       |
 |:----------------| :--------- | :-------------- |

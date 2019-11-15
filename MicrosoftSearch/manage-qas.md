@@ -3,7 +3,6 @@ title: Gestire le domande e risposte
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Trovare e aggiornare le risposte singolarmente oppure usare gli strumenti di Microsoft Search disponibili per modificarle tutte contemporaneamente
-ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 903aab52e8d51e45588a390b5ccdccbaae2cf04a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591522"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626775"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
@@ -76,7 +75,7 @@ Ecco alcuni punti importanti riguardanti il file modello:
 - Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.
 - Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
 - In base al campo Stato, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.
-- Per le organizzazioni con più tenant, è possibile esportare i segnalibri da un tenant e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
+- Per i partner che gestiscono più organizzazioni, è possibile esportare i segnalibri da un'organizzazione e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
 
 **Nota:** non è possibile importare domande e risposte se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie. 
 

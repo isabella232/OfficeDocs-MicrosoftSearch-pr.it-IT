@@ -1,9 +1,8 @@
 ---
 title: Gestione dei connettori Microsoft Graph per Microsoft Search
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 5aab310a05d073221918a8aaa80ea1e06c818e51
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949885"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626802"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
@@ -34,9 +33,9 @@ Per ogni tipo di connettore, l'interfaccia di [amministrazione di Microsoft 365]
 **Operazione** | **Connettore basato su Microsoft** | **Partner o connettore personalizzato**
 --- | --- | ---
 Aggiungere una connessione | : heavy_check_mark: (vedere [Configure your Microsoft-built Connector](configure-connector.md)) | : x: (fare riferimento al partner o all'amministratore del connettore basato su personalizzato)
-Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
+Eliminazione di una connessione | : heavy_check_mark: | : heavy_check_mark:
 Modificare una connessione pubblicata | : heavy_check_mark: nome<br></br> : heavy_check_mark: Descrizione<br></br> : heavy_check_mark: credenziali di autenticazione per l'origine dati esterna<br></br> : heavy_check_mark: credenziali del gateway per l'origine dati locale<br></br> : heavy_check_mark: pianificazione dell'aggiornamento<br></br> | : heavy_check_mark: nome<br></br> : heavy_check_mark: Descrizione
-Modificare una connessione di sformo | :heavy_check_mark: | x
+Modificare una connessione di sformo | : heavy_check_mark: | x
 
 ## <a name="monitor-your-connection-status"></a>Monitorare lo stato della connessione
 Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **connettori** della pagina di **ricerca di Microsoft** . Una volta completata la ricerca per indicizzazione completa iniziale, viene visualizzato lo stato di avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.

@@ -1,9 +1,8 @@
 ---
-title: Usare il dashboard degli approfondimenti
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 9/11/2018
+title: Report sul dashboard di Microsoft Search Insights
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,65 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-ROBOTS: NOINDEX
-description: Analizzare le metriche e gestire i contenuti dal pratico dashboard nel portale di amministrazione di Microsoft Search
-ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: Analizzare la metrica e gestire il contenuto dal dashboard Insights in Microsoft Search
+ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639821"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626874"
 ---
-# <a name="use-the-insights-dashboard"></a>Usare il dashboard degli approfondimenti
+# <a name="microsoft-search-insights-dashboard-reports"></a>Report sul dashboard di Microsoft Search Insights
 
-> [!IMPORTANT]
-> Questo articolo si applica al portale di amministrazione di Microsoft Search in Bing. Il portale di amministrazione di Microsoft Search in Bing sta per essere trasferito nell'interfaccia di amministrazione di Microsoft 365 e successivamente verrà rimosso. Per iniziare, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365. [Panoramica di Microsoft Search](overview-microsoft-search.md).
-    
-Ottenere informazioni dettagliate sui dati e vedere come gli utenti interagiscono con i risultati. Usare il dashboard del portale di amministrazione per:
-  
-- Visualizzare il numero di segnalibri e di domande e risposte pubblicati, programmati o suggeriti
-    
-- Vedere le impression per le principali query di ricerca che mostrano risultati di lavoro
-    
-- Analizzare la distribuzione delle impression per i segnalibri e le domande e risposte
-    
-## <a name="get-details-about-bookmarks-and-qas"></a>Ottenere informazioni dettagliate su segnalibri e domande e risposte
+È possibile utilizzare il Dashboard Microsoft Search Insights per gestire i dati di Bing per le risposte pubblicate. Questo è solo uno dei passaggi necessari per [facilitare la ricerca di contenuti](make-content-easy-to-find.md) per gli utenti.
 
-Usare il dashboard per vedere il totale dei segnalibri o delle domande e risposte in base allo stato:
-  
-- Pubblicato: il numero di risultati pubblicati che sono disponibili per gli utenti
-    
-- Programmato: il numero di risultati programmati nella pipeline di pubblicazione
-    
-- Suggeriti: il numero di suggerimenti degli utenti
-    
-Le schede di approfondimento di segnalibri e domande e risposte nel dashboard facilitano anche l'accesso alle attività comuni:
-  
-- Per visualizzare i risultati di segnalibri o domande e risposte, fare clic su Segnalibri o Domande e risposte sul titolo di una scheda
-    
-- Per aggiungere un segnalibro o domande e risposte, fare clic sull'opzione Crea
-    
-- Per aggiungere in blocco segnalibri o domande e risposte, fare clic sull'opzione Importa
-    
-## <a name="review-top-search-queries"></a>Esaminare le query di ricerca principali
+Quando si accede per la prima volta a Microsoft Search nell'interfaccia di amministrazione di Microsoft 365, è necessario immettere il dashboard Insights.
 
-Ottenere informazioni su quali ricerche hanno generato più impression negli ultimi 90 giorni. Vengono visualizzate le prime 25 ricerche degli utenti per ogni tipo di risultato, insieme al numero totale di impression e alla percentuale di clic (click-through rate - CTR). Nella scheda Principali query di ricerca è possibile:
-  
-- Per filtrare in base al tipo di risultato, fare clic su Tutti i risultati nel menu e selezionare un tipo di risultati diverso
-    
-- Per visualizzare l'aspetto di un risultato in Bing, fare clic su una query e la pagina con i risultati della ricerca si aprirà in una nuova scheda
-    
-- Per visualizzare altre query di ricerca, fare clic sulle frecce sinistra o destra nella parte inferiore della scheda
-    
-## <a name="analyze-impressions-by-result-type"></a>Analizzare le impression in base al tipo di risultato
+![Insights-dashboard. png](media/Insights-dashboard.png)
 
-Grafici di facile lettura nella scheda Distribuzione delle impression in base al tipo di risultato mostrano i dati in diversi intervalli di tempo. Il riepilogo mostra il numero di impression insieme a un calcolo della percentuale di distribuzione (numero di impression per tipo di risultato x 100/numero totale di impression). La sequenza temporale mostra il numero giornaliero di impression per un tipo di risultato. È anche possibile modificare l'intervallo di tempo per entrambe le visualizzazioni e ottenere altre informazioni:
-  
-- Nella parte superiore della scheda fare clic su 7, 30 o 90 giorni
-    
-- Per visualizzare un intervallo personalizzato compreso tra 0 e 90 giorni, fare clic su Intervallo personalizzato e immettere le date di inizio e di fine
-    
-- Nella sequenza temporale posizionare il puntatore su un punto dati per le impression in base al tipo di risultato per un singolo giorno
+Di seguito sono riportati i report disponibili nel dashboard Insights.
 
-  
+> [!NOTE]
+> I dati nei report rappresentano solo dati Bing.
 
+## <a name="top-queries"></a>Query principali
+
+Questo rapporto fornisce informazioni dettagliate sulle query di ricerca Bing Top 2000 eseguite dagli utenti. Affinché una query venga visualizzata nelle **query principali**, è necessario che la query ottenga almeno tre clic.
+
+![Report delle query principali con le intestazioni di tabella: query, Total query e fare clic su percentuale.](media/Insights-topqueries.png)
+
+Una bassa percentuale di clic (CTR) indica che gli utenti non trovano quello che stanno cercando.
+
+È possibile scegliere diverse visualizzazioni del report filtrando il tipo di risposta. Ad esempio, se si desidera visualizzare solo le query principali per i segnalibri, selezionare l'elenco a discesa nell'angolo in alto a destra del report e quindi selezionare **segnalibri**. Per impostazione predefinita, vengono visualizzati **tutti i** tipi di risposta.
+
+![Filtrare il rapporto query principali in base ai segnalibri, agli utenti, alle&A, ai file, ai gruppi, alle posizioni, alle conversazioni e ai siti](media/Insights-topqueries-dropdown.png)
+
+## <a name="impression-distribution"></a>Distribuzione dell'impressione
+
+Questo rapporto Visualizza la distribuzione degli impressioni in Bing nel tempo per diverse risposte. Alcuni esempi sono segnalibri, utenti, Q&A, file, posizioni, siti di file, gruppi e conversazioni. 
+
+![Report impressioni con 90 giorni selezionati come periodo di tempo.](media/Insights-impressions.png)
+
+La distribuzione dell'impressione può aiutare gli amministratori a capire cosa cerca gli utenti durante un determinato periodo di tempo.

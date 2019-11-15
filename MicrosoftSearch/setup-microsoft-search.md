@@ -3,22 +3,21 @@ title: Configurare Microsoft Search
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
-ms.translationtype: HT
+ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288992"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626910"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -28,7 +27,7 @@ Per altre informazioni sulle funzionalità di Microsoft Search, vedere [Panorami
 
 ## <a name="get-started"></a>Introduzione
 
-Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Basta eseguire l'accesso con un account aziendale o dell'istituto di istruzione e usare un browser con Bing impostato come provider di ricerca predefinito.
+Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Non è necessaria alcuna configurazione, ma è possibile migliorare l'esperienza complessiva di ricerca di Microsoft tramite alcune attività amministrative di base.
 
 È possibile gestire Microsoft Search dall'interfaccia di amministrazione di Microsoft 365.
 
@@ -38,21 +37,7 @@ Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 pe
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di Microsoft Search più efficiente e intuitiva nell'organizzazione.
 
-## <a name="step-1-check-access-level-of-your-users"></a>Passaggio 1: Verificare il livello di accesso degli utenti
-
-Microsoft Search rispetta le impostazioni di sicurezza dell'origine contenuto. Gli elementi visualizzati nei risultati della ricerca dipendono dalle autorizzazioni e dai livelli di accesso degli utenti. Esaminare il livello di accesso degli utenti dell'organizzazione per assicurarsi che gli utenti trovino solo i contenuti cui sono autorizzati ad accedere.
-
-| Servizio         | Descrizione                                                                                                                                                                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gruppi          | [Aggiungere o rimuovere membri dai gruppi](https://docs.microsoft.com/office365/admin/create-groups/add-or-remove-members-from-groups)                                                                                                                     |
-| Persone          | È possibile nascondere alcuni utenti dalle ricerche nell'elenco di indirizzi impostando il parametro `HiddenFromAddressListEnabled` su `true` con il cmdlet [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user). |
-| Microsoft Teams | [Gestione degli accessi utente per Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
-| OneDrive        | [Gestire la condivisione](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Pianificazione delle autorizzazioni](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Creare livelli di autorizzazione](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
-| OneNote         | Non è possibile eseguire ricerche nei file incorporati in OneNote. [Modificare le autorizzazioni per un blocco appunti in OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
-| Yammer          | [Impostazioni di sicurezza di Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
-
-## <a name="step-2-assign-search-admin-and-search-editor"></a>Passaggio 2: Assegnare l'amministratore della ricerca e l'editor della ricerca
+## <a name="step-1-assign-search-admin-and-search-editor"></a>Passaggio 1: assegnare l'amministratore della ricerca e l'editor di ricerca
 
 In Microsoft Search è possibile gestire i contenuti e le impostazioni di ricerca dell'organizzazione attribuendo questi ruoli agli utenti:
 
@@ -63,27 +48,18 @@ Attualmente, i ruoli di amministratore della ricerca e di editor della ricerca d
 
 Gli amministratori della ricerca influiscono direttamente sull'esperienza di ricerca per gli utenti finali, ad esempio scegliendo i tipi di risultati che gli utenti possono visualizzare. Può risultare difficile scegliere e creare contenuti rilevanti nei numerosi argomenti diversi che gli utenti cercano in un'organizzazione. È consigliabile sfruttare le competenze e le conoscenze degli SME (Subject Matter Expert) e di altri utenti aggiungendoli come editor della ricerca.
 
-## <a name="step-3-make-content-easy-to-find"></a>Passaggio 3: Facilitare la ricerca del contenuto
+## <a name="step-2-create-answers"></a>Passaggio 2: creare risposte
 
-Microsoft Search offre agli amministratori strumenti utili per creare un'esperienza di ricerca solida per gli utenti. In Microsoft Search gli amministratori possono creare tre diversi contenuti di ricerca per garantire una migliore esperienza di ricerca e ottimizzare la reperibilità dei contenuti:
+Microsoft Search offre agli amministratori strumenti utili per creare un'esperienza di ricerca solida per gli utenti. In Microsoft Search gli amministratori hanno tre diversi contenuti di ricerca che possono creare per una migliore esperienza di ricerca e per migliorare la "reperibilità" del contenuto:
 
-- **Segnalibri:** i segnalibri sono simili ai risultati promossi in SharePoint e consentono di promuovere i migliori risultati possibili per le query degli utenti nella parte superiore dei risultati della ricerca. Consentono inoltre agli utenti di cercare facilmente siti interni importanti.
-- **Domande e risposte:** sono simili alle domande frequenti e in genere vengono visualizzate sotto forma di domande e risposte. Sono lo strumento ideale per rispondere nel miglior modo possibile alle domande correlate al lavoro degli utenti.
-- **Località:** le località corrispondono agli indirizzi che consentono agli utenti di individuare edifici, uffici e campus dell'organizzazione.
+I segnalibri sono il tipo di risposta più comunemente utilizzato. Essi promuovono i migliori risultati possibili per le query degli utenti all'inizio dei risultati della ricerca e consentono agli utenti di trovare facilmente quello che stanno cercando.
+Contenuto informativo disponibile per tutti; ad esempio, informazioni sull'azienda, assistenza per le app di Windows e di Office e così via. Contenuto che gli utenti dell'organizzazione cercano in genere nel loro lavoro quotidiano. Le ricerche correlate al lavoro includono benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e assistenza dei servizi IT.
 
-Più segnalibri, domande e risposte e località sono disponibili, maggiori saranno il valore e i vantaggi per gli utenti. Un numero eccessivo di questi elementi può causare un notevole sovraccarico di gestione in quanto questi contenuti devono essere revisionati e aggiornati periodicamente per garantire che i risultati siano pertinenti e aggiornati.
+Per la creazione e la gestione delle risposte, vedere [pianificare il contenuto](plan-your-content.md).
 
-Ecco alcuni esempi di contenuti che è consigliabile aggiungere ai segnalibri per gli utenti:
+## <a name="next-steps"></a>Passaggi successivi
 
-- Informazioni relative all'organizzazione, a prodotti o a servizi.
-- Contenuti informativi disponibili per tutti gli utenti, ad esempio informazioni sulla società, guida per le app di Windows e Office e così via.
-- Contenuti che gli utenti dell'organizzazione generalmente cercano durante le attività quotidiane. Le ricerche correlate al lavoro includono benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e assistenza dei servizi IT.
-
-Per la creazione e la gestione dei contenuti della ricerca, vedere [Facilitare la ricerca del contenuto](make-content-easy-to-find.md).
-
-## <a name="step-4-training-and-communication"></a>Passaggio 4: Formazione e comunicazione
-
-Definire le risorse in modalità self-service a cui i dipendenti possono accedere in modo facile e autonomo. Questo consentirà di ridurre il carico complessivo sull'amministratore e sul team incaricato delle comunicazioni e supporterà la formazione autonoma dei dipendenti. Fornire agli utenti comunicazioni, domande frequenti, video e corsi di formazione o webinar registrati. Ecco alcuni collegamenti utili per iniziare:
+Per ulteriori informazioni sul modo in cui gli utenti utilizzeranno Microsoft Search, vedere gli articoli seguenti:
 
 - [Trovare le informazioni necessarie con Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Area risorse di Office 365](https://support.office.com/office-training-center)

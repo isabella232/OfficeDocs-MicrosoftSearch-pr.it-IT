@@ -1,22 +1,23 @@
 ---
 title: Raccolta connettori
-description: Vengono elencati tutti i connettori di Microsoft Graph per Microsoft Search
-services: microsoft-search
+ms.author: mounika.narayanan
 author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: ''
-ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
+manager: shohara
+ms.audience: Admin
 ms.topic: landing-page
-ms.author: samanro
-ms.openlocfilehash: 87fc858f702940afd5a943d05287aab15fd33d1e
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: Vengono elencati tutti i connettori di Microsoft Graph per Microsoft Search
+ms.openlocfilehash: 6ae3ef26fc80997c9698b3fc5bd47cfceef6a32a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949869"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626553"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Raccolta di connettori di Microsoft Graph
 
@@ -32,7 +33,7 @@ ms.locfileid: "37949869"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Gen2 di archiviazione di Azure Data Lake</h3>
+                        <h3>Azure Data Lake Storage Gen2</h3>
                         <p>da <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">Con questo connettore di Microsoft Graph, gli utenti dell'organizzazione possono cercare file e contenuti archiviati nei contenitori BLOB di Azure. Il connettore di archiviazione di Gen2 di Azure Data Lake indicizza inoltre le cartelle abilitate alla gerarchia in Azure Data Lake storage Gen2 accounts specificati.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">

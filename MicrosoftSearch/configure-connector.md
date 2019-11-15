@@ -1,6 +1,6 @@
 ---
 title: Configurare il connettore Microsoft-built per Microsoft Search
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: aee7c142e8cf04349076030cdedde0cea7344906
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 1a3affebc754595eabc40a13402aae6bbb7a1e1c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949860"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626526"
 ---
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>Configurare il connettore Microsoft-built per Microsoft Search
 
-In questo articolo vengono illustrati i passaggi per la configurazione di un connettore basato su Microsoft. Descrive il flusso di configurazione di una connessione nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com). Per ulteriori informazioni su come configurare connettori basati su Microsoft specifici, vedere gli articoli seguenti:
-* [Gen2 di archiviazione di Azure Data Lake](azure-data-lake-connector.md)
+In questo articolo vengono illustrati i passaggi per la configurazione di un connettore basato su Microsoft. Descrive il flusso di configurazione di una connessione nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365. Per ulteriori informazioni su come configurare connettori basati su Microsoft specifici, vedere gli articoli seguenti:
+* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Siti Web aziendali](enterprise-web-connector.md)
 * [Condivisione file](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
@@ -30,13 +30,13 @@ In questo articolo vengono illustrati i passaggi per la configurazione di un con
 * [ServiceNow](servicenow-connector.md)
 
 ## <a name="set-up"></a>Configurazione
-Per configurare uno qualsiasi dei connettori Microsoft-built, accedere all'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com):
-1. Accedere al proprio account con le credenziali per il tenant di testing di Microsoft 365.
+Per configurare i connettori Microsoft-built, accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com):
+1. Accedere al proprio account con le credenziali per il tenant di testing di [Microsoft 365](https://www.microsoft.com/microsoft-365) .
 2. Passare a **Impostazioni** > **** > **connettori**di ricerca di Microsoft.
 3. Selezionare **Aggiungi un connettore**.
 4. Nell'elenco dei connettori disponibili, selezionare il connettore desiderato.
 
-![](media/addconnector_final.png)
+![Le origini dati disponibili includono: ADL Gen2 Connector, Enterprise websites, ServiceNow, file share, Microsoft SQL Server e MediaWiki.](media/addconnector_final.png)
 
 ### <a name="name-the-connector"></a>Assegnare un nome al connettore
 Per creare una connessione, specificare innanzitutto gli attributi seguenti:
@@ -59,16 +59,16 @@ Gli attributi dello schema di ricerca includono **ricercabili**, **Queryable**e 
 
 **Attributo dello schema di ricerca** | **Funzione** | **Esempio**
 --- | --- | ---
-RICERCHE | Consente di eseguire ricerche nel contenuto del testo di una proprietà. Il contenuto della proprietà è incluso nell'indice full-text. | Se la proprietà è "title", una query per "Enterprise" restituirà risposte che contengono la parola "Enterprise" in qualsiasi testo o titolo.
-QUERY | Esegue una ricerca in base alla query per una corrispondenza per una proprietà specifica. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o Verbatim. |  Se la proprietà "title" è Queryable, la query "title: Enterprise" è supportata.
-RECUPERATE | È possibile utilizzare solo le proprietà recuperabili nel tipo di risultato e visualizzabili nei risultati della ricerca. | 
+RICERCHE | Consente di eseguire ricerche nel contenuto del testo di una proprietà. Il contenuto della proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituirà le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
+QUERY | Esegue una ricerca in base alla query per una corrispondenza per una proprietà specifica. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o Verbatim. |  Se la proprietà **title** è Queryable, il titolo della query **: Enterprise** è supportato.
+RECUPERATE | È possibile utilizzare solo le proprietà recuperabili nel tipo di risultati e visualizzarle nei risultati della ricerca. | 
 
-Per tutti i connettori, ad eccezione del connettore di condivisione file, è necessario impostare manualmente i tipi personalizzati. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La procedura guidata consente di selezionare automaticamente uno schema di ricerca basato sul set di proprietà di origine che si desidera scegliere. È possibile modificare questo schema facendo clic sulle caselle di controllo per ogni proprietà e attributo nella pagina schema di ricerca.
+Per tutti i connettori, ad eccezione del connettore di condivisione file, è necessario impostare manualmente i tipi personalizzati. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La procedura guidata consente di selezionare automaticamente uno schema di ricerca basato sul set di proprietà di origine che si desidera scegliere. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina schema di ricerca.
 
 ![Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni query, Search e retrieve.](media/manageschema.png)
 
 Queste restrizioni e suggerimenti si applicano alle impostazioni dello schema di ricerca:
-* Per i connettori che indicino tipi personalizzati, è consigliabile **non** contrassegnare il campo che contiene il contenuto principale **recuperabile**. Quando i risultati della ricerca eseguono il rendering con quell'attributo di ricerca, si verificano problemi significativi. Un esempio è il campo di contenuto di **testo** per un articolo della Knowledge base di ServiceNow.
+* Per i connettori che indicino tipi personalizzati, è consigliabile **non** contrassegnare il campo che contiene il contenuto principale **recuperabile**. Quando i risultati della ricerca eseguono il rendering con quell'attributo di ricerca, si verificano problemi significativi. Un esempio è il campo di contenuto di **testo** per un articolo della Knowledge base di [ServiceNow](https://www.servicenow.com) .
 * Solo le proprietà contrassegnate come rendering recuperabili nei risultati della ricerca possono essere utilizzate per creare i tipi di risultati moderni (MRTs).
 * Solo le proprietà della stringa possono essere contrassegnate come ricercabili.
 
@@ -97,14 +97,14 @@ Ogni connettore avrà un insieme ottimale di pianificazioni di aggiornamento in 
 ![Impostazioni di ricerca per indicizzazione incrementali e intere per la ricerca per indicizzazione con incremento a 15 minuti e ricerca per indicizzazione completa](media/refreshschedule.png)
 
 ### <a name="review-connector-settings"></a>Esaminare le impostazioni del connettore
-Dopo aver configurato il connettore, l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) porta a una pagina in cui è possibile rivedere le impostazioni. È possibile tornare indietro nel processo di configurazione per modificare le impostazioni prima di confermare la connessione. Per ulteriori informazioni, vedere [gestire il connettore](manage-connector.md).
+Dopo aver configurato il connettore, l'interfaccia di [Amministrazione](https://admin.microsoft.com) porta a una pagina in cui è possibile rivedere le impostazioni. È possibile tornare indietro nel processo di configurazione per modificare le impostazioni prima di confermare la connessione. Per ulteriori informazioni, vedere [gestire il connettore](manage-connector.md).
 
 ## <a name="next-steps-customize-the-search-results-page"></a>Passaggi successivi: personalizzare la pagina dei risultati di ricerca
-Con l'interfaccia utente di Microsoft Search (UI), gli utenti finali possono ricercare contenuto dalle app di produttività Microsoft 365 e dall'ecosistema Microsoft più ampio. Un verticale di ricerca si riferisce alle schede visualizzate quando un utente Visualizza i risultati della ricerca in SharePoint, Office.com e Microsoft Search in Bing. È possibile personalizzare i verticali di ricerca per limitare i risultati in modo che venga visualizzato solo un determinato tipo di risultati della ricerca. Tali verticali vengono visualizzate come una tabulazione nella parte superiore della pagina dei risultati di ricerca. Un tipo di risultato moderno (MRT) è l'interfaccia utente che designa il modo in cui vengono presentati i risultati.
+Con l'interfaccia utente di Microsoft Search (UI), gli utenti finali possono ricercare contenuto dalle app di produttività [microsoft 365](https://www.microsoft.com/microsoft-365) e dall'ecosistema Microsoft più ampio. Un verticale di ricerca si riferisce alle schede visualizzate quando un utente Visualizza i risultati della ricerca in [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com)e Microsoft Search in [Bing](https://Bing.com). È possibile personalizzare i verticali di ricerca per limitare i risultati, in modo che venga visualizzato solo un determinato tipo di risultati della ricerca. Tali verticali vengono visualizzate come una tabulazione nella parte superiore della pagina dei risultati di ricerca. Un tipo di risultato moderno (MRT) è l'interfaccia utente che designa il modo in cui vengono presentati i risultati.
 
 È necessario creare i propri tipi di verticali e di risultati, in modo che gli utenti finali possano visualizzare i risultati della ricerca dalle nuove connessioni. Senza questo passaggio, i dati della connessione non verranno visualizzati nella pagina dei risultati della ricerca.
 
 Per ulteriori informazioni su come creare i verticali e MRTs, vedere Personalizzazione della [pagina dei risultati di ricerca](customize-search-page.md).
 
 ## <a name="how-do-i-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo?
-Passare all'elenco delle connessioni pubblicate sotto la scheda **connettori** nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). Per informazioni su come effettuare aggiornamenti ed eliminazioni, vedere [gestire il connettore](manage-connector.md).
+Passare all'elenco delle connessioni pubblicate sotto la scheda **connettori** nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per informazioni su come effettuare aggiornamenti ed eliminazioni, vedere [gestire il connettore](manage-connector.md).
