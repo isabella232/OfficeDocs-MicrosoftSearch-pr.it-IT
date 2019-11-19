@@ -12,30 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilizzo di schede adattive, creazione di un layout per visualizzare i risultati di ricerca personalizzati
-ms.openlocfilehash: 2ca53f2e2dc207acdf48542f39ee4f448bdeb90e
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 6f406bb32a18678f1ca0546e37edb8013e2ba450
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949849"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699567"
 ---
 # <a name="create-a-layout-to-customize-search-results"></a>Creare un layout per la personalizzazione dei risultati di ricerca
 
-È possibile progettare il layout dei risultati per un verticale personalizzato utilizzando lo strumento di progettazione del layout di ricerca. È possibile iniziare a progettare il layout scegliendo i modelli offerti nello strumento di progettazione del layout e utilizzandoli se sono adatti ai propri requisiti. In alternativa, è possibile scegliere di modificare questi modelli in vari modi per soddisfare le proprie esigenze. Ad esempio, aggiungere/rimuovere immagini, aggiungere/rimuovere testo, modificare il testo. Se nessuno dei modelli soddisfa il proprio requisito, è possibile scegliere di iniziare a progettare il layout utilizzando un modello vuoto.  
+È possibile progettare il layout dei risultati per un verticale personalizzato utilizzando lo strumento di progettazione del layout di ricerca. È possibile iniziare a progettare il layout scegliendo i modelli offerti nello strumento di progettazione del layout e utilizzandoli se sono adatti ai propri requisiti. In alternativa, è possibile scegliere di modificare questi modelli in vari modi per soddisfare le proprie esigenze. Ad esempio, aggiungere/rimuovere immagini, aggiungere/rimuovere testo e modificare il testo. Se nessuno dei modelli soddisfa i requisiti, è possibile scegliere di iniziare a progettare il layout utilizzando un modello vuoto.  
 
  
 
-Una volta che il layout è pronto, è possibile utilizzare la [lingua del modello di schede Adaptive](https://docs.microsoft.com/adaptive-cards/templating/language) per creare JSON result layout di Thea che viene utilizzato per definire un tipo di risultati. È possibile mappare le proprietà dei risultati al layout utilizzando il passaggio di mapping nello strumento di progettazione del layout.  
+Dopo che il layout è pronto, utilizzare la [lingua del modello schede adattive](https://docs.microsoft.com/adaptive-cards/templating/language) per creare un JSON di layout dei risultati utilizzato per definire un tipo di risultati. È possibile mappare le proprietà dei risultati al layout utilizzando il passaggio di mapping nello strumento di progettazione del layout.  
 
 ## <a name="create-a-layout-on-your-own"></a>Creare un layout personalizzato
 La creazione di un layout personalizzato richiede la conoscenza delle [schede adattative](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) e del relativo [schema](https://adaptivecards.io/explorer/). Il layout dei risultati di ricerca utilizza un sottoinsieme degli elementi offerti dalle schede adattive ed è possibile utilizzare lo strumento di progettazione del layout per ottenere informazioni sul set di elementi supportato.  
 
-Durante la creazione di un layout personalizzato, creare il layout della scheda adattabile utilizzando i dati dell'utente e quindi finalizzare il layout.
-Sono disponibili due passaggi principali per la creazione di un layout personalizzato
-- Progettazione del layout
-- Separazione dei dati dal modello
+Durante la creazione di un layout personalizzato, creare il layout della scheda adattabile utilizzando i dati del connettore e quindi finalizzare il layout.
+Per creare un layout personalizzato, sono disponibili due passaggi principali:
+- Progettare il layout.
+- Separare i dati dal modello.
 
-#### <a name="designing-the-layout"></a>Progettazione del layout
+#### <a name="design-the-layout"></a>Progettare il layout
 
 In questo esempio viene mostrato un layout con un'intestazione, un collegamento e un testo descrittivo.
 
@@ -98,7 +98,7 @@ Ed ecco il file JSON associato al layout:
 }
 ```
 
-#### <a name="separating-the-data-from-the-layout"></a>Separazione dei dati dal layout
+#### <a name="separate-the-data-from-the-layout"></a>Separare i dati dal layout
 
 È possibile separare i dati dal layout e associarli. 
 
@@ -156,7 +156,7 @@ Ecco il layout JSON dopo l'associazione dei dati:
 }
 ```
 
-Dati di esempio: specificare i dati di esempio nell' **editor di dati di esempio** per visualizzare la scheda con associazione a dati in "modalità anteprima".
+Dati di esempio: specificare i dati di esempio nell' **editor di dati di esempio** per visualizzare la scheda con associazione a dati in **modalità anteprima**.
 
 ```json
 { 
@@ -173,7 +173,7 @@ Dati di esempio: specificare i dati di esempio nell' **editor di dati di esempio
 
 È necessario eseguire il mapping di ogni campo del layout a una proprietà dei risultati o a una proprietà del connettore per generare il JSON del layout dei risultati.
 
-![Verts-SearchLayoutDesigner. png](media/Verts-SearchLayoutDesigner.png)
+![Acquisizione dello schermo di un layout di esempio nella pagina progettazione layout di ricerca con un campo selezionato e il riquadro delle proprietà aperto.](media/Verts-SearchLayoutDesigner.png)
 
 Selezionare un campo nel layout per evidenziare le variabili che devono essere mappate. È possibile utilizzare più variabili per un singolo campo e tutti i campi devono essere mappati alle proprietà dei risultati.
 
@@ -184,17 +184,17 @@ Prima di iniziare, è necessario eseguire alcune operazioni e alcune operazioni 
 ### <a name="do"></a>Non
 
 - Modificare un modello per fornire il collegamento del logo nel layout se si utilizzano collegamenti statici per i loghi e non le proprietà dei risultati.   
-- Convalidare il layout dei risultati per gli scenari in cui non viene restituito alcun dato per una proprietà dei risultati utilizzata nel JSON risultante. Utilizzare `$when` la condizione per nascondere un elemento se la proprietà non contiene dati.  
-- Verificare che i tipi di dati della `$when` condizione e della proprietà Result corrispondano. Ad esempio, non confrontare `Number` con `Text` in `$when` condizione.  
+- Convalidare il layout dei risultati per gli scenari in cui non viene restituito alcun dato per una proprietà dei risultati utilizzata nel JSON risultante. Utilizzare la `$when` condizione per nascondere un elemento se la proprietà non contiene dati.  
+- Verificare che i tipi di dati della `$when` condizione e della proprietà Result corrispondano. Ad esempio, non confrontare `Number` con `Text` la `$when` condizione.  
 - Si pensi ai requisiti del tema quando si progetta un layout dei risultati.  
-- Verificare che l' `Textblock`  elemento sia in grado di gestire il contenuto dinamico. È possibile utilizzare le `wrap` proprietà `maxLines` and element per questo scopo. 
+- Verificare che l'elemento `Textblock`  sia in grado di gestire il contenuto dinamico. È possibile utilizzare le `wrap` proprietà `maxLines` and element per questo scopo. 
 - Formattare correttamente la data in cui `{DATE()}` viene utilizzato in Markdown.  
 
 ### <a name="dont"></a>Non
 
-- Non definire i tipi di dati non validi per i valori di binding. Per ulteriori informazioni sui tipi di dati, vedere [gestire lo schema di ricerca](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema ).
+- Non definire i tipi di dati non validi per i valori di binding. Per ulteriori informazioni sui tipi di dati, vedere [gestire lo schema di ricerca](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Evitare di ritagliare il risultato nella pagina dei risultati attenendosi all'altezza massima del JSON del layout dei risultati. Se si supera l'altezza massima del layout dei risultati, il risultato verrà ritagliato nella pagina dei risultati.
-- Non utilizzare `px` i valori nelle proprietà di un elemento.
+- Non utilizzare `px` i valori nelle proprietà degli elementi.
 
 
 ## <a name="resources"></a>Risorse

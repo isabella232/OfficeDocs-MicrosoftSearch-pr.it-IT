@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sull'anteprima dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 3ac27bd1e859f9ffc825e5e77d96f0de56b13647
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626265"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699369"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Anteprima connettori Microsoft Graph
 
@@ -37,5 +37,5 @@ La versione di anteprima presenta le limitazioni seguenti:
 * La velocità effettiva di ingestione viene limitata a circa quattro elementi al secondo.
 * Non è disponibile alcun supporto per gli aggiornamenti dello schema. Dopo aver creato una configurazione di connessione, non è possibile aggiornare lo schema. È possibile eliminare e ricreare la connessione solo.
 * Il contenuto indicizzato viene visualizzato solo nella pagina dei risultati di ricerca in un verticale personalizzato. Questa restrizione si applica al contenuto con tipi personalizzati.
-* Prima della disponibilità generale, potrebbe essere necessario eliminare e ricreare qualsiasi connessione configurata durante il periodo di anteprima. Tali connessioni non funzioneranno più se sono incompatibili con le modifiche apportate per migliorare il prodotto.
-* Limite connessioni. Ogni tenant è in grado di creare fino a 10 connessioni.
+* Prima della disponibilità generale, potrebbe essere necessario eliminare e ricreare qualsiasi connessione configurata durante il periodo di anteprima. Tali connessioni non funzioneranno più se non sono compatibili con le modifiche apportate per migliorare il prodotto.
+* Esiste un limite per le connessioni. Ogni tenant è in grado di creare fino a 10 connessioni.

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: 3ff2aabae4e09170b6b0380d520bfc620d5de5d8
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626256"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699794"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -28,26 +28,26 @@ Ecco un elenco delle domande più comuni.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La comprensione avanzata delle query è supportata?
 
-Sì. Microsoft Search analizza l'intento della query da frasi più lunghe. Questa funzionalità usa l'intelligenza artificiale per apprendere le frasi superflue comuni che gli utenti aggiungono alle query e che non influiscono sull'intento di ricerca. Ad esempio, quando un utente cerca "altre informazioni su come cambiare la password", vengono estratte le parole meno importanti dalla query e la ricerca viene attivata in base a quelle più pertinenti, come "cambiare password".
+Sì, Microsoft Search analizza gli intenti delle query da frasi di dimensioni maggiori. Questa funzionalità utilizza Ia per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sull'intenzione di ricerca. Ad esempio, quando un utente cerca informazioni *su come modificare la password*, estrarre le parole meno importanti dalla query e dal trigger in base a quelle rilevanti come *Change password*.
   
-Questa funzionalità non sostituirà le parole chiave impostate nell'interfaccia di amministrazione.
+Questa funzionalità non sostituirà le parole chiave impostate nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365.
   
 ## <a name="can-you-search-for-files-on-premises"></a>È possibile cercare file in locale?
 
-Sì. È possibile cercare file di SharePoint in locale se si dispone di una distribuzione ibrida di SharePoint.
+Sì. Se si dispone di una distribuzione ibrida di SharePoint, è possibile eseguire la ricerca nei file di [SharePoint](http://sharepoint.com/) locali.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Come si fa a impostare Bing come motore di ricerca predefinito per gli utenti dell'organizzazione?
 
-Ecco le istruzioni per impostare il motore di ricerca predefinito, la home page predefinita e il browser predefinito e offrire agli utenti l'esperienza migliore con Microsoft Search in Bing:
+Di seguito sono riportate le istruzioni per l'impostazione del motore di ricerca predefinito, della Home page predefinita e del browser predefinito per offrire agli utenti la migliore esperienza con Microsoft Search in [Bing](https://Bing.com):
 
-- [Impostare Edge come browser predefinito](set-default-browser.md)
+- [Impostare Microsoft Edge come browser predefinito](set-default-browser.md)
 - [Impostare Bing come motore di ricerca predefinito](set-default-search-engine.md)
 - [Impostare Bing.com come home page aziendale](set-default-homepage.md)
 
   
 ## <a name="how-are-my-search-results-protected"></a>In che modo vengono protetti i risultati della ricerca?
 
-Per accedere ai risultati del cloud attendibile, è richiesta l'autenticazione di Azure Active Directory (AAD). Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca vengono rese anonime e i log vengono separati dal traffico di ricerca pubblico di Bing. Questo livello di protezione non è offerto da nessun altro nel settore.
+È necessaria l'autenticazione di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca sono deidentificate e i registri sono separati dal traffico di ricerca [Bing](https://Bing.com) pubblico. Questo livello di protezione non è offerto da nessun altro nel settore.
 
 ## <a name="can-i-search-across-federated-organizations"></a>È possibile eseguire ricerche nelle organizzazioni federate?
 
@@ -59,5 +59,5 @@ Per informazioni dettagliate, vedere [Compliance Framework for Industry Standard
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Gli utenti possono guadagnare punti di Microsoft Rewards con l'account aziendale o dell'istituto di istruzione?
 
-Gli utenti aziendali di Microsoft Search devono accedere con un account aziendale o dell'istituto di istruzione. Non possono però partecipare al programma Microsoft Rewards o accedervi con tali account. Esiste però un caso in cui gli utenti aziendali possono accumulare punti di Microsoft Rewards, ovvero quando un utente di Microsoft Search ha un account Rewards creato con un <a href="https://www.microsoft.com/en-us/welcome?rtc=1">account Microsoft</a>. L'indirizzo di posta elettronica associato a un account Microsoft può provenire da Outlook.com, Hotmail.com, Gmail, Yahoo o altri provider. Se gli utenti accedono sia con l'account aziendale che con l'account Microsoft nella stessa sessione del browser, possono accumulare punti nell'account Rewards. L'accumulo dei punti durante la ricerca con Microsoft Search viene interrotto quando si cancellano i cookie. 
+Gli utenti aziendali di Microsoft Search devono accedere con un account aziendale o dell'istituto di istruzione. Non possono però partecipare al programma Microsoft Rewards o accedervi con tali account. Esiste però un caso in cui gli utenti aziendali possono accumulare punti di Microsoft Rewards, ovvero quando un utente di Microsoft Search ha un account Rewards creato con un <a href="https://www.microsoft.com/welcome?rtc=1">account Microsoft</a>. L'indirizzo di posta elettronica associato a un account Microsoft può provenire da Outlook.com, Hotmail.com, Gmail, Yahoo o altri provider. Se gli utenti accedono sia con l'account aziendale che con l'account Microsoft nella stessa sessione del browser, possono accumulare punti nell'account Rewards. L'accumulo dei punti durante la ricerca con Microsoft Search viene interrotto quando si cancellano i cookie. 
 

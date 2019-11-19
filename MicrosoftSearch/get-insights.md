@@ -13,31 +13,31 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analizzare la metrica e gestire il contenuto dal dashboard Insights in Microsoft Search
-ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626874"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699863"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Report sul dashboard di Microsoft Search Insights
 
-È possibile utilizzare il Dashboard Microsoft Search Insights per gestire i dati di Bing per le risposte pubblicate. Questo è solo uno dei passaggi necessari per [facilitare la ricerca di contenuti](make-content-easy-to-find.md) per gli utenti.
+È possibile utilizzare il Dashboard Microsoft Search Insights per gestire i dati di [Bing](https://Bing.com) per le risposte pubblicate. Questo è solo uno dei passaggi necessari per [facilitare la ricerca di contenuti](make-content-easy-to-find.md) per gli utenti.
 
-Quando si accede per la prima volta a Microsoft Search nell'interfaccia di amministrazione di Microsoft 365, è necessario immettere il dashboard Insights.
+Quando si accede per la prima volta a Microsoft Search nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, è necessario immettere il dashboard Insights.
 
 ![Insights-dashboard. png](media/Insights-dashboard.png)
 
-Di seguito sono riportati i report disponibili nel dashboard Insights.
+I report seguenti sono disponibili nel dashboard Insights.
 
 > [!NOTE]
-> I dati nei report rappresentano solo dati Bing.
+> I dati nei report rappresentano solo dati [Bing](https://Bing.com) .
 
 ## <a name="top-queries"></a>Query principali
 
-Questo rapporto fornisce informazioni dettagliate sulle query di ricerca Bing Top 2000 eseguite dagli utenti. Affinché una query venga visualizzata nelle **query principali**, è necessario che la query ottenga almeno tre clic.
+Questo rapporto fornisce informazioni dettagliate sulle query di ricerca [Bing](https://Bing.com) Top 2000 eseguite dagli utenti. Affinché una query venga visualizzata nelle **query principali**, è necessario che la query ottenga almeno tre clic.
 
-![Report delle query principali con le intestazioni di tabella: query, Total query e fare clic su percentuale.](media/Insights-topqueries.png)
+![Report delle query principali con le intestazioni di tabella: query, Total query e frequenza di clic.](media/Insights-topqueries.png)
 
 Una bassa percentuale di clic (CTR) indica che gli utenti non trovano quello che stanno cercando.
 
@@ -47,7 +47,7 @@ Una bassa percentuale di clic (CTR) indica che gli utenti non trovano quello che
 
 ## <a name="impression-distribution"></a>Distribuzione dell'impressione
 
-Questo rapporto Visualizza la distribuzione degli impressioni in Bing nel tempo per diverse risposte. Alcuni esempi sono segnalibri, utenti, Q&A, file, posizioni, siti di file, gruppi e conversazioni. 
+Questo rapporto Visualizza la distribuzione degli impressioni in [Bing](https://Bing.com) nel tempo per diverse risposte. Alcuni esempi sono segnalibri, utenti, Q&A, file, posizioni, siti di file, gruppi e conversazioni. 
 
 ![Report impressioni con 90 giorni selezionati come periodo di tempo.](media/Insights-impressions.png)
 

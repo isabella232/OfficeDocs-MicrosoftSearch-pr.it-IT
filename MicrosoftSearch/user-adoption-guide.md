@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 59fbc5ea629d385fbdc01f56a8bca3f5c6e7626f
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626883"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699531"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -121,7 +121,7 @@ Tutte le comunicazioni devono informare gli utenti su come possono accedere a [B
   
 Come parte integrante di [microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
-Verificare che il supporto tecnico conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare più efficacemente gli utenti. Per altre informazioni, vedere informazioni [su Microsoft Search in microsoft 365](https://support.office.com/en-us/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) e [FAQ](faqs.md).
+Verificare che il supporto tecnico conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare più efficacemente gli utenti. Per altre informazioni, vedere informazioni [su Microsoft Search in microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) e [FAQ](faqs.md).
   
 ### <a name="evaluate-with-pilot-users"></a>Valutare con gli utenti pilota
   
