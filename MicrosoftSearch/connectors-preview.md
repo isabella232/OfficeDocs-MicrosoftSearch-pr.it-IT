@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sull'anteprima dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699369"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205877"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Anteprima connettori Microsoft Graph
 
-I connettori Microsoft Graph, le API di indicizzazione e le API di ricerca sono attualmente in anteprima. Per accedere alla funzionalità dei connettori, è necessario richiedere di partecipare al programma di anteprima inviando il <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">modulo di iscrizione all'anteprima dei connettori Microsoft Graph</a>. Si tratta di un'anteprima iniziale e non vi è alcuna garanzia a livello di servizio. Si consiglia ai clienti di provare la funzionalità dei connettori e fornire commenti e suggerimenti. Non è consigliabile utilizzare i connettori per scopi di produzione durante il periodo di anteprima.
+I connettori Microsoft Graph e le API di Microsoft Search (query e indice) sono attualmente in stato di anteprima. Per accedere alla funzionalità dei connettori, è necessario richiedere di partecipare al programma di anteprima inviando il <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">modulo di iscrizione all'anteprima dei connettori Microsoft Graph</a>. Si tratta di un'anteprima iniziale e non vi è alcuna garanzia a livello di servizio. Si consiglia ai clienti di provare la funzionalità dei connettori e fornire commenti e suggerimenti. Non è consigliabile utilizzare i connettori per scopi di produzione durante il periodo di anteprima.
 
 ## <a name="set-up-targeted-release"></a>Configurare la versione di destinazione
 Per provare i connettori, è necessario che l'opzione di **rilascio di destinazione** sia impostata per tutti gli utenti dell'organizzazione. Il requisito di rilascio mirato si applica indipendentemente dalla scelta degli ambienti di anteprima seguenti.

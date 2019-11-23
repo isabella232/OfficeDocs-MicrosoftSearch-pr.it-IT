@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626802"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205868"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
@@ -54,6 +54,23 @@ Per ogni **connettore attivo** nella scheda **connettori** , tutti gli errori di
 Per visualizzare i dettagli specifici di un errore, selezionarne il codice di errore. Viene visualizzata una schermata con informazioni dettagliate sull'errore e un collegamento. Gli errori più recenti vengono visualizzati nella parte superiore. Vedere l'esempio nella tabella seguente.
 
 ![Elenco di connettori con un connettore selezionato e il riquadro dei dettagli che mostra l'elenco di errori per il connettore. ](media/errormonitoring2.png)
+
+Di seguito è riportato l'elenco dei diversi errori che possono essere visualizzati su qualsiasi connessione. Se queste soluzioni non funzionano, contattare il supporto tecnico o inviarci (feedback) [Connectors-feedback.md]. 
+
+**Codice di errore** | **Messaggio di errore** | **Soluzione**
+--- | --- | ---
+1000 | L'origine dati non è disponibile. Controllare la connessione a Internet o verificare che l'origine dati sia ancora accessibile dal connettore. | Questo errore si verifica quando l'origine dati non è raggiungibile a causa di un problema di rete o quando l'origine dati viene eliminata, spostata o rinominata. Controllare se i dettagli dell'origine dati forniti sono ancora validi.
+1001 | Non è possibile aggiornare i dati, in quanto l'origine dati sta strozzando il connettore. | Per delimitare l'origine dati, controllare se i limiti di scalabilità possono essere aumentati o attendere fino a un periodo di tempo meno elevato per il traffico del giorno.
+1002 | Non è possibile eseguire l'autenticazione con l'origine dati. Verificare che le credenziali associate a questa origine dati siano corrette. | Fare clic su **modifica** per aggiornare le credenziali di autenticazione.
+1003 | L'account associato al connettore non dispone dell'autorizzazione necessaria per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
+1004 | Non è possibile raggiungere il gateway di dati locale. Verificare che il servizio gateway sia in esecuzione. | Accedere al computer in cui è presente il gateway e verificare se il gateway di Power BI è in esecuzione aprendo l'applicazione del gateway Power BI. Verificare se il gateway ha eseguito l'accesso con l'account di amministratore utilizzato per Microsoft Search. 
+1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare clic su **modifica** per aggiornare le credenziali di autenticazione. 
+1006 | La versione del gateway è obsoleta e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Per scaricare e installare la versione più recente del gateway di Powerhttps://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-installbi sul computer che contiene il gateway, visitare il sito (installare un gateway di dati locale) [].
+2001 | L'indicizzazione viene limitata a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga deselezionata.
+2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
+2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore. 
+2004 | La [dimensione del file](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements) è troppo grande per essere indicizzata. Il valore deve essere 100 MB o meno prima dell'elaborazione e non superiore a 4 MB dopo l'elaborazione. Il file viene indicizzato parzialmente in questo caso. Alcune frasi presenti nel file potrebbero non restituire un risultato di ricerca. |  
+5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. | 
 
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
 * Quando si **pubblica** un connettore basato su Microsoft, potrebbero essere necessari alcuni minuti per la creazione della connessione. Durante tale periodo, la connessione Visualizza lo stato in sospeso. Inoltre, non è possibile eseguire l'aggiornamento automatico, quindi è necessario aggiornarlo manualmente.
