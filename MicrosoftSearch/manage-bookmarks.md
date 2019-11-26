@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 94e24db6643307a83ffae21e03b2ea354e209f53
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626811"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254740"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -70,10 +70,17 @@ Ecco alcuni punti importanti da tenere presenti per il file modello:
 Se i dati necessari sono mancanti o non validi, si riceverà un messaggio di errore e viene generato un file di log con altre informazioni sulle righe e sulle colonne da correggere. Apportare le modifiche necessarie e riprovare l'importazione del file. Non è possibile importare o salvare alcun segnalibro finché non saranno stati risolti tutti gli errori.
 
 Per evitare errori, verificare che il file di importazione sia formattato correttamente e che:
+
 - Includa la riga di intestazione e tutte le colonne presenti nel modello di importazione
 - L'ordine delle colonne equivalga a quello del modello di importazione
 - Tutte le colonne contengano valori, a eccezione di tre colonne che possono essere vuote: *Id*, *Data ultima modifica* e *Autore ultima modifica* 
 - La colonna *Stato* non è vuota, perché si tratta di informazioni obbligatorie
+
+Per evitare errori di duplicazione dei segnalibri tra segnalibri, eseguire le procedure consigliate seguenti:
+
+- Non utilizzare URL duplicati per segnalibri diversi. Se un URL è già stato assegnato a un altro segnalibro e lo si aggiunge di nuovo da un file di importazione, verrà visualizzato un messaggio di errore. Questo vale anche per gli URL duplicati di altri tipi di risposte.
+- Utilizzare la colonna ID segnalibro per l'aggiornamento dei segnalibri esistenti. È possibile aggiornare qualsiasi altra proprietà di un segnalibro esistente, ad esempio parola chiave o descrizione, ma è necessario verificare che l'ID segnalibro nella colonna appropriata del file di importazione. Se l'ID del segnalibro è presente, il servizio non lo considererà come nuova aggiunta e elaborerà un errore.
+
 
 ## <a name="powerapps"></a>PowerApps
 È possibile aiutare gli utenti a completare le attività, ad esempio immettere ferie o segnalare le spese, aggiungendo le PowerApp esistenti ai segnalibri. 

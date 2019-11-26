@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205868"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254722"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
@@ -65,11 +65,11 @@ Di seguito è riportato l'elenco dei diversi errori che possono essere visualizz
 1003 | L'account associato al connettore non dispone dell'autorizzazione necessaria per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
 1004 | Non è possibile raggiungere il gateway di dati locale. Verificare che il servizio gateway sia in esecuzione. | Accedere al computer in cui è presente il gateway e verificare se il gateway di Power BI è in esecuzione aprendo l'applicazione del gateway Power BI. Verificare se il gateway ha eseguito l'accesso con l'account di amministratore utilizzato per Microsoft Search. 
 1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare clic su **modifica** per aggiornare le credenziali di autenticazione. 
-1006 | La versione del gateway è obsoleta e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Per scaricare e installare la versione più recente del gateway di Powerhttps://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-installbi sul computer che contiene il gateway, visitare il sito (installare un gateway di dati locale) [].
+1006 | La versione del gateway è obsoleta e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Per scaricare e installare la versione più recente del gateway di Powerhttps://docs.microsoft.com/data-integration/gateway/service-gateway-installbi sul computer che contiene il gateway, visitare il sito (installare un gateway di dati locale) [].
 2001 | L'indicizzazione viene limitata a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga deselezionata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
 2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore. 
-2004 | La [dimensione del file](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements) è troppo grande per essere indicizzata. Il valore deve essere 100 MB o meno prima dell'elaborazione e non superiore a 4 MB dopo l'elaborazione. Il file viene indicizzato parzialmente in questo caso. Alcune frasi presenti nel file potrebbero non restituire un risultato di ricerca. |  
+2004 | La [dimensione del file](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) è troppo grande per essere indicizzata. Il valore deve essere 100 MB o meno prima dell'elaborazione e non superiore a 4 MB dopo l'elaborazione. Il file viene indicizzato parzialmente in questo caso. Alcune frasi presenti nel file potrebbero non restituire un risultato di ricerca. |  
 5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. | 
 
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
