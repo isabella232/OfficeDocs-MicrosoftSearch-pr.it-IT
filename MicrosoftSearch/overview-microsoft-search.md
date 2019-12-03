@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ottenere una panoramica delle funzionalità di ricerca di Microsoft, dei vantaggi e delle app che supportano Microsoft Search.
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626973"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663070"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -46,7 +46,7 @@ Se i suggerimenti nella casella di ricerca non sono ciò che gli utenti stanno c
 
 ## <a name="benefits-of-microsoft-search"></a>Vantaggi di Microsoft Search
 
-**Esecuzione di ricerche in Microsoft 365 da qualsiasi casella Microsoft Search**: gli utenti possono eseguire ricerche da qualsiasi casella Microsoft Search e tornare rapidamente alle proprie attività. Microsoft Search riunisce i risultati delle origini dati in Office 365, tra cui [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for business](https://onedrive.live.com/about/en-us/business/)e [Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
+**Esecuzione di ricerche in Microsoft 365 da qualsiasi casella Microsoft Search**: gli utenti possono eseguire ricerche da qualsiasi casella Microsoft Search e tornare rapidamente alle proprie attività. Microsoft Search riunisce i risultati delle origini dati in Office 365, tra cui [SharePoint](http://sharepoint.com/), [Microsoft OneDrive for business](https://onedrive.live.com/about/business/)e [Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server).
 
 **Facile da cercare** : la ricerca di Microsoft suggerisce i risultati in base alle attività precedenti degli utenti in Office 365, direttamente nella casella di **ricerca** .
 
@@ -58,11 +58,11 @@ Se i suggerimenti nella casella di ricerca non sono ciò che gli utenti stanno c
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personalizzazione di Microsoft Search in base alle esigenze dell'organizzazione
 
-In qualità di amministratore, è possibile creare e sorprendere l'esperienza di ricerca di Microsoft per gli utenti. 
+Come amministratore, è possibile creare un'incredibile esperienza di ricerca di Microsoft per gli utenti. 
 
 **Mostra contenuto utile** : le risposte forniscono risultati veloci e autorevoli alle query di ricerca in base alle parole chiave. [Rendere il contenuto facile da trovare](make-content-easy-to-find.md).
 
-**Aggiungi contenuto esterno** -i connettori di Microsoft Graph consentono di portare contenuto esterno nell'indice. Utilizzare i connettori per arricchire l'esperienza di ricerca con dati e file provenienti dall'esterno di Microsoft 365. [Panoramica dei connettori di Microsoft Graph](connectors-overview.md)
+**Aggiungi contenuto esterno** : i connettori Microsoft Graph consentono di portare contenuto esterno nell'indice. Utilizzare i connettori per arricchire l'esperienza di ricerca con dati e file provenienti dall'esterno di Microsoft 365. [Panoramica dei connettori di Microsoft Graph](connectors-overview.md)
 
 **Personalizzare l'esperienza utente** : è possibile personalizzare l'esperienza utente tramite l'utilizzo di verticali e altre configurazioni. [Personalizzare la pagina di ricerca di Microsoft](customize-search-page.md)
 
@@ -87,7 +87,7 @@ Quando un utente immette una query di ricerca in Microsoft Search in Bing, si ve
 Poiché le ricerche dell'organizzazione potrebbero essere sensibili, Microsoft Search ha implementato una serie di misure di attendibilità che descrivono in `Bing.com` che modo viene gestita la ricerca separata dei risultati pubblici.
 
 ### <a name="logging"></a>Registrazione
- - Tutti `Bing.com` i registri di ricerca relativi a Microsoft Search nel traffico Bing sono dissociati dall'identità di lavoro.
+- Tutti `Bing.com` i registri di ricerca relativi a Microsoft Search nel traffico Bing sono dissociati dall'identità di lavoro.
 - Se viene soddisfatta una serie di restrizioni o di soglie di frequenza per cui siamo certi che la query non è specifica di una data organizzazione, la query verrà trattata come descritto nella sezione dell'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) relativa ai servizi Bing. Ad esempio, tali query verranno utilizzate per modellare e formare le caratteristiche pubbliche, come l'autosuggestione o le ricerche correlate.
 - Le query che non soddisfano la serie di restrizioni o soglie di frequenza verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
 ### <a name="advertising"></a>Pubblicità 

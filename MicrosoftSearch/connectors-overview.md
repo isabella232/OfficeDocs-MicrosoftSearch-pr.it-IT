@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: f08393d5696466af72ed7b8f3e141c62adb61728
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205859"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663136"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
 
 Microsoft Search indicizza tutti i dati di [microsoft 365](https://www.microsoft.com/microsoft-365) per renderlo ricercabile per gli utenti. Con i connettori Microsoft Graph, l'organizzazione può indicizzare i dati di terze parti in modo che vengano visualizzati nei risultati della ricerca Microsoft. I dati di terze parti possono essere ospitati in locale o in un cloud pubblico o privato. I connettori espandono i tipi di origini di contenuto che sono disponibili per la ricerca nelle app di produttività Microsoft 365 e nel più vasto ecosistema di Microsoft.
 
 > [!IMPORTANT]
-> **Dichiarazione**di non responsabilità: i connettori Microsoft Graph e le API di Microsoft Search (query e indice) sono attualmente in anteprima. Per ulteriori informazioni sul programma di anteprima, vedere [anteprima dei connettori di Microsoft Graph](connectors-preview.md). Per partecipare al programma di anteprima, inviare il [modulo di iscrizione all'anteprima di Microsoft Graph Connectors](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> **Dichiarazione**di non responsabilità: i connettori Microsoft Graph e le API di Microsoft Search (query e indice) sono attualmente in stato di anteprima. Per utilizzare i connettori con Microsoft Search o per creare connettori, è necessario iscriversi al [programma di anteprima dei connettori](connectors-preview.md). Per partecipare al programma di anteprima, inviare il [modulo di iscrizione all'anteprima di Microsoft Graph Connectors](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="architecture"></a>Architettura
 Nel diagramma architetturale seguente della piattaforma Microsoft Graph viene mostrato come il contenuto del connettore scorre nell'indicizzazione del contenuto ai risultati degli utenti nei client di [ricerca di Microsoft](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) . In questo articolo vengono illustrati i principali blocchi predefiniti del processo di flusso di dati dei connettori di Microsoft Graph.

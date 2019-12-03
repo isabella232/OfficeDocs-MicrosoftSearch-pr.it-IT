@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft SQL Connector per Microsoft Search.
-ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626757"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663164"
 ---
 # <a name="microsoft-sql-server-connector"></a>Connettore Microsoft SQL Server
 
@@ -48,6 +48,16 @@ In questo passaggio viene configurata la query SQL che esegue una ricerca per in
 In questo esempio viene illustrata la selezione di cinque colonne di dati che contengono i dati per la ricerca: OrderId, OrderTitle, OrderDesc, CreatedDateTime ed andeleted. Per impostare le autorizzazioni di visualizzazione per ogni riga di dati, è facoltativamente possibile selezionare le colonne ACL seguenti: AllowedUsers, AllowedGroups, DeniedUsers e DeniedGroups. Tutte queste **colonne di dati**possono essere rese **Queryable**, reperibili o **recuperabili**.
 
 Selezionare colonne di dati come illustrato in questa query di esempio:`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+ 
+Per gestire l'accesso ai risultati della ricerca, è possibile specificare una o più colonne ACL nella query. Il connettore SQL consente di controllare l'accesso a ogni livello di record. È possibile scegliere di avere lo stesso controllo di accesso per tutti i record di una tabella. Se le informazioni ACL sono archiviate in una tabella separata, potrebbe essere necessario eseguire una join con tali tabelle nella query.
+
+Di seguito viene descritto l'utilizzo di tutte le colonne ACL nella query precedente. Nell'elenco seguente vengono illustrati i 4 **meccanismi di controllo di accesso**. 
+* **AllowedUsers**: specifica l'elenco di ID utente che saranno in grado di accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco di utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12. 
+* **AllowedGroups**: specifica il gruppo di utenti che saranno in grado di accedere ai risultati della ricerca. Nell'esempio seguente, il gruppo sales-team@contoso.com avrebbe accesso solo al record con OrderId = 12.
+* **DeniedUsers**: specifica l'elenco di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non dispongono dell'accesso a record con OrderId = 13, mentre tutti gli altri hanno accesso a questo record. 
+* **DeniedGroups**: specifica il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, i gruppi engg-team@contoso.com e pm-team@contoso.com non dispongono dell'accesso a record con OrderId = 15, mentre tutti gli altri hanno accesso a questo record.  
+
+![](media/MSSQL-ACL1.png)
 
 ### <a name="watermark-required"></a>Filigrana (obbligatoria)
 Per evitare sovraccarichi del database, il connettore esegue il batch e riprende le query di ricerca per indicizzazione complete con una colonna di filigrana full-crawl. Se si utilizza il valore della colonna filigrana, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. In sostanza si tratta di un meccanismo per controllare l'aggiornamento dei dati per le ricerche per indicizzazione complete.
@@ -67,6 +77,18 @@ Per escludere la possibilità di indicizzare le righe eliminate temporaneamente 
 
 ![Soft delete Settings: "soft delete column" e "value of soft delete column che indica una riga eliminata"](media/MSSQL-softdelete.png)
 
+### <a name="full-crawl-manage-search-permissions"></a>Ricerche per indicizzazione complete: gestione delle autorizzazioni di ricerca
+Fare clic su **Gestisci autorizzazioni** per selezionare le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome della colonna specificato nella query SQL di ricerca per indicizzazione completa. 
+
+Ognuna delle colonne ACL dovrebbe essere una colonna multivalore. Questi valori ID multipli possono essere separati da separatori, ad esempio punto e virgola (;), virgola (,) e così via. È necessario specificare questo separatore nel campo **separatore di valori** .
+ 
+I tipi di ID seguenti sono supportati per l'utilizzo come ACL: 
+* **Nome dell'entità utente (UPN)**: un nome dell'entità utente (UPN) è il nome di un utente di sistema in un formato di indirizzo di posta elettronica. Un UPN (ad esempio: john.doe@domain.com) è costituito da nome di accesso, separatore (il simbolo @) e nome di dominio (suffisso UPN). 
+* **ID di Azure Active Directory (AAD)**: in AAD, ogni utente o gruppo ha un ID oggetto che ha un aspetto simile a "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" 
+* **ID di sicurezza di Active Directory (ad)**: in una configurazione degli annunci locali, tutti gli utenti e i gruppi dispongono di un identificatore di sicurezza univoco e non modificabile che ha un aspetto simile a-1-5-21-3878594291-2115959936-132693609-65242.
+
+![](media/MSSQL-ACL2.png)
+
 ## <a name="incremental-crawl-optional"></a>Ricerca per indicizzazione incrementale (facoltativa)
 In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore Microsoft SQL Server apporta le modifiche apportate ai dati dall'ultima ricerca per indicizzazione incrementale. Come **nella ricerca per**indicizzazione completa, selezionare tutte le colonne che si desidera rendere **Queryable**, reperibili o **recuperabili**. Specificare lo stesso insieme di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
@@ -74,9 +96,11 @@ I componenti nell'immagine seguente sono simili ai componenti di ricerca per ind
 
 ![Script di ricerca per indicizzazione incrementale che mostra OrderTable, AclTable e proprietà di esempio che è possibile utilizzare.](media/MSSQL-incrcrawl.png)
 
+## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca 
+È possibile scegliere di utilizzare gli [ACL specificati nella schermata di ricerca per indicizzazione completa](#full-crawl-manage-search-permissions) oppure è possibile sovrascriverli per rendere il contenuto visibile a tutti.
+
 ## <a name="limitations"></a>Limitazioni
 Il connettore di Microsoft SQL Server presenta queste limitazioni nella versione di anteprima:
 * È necessario che il database locale esegua SQL Server versione 2008 o successiva.
-* Gli elenchi ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
+* Gli elenchi ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory. 
 * L'indicizzazione del contenuto RTF all'interno delle colonne di database non è supportata. Esempi di contenuto di questo tipo sono HTML, JSON, XML, BLOB e analisi dei documenti che esistono come collegamenti all'interno delle colonne di database.
-

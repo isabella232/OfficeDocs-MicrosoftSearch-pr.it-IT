@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: b65e61e4435e36fad5760f0a8d34bf444b51178b
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254740"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663145"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -77,10 +77,8 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 - La colonna *Stato* non è vuota, perché si tratta di informazioni obbligatorie
 
 Per evitare errori di duplicazione dei segnalibri tra segnalibri, eseguire le procedure consigliate seguenti:
-
 - Non utilizzare URL duplicati per segnalibri diversi. Se un URL è già stato assegnato a un altro segnalibro e lo si aggiunge di nuovo da un file di importazione, verrà visualizzato un messaggio di errore. Questo vale anche per gli URL duplicati di altri tipi di risposte.
-- Utilizzare la colonna ID segnalibro per l'aggiornamento dei segnalibri esistenti. È possibile aggiornare qualsiasi altra proprietà di un segnalibro esistente, ad esempio parola chiave o descrizione, ma è necessario verificare che l'ID segnalibro nella colonna appropriata del file di importazione. Se l'ID del segnalibro è presente, il servizio non lo considererà come nuova aggiunta e elaborerà un errore.
-
+- Utilizzare la colonna *ID segnalibro* per l'aggiornamento dei segnalibri esistenti. È possibile aggiornare qualsiasi altra proprietà di un segnalibro esistente, ad esempio una parola chiave o una descrizione, ma è necessario verificare che l' *ID del segnalibro* si trovi nella colonna appropriata del file di importazione. Se l' *ID del segnalibro* è presente, il servizio non lo considererà come nuova aggiunta e non verrà trattato come un errore.
 
 ## <a name="powerapps"></a>PowerApps
 È possibile aiutare gli utenti a completare le attività, ad esempio immettere ferie o segnalare le spese, aggiungendo le PowerApp esistenti ai segnalibri. 

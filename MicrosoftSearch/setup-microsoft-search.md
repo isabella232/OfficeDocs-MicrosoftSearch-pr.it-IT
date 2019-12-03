@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626910"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663061"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
-Microsoft Search offre un'interfaccia semplice da usare per consentire agli utenti di trovare informazioni, ad esempio file e documenti, siti interni e strumenti aziendali, persone e gruppi, località e indicazioni stradali, conversazioni e risposte, con un accesso sicuro a tutte le origini dati, inclusi i messaggi di posta elettronica, i file, i file di SharePoint, i contenuti di OneDrive e altre risorse condivise, ad esempio Internet nell'organizzazione dell'utente.
+Microsoft Search offre un'interfaccia facile da usare per consentire agli utenti di trovare informazioni quali file e documenti, siti interni e strumenti di business, utenti e gruppi, percorsi e direzioni, conversazioni e risposte. Questo consente di accedere in modo sicuro a tutte le origini dati, inclusi i messaggi di posta elettronica, i file, i file di SharePoint, il contenuto di OneDrive e altre risorse condivise, nonché Internet nell'organizzazione dell'utente.
 
 Per altre informazioni sulle funzionalità di Microsoft Search, vedere [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
