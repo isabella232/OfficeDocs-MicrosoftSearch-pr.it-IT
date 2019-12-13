@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore ServiceNow per Microsoft Search
-ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
+ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626955"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39998567"
 ---
 # <a name="servicenow-connector"></a>Connettore ServiceNow
 
@@ -41,10 +41,10 @@ Nella tabella seguente vengono fornite indicazioni su come compilare il modulo d
 
 **Campo** | **Descrizione** | **Valore consigliato**
 --- | --- | ---
-Name | Questo valore univoco identifica l'applicazione per la quale è necessario l'accesso OAuth. | Microsoft Search
+Nome | Questo valore univoco identifica l'applicazione per la quale è necessario l'accesso OAuth. | Microsoft Search
 ID client | ID univoco di sola lettura e generato automaticamente per l'applicazione. L'istanza utilizza l'ID client quando richiede un token di accesso. | ND
 Segreto client | Con questa stringa segreta condivisa, l'istanza di ServiceNow e Microsoft Search autorizzano le comunicazioni tra loro. | Seguire le procedure consigliate per la sicurezza trattando questa come una password.
-URL di Reindirizzamento | Un URL di callback obbligatorio a cui il server di autorizzazione reindirizza. | Vedere [callback OAuth](https://gcs.office.com/v1.0/admin/oauth/callback).
+URL di Reindirizzamento | Un URL di callback obbligatorio a cui il server di autorizzazione reindirizza. | https://gcs.office.com/v1.0/admin/oauth/callback
 URL logo | URL che contiene l'immagine per il logo dell'applicazione. | ND
 Attivo | Selezionare la casella di controllo per rendere attivo il registro di sistema dell'applicazione. | Impostata su attivo
 Aggiornare la durata del token | Il numero di secondi in cui un token di aggiornamento è valido. Per impostazione predefinita, i token di aggiornamento scadono in 100 giorni (8640000 secondi). | 31.536.000 (1 anno)

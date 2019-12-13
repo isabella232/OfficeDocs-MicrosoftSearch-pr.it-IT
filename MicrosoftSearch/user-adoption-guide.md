@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699531"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995006"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -119,7 +119,7 @@ Tutte le comunicazioni devono informare gli utenti su come possono accedere a [B
   
 ### <a name="engage-partner-teams"></a>Coinvolgere i team di partner
   
-Come parte integrante di [microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
+Come parte integrante di [microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search è conforme alle linee guida di GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni su Microsoft Search con i team di sicurezza e privacy. Per ulteriori informazioni, vedere [sicurezza e privacy per Microsoft Search in Bing](security-for-search.md).
   
 Verificare che il supporto tecnico conosca le caratteristiche e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare più efficacemente gli utenti. Per altre informazioni, vedere informazioni [su Microsoft Search in microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) e [FAQ](faqs.md).
   

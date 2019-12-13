@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ottenere una panoramica delle funzionalità di ricerca di Microsoft, dei vantaggi e delle app che supportano Microsoft Search.
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663070"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995033"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -70,28 +70,16 @@ Come amministratore, è possibile creare un'incredibile esperienza di ricerca di
 
 Microsoft Search Visualizza il contenuto archiviato dall'organizzazione in Microsoft 365 o indicizzato tramite i connettori. Microsoft Search non esegue la ricerca tra i tenant o Mostra i risultati del contenuto condiviso da altre organizzazioni. Se l'organizzazione ha configurato un ambiente di SharePoint ibrido con la ricerca ibrida nel cloud, Microsoft Search restituisce risultati di ricerca dai contenuti di SharePoint in locale e online, inclusi tutti i contenuti esterni connessi all'ambiente di SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Gli utenti riceveranno gli stessi risultati della ricerca dell'organizzazione ottenuti da altre posizioni e otterrà anche i risultati da Internet.
+Gli utenti riceveranno gli stessi risultati della ricerca ottenuti da altre posizioni e riceveranno anche i risultati da Internet.
 
 ## <a name="how-does-microsoft-search-work"></a>Come funziona Microsoft Search?
 
 Quando un utente esegue una ricerca, Microsoft Search elabora la query e analizza l'intento della ricerca da frasi più lunghe, usando l'intelligenza artificiale (AI) per apprendere le frasi superflue comuni che gli utenti aggiungono alle query e che non influiscono sull'intento della ricerca. Ad esempio, quando un utente cerca "come cambiare la password", le parole meno importanti vengono estratte dalla query e viene attivata la ricerca in base a quelle più pertinenti, ad esempio "cambiare la password".  
 I risultati della ricerca che gli utenti sono **autorizzati** a vedere vengono visualizzati nella pagina dei risultati della ricerca. Microsoft Search usa algoritmi di classificazione intelligenti per ordinare i risultati in base alla pertinenza.
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing protegge le ricerche aziendali
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>In che modo Microsoft Search in Bing aiuta a proteggere i dati aziendali?
 
-Quando un utente immette una query di ricerca in Microsoft Search in Bing, si verificano due richieste di ricerca simultanee:
-
-- Una ricerca delle risorse interne dell'organizzazione.
-- Ricerca separata dei risultati pubblici da Bing.com. 
-
-Poiché le ricerche dell'organizzazione potrebbero essere sensibili, Microsoft Search ha implementato una serie di misure di attendibilità che descrivono in `Bing.com` che modo viene gestita la ricerca separata dei risultati pubblici.
-
-### <a name="logging"></a>Registrazione
-- Tutti `Bing.com` i registri di ricerca relativi a Microsoft Search nel traffico Bing sono dissociati dall'identità di lavoro.
-- Se viene soddisfatta una serie di restrizioni o di soglie di frequenza per cui siamo certi che la query non è specifica di una data organizzazione, la query verrà trattata come descritto nella sezione dell'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) relativa ai servizi Bing. Ad esempio, tali query verranno utilizzate per modellare e formare le caratteristiche pubbliche, come l'autosuggestione o le ricerche correlate.
-- Le query che non soddisfano la serie di restrizioni o soglie di frequenza verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
-### <a name="advertising"></a>Pubblicità 
-La pubblicità mostrata `Bing.com` in connessione con le ricerche dell'organizzazione è solo correlata al contenuto delle query di ricerca. Le inserzioni non vengono mai personalizzate in base all'identità professionale degli utenti.
+[Protezione e privacy per Microsoft Search in Bing](security-for-search.md)
 
 ## <a name="see-also"></a>Vedere anche
 
