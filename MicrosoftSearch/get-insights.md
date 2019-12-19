@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analizzare la metrica e gestire il contenuto dal dashboard Insights in Microsoft Search
-ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699863"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40738054"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Report sul dashboard di Microsoft Search Insights
 
@@ -47,7 +47,7 @@ Una bassa percentuale di clic (CTR) indica che gli utenti non trovano quello che
 
 ## <a name="impression-distribution"></a>Distribuzione dell'impressione
 
-Questo rapporto Visualizza la distribuzione degli impressioni in [Bing](https://Bing.com) nel tempo per diverse risposte. Alcuni esempi sono segnalibri, utenti, Q&A, file, posizioni, siti di file, gruppi e conversazioni. 
+Questo rapporto Visualizza la distribuzione degli impressioni in [Bing](https://Bing.com) nel tempo per diverse risposte. Alcuni esempi sono segnalibri, utenti, Q&A, file, posizioni, siti di file, gruppi e conversazioni.
 
 ![Report impressioni con 90 giorni selezionati come periodo di tempo.](media/Insights-impressions.png)
 
