@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Avviare la propria organizzazione tramite Microsoft Search in SharePoint Online
-ms.openlocfilehash: 662dc2b69f02857327cd95b0f7c162e92800ce1c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 43cd9bce3d3d5c6f60214fcc1023bc4b8b9bfe91
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626856"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699495"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>Introduzione a Microsoft Search in SharePoint
 
@@ -30,7 +30,7 @@ Per fare in modo che l'organizzazione vada con Microsoft Search in SharePoint, e
 
 ## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Preparare la ricerca Microsoft in SharePoint
 
-Gli utenti possono trovare solo i contenuti SharePoint indicizzati. La ricerca di Microsoft e la ricerca classica condividono lo stesso indice per il contenuto di SharePoint, sottoposto a ricerca per indicizzazione e indicizzato automaticamente. 
+Gli utenti possono trovare solo il contenuto di [SharePoint](http://sharepoint.com/) indicizzato. La ricerca di Microsoft e la ricerca classica condividono lo stesso indice per il contenuto di SharePoint, sottoposto a ricerca per indicizzazione e indicizzato automaticamente. 
 
 Alcune organizzazioni utilizzano sia la ricerca classica che la ricerca Microsoft in SharePoint. Per informazioni su come evitare l'impatto delle impostazioni di ricerca classiche in Microsoft Search in SharePoint, vedere [differenze tra le esperienze di ricerca classiche e moderne in SharePoint Online](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
@@ -43,7 +43,7 @@ Per una migliore esperienza di ricerca, influire sull'organizzazione per provare
 
 ## <a name="promote-searching-from-the-sharepoint-start-page"></a>Alzare di livello la ricerca dalla pagina iniziale di SharePoint
 
-Insegnare ai propri utenti a cercare dalla pagina iniziale di [SharePoint](http://sharepoint.com/) invece che dal[Centro ricerche](https://docs.microsoft.com/sharepoint/manage-search-center)classico. Provare a nascondere il Centro ricerche classico.
+Insegnare ai propri utenti a cercare dalla pagina iniziale di [SharePoint](http://sharepoint.com/) invece che dal [Centro ricerche](https://docs.microsoft.com/sharepoint/manage-search-center)classico. Provare a nascondere il Centro ricerche classico.
 
 ## <a name="see-also"></a>Vedere anche
 [Panoramica di Microsoft Search](overview-microsoft-search.md)
