@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
-ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 44214cc1be22c5e9e49276c69c6c4132559f7c8d
+ms.sourcegitcommit: 9784c8a99138c2f333a9fed8b71df9c4f28b2bee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626784"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41519136"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
@@ -40,7 +40,7 @@ Gli amministratori possono usare le funzionalità di importazione o esportazione
 Usare la funzionalità di importazione/esportazione per:
 1. Aggiungere posizioni in blocco: aggiungere i dettagli nel file modello delle posizioni e quindi importarlo. 
 1. Modificare le posizioni in blocco: esportare le posizioni in un file CSV, quindi modificare i dettagli delle posizioni nel file CSV esportato e infine importare il file CSV aggiornato.
-1. Effettuare il backup delle posizioni: esportare le posizioni esistenti in un file CSV.
+1. Percorsi di backup – esportare le posizioni esistenti in un file. csv.
 
 Per esportare o importare posizioni:
 1. In alto a destra della scheda **Posizioni**, selezionare **Importa**.
