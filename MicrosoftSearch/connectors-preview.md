@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sull'anteprima dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: f95f6283fa875a1cfa84556640b16a902b2f2185
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 52bf174875bf3e262c0cb71d53ec209e481ee0b7
+ms.sourcegitcommit: 1e8dc8e10722ed26ba85cbb5e8c9df62f3625de6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947018"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578688"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Anteprima connettori Microsoft Graph
 
@@ -33,8 +33,7 @@ Per provare connettori, API di indicizzazione e API di ricerca, è consigliabile
 2. **Raccolta siti di test**. Se non si dispone di un tenant di prova, è possibile creare una raccolta siti di prova per provare la funzionalità di connettori. Per visualizzare i risultati dei connettori senza influire sulle pagine di ricerca in nessun'altra parte dell'organizzazione, personalizzare l'esperienza di ricerca solo per la raccolta siti.
 
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
-La versione di anteprima presenta le limitazioni seguenti:
-* L'anteprima pubblica per i connettori Microsoft Graph è disponibile solo per i tenant nelle aree degli Stati Uniti e in Europa. 
+La versione di anteprima presenta le limitazioni seguenti: 
 * La velocità effettiva di ingestione viene limitata a circa quattro elementi al secondo.
 * Non è disponibile alcun supporto per gli aggiornamenti dello schema. Dopo aver creato una configurazione di connessione, non è possibile aggiornare lo schema. È possibile eliminare e ricreare la connessione solo.
 * Il contenuto indicizzato viene visualizzato solo nella pagina dei risultati di ricerca in un verticale personalizzato. Questa restrizione si applica al contenuto con tipi personalizzati.
