@@ -2,7 +2,7 @@
 title: Protezione e privacy per Microsoft Search in Bing
 ms.author: jeffkizn
 author: jeffkizn
-manager: pmanek
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggere i dati dell'azienda e gli utenti finali fornendo informazioni agli utenti autorizzati con Microsoft Search in Bing
-ms.openlocfilehash: 7f19327f3d62f68ed876875596610181b5f1bc0e
-ms.sourcegitcommit: ac1209d11b8cc265d2224917fbe2a2bb0f65ef84
+ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
+ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41005622"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711753"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Protezione e privacy per Microsoft Search in Bing
 
@@ -39,7 +39,7 @@ Se un utente è già autenticato con l'account aziendale o dell'Istituto di istr
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Comunica con il cloud Microsoft dal browser
 
-Quando un utente accede con il proprio account aziendale o dell'istituto di istruzione, Bing scarica le librerie necessarie nel browser per abilitare i risultati di Microsoft Search. Quindi, quando l'utente esegue una ricerca, il codice nel browser chiama il cloud di Office 365 per ottenere risultati di lavoro. A tale scopo, Microsoft Search usa un'API dedicata conforme al livello C (SOC2 tipo 1) ai sensi degli standard e delle normative di settore di Office 365, consultabili nel documento [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf) (scaricabile in formato PDF). Questo significa che i risultati e i dati di lavoro non passano attraverso i sistemi Bing non conformi.
+Quando un utente accede con il proprio account aziendale o dell'Istituto di istruzione, Bing scaricherà le raccolte client necessarie al browser per abilitare i risultati di ricerca di Microsoft. Successivamente, quando eseguono la ricerca, il codice in-browser chiama il cloud di Office 365 per ottenere i risultati del lavoro. A tale scopo, Microsoft Search utilizza un'API dedicata gestita in conformità con gli obiettivi di controllo di SSAE 18 SOC2 Type 1. Questo significa che i risultati del lavoro e i dati di lavoro non scorrono attraverso sistemi Bing che sono soggetti a obiettivi di controllo dell'elaborazione dei dati meno severi rispetto ai risultati del lavoro stessi sono soggetti a una volta elaborati nei servizi di Office 365 Core online.
   
 ## <a name="permissions"></a>Autorizzazioni
 
