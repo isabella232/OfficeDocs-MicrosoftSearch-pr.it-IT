@@ -1,8 +1,8 @@
 ---
 title: Domande frequenti
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699794"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721760"
 ---
+<!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
 Ecco un elenco delle domande più comuni.
@@ -44,7 +45,6 @@ Di seguito sono riportate le istruzioni per l'impostazione del motore di ricerca
 - [Impostare Bing come motore di ricerca predefinito](set-default-search-engine.md)
 - [Impostare Bing.com come home page aziendale](set-default-homepage.md)
 
-  
 ## <a name="how-are-my-search-results-protected"></a>In che modo vengono protetti i risultati della ricerca?
 
 È necessaria l'autenticazione di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca sono deidentificate e i registri sono separati dal traffico di ricerca [Bing](https://Bing.com) pubblico. Questo livello di protezione non è offerto da nessun altro nel settore.
@@ -53,11 +53,10 @@ Di seguito sono riportate le istruzioni per l'impostazione del motore di ricerca
 
 No.
 
-## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>Dove è possibile trovare informazioni su categorie e livelli di conformità di Office 365 e Microsoft 365?
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Dove è possibile ottenere informazioni sulla sicurezza, la conformità e la privacy di Office 365?
 
-Per informazioni dettagliate, vedere [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (download in formato PDF).
+È possibile trovare i dettagli nelle [pagine del Centro protezione per Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Gli utenti possono guadagnare punti di Microsoft Rewards con l'account aziendale o dell'istituto di istruzione?
 
-Gli utenti aziendali di Microsoft Search devono accedere con un account aziendale o dell'istituto di istruzione. Non possono però partecipare al programma Microsoft Rewards o accedervi con tali account. Esiste però un caso in cui gli utenti aziendali possono accumulare punti di Microsoft Rewards, ovvero quando un utente di Microsoft Search ha un account Rewards creato con un <a href="https://www.microsoft.com/welcome?rtc=1">account Microsoft</a>. L'indirizzo di posta elettronica associato a un account Microsoft può provenire da Outlook.com, Hotmail.com, Gmail, Yahoo o altri provider. Se gli utenti accedono sia con l'account aziendale che con l'account Microsoft nella stessa sessione del browser, possono accumulare punti nell'account Rewards. L'accumulo dei punti durante la ricerca con Microsoft Search viene interrotto quando si cancellano i cookie. 
-
+Gli utenti aziendali di Microsoft Search devono accedere con un account aziendale o dell'istituto di istruzione. Non possono però partecipare al programma Microsoft Rewards o accedervi con tali account. Esiste però un caso in cui gli utenti aziendali possono accumulare punti di Microsoft Rewards, ovvero quando un utente di Microsoft Search ha un account Rewards creato con un [account Microsoft](https://www.microsoft.com/welcome?rtc=1). L'indirizzo di posta elettronica associato a un account Microsoft può provenire da Outlook.com, Hotmail.com, Gmail, Yahoo o altri provider. Se gli utenti accedono sia con l'account aziendale che con l'account Microsoft nella stessa sessione del browser, possono accumulare punti nell'account Rewards. L'accumulo dei punti durante la ricerca con Microsoft Search viene interrotto quando si cancellano i cookie.
