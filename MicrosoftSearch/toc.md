@@ -8,7 +8,6 @@
 ## [Acronimi](manage-acronyms.md)
 ## [Segnalibri](manage-bookmarks.md)
 ## [Planimetrie piani](manage-floorplans.md)
-### [Procedure consigliate](floorplans-bestpractices.md)
 ## [Posizioni](manage-locations.md)
 ## [Domande e risposte](manage-qas.md)
 # Connettori (anteprima)
