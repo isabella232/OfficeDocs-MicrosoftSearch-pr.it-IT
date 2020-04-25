@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
-ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
+ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
+ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793550"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803953"
 ---
 # <a name="enterprise-websites-connector"></a>Connettore siti Web Enterprise
 
@@ -60,7 +60,7 @@ Non è disponibile alcun supporto per gli elenchi di controllo di accesso (ACL).
 Il connettore dei siti Web dell'organizzazione supporta solo una ricerca per indicizzazione completa. Questo significa che il connettore legge tutto il contenuto del sito Web durante ogni ricerca per indicizzazione. Per assicurarsi che il connettore abbia un tempo sufficiente per leggere il contenuto, è consigliabile impostare un intervallo di pianificazione di aggiornamento di grandi dimensioni. È consigliabile eseguire un aggiornamento pianificato tra tre giorni e due settimane. 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
-Se si verifica un errore critico in una connessione, il relativo stato viene visualizzato come non riuscito. Per ottenere ulteriori informazioni sui tipi di errori, passare alla pagina dei dettagli dell'errore dopo aver selezionato la connessione non riuscita.  Fare clic sul codice di errore per visualizzare gli errori più dettagliati. Fare riferimento anche a [gestione del connettore](https://docs.microsoft.com/microsoftsearch/manage-connector) per ulteriori informazioni.
+Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione potrebbe incontrare alcuni errori di origine che sono rappresentati dai codici di errore dettagliati riportati di seguito. Per ottenere ulteriori informazioni sui tipi di errori, passare alla pagina dei **Dettagli dell'errore** dopo aver selezionato la connessione. Fare clic sul **codice di errore** per visualizzare gli errori più dettagliati. Fare riferimento anche a [gestione del connettore](https://docs.microsoft.com/microsoftsearch/manage-connector) per ulteriori informazioni.
 
  **Codice di errore dettagliato** | **Messaggio di errore**
  --- | --- 
@@ -75,7 +75,7 @@ Se si verifica un errore critico in una connessione, il relativo stato viene vis
  6024 | La pagina di origine che si sta tentando di indicizzare contiene contenuto non supportato.
 
 * Gli errori 6001-6013 si verificano quando l'origine dati non è raggiungibile a causa di un problema di rete o quando l'origine dati viene eliminata, spostata o rinominata. Controllare se i dettagli dell'origine dati forniti sono ancora validi.
-* Errori 6021-24 si verifica un errore quando l'origine dati contiene contenuto non testuale nella pagina o quando la pagina non è un codice HTML. Controllare l'origine dati e aggiungere questa pagina in elenco di esclusione o ignorare l'errore.
+* Errori 6021-6024 si verifica un errore quando l'origine dati contiene contenuto non testuale nella pagina o quando la pagina non è un codice HTML. Controllare l'origine dati e aggiungere questa pagina in elenco di esclusione o ignorare l'errore.
 
 ## <a name="limitations"></a>Limitazioni
-Il connettore dei siti Web dell'organizzazione non supporta la ricerca di dati nelle Web page dinamiche. Esempi di tali pagine sono presenti in sistemi di gestione del contenuto, quali [confluenza](https://www.atlassian.com/software/confluence) e [Unily](https://www.unily.com/) o database che archiviano il contenuto del sito Web.
+Il connettore dei siti Web dell'organizzazione non supporta la ricerca di dati nelle **Web page dinamiche**. Esempi di tali pagine sono presenti in sistemi di gestione del contenuto, quali [confluenza](https://www.atlassian.com/software/confluence) e [Unily](https://www.unily.com/) o database che archiviano il contenuto del sito Web.
