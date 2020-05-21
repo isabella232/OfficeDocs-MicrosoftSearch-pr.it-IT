@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803953"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326831"
 ---
 # <a name="enterprise-websites-connector"></a>Connettore siti Web Enterprise
 
@@ -26,7 +26,7 @@ Con il connettore siti Web Enterprise, l'organizzazione può indicizzare articol
 Questo articolo è per gli amministratori di [Microsoft 365](https://www.microsoft.com/microsoft-365) o per tutti coloro che configurano, eseguono e monitorano un connettore di siti Web dell'organizzazione. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.  
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati 
-Per connettersi all'origine dati, è necessario l'URL radice e una forma di autenticazione: autenticazione di base o OAuth 2,0 con [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/).
+Per connettersi all'origine dati, è necessario l'URL radice e l'autenticazione di base.
 
 ### <a name="root-url"></a>URL radice
 L'URL radice è ciò che consente di avviare la ricerca per indicizzazione e viene utilizzato per l'autenticazione. È possibile ottenere l'URL dalla Home page del sito Web che si desidera sottoporre a ricerca per indicizzazione.
