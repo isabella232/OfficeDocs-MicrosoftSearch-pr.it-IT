@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: 04e4635a67ea35381b95c1c753a35eb640d655d4
+ms.sourcegitcommit: 1524ae5fe97350ce4294d74e381872b5b7a9f645
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254722"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371309"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Per iniziare
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
-2. Passare a **Impostazioni** > **** > **connettori**di ricerca di Microsoft.
+1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
+2. Passare a **Impostazioni**  >  connettori di**ricerca di Microsoft**  >  **Connectors**.
 
 Per ogni tipo di connettore, l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) supporta le operazioni illustrate nella tabella seguente:
 
@@ -63,13 +63,15 @@ Di seguito è riportato l'elenco dei diversi errori che possono essere visualizz
 1001 | Non è possibile aggiornare i dati, in quanto l'origine dati sta strozzando il connettore. | Per delimitare l'origine dati, controllare se i limiti di scalabilità possono essere aumentati o attendere fino a un periodo di tempo meno elevato per il traffico del giorno.
 1002 | Non è possibile eseguire l'autenticazione con l'origine dati. Verificare che le credenziali associate a questa origine dati siano corrette. | Fare clic su **modifica** per aggiornare le credenziali di autenticazione.
 1003 | L'account associato al connettore non dispone dell'autorizzazione necessaria per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
-1004 | Non è possibile raggiungere il gateway di dati locale. Verificare che il servizio gateway sia in esecuzione. | Accedere al computer in cui è presente il gateway e verificare se il gateway di Power BI è in esecuzione aprendo l'applicazione del gateway Power BI. Verificare se il gateway ha eseguito l'accesso con l'account di amministratore utilizzato per Microsoft Search. 
+1004 | Impossibile raggiungere il gateway di dati locale. Verificare che il servizio gateway sia in esecuzione e che i dettagli del gateway vengano aggiornati nella configurazione della connessione. | Controllare il computer con il gateway, aprire l'applicazione Power BI gateway e verificare che il gateway sia in esecuzione. Verificare che il gateway utilizzi lo stesso account di amministratore di Microsoft Search, quindi accertarsi che tutti i dettagli del gateway siano tutti aggiornati nella configurazione della connessione. 
 1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare clic su **modifica** per aggiornare le credenziali di autenticazione. 
-1006 | La versione del gateway è obsoleta e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Per scaricare e installare la versione più recente del gateway di Powerhttps://docs.microsoft.com/data-integration/gateway/service-gateway-installbi sul computer che contiene il gateway, visitare il sito (installare un gateway di dati locale) [].
+1006 | La versione del gateway è obsoleta e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [installare un gateway di dati locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) per scaricare e installare la versione più recente del gateway di Power bi sul computer contenente il gateway.
+1007 | Non è stata rilevata alcuna licenza valida Power BI. Per eseguire questa ricerca per indicizzazione, è necessaria una licenza di Power BI valida. | Per eseguire questa ricerca per indicizzazione, è necessaria una licenza di Power BI valida. Verificare che l'organizzazione disponga di una licenza valida. In caso affermativo, riprova. In caso contrario, ottenere una licenza e quindi riprovare.
+1008 | L'utilizzo totale della quota del tenant ha raggiunto il limite. Provare a eliminare una connessione per liberare parte della quota o regolare i filtri di ingestione per ottenere meno dati. | Provare a eliminare una connessione per liberare parte della quota o regolare i filtri di ingestione per ottenere meno dati. Se non si risolve il problema, contattare il supporto tecnico Microsoft.
 2001 | L'indicizzazione viene limitata a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga deselezionata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
 2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore. 
-2004 | La [dimensione del file](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) è troppo grande per essere indicizzata. Il valore deve essere 100 MB o meno prima dell'elaborazione e non superiore a 4 MB dopo l'elaborazione. Il file viene indicizzato parzialmente in questo caso. Alcune frasi presenti nel file potrebbero non restituire un risultato di ricerca. |  
+2004 | La [dimensione del file](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) è troppo grande per essere indicizzata. Il valore deve essere 100 MB o meno prima dell'elaborazione e non superiore a 4 MB dopo l'elaborazione. Il file viene indicizzato parzialmente in questo caso. Alcune frasi presenti nel file potrebbero non restituire un risultato di ricerca. | Per ulteriori informazioni, vedere [documentazione specifica](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) per la condivisione di file.
 5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. | 
 
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima

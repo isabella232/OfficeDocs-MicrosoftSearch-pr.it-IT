@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
-ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
+ms.openlocfilehash: c4b799a3127a4a302e3f07953a59ea0319a09052
+ms.sourcegitcommit: c186be143164f21a3fecdb3037acd90a26c0fcf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326831"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374336"
 ---
 # <a name="enterprise-websites-connector"></a>Connettore siti Web Enterprise
 
@@ -33,22 +33,6 @@ L'URL radice è ciò che consente di avviare la ricerca per indicizzazione e vie
 
 ### <a name="authentication"></a>Autenticazione 
 L'autenticazione di base richiede un nome utente e una password. Creare questo account bot utilizzando l'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365.
-
-OAuth 2,0 con [Azure ad](https://docs.microsoft.com/azure/active-directory/) richiede un ID tenant, un ID risorsa, un ID client e un segreto client.
-Per ulteriori informazioni, vedere [autorizzare l'accesso alle applicazioni Web di Azure Active Directory tramite OAuth 2,0 Code Grant Flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Registrarsi con i valori seguenti:
-* **Nome:** Microsoft Search
-* **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
-
-Per ottenere i valori per il tenant denominato, la risorsa, client_id e client_secret, andare a **utilizzare il codice di autorizzazione per richiedere un token di accesso** nella pagina Web URL di reindirizzamento.
-
-Per ulteriori informazioni, vedere [Guida introduttiva: registrare un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-
-### <a name="reverse-proxy-url"></a>URL del proxy inverso 
-Il connettore dei siti Web dell'organizzazione è basato sul cloud, quindi non accede ai contenuti locali. Per fornire tale accesso, installare un proxy inverso. Un proxy inverso fornisce un accesso sicuro e affidabile ai siti Web locali. È consigliabile il [proxy di applicazione di Azure](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
-
-Il requisito del proxy inverso per l'URL radice e l'autenticazione è lo stesso per il contenuto basato sul cloud, tranne per il fatto che l'URL radice e l'autenticazione sono forniti dal server proxy inverso.
-
-Vedere [considerazioni sulla sicurezza per l'accesso alle app in remoto con il proxy di applicazione Azure ad](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-security).
 
 ## <a name="select-the-source-properties"></a>Selezionare le proprietà di origine 
 Le proprietà di origine sono definite in base al formato dei dati del sito Web dell'organizzazione. Tuttavia, è possibile creare un **elenco di esclusione** che escluda che alcuni URL vengano sottoposti a ricerca per indicizzazione se tale contenuto è sensibile o meno. Per creare un elenco di esclusione, passare all'URL radice. È possibile aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
