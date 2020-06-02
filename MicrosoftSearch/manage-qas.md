@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Trovare e aggiornare le risposte singolarmente oppure usare gli strumenti di Microsoft Search disponibili per modificarle tutte contemporaneamente
-ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+description: Trovare e aggiornare le risposte singolarmente o utilizzare gli strumenti di ricerca di Microsoft disponibili per modificare&come tutti insieme.
+ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
+ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721742"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470273"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
-Creare domande e risposte è simile alla creazione di segnalibri. Le Domande e risposte consentono di rispondere alla domanda di un utente anziché limitarsi a fornire un collegamento a una pagina Web. È possibile formattare la risposta in testo RTF con gli strumenti disponibili. Se un segnalibro e una domanda con risposta condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come per i segnalibri, l'indice delle domande e risposte verrà aggiornato immediatamente dopo che è stata aggiunta o modificata una domanda con risposta.
+Creare domande e risposte è simile alla creazione di segnalibri. Q&come consentono di rispondere alle domande dell'utente invece di fornire solo un collegamento a una pagina Web. È inoltre possibile formattare la risposta in testo RTF. Se un segnalibro e un Q&condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Analogamente ai segnalibri, la Q&un indice viene aggiornato subito dopo l'aggiunta o la modifica di una Q&A.
 
 ## <a name="add-or-edit-a-single-qa"></a>Aggiungere o modificare una singola domanda con risposta
 
 1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
 1. Nel riquadro di spostamento passare a **Impostazioni** e selezionare **Microsoft Search**.
-1. Selezionare la scheda **Domande e risposte**. Per impostazione predefinita, è già selezionata la prima scheda (**Segnalibri**).
+1. Selezionare la scheda **Q&A** .
 1. Per aggiungere una domanda con risposta, selezionare **Aggiungi nuovo**.
-Per modificare una domanda con risposta, selezionarla nell'elenco di domande e risposte pertinente.
-1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
+Per modificare una domanda con risposta, selezionarla nell'elenco di domande e risposte pertinente. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
 1. Salvare le modifiche.
 
 ### <a name="supported-html-tags"></a>Tag HTML supportati
 
-È possibile usare contenuto HTML esistente o aggiungere tag HTML alla risposta (descrizione). I tag non supportati vengono ignorati.  
+È possibile usare contenuto HTML esistente o aggiungere tag HTML alla risposta (descrizione). I tag non supportati vengono ignorati.
+
 Sono supportati i tag HTML seguenti:
 
 - blockquote
@@ -58,42 +58,42 @@ Sono supportati i tag HTML seguenti:
 
 ## <a name="add-or-edit-qas-using-browser-extensions"></a>Aggiungere o modificare la&Q come utilizzo delle estensioni del browser
 
-Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Installare l'estensione del browser e quindi passare al sito da cui si desidera generare una Q&A. È quindi possibile creare il&A e includere un collegamento al sito di origine.
+Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Installare l'estensione del browser, quindi passare al sito da cui si desidera generare una Q&A. È quindi possibile creare il&A e includere un collegamento al sito di origine.
 
-Le estensioni dei browser sono attualmente disponibili per Microsoft Edge e Chrome.
+Attualmente, le estensioni del browser sono disponibili per Microsoft Edge e Chrome.
 
-- Per scaricare le estensioni dei server perimetrali, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
-- Per scaricare Chrome Extensions, passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e scaricare l'app.
+- Per scaricare le estensioni di Edge, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Per scaricare le estensioni di Chrome, passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## <a name="bulk-add-or-edit-qas"></a>Aggiungere o modificare in blocco le domande e risposte
 
-Gli amministratori possono usare le funzionalità di importazione o esportazione per creare o modificare in blocco le domande e risposte. È una funzionalità utile quando gli amministratori devono aggiungere o modificare un numero elevato di domande e risposte.
+Gli amministratori possono utilizzare le funzionalità di importazione ed esportazione per creare o modificare in blocco Q&As.
 
-Usare la funzionalità di importazione/esportazione per:
+Utilizzare la caratteristica di importazione/esportazione per:
 
-1. Aggiungere domande e risposte in blocco: aggiungere i dettagli nel file modello delle domande e risposte e quindi importarlo.
-1. Modificare domande e risposte in blocco: esportare le domande e risposte in un file CSV, quindi modificare i relativi dettagli nel file CSV esportato e infine importare il file CSV aggiornato.
-1. Eseguire il backup di domande e risposte: esportare le domande e risposte in un file CSV.
+- Aggiungere in blocco&come aggiungere i dettagli in Q&un file modello e quindi importarlo.
+- Modifica in blocco Q&As-Export Q&come in un file. csv, modificare la&di un dettaglio nel file esportato e quindi importare il file.
+- Eseguire il backup di Q&come-Export Q&come in un file. csv.
 
-Per importare o esportare domande e risposte:
+Per importare o esportare Q&come:
 
 1. In alto a destra della scheda Domande e risposte, selezionare **Importa**.
-Selezionare **Esporta** per scaricare tutte le domande e risposte esistenti in un file CSV.
-1. Nel riquadro destro, scegliere l'opzione per importare con un file CSV.
-Scaricare il file modello per un elenco di campi obbligatori e i dettagli.
-1. Aggiungere o modificare i dettagli delle domande e risposte nel file modello e salvarlo nel computer.
-1. Nel riquadro di **importazione domande e risposte**, selezionare **Sfoglia** e quindi il file CSV da importare.
+Selezionare **Esporta** per scaricare tutte le&Q esistenti come in un file. csv.
+1. Nel riquadro destro selezionare l'opzione da importare utilizzando un file. csv. Scaricare il file modello per ottenere un elenco di campi e dettagli necessari.
+1. Aggiungere o modificare Q&un dettaglio nel file modello e salvarlo nel computer.
+1. Nel riquadro **Importa Q&a** , selezionare **Sfoglia**e quindi selezionare il file. csv che si desidera importare.
 1. Selezionare **Importa**.
 
-Ecco alcuni punti importanti riguardanti il file modello:
+Suggerimenti importanti per i file del modello:
 
-- Non modificare i dati in questi campi: *Id*, *Data ultima modifica* e *Autore ultima modifica*
-- Se si include l'*Id* di un segnalibro esistente, verrà sostituito con le informazioni presenti nel file di importazione.
-- Se esiste un segnalibro con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni nel file di importazione.
-- Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
-- In base al campo Stato, i segnalibri saranno salvati come bozza, suggeriti o pianificati, oppure saranno pubblicati direttamente.
-- Per i partner che gestiscono più organizzazioni, è possibile esportare i segnalibri da un'organizzazione e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
+- Non modificare i dati in questi campi: **Id**, **Data ultima modifica** e **Autore ultima modifica**
+- Se si include l'**Id** di un segnalibro esistente, verrà sostituito con le informazioni presenti nel file di importazione.
+- Se è presente un segnalibro esistente con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni contenute nel file di importazione.
+- Non tutti i campi del file modello sono obbligatori e i campi richiesti variano a seconda dello stato del segnalibro.
+- In base al campo **dello stato** , i segnalibri vengono salvati come *bozza*, *suggerita*o *pianificata*oppure vengono pubblicati automaticamente.
+- Per i partner che gestiscono più organizzazioni: è possibile esportare i segnalibri da un'organizzazione e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna **Id** prima di importarli.
 
-**Nota:** non è possibile importare domande e risposte se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie.
+> [!NOTE]
+> Non è possibile importare la&Q come se si verificassero errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e includere tutte le informazioni necessarie.
 
-Per altre informazioni su come evitare errori, vedere [Evitare gli errori di importazione](manage-bookmarks.md#prevent-import-errors).
+Per ulteriori informazioni sull'evitare errori, vedere [prevenire gli errori di importazione](manage-bookmarks.md#prevent-import-errors).
