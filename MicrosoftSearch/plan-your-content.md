@@ -1,8 +1,8 @@
 ---
 title: Pianificare i contenuti
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Fornire contenuti di qualità senza la necessità di risorse aggiuntive quando si usa Microsoft Search
-ms.openlocfilehash: d51fb15199a4c1aedd4af0932ce9bb5683d8abc6
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626946"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535348"
 ---
 # <a name="plan-your-content"></a>Pianificare i contenuti
 
-**Microsoft Search** aiuta gli utenti a trovare contenuto pertinente. **Microsoft Search** è un modo sicuro per cercare contenuto intranet e Web. Questo tipo di integrazione tra Web e organizzazione è disponibile solo con Microsoft. 
+**Microsoft Search** aiuta gli utenti a trovare contenuto pertinente. **Microsoft Search** è un modo sicuro per cercare contenuto intranet e Web. Questo tipo di integrazione tra Web e organizzazione è disponibile solo con Microsoft.
 
-Gli amministratori della ricerca sfruttano la propria conoscenza dell'organizzazione e degli utenti per consentire a questi ultimi di trovare il contenuto pertinente. 
+Gli amministratori della ricerca sfruttano la propria conoscenza dell'organizzazione e degli utenti per consentire a questi ultimi di trovare il contenuto pertinente.
 
 ## <a name="step-1-identify-information-your-users-need"></a>Passaggio 1: Identificare le informazioni necessarie agli utenti
 
@@ -47,19 +47,19 @@ In un'organizzazione, gli utenti cercano una vasta gamma di argomenti, da quelli
 
 ### <a name="leverage-smes"></a>Sfruttare le competenze degli esperti
 
-È utile sfruttare le competenze degli esperti di vari settori dell'organizzazione, tra cui risorse umane, assistenza, vendite, tecnologia e altre aree chiave. Per consentire agli esperti di contribuire direttamente al contenuto, è possibile aggiungerli come editor di ricerca. 
+È utile sfruttare le competenze degli esperti di vari settori dell'organizzazione, tra cui risorse umane, assistenza, vendite, tecnologia e altre aree chiave. Per consentire agli esperti di contribuire direttamente al contenuto, è possibile aggiungerli come editor di ricerca.
 
 ### <a name="involve-your-users"></a>Coinvolgere i propri utenti
 
 Chiedere agli utenti di suggerire risorse a cui aggiungere un segnalibro. Oltre ai suggerimenti di contenuto, chiedere agli utenti di segnalare errori, come collegamenti non funzionanti o non validi.
 
-## <a name="step-3-improve-findability-of-content"></a>Passaggio 3: Migliorare la reperibilità del contenuto 
+## <a name="step-3-improve-findability-of-content"></a>Passaggio 3: Migliorare la reperibilità del contenuto
 
 In **Microsoft Search**, l'amministratore della ricerca crea segnalibri, domande e risposte, posizioni e PowerApp per migliorare la reperibilità del contenuto. Ognuno dei componenti della ricerca include un titolo, un URL e un set di parole chiave di attivazione.
 
 ### <a name="titles-and-descriptions"></a>Titoli e descrizioni
 
-Gli utenti usano titoli e descrizioni per determinare se il risultato soddisfa la query di ricerca o se devono cercare altro. I titoli e le descrizioni devono riflettere l’obiettivo principale del risultato. Un buon titolo potrebbe essere "Sussidi per l’assistenza all’infanzia" con la descrizione "Scopri i sussidi per coprire i costi dell’assistenza all’infanzia". Il contenuto sopra informa gli utenti che cercano "assistenza all’infanzia" che sono disponibili sussidi e fornisce loro un collegamento per avere maggiori informazioni. 
+Gli utenti usano titoli e descrizioni per determinare se il risultato soddisfa la query di ricerca o se devono cercare altro. I titoli e le descrizioni devono riflettere l’obiettivo principale del risultato. Un buon titolo potrebbe essere "Sussidi per l’assistenza all’infanzia" con la descrizione "Scopri i sussidi per coprire i costi dell’assistenza all’infanzia". Il contenuto sopra informa gli utenti che cercano "assistenza all’infanzia" che sono disponibili sussidi e fornisce loro un collegamento per avere maggiori informazioni.
 
 ### <a name="keywords"></a>Parole chiave
 
@@ -112,7 +112,7 @@ Gli utenti e gli esperti che hanno contribuito alla creazione del contenuto poss
 - Controllare eventuali modifiche di segnalibri, domande e risposte o nome del team.
 - Considerare se il segnalibro o le domande e risposte siano sufficientemente rilevanti o se necessitano di una descrizione più precisa.
 
-**Microsoft Search** fornisce le statistiche di utilizzo di segnalibri, domande e risposte e posizioni. Le statistiche di utilizzo mostrano come gli utenti interagiscono con i risultati della ricerca e se riescono a trovare ciò che stanno cercando oppure se ci sono lacune nel contenuto disponibile. Aiuta gli amministratori a monitorare le prestazioni e a intraprendere le azioni appropriate per ottimizzare i risultati della ricerca. 
+**Microsoft Search** fornisce le statistiche di utilizzo di segnalibri, domande e risposte e posizioni. Le statistiche di utilizzo mostrano come gli utenti interagiscono con i risultati della ricerca e se riescono a trovare ciò che stanno cercando oppure se ci sono lacune nel contenuto disponibile. Aiuta gli amministratori a monitorare le prestazioni e a intraprendere le azioni appropriate per ottimizzare i risultati della ricerca.
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>Ottenere informazioni dettagliate su segnalibri, domande e risposte e posizioni
 
@@ -126,9 +126,9 @@ I segnalibri, le domande e risposte e le posizioni suggeriti sono un buon indica
 
 ### <a name="review-top-search-queries"></a>Esaminare le query di ricerca principali
 
-Ottenere informazioni su quali ricerche hanno generato più impression negli ultimi 90 giorni. Per impression si intende il numero di volte in cui una pagina è stata visualizzata nei risultati della ricerca. La scheda **Query principali** mostra le ricerche dei 25 utenti principali per ogni tipo di risultato, insieme al numero totale di ricerche e alla percentuale di clic (click-through rate - CTR). Usare questo report per identificare il volume delle query di ricerca e per determinare le query con elevata o ridotta attività di ricerca. 
+Ottenere informazioni su quali ricerche hanno generato più impression negli ultimi 90 giorni. Per impression si intende il numero di volte in cui una pagina è stata visualizzata nei risultati della ricerca. La scheda **Query principali** mostra le ricerche dei 25 utenti principali per ogni tipo di risultato, insieme al numero totale di ricerche e alla percentuale di clic (click-through rate - CTR). Usare questo report per identificare il volume delle query di ricerca e per determinare le query con elevata o ridotta attività di ricerca.
 
-Un numero di ricerche basso potrebbe indicare l'insoddisfazione degli utenti, perché è possibile che non stiano cercando quel determinato contenuto oppure che usino parole chiave diverse per trovarlo. Il CTR mostra la frequenza con cui gli utenti selezionano i risultati alzati di livello e quanto sono utili le regole di query e i risultati per gli utenti. Un CTR basso indica che gli utenti trovano il contenuto, ma stabiliscono che non soddisfa i loro criteri di ricerca. In questi casi, gli amministratori possono decidere di esaminare il contenuto, verificare che corrisponda alla ricerca dell'utente e aggiornare titoli, descrizione e parole chiave per allinearli con le query di ricerca degli utenti. 
+Un numero di ricerche basso potrebbe indicare l'insoddisfazione degli utenti, perché è possibile che non stiano cercando quel determinato contenuto oppure che usino parole chiave diverse per trovarlo. Il CTR mostra la frequenza con cui gli utenti selezionano i risultati alzati di livello e quanto sono utili le regole di query e i risultati per gli utenti. Un CTR basso indica che gli utenti trovano il contenuto, ma stabiliscono che non soddisfa i loro criteri di ricerca. In questi casi, gli amministratori possono decidere di esaminare il contenuto, verificare che corrisponda alla ricerca dell'utente e aggiornare titoli, descrizione e parole chiave per allinearli con le query di ricerca degli utenti.
 
 ### <a name="analyze-impressions-by-result-type"></a>Analizzare le impression in base al tipo di risultato
 
