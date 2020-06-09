@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL Connector per Microsoft Search
+title: Microsoft SQL Server e Azure SQL Connector per Microsoft Search
 ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
@@ -11,30 +11,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare Microsoft SQL Connector per Microsoft Search.
-ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+description: Configurare Microsoft SQL Server o Azure SQL Connector per Microsoft Search.
+ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995051"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604402"
 ---
-# <a name="microsoft-sql-server-connector"></a>Connettore Microsoft SQL Server
+# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL Server e il connettore SQL di Azure
 
-Con un connettore di Microsoft SQL Server, l'organizzazione può individuare e indicizzare i dati da un database di SQL Server locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere l'indice aggiornato con i dati di origine, supporta le ricerche per indicizzazione periodiche complete e incrementali. Con il connettore SQL Server, è anche possibile limitare l'accesso ai risultati della ricerca per alcuni utenti.
+Con un connettore di Microsoft SQL Server o di Azure SQL, l'organizzazione può individuare e indicizzare i dati da un database di SQL Server locale o da un database ospitato nell'istanza SQL di Azure nel cloud. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere l'indice aggiornato con i dati di origine, supporta le ricerche per indicizzazione periodiche complete e incrementali. Con questi connettori SQL, è anche possibile limitare l'accesso ai risultati della ricerca per alcuni utenti.
 
 Questo articolo è per gli amministratori di Microsoft 365 o per tutti coloro che configurano, eseguono e monitorano un connettore di Microsoft SQL Server. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.
 
-## <a name="install-a-data-gateway"></a>Installare un gateway di dati
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installare un gateway di dati (necessario solo per il connettore di Microsoft SQL Server locale)
 Per accedere ai dati di terze parti, è necessario installare e configurare un gateway Microsoft Power BI. Per ulteriori informazioni, vedere [installare un gateway locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
 Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessario configurare il server di database che si desidera sottoporre a ricerca per indicizzazione e il gateway locale. È quindi possibile connettersi al database con il metodo di autenticazione necessario.
 
-> [!NOTE]
-> È necessario che il database esegua SQL Server versione 2008 o successiva.
+Per il connettore SQL di Azure, è necessario specificare solo il nome o l'indirizzo IP del server a cui si desidera effettuare la connessione. Il connettore SQL di Azure supporta solo l'autenticazione di Azure Active Directory Open ID Connect (OIDC) per la connessione al database.
 
-Per eseguire la ricerca nel contenuto del database, è necessario specificare le query SQL quando si configura il connettore. Queste query SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ad esempio le proprietà di origine, compresi i join SQL che è necessario eseguire per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare gli elenchi di controllo di accesso (ACL, Access Control List) con query SQL quando si configura il connettore di Microsoft SQL Server.
+> [!NOTE]
+> È necessario che il database esegua SQL Server versione 2008 o successiva per il connettore Microsoft SQL Server per potersi connettere.
+
+Per eseguire la ricerca nel contenuto del database, è necessario specificare le query SQL quando si configura il connettore. Queste query SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ad esempio le proprietà di origine, compresi i join SQL che è necessario eseguire per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare gli elenchi di controllo di accesso (ACL, Access Control List) all'interno delle query SQL quando si configura il connettore.
 
 ## <a name="full-crawl-required"></a>Ricerca per indicizzazione completa (obbligatorio)
 In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La **ricerca per**indicizzazione completa consente di selezionare tutte le colonne o le proprietà che si desidera rendere **Queryable**, **reperibili o recuperabili**. È inoltre possibile specificare le colonne ACL per limitare l'accesso ai risultati della ricerca a utenti o gruppi specifici.
@@ -63,10 +65,10 @@ Di seguito viene descritto l'utilizzo di tutte le colonne ACL nella query preced
 Per evitare sovraccarichi del database, il connettore esegue il batch e riprende le query di ricerca per indicizzazione complete con una colonna di filigrana full-crawl. Se si utilizza il valore della colonna filigrana, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. In sostanza si tratta di un meccanismo per controllare l'aggiornamento dei dati per le ricerche per indicizzazione complete.
 
 Creare frammenti di query per le filigrane come illustrato negli esempi seguenti:
-* `WHERE (CreatedDateTime > @watermark)`. Citare il nome della colonna della filigrana `@watermark`con la parola chiave riservata. Se l'ordinamento della colonna della filigrana è crescente, utilizzare `>`; in caso contrario `<`, utilizzare.
+* `WHERE (CreatedDateTime > @watermark)`. Citare il nome della colonna della filigrana con la parola chiave riservata `@watermark` . Se l'ordinamento della colonna della filigrana è crescente, utilizzare `>` ; in caso contrario, utilizzare `<` .
 * `ORDER BY CreatedDateTime ASC`. Ordinare la colonna della filigrana in ordine crescente o decrescente.
 
-Nella configurazione illustrata nella figura seguente, `CreatedDateTime` è la colonna della filigrana selezionata. Per recuperare il primo batch di righe, specificare il tipo di dati della colonna filigrana. In questo caso, il tipo di dati `DateTime`è.
+Nella configurazione illustrata nella figura seguente, `CreatedDateTime` è la colonna della filigrana selezionata. Per recuperare il primo batch di righe, specificare il tipo di dati della colonna filigrana. In questo caso, il tipo di dati è `DateTime` .
 
 ![](media/MSSQL-watermark.png)
 
@@ -90,7 +92,7 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 ![](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>Ricerca per indicizzazione incrementale (facoltativa)
-In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore Microsoft SQL Server apporta le modifiche apportate ai dati dall'ultima ricerca per indicizzazione incrementale. Come **nella ricerca per**indicizzazione completa, selezionare tutte le colonne che si desidera rendere **Queryable**, reperibili o **recuperabili**. Specificare lo stesso insieme di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina le modifiche apportate ai dati dall'ultima ricerca per indicizzazione incrementale. Come **nella ricerca per**indicizzazione completa, selezionare tutte le colonne che si desidera rendere **Queryable**, reperibili o **recuperabili**. Specificare lo stesso insieme di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completi con una sola eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi per la ricerca per indicizzazione completa](#full-crawl-required) per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere come esempio l'immagine seguente.
 
@@ -100,7 +102,7 @@ I componenti nell'immagine seguente sono simili ai componenti di ricerca per ind
 È possibile scegliere di utilizzare gli [ACL specificati nella schermata di ricerca per indicizzazione completa](#full-crawl-manage-search-permissions) oppure è possibile sovrascriverli per rendere il contenuto visibile a tutti.
 
 ## <a name="limitations"></a>Limitazioni
-Il connettore di Microsoft SQL Server presenta queste limitazioni nella versione di anteprima:
-* È necessario che il database locale esegua SQL Server versione 2008 o successiva.
+I connettori SQL presentano queste limitazioni nella versione di anteprima:
+* Connettore Microsoft SQL Server: il database locale deve eseguire SQL Server versione 2008 o successiva.
 * Gli elenchi ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory. 
 * L'indicizzazione del contenuto RTF all'interno delle colonne di database non è supportata. Esempi di contenuto di questo tipo sono HTML, JSON, XML, BLOB e analisi dei documenti che esistono come collegamenti all'interno delle colonne di database.

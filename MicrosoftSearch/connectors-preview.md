@@ -12,30 +12,47 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sull'anteprima dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 52bf174875bf3e262c0cb71d53ec209e481ee0b7
-ms.sourcegitcommit: 1e8dc8e10722ed26ba85cbb5e8c9df62f3625de6
+ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41578688"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604384"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Anteprima connettori Microsoft Graph
 
-I connettori Microsoft Graph e le API di Microsoft Search (query e indice) sono attualmente in stato di anteprima. Per accedere alla funzionalità dei connettori, è necessario richiedere di partecipare al programma di anteprima inviando il <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">modulo di iscrizione all'anteprima dei connettori Microsoft Graph</a>. Si tratta di un'anteprima iniziale e non vi è alcuna garanzia a livello di servizio. Si consiglia ai clienti di provare la funzionalità dei connettori e fornire commenti e suggerimenti. Non è consigliabile utilizzare i connettori per scopi di produzione durante il periodo di anteprima.
+I connettori Microsoft Graph e le API di Microsoft Search (query e indice) sono attualmente in stato di anteprima. Per accedere alla funzionalità dei connettori, è necessario abilitare l'opzione di rilascio di destinazione nel tenant. Si tratta di un'anteprima iniziale e non vi è alcuna garanzia a livello di servizio. Si consiglia ai clienti di provare la funzionalità dei connettori e fornire commenti e suggerimenti. Non è consigliabile utilizzare i connettori per scopi di produzione durante il periodo di anteprima.
 
 ## <a name="set-up-targeted-release"></a>Configurare la versione di destinazione
-Per provare i connettori, è necessario che l'opzione di **rilascio di destinazione** sia impostata per tutti gli utenti dell'organizzazione. Il requisito di rilascio mirato si applica indipendentemente dalla scelta degli ambienti di anteprima seguenti.
-Per ulteriori informazioni sull'opzione di rilascio mirato e su come impostarla, vedere <a href="https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide" target="_blank">configurare le opzioni di rilascio standard o di destinazione in Office 365</a>.
 
-## <a name="choose-a-preview-environment"></a>Scegliere un ambiente di anteprima 
+Per provare i connettori, è necessario che l'opzione di **rilascio di destinazione** sia impostata per tutti gli utenti dell'organizzazione. Per ulteriori informazioni sull'opzione di rilascio mirato e su come impostarla, vedere [configurare le opzioni di rilascio standard o di destinazione in Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+
+## <a name="choose-a-preview-environment"></a>Scegliere un ambiente di anteprima
+
 Per provare connettori, API di indicizzazione e API di ricerca, è consigliabile utilizzare i due metodi seguenti:
+
 1. **Tenant di testing**.  Si consiglia di utilizzare un tenant di test per provare l'anteprima dei connettori di Microsoft Graph.
+
 2. **Raccolta siti di test**. Se non si dispone di un tenant di prova, è possibile creare una raccolta siti di prova per provare la funzionalità di connettori. Per visualizzare i risultati dei connettori senza influire sulle pagine di ricerca in nessun'altra parte dell'organizzazione, personalizzare l'esperienza di ricerca solo per la raccolta siti.
 
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
-La versione di anteprima presenta le limitazioni seguenti: 
+
+La versione di anteprima presenta le limitazioni seguenti:
+
 * La velocità effettiva di ingestione viene limitata a circa quattro elementi al secondo.
+
 * Non è disponibile alcun supporto per gli aggiornamenti dello schema. Dopo aver creato una configurazione di connessione, non è possibile aggiornare lo schema. È possibile eliminare e ricreare la connessione solo.
+
 * Il contenuto indicizzato viene visualizzato solo nella pagina dei risultati di ricerca in un verticale personalizzato. Questa restrizione si applica al contenuto con tipi personalizzati.
-* Prima della disponibilità generale, potrebbe essere necessario eliminare e ricreare qualsiasi connessione configurata durante il periodo di anteprima. Tali connessioni non funzioneranno più se non sono compatibili con le modifiche apportate per migliorare il prodotto.
+
+* Potrebbe essere necessario eliminare e ricreare qualsiasi connessione configurata durante il periodo di anteprima. Tali connessioni non funzioneranno più se non sono compatibili con le modifiche apportate per migliorare il prodotto.
+
 * Esiste un limite per le connessioni. Ogni tenant è in grado di creare fino a 10 connessioni.
+
+* Dimensione del repository di origine. Si consiglia di visualizzare in anteprima i connettori con un repository di origine di circa 200.000 elementi, in quanto questo è il limite della scala di ricerca testato. Stiamo lavorando per migliorare le prestazioni della ricerca e si prevede di supportare le dimensioni dei repository più grandi nel prossimo futuro.
+
+* La modifica del supporto per la connessione non è disponibile. Dopo aver creato la connessione, non è possibile modificarla o modificarla. Se è necessario modificare i dettagli, è necessario eliminare e ricreare la connessione.
+
+* È possibile cercare il contenuto del connettore solo su verticale personalizzato.
+
+* Il contenuto del connettore da una sola connessione può essere visualizzato in ogni verticale personalizzato e richiede la creazione del tipo di risultato.
