@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535310"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702759"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ In questo articolo vengono illustrati i passaggi per la configurazione di un con
 
 ## <a name="set-up"></a>Configurazione
 
-Per configurare i connettori Microsoft-built, accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com):
+Completare la procedura seguente per configurare uno qualsiasi dei connettori Microsoft-built.
 
-1. Accedere al proprio account con le credenziali per il tenant di testing di [Microsoft 365](https://www.microsoft.com/microsoft-365) .
-2. Passare a **Impostazioni**  >  connettori di**ricerca di Microsoft**  >  **Connectors**.
+1. Passare alla [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
+2. Accedere al proprio account con le credenziali per il tenant [Microsoft 365](https://www.microsoft.com/microsoft-365) .
 3. Selezionare **Aggiungi un connettore**.
 4. Nell'elenco dei connettori disponibili, selezionare il connettore desiderato.
 
@@ -67,7 +67,7 @@ Gli amministratori possono impostare gli attributi dello schema di ricerca per c
 
 Gli attributi dello schema di ricerca includono **ricercabili**, **Queryable**e **recuperabili**. Nella tabella seguente sono elencati tutti gli attributi supportati da Microsoft Graph e vengono illustrate le loro funzioni.
 
-**Attributo dello schema di ricerca** | **Funzione** | **Esempio**
+Attributo dello schema di ricerca | Funzione | Esempio
 --- | --- | ---
 RICERCHE | Consente di eseguire ricerche nel contenuto del testo di una proprietà. Il contenuto della proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituirà le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
 QUERY | Esegue una ricerca in base alla query per una corrispondenza per una proprietà specifica. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o Verbatim. |  Se la proprietà **title** è Queryable, il titolo della query **: Enterprise** è supportato.
