@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft SQL Server o Azure SQL Connector per Microsoft Search.
-ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604402"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850899"
 ---
-# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL Server e il connettore SQL di Azure
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connettori di Azure SQL e Microsoft SQL Server
 
 Con un connettore di Microsoft SQL Server o di Azure SQL, l'organizzazione può individuare e indicizzare i dati da un database di SQL Server locale o da un database ospitato nell'istanza SQL di Azure nel cloud. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere l'indice aggiornato con i dati di origine, supporta le ricerche per indicizzazione periodiche complete e incrementali. Con questi connettori SQL, è anche possibile limitare l'accesso ai risultati della ricerca per alcuni utenti.
 
@@ -31,7 +31,7 @@ Per accedere ai dati di terze parti, è necessario installare e configurare un g
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
 Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessario configurare il server di database che si desidera sottoporre a ricerca per indicizzazione e il gateway locale. È quindi possibile connettersi al database con il metodo di autenticazione necessario.
 
-Per il connettore SQL di Azure, è necessario specificare solo il nome o l'indirizzo IP del server a cui si desidera effettuare la connessione. Il connettore SQL di Azure supporta solo l'autenticazione di Azure Active Directory Open ID Connect (OIDC) per la connessione al database.
+Per il connettore SQL di Azure, è sufficiente specificare il nome o l'indirizzo IP del server a cui si desidera effettuare la connessione. Il connettore SQL di Azure supporta solo l'autenticazione di Azure Active Directory Open ID Connect (OIDC) per la connessione al database.
 
 > [!NOTE]
 > È necessario che il database esegua SQL Server versione 2008 o successiva per il connettore Microsoft SQL Server per potersi connettere.

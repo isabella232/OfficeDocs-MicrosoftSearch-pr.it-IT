@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di condivisione file per Microsoft Search.
-ms.openlocfilehash: ece8997138182c1cd4ac7230aa2a3501af912933
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 2349ad753508d5f19a70648d9cbf1df495b27108
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699781"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861095"
 ---
-# <a name="the-file-share-connector-for-microsoft-search"></a>Connettore di condivisione file per Microsoft Search
+# <a name="file-share-connector"></a>Connettore condivisione file
 
 Con il connettore di condivisione file, gli utenti dell'organizzazione possono eseguire ricerche in condivisioni di file locali. I risultati della ricerca provenienti da queste condivisioni si fondono con i risultati di [SharePoint](http://sharepoint.com/) e [Microsoft OneDrive for business](https://onedrive.live.com/about/business/).
 
@@ -50,7 +50,7 @@ Per impostare la pagina dei risultati di ricerca, eseguire la procedura seguente
 
 2. Installare una [Shell di gestione di SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588).
 
-3. Aprire SharePoint Online Management Shell come amministratore e importare il modulo **Microsoft. SharePoint. client. dll** presente in `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`.
+3. Aprire SharePoint Online Management Shell come amministratore e importare il modulo di **Microsoft.SharePoint.Client.dll** presente in `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll` .
 
 > [!NOTE]
 > Questo percorso potrebbe non essere lo stesso per tutti gli utenti.
@@ -89,7 +89,7 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. Immettere i valori richiesti in [Microsoft PowerShell](https://microsoft.com/powershell), ad esempio il nome dell'organizzazione, l'utente, la password e l'URL del sito. **Ad esempio**, se le credenziali di amministratore sono `admin@a830edad9050849823J19081300.onmicrosoft.com`, il nome dell'organizzazione è **a830edad9050849823J19081300**e l'URL del sito è `https:// a830edad9050849823J19081300.sharepoint.com`.
+5. Immettere i valori richiesti in [Microsoft PowerShell](https://microsoft.com/powershell), ad esempio il nome dell'organizzazione, l'utente, la password e l'URL del sito. **Ad esempio**, se le credenziali di amministratore sono `admin@a830edad9050849823J19081300.onmicrosoft.com` , il nome dell'organizzazione è **a830edad9050849823J19081300**e l'URL del sito è `https:// a830edad9050849823J19081300.sharepoint.com` .
 
 > [!NOTE]
 > L'impostazione **allProperties** può essere completata solo a livello di raccolta siti (teams/Comms).

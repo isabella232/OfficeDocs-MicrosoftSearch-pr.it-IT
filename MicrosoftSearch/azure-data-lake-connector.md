@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Gen2 di Azure Data Lake storage per Microsoft Search
-ms.openlocfilehash: 392960a5f7e6c93442ac7e1f60245217e194b42b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: f8cb94e806e619d6dae7258b6c2d708d93afb9a8
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626472"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861077"
 ---
-# <a name="azure-data-lake-storage-gen2-connector-for-microsoft-search"></a>Connettore Gen2 di archiviazione di Azure Data Lake per Microsoft Search
+# <a name="azure-data-lake-storage-gen2-connector"></a>Connettore Gen2 di archiviazione di Azure Data Lake
 
 Con il connettore [Gen2 di Azure Data Lake storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) , gli utenti dell'organizzazione possono cercare file e il relativo contenuto. Questo connettore accede ai dati archiviati nei contenitori BLOB di Azure e nelle cartelle abilitate alla gerarchia all'interno di un account di Azure Data Lake storage gen 2.
 
