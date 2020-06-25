@@ -18,9 +18,10 @@
 ## Connettori creati da Microsoft
 ### [Configurazione dei connettori](configure-connector.md)
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+### [Azure DevOps](azure-devops-connector.md)
+### [SQL di Azure e Microsoft SQL Server](MSSQL-connector.md)
 ### [Siti Web aziendali](enterprise-web-connector.md)
 ### [Condivisione file](file-share-connector.md)
-### [Azure SQL e SQL Server](MSSQL-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [Feedback](connectors-feedback.md)
