@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Trovare e aggiornare le risposte singolarmente o utilizzare gli strumenti di ricerca di Microsoft disponibili per modificare&come tutti insieme.
-ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
+ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470273"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44878234"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
@@ -62,8 +62,8 @@ Gli amministratori della ricerca possono creare facilmente contenuti di ricerca 
 
 Attualmente, le estensioni del browser sono disponibili per Microsoft Edge e Chrome.
 
-- Per scaricare le estensioni di Edge, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
-- Per scaricare le estensioni di Chrome, passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
+- Per scaricare le estensioni per Edge (legacy), andare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Per scaricare le estensioni Chrome o Edge (cromo), passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## <a name="bulk-add-or-edit-qas"></a>Aggiungere o modificare in blocco le domande e risposte
 
