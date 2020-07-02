@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati di ricerca
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470282"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996059"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati di ricerca
 
@@ -59,7 +59,7 @@ Dopo aver avviato la procedura guidata, è possibile eseguire le operazioni segu
 
 Per creare la verticale in Microsoft Search in [SharePoint](https://sharepoint.com/) Home, [Office](https://office.com)o [Bing](https://bing.com), eseguire la procedura seguente:
 
-1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, passare a **Impostazioni**   > verticali di ricerca di **Microsoft**   >  **Verticals**.
+1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, passare a **Impostazioni**   >  **Microsoft Search**   >  **Customization**  >  [**verticali**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)di personalizzazione della ricerca di Microsoft.
 1. Selezionare **Aggiungi** per iniziare.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Creare un verticale a livello di sito
@@ -77,7 +77,7 @@ Tenere presente che i verticali vengono creati in uno stato disabilitato. Devono
 
 È possibile definire la modalità di visualizzazione dei risultati in verticale progettando il layout utilizzando i tipi di risultati. Il layout dei risultati consente di visualizzare informazioni importanti direttamente nei risultati di ricerca, in modo che gli utenti non debbano selezionare ogni risultato per vedere se hanno trovato ciò che stanno cercando.
 
-Un tipo di risultati di ricerca è una regola che determina la visualizzazione di tipi di risultati di ricerca diversi in modi differenti. È costituito dai seguenti elementi:
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **Una o più condizioni** per confrontare ogni risultato di ricerca, ad esempio l'origine di contenuto del risultato della ricerca.  
 - Un **layout** di risultati da utilizzare per i risultati di ricerca che soddisfano le condizioni. Il layout dei risultati controlla il modo in cui tutti i risultati che soddisfano le condizioni vengono visualizzati e si comportano in una pagina dei risultati di ricerca.
@@ -88,7 +88,7 @@ Dopo aver avviato la procedura guidata, è possibile eseguire la procedura per d
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Creare un tipo di risultato a livello di organizzazione
 
-1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **impostare**  >  **Microsoft Search**, quindi selezionare **tipo di risultati**.
+1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), passare a **impostazione**dei  >  tipi di risultati delle personalizzazioni di**Microsoft Search**  >  **Customizations**  >  [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 1. Per aggiungere un **tipo di risultati**, selezionare **Aggiungi**. Per modificare un tipo di risultati, selezionare il tipo di risultato nell'elenco pertinente.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Creare un tipo di risultati a livello di sito
@@ -107,7 +107,7 @@ Dopo aver abilitato la verticale, potrebbe essere necessario un po' di tempo pri
 
 Di seguito è visualizzato un elenco di problemi comuni che potrebbero verificarsi e le azioni da risolvere.
 
-|Errore  |Azione   |
+|Error  |Azione  |
 |---------|---------|
 | Viene visualizzato un messaggio di errore "qualcosa è andato storto" sul verticale. | Per completare l'installazione, sono necessari sia i tipi verticale che quelli dei risultati. Assicurarsi di aver creato entrambi per la stessa origine di contenuto. |
 | Non viene visualizzato il layout dei risultati, anche se ne è stato creato uno. | Sono necessari alcuni minuti perché queste impostazioni vengono in genere memorizzate nella cache. Attendere qualche minuto e riprovare.        |

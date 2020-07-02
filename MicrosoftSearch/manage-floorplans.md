@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La caratteristica planimetria di Microsoft Search aiuta gli utenti a trovare persone, uffici e altre amenità all'interno di un edificio.
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878243"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996113"
 ---
 # <a name="manage-floor-plans"></a>Gestire i piani di piano
 
@@ -67,7 +67,7 @@ Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizi
 
 ### <a name="step-5-add-building-locations"></a>Passaggio 5: aggiungere percorsi di compilazione
 
-Planimetrie utilizza le [posizioni](manage-locations.md) per definire gli edifici. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, andare a **Settings**  >  **Microsoft Search**  >  **locations**, quindi selezionare **Aggiungi**. Immettere il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessari.
+Planimetrie utilizza le [posizioni](manage-locations.md) per definire gli edifici. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, andare a **Settings**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), quindi selezionare **Add**. Immettere il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessari.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Per ulteriori informazioni sulle posizioni, vedere [Manage locations](manage-loc
 
 Prima di poter utilizzare planimetrie, le posizioni di Office devono essere indicizzate. Si tratta di un'operazione di una tantum che può richiedere fino a 48 ore per il completamento. Il tempo totale dipenderà dalle dimensioni dell'organizzazione.
 
-In interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **Impostazioni**  >  piano di**ricerca di Microsoft Search**  >  **Floor plans**, quindi selezionare **inizia**. Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
+In interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **Impostazioni**  >  **Microsoft Search**risponde alle planimetrie  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)e quindi selezionare **inizia**. Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Passaggio 7: caricare planimetrie
 
-1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), passare a **Impostazioni**  >  piano di**ricerca di Microsoft Search**  >  **Floor plans**, quindi selezionare **Aggiungi**.
+1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **Settings**  >  **Microsoft Search**  >  **risponde**  >  [**alle**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)planimetrie.
 2. Selezionare un edificio nell'elenco a discesa e quindi fare clic su **Avanti**. Se l'edificio non è elencato, tornare indietro e [aggiungere le posizioni degli edifici](#step-5-add-building-locations).
 3. Selezionare **Carica file**e quindi scegliere la planimetria da caricare.
 4. Al termine del caricamento, è necessario immettere il numero di piano rappresentato nel file planimetria. Quindi, scegliere **Avanti**.
@@ -142,7 +142,7 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 
 **A:** Creare un file DWG in Microsoft Visio, Autodesk AutoCAD o qualsiasi altro editor DWG. Verificare che 10 o più sale siano etichettate nel file.
 
-**D:** * * qual è il formato migliore per le etichette di testo nei file DWG?
+**D:** Qual è il formato migliore per le etichette di testo nei file DWG?
 
 **A:** Per ottenere risultati ottimali, le etichette di testo devono contenere numeri di piano e numeri di stanza. Negli esempi riportati di seguito viene utilizzato 2 o SC per il codice di costruzione.
 <!-- markdownlint-disable no-inline-html -->

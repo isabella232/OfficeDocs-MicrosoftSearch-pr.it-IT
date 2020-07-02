@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 292a04714f4baa115473df86bfbeb2f3c8860114
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721751"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996104"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -29,8 +29,7 @@ Se nell'organizzazione sono stati promossi i risultati configurati in SharePoint
 ## <a name="add-or-edit-a-single-bookmark"></a>Aggiungere o modificare un singolo segnalibro
 
 1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.
-Per impostazione predefinita, è già selezionata la scheda **Segnalibri**.
+1. Nel riquadro di spostamento, andare a **Impostazioni**di  >  **Microsoft Search**  >  **Answers**  >  [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Per aggiungere un segnalibro, selezionare **Aggiungi nuovo**.
 Per modificare un segnalibro, selezionarlo nell'elenco di segnalibri pertinente.
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
@@ -106,8 +105,8 @@ Power Apps è un servizio che consente di creare app aziendali che vengono esegu
 ### <a name="add-a-power-app-to-a-bookmark"></a>Aggiungere un'app Power a un segnalibro
 
 1. Individuare l' [ID app per l'applicazione di alimentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) che si desidera aggiungere.
-1. Accedere e passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento passare a **Impostazioni** e quindi selezionare **Microsoft Search**.
+1. Accedere all'interfaccia di [**amministrazione di Microsoft 365**](https://admin.microsoft.com).
+1. Nel riquadro di spostamento, andare a **Impostazioni**di  >  **Microsoft Search**  >  **Answers**  >  [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Aggiungere un segnalibro o trovare un segnalibro esistente a cui si vuole aggiungere una **PowerApp**.
 1. In **Impostazioni Segnalibro**, selezionare **PowerApp** e quindi **Aggiungi una PowerApp**.
 1. Immettere o incollare l'**ID dell’app**.

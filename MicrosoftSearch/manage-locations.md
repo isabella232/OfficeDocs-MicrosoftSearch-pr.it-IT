@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
-ms.openlocfilehash: bb229086f7dd8c1b8d17a0b8335bb618850106be
-ms.sourcegitcommit: 063fec4a336b6b3118d4769a4bd0cc2d568ea7e2
+ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42276989"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996068"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
@@ -29,8 +29,7 @@ Posizione consente agli utenti di trovare indirizzi e individuare gli edifici de
 ### <a name="add-or-edit-a-single-location"></a>Aggiungere o modificare una singola posizione
 
 1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento passare a **Impostazioni** e selezionare **Microsoft Search**.
-1. Selezionare la scheda **Posizioni**. Per impostazione predefinita, la scheda **Segnalibri** è selezionata nella pagina **Microsoft Search**.
+1. Nel riquadro di spostamento, andare a **Impostazioni**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. Per aggiungere una nuova posizione, fare clic su **Aggiungi nuovo**.
 1. Per modificare una posizione, selezionarla nell'elenco di posizioni pertinenti.
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
@@ -65,6 +64,7 @@ Ecco alcuni punti importanti riguardanti il file modello:
 - In base al campo *dello stato* , i percorsi verranno salvati come bozza, suggeriti, pianificati o verranno pubblicati automaticamente.
 - Per i partner che gestiscono più organizzazioni, è possibile esportare i percorsi da un org e importarli in un altro. È tuttavia necessario rimuovere i dati dalla colonna *Id* prima di importarli.
 
-**Nota:** non è possibile importare posizioni se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie.
+> [!NOTE]
+> Non è possibile importare percorsi se sono presenti errori nel file modello. Per evitare errori, verificare che il file di importazione sia formattato correttamente e che includa tutte le informazioni necessarie.
 
 Per altre informazioni su come evitare errori, vedere [Evitare gli errori di importazione](manage-bookmarks.md#prevent-import-errors).
