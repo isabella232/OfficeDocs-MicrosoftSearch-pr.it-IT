@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: c4b799a3127a4a302e3f07953a59ea0319a09052
-ms.sourcegitcommit: c186be143164f21a3fecdb3037acd90a26c0fcf3
+ms.openlocfilehash: fcda5db9b294e3d70bb27879f1bb0efb43ad6936
+ms.sourcegitcommit: 0b5e3764822f64532c8a8e14b8e56e35141a558d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374336"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127642"
 ---
 # <a name="enterprise-websites-connector"></a>Connettore siti Web Enterprise
 
@@ -26,13 +26,24 @@ Con il connettore siti Web Enterprise, l'organizzazione può indicizzare articol
 Questo articolo è per gli amministratori di [Microsoft 365](https://www.microsoft.com/microsoft-365) o per tutti coloro che configurano, eseguono e monitorano un connettore di siti Web dell'organizzazione. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.  
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati 
-Per connettersi all'origine dati, è necessario l'URL radice e l'autenticazione di base.
-
-### <a name="root-url"></a>URL radice
-L'URL radice è ciò che consente di avviare la ricerca per indicizzazione e viene utilizzato per l'autenticazione. È possibile ottenere l'URL dalla Home page del sito Web che si desidera sottoporre a ricerca per indicizzazione.
+Per connettersi all'origine dati, è necessario l'URL radice e una forma di autenticazione: None, autenticazione di base o OAuth 2,0 con [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/).
 
 ### <a name="authentication"></a>Autenticazione 
 L'autenticazione di base richiede un nome utente e una password. Creare questo account bot utilizzando l'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365.
+
+OAuth 2,0 con [Azure ad](https://docs.microsoft.com/azure/active-directory/) richiede un ID risorsa, un ID client e un segreto client.
+
+Per ulteriori informazioni, vedere [autorizzare l'accesso alle applicazioni Web di Azure Active Directory tramite OAuth 2,0 Code Grant Flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Registrarsi con i valori seguenti:
+
+**Nome:** Microsoft Search <br/>
+**Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
+
+Per ottenere i valori per la risorsa, client_id e client_secret, andare a **utilizzare il codice di autorizzazione per richiedere un token di accesso** nella pagina Web URL di reindirizzamento.
+
+Per ulteriori informazioni, vedere [Guida introduttiva: registrare un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+
+### <a name="root-url"></a>URL radice
+L'URL radice è ciò che consente di avviare la ricerca per indicizzazione e viene utilizzato per l'autenticazione. È possibile ottenere l'URL dalla Home page del sito Web che si desidera sottoporre a ricerca per indicizzazione.
 
 ## <a name="select-the-source-properties"></a>Selezionare le proprietà di origine 
 Le proprietà di origine sono definite in base al formato dei dati del sito Web dell'organizzazione. Tuttavia, è possibile creare un **elenco di esclusione** che escluda che alcuni URL vengano sottoposti a ricerca per indicizzazione se tale contenuto è sensibile o meno. Per creare un elenco di esclusione, passare all'URL radice. È possibile aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
@@ -41,15 +52,15 @@ Le proprietà di origine sono definite in base al formato dei dati del sito Web 
 Non è disponibile alcun supporto per gli elenchi di controllo di accesso (ACL). Pertanto, si consiglia di connettere solo i siti Web che sono visibili a qualsiasi utente all'interno dell'organizzazione.
 
 ## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
-Il connettore dei siti Web dell'organizzazione supporta solo una ricerca per indicizzazione completa. Questo significa che il connettore legge tutto il contenuto del sito Web durante ogni ricerca per indicizzazione. Per assicurarsi che il connettore abbia un tempo sufficiente per leggere il contenuto, è consigliabile impostare un intervallo di pianificazione di aggiornamento di grandi dimensioni. È consigliabile eseguire un aggiornamento pianificato tra tre giorni e due settimane. 
+Il connettore dei siti Web dell'organizzazione supporta solo una ricerca per indicizzazione completa. Questo significa che il connettore legge tutto il contenuto del sito Web durante ogni ricerca per indicizzazione. Per assicurarsi che il connettore abbia un tempo sufficiente per leggere il contenuto, è consigliabile impostare un intervallo di pianificazione di aggiornamento di grandi dimensioni. È consigliabile eseguire un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione potrebbe incontrare alcuni errori di origine che sono rappresentati dai codici di errore dettagliati riportati di seguito. Per ottenere ulteriori informazioni sui tipi di errori, passare alla pagina dei **Dettagli dell'errore** dopo aver selezionato la connessione. Fare clic sul **codice di errore** per visualizzare gli errori più dettagliati. Fare riferimento anche a [gestione del connettore](https://docs.microsoft.com/microsoftsearch/manage-connector) per ulteriori informazioni.
 
- **Codice di errore dettagliato** | **Messaggio di errore**
+ Codice di errore dettagliato | Messaggio di errore
  --- | --- 
  6001   | Il sito che si sta tentando di indicizzare non è raggiungibile 
- 6005 | La pagina di origine che si sta tentando di indicizzare è stata bloccata dalla configurazione di robots. txt.
+ 6005 | La pagina di origine che si sta tentando di indicizzare è stata bloccata secondo robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul client (ad eccezione di HTTP 404, 408), vedere i codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Non è stato possibile trovare la pagina di origine che si sta tentando di indicizzare. (Errore HTTP 404)
