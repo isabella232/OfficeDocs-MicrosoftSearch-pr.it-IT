@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
+ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996104"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167458"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
-È possibile creare un segnalibro in pochi passaggi. Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione. Un segnalibro può contenere diverse parole chiave e più segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa. Quando si crea o modifica un segnalibro, l'indice di ricerca viene immediatamente aggiornato e il segnalibro è reso subito disponibile agli utenti.
+È possibile creare un segnalibro in pochi passaggi. Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione. È inoltre possibile aggiungere categorie a un segnalibro che può essere utilizzato per l'ordinamento e il filtro nel portale di amministrazione. Un segnalibro può contenere diverse parole chiave e più segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa. Quando si crea o modifica un segnalibro, l'indice di ricerca viene immediatamente aggiornato e il segnalibro è reso subito disponibile agli utenti.
 
 Se nell'organizzazione sono stati promossi i risultati configurati in SharePoint, è possibile importare i risultati promossi in **Microsoft Search** e rendere il contenuto importato disponibile per gli utenti. Si tratta di un modo semplice per inserire rapidamente i risultati della ricerca quando si configura **Microsoft Search** e renderlo più efficiente per gli utenti. È consigliabile usare i risultati alzati di livello di SharePoint come riferimento per determinare come assegnare un nome e creare i risultati della ricerca rilevanti.
 
