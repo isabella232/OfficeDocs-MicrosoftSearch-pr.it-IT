@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati di ricerca
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996059"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387986"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati di ricerca
 
@@ -41,7 +41,7 @@ Nella parte superiore della pagina dei risultati di ricerca Microsoft è present
 
 Prima di iniziare, verificare che il connettore sia stato indicizzato. Questo può richiedere fino a 48 ore, a seconda delle dimensioni del file.
 
-Non è possibile creare un verticale per il contenuto che risiede in [SharePoint](https://sharepoint.com/) o da contenuto indicizzato dal [connettore di condivisione file](file-share-connector.md). Informazioni su come [indicizzare il contenuto](configure-connector.md).
+Non è possibile creare un verticale per il contenuto che risiede in [SharePoint](https://sharepoint.com/).
 
 Sono disponibili tre passaggi di base per aggiungere una verticale:
 

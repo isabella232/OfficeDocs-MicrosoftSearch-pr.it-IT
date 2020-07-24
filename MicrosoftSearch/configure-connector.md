@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850890"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387973"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,10 +26,9 @@ ms.locfileid: "44850890"
 In questo articolo vengono illustrati i passaggi per la configurazione di un connettore basato su Microsoft. Descrive il flusso di configurazione di una connessione nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365. Per ulteriori informazioni su come configurare connettori basati su Microsoft specifici, vedere gli articoli seguenti:
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [DevOps di Azure](azure-devops-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
 * [SQL di Azure](MSSQL-connector.md)
 * [Siti Web aziendali](enterprise-web-connector.md)
-* [Condivisione file](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ Completare la procedura seguente per configurare uno qualsiasi dei connettori Mi
 3. Selezionare **Aggiungi un connettore**.
 4. Nell'elenco dei connettori disponibili, selezionare il connettore desiderato.
 
-![Le origini dati disponibili includono: ADL Gen2 Connector, Enterprise websites, ServiceNow, file share, Microsoft SQL Server e MediaWiki.](media/addconnector_final.png)
+![Le origini dati disponibili includono: Azure DevOps Connector, ServiceNow, ADL Gen2, Enterprise websites, MediaWiki, Microsoft SQL Server e Azure SQL.](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>Assegnare un nome al connettore
 
@@ -75,7 +74,7 @@ RICERCHE | Consente di eseguire ricerche nel contenuto del testo di una propriet
 QUERY | Esegue una ricerca in base alla query per una corrispondenza per una proprietà specifica. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o Verbatim. |  Se la proprietà **title** è Queryable, il titolo della query **: Enterprise** è supportato.
 RECUPERATE | È possibile utilizzare solo le proprietà recuperabili nel tipo di risultati e visualizzarle nei risultati della ricerca. |
 
-Per tutti i connettori, ad eccezione del connettore di condivisione file, è necessario impostare manualmente i tipi personalizzati. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La procedura guidata consente di selezionare automaticamente uno schema di ricerca basato sul set di proprietà di origine che si desidera scegliere. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina schema di ricerca.
+Per tutti i connettori, è necessario impostare manualmente i tipi personalizzati. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La procedura guidata consente di selezionare automaticamente uno schema di ricerca basato sul set di proprietà di origine che si desidera scegliere. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina schema di ricerca.
 
 ![Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni query, Search e retrieve.](media/manageschema.png)
 
@@ -90,7 +89,7 @@ Queste restrizioni e suggerimenti si applicano alle impostazioni dello schema di
 
 ### <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
 
-Gli elenchi di controllo di accesso (ACL, Access Control List) determinano gli utenti dell'organizzazione che possono accedere a ogni elemento di dati. Il connettore di condivisione file supporta solo gli elenchi ACL che è possibile mappare a [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/). Tutti gli altri connettori supportano le autorizzazioni di ricerca che sono visibili a tutti gli utenti.
+Gli elenchi di controllo di accesso (ACL, Access Control List) determinano gli utenti dell'organizzazione che possono accedere a ogni elemento di dati. Tutti i connettori supportano le autorizzazioni di ricerca che sono visibili a tutti gli utenti.
 
 ### <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 
@@ -98,11 +97,11 @@ La pianificazione di aggiornamento determina la frequenza con cui i dati vengono
 
 Con una ricerca per indicizzazione **completa**, il motore di ricerca elabora e indicizza tutti gli elementi nell'origine di contenuto, indipendentemente dalle ricerche per indicizzazione precedenti. La ricerca per indicizzazione completa funziona meglio in queste situazioni:
 
-* È necessario rilevare le eliminazioni di dati.
+* Rilevamento di eliminazioni di dati.
 * La ricerca per indicizzazione incrementale non è riuscita a eseguire la ricerca per errori.
-* È necessario un aggiornamento software per Microsoft Search. Gli aggiornamenti modificano lo schema di ricerca.
 * Gli elenchi ACL sono stati modificati.
 * Sono state modificate regole di ricerca per indicizzazione.
+* È necessario un aggiornamento software per Microsoft Search. Gli aggiornamenti modificano lo schema di ricerca.
 
 Con una ricerca per **indicizzazione incrementale**, è possibile elaborare e indicizzare solo gli elementi che sono stati creati o modificati dopo l'ultima ricerca per indicizzazione riuscita. Pertanto, non tutti i dati nell'origine di contenuto vengono reindicizzati. Le ricerche per indicizzazione incrementali funzionano meglio per rilevare contenuti, metadati, autorizzazioni e altri aggiornamenti.
 
@@ -120,10 +119,10 @@ Dopo aver configurato il connettore, l'interfaccia di [Amministrazione](https://
 
 Con l'interfaccia utente di Microsoft Search (UI), gli utenti finali possono ricercare contenuto dalle app di produttività [microsoft 365](https://www.microsoft.com/microsoft-365) e dall'ecosistema Microsoft più ampio. Un verticale di ricerca si riferisce alle schede visualizzate quando un utente Visualizza i risultati della ricerca in [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com)e Microsoft Search in [Bing](https://Bing.com). È possibile personalizzare i verticali di ricerca per limitare i risultati, in modo che venga visualizzato solo un determinato tipo di risultati della ricerca. Tali verticali vengono visualizzate come una tabulazione nella parte superiore della pagina dei risultati di ricerca. Un tipo di risultato moderno (MRT) è l'interfaccia utente che designa il modo in cui vengono presentati i risultati.
 
-È necessario creare i propri tipi di verticali e di risultati, in modo che gli utenti finali possano visualizzare i risultati della ricerca dalle nuove connessioni. Senza questo passaggio, i dati della connessione non verranno visualizzati nella pagina dei risultati della ricerca.
+Creare i propri tipi di verticali e di risultati, in modo che gli utenti finali possano visualizzare i risultati della ricerca dalle nuove connessioni. Senza questo passaggio, i dati della connessione non verranno visualizzati nella pagina dei risultati della ricerca.
 
 Per ulteriori informazioni su come creare i verticali e MRTs, vedere Personalizzazione della [pagina dei risultati di ricerca](customize-search-page.md).
 
-## <a name="how-do-i-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo?
+## <a name="how-do-i-know-the-connection-setup-worked"></a>Come si può verificare che l'installazione della connessione abbia avuto esito positivo?
 
 Passare all'elenco delle connessioni pubblicate sotto la scheda **connettori** nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per informazioni su come effettuare aggiornamenti ed eliminazioni, vedere [gestire il connettore](manage-connector.md).
