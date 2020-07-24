@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vengono elencati tutti i connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850934"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388013"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Raccolta di connettori di Microsoft Graph
 
@@ -55,7 +55,7 @@ ms.locfileid: "44850934"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>DevOps di Azure</h3>
+                        <h3>Azure DevOps</h3>
                         <p>da <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p>Con questo connettore Microsoft Graph, gli utenti dell'organizzazione possono cercare gli elementi di lavoro nell'istanza di DevOps di Azure.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
@@ -120,27 +120,6 @@ ms.locfileid: "44850934"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Condivisione file</h3>
-                        <p>da <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Con questo connettore Microsoft Graph, gli utenti dell'organizzazione possono cercare i file archiviati nelle condivisioni file di Windows locali.</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">Altre informazioni</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>da <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>Con questo connettore Microsoft Graph, gli utenti possono cercare articoli basati sulla conoscenza sui siti wiki creati dall'organizzazione con MediaWiki.</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850934"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850934"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -476,7 +455,7 @@ ms.locfileid: "44850934"
                     <div class="cardText">
                         <h3>Lago di dati di Azure</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore di Azure Data Lake eseguirà la ricerca per indicizzazione del contenuto dal cloud di Azure Data Lake Store nei percorsi radice o specificati. Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
+                        <p>Il connettore di Azure Data Lake eseguirà la ricerca per indicizzazione del contenuto dal cloud di ADL nei percorsi radice o specificati. Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -645,7 +624,7 @@ ms.locfileid: "44850934"
                     <div class="cardText">
                         <h3>Elasticsearch</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore elasticsearch esegue la ricerca per indicizzazione del contenuto da un indice elastico utilizzando una query definita dall'utente. È in grado di identificare automaticamente gli aggiornamenti o di utilizzare un timestamp nell'indice.</p>
+                        <p>Il connettore elasticsearch eseguirà la ricerca per indicizzazione del contenuto da un indice elastico utilizzando una query definita dall'utente. È in grado di identificare automaticamente gli aggiornamenti o di utilizzare un timestamp nell'indice.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Elasticsearch+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -1104,7 +1083,7 @@ ms.locfileid: "44850934"
                     <div class="cardText">
                         <h3>Lavoro di iMane</h3>
                         <p>di <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Il connettore Work di iMane fornisce una sicurezza completa e opera a velocità effettiva elevata per ridurre al minimo i tempi di ricerca per indicizzazione mantenendo un impatto sulle prestazioni basso sul lavoro. Richiede solo l'accesso in lettura e non è necessario installare il software client su qualsiasi server di iMan. In questo modo viene eseguito l'accesso contemporaneo e senza problemi a tutto il contenuto archiviato nel lavoro di iMane.</p>
+                        <p>Il connettore Work di iMane fornisce una sicurezza completa e opera a elevata velocità effettiva per ridurre al minimo i tempi di ricerca per indicizzazione mantenendo un impatto sul lavoro a basse prestazioni. Richiede solo l'accesso in lettura e non è necessario installare il software client su qualsiasi server di iMan. In questo modo viene eseguito l'accesso contemporaneo e senza problemi a tutto il contenuto archiviato nel lavoro di iMane.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Altre informazioni</font></a>
                         </p>
