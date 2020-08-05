@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
+ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388004"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46563896"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
@@ -58,7 +58,7 @@ Per ogni **connettore attivo** nella scheda **connettori** , tutti gli errori di
 
 Per visualizzare i dettagli specifici di un errore, selezionarne il codice di errore. Viene visualizzata una schermata con informazioni dettagliate sull'errore e un collegamento. Gli errori più recenti vengono visualizzati nella parte superiore. Vedere l'esempio nella tabella seguente.
 
-![Elenco di connettori con un connettore selezionato e il riquadro dei dettagli che mostra l'elenco di errori per il connettore. ](media/errormonitoring2.png)
+![Elenco di connettori con un connettore selezionato e il riquadro dei dettagli che mostra l'elenco di errori per il connettore.](media/errormonitoring2.png)
 
 Di seguito è riportato l'elenco dei diversi errori che possono essere visualizzati su qualsiasi connessione. Se queste soluzioni non funzionano, contattare il supporto tecnico o inviarci [commenti e suggerimenti](connectors-feedback.md).
 
@@ -78,6 +78,35 @@ Codice errore | Messaggio di errore | Soluzione
 2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
 5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. |
 
+## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice 
+Durante il periodo di anteprima, ogni organizzazione dispone di una quota fissa di fino a 2 milioni elementi per l'indicizzazione del contenuto proveniente da sistemi esterni in tutte le connessioni.
+
+> [!NOTE]
+> La quota dei connettori grafico è disponibile gratuitamente per tutta la durata dell'anteprima. Questo cambierà a disponibilità generale. 
+
+La quota e il consumo di indice disponibili verranno visualizzati nella pagina di destinazione dei connettori.
+
+![Barra di utilizzo della quota di indice.](media/quota_utilization.png)
+
+La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo della quota da parte dell'organizzazione:
+
+Stato | Consumi delle quote
+--- | ---
+Normale | 1-69%
+Alto | 70-89%
+Critico | 90%-99%
+Full | 100%
+
+Il numero di elementi indicizzati verrà visualizzato anche con ogni connessione. Il numero di elementi indicizzati da ciascuna connessione contribuisce alla quota totale disponibile per l'organizzazione.
+
+Quando si supera la quota di indice per l'organizzazione, tutte le connessioni attive verranno influenzate e le connessioni non verranno ingerite. Per risolvere il problemi, è possibile eseguire una delle operazioni seguenti:
+
+* Identificare le connessioni che dispongono di un numero eccessivo di contenuti che vengono ingeriti e aggiornarli in modo che gli elementi vengano indicizzati in meno per ottenere quote. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di ingestione che comporta un numero minore di elementi.
+
+* Eliminare definitivamente una o più connessioni
+
+* Contattare Microsoft se è necessario incrementare il limite di quota di indice per l'organizzazione.
+
 ## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
 
 * Quando si **pubblica** un connettore basato su Microsoft, potrebbero essere necessari alcuni minuti per la creazione della connessione. Durante tale periodo, la connessione Visualizza lo stato in sospeso. Inoltre, non è possibile eseguire l'aggiornamento automatico, quindi è necessario aggiornarlo manualmente.
@@ -85,3 +114,5 @@ Codice errore | Messaggio di errore | Soluzione
 * L'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) non supporta la visualizzazione e la modifica dello **schema di ricerca** dopo la pubblicazione di una connessione. Per modificare lo schema di ricerca, eliminare la connessione e crearne uno nuovo.
 
 * Quando si gestisce la pianificazione di **aggiornamento**della connessione, viene visualizzato il numero di elementi sincronizzati durante ogni sessione. Tuttavia, la cronologia di sincronizzazione non è disponibile.
+
+* Quando l'utilizzo delle quote per l'organizzazione raggiunge limiti critici o superiori, **non** verrà notificato tramite il centro messaggi.  Controllare periodicamente la pagina di gestione dei connettori per assicurarsi che le connessioni configurate non superino i limiti di quota complessivi per la propria organizzazione.
