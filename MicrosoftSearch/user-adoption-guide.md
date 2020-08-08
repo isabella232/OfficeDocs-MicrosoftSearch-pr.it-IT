@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Informazioni sui metodi e i processi che consentono di eseguire correttamente l'implementazione di Microsoft Search nell'organizzazione
-ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995006"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591518"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -39,7 +39,7 @@ Nella tabella viene illustrata la gerarchia del team e ciò che ogni persona con
 |Sponsor esecutivo  <br/> |Comprendere la visione di alto livello e il valore di Microsoft Search per la propria organizzazione.  <br/> Fornire supporto per la leadership al team IT/Business.  <br/> Allocare le risorse.  <br/> Comunicare direttamente con i dipendenti.  <br/> |Leadership esecutiva  <br/> |
 |Proprietario dell'azienda  <br/> |Identificare gli scenari di prodotti e utenti.  <br/> Determinare la metrica di esito positivo per i reparti e l'organizzazione.  <br/> |Qualsiasi  <br/> |
 |Modifica del team di gestione  <br/> |Verificare che il valore del prodotto sia facile da comprendere.  <br/> Creare un piano per il roll-out.  <br/> |IT  <br/> |
-|Campioni  <br/> |Evangelizzare il prodotto in gruppi e coetanei.  <br/> |Qualsiasi (personale)  <br/> |
+|Promotori  <br/> |Evangelizzare il prodotto in gruppi e coetanei.  <br/> |Qualsiasi (personale)  <br/> |
 |Amministratore ricerca  <br/> |Identificare i membri del team di base dell'adozione degli utenti.  <br/> Amministrare la ricerca di Microsoft, tra cui l'aspetto dell'esperienza e la gestione continua.  <br/> Guidare le discussioni per mostrare il valore di Microsoft Search.  <br/> |IT  <br/> |
 |Editors  <br/> |Creare contenuto nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365.  <br/> |IT/any  <br/> |
    
@@ -77,7 +77,7 @@ Per aiutarti a soddisfare gli obiettivi di roll-out e mostrare un impatto positi
     
 ## <a name="stage-3-readiness"></a>Fase 3: preparazione
 
-Investire tempo per prepararsi per l'implementazione di Microsoft Search provocherà un impatto positivo per la propria organizzazione. Microsoft fornisce un <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Kit di adozione</a> che contiene indicazioni sulla pianificazione, annunci di posta elettronica personalizzabili, modelli di sondaggio, presentazioni esecutive e altro ancora. È disponibile anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centro risorse di Microsoft Search</a> in cui gli implementatori it possono trovare altre risorse di formazione e adozione progettate per contribuire a rendere l'implementazione di Microsoft Search di successo.
+Investire tempo per prepararsi per l'implementazione di Microsoft Search provocherà un impatto positivo per la propria organizzazione. Microsoft fornisce un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Kit di adozione</a> che contiene un modello di posta elettronica di annuncio, Lightweight, contenuto visivo creato per la condivisione sui siti di comunicazione interna e una presentazione di formazione. È disponibile anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centro risorse di Microsoft Search</a> in cui è possibile trovare altre risorse di formazione e adozione progettate per contribuire a rendere l'implementazione di Microsoft Search di successo.
   
 ### <a name="product-and-content-readiness"></a>Preparazione del contenuto e del prodotto
   
