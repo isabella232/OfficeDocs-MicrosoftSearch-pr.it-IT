@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di DevOps di Azure per Microsoft Search
-ms.openlocfilehash: e2698d7d4a50c15bf765aa4eeada20fbc7328772
-ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
-ms.translationtype: Auto
+ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
+ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861104"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359722"
 ---
 # <a name="azure-devops-connector"></a>Connettore DevOps di Azure
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono fornite indicazioni su come compilare il modulo d
 | Nome applicazione     | Questo valore univoco identifica l'applicazione che si sta autorizzando.    | Microsoft Search     |
 | Sito Web dell'applicazione  | Questo campo obbligatorio è l'URL dell'applicazione che richiederà l'accesso all'istanza di Azure DevOps durante l'installazione del connettore.  | <https://gcs.office.com/>                |
 | URL di callback di autorizzazione        | Un URL di callback obbligatorio a cui il server di autorizzazione reindirizza. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| Ambiti autorizzati | Questo è l'ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identity (lettura), elementi di lavoro (lettura), gruppi di variabili (lettura), progetto e team (lettura)|
+| Ambiti autorizzati | Questo è l'ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identity (lettura), elementi di lavoro (lettura), gruppi di variabili (lettura), progetto e team (lettura), grafico (lettura)|
 
 Durante la registrazione dell'app con i dettagli sopra riportati, si otterrà l' **ID app** e il **segreto client** che verrà utilizzato per configurare il connettore.
 
