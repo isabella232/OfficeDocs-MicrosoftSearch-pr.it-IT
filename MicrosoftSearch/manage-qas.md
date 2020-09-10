@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Trovare e aggiornare le risposte singolarmente o utilizzare gli strumenti di ricerca di Microsoft disponibili per modificare&come tutti insieme.
-ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996086"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423001"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
@@ -26,9 +26,8 @@ Creare domande e risposte è simile alla creazione di segnalibri. Q&come consent
 
 ## <a name="add-or-edit-a-single-qa"></a>Aggiungere o modificare una singola domanda con risposta
 
-1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento, andare a **Impostazioni**  >  **Microsoft Search**  >  **Answers**  >  [**Q&a**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. Per aggiungere una domanda con risposta, selezionare **Aggiungi nuovo**.
+1. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [**Q&a**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. Per aggiungere una Q&A, selezionare **Aggiungi**.
 Per modificare una domanda con risposta, selezionarla nell'elenco di domande e risposte pertinente. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
 1. Salvare le modifiche.
 

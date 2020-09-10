@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare e aggiornare gli acronimi risposte in Microsoft Search
-ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
-ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
+ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46591509"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422947"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gestire le risposte degli acronimi in Microsoft Search
 
@@ -44,7 +44,7 @@ Il risultato include tutti i significati di DNN che sono presenti all'interno de
 
 ## <a name="set-up-acronyms-answers"></a>Configurare le risposte alle sigle
 
-Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, andare a **Impostazioni**  >  **Microsoft Search**  >  **Answers**  >  [**acronimi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), quindi selezionare **Aggiungi acronimi**.
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [**acronimi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), quindi selezionare **Aggiungi acronimo**.
 
 Microsoft Search esegue una query su due origini dati per fornire agli acronimi risposte alle ricerche degli utenti:
 
@@ -53,7 +53,7 @@ Microsoft Search esegue una query su due origini dati per fornire agli acronimi 
 
 ### <a name="set-up-editorial-acronyms"></a>Configurare gli acronimi editoriali
 
-Gli amministratori della ricerca possono configurare gli acronimi editoriali nella [scheda acronimi](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) nell'interfaccia di [amministrazione di Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). È possibile aggiungere acronimi da qualsiasi sito o repository interno all'interfaccia di amministrazione. Gli acronimi editoriali possono essere aggiunti allo stato **Published** o **Draft** :
+Gli amministratori della ricerca possono configurare gli acronimi editoriali nella [scheda acronimi](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) nell'interfaccia di  [amministrazione di Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). È possibile aggiungere acronimi da qualsiasi sito o repository interno all'interfaccia di amministrazione. Gli acronimi editoriali possono essere aggiunti allo stato **Published** o **Draft** :
 
 **Stato pubblicato**. Gli acronimi sono disponibili per i dipendenti dell'organizzazione tramite Microsoft Search.
 

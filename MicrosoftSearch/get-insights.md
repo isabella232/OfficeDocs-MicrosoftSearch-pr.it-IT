@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analizzare la metrica e gestire il contenuto dal dashboard Insights in Microsoft Search
-ms.openlocfilehash: 230c1cdec9c1f6e94adf7123bc9a3ad048dee892
-ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
+ms.openlocfilehash: a107be18900f1b68270e5afbeb0966eea04d656f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "43571006"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422992"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Report sul dashboard di Microsoft Search Insights
 
 È possibile utilizzare il Dashboard Microsoft Search Insights per gestire i dati di [Bing](https://Bing.com) per le risposte pubblicate. Questo è solo uno dei passaggi necessari per [facilitare la ricerca di contenuti](make-content-easy-to-find.md) per gli utenti.
 
-Quando si accede per la prima volta a Microsoft Search nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, è necessario immettere il dashboard Insights.
+Quando si accede per la prima volta a Microsoft Search nell'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com), è necessario immettere il dashboard Insights.
 
-![Insights-dashboard. png](media/Insights-dashboard.png)
+![Insights-dashboard.png](media/Insights-dashboard.png)
 
 I report seguenti sono disponibili nel dashboard Insights.
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996068"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422884"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
@@ -28,9 +28,8 @@ Posizione consente agli utenti di trovare indirizzi e individuare gli edifici de
 
 ### <a name="add-or-edit-a-single-location"></a>Aggiungere o modificare una singola posizione
 
-1. Passare all'**interfaccia di amministrazione di Microsoft 365**.
-1. Nel riquadro di spostamento, andare a **Impostazioni**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
-1. Per aggiungere una nuova posizione, fare clic su **Aggiungi nuovo**.
+1. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), accedere a [**percorsi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. Per aggiungere un nuovo percorso, selezionare **Aggiungi**.
 1. Per modificare una posizione, selezionarla nell'elenco di posizioni pertinenti.
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
 1. Salvare le modifiche.

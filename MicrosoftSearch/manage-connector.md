@@ -1,7 +1,7 @@
 ---
 title: Gestione dei connettori Microsoft Graph per Microsoft Search
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
-ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
+ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46563896"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422938"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
@@ -78,11 +79,12 @@ Codice errore | Messaggio di errore | Soluzione
 2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
 5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. |
 
-## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice 
+## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice
+
 Durante il periodo di anteprima, ogni organizzazione dispone di una quota fissa di fino a 2 milioni elementi per l'indicizzazione del contenuto proveniente da sistemi esterni in tutte le connessioni.
 
 > [!NOTE]
-> La quota dei connettori grafico è disponibile gratuitamente per tutta la durata dell'anteprima. Questo cambierà a disponibilità generale. 
+> La quota dei connettori grafico è disponibile gratuitamente per tutta la durata dell'anteprima. Questo cambierà a disponibilità generale.
 
 La quota e il consumo di indice disponibili verranno visualizzati nella pagina di destinazione dei connettori.
 
@@ -93,7 +95,7 @@ La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo dell
 Stato | Consumi delle quote
 --- | ---
 Normale | 1-69%
-Alto | 70-89%
+Fortemente | 70-89%
 Critico | 90%-99%
 Full | 100%
 

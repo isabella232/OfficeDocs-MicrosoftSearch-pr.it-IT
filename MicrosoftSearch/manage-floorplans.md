@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La caratteristica planimetria di Microsoft Search aiuta gli utenti a trovare persone, uffici e altre amenità all'interno di un edificio.
-ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: c1a3c30f98408a6d98f34c41f4132bcca0bd316e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996113"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422920"
 ---
 # <a name="manage-floor-plans"></a>Gestire i piani di piano
 
@@ -51,7 +51,7 @@ Per informazioni sulla visualizzazione e l'aggiornamento dei file DWG, vedere la
 
 L'ubicazione dell'ufficio di un utente è una combinazione di un codice edilizio e di un'etichetta sala. Ad esempio, se il codice di costruzione è *2* e l'etichetta della sala è *1173*, la posizione di Office sarebbe *2/1173*.
 
-Aggiungere o aggiornare le posizioni di Office per ogni utente dell'organizzazione. È possibile modificare il percorso di Office nel profilo utente nell'interfaccia di [Amministrazione](https://admin.microsoft.com) di Microsoft 365 oppure cambiare in Active Directory locale per la sincronizzazione in Azure Active Directory. *PhysicalDeliveryOfficeName* è il campo utilizzato per la posizione di Office. Se le etichette delle chat room non includono i numeri di piano, vedere le domande frequenti sui suggerimenti.
+Aggiungere o aggiornare le posizioni di Office per ogni utente dell'organizzazione. È possibile modificare il percorso di Office nel profilo utente nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) oppure cambiare in Active Directory locale per la sincronizzazione in Azure Active Directory. *PhysicalDeliveryOfficeName* è il campo utilizzato per la posizione di Office. Se le etichette delle chat room non includono i numeri di piano, vedere le domande frequenti sui suggerimenti.
 
 In questo esempio, l'ufficio di Allan è nella sala 1173 al piano 1 dell'edificio 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -67,7 +67,7 @@ Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizi
 
 ### <a name="step-5-add-building-locations"></a>Passaggio 5: aggiungere percorsi di compilazione
 
-Planimetrie utilizza le [posizioni](manage-locations.md) per definire gli edifici. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com)di Microsoft 365, andare a **Settings**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), quindi selezionare **Add**. Immettere il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessari.
+Planimetrie utilizza le [posizioni](manage-locations.md) per definire gli edifici. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com)accedere a [**percorsi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immettere il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessari.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Per ulteriori informazioni sulle posizioni, vedere [Manage locations](manage-loc
 
 Prima di poter utilizzare planimetrie, le posizioni di Office devono essere indicizzate. Si tratta di un'operazione di una tantum che può richiedere fino a 48 ore per il completamento. Il tempo totale dipenderà dalle dimensioni dell'organizzazione.
 
-In interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **Impostazioni**  >  **Microsoft Search**risponde alle planimetrie  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)e quindi selezionare **inizia**. Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
+In interfaccia di [Amministrazione](https://admin.microsoft.com), vai a [**planimetrie**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), quindi seleziona **inizia**. Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Passaggio 7: caricare planimetrie
 
-1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), andare a **Settings**  >  **Microsoft Search**  >  **risponde**  >  [**alle**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)planimetrie.
+1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), [**andare a planimetrie**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Selezionare un edificio nell'elenco a discesa e quindi fare clic su **Avanti**. Se l'edificio non è elencato, tornare indietro e [aggiungere le posizioni degli edifici](#step-5-add-building-locations).
 3. Selezionare **Carica file**e quindi scegliere la planimetria da caricare.
 4. Al termine del caricamento, è necessario immettere il numero di piano rappresentato nel file planimetria. Quindi, scegliere **Avanti**.
@@ -115,7 +115,7 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-|**Passaggio**|**Messaggio di errore**|**Tipo**|**Azione**|
+|**Passaggio**|**Messaggio di errore**|**Type**|**Azione**|
 |:-----|:-----|:-----|:-----|
 |Caricare planimetrie|Impossibile leggere CC_1. dwg. Ricaricare o eliminare la planimetria.|Error|Provare a caricare di nuovo il file. Se non funziona, eliminare il file e riprovare.|
 |Caricare planimetrie|Sono disponibili due file denominati CC_1. dwg. Si prega di eliminare uno di essi o di ricaricare con un altro nome.|Error|Se il nome del file non è corretto, rendere il nome del file univoco aggiungendo informazioni su piano o ala e quindi caricare di nuovo il file. Se è stato aggiunto per sbaglio lo stesso file due volte basta eliminarlo.|
