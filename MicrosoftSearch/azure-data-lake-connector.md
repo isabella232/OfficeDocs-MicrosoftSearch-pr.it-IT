@@ -2,7 +2,7 @@
 title: Azure Data Lake Connector per Microsoft Search
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Gen2 di Azure Data Lake storage per Microsoft Search
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422929"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206933"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Connettore Gen2 di archiviazione di Azure Data Lake
 
@@ -29,7 +29,12 @@ Questo articolo è per gli amministratori di [Microsoft 365](https://www.microso
 ### <a name="primary-storage-connection-string"></a>Stringa di connessione di archiviazione principale 
 Nella schermata **autenticazione e configurazione** fornire la stringa di connessione di archiviazione principale. Tale stringa è necessaria per consentire l'accesso all'account di archiviazione. Per trovare la stringa di connessione, passare al [portale di Azure](https://ms.portal.azure.com/#home) e passare alla sezione **Keys** dell'account di archiviazione di Azure pertinente. Copiare e incollare la stringa di connessione nel campo appropriato sullo schermo.
 
-Se non si preferisce fornire il **AccountKey** (un parametro nella stringa di connessione di archiviazione principale), è necessario concedere l'accesso in lettura al servizio dei connettori del grafico. Passare alla scheda **controllo di accesso** dell'account di archiviazione di Azure e seguire le istruzioni riportate per concedere l'accesso all'app seguente:
+Se non si preferisce fornire il **AccountKey** (un parametro nella stringa di connessione di archiviazione principale), è necessario concedere l'accesso al servizio dei connettori grafico per i ruoli seguenti. 
+* Lettore dati BLOB di archiviazione
+* Collaboratore dati coda di archiviazione
+* Delegante BLOB di archiviazione (solo per l'archiviazione gerarchica)
+
+Passare alla scheda **controllo di accesso** dell'account di archiviazione di Azure e seguire le istruzioni riportate per concedere l'accesso all'app seguente:
 * **ID app per la prima parte:** 56c1da01-2129-48f7-9355-af6d59d42766
 * **Nome dell'app per la prima parte:** Servizio del connettore grafico
 

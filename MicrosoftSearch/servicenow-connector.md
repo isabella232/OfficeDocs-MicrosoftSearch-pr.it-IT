@@ -1,8 +1,8 @@
 ---
 title: Connettore ServiceNow per Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore ServiceNow per Microsoft Search
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422866"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206960"
 ---
 # <a name="servicenow-connector"></a>Connettore ServiceNow
 
@@ -33,15 +33,15 @@ L'URL dell' **istanza di ServiceNow** dell'organizzazione è in genere simile a 
 
 Per eseguire l'autenticazione e la sincronizzazione del contenuto da ServiceNow, scegliere uno dei due metodi supportati:
 
-1. Autenticazione di base
-2. OAuth (scelta consigliata)
+ - Autenticazione di base
+ - OAuth (scelta consigliata)
 
 > [!Note]
 > Per utilizzare OAuth per l'autenticazione, un amministratore di ServiceNow deve eseguire il provisioning di un endpoint nell'istanza di ServiceNow, in modo che l'app di ricerca di Microsoft possa accedere all'istanza. Per ulteriori informazioni, vedere [creare un endpoint per i client per accedere all'istanza](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) nella documentazione di ServiceNow.
 
 Nella tabella seguente vengono fornite indicazioni su come compilare il modulo di creazione dell'endpoint:
 
-**Campo** | **Descrizione** | **Valore consigliato**
+Campo | Descrizione | Valore consigliato
 --- | --- | ---
 Nome | Questo valore univoco identifica l'applicazione per la quale è necessario l'accesso OAuth. | Microsoft Search
 ID client | ID univoco di sola lettura e generato automaticamente per l'applicazione. L'istanza utilizza l'ID client quando richiede un token di accesso. | ND

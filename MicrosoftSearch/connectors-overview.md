@@ -2,7 +2,7 @@
 title: Panoramica sui connettori
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: e7c697505f6f84f6fef021df756091d8f4e32db1
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 2e3ca14b408ca6471c3163871c80fb24d62cff26
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422902"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206987"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
 
