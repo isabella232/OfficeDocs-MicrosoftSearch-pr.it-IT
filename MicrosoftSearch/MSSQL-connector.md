@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft SQL Server o Azure SQL Connector per Microsoft Search.
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422911"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214489"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connettori di Azure SQL e Microsoft SQL Server
 
@@ -30,17 +30,15 @@ Questo articolo è per gli amministratori di Microsoft 365 o per tutti gli utent
 Per accedere ai dati di terze parti, è necessario installare e configurare un gateway Microsoft Power BI. Per ulteriori informazioni, vedere [installare un gateway locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
 
 ## <a name="register-an-app"></a>Registrare un'app
+Per il connettore SQL di Azure, è necessario registrare un'app in Azure Active Directory per consentire all'app di ricerca Microsoft di accedere ai dati per l'indicizzazione. Per ulteriori informazioni sulla registrazione di un'app, fare riferimento alla documentazione di Microsoft Graph su come [registrare un'app](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-Per il connettore SQL di Azure, è necessario registrare un'app in Azure Active Directory per consentire all'app di ricerca Microsoft di accedere ai dati per l'indicizzazione. Per ulteriori informazioni sulla registrazione di un'app, fare riferimento alla documentazione di Microsoft Graph su come [registrare un'app](https://docs.microsoft.com/graph/auth-register-app-v2).
-
-Dopo aver completato la registrazione delle app e aver preso nota del nome dell'app, dell'ID dell'applicazione (client) e dell'ID tenant, è necessario [generare un nuovo segreto client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Il segreto client verrà visualizzato solo una volta. Tenere presente & archiviare il segreto client in modo sicuro. Utilizzare l'ID client e il segreto client durante la configurazione di una nuova connessione in Microsoft Search.
+Dopo aver completato la registrazione delle app e aver preso nota del nome dell'app, dell'ID dell'applicazione (client) e dell'ID tenant, è necessario [generare un nuovo segreto client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Il segreto client verrà visualizzato solo una volta. Tenere presente & archiviare il segreto client in modo sicuro. Utilizzare l'ID client e il segreto client durante la configurazione di una nuova connessione in Microsoft Search. 
 
 Per aggiungere l'app registrata al database SQL di Azure, è necessario eseguire le operazioni seguenti:
-
-- Accedere al database SQL di Azure
-- Aprire una nuova finestra di query
-- Creare un nuovo utente eseguendo il comando ' Crea utente [nome app] da PROVIDER esterno '
-- Aggiungere un utente al ruolo eseguendo il comando ' exec sp_addrolemember ' db_datareader ', [nome app]' oppure ' ALTER ROLE db_datareader ADD MEMBER [nome app]'
+ - Accedere al database SQL di Azure
+ - Aprire una nuova finestra di query
+ - Creare un nuovo utente eseguendo il comando ' Crea utente [nome app] da PROVIDER esterno '
+ - Aggiungere un utente al ruolo eseguendo il comando ' exec sp_addrolemember ' db_datareader ', [nome app]' oppure ' ALTER ROLE db_datareader ADD MEMBER [nome app]'
 
 >[!NOTE]
 >Per revocare l'accesso a qualsiasi applicazione registrata in Azure Active Directory, fare riferimento alla documentazione di Azure sulla [rimozione di un'app registrata](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
@@ -81,22 +79,6 @@ Di seguito viene descritto l'utilizzo di tutte le colonne ACL nella query preced
 * **DeniedGroups**: specifica il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, i gruppi engg-team@contoso.com e pm-team@contoso.com non dispongono dell'accesso a record con OrderId = 15, mentre tutti gli altri hanno accesso a questo record.  
 
 ![Dati di esempio che mostrano OrderTable e AclTable con le proprietà di esempio](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>Tipi di dati supportati
-
-Nella tabella seguente sono riepilogati i tipi di dati SQL supportati nei connettori SQL di MS SQL e Azure. La tabella riepiloga anche il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati dai connettori di Microsoft Graph per l'indicizzazione, fare riferimento alla documentazione sui [tipi di risorse della proprietà](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
-<!-- markdownlint-disable no-inline-html -->
-| Category | Tipo di dati di origine | Tipo di dati di indicizzazione |
-| ------------ | ------------ | ------------ |
-| Data e ora | data <br> datetime <br> datetime2 <br> smalldatetime | datetime |
-| Valore numerico esatto | bigint <br> int <br> smallint <br> tinyint | Int64 |
-| Valore numerico esatto | po' | boolean |
-| Numerico approssimativo | galleggiante <br> reale | doppio |
-| Stringa di caratteri | char <br> varchar <br> testo | stringa |
-| Stringhe di caratteri Unicode | nchar <br> nvarchar <br> ntext | stringa |
-| Altri tipi di dati | uniqueidentifier | stringa |
-
-Per qualsiasi altro tipo di dati attualmente non supportato direttamente, è necessario eseguire il cast esplicito di una colonna a un tipo di dati supportato.
 
 ### <a name="watermark-required"></a>Filigrana (obbligatoria)
 
