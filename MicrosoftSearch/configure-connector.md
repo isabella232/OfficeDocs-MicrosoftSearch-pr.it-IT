@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: ce2515b3eaa859a8fbb00d83c4727865ab55e174
+ms.sourcegitcommit: 6aea7102c94855e9f80711c0f3d7bf5833ce8fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422857"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464477"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -64,7 +64,17 @@ I campi dati impostati dall'origine dati di terze parti come proprietà di origi
 
 ### <a name="manage-the-search-schema"></a>Gestire lo schema di ricerca
 
-Gli amministratori possono impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e accessibili dagli utenti finali.
+#### <a name="content-property"></a>Content, proprietà
+
+È possibile selezionare la proprietà di origine è la proprietà di **contenuto** (indice full-text dell'elemento) selezionando qualsiasi proprietà stringa dall'elenco a discesa proprietà **contenuto** . In alternativa, è possibile mantenere la proprietà selezionata predefinita se ne è presente una.
+
+È particolarmente importante che la proprietà corretta sia selezionata dopo che questa proprietà è stata utilizzata per l'indicizzazione full-text del contenuto, la generazione di frammenti di pagina dei risultati di ricerca, il rilevamento della lingua, il supporto HTML/testo, la classificazione e la pertinenza e la formulazione delle query.
+
+Se si seleziona una proprietà per il **contenuto**, si avrà la possibilità di utilizzare la proprietà generata dal sistema **ResultSnippet** quando si [Crea il tipo di risultato](customize-results-layout.md). Questa proprietà funge da segnaposto per i frammenti dinamici generati dalla proprietà **Content** in fase di query. Se si utilizza questa proprietà nel tipo di risultati, i frammenti verranno generati nei risultati della ricerca.
+
+#### <a name="search-schema-attributes"></a>Attributi dello schema di ricerca
+
+È possibile impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e accessibili dagli utenti finali.
 
 Gli attributi dello schema di ricerca includono **ricercabili**, **Queryable**e **recuperabili**. Nella tabella seguente sono elencati tutti gli attributi supportati da Microsoft Graph e vengono illustrate le loro funzioni.
 
@@ -78,11 +88,14 @@ Per tutti i connettori, è necessario impostare manualmente i tipi personalizzat
 
 ![Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni query, Search e retrieve.](media/manageschema.png)
 
-Queste restrizioni e suggerimenti si applicano alle impostazioni dello schema di ricerca:
+#### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrizioni e suggerimenti per le impostazioni dello schema di ricerca
 
-* Per i connettori che indicino tipi personalizzati, è consigliabile **non** contrassegnare il campo che contiene il contenuto principale **recuperabile**. Quando i risultati della ricerca eseguono il rendering con quell'attributo di ricerca, si verificano problemi significativi. Un esempio è il campo di contenuto di **testo** per un articolo della Knowledge base di [ServiceNow](https://www.servicenow.com) .
+* La proprietà **Content** è solo per le ricerche. Una volta selezionata nell'elenco a discesa, questa proprietà non può essere contrassegnata come **recuperabile** o **Queryable**. I problemi di prestazioni significativi si verificano quando i risultati della ricerca eseguono il rendering con la proprietà **Content** . Un esempio è il campo di contenuto di **testo** per un articolo della Knowledge base di [ServiceNow](https://www.servicenow.com) .
+
 * Solo le proprietà contrassegnate come rendering recuperabili nei risultati della ricerca possono essere utilizzate per creare i tipi di risultati moderni (MRTs).
+
 * Solo le proprietà della stringa possono essere contrassegnate come ricercabili.
+
 
 > [!Note]
 > Dopo aver creato una connessione, **non è possibile** modificare lo schema. A tale scopo, è necessario eliminare la connessione e crearne uno nuovo.
