@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilizzo di schede adattive, creazione di un layout per visualizzare i risultati di ricerca personalizzati
-ms.openlocfilehash: e31be1f9c1602fcd696c99d584388facee22df74
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
+ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721778"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48595274"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Creare un layout per la personalizzazione dei risultati di ricerca
@@ -176,24 +176,29 @@ Dati di esempio: specificare i dati di esempio nell' **editor di dati di esempio
 
 Selezionare un campo nel layout per evidenziare le variabili che devono essere mappate. È possibile utilizzare più variabili per un singolo campo e tutti i campi devono essere mappati alle proprietà dei risultati.
 
+### <a name="show-snippet-on-search-result"></a>Mostra frammento nei risultati della ricerca  
+
+I frammenti dinamici generati nella proprietà **Content** del risultato del connettore possono essere visualizzati nei risultati della ricerca. **ResultSnippet** è la proprietà di sistema che funge da Proprietà segnaposto per i frammenti generati per ogni risultato del connettore. Per visualizzare i frammenti nel layout dei risultati, è necessario che la proprietà di sistema **ResultSnippet** sia mappata a un campo appropriato, ad esempio descrizione, nel layout dei risultati di ricerca. I frammenti generati in ogni risultato evidenziano anche le corrispondenze nel frammento con il termine di query immesso dall'utente. 
+
 ## <a name="things-to-consider"></a>Osservazioni
 
 Prima di iniziare, è necessario eseguire alcune operazioni e alcune operazioni che è necessario evitare per garantire la corretta esecuzione dei layout.
 
-### <a name="do"></a>Non
+### <a name="do"></a>Operazione da eseguire
 
 - Modificare un modello per fornire il collegamento del logo nel layout se si utilizzano collegamenti statici per i loghi e non le proprietà dei risultati.
 - Convalidare il layout dei risultati per gli scenari in cui non viene restituito alcun dato per una proprietà dei risultati utilizzata nel JSON risultante. Utilizzare la `$when` condizione per nascondere un elemento se la proprietà non contiene dati.  
 - Verificare che i tipi di dati della `$when` condizione e della proprietà Result corrispondano. Ad esempio, non confrontare `Number` con `Text` la `$when` condizione.  
 - Si pensi ai requisiti del tema quando si progetta un layout dei risultati.  
-- Verificare che l'elemento `Textblock`  sia in grado di gestire il contenuto dinamico. È possibile utilizzare le `wrap` proprietà `maxLines` and element per questo scopo.
-- Formattare correttamente la data in cui `{DATE()}` viene utilizzato in Markdown.  
+- Verificare che l'elemento sia in `Textblock`   grado di gestire il contenuto dinamico. È possibile utilizzare le `wrap` `maxLines` Proprietà and element per questo scopo.
+- Formattare correttamente la data in cui viene utilizzato `{DATE()}` in Markdown.  
 
 ### <a name="dont"></a>Non
 
 - Non definire i tipi di dati non validi per i valori di binding. Per ulteriori informazioni sui tipi di dati, vedere [gestire lo schema di ricerca](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Evitare di ritagliare il risultato nella pagina dei risultati attenendosi all'altezza massima del JSON del layout dei risultati. Se si supera l'altezza massima del layout dei risultati, il risultato verrà ritagliato nella pagina dei risultati.
 - Non utilizzare `px` i valori nelle proprietà degli elementi.
+- Non utilizzare Markdown quando si utilizza la proprietà **ResultSnippet** nel layout dei risultati per evidenziare la corrispondenza delle query nei risultati della ricerca. 
 
 ## <a name="resources"></a>Risorse
 
