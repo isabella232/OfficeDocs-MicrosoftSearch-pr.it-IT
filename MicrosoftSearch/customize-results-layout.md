@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilizzo di schede adattive, creazione di un layout per visualizzare i risultati di ricerca personalizzati
-ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
-ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
+ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48595274"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919511"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Creare un layout per la personalizzazione dei risultati di ricerca
@@ -178,7 +178,7 @@ Selezionare un campo nel layout per evidenziare le variabili che devono essere m
 
 ### <a name="show-snippet-on-search-result"></a>Mostra frammento nei risultati della ricerca  
 
-I frammenti dinamici generati nella proprietà **Content** del risultato del connettore possono essere visualizzati nei risultati della ricerca. **ResultSnippet** è la proprietà di sistema che funge da Proprietà segnaposto per i frammenti generati per ogni risultato del connettore. Per visualizzare i frammenti nel layout dei risultati, è necessario che la proprietà di sistema **ResultSnippet** sia mappata a un campo appropriato, ad esempio descrizione, nel layout dei risultati di ricerca. I frammenti generati in ogni risultato evidenziano anche le corrispondenze nel frammento con il termine di query immesso dall'utente. 
+I frammenti dinamici generati nella proprietà **Content** del risultato del connettore possono essere visualizzati nei risultati della ricerca. **ResultSnippet** è la proprietà di sistema che funge da Proprietà segnaposto per i frammenti generati per ogni risultato del connettore. Per visualizzare i frammenti nel layout dei risultati, è necessario che la proprietà di sistema **ResultSnippet** sia mappata a un campo appropriato, ad esempio descrizione, nel layout dei risultati di ricerca. I frammenti generati in ogni risultato evidenziano anche le corrispondenze nel frammento con il termine di query immesso dall'utente.
 
 ## <a name="things-to-consider"></a>Osservazioni
 
@@ -198,7 +198,7 @@ Prima di iniziare, è necessario eseguire alcune operazioni e alcune operazioni 
 - Non definire i tipi di dati non validi per i valori di binding. Per ulteriori informazioni sui tipi di dati, vedere [gestire lo schema di ricerca](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Evitare di ritagliare il risultato nella pagina dei risultati attenendosi all'altezza massima del JSON del layout dei risultati. Se si supera l'altezza massima del layout dei risultati, il risultato verrà ritagliato nella pagina dei risultati.
 - Non utilizzare `px` i valori nelle proprietà degli elementi.
-- Non utilizzare Markdown quando si utilizza la proprietà **ResultSnippet** nel layout dei risultati per evidenziare la corrispondenza delle query nei risultati della ricerca. 
+- Non utilizzare Markdown quando si utilizza la proprietà **ResultSnippet** nel layout dei risultati per evidenziare la corrispondenza delle query nei risultati della ricerca.
 
 ## <a name="resources"></a>Risorse
 
