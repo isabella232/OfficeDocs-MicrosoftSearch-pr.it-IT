@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di DevOps di Azure per Microsoft Search
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359722"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927190"
 ---
 # <a name="azure-devops-connector"></a>Connettore DevOps di Azure
 
@@ -69,15 +69,16 @@ Successivamente, selezionare i campi in cui si desidera che la connessione indic
 
 ![Scegliere Proprietà](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>Gestire lo schema di ricerca
-
-Configurare il mapping dello schema di ricerca. È possibile scegliere quali proprietà rendere **Queryable**, **searchable** **reperibili e recuperabili**.
-
 ## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
 
 Il connettore di Azure DevOps attualmente supporta solo le autorizzazioni **di ricerca visibili a tutti**. I dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
 
-## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
+## <a name="manage-search-schema"></a>Gestire lo schema di ricerca
+
+Configurare il mapping dello schema di ricerca. È possibile scegliere quali proprietà rendere **Queryable** , **searchable** **reperibili e recuperabili**.
+
+
+## <a name="set-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 
 Il connettore di Azure DevOps supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. Una ricerca per indicizzazione completa trova gli elementi di lavoro eliminati precedentemente sincronizzati con l'indice di ricerca di Microsoft. Viene eseguita una ricerca per indicizzazione completa per sincronizzare tutti gli elementi di lavoro. Per sincronizzare nuovi elementi di lavoro e aggiornamenti per gli elementi di lavoro esistenti, è necessario pianificare ricerche per indicizzazione incrementali.
 

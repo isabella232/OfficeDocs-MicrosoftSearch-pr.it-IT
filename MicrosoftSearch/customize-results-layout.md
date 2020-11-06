@@ -1,5 +1,5 @@
 ---
-title: Personalizzare il layout dei risultati della ricerca
+title: Gestire i layout dei risultati della ricerca
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilizzo di schede adattive, creazione di un layout per visualizzare i risultati di ricerca personalizzati
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919511"
+ms.locfileid: "48927181"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Creare un layout per la personalizzazione dei risultati di ricerca
@@ -198,7 +198,7 @@ Prima di iniziare, è necessario eseguire alcune operazioni e alcune operazioni 
 - Non definire i tipi di dati non validi per i valori di binding. Per ulteriori informazioni sui tipi di dati, vedere [gestire lo schema di ricerca](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Evitare di ritagliare il risultato nella pagina dei risultati attenendosi all'altezza massima del JSON del layout dei risultati. Se si supera l'altezza massima del layout dei risultati, il risultato verrà ritagliato nella pagina dei risultati.
 - Non utilizzare `px` i valori nelle proprietà degli elementi.
-- Non utilizzare Markdown quando si utilizza la proprietà **ResultSnippet** nel layout dei risultati per evidenziare la corrispondenza delle query nei risultati della ricerca.
+- Non utilizzare Markdown con la proprietà **ResultSnippet** nel layout dei risultati per evidenziare la corrispondenza delle query nei risultati della ricerca.
 
 ## <a name="resources"></a>Risorse
 
