@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Esaminare e agire sui commenti e suggerimenti degli utenti in Microsoft Search
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986960"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996793"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
@@ -32,7 +32,7 @@ Poiché gli utenti dell'organizzazione utilizzano la ricerca Microsoft, possono 
 
 ![Modulo di feedback globale](media/feedback/feedback-global-dialog.png)
 
-Gli utenti hanno anche la possibilità di inviare la propria query e altre informazioni di diagnostica, insieme alla categoria e ai commenti, a Microsoft. Le informazioni di diagnostica includono alcuni dati personali, ad esempio un identificatore utente. Per [ulteriori](https://privacy.microsoft.com/en-US/privacystatement) informazioni, vedere privacy e modalità di protezione dei dati. I dati di diagnostica contengono le informazioni più importanti che Microsoft deve utilizzare per il miglioramento del prodotto.
+Gli utenti hanno anche la possibilità di inviare la propria query e altre informazioni di diagnostica, insieme alla categoria e ai commenti, a Microsoft. Per [ulteriori](https://privacy.microsoft.com/en-US/privacystatement) informazioni, vedere privacy e modalità di protezione dei dati. I dati di diagnostica contengono le informazioni più importanti che Microsoft deve utilizzare per il miglioramento del prodotto.
 
 La maggior parte dei commenti e suggerimenti viene visualizzata nella sezione [commenti e suggerimenti](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) dell'interfaccia di amministrazione di Microsoft Search. I commenti e suggerimenti inviati con il suggerimento di una categoria di **collegamento interno** vengono visualizzati come segnalibro consigliato nella sezione [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e possono essere visualizzati filtrando lo stato **suggerito** .
 
