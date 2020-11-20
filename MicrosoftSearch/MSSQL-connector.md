@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft SQL Server o Azure SQL Connector per Microsoft Search.
-ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
-ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
+ms.openlocfilehash: dc90693e7629c004ecc48b020262ec5cfd0808c0
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214489"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367578"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connettori di Azure SQL e Microsoft SQL Server
 
@@ -56,7 +56,7 @@ Per eseguire la ricerca nel contenuto del database, è necessario specificare le
 
 ## <a name="full-crawl-required"></a>Ricerca per indicizzazione completa (obbligatorio)
 
-In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La **ricerca per**indicizzazione completa consente di selezionare tutte le colonne o le proprietà che si desidera rendere **Queryable**, **reperibili o recuperabili**. È inoltre possibile specificare le colonne ACL per limitare l'accesso ai risultati della ricerca a utenti o gruppi specifici.
+In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La **ricerca per** indicizzazione completa consente di selezionare tutte le colonne o le proprietà che si desidera rendere **Queryable**, **reperibili o recuperabili**. È inoltre possibile specificare le colonne ACL per limitare l'accesso ai risultati della ricerca a utenti o gruppi specifici.
 
 > [!Tip]
 > Per ottenere tutte le colonne necessarie, è possibile partecipare a più tabelle.
@@ -65,7 +65,7 @@ In questo passaggio viene configurata la query SQL che esegue una ricerca per in
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Selezionare le colonne di dati (obbligatorio) e le colonne ACL (facoltativo)
 
-In questo esempio viene illustrata la selezione di cinque colonne di dati che contengono i dati per la ricerca: OrderId, OrderTitle, OrderDesc, CreatedDateTime ed andeleted. Per impostare le autorizzazioni di visualizzazione per ogni riga di dati, è facoltativamente possibile selezionare le colonne ACL seguenti: AllowedUsers, AllowedGroups, DeniedUsers e DeniedGroups. Tutte queste **colonne di dati**possono essere rese **Queryable**, reperibili o **recuperabili**.
+In questo esempio viene illustrata la selezione di cinque colonne di dati che contengono i dati per la ricerca: OrderId, OrderTitle, OrderDesc, CreatedDateTime ed andeleted. Per impostare le autorizzazioni di visualizzazione per ogni riga di dati, è facoltativamente possibile selezionare le colonne ACL seguenti: AllowedUsers, AllowedGroups, DeniedUsers e DeniedGroups. Tutte queste **colonne di dati** possono essere rese **Queryable**, reperibili o **recuperabili**.
 
 Selezionare colonne di dati come illustrato in questa query di esempio: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -117,7 +117,7 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 
 ## <a name="incremental-crawl-optional"></a>Ricerca per indicizzazione incrementale (facoltativa)
 
-In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina le modifiche apportate ai dati dall'ultima ricerca per indicizzazione incrementale. Come **nella ricerca per**indicizzazione completa, selezionare tutte le colonne che si desidera rendere **Queryable**, reperibili o **recuperabili**. Specificare lo stesso insieme di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina le modifiche apportate ai dati dall'ultima ricerca per indicizzazione incrementale. Come **nella ricerca per** indicizzazione completa, selezionare tutte le colonne che si desidera rendere **Queryable**, reperibili o **recuperabili**. Specificare lo stesso insieme di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completi con una sola eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi per la ricerca per indicizzazione completa](#full-crawl-required) per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere come esempio l'immagine seguente.
 
@@ -126,6 +126,14 @@ I componenti nell'immagine seguente sono simili ai componenti di ricerca per ind
 ## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
 
 È possibile scegliere di utilizzare gli [ACL specificati nella schermata di ricerca per indicizzazione completa](#full-crawl-manage-search-permissions) oppure è possibile sovrascriverli per rendere il contenuto visibile a tutti.
+
+## <a name="assign-property-labels"></a>Assegnare etichette delle proprietà
+
+È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, l'utilizzo di alcune etichette di proprietà migliorerà la pertinenza della ricerca e assicurerà risultati di ricerca più accurati per gli utenti finali.
+
+## <a name="manage-schema"></a>Gestione dello schema
+
+Nella schermata **Gestisci schema** è possibile modificare gli attributi dello schema (**Queryable**, **Searchable**, **Retrievable** e **per affinamento ricerca**) associati alle proprietà, aggiungere alias facoltativi e scegliere la proprietà **Content** .
 
 ## <a name="limitations"></a>Limitazioni
 

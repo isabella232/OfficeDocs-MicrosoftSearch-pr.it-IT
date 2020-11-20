@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di DevOps di Azure per Microsoft Search
-ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: b9c566e3e07bfca6d4d25b14915f0160f3928b15
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927190"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367551"
 ---
-# <a name="azure-devops-connector"></a>Connettore DevOps di Azure
+# <a name="azure-devops-connector-preview"></a>Connettore di DevOps di Azure (anteprima)
 
 Con il connettore di Azure DevOps, l'organizzazione può indicizzare gli elementi di lavoro nella relativa istanza del servizio DevOps di Azure. Dopo aver configurato il connettore e l'indice del contenuto da Azure DevOps, gli utenti finali possono cercare gli elementi in Microsoft Search.
 
 Questo articolo è per gli amministratori di Microsoft 365 o per tutti coloro che configurano, eseguono e monitora un connettore di DevOps di Azure. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.
 
 >[!IMPORTANT]
->Il connettore di Azure DevOps supporta solo il servizio cloud di DevOps di Azure. Azure DevOps server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore.
+>Il connettore di Azure DevOps supporta solo il servizio cloud di DevOps di Azure. Azure DevOps server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore. 
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
 
@@ -34,17 +34,17 @@ Per connettersi all'istanza di Azure DevOps, è necessario il nome dell' [organi
 
 ### <a name="register-an-app"></a>Registrare un'app
 
-È necessario registrare un'app in Azure DevOps in modo che l'app di ricerca di Microsoft possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione di Azure DevOps su come [registrare un'app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
+È necessario registrare un'app in Azure DevOps in modo che l'app di ricerca di Microsoft possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione di Azure DevOps su come [registrare un'app](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app). 
 
 Nella tabella seguente vengono fornite indicazioni su come compilare il modulo di registrazione delle app:
 
- **Campi obbligatori** | **Descrizione**      | **Valore consigliato**
---- | --- | ---
-| Nome della società         | Questo è il nome della società. | Utilizzare un valore appropriato   |
-| Nome applicazione     | Questo valore univoco identifica l'applicazione che si sta autorizzando.    | Microsoft Search     |
-| Sito Web dell'applicazione  | Questo campo obbligatorio è l'URL dell'applicazione che richiederà l'accesso all'istanza di Azure DevOps durante l'installazione del connettore.  | <https://gcs.office.com/>                |
-| URL di callback di autorizzazione        | Un URL di callback obbligatorio a cui il server di autorizzazione reindirizza. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| Ambiti autorizzati | Questo è l'ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identity (lettura), elementi di lavoro (lettura), gruppi di variabili (lettura), progetto e team (lettura), grafico (lettura)|
+ **Campi obbligatori** | **Descrizione**      | **Valore consigliato** 
+--- | --- | --- 
+| Nome della società         | Questo è il nome della società. | Utilizzare un valore appropriato   | 
+| Nome applicazione     | Questo valore univoco identifica l'applicazione che si sta autorizzando.    | Microsoft Search     | 
+| Sito Web dell'applicazione  | Questo campo obbligatorio è l'URL dell'applicazione che richiederà l'accesso all'istanza di Azure DevOps durante l'installazione del connettore.  | <https://gcs.office.com/>                | 
+| URL di callback di autorizzazione        | Un URL di callback obbligatorio a cui il server di autorizzazione reindirizza. | <https://gcs.office.com/v1.0/admin/oauth/callback>| 
+| Ambiti autorizzati | Questo è l'ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identity (lettura), elementi di lavoro (lettura), gruppi di variabili (lettura), progetto e team (lettura), grafico (lettura)| 
 
 Durante la registrazione dell'app con i dettagli sopra riportati, si otterrà l' **ID app** e il **segreto client** che verrà utilizzato per configurare il connettore.
 
@@ -71,15 +71,18 @@ Successivamente, selezionare i campi in cui si desidera che la connessione indic
 
 ## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
 
-Il connettore di Azure DevOps attualmente supporta solo le autorizzazioni **di ricerca visibili a tutti**. I dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
+Il connettore di Azure DevOps supporta le autorizzazioni di ricerca visibili  **solo agli utenti che dispongono dell'accesso a questa origine dati** o a **tutti**. Se si sceglie **solo persone con accesso a questa origine dati**, i dati indicizzati verranno visualizzati nei risultati di ricerca per gli utenti che dispongono dell'accesso in base alle autorizzazioni per gli utenti o i gruppi a livello dell'organizzazione, del progetto o dell'area del percorso in Azure DevOps. Se si sceglie **tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
 
-## <a name="manage-search-schema"></a>Gestire lo schema di ricerca
+## <a name="assign-property-labels"></a>Assegnare etichette delle proprietà
 
-Configurare il mapping dello schema di ricerca. È possibile scegliere quali proprietà rendere **Queryable** , **searchable** **reperibili e recuperabili**.
+È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, l'utilizzo di alcune etichette di proprietà migliorerà la pertinenza della ricerca e assicurerà risultati di ricerca più accurati per gli utenti finali.
 
+## <a name="manage-schema"></a>Gestione dello schema
 
-## <a name="set-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
+Nella schermata **Gestisci schema** è possibile modificare gli attributi dello schema (**Queryable**, **Searchable**, **Retrievable** e **per affinamento ricerca**) associati alle proprietà, aggiungere alias facoltativi e scegliere la proprietà **Content** .
+
+## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 
 Il connettore di Azure DevOps supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. Una ricerca per indicizzazione completa trova gli elementi di lavoro eliminati precedentemente sincronizzati con l'indice di ricerca di Microsoft. Viene eseguita una ricerca per indicizzazione completa per sincronizzare tutti gli elementi di lavoro. Per sincronizzare nuovi elementi di lavoro e aggiornamenti per gli elementi di lavoro esistenti, è necessario pianificare ricerche per indicizzazione incrementali.
 
-La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa.
+La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa. 

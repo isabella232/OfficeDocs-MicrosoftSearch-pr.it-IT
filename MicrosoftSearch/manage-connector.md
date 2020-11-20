@@ -12,15 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422938"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367677"
 ---
 <!-- markdownlint-disable no-inline-html -->
-# <a name="manage-your-connector-for-microsoft-search"></a>Gestire il connettore per Microsoft Search
+
+# <a name="manage-your-connections-for-microsoft-search"></a>Gestire le connessioni per Microsoft Search
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
 
@@ -50,6 +51,20 @@ Quattro Stati vengono visualizzati nella colonna **stato** su ogni connessione:
 * **Sospesa**. Le ricerche per indicizzazione vengono sospese dagli amministratori tramite l'opzione pause. La ricerca per indicizzazione successiva viene eseguita solo quando riprende manualmente. Tuttavia, i dati provenienti da questa connessione continuano a essere disponibili per la ricerca.
 
 * **Operazione non riuscita**. La connessione ha avuto un errore critico. Questo errore richiede un intervento manuale. L'amministratore deve intraprendere un'azione appropriata in base al messaggio di errore visualizzato. I dati indicizzati fino a quando non si è verificato l'errore sono disponibili per la ricerca.
+
+### <a name="view-your-last-crawl-info"></a>Visualizzare le ultime informazioni di ricerca per indicizzazione
+
+Dopo aver completato la prima ricerca per indicizzazione completa o incrementale iniziale, gli ultimi valori di dati di ricerca per indicizzazione vengono visualizzati nell'ultima intestazione di ricerca per indicizzazione nel riquadro dei dettagli. Se non è stata eseguita l'ultima ricerca per indicizzazione, non verranno visualizzate informazioni nell'ultima intestazione di ricerca per indicizzazione. Queste informazioni sull'ultima ricerca per indicizzazione consentiranno di approfondire la modalità di esecuzione della ricerca per indicizzazione e di eseguire le operazioni necessarie laddove necessario.
+
+Per ogni connessione saranno disponibili i seguenti valori di ricerca per indicizzazione:
+
+Valore | Descrizione
+--- | ---
+Completata in | Data e ora in cui è stata completata la ricerca per indicizzazione
+Tipo | Ricerca per indicizzazione incrementale o completa
+Durata | quanto tempo è necessario per completare l'ultima ricerca per indicizzazione
+Operazioni riuscite | Numero di elementi che sono stati correttamente ingeriti nell'ultima ricerca per indicizzazione
+Errori | Numero di elementi che hanno avuto un errore nell'ultima ricerca per indicizzazione
 
 ### <a name="monitor-errors"></a>Errori di monitoraggio
 
@@ -81,14 +96,13 @@ Codice errore | Messaggio di errore | Soluzione
 
 ## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice
 
-Durante il periodo di anteprima, ogni organizzazione dispone di una quota fissa di fino a 2 milioni elementi per l'indicizzazione del contenuto proveniente da sistemi esterni in tutte le connessioni.
+La quota e il consumo di indice disponibili sono visualizzati nella pagina di destinazione dei connettori.
 
-> [!NOTE]
-> La quota dei connettori grafico è disponibile gratuitamente per tutta la durata dell'anteprima. Questo cambierà a disponibilità generale.
+![Barra di utilizzo della quota di indice](media/quota_utilization.png)
 
-La quota e il consumo di indice disponibili verranno visualizzati nella pagina di destinazione dei connettori.
-
-![Barra di utilizzo della quota di indice.](media/quota_utilization.png)
+>[!NOTE]
+>Durante il periodo di anteprima, ogni organizzazione che prova i connettori del grafico è stata fornita una quota fissa libera di fino a 2 milioni elementi in tutte le connessioni. Con i connettori grafico generalmente disponibili, la quota libera scadrà il 1 ° febbraio 2021 per le organizzazioni che utilizzano i connettori grafico in anteprima.
+>I connettori del grafico Microsoft-built etichettati come ["Preview"](connectors-preview.md) non verranno inclusi nella quota totale di indice addebitata per l'organizzazione. Tuttavia, conterà verso il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni elementi che l'organizzazione può indicizzare tra le connessioni.
 
 La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo della quota da parte dell'organizzazione:
 
@@ -101,20 +115,30 @@ Full | 100%
 
 Il numero di elementi indicizzati verrà visualizzato anche con ogni connessione. Il numero di elementi indicizzati da ciascuna connessione contribuisce alla quota totale disponibile per l'organizzazione.
 
-Quando si supera la quota di indice per l'organizzazione, tutte le connessioni attive verranno influenzate e le connessioni non verranno ingerite. Per risolvere il problemi, è possibile eseguire una delle operazioni seguenti:
+Quando si supera la quota di indice per l'organizzazione, tutte le connessioni attive verranno influenzate e tali connessioni funzioneranno nello stato **limite superato** . In questo stato, le connessioni attive  
+
+* Non sarà in grado di aggiungere nuovi elementi.
+
+* Sarà in grado di aggiornare o eliminare gli elementi esistenti.
+
+Per risolvere il problemi, è possibile eseguire una delle operazioni seguenti:
+
+* Informazioni su come acquistare la quota di indice per l'organizzazione in base ai [requisiti di licenza e ai prezzi](licensing.md).
 
 * Identificare le connessioni che dispongono di un numero eccessivo di contenuti che vengono ingeriti e aggiornarli in modo che gli elementi vengano indicizzati in meno per ottenere quote. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di ingestione che comporta un numero minore di elementi.
 
 * Eliminare definitivamente una o più connessioni
 
-* Contattare Microsoft se è necessario incrementare il limite di quota di indice per l'organizzazione.
+## <a name="limitations"></a>Limitazioni
 
-## <a name="preview-limitations"></a>Limitazioni relative all'anteprima
+* Quando si **pubblica** un connettore basato su Microsoft, potrebbero essere necessari alcuni minuti per la creazione della connessione. Durante tale periodo, la connessione mostrerà lo stato in sospeso.
 
-* Quando si **pubblica** un connettore basato su Microsoft, potrebbero essere necessari alcuni minuti per la creazione della connessione. Durante tale periodo, la connessione Visualizza lo stato in sospeso. Inoltre, non è possibile eseguire l'aggiornamento automatico, quindi è necessario aggiornarlo manualmente.
+* L'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) non supporta la modifica dello **schema di ricerca** dopo la pubblicazione di una connessione. Per modificare lo schema di ricerca, eliminare la connessione e crearne uno nuovo.
 
-* L'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) non supporta la visualizzazione e la modifica dello **schema di ricerca** dopo la pubblicazione di una connessione. Per modificare lo schema di ricerca, eliminare la connessione e crearne uno nuovo.
+* La velocità effettiva di ingestione viene limitata a circa quattro elementi al secondo.
 
-* Quando si gestisce la pianificazione di **aggiornamento**della connessione, viene visualizzato il numero di elementi sincronizzati durante ogni sessione. Tuttavia, la cronologia di sincronizzazione non è disponibile.
+* Non è disponibile alcun supporto per gli aggiornamenti dello schema. Dopo aver creato una configurazione di connessione, non è possibile aggiornare lo schema. È possibile eliminare e ricreare la connessione solo.
 
-* Quando l'utilizzo delle quote per l'organizzazione raggiunge limiti critici o superiori, **non** verrà notificato tramite il centro messaggi.  Controllare periodicamente la pagina di gestione dei connettori per assicurarsi che le connessioni configurate non superino i limiti di quota complessivi per la propria organizzazione.
+* Esiste un limite per le connessioni. Ogni tenant è in grado di creare fino a 10 connessioni.
+
+* La modifica del supporto per la connessione non è disponibile. Dopo aver creato la connessione, non è possibile modificarla o modificarla. Se è necessario modificare i dettagli, è necessario eliminare e ricreare la connessione.

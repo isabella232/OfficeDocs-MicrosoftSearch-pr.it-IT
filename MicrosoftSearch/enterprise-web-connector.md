@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206942"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367470"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>Connettore siti Web Enterprise
@@ -28,7 +28,11 @@ Questo articolo è per gli amministratori di [Microsoft 365](https://www.microso
 
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
 
-Per connettersi all'origine dati, è necessario l'URL radice e una forma di autenticazione: None, autenticazione di base o OAuth 2,0 con [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/).
+Per connettersi all'origine dati, è necessario inserire l'URL radice del sito Web e il tipo di autenticazione che si desidera utilizzare: nessuno, autenticazione di base o OAuth 2,0 con [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/).
+
+### <a name="url"></a>URL
+
+Utilizzare il campo URL per specificare la radice del sito Web che si desidera sottoporre a ricerca per indicizzazione. Il connettore dei siti Web dell'organizzazione utilizzerà questo URL come punto iniziale e seguirà tutti i collegamenti da questo URL per la ricerca per indicizzazione.
 
 ### <a name="authentication"></a>Autenticazione
 
@@ -45,21 +49,25 @@ Per ottenere i valori per la risorsa, client_id e client_secret, andare a **util
 
 Per ulteriori informazioni, vedere [Guida introduttiva: registrare un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
-### <a name="root-url"></a>URL radice
+## <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
-L'URL radice è ciò che consente di avviare la ricerca per indicizzazione e viene utilizzato per l'autenticazione. È possibile ottenere l'URL dalla Home page del sito Web che si desidera sottoporre a ricerca per indicizzazione.
-
-## <a name="select-the-source-properties"></a>Selezionare le proprietà di origine
-
-Le proprietà di origine sono definite in base al formato dei dati del sito Web dell'organizzazione. Tuttavia, è possibile creare un **elenco di esclusione** che escluda che alcuni URL vengano sottoposti a ricerca per indicizzazione se tale contenuto è sensibile o meno. Per creare un elenco di esclusione, passare all'URL radice. È possibile aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
+Facoltativamente, è possibile creare un **elenco di esclusione** per escludere che alcuni URL vengano sottoposti a ricerca per indicizzazione se tale contenuto è sensibile o meno. Per creare un elenco di esclusione, passare all'URL radice. È possibile aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
 
 ## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca
 
-Non è disponibile alcun supporto per gli elenchi di controllo di accesso (ACL). Pertanto, si consiglia di connettere solo i siti Web che sono visibili a qualsiasi utente all'interno dell'organizzazione.
+Il connettore dei siti Web dell'organizzazione supporta solo le autorizzazioni di ricerca visibili a **tutti**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+
+## <a name="assign-property-labels"></a>Assegnare etichette delle proprietà
+
+È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, l'utilizzo di alcune etichette di proprietà migliorerà la pertinenza della ricerca e assicurerà risultati di ricerca più accurati per gli utenti finali.
+
+## <a name="manage-schema"></a>Gestione dello schema
+
+Nella schermata **Gestisci schema** è possibile modificare gli attributi dello schema (**Queryable**, **Searchable**, **Retrievable** e **per affinamento ricerca**) associati alle proprietà, aggiungere alias facoltativi e scegliere la proprietà **Content** .
 
 ## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 
-Il connettore dei siti Web dell'organizzazione supporta solo una ricerca per indicizzazione completa. Questo significa che il connettore legge tutto il contenuto del sito Web durante ogni ricerca per indicizzazione. Per assicurarsi che il connettore abbia un tempo sufficiente per leggere il contenuto, è consigliabile impostare un intervallo di pianificazione di aggiornamento di grandi dimensioni. È consigliabile eseguire un aggiornamento pianificato tra una e due settimane.
+Il connettore dei siti Web dell'organizzazione supporta solo un aggiornamento completo. Questo significa che il connettore rieseguirà la ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore abbia un tempo sufficiente per eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione di aggiornamento di grandi dimensioni. È consigliabile eseguire un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

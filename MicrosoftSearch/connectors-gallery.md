@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vengono elencati tutti i connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: 6ab0518dffacb25190a0eafc20e50408fd51004b
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388013"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367627"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Raccolta di connettori di Microsoft Graph
 
@@ -159,6 +159,27 @@ ms.locfileid: "45388013"
     </li>
 </ul>
 <ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Salesforce</h3>
+                        <p>da <a href="https://www.microsoft.com">Microsoft</a></p>
+                        <p>Con questo connettore di Microsoft Graph, gli utenti dell'organizzazione possono cercare i contatti, le opportunità, i lead e gli oggetti account dall'istanza di Salesforce.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="salesforce-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">Altre informazioni</font>
+                                </a>
+                             <img src="media/Salesforce_Small.png" alt="Enterprise Website" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -318,7 +339,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore Amazon S3 eseguirà la ricerca per indicizzazione del contenuto da qualsiasi servizio di archiviazione Amazon Simple.Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
+                        <p>Il connettore Amazon S3 eseguirà la ricerca per indicizzazione del contenuto da qualsiasi servizio di archiviazione Amazon Simple. Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -334,7 +355,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>di <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Il connettore Amazon S3 è compatibile con tutto il contenuto memorizzato in S3.L'organizzazione può utilizzare il connettore per connettersi in modo sicuro a S3 e indicizzare il contenuto dei bucket S3. Potenti funzionalità di filtraggio offrono al controllo dell'organizzazione i contenuti trovati in S3 che devono essere indicizzati.</p>
+                        <p>Il connettore Amazon S3 è compatibile con tutto il contenuto memorizzato in S3. L'organizzazione può utilizzare il connettore per connettersi in modo sicuro a S3 e indicizzare il contenuto dei bucket S3. Potenti funzionalità di filtraggio offrono al controllo dell'organizzazione i contenuti trovati in S3 che devono essere indicizzati.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -608,7 +629,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>Documentum/Documentum DQL</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore Documentum esegue la ricerca per indicizzazione del contenuto da qualsiasi repository di contenuto Documentum. DQL è un linguaggio di query che consente di eseguire query molto complesse che coinvolgono funzionalità di ricerca specializzate per la gestione di documenti e contenuti.Il connettore Aspire Documentum DQL eseguirà la ricerca per indicizzazione del contenuto da Documentum.</p>
+                        <p>Il connettore Documentum esegue la ricerca per indicizzazione del contenuto da qualsiasi repository di contenuto Documentum. DQL è un linguaggio di query che consente di eseguire query molto complesse che coinvolgono funzionalità di ricerca specializzate per la gestione di documenti e contenuti. Il connettore Aspire Documentum DQL eseguirà la ricerca per indicizzazione del contenuto da Documentum.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -659,7 +680,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>EMC eRoom</h3>
                         <p>di <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Il connettore eRoom stabilisce una connessione sicura all'applicazione eRoom ed esegue il mapping del contenuto, inclusi i metadati e gli allegati, dallo schema eRoom allo schema del motore di ricerca. Estrae quindi il contenuto e lo alimenta al motore di ricerca in un processo denominato ricerca per indicizzazione.</p>
+                        <p>Il connettore eRoom stabilisce una connessione sicura all'applicazione eRoom ed esegue il mapping del contenuto, inclusi i metadati e gli allegati, dallo schema eRoom allo schema del motore di ricerca.  Estrae quindi il contenuto e lo alimenta al motore di ricerca in un processo denominato ricerca per indicizzazione.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -793,7 +814,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>FTP</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore FTP (Aspire File Transfer Protocol) fornisce l'accesso ai file e alle cartelle su un server FTP.Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
+                        <p>Il connettore FTP (Aspire File Transfer Protocol) fornisce l'accesso ai file e alle cartelle su un server FTP. Ogni file viene inviato con i relativi metadati (dimensioni, posizione, ultimo accesso, ecc.). Gli aggiornamenti vengono individuati automaticamente.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -1032,7 +1053,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>IBM Lotus Notes</h3>
                         <p>di <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Con il connettore di posta elettronica IBM Notes di BA Insight, gli utenti hanno la possibilità di eseguire ricerche nei messaggi di posta elettronica direttamente dall'interno di SharePoint o da un altro portale.La sicurezza definita all'interno di IBM Notes viene automaticamente riflessa nell'esperienza di ricerca, in modo che gli utenti visualizzino i risultati della ricerca dalla propria cassetta postale, le cassette postali pubbliche e altre cassette postali a cui è stato concesso l'accesso.</p>
+                        <p>Con il connettore di posta elettronica IBM Notes di BA Insight, gli utenti hanno la possibilità di eseguire ricerche nei messaggi di posta elettronica direttamente dall'interno di SharePoint o da un altro portale.  La sicurezza definita all'interno di IBM Notes viene automaticamente riflessa nell'esperienza di ricerca, in modo che gli utenti visualizzino i risultati della ricerca dalla propria cassetta postale, le cassette postali pubbliche e altre cassette postali a cui è stato concesso l'accesso.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -1935,7 +1956,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>SharePoint 2013</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore SharePoint 2013 esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint 2013.Il connettore supporta gli elenchi, le pagine e i siti e gli aggiornamenti vengono identificati automaticamente o tramite il registro delle modifiche di SharePoint.</p>
+                        <p>Il connettore SharePoint 2013 esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint 2013. Il connettore supporta gli elenchi, le pagine e i siti e gli aggiornamenti vengono identificati automaticamente o tramite il registro delle modifiche di SharePoint.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2013+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -1951,7 +1972,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>SharePoint 2016</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore SharePoint 2016 esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint 2016.Il connettore supporta gli elenchi, le pagine e i siti e gli aggiornamenti vengono identificati automaticamente o tramite il registro delle modifiche di SharePoint.</p>
+                        <p>Il connettore SharePoint 2016 esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint 2016. Il connettore supporta gli elenchi, le pagine e i siti e gli aggiornamenti vengono identificati automaticamente o tramite il registro delle modifiche di SharePoint.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2016+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -1967,7 +1988,7 @@ ms.locfileid: "45388013"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>di <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Il connettore SharePoint Online esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint Online.Il connettore recupererà siti, elenchi, cartelle, voci di elenco e allegati, nonché altre pagine (in formato. aspx). Questo connettore supporta SharePoint in esecuzione nell'offerta di Microsoft O365. Il supporto per la ricerca per indicizzazione delle offerte locali di SharePoint è supportato dal connettore SharePoint 2010/2007 e dal connettore SharePoint 2013.</p>
+                        <p>Il connettore SharePoint Online esegue la ricerca per indicizzazione del contenuto da qualsiasi URL della raccolta siti di SharePoint Online. Il connettore recupererà siti, elenchi, cartelle, voci di elenco e allegati, nonché altre pagine (in formato. aspx). Questo connettore supporta SharePoint in esecuzione nell'offerta di Microsoft O365. Il supporto per la ricerca per indicizzazione delle offerte locali di SharePoint è supportato dal connettore SharePoint 2010/2007 e dal connettore SharePoint 2013.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
@@ -2016,7 +2037,7 @@ ms.locfileid: "45388013"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>Flessibilità</h3>
+                       <h3>Slack</h3>
                         <p>di <a href="https://www.raytion.com">Raytion</a></p>
                         <p>Il connettore per Slack Sincronizza in modo efficiente e robusto i contenuti di Slack con Microsoft Search. Indicizza in tempo reale i messaggi, i thread e i file condivisi da tutti i canali pubblici. Il connettore garantisce che tutti i documenti siano dotati di un set completo di metadati, che consente lo sviluppo della migliore esperienza di ricerca. Anche in ambienti vibranti, il connettore Slack tiene conto di tutte le modifiche e garantisce un indice di ricerca aggiornato.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -2255,9 +2276,9 @@ ms.locfileid: "45388013"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>windream ECM-System</h3>
+                       <h3>ECM-System di windream</h3>
                         <p>di <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connettore per windream ECM-System. Indicizza i file e le cartelle da windream ECM-System in tempo quasi reale. connettore di ricerca di Raytion di sesta generazione.</p>
+                        <p>Connettore per windream ECM-System. Indicizza i file e le cartelle di windream ECM-System quasi in tempo reale. connettore di ricerca di Raytion di sesta generazione.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-windream-ecm-system-connector"><font color="0065BA">Altre informazioni</font></a>
                         </p>
