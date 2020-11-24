@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
-ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
+ms.openlocfilehash: 7d0b8e1b4bbb405e254b2fe2d29b11f081f5b460
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256638"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382588"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
@@ -31,9 +31,7 @@ Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 pe
 
 È possibile gestire Microsoft Search dall'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** > **Microsoft Search**.
-
-**Nota:** se NON viene visualizzato Microsoft Search in **Impostazioni**, attivare l'opzione **Prova l'anteprima** nell'angolo in alto a destra di qualsiasi pagina dell'interfaccia di amministrazione.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Impostazioni** di  >  [**ricerca & Intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di Microsoft Search più efficiente e intuitiva nell'organizzazione.
 

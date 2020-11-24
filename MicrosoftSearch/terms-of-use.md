@@ -12,16 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Termini e condizioni legali per Microsoft Graph Connectors Public Preview per Microsoft Search
-ms.openlocfilehash: ee70ae9b747d6f0558426fd568a63abc6d2142f1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d9a8e4d55904edac845a46ed6b524ed09433135b
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626901"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382571"
 ---
-# <a name="microsoft-graph-connectors-public-preview-terms-of-use"></a>Anteprima pubblica dei connettori Microsoft Graph: Condizioni di utilizzo
-
-I connettori Microsoft Graph sono una funzionalità di anteprima e sono soggetti agli stessi termini di utilizzo descritti in "anteprime" nelle [condizioni dei servizi online](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English).
+# <a name="microsoft-graph-connectors-terms-of-use"></a>Connettori Microsoft Graph: Condizioni per l'utilizzo
 
 L'utilizzo di connettori Microsoft Graph può essere soggetto a termini e condizioni di terze parti. Microsoft non è una parte del contratto o dei contratti con terze parti e qualsiasi problema o problema relativo ai termini o ai servizi di terze parti deve essere indirizzato a terze parti. Voi, come titolare del trattamento dei dati, siete responsabili dell'indicizzazione dei dati nel tenant Microsoft 365.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL Server e Azure SQL Connector per Microsoft Search
+title: Oracle SQL Connector per Microsoft Search
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -12,51 +12,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore SQL Oracle per Microsoft Search.
-ms.openlocfilehash: 118e073f355d2ce06e63745efbf5d090ba61d582
+ms.openlocfilehash: cf7946533b3806bb730cdc6a31f7745ebad2c59d
 ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382597"
+ms.locfileid: "49382678"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connettori di Azure SQL e Microsoft SQL Server
+# <a name="oracle-sql-connector"></a>Connettore SQL Oracle
 
-Con un connettore di Microsoft SQL Server o di Azure SQL, l'organizzazione può individuare e indicizzare i dati da un database di SQL Server locale o da un database ospitato nell'istanza SQL di Azure nel cloud. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere l'indice aggiornato con i dati di origine, supporta le ricerche per indicizzazione periodiche complete e incrementali. Con questi connettori SQL, è anche possibile limitare l'accesso ai risultati della ricerca per alcuni utenti.
+Con il connettore Oracle SQL, l'organizzazione può individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere l'indice aggiornato con i dati di origine, supporta le ricerche per indicizzazione periodiche complete e incrementali. Con il connettore SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per alcuni utenti.
 
-Questo articolo è per gli amministratori di Microsoft 365 o per tutti gli utenti che configurano, eseguono e monitorano un connettore SQL Server o Microsoft Azure. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi. 
+Questo articolo è per gli amministratori di Microsoft 365 o per tutti coloro che configurano, eseguono e monitorano un connettore SQL Oracle. In questo articolo viene illustrato come configurare le funzionalità di connettore e connettore, le limitazioni e le tecniche di risoluzione dei problemi.
 
-## <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installare l'agente del connettore grafico (necessario solo per il connettore di Microsoft SQL Server locale)
+## <a name="install-the-graph-connector-agent"></a>Installare l'agente del connettore grafico
 Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente del connettore grafico. Per ulteriori informazioni, vedere [installare l'agente del connettore grafico](on-prem-agent.md) .  
 
-## <a name="register-an-app-for-azure-sql-connector-only"></a>Registrare un'app (solo per il connettore SQL di Azure)
-Per il connettore SQL di Azure, è necessario registrare un'app in Azure Active Directory per consentire all'app di ricerca Microsoft di accedere ai dati per l'indicizzazione. Per ulteriori informazioni sulla registrazione di un'app, fare riferimento alla documentazione di Microsoft Graph su come [registrare un'app](https://docs.microsoft.com/graph/auth-register-app-v2). 
-
-Dopo aver completato la registrazione delle app e aver preso nota del nome dell'app, dell'ID dell'applicazione (client) e dell'ID tenant, è necessario [generare un nuovo segreto client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Il segreto client verrà visualizzato solo una volta. Tenere presente & archiviare il segreto client in modo sicuro. Utilizzare l'ID client e il segreto client durante la configurazione di una nuova connessione in Microsoft Search. 
-
-Per aggiungere l'app registrata al database SQL di Azure, è necessario eseguire le operazioni seguenti:
- - Accedere al database SQL di Azure
- - Aprire una nuova finestra di query
- - Creare un nuovo utente eseguendo il comando ' Crea utente [nome app] da PROVIDER esterno '
- - Aggiungere un utente al ruolo eseguendo il comando ' exec sp_addrolemember ' db_datareader ', [nome app]' oppure ' ALTER ROLE db_datareader ADD MEMBER [nome app]'
-
->[!NOTE]
->Per revocare l'accesso a qualsiasi applicazione registrata in Azure Active Directory, fare riferimento alla documentazione di Azure sulla [rimozione di un'app registrata](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
-
 ## <a name="connect-to-a-data-source"></a>Connettersi a un'origine dati
-Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessario configurare il server di database che si desidera sottoporre a ricerca per indicizzazione e l'agente on-Prem. È quindi possibile connettersi al database con il metodo di autenticazione necessario.
+Per connettere il connettore SQL Oracle a un'origine dati, è necessario configurare il server di database che si desidera sottoporre a ricerca per indicizzazione e l'agente del connettore grafico locale. È quindi possibile connettersi al database con il metodo di autenticazione necessario.
+
+Per il connettore Oracle SQL, è necessario specificare il nome host, la porta e il servizio (database) insieme al metodo di autenticazione preferito, nome utente e password.
 
 > [!NOTE]
-> È necessario che il database esegua SQL Server versione 2008 o successiva per il connettore Microsoft SQL Server per potersi connettere.
-
-Per il connettore SQL di Azure, è sufficiente specificare il nome o l'indirizzo IP del server a cui si desidera effettuare la connessione. Il connettore SQL di Azure supporta solo l'autenticazione di Azure Active Directory Open ID Connect (OIDC) per la connessione al database.
-
-Per una maggiore sicurezza, è possibile configurare le regole del firewall IP per il database o SQL Server di Azure. Per ulteriori informazioni sulla configurazione delle regole del firewall IP, fare riferimento alla documentazione relativa alle [regole del firewall IP](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure). Aggiungere i seguenti intervalli di indirizzi IP client nelle impostazioni del firewall.
-
-| Area geografica | Intervallo IP |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+> È necessario che il database esegua Oracle Database Version 11g o versione successiva affinché il connettore sia in grado di connettersi. Il connettore supporta il database Oracle ospitato nelle piattaforme di Windows, Linux e VM di Azure.
 
 Per eseguire la ricerca nel contenuto del database, è necessario specificare le query SQL quando si configura il connettore. Queste query SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ad esempio le proprietà di origine, compresi i join SQL che è necessario eseguire per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare gli elenchi di controllo di accesso (ACL, Access Control List) all'interno delle query SQL quando si configura il connettore.
 
@@ -84,17 +62,16 @@ Di seguito viene descritto l'utilizzo di tutte le colonne ACL nella query preced
 ![Dati di esempio che mostrano OrderTable e AclTable con le proprietà di esempio](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
-Nella tabella seguente sono riepilogati i tipi di dati SQL supportati nei connettori SQL di MS SQL e Azure. La tabella riepiloga anche il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati dai connettori di Microsoft Graph per l'indicizzazione, fare riferimento alla documentazione sui [tipi di risorse della proprietà](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+Nella tabella seguente sono riepilogati i tipi di dati supportati dal connettore SQL Oracle. La tabella riepiloga anche il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati dai connettori di Microsoft Graph per l'indicizzazione, fare riferimento alla documentazione sui [tipi di risorse della proprietà](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
 | Categoria | Tipo di dati di origine | Tipo di dati di indicizzazione |
 | ------------ | ------------ | ------------ |
-| Data e ora | data <br> datetime <br> datetime2 <br> smalldatetime | datetime |
-| Valore numerico esatto | bigint <br> int <br> smallint <br> tinyint | Int64 |
-| Valore numerico esatto | po' | boolean |
-| Numerico approssimativo | galleggiante <br> reale | doppio |
-| Stringa di caratteri | char <br> varchar <br> testo | stringa |
-| Stringhe di caratteri Unicode | nchar <br> nvarchar <br> ntext | stringa |
-| Altri tipi di dati | uniqueidentifier | stringa |
+| Tipo di codice | NUMERO (p, 0) | Int64 (per p <= 18) <br> doppio (per p > 18) |
+| Tipo di codice a virgola mobile | NUMERO (p, s) <br> A virgola mobile (p) | doppio |
+| Data tipo di dati | Data <br> TIMESTAMP <br> TIMESTAMP (n) | datetime |
+| Tipo di carattere | CHAR (n) <br> VARCHAR <br> VARCHAR2 <br> LUNGO <br> CLOB <br> NCLOB | stringa |
+| Tipo di carattere Unicode | NCHAR <br> NVARCHAR | stringa |
+| Tipo di RowID | ROWID <br> UROWID | stringa |
 
 Per qualsiasi altro tipo di dati attualmente non supportato direttamente, è necessario eseguire il cast esplicito di una colonna a un tipo di dati supportato.
 
@@ -102,8 +79,8 @@ Per qualsiasi altro tipo di dati attualmente non supportato direttamente, è nec
 Per evitare sovraccarichi del database, il connettore esegue il batch e riprende le query di ricerca per indicizzazione complete con una colonna di filigrana full-crawl. Se si utilizza il valore della colonna filigrana, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. In sostanza si tratta di un meccanismo per controllare l'aggiornamento dei dati per le ricerche per indicizzazione complete.
 
 Creare frammenti di query per le filigrane come illustrato negli esempi seguenti:
-* `WHERE (CreatedDateTime > @watermark)`. Citare il nome della colonna della filigrana con la parola chiave riservata `@watermark` . Se l'ordinamento della colonna della filigrana è crescente, utilizzare `>` ; in caso contrario, utilizzare `<` .
-* `ORDER BY CreatedDateTime ASC`. Ordinare la colonna della filigrana in ordine crescente o decrescente.
+* `WHERE (CreatedDateTime > @watermark)`. Citare il nome della colonna della filigrana con la parola chiave riservata `@watermark` . È possibile ordinare la colonna della filigrana solo in ordine crescente.
+* `ORDER BY CreatedDateTime ASC`. Ordinare la colonna della filigrana in ordine crescente.
 
 Nella configurazione illustrata nella figura seguente, `CreatedDateTime` è la colonna della filigrana selezionata. Per recuperare il primo batch di righe, specificare il tipo di dati della colonna filigrana. In questo caso, il tipo di dati è `DateTime` .
 
@@ -138,13 +115,27 @@ I componenti nell'immagine seguente sono simili ai componenti di ricerca per ind
 ## <a name="manage-search-permissions"></a>Gestire le autorizzazioni di ricerca 
 È possibile scegliere di utilizzare gli [ACL specificati nella schermata di ricerca per indicizzazione completa](#full-crawl-manage-search-permissions) oppure è possibile sovrascriverli per rendere il contenuto visibile a tutti.
 
+## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
+Il connettore Oracle SQL supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. È consigliabile impostare entrambi.
+
+Una pianificazione di ricerca per indicizzazione completa rileva le righe eliminate precedentemente sincronizzate con l'indice Microsoft Search e tutte le righe che sono state spostate fuori dal filtro di sincronizzazione. Quando si esegue la connessione al database, viene eseguita una ricerca per indicizzazione completa per sincronizzare tutte le righe recuperate dalla query di ricerca per indicizzazione completa. Per sincronizzare nuove righe e rendere gli aggiornamenti, è necessario pianificare ricerche per indicizzazione incrementali.
+
 ## <a name="next-steps-customize-the-search-results-page"></a>Passaggi successivi: personalizzare la pagina dei risultati di ricerca
 Creare i propri tipi di verticali e di risultati, in modo che gli utenti finali possano visualizzare i risultati della ricerca dalle nuove connessioni. Senza questo passaggio, i dati della connessione non verranno visualizzati nella pagina dei risultati della ricerca.
 
 Per ulteriori informazioni su come creare i verticali e MRTs, vedere Personalizzazione della [pagina dei risultati di ricerca](customize-search-page.md).
 
 ## <a name="limitations"></a>Limitazioni
-I connettori SQL presentano queste limitazioni nella versione di anteprima:
-* Connettore Microsoft SQL Server: il database locale deve eseguire SQL Server versione 2008 o successiva.
+Il connettore SQL Oracle ha queste limitazioni nella versione di anteprima:
+* È necessario che il database locale esegua il database Oracle versione 11g o versioni successive.
 * Gli elenchi ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory. 
 * L'indicizzazione del contenuto RTF all'interno delle colonne di database non è supportata. Esempi di contenuto di questo tipo sono HTML, JSON, XML, BLOB e analisi dei documenti che esistono come collegamenti all'interno delle colonne di database.
+
+## <a name="troubleshooting-guide"></a>Guida alla risoluzione dei problemi
+Sotto è un elenco di errori comuni osservati durante la configurazione del connettore e dei loro possibili motivi.
+| Passaggio di configurazione | Messaggio di errore | Possibili motivi |
+| ------------ | ------------ | ------------ |
+| Impostazioni di database | Errore da server database: timeout richiesta di connessione | Nome host non valido <br> Host non raggiungibile |
+| Impostazioni di database | Errore da server database: ORA-12541: TNS: No listner | Porta non valida |
+| Impostazioni di database | Errore da server database: ORA-12514: TNS: Listner attualmente non è a conoscenza del servizio richiesto nel descrittore del connettore | Nome del servizio (database) non valido |
+| Impostazioni di database | Errore da server database: accesso non riuscito per l'utente ' `user` '. | Nome utente o password non validi |

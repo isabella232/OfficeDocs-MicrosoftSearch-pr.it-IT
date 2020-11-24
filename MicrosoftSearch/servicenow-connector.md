@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore ServiceNow per Microsoft Search
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367596"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382561"
 ---
 # <a name="servicenow-connector"></a>Connettore ServiceNow
 
@@ -171,6 +171,9 @@ Con una stringa di query di ServiceNow, è possibile specificare le condizioni p
 Il connettore ServiceNow supporta le autorizzazioni di ricerca visibili a **tutti** o **solo persone con accesso all'origine dati**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione o degli utenti che possono accedervi rispettivamente. Il connettore ServiceNow supporta le autorizzazioni per i criteri utente predefinite senza script avanzati. Quando il connettore incontra un criterio utente con script avanzato, tutti i dati che utilizzano i criteri utente non verranno mostrati nei risultati della ricerca.
 
 Se si sceglie solo gli utenti che **dispongono dell'accesso a questa origine dati**, è necessario scegliere di specificare se l'istanza di ServiceNow è dotata di un utente con provisioning di Azure Active Directory (AAD) o di utenti non AAD.
+
+>[!NOTE]
+>Il connettore ServiceNow è in **Anteprima** se si sceglie **solo gli utenti con accesso all'origine dati**.
 
 >[!NOTE]
 >Se si sceglie AAD come tipo di origine di identità, assicurarsi di assegnare la proprietà di origine UPN alla proprietà di posta elettronica di destinazione in ServiceNow. Per verificare o modificare i mapping, vedere [personalizzazione dei mapping degli attributi di provisioning degli utenti per le applicazioni SaaS in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
