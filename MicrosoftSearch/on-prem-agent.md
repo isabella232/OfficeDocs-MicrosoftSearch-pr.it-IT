@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: Agente on-Prem
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367757"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408943"
 ---
 # <a name="on-prem-agent"></a>Agente on-Prem
 
@@ -59,7 +60,7 @@ Dopo aver creato l'applicazione per l'agente, è necessario configurare l'agente
 
 È possibile fornire informazioni dettagliate sull'autenticazione in uno dei moduli seguenti.
 
-### <a name="configuring-the-client-secret-for-authentation"></a>Configurazione del segreto client per authentation
+### <a name="configuring-the-client-secret-for-authentication"></a>Configurazione del segreto client per l'autenticazione
 
 1. Accedere al [portale di Azure](https://portal.azure.com) e accedere con le credenziali di amministratore per il tenant.
 2. Aprire **registrazione app** dal riquadro di spostamento e passare all'app appropriata. In **Gestisci** selezionare **certificati e segreti**.
@@ -68,7 +69,7 @@ Dopo aver creato l'applicazione per l'agente, è necessario configurare l'agente
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>Utilizzo del certificato di identificazione personale per l'autenticazione
 
-Se sono già stati configurati i dettagli dell'autenticazione seguendo [la configurazione del segreto client per authentation](#Configuring-the-client-secret-for-authentication) , è possibile passare direttamente alla [Panoramica dell'installazione](configure-connector.md).
+Se sono già stati configurati i dettagli dell'autenticazione seguendo [la configurazione del segreto client per l'autenticazione](#configuring-the-client-secret-for-authentication) , è possibile passare direttamente alla [Panoramica dell'installazione](configure-connector.md).
 
 1. Aprire **registrazione app** e selezionare **certificati e segreti** nel riquadro di spostamento. Copiare l'identificazione personale del certificato.
 ![Elenco dei certificati di thumbrint in caso di selezione di certificati e segreti nel riquadro sinistro](media/onprem-agent/certificates.png)

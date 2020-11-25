@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: Configurare il connettore di condivisione file per Microsoft Search
-ms.openlocfilehash: c11c407016315e638205adddddd17d90bbe6b33d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: a95cfe90ca35a385bb9ce3a4c565c18c5a42ec80
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367739"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408934"
 ---
 # <a name="file-share-connector"></a>Connettore condivisione file
 
