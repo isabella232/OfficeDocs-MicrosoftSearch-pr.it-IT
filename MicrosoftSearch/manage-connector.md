@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367677"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420843"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -92,6 +92,7 @@ Codice errore | Messaggio di errore | Soluzione
 2001 | L'indicizzazione viene limitata a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga deselezionata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
 2003 | Indicizzazione non riuscita a causa del contenuto di elementi non supportati. | Per ulteriori informazioni, vedere documentazione specifica del connettore.
+2010 | Questa connessione non è più valida a causa di un aggiornamento eseguito da Microsoft. Eliminare la connessione e crearne uno nuovo. | Eliminare la connessione e crearne uno nuovo.
 5000 | Qualcosa è andato storto. Se questo continua, contattare il supporto. |
 
 ## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice
@@ -109,7 +110,7 @@ La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo dell
 Stato | Consumi delle quote
 --- | ---
 Normale | 1-69%
-Fortemente | 70-89%
+Alta | 70-89%
 Critico | 90%-99%
 Full | 100%
 
