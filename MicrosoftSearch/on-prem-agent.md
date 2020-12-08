@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agente on-Prem
-ms.openlocfilehash: 763904f8dd96c5db8b0633e36795443502afe7d0
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: 5dbca392fefdcc11de253fd244cc98a6adcee68a
+ms.sourcegitcommit: e8d770fa72ac83e074a5de57098cb55d06d8db07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420834"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588368"
 ---
 # <a name="graph-connector-agent"></a>Agente del connettore grafico
 
@@ -31,6 +31,7 @@ Scaricare la versione più recente di Graph Connector [Agent e](https://aka.ms/g
 Configurazione consigliata:
 
 * Windows 10, Windows Server 2016 R2 e successive
+* [Runtime desktop .NET Core 3,1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 core, 3 GHz
 * 16 GB di RAM, 2 GB di spazio su disco
 * Accesso alla rete all'origine dati e a Internet tramite 443
