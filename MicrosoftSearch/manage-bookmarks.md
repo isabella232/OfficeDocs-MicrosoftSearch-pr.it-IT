@@ -13,62 +13,77 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creazione e aggiornamento di segnalibri e modalità di modifica in blocco dei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: eb65121b53ab110b91880a65a5146d868f3a7405
-ms.sourcegitcommit: d88226f9c3a99540a591dc0a26408bb9960cf39a
+ms.openlocfilehash: 6a678464ec23c2d4c90190b6a02c0a73839b50ee
+ms.sourcegitcommit: 41d28060238091455c7b8b011c67ae60c8a41f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134168"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619577"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
-È possibile creare un segnalibro in pochi passaggi. Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione. È inoltre possibile aggiungere categorie a un segnalibro che può essere utilizzato per l'ordinamento e il filtro nel portale di amministrazione. Un segnalibro può avere più parole chiave e i segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa. Quando si crea o si modifica un segnalibro, l'indice di ricerca viene aggiornato immediatamente e il segnalibro è disponibile per gli utenti immediatamente.
+I segnalibri consentono agli utenti di trovare rapidamente siti e strumenti importanti con una semplice ricerca. Ogni segnalibro include un titolo, un URL, un set di parole chiave di facile utilizzo per attivare il segnalibro e una categoria.
 
-Se l'organizzazione ha configurato i risultati promossi in SharePoint, è possibile importare i risultati promossi in **Microsoft Search** e rendere il contenuto importato disponibile per gli utenti. Si tratta di un modo semplice per inserire rapidamente i risultati della ricerca quando si configura **Microsoft Search** e renderlo più efficiente per gli utenti. È consigliabile utilizzare i risultati promossi da SharePoint come riferimento per comprendere come denominare e creare i risultati di ricerca rilevanti.
+## <a name="what-makes-a-great-bookmark"></a>Cosa rende un segnalibro grande
 
-## <a name="add-or-edit-a-single-bookmark"></a>Aggiungere o modificare un singolo segnalibro
+Un segnalibro grande ha quattro elementi chiave:
 
-1. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**segnalibri**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
-1. Per aggiungere un segnalibro, fare clic su **Aggiungi**.
-Per modificare un segnalibro, selezionarlo nell'elenco di segnalibri pertinente.
-1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
-1. Salvare le modifiche.
+1. Un **titolo** forte e informativo. Puntare a non più di 8 parole o a un massimo di 60 caratteri. Si desidera consentire agli utenti di fare clic sul titolo e visualizzare il contenuto, ma evitare clickbait evidenti:
+    - Good: provare i piatti preferiti di questa settimana dal menu caffetteria. Il titolo è chiaro, conciso e interessante, ma potrebbe essere troppo promettente.
+    - Better: menu caffetteria di questa settimana. Non è troppo promettente o suona come un annuncio.
+    - Evitare: non è possibile credere a ciò che viene al menu caffetteria questa settimana. Utilizza luoghi comuni di clickbait che suonano come un annuncio.
+2. Una **Descrizione** succinta, circa 300 caratteri, che riepiloga lo scopo o la funzionalità della risorsa collegata.
+3. Un insieme di **parole chiave** che consentono agli utenti di trovare il segnalibro quando eseguono la ricerca. È consigliabile un minimo di almeno cinque parole chiave. Sono inoltre disponibili varianti che possono essere utilizzate dagli utenti dell'organizzazione, ad esempio menu per la ristorazione, menu per il pranzo e menu Café, che possono essere varianti del menu caffetteria.
+4. Un set di **categorie** utile per semplificare l'ordinamento e il filtro dei segnalibri nell'interfaccia di amministrazione. Gli utenti non vedranno mai le categorie assegnate.
 
-## <a name="add-or-edit-bookmark-using-browser-extensions"></a>Aggiungere o modificare il segnalibro usando le estensioni del browser
+## <a name="create-bookmark-answers"></a>Creare risposte ai segnalibri
 
-Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Installare l'estensione del browser, passare al sito che si desidera aggiungere come segnalibro e aggiungere il segnalibro.
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/), andare a [segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere la modalità di creazione di nuovi segnalibri:
 
-Le estensioni dei browser sono attualmente disponibili per Microsoft Edge e Chrome.
+- Aggiungere segnalibri
+- Importare i risultati di SharePoint
+- Aggiungere segnalibri predefiniti e segnalibri consigliati
+- Importare i segnalibri
+- Pubblicare o rivedere i segnalibri consigliati
 
-- Per scaricare le estensioni dei server perimetrali, passare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e scaricare l'app.
-- Per scaricare Chrome Extensions, passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e scaricare l'app.
+### <a name="add-bookmarks"></a>Aggiungere segnalibri
 
-## <a name="bulk-add-or-edit-bookmarks"></a>Aggiungere o modificare in blocco i segnalibri
+Gli amministratori e gli editor di ricerca possono aggiungere segnalibri nell'interfaccia di amministrazione di Microsoft 365. I segnalibri possono essere pubblicati o salvati in bozza. La pubblicazione di un segnalibro aggiorna immediatamente l'indice di ricerca in modo che gli utenti possano iniziare a scoprirlo e utilizzarlo subito. È inoltre possibile pianificare un segnalibro specificando la data e l'ora in cui verrà pubblicata.
 
-Utilizzare la caratteristica di importazione o esportazione per creare o modificare in blocco i segnalibri. Rende l'aggiunta o la modifica di un numero elevato di segnalibri in modo più semplice e veloce. Utilizzarla per:
+- **Published**: i segnalibri sono disponibili per gli utenti dell'organizzazione tramite Microsoft Search.
+- **Bozza**: i segnalibri salvati come bozze non sono disponibili per gli utenti. Utilizzare questo stato se l'utente o altre parti interessate desiderano rivedere o aggiornare i segnalibri prima di pubblicarli.
+- **Pianificato**: segnalibri che verranno pubblicati nella data e l'ora specificate.
 
-- Aggiungere segnalibri in blocco: aggiungere i dettagli nel file modello del segnalibro e quindi importarlo.
-- Modificare i segnalibri in blocco: esportare i segnalibri in un file CSV, quindi modificare i dettagli del segnalibro nel file CSV esportato e infine importare il file CSV aggiornato.
-- Importare i siti alzati di livello da SharePoint.
-- Eseguire il backup dei segnalibri: esportare i segnalibri in un file CSV.
+È possibile utilizzare l'estensione del browser creatore di contenuti di Microsoft Search per aggiungere facilmente segnalibri. Per installare l'estensione del browser, passare al sito che si desidera aggiungere come segnalibro e fare clic su Aggiungi nell'estensione.
+Installare l'estensione per Edge e Chrome:
 
-Per importare o esportare segnalibri:
+- Per Chromium Edge o Chrome: passare a [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e aggiungere l'estensione.
+- Per il server perimetrale legacy: andare a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) e aggiungere l'estensione.
 
-1. In alto a destra della scheda **Segnalibri**, selezionare **Importa**.
-Selezionare **Esporta** per scaricare tutti i segnalibri esistenti in un file CSV.
-1. Nel riquadro destro, scegliere l'opzione per importare con un file CSV o da SharePoint.
-Scaricare il file modello per un elenco di campi obbligatori e i dettagli.
-1. Aggiungere o modificare i dettagli del segnalibro nel file modello e quindi salvarlo nel computer.
-1. Nel riquadro **Importa segnalibri**, selezionare **Sfoglia** e quindi il file CSV da importare.
-1. Selezionare **Importa**.
+### <a name="import-sharepoint-results"></a>Importare i risultati di SharePoint
 
-Di seguito sono riportate alcune considerazioni importanti sul file modello:
+Se l'organizzazione ha configurato i risultati promossi in SharePoint, è possibile importare i titoli, gli URL e le descrizioni dai risultati promossi per il tenant in Microsoft Search e rendere il contenuto importato disponibile per gli utenti. Nella maggior parte dei casi, l'importazione dei risultati di SharePoint richiede solo alcuni minuti. Se si sta importando un numero elevato di risultati, potrebbero essere necessari fino a 48 ore. Si tratta di un modo semplice per popolare rapidamente i risultati di ricerca e renderlo più efficace per gli utenti. È consigliabile utilizzare i risultati promossi da SharePoint come riferimento per comprendere come denominare e creare i risultati di ricerca rilevanti.
 
-- Non modificare mai i dati in questi campi: *ID*, *Ultima modifica*e *Ultima modifica da*
+### <a name="add-default-and-suggested-bookmarks"></a>Aggiungere segnalibri predefiniti e consigliati
+
+Sono stati inclusi alcuni segnalibri di default consigliati che gli utenti possono trovare utili, inclusi i segnalibri per HR, i vantaggi, il supporto IT, la gestione delle password e altro ancora. Rivedere, aggiornare e pubblicare questi segnalibri consigliati per fornire subito risultati di alta qualità agli utenti.
+
+Gli utenti possono anche suggerire i segnalibri che si desidera vengano aggiunti utilizzando i collegamenti di feedback in Microsoft Search. I suggerimenti verranno visualizzati come segnalibri suggeriti.
+
+### <a name="import-bookmarks"></a>Importare i segnalibri
+
+Utilizzare la caratteristica di importazione per rendere più semplice e veloce l'aggiunta o la modifica di un numero elevato di segnalibri. Utilizzarla per:
+
+- Aggiungere i segnalibri in blocco: aggiungere dettagli nel file del modello di segnalibro e quindi importarlo.
+- Modifica in blocco dei segnalibri: esportare i segnalibri in un file. csv, modificare i dettagli del segnalibro nel file esportato e quindi importare il file modificato.
+
+Alcuni punti importanti sul file modello:
+
+- Non modificare mai i dati in questi campi: *ID*, *Ultima modifica* e *Ultima modifica da*
 - Se si include l' *ID* di un segnalibro esistente, verrà sostituito con le informazioni contenute nel file di importazione.
-- Per segnalibro esistente con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni contenute nel file di importazione.
+- Per i segnalibri esistenti con lo stesso titolo o URL, il segnalibro verrà aggiornato con le informazioni contenute nel file di importazione.
 - Non tutti i campi sono obbligatori nel file modello e i campi obbligatori variano in base allo stato del segnalibro.
-- In base al campo *dello stato* , i segnalibri verranno salvati come bozza, suggeriti, pianificati o verranno pubblicati automaticamente.
+- In base al campo *dello stato* , i segnalibri verranno salvati come bozza, suggeriti, pianificati, esclusi o verranno pubblicati automaticamente.
 - Per i partner che gestiscono più organizzazioni, è possibile esportare i segnalibri da un'organizzazione e importarli in un altro. È tuttavia necessario rimuovere i dati nella colonna *ID* prima di essere importati.
 
 ### <a name="prevent-import-errors"></a>Evitare gli errori di importazione
@@ -79,31 +94,66 @@ Per evitare errori, verificare che il file di importazione sia formattato corret
 
 - Includa la riga di intestazione e tutte le colonne presenti nel modello di importazione
 - L'ordine delle colonne equivalga a quello del modello di importazione
-- Tutte le colonne dispongono di valori, ad eccezione delle tre che possono essere vuote: *ID*, *Last modified*e *Last modified by*
+- Tutte le colonne dispongono di valori, ad eccezione delle tre che possono essere vuote: *ID*, *Last modified* e *Last modified by*
 - La colonna *dello stato* non è vuota, sono necessarie informazioni
+- Quando si importano segnalibri pubblicati, suggeriti, pianificati o Draft, sono necessarie le colonne *title*, *URL* e *Keywords*
+- Quando si importano i segnalibri esclusi, è necessaria la colonna *URL*
 
 Per evitare errori di duplicazione da segnalibro a segnalibro:
 
 - Non utilizzare URL duplicati per segnalibri diversi. Se un URL viene assegnato a un altro segnalibro e si tenta di aggiungerlo nuovamente da un file di importazione, verrà visualizzato un messaggio di errore. Questo vale anche per gli URL duplicati di altri tipi di risposte.
 - Quando si aggiornano i segnalibri esistenti, utilizzare la colonna *ID segnalibro* . È possibile aggiornare qualsiasi altra proprietà di un segnalibro esistente, ad esempio una parola chiave o una descrizione, ma è necessario verificare che l' *ID del segnalibro* si trovi nella colonna appropriata del file di importazione. Se l' *ID del segnalibro* è presente, non verrà trattato come nuova aggiunta e non verrà elaborato come errore.
 
-## <a name="power-apps"></a>Power Apps
+### <a name="publish-or-review-recommended-bookmarks"></a>Pubblicare o rivedere i segnalibri consigliati
 
-Consente agli utenti di completare le attività, ad esempio il tempo di ferie o le spese per le relazioni, aggiungendo le app di alimentazione esistenti ai segnalibri.
+Per ridurre lo sforzo manuale necessario per aggiungere segnalibri, Microsoft Search è in grado di valutare i collegamenti di SharePoint nell'organizzazione e di consigliare i segnalibri ed è possibile esaminarli prima di pubblicarli o impostarli in modo che vengano pubblicati automaticamente. Non è necessaria alcuna configurazione per i segnalibri consigliati, che sono abilitati e impostati per la pubblicazione automatica per impostazione predefinita. Per modificare queste impostazioni in qualsiasi momento, selezionare **Gestisci segnalibri** per aprire il riquadro Impostazioni segnalibro.
 
-### <a name="power-apps-explained"></a>Spiegazioni di Power Apps
+![Schermata delle impostazioni consigliate del segnalibro nel portale di amministrazione di Microsoft 365](media/bookmarks-recommendedsettings.png)
 
-Power Apps è un servizio che consente di creare app aziendali che vengono eseguite in un browser o su un telefono o tablet senza che sia necessaria alcuna esperienza di codifica. Le app Power funzionano in qualsiasi browser e su qualsiasi dispositivo e impiegano meno di un minuto per aggiungere. Per ulteriori informazioni su Power Apps, vedere:
+Se sono abilitati i segnalibri consigliati, il motore di raccomandazione valuterà i siti di SharePoint nell'organizzazione per identificare i collegamenti ad alto traffico. Dopo un periodo di valutazione iniziale, i segnalibri consigliati verranno pubblicati automaticamente o aggiunti all'elenco dei segnalibri suggeriti. Il ciclo successivo, ovvero un periodo di valutazione di 30 giorni seguito da pubblicazione automatica o aggiunta di segnalibri suggeriti, inizierà.
 
-- [Formazione guidata](https://docs.microsoft.com/learn/browse/?terms=power%20apps)
-- [Documentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
-- [Home Apps di alimentazione](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+Si consiglia agli amministratori di ricerca o ai redattori di esaminare periodicamente questi segnalibri pubblicati automaticamente o suggeriti. Inoltre, i segnalibri consigliati non includeranno mai gli URL trovati nei segnalibri pubblicati, suggeriti, pianificati o esclusi esistenti.
 
-### <a name="add-a-power-app-to-a-bookmark"></a>Aggiungere un'app Power a un segnalibro
+Per garantire che solo gli utenti con accesso visualizzino un segnalibro consigliato nei risultati del lavoro, è inclusa una funzionalità di controllo di accesso per tutti i segnalibri consigliati. Gli utenti che non dispongono delle autorizzazioni per accedere a un sito di SharePoint non vedranno mai il segnalibro consigliato per il sito. Questo controllo di accesso è controllato dall'opzione **solo gli utenti con accesso a questo collegamento** nell'impostazione gruppi per ogni segnalibro consigliato.
 
-1. Individuare l' [ID app per l'applicazione di alimentazione](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) che si desidera aggiungere.
-1. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**segnalibri**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
-1. Aggiungere un segnalibro o individuare un segnalibro esistente a cui si desidera aggiungere un' **applicazione di alimentazione** .
-1. In **Impostazioni segnalibro**, selezionare **Power app**, quindi immettere o incollare l' **ID app**.
-    L'altezza e la larghezza vengono regolate automaticamente in base all'orientamento che è stato selezionato quando è stata creata l'applicazione Power. I segnalibri supportano gli orientamenti verticale e orizzontale. L'anteprima del segnalibro mostra una PowerApp completamente funzionante, per renderla semplice da testare.
-1. Selezionare **Pubblica** o **Salva come bozza**.
+Il controllo di accesso si interrompe se viene modificato l'URL nel segnalibro consigliato o nell'impostazione gruppi.
+
+Per impedire al motore di raccomandazione di pubblicare o suggerire un segnalibro a un sito specifico, è possibile aggiungere l'URL a un elenco escluso. Il motore di raccomandazione non pubblicherà mai o suggerirà un segnalibro per un sito escluso o una pagina all'interno di un sito escluso.
+
+## <a name="about-keywords-and-reserved-keywords"></a>Informazioni su parole chiave e parole chiave riservate
+
+Un segnalibro può avere più parole chiave e i segnalibri possono condividere la stessa parola chiave, ma la parola chiave riservata non può essere condivisa. Una parola chiave riservata è un termine o una frase univoca che attiva un segnalibro specifico. Una parola chiave riservata può essere associata a una sola risposta. Utilizzare parole chiave riservate con parsimonia.
+
+## <a name="frequently-asked-questions"></a>Domande frequenti
+
+**D: quanto tempo è necessario per rendere visibile un segnalibro in Microsoft Search dopo la pubblicazione?**
+
+**A:**  Un segnalibro è disponibile in Microsoft Search subito dopo la pubblicazione.
+
+**D: quanto tempo è necessario per visualizzare un segnalibro consigliato?**
+
+**A:**  I segnalibri consigliati verranno visualizzati solo in Microsoft Search se sono stati abilitati entrambi i segnalibri consigliati e la pubblicazione automatica. Durante il periodo di valutazione iniziale, il motore di raccomandazione valuterà il traffico di SharePoint per identificare i segnalibri appropriati e quindi pubblicarli automaticamente. Dopo la pubblicazione, diventano disponibili immediatamente in Microsoft Search.
+
+**D: Microsoft Search consiglia i segnalibri dei siti in tutte le lingue?**
+
+**A**: Sì, Microsoft Search è in grado di consigliare i segnalibri di qualsiasi sito di SharePoint interno, indipendentemente dalla lingua.
+
+**D: è possibile interrompere la visualizzazione dei segnalibri consigliati nei risultati della ricerca?**
+
+**A:** Per interrompere la visualizzazione dei segnalibri consigliati, disattivare l'impostazione di pubblicazione automatica nell'interfaccia di amministrazione. I segnalibri consigliati verranno aggiunti all'elenco dei segnalibri suggeriti.
+
+**D: come è possibile identificare un segnalibro consigliato nei risultati della ricerca o nell'interfaccia di amministrazione?**
+
+**A:** Nei risultati della ricerca, i segnalibri consigliati includono la frase "suggerito per te" prima dell'URL. Nell'interfaccia di amministrazione, i segnalibri estratti avranno un valore proprietario "SYSTEM".
+
+**D: in che modo viene gestito l'accesso a un segnalibro consigliato?**
+
+**A**: un motore di accesso progettato da Microsoft determina se l'URL del segnalibro è accessibile a un utente specifico e visualizza il segnalibro consigliato solo per il gruppo di destinatari corretto. Tuttavia, se l'URL è stato modificato o l'impostazione gruppi è stata modificata, il motore di accesso progettato verrà disabilitato.
+
+**D: che cosa accade se non è stata eseguita alcuna azione nei segnalibri consigliati aggiunti all'elenco consigliato?**
+
+**A: per** evitare un volume elevato di segnalibri nell'elenco consigliato, un segnalibro consigliato (Owner = System) verrà eliminato dopo 180 giorni.
+
+**D: dove è possibile trovare l'ID app per un'applicazione di alimentazione?**
+
+**A**: passare al sito Power Apps e visualizzare il riquadro dei dettagli per l'app. Ulteriori informazioni su [come ottenere un ID app](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
