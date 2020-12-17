@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
+ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420843"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49695686"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "49420843"
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
 
-## <a name="get-started"></a>Per iniziare
+## <a name="get-started"></a>Informazioni di base
 
 Passare alla [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
 
@@ -103,14 +103,14 @@ La quota e il consumo di indice disponibili sono visualizzati nella pagina di de
 
 >[!NOTE]
 >Durante il periodo di anteprima, ogni organizzazione che prova i connettori del grafico è stata fornita una quota fissa libera di fino a 2 milioni elementi in tutte le connessioni. Con i connettori grafico generalmente disponibili, la quota libera scadrà il 1 ° febbraio 2021 per le organizzazioni che utilizzano i connettori grafico in anteprima.
->I connettori del grafico Microsoft-built etichettati come ["Preview"](connectors-preview.md) non verranno inclusi nella quota totale di indice addebitata per l'organizzazione. Tuttavia, conterà verso il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni elementi che l'organizzazione può indicizzare tra le connessioni.
+>I connettori del grafico Microsoft-built etichettati come ["Preview"](connectors-preview.md) non verranno inclusi nella quota totale di indice addebitata per l'organizzazione. Tuttavia, conterà verso il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni elementi che l'organizzazione può indicizzare tra le connessioni; ogni connessione è limitata a 700.000 elementi. 
 
 La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo della quota da parte dell'organizzazione:
 
 Stato | Consumi delle quote
 --- | ---
 Normale | 1-69%
-Alta | 70-89%
+Alto | 70-89%
 Critico | 90%-99%
 Full | 100%
 
