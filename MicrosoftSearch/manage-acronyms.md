@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare e aggiornare gli acronimi risposte in Microsoft Search
-ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
+ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422947"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709683"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gestire le risposte degli acronimi in Microsoft Search
 
@@ -100,7 +100,7 @@ Microsoft Search garantisce che solo gli utenti con accesso e le autorizzazioni 
 
 **D: in che modo vengono classificati i dati editoriali e estratti?**
 
-**A:** La caratteristica attualmente classifica gli acronimi editoriali sopra gli acronimi estratti.
+**A:** La classificazione dei risultati può variare da persona a persona poiché i risultati sono personalizzati per ogni utente.
 
 **D: quanto tempo occorre per rendere visibili gli acronimi editoriali in Microsoft Search dopo che sono stati pubblicati?**
 
@@ -108,7 +108,7 @@ Microsoft Search garantisce che solo gli utenti con accesso e le autorizzazioni 
 
 **D: in che modo gli utenti attivano le risposte alle sigle?**
 
-**A: per**ottenere risposte agli acronimi, gli utenti devono immettere modelli di query specifici in una casella di **ricerca** [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)o [Office 365](https://Office.com) .
+**A: per** ottenere risposte agli acronimi, gli utenti devono immettere modelli di query specifici in una casella di **ricerca** [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)o [Office 365](https://Office.com) .
 
 **D: quanto tempo è necessario per visualizzare gli acronimi estratti dopo aver ricevuto o inviato un nuovo messaggio di posta elettronica o documento?**
 
@@ -124,5 +124,5 @@ Microsoft Search garantisce che solo gli utenti con accesso e le autorizzazioni 
 
 **D: che cosa accade se la mia organizzazione non vuole visualizzare gli acronimi estratti? È possibile interrompere la visualizzazione degli acronimi estratti nei risultati della ricerca?**
 
-**A: per**disattivare la visualizzazione degli acronimi estratti nei risultati della ricerca, creare un ticket di supporto clienti attenendosi alle istruzioni riportate in [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
+**A: per** disattivare la visualizzazione degli acronimi estratti nei risultati della ricerca, creare un ticket di supporto clienti attenendosi alle istruzioni riportate in [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
 Dopo aver creato un ticket di supporto, sono necessarie fino a 48 ore per evitare che gli acronimi estratti vengano visualizzati nei risultati della ricerca.

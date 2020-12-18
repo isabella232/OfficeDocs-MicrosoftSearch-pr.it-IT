@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare i report sull'utilizzo della ricerca Microsoft
-ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
-ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
+ms.openlocfilehash: 04de0de08423eff1368bc2b77e48d3fc8add038d
+ms.sourcegitcommit: 1d6fcf180f427abf3d8bfa4b8b6129e39f60ceb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675269"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712612"
 ---
 # <a name="microsoft-search-usage-reports"></a>Rapporti sull'utilizzo della ricerca Microsoft
 
@@ -30,19 +30,18 @@ I [report sull'utilizzo della ricerca Microsoft](https://admin.microsoft.com/Adm
 
 In una versione precedente di questa pagina sono stati inclusi i dati delle ricerche eseguite per Microsoft Search in Bing su Bing.com. Questi dati verranno integrati tra breve, ma per il momento, è ancora possibile visualizzare tali rapporti facendo clic sul collegamento nella parte inferiore della pagina per **visualizzare le query principali di Bing e la distribuzione di impressioni**.
 
-![Dashboard report di utilizzo della ricerca](media/usage-reports/usage_reports_v2.png)
+> [!div class="mx-imgBorder"]
+> ![Dashboard report di utilizzo della ricerca](media/usage-reports/usage_reports_v2.png)
+
 
 ## <a name="overview-of-search-reports"></a>Panoramica dei report di ricerca
 
-|**Report**|**Descrizione**|
+| Report | Descrizione |
 |:-----|:-----|
 |Volume di query|Questo report mostra il numero di query di ricerca eseguite. Utilizzare questo report per identificare le tendenze del volume delle query di ricerca e determinare i periodi di attività di ricerca di livello elevato e basso.|
 |Principali query|Questo report mostra le query di ricerca maggiormente eseguite. Utilizzare questo report per comprendere quali tipi di informazioni stanno cercando gli utenti.|
 |Query abbandonate|Questo rapporto consente di visualizzare le query di ricerca più comuni che ricevono un clic basso. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'ingestione di un nuovo contenuto tramite un connettore grafico è l'azione corretta.|
 |Nessuna query sui risultati|Questo report mostra le query di ricerca frequenti che non hanno restituito alcun risultato. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'ingestione di un nuovo contenuto tramite un connettore grafico è l'azione corretta.|
-
-> [!NOTE]
-> Attualmente esiste un problema con il CTR (tasso di clic) visualizzato per le query principali. Il valore visualizzato nel dashboard è 100 volte maggiore rispetto al valore effettivo. Per ottenere il CTR reale, dividere il numero sul dashboard da 100 o utilizzare il pulsante download per ottenere il report in Excel in cui il valore viene visualizzato correttamente.
 
 ## <a name="viewing-reports"></a>Visualizzazione di report
 
@@ -54,9 +53,9 @@ Per visualizzare le query principali di Bing e i report di distribuzione delle i
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Quando si selezionano i 31 giorni scorsi o gli ultimi 12 mesi, perché è necessario scegliere rispettivamente un giorno specifico o un mese specifico.**
+**Quando seleziono gli ultimi 31 giorni o ultimi 12 mesi, perché è necessario scegliere un giorno specifico o un mese specifico.**
 
-La visualizzazione calendario oggi nei report di utilizzo della ricerca di Microsoft è un processo in due passaggi. per prima cosa selezionare l'intervallo di date dall'elenco a discesa (ultimi 31 giorni o ultimi 12 mesi) e quindi selezionare il giorno o il mese di inizio.
+La visualizzazione calendario, oggi, nei report di utilizzo della ricerca di Microsoft è un processo in due passaggi. Per prima cosa selezionare l'intervallo di date dall'elenco a discesa (ultimi 31 giorni o ultimi 12 mesi) e quindi selezionare il giorno o il mese di inizio.
 
 Le tabelle di query in alto, abbandonate e non riuscite mostrano i risultati del giorno o del mese scelto.
 
