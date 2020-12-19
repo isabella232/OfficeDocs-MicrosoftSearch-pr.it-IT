@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati di ricerca
-ms.openlocfilehash: 8522a6daf05b718ee6a066272da181be6e95905e
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
+ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367488"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49716986"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati di ricerca
 
@@ -116,13 +116,13 @@ Dopo aver avviato la procedura guidata, è possibile eseguire la procedura per d
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>PASSAGGIO 3: visualizzare la verticale dopo che è stata abilitata
 
-Dopo aver abilitato la verticale, potrebbe essere necessario un po' di tempo prima che sia possibile visualizzarla. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear = true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale.
+Dopo aver abilitato la verticale, potrebbe essere necessario un po' di tempo prima che sia possibile visualizzarla. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear = true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Per [Bing](https://bing.com), aggiungere **&features = uncachedVerticals** all'URL verticale del lavoro per visualizzare immediatamente le verticali. 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 Di seguito è visualizzato un elenco di problemi comuni che potrebbero verificarsi e le azioni da risolvere.
 
-|Error  |Azione  |
+|Errore  |Azione  |
 |---------|---------|
 | Viene visualizzato un messaggio di errore "qualcosa è andato storto" sul verticale. | Per completare l'installazione, sono necessari sia i tipi verticale che quelli dei risultati. Assicurarsi di aver creato entrambi per la stessa origine di contenuto. |
 | Non viene visualizzato il layout dei risultati, anche se ne è stato creato uno. | Sono necessari alcuni minuti perché queste impostazioni vengono in genere memorizzate nella cache. Attendere qualche minuto e riprovare.        |
