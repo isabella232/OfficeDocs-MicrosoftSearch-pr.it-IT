@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ottenere una panoramica delle funzionalità di ricerca di Microsoft, dei vantaggi e delle app che supportano Microsoft Search.
-ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
-ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
+ms.openlocfilehash: f06aff0ea0407983a40f60e03337d4ed281a53ad
+ms.sourcegitcommit: d6f8628be8108e6e9d6fb9efb7bd06bc2fcd561d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43914490"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749387"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -40,7 +40,7 @@ Quando gli utenti fanno clic nella casella di **ricerca** , vengono suggeriti i 
 
 ![Screenshot della casella Microsoft Search con una query e i risultati suggeriti](media/SERP_text_520.png)
 
-Se i suggerimenti nella casella di ricerca non sono ciò che gli utenti stanno cercando, **Enter** apre l'elenco completo dei risultati. È possibile usare i metadati, ad esempio l'autore e la data di modifica dell'elemento, la posizione degli elementi e l'anteprima per verificare se l'elemento trovato corrisponde a quello cercato.
+Se i suggerimenti nella casella di ricerca non sono ciò che gli utenti stanno cercando, **Enter** apre l'elenco completo dei risultati. È possibile utilizzare metadati quali l'ultima volta che ha modificato l'elemento e quando, in cui si trova l'elemento, nonché visualizzarne l'anteprima per determinare se è quello che stanno cercando.
 
 ![Screenshot della pagina dei risultati di Microsoft Search](media/search_box.png)
 

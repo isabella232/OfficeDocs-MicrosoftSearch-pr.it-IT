@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore di condivisione file per Microsoft Search
-ms.openlocfilehash: a95cfe90ca35a385bb9ce3a4c565c18c5a42ec80
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
+ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408934"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750898"
 ---
 # <a name="file-share-connector"></a>Connettore condivisione file
 
@@ -63,3 +63,7 @@ Nella schermata **Gestisci schema** è possibile modificare gli attributi dello 
 ## <a name="set-the-refresh-schedule"></a>Impostare la pianificazione di aggiornamento
 
 L'intervallo di pianificazione di aggiornamento predefinito consigliato è 15 minuti, ma è possibile modificarlo in base alle preferenze.
+
+## <a name="result-layout"></a>Layout dei risultati
+
+È consigliabile utilizzare il layout di risultati predefinito per visualizzare i risultati del connettore FileShare perché contiene icone e controlli adeguati che consentono di passare al percorso del file. Se si crea un nuovo layout dei risultati, il valore predefinito verrà ignorato.
