@@ -9,6 +9,7 @@
 ## [Segnalibri](manage-bookmarks.md)
 ## [Planimetrie piani](manage-floorplans.md)
 ## [Posizioni](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Domande e risposte](manage-qas.md)
 # Connettori (anteprima)
 ## [Panoramica](connectors-overview.md)
