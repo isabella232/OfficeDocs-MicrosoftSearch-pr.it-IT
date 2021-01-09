@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati di ricerca
-ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
-ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
+ms.openlocfilehash: 4896fdb9923c93602acc48c2360039d512e4d72e
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49716986"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790339"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati di ricerca
 
@@ -39,7 +39,7 @@ Nella parte superiore della pagina dei risultati di ricerca Microsoft è present
 Un verticale di ricerca può ora riportare i risultati da più origini del connettore. Questo garantisce una maggiore flessibilità nella progettazione della pagina dei risultati di ricerca. L'esperienza amministrativa esistente per il programma di installazione verticale consente di selezionare più connessioni nel passaggio "origine di contenuto".
 Se si nominano con precisione il numero di etichette semantiche possibili, questa esperienza verrà migliorata. È possibile aggiungere etichette semantiche sulla definizione dello schema e sull'ingestione.
 
-Di [seguito](#configure-connector-step-5-assign-property-labels) vengono fornite ulteriori informazioni su come creare e gestire le etichette semantiche.
+Di [seguito](configure-connector.md#step-5-assign-property-labels) vengono fornite ulteriori informazioni su come creare e gestire le etichette semantiche.
 
 ### <a name="things-you-should-know"></a>Aspetti da conoscere
 
@@ -62,7 +62,7 @@ Sono disponibili tre passaggi di base per aggiungere una verticale:
 
 Dopo aver avviato la procedura guidata, è possibile eseguire le operazioni seguenti per definire il nome, l'origine di contenuto e l'ambito del contenuto in cui eseguire la ricerca. La verticale viene creata in uno stato disabilitato. Sarà possibile attivarlo in un secondo momento.
 
-È possibile utilizzare un insieme limitato di [KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) per limitare l'ambito. In questa pagina sono elencate le proprietà disponibili. È consigliabile utilizzare le parole chiave FREETEXT e le restrizioni delle proprietà con gli operatori booleani per la creazione del KQL.
+È possibile utilizzare un insieme limitato di [KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) per limitare l'ambito. In questa pagina sono elencate le proprietà disponibili. È consigliabile utilizzare parole chiave con testo libero e restrizioni delle proprietà con gli operatori booleani per la creazione di KQL.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Creare un verticale a livello dell'organizzazione
 
@@ -97,7 +97,7 @@ Un layout dei risultati di ricerca predefinito verrà visualizzato per il conten
 - **Una o più condizioni** per confrontare ogni risultato di ricerca, ad esempio l'origine di contenuto del risultato della ricerca.  
 - Un **layout** di risultati da utilizzare per i risultati di ricerca che soddisfano le condizioni. Il layout dei risultati controlla il modo in cui tutti i risultati che soddisfano le condizioni vengono visualizzati e si comportano in una pagina dei risultati di ricerca.
 
-**Se non è possibile eseguire il mapping appropriato per visualizzare il layout dei risultati di ricerca predefinito, Ehi deve creare almeno un tipo di risultati per visualizzare i risultati in verticale.** È possibile creare più tipi di risultati per ogni verticale, che consente di utilizzare layout diversi per diversi tipi di risultati. Ad esempio, è possibile personalizzare gli eventi di *gravità 1* per avere colori più prominenti e un tipo di carattere più grande rispetto a *gravità 3* incidenti.
+**Se non è possibile eseguire il mapping appropriato per visualizzare il layout dei risultati di ricerca predefinito, è necessario creare almeno un tipo di risultati per visualizzare i risultati in verticale.** È possibile creare più tipi di risultati per ogni verticale, che consente di utilizzare layout diversi per diversi tipi di risultati. Ad esempio, è possibile personalizzare gli eventi di *gravità 1* per avere colori più prominenti e un tipo di carattere più grande rispetto a *gravità 3* incidenti.
 
 Dopo aver avviato la procedura guidata, è possibile eseguire la procedura per definire il nome, l'origine di contenuto e le condizioni per il tipo di risultato. È possibile definire la priorità del tipo di risultati dalla visualizzazione elenco.
   
@@ -116,7 +116,7 @@ Dopo aver avviato la procedura guidata, è possibile eseguire la procedura per d
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>PASSAGGIO 3: visualizzare la verticale dopo che è stata abilitata
 
-Dopo aver abilitato la verticale, potrebbe essere necessario un po' di tempo prima che sia possibile visualizzarla. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear = true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Per [Bing](https://bing.com), aggiungere **&features = uncachedVerticals** all'URL verticale del lavoro per visualizzare immediatamente le verticali. 
+Dopo aver abilitato la verticale, potrebbe essere necessario un po' di tempo prima che sia possibile visualizzarla. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear = true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Per [Bing](https://bing.com), aggiungere **&features = uncachedVerticals** all'URL verticale del lavoro per visualizzare immediatamente le verticali.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -130,4 +130,4 @@ Di seguito è visualizzato un elenco di problemi comuni che potrebbero verificar
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[PASSAGGIO 3: personalizzare il layout dei risultati](customize-results-layout.md)
+[Personalizzare il layout dei risultati](customize-results-layout.md)
