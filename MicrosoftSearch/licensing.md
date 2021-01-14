@@ -12,20 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Requisiti di licenza per Microsoft Graph Connectors Public Preview per Microsoft Search
-ms.openlocfilehash: 04683a0fe15d4f76286d6637d97345eda57a0330
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 4d8c279b948063c713fb0afaf713ab42c9714b54
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920671"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847529"
 ---
 # <a name="license-requirements-and-pricing"></a>Requisiti di licenza e prezzi
 
 Questo articolo è destinato agli amministratori globali o di fatturazione che desiderano informazioni su come acquistare la quota dei connettori del grafico aggiuntivi per la propria organizzazione.
 
-È necessaria una licenza valida per Microsoft 365 o Office 365 e una quota sufficiente di connettori grafico per l'organizzazione per visualizzare i dati dai connettori nei risultati della ricerca. Tutti i [connettori grafico di Microsoft](configure-connector.md) sono gratuiti. Tuttavia, è necessario disporre di una quota di indice sufficiente per l'ingestione del contenuto da tali connettori.
+Qualsiasi licenza valida di Microsoft 365 o Office 365 consente di visualizzare i dati dai connettori nei risultati della ricerca.
 
-Ogni licenza di Microsoft 365 o Office 365 E5 include 500 elementi di quota di indice, che contano verso la quota dell'organizzazione per l'ingestione del contenuto dai connettori grafico. Ad esempio, se l'organizzazione dispone di 100 licenze Microsoft 365 E5, l'organizzazione ha 100 x 500 = 50.000 elementi del valore della quota di indice dei connettori del grafico.
+Per indicizzare il contenuto utilizzando i connettori grafico, è necessario disporre di una quota di indice sufficiente. La quota di indice del connettore grafico è disponibile tramite:
+- Diritti incorporati nelle licenze Microsoft 365 o Office 365 E5
+- Acquisto della quota di indice del componente aggiuntivo (vedere di seguito sulle istruzioni di acquisto)
+
+>[!NOTE]
+>Tutti i connettori grafico di Microsoft sono gratuiti. Tuttavia, è necessario disporre di una quota di indice sufficiente per l'ingestione del contenuto da tali connettori.
+
+Il tipo di licenza seguente include il diritto a 500 elementi di quota di indice, che conta verso la quota dell'organizzazione per l'ingestione del contenuto dai connettori grafico.
+- Microsoft 365 E5 o Office 365 E5
+
+Ad esempio, se l'organizzazione dispone di 100 licenze Microsoft 365 E5, l'organizzazione ha 100 x 500 = 50.000 elementi del valore della quota di indice dei connettori del grafico.
 
 Per acquistare la quota dei connettori del grafico aggiuntivi, contattare il proprio account Manager Microsoft o eseguire le operazioni seguenti:
 

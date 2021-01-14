@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: 86ddf0387e3d00a005f25207a322c8470799b76b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367609"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847547"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -35,7 +35,7 @@ In questo articolo viene riepilogato il processo di base necessario per utilizza
 7. Scegliere Aggiorna impostazioni.
 8. Esaminare la connessione.
 
-È importante tenere presente che il processo di installazione è molto simile per tutti i connettori del grafico da parte di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere il connettore specifico per l'origine dati.**  
+È importante tenere presente che il processo di installazione è molto simile per tutti i connettori del grafico da parte di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: aggiungere un connettore grafico nell'interfaccia di amministrazione di Microsoft 365
 
@@ -43,7 +43,7 @@ Completare la procedura seguente per configurare uno qualsiasi dei connettori Mi
 
 1. Accedere all'account di amministratore nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com)
 2. Nel riquadro di spostamento, selezionare **Impostazioni**, quindi selezionare **Cerca & Intelligence**. Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
-3.  Selezionare **+ Aggiungi**, quindi selezionare l'origine dati desiderata nel menu delle opzioni disponibili.
+3. Selezionare **+ Aggiungi**, quindi selezionare l'origine dati desiderata nel menu delle opzioni disponibili.
 
 ![Le origini dati disponibili includono: ADL Gen2, siti Web aziendali, Microsoft SQL Server, Azure SQL, database SQL Oracle, ServiceNow, condivisione file, DevOps di Azure e MediaWiki.](media/add-connector.png)
 

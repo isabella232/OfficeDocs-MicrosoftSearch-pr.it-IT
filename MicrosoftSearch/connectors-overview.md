@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 7388653927ca6a7af0ba64c3c592f2689780c181
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367524"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847520"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
 
@@ -35,7 +35,7 @@ Il resto di questo articolo è stato progettato per aiutare gli amministratori d
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> I connettori Microsoft Graph e le API di Microsoft Search sono ora generalmente disponibili. La prima graduali sarà rivolta ai clienti configurati per la versione di destinazione. Se si desidera utilizzare un connettore grafico nel tenant, è necessario che gli utenti e gli amministratori optino per la [versione di destinazione](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+> I connettori Microsoft Graph e le API di Microsoft Search sono ora generalmente disponibili. La prima graduali sarà rivolta ai clienti configurati per la versione di destinazione. Se si desidera utilizzare un connettore grafico nel tenant, è necessario che gli utenti e gli amministratori optino per la [versione di destinazione](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true).
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -57,7 +57,7 @@ To create a _*connection** to a data source, admins need authenticated access to
 
 Microsoft fornisce dieci connettori grafico e i nostri partner ecosistemici hanno creato oltre 100 connettori grafico aggiuntivi. È inoltre possibile creare un connettore grafico personalizzato. 
 
-### <a name="graph-connectors-by-microsoft"></a>Connettori del grafico da Microsoft
+### <a name="graph-connectors-by-microsoft"></a>Connettori di Graph Microsoft
 
 È possibile connettersi alle origini dati seguenti utilizzando i connettori grafico creati da Microsoft:
 
@@ -99,9 +99,23 @@ Sono disponibili diversi modi per personalizzare e configurare i risultati della
 
 * [Gestire le tipologie di verticali e i tipi di risultati](customize-search-page.md)
 * [Gestire i layout dei risultati della ricerca](customize-results-layout.md)
-* [Gestire il cluster di risultati](result-cluster.md)
-* [Gestione di filtri personalizzati](custom-filters.md)
+* [Gestisci cluster dei risultati](result-cluster.md)
+* [Gestire filtri personalizzati](custom-filters.md)
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Come eseguire la ricerca dei dati del connettore da un'applicazione personalizzata
 
 Dopo l'indicizzazione dei dati personalizzati, gli sviluppatori possono [eseguire query su tali dati](https://docs.microsoft.com/graph/search-concept-custom-types). È possibile visualizzare i dati in qualsiasi applicazione. Per ulteriori informazioni, vedere la [Panoramica dell'API di Microsoft Search in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+
+## <a name="limitations"></a>Limitazioni
+
+* Quando si **pubblica** un connettore basato su Microsoft, potrebbero essere necessari alcuni minuti per la creazione della connessione. Durante tale periodo, la connessione mostrerà lo stato in sospeso.
+
+* L'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) non supporta la modifica dello **schema di ricerca** dopo la pubblicazione di una connessione. Per modificare lo schema di ricerca, eliminare la connessione e crearne uno nuovo.
+
+* La velocità effettiva di ingestione viene limitata a circa quattro elementi al secondo.
+
+* Non è disponibile alcun supporto per gli aggiornamenti dello schema. Dopo aver creato una configurazione di connessione, non è possibile aggiornare lo schema. È possibile eliminare e ricreare la connessione solo.
+
+* Esiste un limite per le connessioni. Ogni tenant è in grado di creare fino a 10 connessioni.
+
+* La modifica del supporto per la connessione non è disponibile. Dopo aver creato la connessione, non è possibile modificarla o modificarla. Se è necessario modificare i dettagli, è necessario eliminare e ricreare la connessione.

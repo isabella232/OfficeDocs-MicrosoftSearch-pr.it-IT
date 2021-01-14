@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilizzo di Microsoft Search nelle pagine di SharePoint classiche
-ms.openlocfilehash: 605e63a30ad166c63320c7e89e1b2745e628e15d
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
+ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700974"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49863175"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>Pagine classiche e Microsoft Search
 
@@ -27,14 +27,14 @@ L'utilizzo di Microsoft Search è consigliato per tutti i siti, tra cui quello c
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Siti classici che passano automaticamente a Microsoft Search
 
-I siti classici inizieranno a utilizzare Microsoft Search se tutte le seguenti condizioni sono vere.
+I siti classici inizieranno a utilizzare Microsoft Search se sono soddisfatte tutte le seguenti condizioni:
 
 * Il sito è basato sul modello di sito del team (come STS # 0 e STS # 1).
 * Al sito non è attivata la caratteristica di pubblicazione.
 * Il sito non utilizza una pagina master personalizzata (una pagina master diversa da Oslo. master o Seattle. master).
 * Non vi sono regole di query attive diverse da quelle che aggiungono risultati alzati di valore per il sito, la raccolta siti o il tenant nell'origine dei risultati predefinita.
 * Non sono disponibili tipi di risultati personalizzati per il sito o la raccolta siti nell'origine dei risultati predefinita.
-* Il sito o la raccolta siti di cui fa parte non è stata disattivata utilizzando l'impostazione SearchBoxInNavBar descritta di seguito.
+* Il sito o la raccolta siti non viene disattivata tramite l'impostazione *SearchBoxInNavBar* descritta di seguito.
 
 Dopo il passaggio a Microsoft Search, le pagine classiche del sito inizieranno a visualizzare la casella di ricerca nella barra di spostamento della famiglia e rimuovere la casella di ricerca classica dalla pagina. Successivamente, quando un utente cerca un termine, i risultati verranno visualizzati utilizzando l'esperienza di ricerca moderna di Microsoft Search.
 
@@ -48,7 +48,7 @@ Per eseguire i comandi riportati di seguito, si utilizzerà PowerShell con le es
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
-# this will prompt you to sign into your site. Use the site owner credentials
+# this will prompt you to sign in to your site. Use the site owner credentials.
 ```
 
 Per rimanere con l'esperienza di ricerca classica per un sito, eseguire il seguente comando:
