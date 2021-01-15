@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
-ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
+ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
+ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408439"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867379"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Domande frequenti
@@ -29,7 +29,7 @@ Ecco un elenco delle domande più comuni.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La comprensione avanzata delle query è supportata?
 
-Sì, Microsoft Search analizza gli intenti delle query da frasi di dimensioni maggiori. Questa funzionalità utilizza Ia per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sull'intenzione di ricerca. Ad esempio, quando un utente cerca informazioni *su come modificare la password*, estrarre le parole meno importanti dalla query e dal trigger in base a quelle rilevanti come *Change password*.
+Sì, Microsoft Search analizza gli intenti delle query da frasi di dimensioni maggiori. Questa funzionalità utilizza Ia per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sull'intenzione di ricerca. Ad esempio, quando un utente cerca informazioni su *come modificare la password*, estrarre le parole meno importanti dalla query e dal trigger in base a quelle rilevanti come *Change password*.
   
 Questa funzionalità non sostituirà le parole chiave impostate nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
   
@@ -41,13 +41,13 @@ Sì. Se si dispone di una distribuzione ibrida di SharePoint, è possibile esegu
 
 Di seguito sono riportate le istruzioni per l'impostazione del motore di ricerca predefinito, della Home page predefinita e del browser predefinito per offrire agli utenti la migliore esperienza con Microsoft Search in [Bing](https://Bing.com):
 
-- [Impostare Microsoft Edge come browser predefinito](set-default-browser.md)
+- [Impostare Microsoft Edge come browser predefinito](/deployedge/edge-default-browser)
 - [Impostare Bing come motore di ricerca predefinito](set-default-search-engine.md)
 - [Impostare Bing.com come home page aziendale](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>In che modo vengono protetti i risultati della ricerca?
 
-È necessaria l'autenticazione di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca sono deidentificate e i registri sono separati dal traffico di ricerca [Bing](https://Bing.com) pubblico. Questo livello di protezione non è offerto da nessun altro nel settore.
+È necessaria l'autenticazione di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca sono deidentificate e i registri sono separati dal traffico di ricerca [Bing](https://Bing.com) pubblico quando si utilizza Microsoft Search in Bing.
 
 ## <a name="can-i-search-across-federated-organizations"></a>È possibile eseguire ricerche nelle organizzazioni federate?
 
