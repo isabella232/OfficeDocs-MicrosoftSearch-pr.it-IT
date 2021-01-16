@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agente on-Prem
-ms.openlocfilehash: 5dbca392fefdcc11de253fd244cc98a6adcee68a
-ms.sourcegitcommit: e8d770fa72ac83e074a5de57098cb55d06d8db07
+ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
+ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588368"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876499"
 ---
 # <a name="graph-connector-agent"></a>Agente del connettore grafico
 
@@ -38,12 +38,12 @@ Configurazione consigliata:
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Creare e configurare un'app per l'agente  
 
-Prima di utilizzare l'agente, è necessario creare un'app e configurare i dettagli dell'autenticazione.
+In primo luogo, accedere e tenere presente che il privilegio minimo richiesto per l'account è Search Administrator. L'agente verrà quindi chiesto di fornire i dettagli dell'autenticazione. Utilizzare la procedura seguente per creare un'app e generare i dettagli di autenticazione necessari.
 
 ### <a name="create-an-app"></a>Creare un'app
 
 1. Accedere al [portale di Azure](https://portal.azure.com) e accedere con le credenziali di amministratore per il tenant.
-2. Passare alle registrazioni delle app di **Azure Active Directory**  ->  **App registrations** dal riquadro di spostamento e selezionare **nuova registrazione**.
+2. Passare alle registrazioni delle app di **Azure Active Directory**  ->   dal riquadro di spostamento e selezionare **nuova registrazione**.
 3. Specificare un nome per l'app e selezionare **registra**.
 4. Prendere nota dell'ID applicazione (client).
 5. Aprire le **autorizzazioni API** dal riquadro di spostamento e selezionare **Aggiungi un'autorizzazione**.
@@ -55,7 +55,7 @@ Prima di utilizzare l'agente, è necessario creare un'app e configurare i dettag
 
 ### <a name="configure-authentication"></a>Configurare l'autenticazione
 
-È possibile fornire informazioni dettagliate sull'autenticazione utilizzando un segreto client o un certificato. Segui i passaggi per la tua scelta.
+È possibile fornire informazioni dettagliate sull'autenticazione utilizzando un segreto client o un certificato. Seguire la procedura desiderata.
 
 #### <a name="configuring-the-client-secret-for-authentication"></a>Configurazione del segreto client per l'autenticazione
 

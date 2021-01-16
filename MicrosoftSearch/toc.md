@@ -11,11 +11,11 @@
 ## [Posizioni](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Domande e risposte](manage-qas.md)
-# Connettori (anteprima)
+# Connettori
 ## [Panoramica](connectors-overview.md)
 ## [Versione di anteprima](connectors-preview.md)
 ## [Raccolta connettori](connectors-gallery.md)
-## Connettori di Graph Microsoft
+## Configurare i connettori Microsoft
 ### [Panoramica delle impostazioni](configure-connector.md)
 ### [Eseguire il mapping delle identità di Azure Active Directory (anteprima)](map-non-aad.md)
 ### [Eseguire il mapping delle identità di Azure Active Directory (anteprima)](map-aad.md)
@@ -30,7 +30,6 @@
 ## [Gestire connessioni](manage-connector.md)
 ## [Dettagli della connessione ed errori](connector-details-errors.md)
 ## [Licenze](licensing.md)
-## [Feedback](connectors-feedback.md)
 ## [Condizioni d'uso](terms-of-use.md)
 # Personalizzare e configurare
 ## [Gestire le tipologie di verticali e i tipi di risultati](customize-search-page.md)

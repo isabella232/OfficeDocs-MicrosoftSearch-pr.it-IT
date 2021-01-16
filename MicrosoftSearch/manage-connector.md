@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestione dei connettori Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
-ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
+ms.openlocfilehash: cf1231f8003d166977398ef4bdcc1ad12104dd05
+ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49695686"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49880610"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "49695686"
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
 
-## <a name="get-started"></a>Informazioni di base
+## <a name="get-started"></a>Per iniziare
 
 Passare alla [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
 
@@ -76,9 +76,9 @@ Per visualizzare i dettagli specifici di un errore, selezionarne il codice di er
 
 ![Elenco di connettori con un connettore selezionato e il riquadro dei dettagli che mostra l'elenco di errori per il connettore.](media/errormonitoring2.png)
 
-Di seguito è riportato l'elenco dei diversi errori che possono essere visualizzati su qualsiasi connessione. Se queste soluzioni non funzionano, contattare il supporto tecnico o inviarci [commenti e suggerimenti](connectors-feedback.md).
+Di seguito è riportato l'elenco dei diversi errori che possono essere visualizzati su qualsiasi connessione.
 
-Codice errore | Messaggio di errore | Soluzione
+Codice di errore | Messaggio di errore | Soluzione
 --- | --- | ---
 1000 | L'origine dati non è disponibile. Controllare la connessione a Internet o verificare che l'origine dati sia ancora accessibile dal connettore. | Questo errore si verifica quando l'origine dati non è raggiungibile a causa di un problema di rete o quando l'origine dati viene eliminata, spostata o rinominata. Controllare se i dettagli dell'origine dati forniti sono ancora validi.
 1001 | Non è possibile aggiornare i dati, in quanto l'origine dati sta strozzando il connettore. | Per delimitare l'origine dati, controllare se i limiti di scalabilità possono essere aumentati o attendere fino a un periodo di tempo meno elevato per il traffico del giorno.
@@ -110,7 +110,7 @@ La barra di utilizzo delle quote indicherà vari stati basati sull'utilizzo dell
 Stato | Consumi delle quote
 --- | ---
 Normale | 1-69%
-Alto | 70-89%
+Alta | 70-89%
 Critico | 90%-99%
 Full | 100%
 
