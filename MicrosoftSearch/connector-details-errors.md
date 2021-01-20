@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli e errori dei connettori
-ms.openlocfilehash: 23b2f0745a09bffbc5ac6ad9c2163c7a5b63cb51
-ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
+ms.openlocfilehash: 79f6404670e6c5a655559efac7235b1e7813f8e4
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49880601"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905976"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="view-connection-details-and-errors-for-microsoft-search"></a>Visualizzare i dettagli della connessione e gli errori per Microsoft Search
+# <a name="view-connection-details-and-errors"></a>Visualizzare i dettagli della connessione e gli errori
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratori della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning dell'utente per il ruolo di amministratore della ricerca.
 

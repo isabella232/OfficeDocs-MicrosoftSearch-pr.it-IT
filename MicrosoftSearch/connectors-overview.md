@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: a45a007bbb2774caaaac90fc1549c8ba634b0580
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847520"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905955"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
 
@@ -30,12 +30,13 @@ Il resto di questo articolo è stato progettato per aiutare gli amministratori d
 * [Quali origini dati possono essere connesse a Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Come si gestiscono le connessioni?](#how-do-i-manage-my-connections)
 * [Quali sono i requisiti di licenza e i termini di utilizzo per i connettori grafico?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [Quali sono le funzionalità di anteprima?](#what-are-the-preview-features)
 * [Come si personalizzano e configurano i risultati della ricerca?](#how-do-i-customize-and-configure-search-results)
 * [Come eseguire la ricerca dei dati del connettore da un'applicazione personalizzata](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> I connettori Microsoft Graph e le API di Microsoft Search sono ora generalmente disponibili. La prima graduali sarà rivolta ai clienti configurati per la versione di destinazione. Se si desidera utilizzare un connettore grafico nel tenant, è necessario che gli utenti e gli amministratori optino per la [versione di destinazione](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true).
+> I connettori Microsoft Graph e le API di Microsoft Search sono ora generalmente disponibili. Il primo capovolgimento è programmato per durare fino al febbraio 2021. Fino a quel momento, solo i tenant e gli utenti che hanno scelto la [versione di destinazione](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true) saranno in grado di utilizzare i connettori grafico. Dopo il completamento dell'implementazione a tutti i tenant, l'utilizzo della quota di indice dal contenuto dei connettori diventerà soggetto alla fatturazione. Per ulteriori informazioni, vedere [requirements Licensing and pricing](licensing.md) .
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -92,6 +93,17 @@ Se si prevede di creare un connettore grafico personalizzato, vedere la [Panoram
 Per gli utenti dell'organizzazione è necessaria una licenza valida di Microsoft 365 o Office 365 e una quota sufficiente dei connettori del grafico per visualizzare i dati dei connettori nei risultati della ricerca.
 
 Per ulteriori informazioni, vedere [requisiti di licenza e prezzi](licensing.md) e [condizioni di utilizzo](terms-of-use.md).
+
+## <a name="what-are-the-preview-features"></a>Quali sono le funzionalità di anteprima?
+
+Anche se i connettori Microsoft Graph e le API di Microsoft Search sono ora disponibili in generale, esistono diverse funzionalità in anteprima.
+
+L'insieme di connettori e funzionalità nell'anteprima include:
+
+* [Connettore DevOps di Azure](azure-devops-connector.md)
+* [Connettore Salesforce](salesforce-connector.md)
+* [Connettore ServiceNow](servicenow-connector.md) con autorizzazioni di ricerca che utilizzano ACL di origine
+* [Gestisci cluster dei risultati](result-cluster.md)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Come si personalizzano e configurano i risultati della ricerca?
 
