@@ -1,8 +1,8 @@
 ---
-title: Connettore MediaWiki per Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: mnirkhe
+title: Connettore MediaWiki Graph per Microsoft Search
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,57 +11,79 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore MediaWiki per Microsoft Search
-ms.openlocfilehash: 7a22fcc84f6f435bf438aa027c42c76eb8be1eaf
-ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
+description: Configurare il connettore MediaWiki Graph per Microsoft Search
+ms.openlocfilehash: 9d9d7a1ef9aeaba079f8cccef1ec4a4836768e8d
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905954"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084984"
 ---
-# <a name="mediawiki-connector"></a>Connettore MediaWiki
+<!---Previous ms.author: monaray --->
 
-Con il connettore MediaWiki, l'organizzazione può individuare e indicizzare i dati da un wiki creato usando il software MediaWiki. Questo connettore indicizza il contenuto specificato in Microsoft Search e supporta le ricerche per indicizzazione periodiche per mantenere l'indice aggiornato.
+# <a name="mediawiki-graph-connector"></a>Connettore Grafico MediaWiki
 
-Questo articolo è per gli amministratori di Microsoft 365 o per tutti coloro che configurano, eseguono e monitorano un connettore grafico MediaWiki. Integra le istruzioni generali fornite nell'articolo [configurazione del connettore grafico](configure-connector.md) . Se non è stato ancora fatto, leggere l'articolo configurazione del connettore grafico completo per comprendere il processo di installazione generale.
+Il connettore Grafico MediaWiki consente all'organizzazione di individuare e indicizzare i dati da un wiki creato utilizzando il software MediaWiki. Questo connettore indicizza il contenuto specificato in Microsoft Search e supporta ricerche per indicizzazione periodiche per mantenere aggiornato l'indice.
 
-Ogni passaggio del processo di installazione è elencato di seguito insieme a una nota che indica che è necessario seguire le istruzioni generali per l'installazione o altre istruzioni che si applicano solo ai connettori del grafico MediaWiki. Questo articolo include anche informazioni sulle [limitazioni](#limitations) per i connettori del grafico MediaWiki. 
+> [!NOTE]
+> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: aggiungere un connettore grafico nell'interfaccia di amministrazione di Microsoft 365.
-Seguire le istruzioni generali per l'installazione.
+Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore MediaWiki Graph. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: denominare la connessione.
-Seguire le istruzioni generali per l'installazione.
- 
-## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: configurare le impostazioni di connessione.
-Immettere l' **URL del wiki** e scegliere il **tipo di autenticazione** dal menu a discesa delle opzioni. Le opzioni sono **None**, **Basic** e **OAuth 2,0 AAD**.
+<!---## Before you get started-->
 
-Se si sceglie **Basic** come tipo di autenticazione, sarà necessario specificare il **nome utente** e la **password** per il wiki.
+<!---Insert "Before you get started" recommendations for this data source-->
 
-Se si sceglie **OAuth 2,0 AAD** come tipo di autenticazione, sarà necessario fornire l'ID della **risorsa** per l'installazione wiki. Sarà inoltre necessario fornire l' **ID client** e il **segreto client** generati nella pagina di registrazione dell'applicazione AAD. 
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
 
-## <a name="step-4-manage-search-permissions"></a>Passaggio 4: gestire le autorizzazioni di ricerca
-Il connettore MediaWiki supporta solo le autorizzazioni di ricerca visibili a **tutti**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-5-assign-property-labels"></a>Passaggio 5: assegnare etichette delle proprietà
-Seguire le istruzioni generali per l'installazione.
+## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
 
-## <a name="step-6-manage-schema"></a>Passaggio 6: gestire lo schema
-Seguire le istruzioni generali per l'installazione.
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: scegliere Aggiorna impostazioni
-Seguire le istruzioni generali per l'installazione.
+## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-## <a name="step-8-review-connection"></a>Passaggio 8: verifica della connessione
-Seguire le istruzioni generali per l'installazione.
+Immetti **l'URL wiki** e scegli **il tipo di** autenticazione dal menu a discesa delle opzioni. Le opzioni sono **None,** **Basic** e **OAuth 2.0 AAD.**
+
+Se si sceglie **Di base** come tipo di autenticazione, sarà necessario specificare il nome **utente** e la **password** per il wiki.
+
+Se si sceglie **OAuth 2.0 AAD** come tipo di autenticazione, sarà necessario fornire l'ID **risorsa** dell'installazione wiki. Dovrai anche fornire **l'ID client** e il **segreto client** generati nella pagina di registrazione dell'applicazione AAD.
+
+## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
+
+Il connettore MediaWiki supporta solo le autorizzazioni di ricerca visibili a **Tutti.** I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+
+## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
+
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-6-manage-schema"></a>Passaggio 6: Gestire lo schema
+
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
+
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-8-review-connection"></a>Passaggio 8: esaminare la connessione
+
+Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
 <!---To be added-->
 
 ## <a name="limitations"></a>Limitazioni
-Il connettore MediaWiki ha queste limitazioni nella versione di anteprima:
 
-* Supporta solo wiki basati su cloud.
-* Supporta solo Basic o OAuth 2,0 con Azure Active Directory o l'autenticazione di Azure.
-* Non supporta la selezione dello spazio dei nomi per l'indicizzazione. Indicizza solo gli spazi dei nomi principale, di categoria e di file.
-* Non supporta gli elenchi di controllo di accesso (ACL, Access Control List). Di conseguenza, le pagine indicizzate sono visibili a tutti gli utenti dell'organizzazione.
+Il connettore MediaWiki presenta queste limitazioni nella versione di anteprima:
+
+* Supporta solo wiki basati sul cloud.
+* Supporta solo Basic o OAuth 2.0 con l'autenticazione di Azure Active Directory o Azure.
+* Non supporta la selezione dello spazio dei nomi per l'indicizzazione. Indicizza solo gli spazi dei nomi Main, Category e File.
+* Non supporta gli elenchi di controllo di accesso (ACL). Pertanto, le pagine indicizzate sono visibili a tutti gli utenti dell'organizzazione.
