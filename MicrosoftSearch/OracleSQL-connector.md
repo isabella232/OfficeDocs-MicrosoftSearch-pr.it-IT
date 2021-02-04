@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore Oracle SQL Graph per Microsoft Search.
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084975"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099336"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -29,7 +29,7 @@ Il connettore Oracle SQL Graph consente all'organizzazione di individuare e indi
 > [!NOTE]
 > Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
 
-Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore ServiceNow Graph. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore Oracle SQL Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Oracle SQL Graph. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 

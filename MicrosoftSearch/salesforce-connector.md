@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Salesforce Graph per Microsoft Search
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085021"
+ms.locfileid: "50097449"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ Il connettore Grafico Salesforce consente all'organizzazione di indicizzare gli 
 > [!NOTE]
 > Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
 
-Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni applicabili solo per il connettore Grafico Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
+Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un connettore Grafico Salesforce. Integra il processo di configurazione generale e mostra le istruzioni applicabili solo per il connettore Grafico Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
 
 >[!IMPORTANT]
 >Il connettore Salesforce Graph attualmente supporta Estate '19 o versione successiva.

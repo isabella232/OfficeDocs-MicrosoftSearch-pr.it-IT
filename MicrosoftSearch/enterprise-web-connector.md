@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore grafico dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084885"
+ms.locfileid: "50097431"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -30,7 +30,7 @@ Il connettore Grafico dei siti Web aziendali consente all'organizzazione di indi
 > [!NOTE]
 > Leggere [**l'articolo configurazione del connettore Graph**](configure-connector.md) per comprendere il processo generale di configurazione dei connettori di Graph.
 
-Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore ServiceNow Graph. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un connettore di siti Web aziendali. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di siti Web Enterprise. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 <!---## Before you get started-->
 

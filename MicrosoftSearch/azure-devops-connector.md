@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Azure DevOps Graph per Microsoft Search
-ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084939"
+ms.locfileid: "50097404"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -28,7 +28,7 @@ Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli 
 > [!NOTE]
 > Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
 
-Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore ServiceNow Graph.
+Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore Azure DevOps Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Azure DevOps Graph.
 
 >[!IMPORTANT]
 >Il connettore Azure DevOps supporta solo il servizio cloud Azure DevOps. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore.
