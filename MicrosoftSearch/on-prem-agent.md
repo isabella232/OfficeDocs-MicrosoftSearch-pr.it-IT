@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agente in-prem
-ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
-ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
+ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
+ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173063"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50259430"
 ---
 # <a name="graph-connector-agent"></a>Agente connettore grafico
 
@@ -40,9 +40,9 @@ Dopo aver installato l'agente, se i server proxy o i firewall dell'organizzazion
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span> com/
+5. https://<span>graph.microsoft.</span> com/
 
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Creare e configurare un'app per l'agente  
@@ -121,3 +121,6 @@ Se hai usato lo script di esempio per generare un certificato, il file PFX è di
 1. Fai clic con il pulsante destro del mouse sul certificato e seleziona "Tutte le attività" -> 'Gestisci chiavi private...' Opzione
 1. Nella finestra di dialogo delle autorizzazioni, selezionare l'opzione aggiungi. Nella finestra di dialogo di selezione dell'utente, scrivi: "NT Service\GcaHostService" e fai clic su "OK". Non fare clic sul pulsante "Controlla nomi".
 1. Fare clic su Ok nella finestra di dialogo delle autorizzazioni. Il computer agente è ora configurato per consentire agli agenti di generare token usando il certificato.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+1. Se una connessione non riesce con l'errore "1011: L'agente connettore Graph non è raggiungibile o offline", accedere al computer in cui è installato l'agente e avviare l'applicazione agente se non è già in esecuzione. Se la connessione continua a non riuscire, verificare che il certificato o il segreto client fornito all'agente durante la registrazione non sia scaduto e abbia le autorizzazioni necessarie.
