@@ -1,5 +1,5 @@
 ---
-title: Connettore Grafico siti Web aziendali per Microsoft Search
+title: Connettore Di Graph per siti Web aziendali per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore grafico dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421100"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -41,7 +41,7 @@ Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -50,13 +50,16 @@ Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com
 
 Per connettersi all'origine dati, è necessario immettere l'URL radice del sito Web, selezionare un'origine di ricerca per indicizzazione e il tipo di autenticazione che si desidera utilizzare: Nessuna, Autenticazione di base o OAuth 2.0 con [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Dopo aver completato queste informazioni, selezionare Test connessione per verificare le impostazioni.
 
+> [!NOTE]
+> Se nel sito di cui si desidera eseguire la ricerca per indicizzazione è definita una mappa del sito, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella sitemap. Se non è definita alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione approfondita di tutti i collegamenti trovati nell'URL radice del sito.
+
 ### <a name="url"></a>URL
 
 Utilizzare il campo URL per specificare la radice del sito Web di cui si desidera eseguire la ricerca per indicizzazione. Il connettore di siti Web aziendali utilizzerà questo URL come punto di partenza e seguirà tutti i collegamenti da questo URL per la ricerca per indicizzazione.
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Modalità ricerca per indicizzazione: cloud o locale (anteprima)
 
-La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, sia cloud che locali. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
+La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, nel cloud o in locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
 
 Inoltre, il connettore ora supporta la ricerca per indicizzazione dei siti Web locali. Questa modalità è in anteprima. Per accedere ai dati locali, è necessario innanzitutto installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere Agente [connettore Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
 
@@ -71,7 +74,7 @@ L'autenticazione di base richiede un nome utente e una password. Creare questo a
 
 OAuth 2.0 con [Azure AD](https://docs.microsoft.com/azure/active-directory/) richiede un ID risorsa, un ID client e un segreto client. OAuth 2.0 funziona solo con la modalità cloud.
 
-Per ulteriori informazioni, vedere Autorizzare l'accesso alle applicazioni Web di Azure Active Directory con il flusso di concessione del [codice OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code) Eseguire la registrazione con i valori seguenti:
+Per ulteriori informazioni, vedere Autorizzare l'accesso alle applicazioni Web di Azure Active Directory tramite il flusso di concessione del [codice OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code) Eseguire la registrazione con i valori seguenti:
 
 **Nome:** Microsoft Search <br/>
 **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
@@ -86,7 +89,7 @@ Esistono due modi per impedire che le pagine vengano sottoposte a ricerca per in
 
 ### <a name="support-for-robotstxt"></a>Supporto per robots.txt
 
-Il connettore verifica se è presente un file robots.txt per il sito radice e, se ne esiste uno, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
+Il connettore verifica se esiste un file robots.txt per il sito radice e, se ne esiste uno, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
 
 ### <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
@@ -102,7 +105,7 @@ Nella schermata Gestisci **schema** è possibile modificare gli attributi dello 
 
 ## <a name="step-6-manage-search-permissions"></a>Passaggio 6: Gestire le autorizzazioni di ricerca
 
-Il connettore di siti Web aziendali supporta solo le autorizzazioni di ricerca visibili a **Tutti.** I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+Il connettore per i siti Web aziendali supporta solo le autorizzazioni di ricerca visibili a **Tutti.** I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 

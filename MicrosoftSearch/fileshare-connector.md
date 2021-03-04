@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Configurare il connettore di Graph per la condivisione file per Microsoft Search
-ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+description: Configurare il connettore Grafico condivisione file per Microsoft Search
+ms.openlocfilehash: ed1c148a018ba9492a8a93685327bf43153d65d3
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097422"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421078"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="file-share-graph-connector"></a>Connettore Grafico condivisione file
 
-Il connettore Grafico condivisione file consente agli utenti dell'organizzazione di eseguire ricerche nelle condivisioni file di Windows locali.
+Il connettore Grafico condivisione file consente agli utenti dell'organizzazione di cercare condivisioni file di Windows locali.
 
 > [!NOTE]
 > Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
@@ -33,13 +33,13 @@ Il connettore Grafico condivisione file consente agli utenti dell'organizzazione
 
 ### <a name="install-the-graph-connector-agent"></a>Installare l'agente connettore Graph
 
-Per indicizzare le condivisioni file di Windows, è necessario installare e registrare l'agente connettore Graph. Per ulteriori informazioni, vedere Install [the Graph connector agent.](on-prem-agent.md)  
+Per indicizzare le condivisioni file di Windows, è necessario installare e registrare l'agente connettore Graph. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)  
 
 ### <a name="content-requirements"></a>Requisiti per il contenuto
 
 ### <a name="file-types"></a>Tipi di file
 
-È possibile indicizzare e cercare il contenuto dei formati seguenti: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS e ZIP. Viene indicizzato solo il contenuto testuale di questi formati. Tutto il contenuto multimediale viene ignorato. Per qualsiasi file che non appartiene a questo formato, i metadati vengono indicizzati.
+È possibile indicizzare e cercare il contenuto dei formati seguenti: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS e ZIP. Viene indicizzato solo il contenuto testuale di questi formati. Tutto il contenuto multimediale viene ignorato. Per qualsiasi file che non appartiene a questo formato, solo i metadati vengono indicizzati.
 
 ### <a name="file-size-limits"></a>Limiti di dimensione dei file
 
@@ -50,14 +50,14 @@ La dimensione massima supportata per i file è 100 MB. I file che superano i 100
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Nella pagina **Connetti all'origine dati** selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva, specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account utente [di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
+Nella pagina **Connetti all'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva, specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account utente [di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
 
 ### <a name="preserve-last-access-time"></a>Mantieni ora ultimo accesso
 
@@ -65,7 +65,13 @@ Quando il connettore tenta di eseguire la ricerca per indicizzazione di un file,
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-È possibile limitare l'autorizzazione per la ricerca di qualsiasi file basato sugli elenchi di controllo di accesso condivisi o sugli elenchi di controllo di accesso NTFS (New Technology File System). Se si desidera utilizzare gli elenchi di controllo di accesso condivisi, selezionare l'opzione appropriata nella **pagina Impostazioni** avanzate. Se si desidera utilizzare gli elenchi di controllo di accesso NTFS, selezionare l'opzione appropriata nella **pagina Gestisci autorizzazioni di** ricerca.
+È possibile limitare l'autorizzazione per la ricerca di qualsiasi file basato sugli elenchi di controllo di accesso condivisi o sugli elenchi di controllo di accesso NTFS (New Technology File System) selezionando l'opzione desiderata nella pagina Gestisci autorizzazioni **di** ricerca. Gli account utente e i gruppi forniti in questi elenchi di controllo di accesso devono essere gestiti da Active Directory (AD). Se si utilizza qualsiasi altro sistema per la gestione degli account utente, è possibile selezionare l'opzione "tutti", che consente agli utenti di cercare tutti i file senza restrizioni di accesso. Tuttavia, quando gli utenti tentano di aprire il file, vengono applicati i controlli di accesso impostati nell'origine.
+
+Tieni presente che le finestre per impostazione predefinita forniscono l'autorizzazione "Lettura" a "Tutti" negli elenchi ACL di condivisione quando una cartella viene condivisa in rete. Per estensione, se si sceglie Condividi ACL in **Gestisci** autorizzazioni di ricerca, gli utenti saranno in grado di cercare tutti i file. Se si desidera limitare l'accesso, rimuovere l'accesso "Lettura" per "Tutti" nelle condivisioni file e fornire l'accesso solo agli utenti e ai gruppi desiderati. Il connettore legge quindi queste restrizioni di accesso e le applica alla ricerca.
+
+È possibile scegliere Gli ACL di condivisione solo se il percorso di condivisione specificato segue il formato di percorso UNC. È possibile creare un percorso in formato UNC selezionando "Condivisione avanzata" nell'opzione "Condivisione".
+
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 
