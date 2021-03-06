@@ -1,8 +1,9 @@
 ---
-title: Configurare il connettore Microsoft-built per Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: jameslau
+title: Configurare il connettore Microsoft Graph per Microsoft Search
+ms.author: mecampos
+author: mecampos
+manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,158 +12,196 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Microsoft-built per Microsoft Search
-ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+description: Panoramica della configurazione per i connettori Graph da Parte di Microsoft
+ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508875"
 ---
+<!-- Previous ms.author: monaray -->
+
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica dell'installazione dei connettori del grafico da parte di Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica dell'installazione per i connettori Graph da parte di Microsoft 
 
-In questo articolo viene riepilogato il processo di base necessario per utilizzare l'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) per configurare i connettori del grafico da Microsoft. Il processo di base include i passaggi seguenti:  
+Questo articolo mostra il processo di base necessario per configurare i connettori Graph **da Microsoft** nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com) Il processo di base include i passaggi seguenti:  
 <!---Add links to each section in the doc--->
 
-1. Aggiungere un connettore grafico nell'interfaccia di amministrazione di Microsoft 365.
-2. Denominare la connessione.
-3. Configurare le impostazioni di connessione.
-4. Gestire le autorizzazioni di ricerca.
-5. Assegnare le etichette delle proprietà.
-6. Gestione schema.
-7. Scegliere Aggiorna impostazioni.
-8. Esaminare la connessione.
+1. [Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+2. [Assegnare un nome alla connessione](#step-2-name-the-connection)
+3. [Configurare le impostazioni di connessione](#step-3-configure-the-connection-settings)
+4. [Gestire le autorizzazioni di ricerca](#step-4-manage-search-permissions)
+5. [Assegnare etichette di proprietà](#step-5-assign-property-labels)
+6. [Gestire lo schema](#step-6-manage-schema)
+7. [Aggiornare le impostazioni](#step-7-refresh-settings)
+8. [Verificare la connessione](#step-8-review-connection)
 
-È importante tenere presente che il processo di installazione è molto simile per tutti i connettori del grafico da parte di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+In questo articolo sono inoltre incluse informazioni sulla risoluzione dei problemi, sulle limitazioni e sui passaggi successivi:
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: aggiungere un connettore grafico nell'interfaccia di amministrazione di Microsoft 365
+* [Risoluzione dei problemi](#troubleshooting)
+* [Limiti](#limitations)
+* [Passaggi successivi](#next-steps)
 
-Completare la procedura seguente per configurare uno qualsiasi dei connettori Microsoft-built.
+> [!NOTE]
+> Il processo di configurazione è simile per tutti i connettori Graph di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
-1. Accedere all'account di amministratore nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com)
-2. Nel riquadro di spostamento, selezionare **Impostazioni**, quindi selezionare **Cerca & Intelligence**. Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
-3. Selezionare **+ Aggiungi**, quindi selezionare l'origine dati desiderata nel menu delle opzioni disponibili.
+<!---## Before you get started-->
 
-![Le origini dati disponibili includono: ADL Gen2, siti Web aziendali, Microsoft SQL Server, Azure SQL, database SQL Oracle, ServiceNow, condivisione file, DevOps di Azure e MediaWiki.](media/add-connector.png)
+<!---Insert "Before you get started" recommendations for this data source-->
 
->[! Nota:] è possibile aggiungere un massimo di dieci connessioni grafico a ogni tenant.
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: denominare la connessione
-Sarà necessario specificare gli attributi seguenti: 
+Completare la procedura seguente per configurare uno qualsiasi dei connettori Microsoft Graph:
 
-* Nome  
-* ID connessione 
-* Descrizione (facoltativa) 
+1. Accedere all'account amministratore nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com)
 
-L'ID di connessione crea proprietà implicite per il connettore. Deve contenere solo caratteri alfanumerici e avere un massimo di 32 caratteri. 
+2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi selezionare Ricerca **& intelligence.** Selezionare la [scheda Connettori.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
-## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: configurare le impostazioni di connessione
+3. Selezionare **+Aggiungi** e quindi selezionare l'origine dati desiderata dal menu delle opzioni disponibili.
 
-Il processo di configurazione delle impostazioni di connessione varia in base al tipo di origine dati. Vedere le informazioni specifiche del connettore per il tipo di origine dati che si desidera aggiungere al tenant per completare questo passaggio nel processo di installazione.  
+   > [!div class="mx-imgBorder"]
+   > ![Le origini dati disponibili includono: ADLS Gen2, siti Web aziendali, server Microsoft SQL, Azure SQL, database oracle SQL, ServiceNow, condivisione file, Azure DevOps e MediaWiki.](media/add-connector.png)
 
-Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [Install an on-premises Data Gateway](https://aka.ms/configuregateway).
+> [!NOTE]
+> È possibile aggiungere un massimo di dieci connessioni Graph a ogni tenant.
 
-## <a name="step-4-manage-search-permissions"></a>Passaggio 4: gestire le autorizzazioni di ricerca
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
-Gli elenchi di controllo di accesso (ACL, Access Control List) determinano gli utenti dell'organizzazione che possono accedere a ogni elemento di dati.  
+Specificare questi attributi:
 
-Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e [Azure Data Lake storage Gen2](azure-data-lake-connector.md) supportano nativamente gli ACL di [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/) .
+* Nome (obbligatorio)
+* ID connessione (obbligatorio)
+* Descrizione (facoltativo)
 
-Altri connettori come [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non di Azure ad.  
+L'ID di connessione crea proprietà implicite per il connettore. Deve contenere solo caratteri alfanumerici e un massimo di 32 caratteri.
 
-## <a name="step-5-assign-property-labels"></a>Passaggio 5: assegnare etichette delle proprietà
-È possibile assegnare etichette semantiche alle proprietà di origine nella pagina "assegnare etichette delle proprietà". Le etichette sono tag ben noti forniti da Microsoft che forniscono significato semantico. Consentono a Microsoft di integrare i dati del connettore in esperienze di Microsoft 365, ad esempio ricerca avanzata, schede persone, individuazione intelligente e altro ancora.  
+## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
+
+Il processo di configurazione delle impostazioni di connessione varia in base al tipo di origine dati. Per completare questo passaggio del processo di configurazione, vedere le informazioni specifiche del connettore per il tipo di origine dati che si desidera aggiungere al tenant.  
+
+Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere Installare un [gateway dati locale.](https://aka.ms/configuregateway)
+
+## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
+
+Gli elenchi di controllo di accesso (ACL) determinano quali utenti dell'organizzazione possono accedere a ogni elemento di dati.  
+
+Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportano in modo nativo gli ACL di [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/)
+
+Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non di Azure AD.  
+
+## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
+
+Puoi assegnare etichette semantiche alle proprietà di origine nella pagina "Assegna etichette di proprietà". Le etichette sono tag noti forniti da Microsoft che forniscono un significato semantico. Consentono a Microsoft di integrare i dati del connettore nelle esperienze di Microsoft 365, ad esempio la ricerca avanzata, le schede utente, l'individuazione intelligente e altro ancora.  
 
 Nella tabella seguente sono elencate le etichette attualmente supportate e le relative descrizioni.  
 
 Label | Descrizione
 --- | ---  
-**titolo** | Il titolo dell'elemento che si desidera visualizzare in Search and other experiences 
-**url** | L'URL di destinazione dell'elemento nel sistema di origine 
-**createdBy** | Nome della persona che ha creato l'elemento 
-**lastModifiedBy** | Nome della persona che ha modificato più di recente l'elemento 
-**authors** | Nome delle persone che hanno partecipato/collaborato all'articolo 
-**createdDateTime** | Quando è stato creato l'elemento 
-**lastModifiedDateTime** | Quando l'elemento è stato modificato più di recente 
-**fileName** | Nome dell'elemento del file 
-**fileExtension** | Tipo di elemento del file, ad esempio. pdf o. Word 
+**title** | Titolo dell'elemento che si desidera visualizzare nella ricerca e in altre esperienze
+**url** | URL di destinazione dell'elemento nel sistema di origine
+**createdBy** | Nome della persona che ha creato l'elemento
+**lastModifiedBy** | Nome della persona che ha modificato l'elemento più di recente
+**authors** | Nome delle persone che hanno partecipato/hanno collaborato all'elemento
+**createdDateTime** | Quando è stato creato l'elemento
+**lastModifiedDateTime** | Quando è stato modificato l'elemento più di recente
+**fileName** | Nome dell'elemento file
+**fileExtension** | Tipo di elemento di file, ad esempio pdf o word
 
-Le proprietà di questa pagina sono preselezionate in base all'origine dati, ma è possibile modificare questa opzione se esiste una proprietà diversa che è più adatta per una determinata etichetta.  
+Le proprietà di questa pagina sono pre-selezionate in base all'origine dati, ma è possibile modificare questa selezione se esiste una proprietà diversa più adatta per una particolare etichetta.  
 
-Il **titolo** dell'etichetta è l'etichetta più importante. È **consigliabile** disporre di una proprietà assegnata a questa etichetta affinché la connessione partecipi all' [esperienza del cluster di risultati](result-cluster.md).
+Il titolo **dell'etichetta** è l'etichetta più importante. È consigliabile **assegnare** una proprietà a questa etichetta per consentire alla connessione di partecipare all'esperienza [del cluster di risultati.](result-cluster.md)
 
-La mappatura erronea delle etichette provocherà un'esperienza di ricerca deteriorata. Per alcune etichette non è possibile assegnare una proprietà.  
+Il mapping errato delle etichette causerà un peggioramento dell'esperienza di ricerca. Per alcune etichette non è possibile assegnare una proprietà.  
 
-## <a name="step-6-manage-schema"></a>Passaggio 6: gestire lo schema
+## <a name="step-6-manage-schema"></a>Passaggio 6: Gestire lo schema
 
-### <a name="content-property"></a>Content, proprietà
+### <a name="content-property"></a>Proprietà content
 
-È consigliabile selezionare una * * proprietà di contenuto dal menu a discesa delle opzioni oppure mantenere l'impostazione predefinita, se presente. Questa proprietà viene utilizzata per l'indicizzazione full-text del contenuto, la generazione di frammenti di pagina dei risultati della ricerca, la partecipazione del [cluster](result-cluster.md) di risultati, il rilevamento della lingua, il supporto HTML/testo, la classificazione e la pertinenza e la formulazione delle
+È consigliabile selezionare una proprietà del **contenuto** dal menu a discesa delle opzioni oppure mantenere l'impostazione predefinita, se presente. Questa proprietà viene utilizzata per l'indicizzazione full-text del contenuto, la generazione di frammenti di pagina dei risultati della ricerca, la partecipazione al [cluster](result-cluster.md) di risultati, il rilevamento della lingua, il supporto HTML/testo, la classificazione e la pertinenza e la formula di query.
 
-Se si seleziona una proprietà di contenuto, si avrà la possibilità di utilizzare la proprietà generata dal sistema **ResultSnippet** quando si [Crea il tipo di risultato](customize-results-layout.md). Questa proprietà funge da segnaposto per i frammenti dinamici generati dalla proprietà Content in fase di query. Se si utilizza questa proprietà nel tipo di risultati, i frammenti verranno generati nei risultati della ricerca.
+Se si seleziona una proprietà di contenuto, sarà possibile utilizzare la proprietà generata dal sistema **ResultSnippet** quando si [crea il tipo di risultato.](customize-results-layout.md) Questa proprietà funge da segnaposto per i frammenti di codice dinamici generati dalla proprietà del contenuto in fase di query. Se si utilizza questa proprietà nel tipo di risultato, i frammenti di codice verranno generati nei risultati della ricerca.
 
 ### <a name="creating-aliases-for-source-properties"></a>Creazione di alias per le proprietà di origine
 
-È possibile aggiungere alias alle proprietà sotto la colonna "alias" nella pagina "Gestisci schema". Gli alias sono nomi descrittivi per le proprietà. Vengono utilizzati nelle query e nella creazione di filtri. Vengono inoltre utilizzati per normalizzare le proprietà di origine da più connessioni, in modo da avere lo stesso nome. In questo modo è possibile creare un singolo filtro per un verticale con più connessioni. Per ulteriori informazioni, vedere [personalizzare la pagina dei risultati di ricerca](customize-search-page.md) .  
+È possibile aggiungere alias alle proprietà nella colonna "Alias" della pagina "Gestisci schema". Gli alias sono nomi descrittivi per le proprietà, utilizzati anche nelle query e nella creazione di filtri. Vengono inoltre utilizzate per normalizzare le proprietà di origine da più connessioni in modo che hanno lo stesso nome. In questo modo è possibile creare un singolo filtro per una verticale con più connessioni. Per ulteriori informazioni, vedere [Personalizzare la pagina dei risultati di ricerca.](customize-search-page.md)  
 
 ### <a name="search-schema-attributes"></a>Attributi dello schema di ricerca
 
-È possibile impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e accessibili dagli utenti finali.
+È possibile impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e a cui gli utenti finali possono accedere.
 
-Gli attributi dello schema di ricerca sono disponibili per la **ricerca**, per **query**, per il **recupero** e **per affinamento ricerca**. Nella tabella seguente sono elencati tutti gli attributi supportati da Microsoft Graph e vengono illustrate le loro funzioni.
+Gli attributi dello schema di ricerca includono le **opzioni query,** **ricerca,** **recupero** e **affinamento** ricerca. Nella tabella seguente sono elencati tutti gli attributi supportati dai connettori di Microsoft Graph e vengono illustrate le relative funzioni.
 
 Attributo dello schema di ricerca | Funzione | Esempio
 --- | --- | ---
-RICERCHE | Consente di eseguire ricerche nel contenuto del testo di una proprietà. Il contenuto della proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituirà le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
-QUERY | Esegue una ricerca in base alla query per una corrispondenza per una proprietà specifica. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o Verbatim. |  Se la proprietà **title** è Queryable, il titolo della query **: Enterprise** è supportato. 
-RECUPERATE | È possibile utilizzare solo le proprietà recuperabili nel tipo di risultati e visualizzarle nei risultati della ricerca. |
-PER affinamento ricerca | È possibile utilizzare le proprietà di per affinamento ricerca come nella pagina dei risultati di ricerca di Microsoft. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in base a **lastModifiedDateTime** nella pagina dei risultati di ricerca se la proprietà è contrassegnata come per affinamento ricerca durante l'installazione della connessione
+RICERCA | Rende possibile la ricerca del contenuto di testo di una proprietà. Il contenuto delle proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituisce le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
+QUERY | Cerca una corrispondenza per una determinata proprietà in base a una query. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o in modo dettagliato. |  Se è possibile eseguire query sulla proprietà **Title,** è supportata la query **Titolo:** Organizzazione.
+RETRIEVE | Solo le proprietà recuperabili possono essere utilizzate nel tipo di risultato e visualizzate nei risultati della ricerca. |
+AFFINAMENTO RICERCA | L'opzione di affinamento ricerca può essere utilizzata come nella pagina dei risultati di Microsoft Search. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà di affinamento ricerca è contrassegnata durante l'impostazione della connessione
 
-Per tutti i connettori, ad eccezione del connettore di condivisione file, è necessario impostare manualmente i tipi personalizzati. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La procedura guidata consente di selezionare automaticamente uno schema di ricerca basato sul set di proprietà di origine che si desidera scegliere. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina schema di ricerca.
+Per tutti i connettori ad eccezione del connettore di condivisione file, i tipi personalizzati devono essere impostati manualmente. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La connessione guidata seleziona automaticamente uno schema di ricerca in base al set di proprietà di origine scelto. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina dello schema di ricerca.
 
-![Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni query, Search e retrieve.](media/manageschema.png)
- 
+> [!div class="mx-imgBorder"]
+> ![Lo schema di un connettore può essere personalizzato aggiungendo o rimuovendo funzioni query, ricerca e recupero.](media/manageschema.png)
+
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrizioni e suggerimenti per le impostazioni dello schema di ricerca
 
-* La proprietà **Content** è solo per le ricerche. Una volta selezionata nell'elenco a discesa, questa proprietà non può essere contrassegnata come **recuperabile** o **Queryable**.
+* La **proprietà di** contenuto è disponibile solo per la ricerca. Una volta selezionata nell'elenco a discesa, questa proprietà non può essere utilizzata con le opzioni **di recupero o** **query.**
 
-* I problemi di prestazioni significativi si verificano quando i risultati della ricerca eseguono il rendering con la proprietà **Content** . Un esempio è il campo di contenuto di **testo** per un articolo della Knowledge base di [ServiceNow](https://www.servicenow.com) .
+* Si verificano problemi di prestazioni significativi quando viene eseguito il rendering dei risultati della ricerca con **la proprietà del** contenuto. Un esempio è il **campo contenuto** testo per un articolo della Knowledge Base [ServiceNow.](https://www.servicenow.com)
 
-* Solo le proprietà contrassegnate come rendering recuperabili nei risultati della ricerca possono essere utilizzate per creare i tipi di risultati moderni (MRTs).
+* Solo le proprietà contrassegnate come rendering recuperabili nei risultati della ricerca e possono essere utilizzate per creare tipi di risultati moderni (MRT).
 
-* Solo le proprietà della stringa possono essere contrassegnate come ricercabili.
+* Solo le proprietà stringa possono essere contrassegnate come disponibili per la ricerca.
 
 > [!NOTE]
-> Dopo aver creato una connessione, **non è possibile** modificare lo schema. A tale scopo, è necessario eliminare la connessione e crearne uno nuovo.
+> Dopo aver creato una connessione, **non è possibile** modificare lo schema. A tale scopo, è necessario eliminare la connessione e crearne una nuova.
 
 ## <a name="step-7-refresh-settings"></a>Passaggio 7: aggiornare le impostazioni
 
-L'intervallo di aggiornamento determina la frequenza con cui i dati vengono sincronizzati tra l'origine dati e Microsoft Search. Ogni tipo di origine dati presenta una serie diversa di pianificazioni di aggiornamento ottimali, in base alla frequenza con cui i dati vengono modificati e al tipo di modifica.
+L'intervallo di aggiornamento determina la frequenza di sincronizzazione dei dati tra l'origine dati e Microsoft Search. Ogni tipo di origine dati dispone di un set diverso di pianificazioni di aggiornamento ottimali in base alla frequenza con cui i dati vengono modificati e al tipo di modifiche.
 
-Esistono due tipi di intervalli di aggiornamento, ovvero l'aggiornamento **completo** e l' **aggiornamento incrementale**, ma gli aggiornamenti incrementali non sono disponibili per alcune origini dati.
+Esistono due tipi di intervalli  di aggiornamento, ovvero Aggiornamento completo e **Aggiornamento** incrementale, ma gli aggiornamenti incrementali non sono disponibili per alcune origini dati.
 
-Con un aggiornamento completo, il motore di ricerca elabora e indicizza tutti gli elementi nell'origine di contenuto, indipendentemente dalle ricerche per indicizzazione precedenti. Un aggiornamento completo funziona in modo ottimale per queste situazioni:
+Con un aggiornamento completo, il motore di ricerca elabora e indicizza ogni elemento nell'origine di contenuto, indipendentemente dalle ricerche per indicizzazione precedenti. Un aggiornamento completo è ideale per queste situazioni:
 
-* Rilevamento di eliminazioni di dati.
-* L'aggiornamento incrementale non è stato in grado di aggiornare il contenuto a causa di errori.
-* Gli elenchi ACL sono stati modificati.
-* Sono state modificate regole di ricerca per indicizzazione.
-* Quando lo schema per la connessione è stato aggiornato (gli aggiornamenti dello schema non sono ancora supportati)
+* Rilevamento delle eliminazioni di dati.
+* L'aggiornamento incrementale ha rilevato errori e non è riuscito.
+* Gli ACL sono stati modificati.
+* Le regole di ricerca per indicizzazione sono state modificate.
+* Lo schema per la connessione è stato aggiornato (gli aggiornamenti dello schema non sono ancora supportati).
 
-Con un **aggiornamento incrementale**, il motore di ricerca è in grado di elaborare e indicizzare solo gli elementi creati o modificati dopo l'ultima ricerca per indicizzazione riuscita. Pertanto, non tutti i dati nell'origine di contenuto vengono reindicizzati. Gli aggiornamenti incrementali funzionano al meglio per rilevare contenuti, metadati, autorizzazioni e altre modifiche.
+Con un aggiornamento **incrementale,** il motore di ricerca può elaborare e indicizzare solo gli elementi creati o modificati dopo l'ultima ricerca per indicizzazione completata. Di conseguenza, non tutti i dati nell'origine di contenuto vengono reindicizzati. Gli aggiornamenti incrementali funzionano meglio per rilevare contenuto, metadati, autorizzazioni e altri aggiornamenti.
 
-Gli aggiornamenti incrementali sono molto più veloci degli aggiornamenti completi, in quanto gli elementi non modificati non vengono elaborati. Tuttavia, se si sceglie di eseguire aggiornamenti incrementali, sarà comunque necessario eseguire periodicamente aggiornamenti completi per mantenere una sincronizzazione dei dati accurata tra l'origine di contenuto e l'indice di ricerca.
+Gli aggiornamenti incrementali sono molto più veloci rispetto agli aggiornamenti completi perché gli elementi non modificati non vengono elaborati. Tuttavia, se si sceglie di eseguire aggiornamenti incrementali, è comunque necessario eseguire periodicamente aggiornamenti completi per mantenere la sincronizzazione dei dati corretta tra l'origine contenuto e l'indice di ricerca.
 
-![Impostazioni di ricerca per indicizzazione incrementali e intere per la ricerca per indicizzazione con incremento a 15 minuti e ricerca per indicizzazione completa](media/refreshschedule.png)
+> [!div class="mx-imgBorder"]
+> ![Impostazioni relative alla ricerca per indicizzazione incrementale e all'intervallo di ricerca per indicizzazione completa con valore incrementale di 15 minuti e ricerca per indicizzazione completa a 1 settimana.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>Passaggio 8: verifica della connessione
+## <a name="step-8-review-connection"></a>Passaggio 8: esaminare la connessione
 
-Prima di completare la connessione, è possibile esaminare l'intera configurazione e modificare le impostazioni in base alle esigenze. **Se non è stato ancora fatto, leggere le informazioni specifiche del connettore per l'origine dati.** Selezionare **Finish Updating** quando si è pronti per completare la connessione.
+È possibile esaminare l'intera configurazione e modificare le impostazioni in base alle esigenze prima di completare la connessione. **Assicurarsi di leggere le informazioni specifiche del connettore per l'origine dati, se non è già stato fatto.** Selezionare **Fine aggiornamento** quando si è pronti per completare la connessione.
 
-## <a name="how-do-i-know-the-connection-setup-worked"></a>Come si può verificare che l'installazione della connessione abbia avuto esito positivo?
+### <a name="confirm-if-the-connection-setup-worked"></a>Verificare se la configurazione della connessione ha funzionato
 
-Passare all'elenco delle connessioni pubblicate sotto la scheda **connettori** nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per informazioni su come effettuare aggiornamenti ed eliminazioni, vedere [gestire il connettore](manage-connector.md).
+Passare all'elenco delle connessioni pubblicate nella scheda **Connettori** [nell'interfaccia di amministrazione.](https://admin.microsoft.com) Per informazioni su come apportare aggiornamenti ed eliminazioni, vedere [Gestire il connettore.](manage-connector.md)
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+<!---Insert troubleshooting recommendations for this data source-->
+Leggere le informazioni specifiche del connettore per l'origine dati. 
+
+> [!NOTE]
+> Non tutti gli articoli specifici del connettore includono suggerimenti per la risoluzione dei problemi a questo punto.
+
+## <a name="limitations"></a>Limitazioni
+<!---Insert limitations for this data source-->
+Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere l'articolo [Panoramica dei connettori di Microsoft Graph.](connectors-overview.md)
+
+Vedere le informazioni specifiche del connettore per l'origine dati per determinare se si applicano altre limitazioni a tale connettore graph specifico.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Dopo aver pubblicato la connessione, è necessario personalizzare la pagina dei risultati della ricerca. Per informazioni sulla personalizzazione dei risultati di ricerca, vedere [Personalizzare la pagina dei risultati di ricerca.](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)

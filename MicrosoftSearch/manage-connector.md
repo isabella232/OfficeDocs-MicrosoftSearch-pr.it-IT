@@ -3,6 +3,7 @@ title: Gestire i connettori di Microsoft Graph per Microsoft Search
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire i connettori di Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 488b6e9452e381f8fc64ad06c6f063aa170ca7f5
-ms.sourcegitcommit: 3ed4d21510020045d25e8c5b7e168013d96c1b7e
+ms.openlocfilehash: aa2e3db8c8dc9155c06f81fc0169dd4bda8f8343
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50464041"
+ms.locfileid: "50508833"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -31,11 +32,11 @@ Passare alla scheda [Connettori nell'interfaccia](https://admin.microsoft.com/Ad
 
 Per ogni tipo di connettore, l'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) supporta le operazioni illustrate nella tabella seguente:
 
-Operazione | Connettore creato da Microsoft | Partner o connettore personalizzato
+Operazione | Connettori di Graph Microsoft | Connettori partner o grafico
 --- | --- | ---
-Aggiungere una connessione | :heavy_check_mark: (vedere [Configurare il connettore creato da Microsoft)](configure-connector.md) | :x: (fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
+Aggiungere una connessione | :heavy_check_mark: (Vedere panoramica [dell'installazione)](configure-connector.md) | :x: (fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
-Modificare una connessione pubblicata | :heavy_check_mark: Nome<br></br> :heavy_check_mark: Descrizione<br></br> :heavy_check_mark: credenziali di autenticazione per l'origine dati esterna<br></br> :heavy_check_mark: credenziali del gateway per l'origine dati locale<br></br> :heavy_check_mark: Pianificazione dell'aggiornamento<br></br> | :heavy_check_mark: Nome<br></br> :heavy_check_mark: Descrizione
+Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione dell'aggiornamento<br></br> | :heavy_check_mark: Nome<br></br> :heavy_check_mark: Descrizione
 Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-status"></a>Monitorare lo stato della connessione
@@ -50,7 +51,7 @@ Nella colonna Stato vengono visualizzati quattro **stati** per ogni connessione:
 
 * **Paused**. Le ricerche per indicizzazione vengono sospese dagli amministratori tramite l'opzione di sospensione. La ricerca per indicizzazione successiva viene eseguita solo quando viene ripresa manualmente. Tuttavia, i dati di questa connessione continuano a essere ricercabili.
 
-* **Failed**. Si è verificato un errore critico nella connessione. Questo errore richiede un intervento manuale. L'amministratore deve eseguire un'azione appropriata in base al messaggio di errore visualizzato. È possibile eseguire ricerche nei dati indicizzati fino a quando non si è verificato l'errore.
+* **Failed**. Si è verificato un errore critico nella connessione. Questo errore richiede un intervento manuale. L'amministratore deve eseguire l'azione appropriata in base al messaggio di errore visualizzato. È possibile eseguire ricerche nei dati indicizzati fino a quando non si è verificato l'errore.
 
 ## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice
 
@@ -67,7 +68,7 @@ La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo d
 Stato | Utilizzo delle quote
 --- | ---
 Normale | 1-69%
-Fortemente | 70-89%
+Alta | 70-89%
 Critico | 90%-99%
 Full | 100%
 

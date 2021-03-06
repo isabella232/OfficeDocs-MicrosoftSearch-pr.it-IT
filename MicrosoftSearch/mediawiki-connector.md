@@ -3,6 +3,7 @@ title: Connettore MediaWiki Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore MediaWiki Graph per Microsoft Search
-ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 1c2908de859056ccb26b862820e8b3be7a158569
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097395"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508770"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50097395"
 Il connettore Grafico MediaWiki consente all'organizzazione di individuare e indicizzare i dati da un wiki creato utilizzando il software MediaWiki. Questo connettore indicizza il contenuto specificato in Microsoft Search e supporta ricerche per indicizzazione periodiche per mantenere aggiornato l'indice.
 
 > [!NOTE]
-> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
+> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
 Questo articolo è per tutti gli utenti che configurano, eseguano e monitorano un connettore MediaWiki Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore MediaWiki Graph. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
 
@@ -39,7 +40,7 @@ Questo articolo è per tutti gli utenti che configurano, eseguano e monitorano u
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

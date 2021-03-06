@@ -3,6 +3,7 @@ title: Connettore Oracle SQL Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,21 +14,21 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore Oracle SQL Graph per Microsoft Search.
-ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
-ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
+ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099336"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508896"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-graph-connector"></a>Connettore Oracle SQL Graph
 
-Il connettore Oracle SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore di SQL Oracle, è inoltre possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
+Il connettore Oracle SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore di SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
-> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
+> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
 Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore Oracle SQL Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Oracle SQL Graph. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
@@ -35,32 +36,32 @@ Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano u
 
 ### <a name="install-the-graph-connector-agent"></a>Installare l'agente connettore Graph
 
-Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere Install [the Graph connector agent.](on-prem-agent.md)  
+Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente connettore Graph. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database che deve essere sottoposto a ricerca per indicizzazione e l'agente del connettore Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
+Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente del connettore Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
 
 Per il connettore di SQL Oracle, è necessario specificare il nome host, la porta e il nome del servizio (database) insieme al metodo di autenticazione, al nome utente e alla password preferiti.
 
 > [!NOTE]
-> Il database deve eseguire il database Oracle versione 11g o successiva per la connessione del connettore. Il connettore supporta il database Oracle ospitato su piattaforme windows, Linux e vm di Azure.
+> Il database deve eseguire il database Oracle versione 11g o successiva per la connessione del connettore. Il connettore supporta il database Oracle ospitato su piattaforme vm Windows, Linux e Azure.
 
 Per eseguire ricerche nel contenuto del database, è necessario specificare SQL query al momento della configurazione del connettore. Queste SQL query devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ovvero le proprietà di origine, inclusi eventuali join SQL che devono essere eseguiti per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare elenchi di controllo di accesso (ACL) all'interno SQL query quando si configura il connettore.
 
 ## <a name="step-3a-full-crawl-required"></a>Passaggio 3a: Ricerca per indicizzazione completa (obbligatorio)
 
-In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La ricerca per indicizzazione completa seleziona tutte le colonne o le proprietà in cui si desidera selezionare le opzioni **Query,** **Ricerca** o **Recupera.** È inoltre possibile specificare colonne ACL per limitare l'accesso ai risultati della ricerca a utenti o gruppi specifici.
+In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La ricerca per indicizzazione completa seleziona tutte le colonne o le proprietà in cui si desidera selezionare le opzioni **Query,** **Ricerca** o **Recupera.** È inoltre possibile specificare colonne ACL per limitare l'accesso dei risultati della ricerca a utenti o gruppi specifici.
 
 > [!Tip]
 > Per ottenere tutte le colonne necessarie, è possibile unire più tabelle.
@@ -122,7 +123,7 @@ Per escludere le righe eliminate in modo resciso nel database dall'indicizzazion
 
 ### <a name="full-crawl-manage-search-permissions"></a>Ricerca per indicizzazione completa: gestire le autorizzazioni di ricerca
 
-Selezionare **Gestisci autorizzazioni per** scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query di ricerca per indicizzazione SQL completa.
+Selezionare **Gestisci autorizzazioni** per scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query di ricerca per indicizzazione SQL completa.
 
 Ogni colonna ACL deve essere una colonna multivalore. Questi valori ID multipli possono essere separati da separatori, ad esempio punto e virgola (;), virgola (,) e così via. È necessario specificare questo separatore nel campo **separatore di** valore.
 
@@ -167,15 +168,15 @@ Una pianificazione di ricerca per indicizzazione completa consente di individuar
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="next-steps-customize-the-search-results-page"></a>Passaggi successivi: Personalizzare la pagina dei risultati di ricerca
+<!--- ## Next steps: Customize the search results page
 
-Creare verticali e tipi di risultati personalizzati, in modo che gli utenti finali possano visualizzare i risultati della ricerca da nuove connessioni. Senza questo passaggio, i dati della connessione non vengono visualizzati nella pagina dei risultati della ricerca.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-Per ulteriori informazioni su come creare verticali e mrt, vedere Personalizzazione della pagina [dei risultati di ricerca.](customize-search-page.md)
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md). -->
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Di seguito è riportato un elenco degli errori comuni rilevati durante la configurazione del connettore e i relativi possibili motivi.
+Di seguito è riportato un elenco degli errori comuni rilevati durante la configurazione del connettore e dei possibili motivi.
 
 | Passaggio di configurazione | Messaggio di errore | Possibili motivi |
 | ------------ | ------------ | ------------ |

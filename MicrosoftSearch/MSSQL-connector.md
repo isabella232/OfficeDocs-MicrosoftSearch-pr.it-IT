@@ -3,6 +3,7 @@ title: Connettore Microsoft SQL Microsoft SQL Server Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Azure SQL e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: 9f0a0a617541c6e27196a183d3283e0f05163dec
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508905"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -27,15 +28,15 @@ Il server Microsoft SQL o il connettore Azure SQL Graph consente all'organizzazi
 Il connettore Graph indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con questi connettori SQL, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
-> Leggere [**l'articolo configurazione del connettore Graph**](configure-connector.md) per comprendere il processo generale di configurazione dei connettori di Graph.
+> Leggere [**l'articolo configurare il connettore Graph**](configure-connector.md) per comprendere le istruzioni generali per la configurazione dei connettori di Graph.
 
-Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore Graph di Azure SQL e Microsoft SQL server. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo per il connettore Graph di Azure SQL e Microsoft SQL server. Questo articolo include anche informazioni sulle [limitazioni](#limitations) per il server Microsoft SQL e i connettori di SQL Azure.
+Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un connettore Azure SQL e Microsoft SQL Server Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo per il connettore Graph di Azure SQL e Microsoft SQL server. In questo articolo sono inoltre incluse informazioni [sulle](#limitations) limitazioni per il server Microsoft SQL e i connettori SQL Azure.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installare l'agente del connettore Graph (necessario solo per microsoft SQL server locale)
 
-Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere Install [the Graph connector agent.](on-prem-agent.md)  
+Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente connettore Graph. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
 
@@ -43,7 +44,7 @@ Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -59,7 +60,7 @@ Dopo aver completato la registrazione dell'app e aver preso nota del nome dell'a
 
 Per aggiungere l'app registrata al database SQL Azure, è necessario:
 
-- Accedere al database SQL Azure
+- Accedere al database di Azure SQL database
 - Aprire una nuova finestra di query
 - Creare un nuovo utente eseguendo il comando 'CREATE USER [nome app] FROM EXTERNAL PROVIDER'
 - Aggiungere un utente al ruolo eseguendo il comando 'exec sp_addrolemember 'db_datareader', [nome app]' o 'ALTER ROLE db_datareader ADD MEMBER [nome app]'
@@ -72,7 +73,7 @@ Per aggiungere l'app registrata al database SQL Azure, è necessario:
 Per connettere il connettore di server Microsoft SQL a un'origine dati, è necessario configurare il server di database che si desidera sottosegando alla ricerca per indicizzazione e l'agente locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
 
 > [!NOTE] 
-> Il database deve eseguire SQL server versione 2008 o successiva per la connessione del connettore di server microsoft SQL server.
+> Il database deve eseguire SQL server versione 2008 o successiva per la connessione del connettore del server microsoft SQL microsoft SQL.
 
 Per il connettore SQL Azure, è necessario specificare solo il nome del server o l'indirizzo IP a cui si desidera connettersi. Il connettore SQL Azure supporta solo l'autenticazione OIDC (Open ID Connect) di Azure Active Directory per la connessione al database.
 
@@ -88,7 +89,7 @@ Per eseguire ricerche nel contenuto del database, è necessario specificare SQL 
 
 ## <a name="step-3a-full-crawl-required"></a>Passaggio 3a: Ricerca per indicizzazione completa (obbligatorio)
 
-In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La ricerca per indicizzazione completa seleziona tutte le colonne o le proprietà in cui si desidera selezionare le opzioni **Query,** **Ricerca** o **Recupera.** È inoltre possibile specificare colonne ACL per limitare l'accesso ai risultati della ricerca a utenti o gruppi specifici.
+In questo passaggio viene configurata la query SQL che esegue una ricerca per indicizzazione completa del database. La ricerca per indicizzazione completa seleziona tutte le colonne o le proprietà in cui si desidera selezionare le opzioni **Query,** **Ricerca** o **Recupera.** È inoltre possibile specificare colonne ACL per limitare l'accesso dei risultati della ricerca a utenti o gruppi specifici.
 
 > [!Tip]
 > Per ottenere tutte le colonne necessarie, è possibile unire più tabelle.
@@ -114,7 +115,7 @@ L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. N
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
 
-Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori di SQL e azure SQL. Nella tabella viene inoltre riepilogato il tipo di dati di indicizzazione per il tipo di SQL supportato. Per ulteriori informazioni sui tipi di dati supportati dai connettori di Microsoft Graph per l'indicizzazione, vedere la documentazione relativa ai [tipi di risorse delle proprietà.](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)
+Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori SQL ms e Azure SQL. Nella tabella viene inoltre riepilogato il tipo di dati di indicizzazione per il tipo di SQL supportato. Per ulteriori informazioni sui tipi di dati supportati dai connettori di Microsoft Graph per l'indicizzazione, vedere la documentazione relativa ai [tipi di risorse delle proprietà.](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)
 
 | Categoria | Tipo di dati di origine | Tipo di dati di indicizzazione |
 | ------------ | ------------ | ------------ |
@@ -130,9 +131,9 @@ Per qualsiasi altro tipo di dati attualmente non direttamente supportato, è nec
 
 ### <a name="watermark-required"></a>Filigrana (obbligatorio)
 
-Per evitare l'overload del database, il connettore esegue il batch e riprende le query di ricerca per indicizzazione completa con una colonna di filigrane per la ricerca per indicizzazione completa. Utilizzando il valore della colonna filigrana, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. In sostanza, questo meccanismo controlla l'aggiornamento dei dati per le ricerche per indicizzazione complete.
+Per evitare l'sovraccarico del database, il connettore esegue in batch e riprende le query di ricerca per indicizzazione completa con una colonna di filigrane per la ricerca per indicizzazione completa. Utilizzando il valore della colonna filigrana, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. In sostanza, questo meccanismo controlla l'aggiornamento dei dati per le ricerche per indicizzazione complete.
 
-Creare frammenti di codice di query per filigrane come illustrato negli esempi seguenti:
+Creare frammenti di codice di query per filigrane, come illustrato negli esempi seguenti:
 
 - `WHERE (CreatedDateTime > @watermark)`. Cita il nome della colonna della filigrana con la parola chiave `@watermark` riservata. Se l'ordinamento della colonna della filigrana è crescente, utilizzare `>` ; in caso contrario, utilizzare `<` .
 - `ORDER BY CreatedDateTime ASC`. Ordinare in base alla colonna della filigrana in ordine crescente o decrescente.
@@ -151,7 +152,7 @@ Per escludere le righe eliminate in modo resciso nel database dall'indicizzazion
 
 ### <a name="full-crawl-manage-search-permissions"></a>Ricerca per indicizzazione completa: gestire le autorizzazioni di ricerca
 
-Selezionare **Gestisci autorizzazioni per** scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query di ricerca per indicizzazione SQL completa.
+Selezionare **Gestisci autorizzazioni** per scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query di ricerca per indicizzazione SQL completa.
 
 Ogni colonna ACL deve essere una colonna multivalore. Questi valori ID multipli possono essere separati da separatori, ad esempio punto e virgola (;), virgola (,) e così via. È necessario specificare questo separatore nel campo **separatore di** valore.
 
@@ -200,11 +201,11 @@ Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## <a name="next-steps-customize-the-search-results-page"></a>Passaggi successivi: Personalizzare la pagina dei risultati di ricerca
+<!---## Next steps: Customize the search results page
 
-Creare verticali e tipi di risultati personalizzati, in modo che gli utenti finali possano visualizzare i risultati della ricerca da nuove connessioni. Senza questo passaggio, i dati della connessione non vengono visualizzati nella pagina dei risultati della ricerca.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-Per ulteriori informazioni su come creare verticali e mrt, vedere Personalizzazione della pagina [dei risultati di ricerca.](customize-search-page.md)
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
 <!---## Troubleshooting-->
 
@@ -214,7 +215,7 @@ Per ulteriori informazioni su come creare verticali e mrt, vedere Personalizzazi
 
 I SQL connettori hanno queste limitazioni nella versione di anteprima:
 
-- Connettore SQL server Microsoft: il database locale deve essere SQL server versione 2008 o successiva.
+- Connettore SQL server Microsoft: il database locale deve essere SQL server 2008 o versione successiva.
 - La sottoscrizione di M365 e la sottoscrizione di Azure (che ospita il database di Azure SQL) devono trovarsi nello stesso Azure Active Directory.
 - Gli elenchi di controllo di accesso sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 - L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di contenuto di questo tipo sono HTML, JSON, XML, BLOB e analisi dei documenti presenti come collegamenti all'interno delle colonne del database.

@@ -3,6 +3,7 @@ title: Agente locale
 ms.author: rusamai
 author: rsamai
 manager: jameslau
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,16 +14,16 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agente in-prem
-ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
-ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
+ms.openlocfilehash: 5134c0c4459f9d38825451f274e67469956756d2
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50259430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508806"
 ---
 # <a name="graph-connector-agent"></a>Agente connettore grafico
 
-L'utilizzo di connettori Graph in uso richiede l'installazione del software *agente connettore Graph.* Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore Graph. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
+L'utilizzo di connettori Graph in rete richiede l'installazione del software *agente connettore Graph.* Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore Graph. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
 
 ## <a name="installation"></a>Installazione
 
@@ -104,7 +105,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 ##### <a name="step-2-upload-the-certificate-in-the-azure-portal"></a>Passaggio 2: Caricare il certificato nel portale di Azure
 
 1. Aprire l'applicazione e passare alla sezione certificati e segreti dal riquadro sinistro
-1. Selezionare "Carica certificato" e caricare il file CER
+1. Selezionare "Carica certificato" e caricare il file cer
 1. Apri **la registrazione dell'app** e **seleziona Certificati e** segreti nel riquadro di spostamento. Copiare l'identificazione personale del certificato.
 
 ![Elenco dei certificati di identificazione personale quando è selezionato Certificati e segreti nel riquadro sinistro](media/onprem-agent/certificates.png)
@@ -120,7 +121,7 @@ Se hai usato lo script di esempio per generare un certificato, il file PFX è di
 1. Selezionare il certificato appena installato in "Personale" -> 'Certificati'
 1. Fai clic con il pulsante destro del mouse sul certificato e seleziona "Tutte le attività" -> 'Gestisci chiavi private...' Opzione
 1. Nella finestra di dialogo delle autorizzazioni, selezionare l'opzione aggiungi. Nella finestra di dialogo di selezione dell'utente, scrivi: "NT Service\GcaHostService" e fai clic su "OK". Non fare clic sul pulsante "Controlla nomi".
-1. Fare clic su Ok nella finestra di dialogo delle autorizzazioni. Il computer agente è ora configurato per consentire agli agenti di generare token usando il certificato.
+1. Fare clic su Ok nella finestra di dialogo delle autorizzazioni. Il computer agente è ora configurato per l'agente per generare token usando il certificato.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 1. Se una connessione non riesce con l'errore "1011: L'agente connettore Graph non è raggiungibile o offline", accedere al computer in cui è installato l'agente e avviare l'applicazione agente se non è già in esecuzione. Se la connessione continua a non riuscire, verificare che il certificato o il segreto client fornito all'agente durante la registrazione non sia scaduto e abbia le autorizzazioni necessarie.

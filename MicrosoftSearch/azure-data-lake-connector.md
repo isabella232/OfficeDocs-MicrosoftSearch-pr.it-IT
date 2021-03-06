@@ -3,6 +3,7 @@ title: Connettore Azure Data Lake Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Azure Data Lake Storage Gen2 Graph per Microsoft Search
-ms.openlocfilehash: da508694929d3c83a456c664aa4613b09a1b14a3
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 2bb9570bc3b0a5adef7ac72ea1620c4f22a8aefb
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508887"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50084858"
 Il connettore Azure Data Lake Storage Gen2 Graph consente agli utenti dell'organizzazione di cercare i file archiviati negli account di archiviazione BLOB di [Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) e azure [Data Lake Gen 2.](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 
 > [!NOTE]
-> Leggere [**l'articolo configurazione del connettore Graph**](configure-connector.md) per comprendere il processo generale di configurazione dei connettori di Graph.
+> Leggere [**l'articolo configurare il connettore Graph**](configure-connector.md) per comprendere le istruzioni generali per la configurazione dei connettori di Graph.
 
 Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore Azure Data Lake Storage Gen2. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Azure Data Lake Storage Gen2. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
 
@@ -37,7 +38,7 @@ Nell'articolo viene utilizzato *Archiviazione di Azure* come termine generico pe
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a>Passaggio 2: Assegnare un nome alla connessione
+## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
 Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -85,7 +86,7 @@ Per una connessione [all'archiviazione BLOB di Azure,](https://docs.microsoft.co
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 
-Nella schermata **Impostazioni aggiornamento è** possibile impostare l'intervallo di ricerca per indicizzazione incrementale e l'intervallo di ricerca per indicizzazione completa. Gli intervalli predefiniti per il connettore Azure Data Lake Storage Gen2 sono di 15 minuti per una ricerca per indicizzazione incrementale e di una settimana per una ricerca per indicizzazione completa.
+Nella schermata **Impostazioni aggiornamento è** possibile impostare l'intervallo di ricerca per indicizzazione incrementale e l'intervallo di ricerca per indicizzazione completa. Gli intervalli predefiniti per il connettore Azure Data Lake Storage Gen2 sono 15 minuti per una ricerca per indicizzazione incrementale e una settimana per una ricerca per indicizzazione completa.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: esaminare la connessione
 

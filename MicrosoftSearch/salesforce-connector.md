@@ -3,6 +3,7 @@ title: Connettore Salesforce Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Salesforce Graph per Microsoft Search
-ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097449"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508824"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -26,12 +27,12 @@ ms.locfileid: "50097449"
 Il connettore Grafico Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search.
 
 > [!NOTE]
-> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
+> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
 Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un connettore Grafico Salesforce. Integra il processo di configurazione generale e mostra le istruzioni applicabili solo per il connettore Grafico Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni.](#limitations)
 
 >[!IMPORTANT]
->Il connettore Salesforce Graph attualmente supporta Estate '19 o versione successiva.
+>Il connettore Grafico Salesforce attualmente supporta Estate '19 o versione successiva.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -101,14 +102,14 @@ La prima volta che si tenta di accedere con queste impostazioni, viene visualizz
   >[!NOTE]
   >Se il popup non viene visualizzato, è possibile che venga bloccato nel browser, pertanto è necessario consentire i popup e i reindirizzamenti.
 
-Verificare che la connessione sia stata eseguita correttamente cercando un banner verde che indica "Connessione riuscita" come illustrato nello screenshot seguente.
+Verifica che la connessione sia stata eseguita correttamente cercando un banner verde che indica "Connessione riuscita" come illustrato nello screenshot seguente.
 
   > [!div class="mx-imgBorder"]
   > ![Screenshot dell'accesso riuscito. Il banner verde che indica "Connessione riuscita" si trova sotto il campo per l'URL dell'istanza salesforce](media/salesforce-connector/sf5.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-Sarà necessario scegliere quali utenti potranno visualizzare i risultati della ricerca da questa origine dati. Se si consente solo a determinati utenti di Azure Active Directory (Azure AD) o non di Azure AD di visualizzare i risultati della ricerca, assicurarsi di mappare le identità.
+Sarà necessario scegliere quali utenti potranno visualizzare i risultati della ricerca da questa origine dati. Se si consente solo ad alcuni utenti di Azure Active Directory (Azure AD) o non di Azure AD di visualizzare i risultati della ricerca, assicurarsi di mappare le identità.
 
 ## <a name="step-4a-select-permissions"></a>Passaggio 4a: Selezionare le autorizzazioni
 
@@ -120,7 +121,7 @@ Sarà necessario scegliere quali utenti potranno visualizzare i risultati della 
 > [!div class="mx-imgBorder"]
 > ![Schermata Di selezione delle autorizzazioni completata da un amministratore. L'amministratore ha selezionato l'opzione "Solo le persone con accesso a questa origine dati" e ha anche selezionato "AAD" da un menu a discesa di tipi di identità.](media/salesforce-connector/sf6.png)
 
-Se si è scelto di inserire un elenco di controllo di accesso dall'istanza di Salesforce e si è selezionato "non-AAD" per il tipo di identità, vedere Eseguire il mapping delle identità [non azure AD](map-non-aad.md) per istruzioni sul mapping delle identità.
+Se si è scelto di inserire un elenco di controllo di accesso dall'istanza di Salesforce e si è selezionato "non-AAD" per il tipo di identità, vedere Eseguire il mapping delle identità [non Azure AD](map-non-aad.md) per istruzioni sul mapping delle identità.
 
 ## <a name="step-4b-map-aad-identities"></a>Passaggio 4b: Mappare le identità AAD
 
@@ -157,7 +158,7 @@ Seguire le istruzioni [generali per l'installazione.](https://docs.microsoft.com
 
 ## <a name="limitations"></a>Limitazioni
 
-- Il connettore Graph attualmente non supporta la condivisione e la condivisione basata sul territorio basata su Apex tramite gruppi personali di Salesforce.
+- Il connettore Graph attualmente non supporta la condivisione e la condivisione basata sul territorio basata su Apex utilizzando i gruppi personali di Salesforce.
 - Esiste un bug noto nell'API Salesforce utilizzata dal connettore Graph, in cui le impostazioni predefinite private a livello di organizzazione per i lead non sono attualmente rispettate.  
 - Se per un profilo è impostata la sicurezza a livello di campo (FLS, Field Level Security), il connettore Graph non inserisce tale campo per i profili nell'organizzazione Salesforce. Di conseguenza, gli utenti non saranno in grado di cercare valori per tali campi, né verranno visualizzati nei risultati.  
 - Nella schermata Gestisci schema questi nomi di proprietà standard comuni sono elencati una sola volta, le opzioni sono **Query,** **Ricerca,** Recupera e Affina e si applicano a tutti o nessuno.

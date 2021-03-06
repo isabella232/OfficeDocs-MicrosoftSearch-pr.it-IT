@@ -3,6 +3,7 @@ title: Connettore ServiceNow Graph per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore ServiceNow Graph per Microsoft Search
-ms.openlocfilehash: d1fdfb5f1aec5091fd526152de2bdc86932cfdb9
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508680"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50084894"
 Il connettore ServiceNow Graph consente all'organizzazione di indicizzare articoli basati sulla knowledge base visibili agli utenti in base alle autorizzazioni dei criteri utente all'interno dell'organizzazione. Dopo aver configurato il connettore e il contenuto dell'indice da ServiceNow, gli utenti possono cercare gli articoli da qualsiasi client Microsoft Search.
 
 > [!NOTE]
-> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
+> Leggere [**l'articolo setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
 Questo articolo è per tutti gli utenti che configurano, eseguiti e monitorano un connettore ServiceNow Graph. Integra il processo di configurazione generale e mostra le istruzioni applicabili solo al connettore ServiceNow Graph. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
   
@@ -71,7 +72,7 @@ Immettere il nome utente e la password dell'account ServiceNow con **ruolo di** 
 
 ### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-Per usare ServiceNow OAuth per l'autenticazione, esegui il provisioning di un endpoint nell'istanza ServiceNow. L'app Microsoft Search la utilizzerà per accedere all'istanza. Per ulteriori informazioni, vedere [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in the ServiceNow documentation.
+Per usare ServiceNow OAuth per l'autenticazione, esegui il provisioning di un endpoint nell'istanza ServiceNow. L'app Microsoft Search la utilizzerà per accedere all'istanza. Per altre informazioni, vedi [Creare un endpoint per i client che accedono all'istanza](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) nella documentazione ServiceNow.
 
 La tabella seguente fornisce indicazioni su come compilare il modulo di creazione dell'endpoint:
 
@@ -146,7 +147,7 @@ L'istanza ServiceNow richiede la configurazione seguente:
    --- | --- | ---
    Nome | Nome univoco che identifica l'entità OIDC OAuth. | Azure AD
    Client ID | ID client dell'applicazione registrata nel server OIDC OAuth di terze parti. L'istanza usa l'ID client quando richiede un token di accesso. | ID applicazione (client) del passaggio 3.a
-   Segreto client | Il segreto client dell'applicazione registrata nel server OIDC OAuth di terze parti. | Segreto client del passaggio 3.b
+   Segreto client | Il segreto client dell'applicazione registrata nel server OIDC OAuth di terze parti. | Segreto client dal passaggio 3.b
 
    Tutti gli altri valori possono essere predefiniti.
 
@@ -183,21 +184,21 @@ Tutti gli altri valori possono essere lasciati come predefiniti.
 
 Accedere all'account ServiceNow creato con l'ID entità ServiceNow come ID utente e assegnare il ruolo di conoscenza. Le istruzioni per assegnare un ruolo a un account ServiceNow sono disponibili qui: [assegnare un ruolo a un utente.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
 
-Usa l'ID applicazione come ID client dal passaggio 3.a e il segreto client del passaggio 3.b per eseguire l'autenticazione nell'istanza ServiceNow con Azure AD OpenID Connect.
+Usa l'ID applicazione come ID client dal passaggio 3.a e il segreto client del passaggio 3.b per eseguire l'autenticazione nell'istanza di ServiceNow con Azure AD OpenID Connect.
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Passaggio 4: Selezionare le proprietà e filtrare i dati
 
 In questo passaggio è possibile aggiungere o rimuovere le proprietà disponibili dall'origine dati ServiceNow. Microsoft 365 ha già selezionato alcune proprietà per impostazione predefinita.
 
-Con una stringa di query ServiceNow, è possibile specificare le condizioni per la sincronizzazione degli articoli. È simile a una **clausola Where** in un'istruzione **SQL Select.** È ad esempio possibile scegliere di indicizzare solo gli articoli pubblicati e attivi. Per informazioni sulla creazione di una stringa di query personalizzata, vedere [Generare una stringa di query codificata utilizzando un filtro.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
+Con una stringa di query ServiceNow, è possibile specificare le condizioni per la sincronizzazione degli articoli. È simile a una **clausola Where** in un'istruzione **SQL Select.** Ad esempio, è possibile scegliere di indicizzare solo gli articoli pubblicati e attivi. Per informazioni sulla creazione di una stringa di query personalizzata, vedere Generare una stringa [di query codificata utilizzando un filtro.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
 Utilizzare il pulsante dei risultati di anteprima per verificare i valori di esempio delle proprietà selezionate e del filtro di query.
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
-Il connettore ServiceNow supporta le autorizzazioni di ricerca visibili a **Tutti o** solo agli utenti con accesso a questa **origine dati.** I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile agli utenti dell'organizzazione che hanno accesso a essi rispettivamente. ServiceNow Connector supporta le autorizzazioni dei criteri utente predefinite senza script avanzati. Quando il connettore trova un criterio utente con script avanzato, tutti i dati che utilizzano tali criteri utente non verranno visualizzati nei risultati della ricerca.
+Il connettore ServiceNow supporta le autorizzazioni di ricerca visibili per **tutti gli** utenti o solo per gli utenti con accesso a questa **origine dati.** I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile agli utenti dell'organizzazione che hanno accesso a essi rispettivamente. ServiceNow Connector supporta le autorizzazioni dei criteri utente predefinite senza script avanzati. Quando il connettore trova un criterio utente con script avanzato, tutti i dati che utilizzano tali criteri utente non verranno visualizzati nei risultati della ricerca.
 
-Se si seleziona Solo gli utenti con accesso a questa origine **dati,** è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di Azure Active Directory (AAD) o di utenti non AAD.
+Se si seleziona Solo gli utenti con accesso a questa origine **dati,** è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di Azure Active Directory (AAD) o utenti non AAD.
 
 >[!NOTE]
 >Il connettore ServiceNow è in **anteprima** se si sceglie **Solo gli utenti con accesso a questa origine dati.**
@@ -239,5 +240,5 @@ Dopo aver pubblicato la connessione, personalizzando la pagina dei risultati, è
 ServiceNow Graph connector has the following limitations in its latest release:
 
 - L'indicizzazione degli articoli della Knowledge Base disponibili per tutti gli utenti di un'organizzazione è una funzionalità disponibile in generale.
-- *Solo gli utenti che hanno accesso a questa funzionalità dell'origine* dati nel passaggio Gestisci autorizzazioni di ricerca sono in anteprima e elaborano solo le [autorizzazioni dei criteri](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) utente. Qualsiasi altro tipo di autorizzazione di accesso non verrà applicato nei risultati della ricerca.
+- *Solo gli utenti che hanno accesso a questa funzionalità dell'origine* dati nel passaggio Gestisci autorizzazioni di ricerca sono in anteprima ed elaborano solo le [autorizzazioni dei criteri](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) utente. Qualsiasi altro tipo di autorizzazione di accesso non verrà applicato nei risultati della ricerca.
 - I criteri utente con script avanzati non sono supportati nella versione di anteprima corrente. Gli articoli della Knowledge Base con una restrizione di accesso verranno indicizzati negando l'accesso a tutti gli utenti e non verranno visualizzati nei risultati della ricerca per alcun utente finché non vengono supportati.
