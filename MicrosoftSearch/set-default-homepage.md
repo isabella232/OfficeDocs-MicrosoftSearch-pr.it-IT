@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Informazioni su come impostare Bing come home page predefinita per la società con Microsoft Search.
-ms.openlocfilehash: 2b88d92d02261ec1756b811e5078206301229cbd
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 0d8fac0302e672c603853185ff0810bf6d42371c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626928"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031675"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Impostare Bing.com come home page predefinita
 
@@ -42,7 +42,7 @@ L'articolo del supporto di Windows sulla gestione dei file ADMX e i file ADMX pi
 
 È necessario anche il file di criteri Google più recente, disponibile nella [Guida di Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
   
-Se le impostazioni descritte in questa sezione non sono disponibili all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'[archivio centrale](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella conforme alla convenzione di denominazione seguente:
+Se le impostazioni descritte in questa sezione non sono disponibili all'interno di GPMC, scaricare il file ADMX appropriato e copiarlo nell'[archivio centrale](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella conforme alla convenzione di denominazione seguente:
   
  **%systemroot%\sysvol\\<dominio\>\policies\PolicyDefinitions**
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire i connettori di Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929587"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031720"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -61,14 +61,14 @@ La quota di indice e l'utilizzo disponibili vengono visualizzati nella pagina di
  
 >[!NOTE]
 >Durante il periodo di anteprima, a ogni organizzazione che provava i connettori Graph è stata fornita una quota fissa gratuita di un massimo di 2 milioni di elementi in tutte le connessioni. Con la disponibilità generale dei connettori Graph, la quota gratuita scadrà il 1° aprile 2021 per le organizzazioni che hanno utilizzato i connettori Graph in anteprima.
->I connettori Microsoft Graph etichettati come ["Anteprima"](connectors-preview.md) non verranno inclusi nella quota di indice totale addebitata per l'organizzazione. Tuttavia, verrà conteggiato per il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni di elementi che l'organizzazione può indicizzare tra le connessioni. ogni connessione è limitata a 700.000 elementi. 
+>I connettori Microsoft Graph etichettati come ["Anteprima"](./connectors-overview.md) non verranno inclusi nella quota di indice totale addebitata per l'organizzazione. Tuttavia, verrà conteggiato per il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni di elementi che l'organizzazione può indicizzare tra le connessioni. ogni connessione è limitata a 700.000 elementi. 
 
 La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo della quota da parte dell'organizzazione:
 
 Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
-Alta | 80-89%
+Alto | 80-89%
 Critico | 90%-99%
 Full | 100%
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare segnalibri e modi per modificare in blocco i risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: b801e75f772a585c2ddfedd09aff3b74c1d909b5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929608"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031729"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -160,4 +160,4 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Dove si trova l'ID app per un'app Power?**
 
-**A**: Passare al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A**: Passare al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

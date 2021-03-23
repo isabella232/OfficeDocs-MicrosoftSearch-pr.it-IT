@@ -1,5 +1,5 @@
 ---
-title: Gestione della casella di ricerca in siti di SharePoint
+title: Gestione della casella di ricerca nei siti di SharePoint
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -12,23 +12,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Come personalizzare l'esperienza della casella di ricerca nei siti di SharePoint
-ms.openlocfilehash: 6ebd084aadb38acb5475b7e43d7c4092ffc09eb8
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700965"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031360"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Impostazioni della casella di ricerca nei siti di SharePoint
 
-Uno dei diversi modi in cui Microsoft Search può essere personalizzato sui siti di SharePoint è adattare la modalità di utilizzo della casella di ricerca nella barra di spostamento della famiglia in siti di SharePoint per soddisfare al meglio le proprie esigenze.
+Uno dei diversi modi in cui Microsoft Search può essere personalizzato nei siti di SharePoint è personalizzare il funzionamento della casella di ricerca nella barra di spostamento della famiglia di prodotti nei siti di SharePoint in base alle proprie esigenze.
 
-Per altre opzioni di personalizzazione, vedere [modifica della pagina dei risultati di ricerca di Microsoft per aggiungere verticali, tipi di risultati e layout personalizzati](customize-search-page.md)e [creazione di una pagina dei risultati di ricerca personalizzata](create-search-results-pages.md).
+Per altre opzioni di personalizzazione, vedere Modifica della pagina dei risultati di Microsoft Search per aggiungere [verticali,](customize-search-page.md)tipi di risultati e layout personalizzati e [Creazione di una pagina dei risultati di ricerca personalizzata.](create-search-results-pages.md)
 
 > [!NOTE]
-> La casella di ricerca della barra di spostamento Suite non è disponibile per tutti i clienti in questo momento, ma queste opzioni possono ancora essere impostate e diventeranno effettive quando saranno disponibili.
+> La casella di ricerca della barra di spostamento della famiglia di prodotti non è disponibile per tutti i clienti in questo momento, ma queste opzioni possono comunque essere impostate ora e diventeranno effettive quando saranno disponibili.
 
-Per le attività elencate di seguito, si utilizzerà PowerShell con le estensioni di PowerShell di SharePoint PnP. È possibile installare e scoprire altre informazioni su come [iniziare.](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Si eseguirà l'accesso al sito o alla raccolta siti utilizzando il comando seguente:
+Per le attività elencate di seguito, si utilizzerà PowerShell con le estensioni di PowerShell PnP di SharePoint. Puoi installare e altre informazioni su come iniziare [qui](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). Per accedere al sito o alla raccolta siti, utilizzare questo comando:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,32 +37,32 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Modifica dell'ambito della ricerca
 
-Quando si crea un nuovo sito in SharePoint Online oggi e si digita la casella di ricerca, si viene reindirizzati alla pagina dei risultati di ricerca di Microsoft. Questa pagina Visualizza i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
+Quando si crea un nuovo sito in SharePoint Online oggi e si digita nella casella di ricerca, viene visualizzata la pagina dei risultati di Microsoft Search. Questa pagina mostra i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca fino all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
 
-Per impostazione predefinita, l'ambito utilizzato per la casella di ricerca dipende dal tipo di sito.
+L'ambito utilizzato dalla casella di ricerca, per impostazione predefinita, dipende dal tipo di sito.
 
-* Ricerca di siti regolari nel sito corrente.
-* I siti hub vengono ricercati in tutti i siti dell'hub.
-* Home sites Cerca su tutto il contenuto.
+* La ricerca nei siti regolari viene esequista nel sito corrente.
+* I siti hub esere ricercano in tutti i siti nell'hub.
+* I siti principali esere ricercano tutto il contenuto.
 
-In alcuni casi, è possibile modificare queste impostazioni predefinite per eseguire sempre una ricerca nell'intera organizzazione o nell'hub a cui è associato un sito, senza che sia necessario un ulteriore clic.
+In alcuni casi, è possibile modificare queste impostazioni predefinite per eseguire sempre la ricerca nell'intera organizzazione o nell'hub a cui è associato un sito, senza bisogno di un ulteriore clic.
 
-Come proprietario di un sito, è possibile modificare queste impostazioni predefinite utilizzando il seguente comando:
+In quanto proprietario del sito, è possibile modificare queste impostazioni predefinite utilizzando il comando seguente:
 
 ```powershell
 Set-PnPSearchSettings -SearchScope Tenant
 # DefaultScope | Hub | Site | Tenant
 ```
 
-Dopo l'esecuzione di questo comando, il sito che in precedenza stava mostrando i risultati del sito corrente per impostazione predefinita inizierà a mostrare i risultati dell'intera organizzazione.
+Dopo aver eseguito questo comando, il sito che in precedenza mostrava i risultati del sito corrente per impostazione predefinita inizierà a mostrare i risultati dell'intera organizzazione.
 
-Per tornare all'impostazione predefinita, eseguire di nuovo il comando con il valore "DefaultScope". Per eseguire una ricerca nell'hub, utilizzare "hub" come valore SearchScope.
+Per tornare all'impostazione predefinita, eseguire di nuovo il comando con il valore "DefaultScope". Per eseguire una ricerca nell'hub, usa "Hub" come valore SearchScope.
 
-Questa impostazione si applica a livello di singolo sito. Non esistono impostazioni equivalenti per le raccolte siti.
+Questa impostazione si applica a livello di singolo sito. Non esiste un'impostazione equivalente per le raccolte siti.
 
 ## <a name="show-or-hide-the-search-box"></a>Mostrare o nascondere la casella di ricerca
 
-Se si desidera impedire agli utenti di eseguire la ricerca o l'utilizzo di un'implementazione di una casella di ricerca personalizzata, è possibile scegliere di nascondere la casella di ricerca della barra di spostamento del gruppo.
+È possibile scegliere di nascondere la casella di ricerca della barra di spostamento della famiglia di prodotti se si desidera impedire agli utenti di eseguire ricerche o di utilizzare un'implementazione personalizzata della casella di ricerca.
 
 Per modificare questa impostazione per un determinato sito, utilizzare questo comando:
 
@@ -78,26 +78,26 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 # Hidden | Inherit
 ```
 
-Dopo aver eseguito questi comandi, la casella di ricerca non verrà più visualizzata nella barra di spostamento nella parte superiore della pagina. Per tornare a visualizzare la casella di ricerca, eseguire di nuovo i comandi con il valore fornito al parametro "SearchBoxInNavBar" su "inherit".
+Dopo aver eseguito questi comandi, la casella di ricerca non verrà più visualizzata nella barra di spostamento nella parte superiore della pagina. Per tornare a visualizzare la casella di ricerca, eseguire di nuovo i comandi con il valore fornito al parametro "SearchBoxInNavBar" su "Inherit".
 
-Sono disponibili diversi punti da prendere in considerazione:
+Esistono diversi punti da considerare:
 
 * Questa impostazione si applica solo alla casella di ricerca nella barra di spostamento della famiglia di prodotti. Non si applica alle caselle di ricerca presenti nella pagina o alle caselle di ricerca nelle pagine classiche.
 
-* Dopo aver disabilitato la casella di ricerca nella barra di spostamento, se si desidera che la funzionalità di ricerca venga eseguita nel sito, sarà necessario fornirla personalmente utilizzando una Web part personalizzata o un'estensione di SharePoint Framework.
+* Dopo aver disabilitato la casella di ricerca nella barra di spostamento, se si desidera utilizzare la funzionalità di ricerca nel sito, sarà necessario fornirla manualmente utilizzando una web part personalizzata o un'estensione di SharePoint Framework.
 
-* Questa soluzione rimuoverà anche la casella di ricerca da elenchi e raccolte per il sito. La soluzione di ricerca personalizzata dovrà prendere in considerazione le ricerche contestuali per gli elenchi e le raccolte di SharePoint, oltre alla ricerca a livello di sito.
+* Questa soluzione rimuoverà la casella di ricerca anche dagli elenchi e dalle raccolte per il sito. La soluzione di ricerca personalizzata dovrà prendere in considerazione le ricerche contestuali per elenchi e raccolte di SharePoint, oltre alla ricerca a livello di sito.
 
-* Se si applica l'impostazione al sito radice del dominio, la pagina iniziale di SharePoint interrompe anche la visualizzazione della casella di ricerca.
+* Se si applica l'impostazione al sito radice del dominio, anche la pagina iniziale di SharePoint smetterà di visualizzare la casella di ricerca.
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>Modifica del suggerimento visualizzato nella casella di ricerca
 
-È possibile modificare il suggerimento visualizzato nella casella di ricerca per un determinato sito o una raccolta siti. Questo è il testo che viene visualizzato nella casella di ricerca prima di iniziare a digitarlo. In questo modo gli utenti possono essere utili per sapere cosa aspettarsi dalla ricerca se è stata configurata una pagina dei risultati personalizzata o è stato modificato il comportamento della ricerca in altri modi.
+È possibile modificare il suggerimento visualizzato nella casella di ricerca per un determinato sito o raccolta siti. Questo è il testo visualizzato nella casella di ricerca prima che inizino a digitarlo. Ciò può aiutare gli utenti a capire cosa aspettarsi dalla ricerca se è stata configurata una pagina dei risultati personalizzata o se è stato modificato il comportamento della ricerca in altri modi.
 
 > [!NOTE]
-> Per poter apportare questa modifica, è necessario consentire l'esecuzione di script personalizzati nel sito in questione come amministratore tenant, che non è consentito per impostazione predefinita. https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-scriptPer ulteriori informazioni, vedere. È possibile consentire l'esecuzione di script personalizzati, apportare le modifiche e quindi ripristinare gli script non consentiti per il sito, se necessario.
+> Per poter apportare questa modifica, è necessario consentire l'esecuzione di script personalizzati nel sito in questione come amministratore tenant, operazione non consentita per impostazione predefinita. Per informazioni https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script dettagliate, vedere . È possibile consentire l'esecuzione di script personalizzati, apportare la modifica e quindi ripristinare la disattivazione degli script per il sito, se necessario.
 
-Per modificare questa impostazione per un determinato sito, eseguire il comando riportato di seguito:
+Per modificare questa impostazione per un determinato sito, eseguire il comando seguente:
 
 ```powershell
 Set-PnPSearchSettings -Scope Web -SearchBoxPlaceholderText "my placeholder" 
