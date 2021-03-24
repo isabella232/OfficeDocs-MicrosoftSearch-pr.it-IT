@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dell'installazione per i connettori Graph da Parte di Microsoft
-ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031378"
+ms.locfileid: "51042584"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -97,7 +97,7 @@ Puoi assegnare etichette semantiche alle proprietà di origine nella pagina "Ass
 
 Nella tabella seguente sono elencate le etichette attualmente supportate e le relative descrizioni.  
 
-Label | Descrizione
+Etichetta | Descrizione
 --- | ---  
 **title** | Titolo dell'elemento che si desidera visualizzare nella ricerca e in altre esperienze
 **url** | URL di destinazione dell'elemento nel sistema di origine
@@ -204,4 +204,4 @@ Vedere le informazioni specifiche del connettore per l'origine dati per scoprire
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver pubblicato la connessione, è necessario personalizzare la pagina dei risultati della ricerca. Per informazioni sulla personalizzazione dei risultati della ricerca, vedere [Personalizzare la pagina dei risultati della ricerca.](#next-steps-customize-the-search-results-page)
+Dopo aver pubblicato la connessione, è necessario personalizzare la pagina dei risultati della ricerca. Per informazioni sulla personalizzazione dei risultati della ricerca, vedere [Personalizzare la pagina dei risultati della ricerca.](customize-search-page.md)
