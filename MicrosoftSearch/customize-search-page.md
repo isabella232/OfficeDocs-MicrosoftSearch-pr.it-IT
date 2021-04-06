@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031648"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587740"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -116,7 +116,10 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>PASSAGGIO 3: Visualizzare il verticale dopo che è stato abilitato
 
-Dopo aver abilitato il verticale, potrebbe essere necessario un po' di tempo prima di poterlo visualizzare. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear=true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Per [Bing,](https://bing.com) **aggiungi&features=uncachedVerticals** all'URL verticale di lavoro per visualizzare immediatamente i verticali.
+Dopo aver abilitato il verticale, saranno necessario alcune ore prima di poterlo visualizzare. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear=true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Per [Bing,](https://bing.com) **aggiungi&features=uncachedVerticals** all'URL verticale di lavoro per visualizzare immediatamente i verticali. 
+
+> [!NOTE]
+> I verticali aggiunti non saranno visibili in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) quando vengono visualizzati da Web browser per dispositivi mobili.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
