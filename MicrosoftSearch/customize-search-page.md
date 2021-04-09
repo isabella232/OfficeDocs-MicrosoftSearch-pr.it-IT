@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587740"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639854"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -40,6 +40,9 @@ Un verticale di ricerca può ora visualizzare i risultati da più origini connet
 Se nomini in modo accurato il maggior numero possibile di etichette semantiche, questa esperienza sarà migliorata. È possibile aggiungere etichette semantiche al momento della definizione e dell'inserimento dello schema.
 
 [Ecco](configure-connector.md#step-5-assign-property-labels) altre informazioni su come creare e gestire le etichette semantiche.
+
+> [!NOTE]
+> Più connessioni in un verticale sono attualmente in anteprima. Per ulteriori informazioni sull'anteprima, vedere [Funzionalità di anteprima dei connettori.](connectors-overview.md#what-are-the-preview-features)
 
 ### <a name="things-you-should-know"></a>Aspetti da conoscere
 

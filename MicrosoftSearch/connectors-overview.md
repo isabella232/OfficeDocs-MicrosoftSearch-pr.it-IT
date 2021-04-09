@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042575"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639863"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -108,6 +108,7 @@ L'insieme di connettori e funzionalità in anteprima include:
 * [Connettore Salesforce](salesforce-connector.md)
 * [Connettore ServiceNow con](servicenow-connector.md) autorizzazioni di ricerca che utilizzano ACL di origine
 * [Gestisci cluster dei risultati](result-cluster.md)
+* [Più connessioni in verticale](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Come si personalizzano e si configurano i risultati della ricerca?
 
@@ -128,9 +129,7 @@ Il passaggio successivo consiste nel personalizzare i risultati della ricerca co
 
 ## <a name="what-are-the-connector-limitations"></a>Quali sono le limitazioni del connettore?
 
-* Quando si **pubblica** un connettore creato da Microsoft, la creazione della connessione potrebbe richiedere alcuni minuti. Durante questo periodo, lo stato della connessione verrà visualizzato come in sospeso.
-
-* L'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) non supporta la modifica dello schema di **ricerca** dopo la pubblicazione di una connessione. Per modificare lo schema di ricerca, eliminare la connessione e crearne una nuova.
+* Quando si **pubblica** un connettore creato da Microsoft, la creazione della connessione può richiedere alcuni minuti. Durante questo periodo, lo stato della connessione verrà visualizzato come in sospeso.
 
 * La velocità effettiva di inserimento è limitato a circa quattro elementi al secondo.
 
@@ -138,4 +137,4 @@ Il passaggio successivo consiste nel personalizzare i risultati della ricerca co
 
 * Esiste un limite di connessione. Ogni tenant può creare fino a 10 connessioni.
 
-* Il supporto della modifica per la connessione non è disponibile. Dopo aver creato la connessione, non è possibile modificarla. Se è necessario modificare i dettagli, è necessario eliminare e ricreare la connessione.
+* Non è possibile modificare o modificare una connessione dopo che è stata creata. Se è necessario modificare i dettagli, è necessario eliminare e ricreare la connessione.
