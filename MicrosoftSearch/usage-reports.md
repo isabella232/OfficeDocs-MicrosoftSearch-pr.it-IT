@@ -3,21 +3,23 @@ title: Report di utilizzo della ricerca
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+audience: Admin
+ms.audience: Admin
+ms.date: 04/09/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare i report di utilizzo di Microsoft Search
-ms.openlocfilehash: 2237fc978ad7b0d7b94b342a9f2646c9da6b73a4
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
+ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031747"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656781"
 ---
 # <a name="microsoft-search-usage-reports"></a>Report sull'utilizzo di Microsoft Search
 
@@ -35,9 +37,12 @@ Una versione precedente di questa pagina includeva i dati delle ricerche eseguit
 | Report | Descrizione |
 |:-----|:-----|
 |Query Volume|Questo report mostra il numero di query di ricerca eseguite. Utilizzare questo report per identificare le tendenze del volume delle query di ricerca e per determinare i periodi di attività di ricerca elevata e bassa.|
-|Principali query|Questo report mostra le query di ricerca maggiormente eseguite. Utilizzare questo report per comprendere i tipi di informazioni che gli utenti stanno cercando.|
+|Principali query|Questo report mostra le query di ricerca maggiormente eseguite. Una query viene aggiunta al report quando la ricerca viene eseguita almeno tre volte con un clic su un risultato. Utilizzare questo report per comprendere i tipi di informazioni che gli utenti stanno cercando.|
 |Query abbandonate|Questo report mostra le query di ricerca più popolari che ricevono un click-through basso. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore Graph è l'azione giusta.|
 |Query senza risultati|Questo report mostra le query di ricerca frequenti che non hanno restituito alcun risultato. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore Graph è l'azione giusta.|
+
+>[!NOTE]
+>Esiste attualmente un problema noto in cui le query soddisfatte da una risposta come bookmark vengono conteggiate come query abbandonate.
 
 ## <a name="viewing-reports"></a>Visualizzazione dei report
 
