@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare i report di utilizzo di Microsoft Search
-ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
-ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
+ms.openlocfilehash: 17645d86e315538305a28bad51ea1a41dcc37dcb
+ms.sourcegitcommit: d62849b00f2b65b493ab54be50c3e7c94430f057
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656781"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754665"
 ---
 # <a name="microsoft-search-usage-reports"></a>Report sull'utilizzo di Microsoft Search
 
 I report sull'utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate [](./make-content-easy-to-find.md) da questi report consentono di semplificare l'individuazione e l'azione del contenuto che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
+
+> [!IMPORTANT]
+> I report di utilizzo di Microsoft Search sono attualmente in anteprima
 
 I [report di utilizzo di Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) includono grafici e tabelle generati da ricerche eseguite da Home page di SharePoint e Office.com caselle di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo da richiedere tempo per accumulare i dati cronologici.
 
