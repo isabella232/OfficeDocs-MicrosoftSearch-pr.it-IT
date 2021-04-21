@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Requisiti di licenza e prezzi per l'anteprima pubblica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
-ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
+ms.openlocfilehash: a7236f647e6513508e50519f9c6b1af166a3b2d9
+ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408706"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51905529"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,9 +38,15 @@ Per indicizzare il contenuto utilizzando i connettori Graph, è necessario dispo
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Diritto incorporato nelle licenze di Microsoft 365 o Office 365 E5
 
-Il tipo di licenza di Microsoft 365 E5 o Office 365 E5 include il diritto a 500 elementi di quota di indice, che conta per la quota dell'organizzazione per l'inserimento di contenuto dai connettori Graph. Si noti che non è incluso in Microsoft 365 A5 o Office 365 A5.
+Le licenze seguenti includono il diritto a 500 elementi della quota di indice, che conta per la quota dell'organizzazione per l'inserimento di contenuto dai connettori Graph:
+
+* Microsoft 365 E5 o Office 365 E5
+* [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 Ad esempio, se l'organizzazione dispone di 100 licenze di Microsoft 365 E5, l'organizzazione ha 100 x 500 = 50.000 elementi che valgono la quota di indice dei connettori Graph.
+
+<!---Comment requested in PR#143--->
+Si noti che Microsoft 365 A5 o Office 365 A5 non includono questo diritto.
 
 ## <a name="purchase-of-add-on-index-quota"></a>Acquisto della quota di indice dei componenti aggiuntivi
 Per acquistare altre quote dei connettori Graph, contatta il tuo Account Manager Microsoft o completa la procedura seguente:
