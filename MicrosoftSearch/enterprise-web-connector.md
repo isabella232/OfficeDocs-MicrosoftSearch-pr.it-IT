@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore grafico dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
+ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031630"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51951022"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -58,11 +58,11 @@ Utilizzare il campo URL per specificare la radice del sito Web di cui si desider
 > [!NOTE]
 > Se nel sito di cui si desidera eseguire la ricerca per indicizzazione è definita una mappa del sito, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella mappa del sito. Se non è definita alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione approfondita di tutti i collegamenti trovati nell'URL radice del sito.
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Modalità ricerca per indicizzazione: cloud o locale (anteprima)
+### <a name="crawl-mode-cloud-or-on-premises"></a>Modalità ricerca per indicizzazione: cloud o locale
 
 La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, sia cloud che locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
 
-Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Questa modalità è in anteprima. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere [Agente connettore grafico.](./on-prem-agent.md)
+Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere [Agente connettore grafico.](./on-prem-agent.md)
 
 Per i siti Web locali, selezionare Agente come  modalità di ricerca per indicizzazione e nel campo Agente locale scegliere l'agente connettore Graph installato e configurato in precedenza.   
 
