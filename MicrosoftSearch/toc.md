@@ -16,7 +16,7 @@
 ## [Raccolta connettori](connectors-gallery.md)
 ## Configurare i connettori Microsoft
 ### [Panoramica delle impostazioni](configure-connector.md)
-### [Impostare l’agente del connettore Graph (anteprima) ](on-prem-agent.md)
+### [Configurare l'agente del connettore Graph](on-prem-agent.md)
 ### [Eseguire il mapping delle identità non Azure Active Directory (anteprima)](map-non-aad.md)
 ### [Eseguire il mapping delle identità di Azure Active Directory (anteprima)](map-aad.md)
 ### Informazioni specifiche del connettore
@@ -26,7 +26,7 @@
 #### [Siti Web aziendali](enterprise-web-connector.md)
 #### [Condivisione file](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
-#### [SQL Oracle (anteprima)](OracleSQL-connector.md)
+#### [SQL Oracle](OracleSQL-connector.md)
 #### [Salesforce (anteprima)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## Gestire le connessioni
