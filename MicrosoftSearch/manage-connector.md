@@ -1,6 +1,6 @@
 ---
 title: Gestire i connettori di Microsoft Graph per Microsoft Search
-ms.author: monaray
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire i connettori di Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
+ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031720"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52325169"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -43,7 +43,7 @@ Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** della pagina **Microsoft Search.** Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
-Nella colonna Stato vengono visualizzati quattro **stati** per ogni connessione:
+Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
 * **Sincronizzazione di**. Il connettore esegue la ricerca per indicizzazione dei dati dall'origine per indicizzare gli elementi esistenti e apportare eventuali aggiornamenti.
 
@@ -52,6 +52,8 @@ Nella colonna Stato vengono visualizzati quattro **stati** per ogni connessione:
 * **Paused**. Le ricerche per indicizzazione vengono sospese dagli amministratori tramite l'opzione di sospensione. La ricerca per indicizzazione successiva viene eseguita solo quando viene ripresa manualmente. Tuttavia, i dati di questa connessione continuano a essere ricercabili.
 
 * **Operazione non riuscita.** Si è verificato un errore critico nella connessione. Questo errore richiede un intervento manuale. L'amministratore deve eseguire l'azione appropriata in base al messaggio di errore visualizzato. I dati indicizzati fino a quando non si è verificato l'errore sono ricercabili.
+
+* **Eliminazione non riuscita.** L'eliminazione della connessione non è riuscita. A seconda del motivo dell'errore, è possibile che i dati siano ancora indicizzati, che la quota degli elementi venga ancora utilizzata e che le ricerche per indicizzazione siano ancora in esecuzione per la connessione. Si consiglia di provare a eliminare di nuovo la connessione in questo stato.
 
 ## <a name="monitor-your-index-quota-utilization"></a>Monitorare l'utilizzo della quota di indice
 
@@ -68,7 +70,7 @@ La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo d
 Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
-Alto | 80-89%
+Alta | 80-89%
 Critico | 90%-99%
 Full | 100%
 
