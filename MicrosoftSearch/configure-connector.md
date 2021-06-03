@@ -1,5 +1,5 @@
 ---
-title: Configurare il connettore Microsoft Graph per Microsoft Search
+title: Configurare il connettore di Graph Microsoft per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Panoramica dell'installazione per i connettori Graph da Parte di Microsoft
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Panoramica dell'installazione Graph connettori da Microsoft
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042584"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720944"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica dell'installazione per i connettori Graph da Parte di Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica dell'installazione Graph connettori da Microsoft 
 
-In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da **Microsoft** nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com) Il processo di base include i passaggi seguenti:  
+In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da Parte di **Microsoft** nell'Microsoft 365 [di amministrazione.](https://admin.microsoft.com) Il processo si compone delle seguenti fasi:  
 <!---Add links to each section in the doc--->
 
-1. [Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [Aggiungere un connettore Graph nell'Microsoft 365 di amministrazione](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Assegnare un nome alla connessione](#step-2-name-the-connection)
 3. [Configurare le impostazioni di connessione](#step-3-configure-the-connection-settings)
 4. [Gestire le autorizzazioni di ricerca](#step-4-manage-search-permissions)
@@ -45,27 +45,27 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 * [Passaggi successivi](#next-steps)
 
 > [!NOTE]
-> Il processo di configurazione è simile per tutti i connettori Graph di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+> Il processo di installazione è simile per tutti i connettori Graph da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
 
-Completare la procedura seguente per configurare uno qualsiasi dei connettori Microsoft Graph:
+Completare la procedura seguente per configurare uno qualsiasi dei connettori di Graph Microsoft:
 
-1. Accedere all'account amministratore nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com)
+1. Accedi al tuo account amministratore [nell'Microsoft 365 di amministrazione](https://admin.microsoft.com).
 
-2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi ricerca **& intelligence.** Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi selezionare Ricerca **& intelligence**. Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
 3. Selezionare **+Aggiungi** e quindi selezionare l'origine dati desiderata dal menu delle opzioni disponibili.
 
    > [!div class="mx-imgBorder"]
-   > ![Le origini dati disponibili includono: ADLS Gen2, siti Web aziendali, server Microsoft SQL, Azure SQL, database di Oracle SQL, ServiceNow, condivisione file, Azure DevOps e MediaWiki.](media/add-connector.png)
+   > ![Le origini dati disponibili includono: ADLS Gen2, siti Web di Enterprise, server Microsoft SQL, Azure SQL, database di Oracle SQL, ServiceNow, Condivisione file, Azure DevOps e MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> È possibile aggiungere un massimo di dieci connessioni Graph a ogni tenant.
+> È possibile aggiungere un massimo di dieci Graph connessioni a ogni tenant.
 
 ## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
@@ -87,13 +87,13 @@ Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [I
 
 Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione possono accedere a ogni elemento di dati.  
 
-Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportano in modo nativo gli ACL [di Azure Active Directory (Azure AD).](/azure/active-directory/)
+Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo [gli ACL di Azure Active Directory (Azure AD).](/azure/active-directory/)
 
-Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non di Azure AD.  
+Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non azure AD.  
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 
-Puoi assegnare etichette semantiche alle proprietà di origine nella pagina "Assegna etichette di proprietà". Le etichette sono tag noti forniti da Microsoft che forniscono un significato semantico. Consentono a Microsoft di integrare i dati del connettore nelle esperienze di Microsoft 365, ad esempio la ricerca avanzata, le schede utente, l'individuazione intelligente e altro ancora.  
+Puoi assegnare etichette semantiche alle proprietà di origine nella pagina "Assegna etichette di proprietà". Le etichette sono tag noti forniti da Microsoft che forniscono un significato semantico. Consentono a Microsoft di integrare i dati del connettore in Microsoft 365 esperienze quali la ricerca avanzata, le schede utente, l'individuazione intelligente e altro ancora.  
 
 Nella tabella seguente sono elencate le etichette attualmente supportate e le relative descrizioni.  
 
@@ -131,7 +131,7 @@ Se si seleziona una proprietà di contenuto, sarà possibile utilizzare la propr
 
 È possibile impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e a cui gli utenti finali possono accedere.
 
-Gli attributi dello schema di ricerca includono **opzioni query,** **ricerca,** **recupero** e **affinamento.** Nella tabella seguente sono elencati tutti gli attributi supportati dai connettori di Microsoft Graph e vengono illustrate le relative funzioni.
+Gli attributi dello schema di ricerca includono **opzioni query,** **ricerca,** **recupero** e **affinamento.** Nella tabella seguente sono elencati tutti gli attributi supportati da Microsoft Graph connettori e vengono illustrate le relative funzioni.
 
 Attributo dello schema di ricerca | Funzione | Esempio
 --- | --- | ---
@@ -164,7 +164,7 @@ L'intervallo di aggiornamento determina la frequenza di sincronizzazione dei dat
 
 Esistono due tipi di intervalli  di aggiornamento, ovvero Aggiornamento completo e **Aggiornamento incrementale,** ma gli aggiornamenti incrementali non sono disponibili per alcune origini dati.
 
-Con un aggiornamento completo, il motore di ricerca elabora e indicizza ogni elemento nell'origine di contenuto, indipendentemente dalle ricerche per indicizzazione precedenti. Un aggiornamento completo è ideale per queste situazioni:
+Con un aggiornamento completo, il motore di ricerca elabora e indicizza gli elementi modificati nell'origine di contenuto, indipendentemente dalle ricerche per indicizzazione precedenti. Un aggiornamento completo è ideale per queste situazioni:
 
 * Rilevamento delle eliminazioni di dati.
 * L'aggiornamento incrementale ha rilevato errori e non è riuscito.
@@ -198,9 +198,9 @@ Leggere le informazioni specifiche del connettore per l'origine dati.
 
 ## <a name="limitations"></a>Limitazioni
 <!---Insert limitations for this data source-->
-Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Panoramica dei connettori di Microsoft Graph.](connectors-overview.md)
+Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
 
-Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare connettore Graph.
+Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare Graph connettore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

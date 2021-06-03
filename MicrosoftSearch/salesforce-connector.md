@@ -1,5 +1,5 @@
 ---
-title: Connettore di Salesforce Graph per Microsoft Search
+title: Connettore di Graph Salesforce per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Salesforce Graph per Microsoft Search
-ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurare il connettore di Graph Salesforce per Microsoft Search
+ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031684"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720989"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Connettore grafico Salesforce (anteprima)
+# <a name="salesforce-graph-connector-preview"></a>Connettore Graph Salesforce (anteprima)
 
-Il connettore Grafico Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search.
+Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search.
 
 > [!NOTE]
-> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) per comprendere le istruzioni generali per la configurazione dei connettori Graph.
+> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, eseere e monitorano un connettore di Salesforce Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Salesforce Graph. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
+Questo articolo è per chiunque configura, esegue e monitora un connettore Graph Salesforce. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di Graph Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
 
 >[!IMPORTANT]
->Il connettore Salesforce Graph attualmente supporta Estate '19 o versione successiva.
+>Il connettore di Graph Salesforce attualmente supporta Estate '19 o versione successiva.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -46,7 +46,7 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
 
 - Completare la sezione API come segue:
 
-    - Selezionare la casella di controllo **Abilita impostazioni Oauth.**
+    - Selezionare la casella di controllo **Abilita Oauth Impostazioni**.
 
     - Specificare l'URL di richiamata come: [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
@@ -63,7 +63,7 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
       > [!div class="mx-imgBorder"]
       > ![Sezione API nell'istanza di Salesforce dopo che l'amministratore ha immesso tutte le configurazioni necessarie elencate in precedenza.](media/salesforce-connector/sf1.png)
 
-- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configurano le impostazioni di connessione per il connettore Graph nel portale di amministrazione di Microsoft 365.
+- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configura il Impostazioni di connessione per il connettore di Graph nel portale di amministrazione di Microsoft 365.
 
   > [!div class="mx-imgBorder"]
   > ![Risultati restituiti dalla sezione API nell'istanza di Salesforce dopo che l'amministratore ha inviato tutte le configurazioni necessarie. La chiave consumer si trova nella parte superiore della colonna sinistra e Consumer Secret è in cima alla colonna destra.](media/salesforce-connector/clientsecret.png)
@@ -77,9 +77,9 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
   > [!div class="mx-imgBorder"]
   > ![Selezionare il criterio token di aggiornamento denominato "Il token di aggiornamento è valido fino alla revoca"](media/salesforce-connector/oauthpolicies.png)
 
-È ora possibile utilizzare [l'interfaccia di amministrazione di M365](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph.
+È ora possibile utilizzare [l'interfaccia di amministrazione di M365](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph rete.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -111,9 +111,9 @@ Verifica che la connessione sia stata eseguita correttamente cercando un banner 
 
 Dovrai scegliere quali utenti potranno visualizzare i risultati della ricerca da questa origine dati. Se si consente solo a determinati utenti di Azure Active Directory (Azure AD) o non di Azure AD di visualizzare i risultati della ricerca, assicurarsi di mappare le identità.
 
-## <a name="step-4a-select-permissions"></a>Passaggio 4a: Selezionare le autorizzazioni
+### <a name="step-4a-select-permissions"></a>Passaggio 4.a: Selezionare le autorizzazioni
 
-Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli ACL possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
+Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli elenchi di controllo di accesso possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
 
 >[!NOTE]
 >Se usi un provider di identità di terze parti come ID ping o secureAuth, devi selezionare "non-AAD" come tipo di identità.
@@ -123,9 +123,15 @@ Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di
 
 Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionato "non-AAD" per il tipo di identità, vedere Eseguire il mapping delle identità [non di Azure AD](map-non-aad.md) per istruzioni sul mapping delle identità.
 
-## <a name="step-4b-map-aad-identities"></a>Passaggio 4b: Mappare le identità AAD
+### <a name="step-4b-map-aad-identities"></a>Passaggio 4.b: Mappare le identità AAD
 
 Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionato "AAD" per il tipo di identità, vedere Eseguire il mapping delle identità di [Azure AD](map-aad.md) per istruzioni sul mapping delle identità. Per informazioni su come configurare Azure AD SSO per Salesforce, vedere questa [esercitazione.](/azure/active-directory/saas-apps/salesforce-tutorial)
+
+### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>Applicare il mapping degli utenti per sincronizzare le identità di Salesforce con le identità di Azure AD
+
+In questo video è possibile visualizzare il processo di autenticazione nell'istanza di Salesforce, sincronizzare le identità non di Azure Active Directory con le identità di Azure Active Directory e applicare le appropriate limitazione per motivi di sicurezza agli elementi di Salesforce.
+
+> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 
@@ -158,9 +164,9 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="limitations"></a>Limitazioni
 
-- Il connettore Graph attualmente non supporta la condivisione basata su Apex e basata sul territorio e la condivisione tramite gruppi personali di Salesforce.
-- Esiste un bug noto nell'API Salesforce utilizzata dal connettore Graph, in cui le impostazioni predefinite private a livello di organizzazione per i lead non sono attualmente rispettate.  
-- Se per un profilo è impostata la sicurezza a livello di campo (FLS, Field Level Security), il connettore Graph non ingestirà tale campo per i profili nell'organizzazione Salesforce. Di conseguenza, gli utenti non saranno in grado di cercare valori per tali campi e non verranno visualizzati nei risultati.  
+- Il Graph non supporta attualmente la condivisione e la condivisione basate su apex in base al territorio tramite i gruppi personali di Salesforce.
+- Esiste un bug noto nell'API Salesforce utilizzata dal connettore di Graph, in cui le impostazioni predefinite private a livello di organizzazione per i lead non sono attualmente rispettate.  
+- Se per un profilo è impostata la sicurezza a livello di campo (FLS, Field Level Security), il connettore di Graph non ingestirà tale campo per i profili nell'organizzazione Salesforce. Di conseguenza, gli utenti non saranno in grado di cercare valori per tali campi e non verranno visualizzati nei risultati.  
 - Nella schermata Gestisci schema questi nomi di proprietà standard comuni sono elencati una sola volta, le opzioni sono **Query,** **Cerca,** **Recupera** e Affina e si applicano a tutti o a nessuno.
     - Nome
     - URL

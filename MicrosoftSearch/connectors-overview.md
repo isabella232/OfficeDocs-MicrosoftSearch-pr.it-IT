@@ -1,5 +1,5 @@
 ---
-title: Panoramica dei connettori di Microsoft Graph
+title: Panoramica di Microsoft Graph Connectors
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Panoramica dei connettori di Microsoft Graph per Microsoft Search
-ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
-ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
+description: Panoramica dei connettori microsoft Graph per Microsoft Search
+ms.openlocfilehash: 6c47d4a619122cd1efc12599eb648d840b5b86c9
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51639863"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720967"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori di Microsoft Graph
+# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori Graph Microsoft
 
-[Microsoft Search](./overview-microsoft-search.md) indicizza tutti i dati [di Microsoft 365](https://www.microsoft.com/microsoft-365) per renderli ricercabili per gli utenti. Con i connettori di Microsoft Graph, l'organizzazione può indicizzare i dati di terze parti in modo che appaino nei risultati di Microsoft Search. Questa funzionalità espande i tipi di origini contenuto disponibili per la ricerca nelle app di produttività di Microsoft 365 e nell'ecosistema Microsoft più ampio. I dati di terze parti possono essere ospitati in locale o nel cloud pubblico o privato.
+[Microsoft Search](./overview-microsoft-search.md) indicizza tutti i [dati Microsoft 365](https://www.microsoft.com/microsoft-365) per renderli ricercabili per gli utenti. Con i connettori Graph Microsoft, l'organizzazione può indicizzare i dati di terze parti in modo che appaino nei risultati di Microsoft Search. Questa funzionalità espande i tipi di origini di contenuto disponibili per la ricerca nelle app di produttività Microsoft 365 e nell'ecosistema Microsoft più ampio. I dati di terze parti possono essere ospitati in locale o nel cloud pubblico o privato.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-Questo articolo ha lo scopo di aiutare gli amministratori di Microsoft 365 a individuare le risorse disponibili per rispondere alle domande seguenti:
+Questo articolo consente agli Microsoft 365 di individuare le risorse disponibili per rispondere alle domande seguenti:
 
 * [Quali origini dati possono essere connesse a Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Come si gestiscono le connessioni?](#how-do-i-manage-my-connections)
-* [Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori Graph?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [Quali sono i requisiti di licenza e le condizioni di utilizzo per Graph connettori?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
 * [Quali sono le funzionalità di anteprima?](#what-are-the-preview-features)
 * [Come si personalizzano e si configurano i risultati della ricerca?](#how-do-i-customize-and-configure-search-results)
 * [Come è possibile cercare i dati del connettore da un'applicazione personalizzata?](#how-do-i-search-my-connector-data-from-a-custom-application)
@@ -41,7 +41,7 @@ Questo articolo ha lo scopo di aiutare gli amministratori di Microsoft 365 a ind
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> I connettori di Microsoft Graph e le API di Microsoft Search sono ora disponibili in genere. Le prime implementazioni saranno destinate ai clienti configurati per il rilascio mirato. Se si desidera utilizzare un connettore Graph nel tenant, gli utenti e gli amministratori devono acconsentire esplicitamente [a Rilascio mirato.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
+> I connettori Graph Microsoft e le API di Microsoft Search sono ora disponibili in genere. Le prime implementazioni saranno destinate ai clienti configurati per il rilascio mirato. Se si desidera utilizzare un connettore di Graph nel tenant, gli utenti e gli amministratori devono acconsentire esplicitamente a [Rilascio mirato.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -61,11 +61,11 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Quali origini dati possono essere connesse a Microsoft Search?
 
-Microsoft fornisce 9 connettori Graph e i partner dell'ecosistema hanno creato più di 100 connettori Graph. È inoltre possibile creare un connettore Graph personalizzato.
+Microsoft fornisce 9 Graph e i nostri partner dell'ecosistema hanno creato più di 100 Graph connettori. È inoltre possibile creare un connettore di Graph personalizzato.
 
 ### <a name="graph-connectors-by-microsoft"></a>Connettori di Graph Microsoft
 
-È possibile connettersi alle origini dati seguenti utilizzando i connettori Graph creati da Microsoft:
+È possibile connettersi alle origini dati seguenti Graph connettori creati da Microsoft:
 
 <!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -74,37 +74,37 @@ Microsoft fornisce 9 connettori Graph e i partner dell'ecosistema hanno creato p
 * [Siti Web aziendali](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Condivisione file](fileshare-connector.md)
-* [SQL Oracle (anteprima)](OracleSQL-connector.md)
+* [SQL Oracle](OracleSQL-connector.md)
 * [Salesforce (anteprima)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-La [raccolta di connettori Graph](connectors-gallery.md) contiene una breve descrizione di ognuno di questi connettori Graph. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e gli altri articoli nella sezione Installazione dei connettori da parte di Microsoft che si applicano all'origine dati.
+La [raccolta Graph connettori](connectors-gallery.md) contiene una breve descrizione di ognuno di Graph connettori. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e gli altri articoli nella sezione Installazione dei connettori da parte di Microsoft che si applicano all'origine dati.
 
-### <a name="graph-connectors-by-our-partners"></a>Connettori grafici dei partner
+### <a name="graph-connectors-by-our-partners"></a>Graph connettori dei partner
 
-La [raccolta di connettori di Microsoft Graph](connectors-gallery.md) include una breve descrizione di ognuno dei connettori Graph creati dai partner e un collegamento al sito Web di ogni partner. Per ulteriori informazioni, contattare direttamente ogni partner.
+La [raccolta di Graph](connectors-gallery.md) microsoft include una breve descrizione di ognuno dei connettori di Graph creati dai partner e un collegamento al sito Web di ogni partner. Per ulteriori informazioni, contattare direttamente ogni partner.
 
 ### <a name="build-your-own-graph-connector"></a>Creare un connettore Graph personalizzato
 
-Se si preferisce, è possibile creare un connettore Graph personalizzato. Per ulteriori informazioni sulla creazione di connettori Graph, vedere [Overview of the Microsoft Search API in Microsoft Graph](/graph/search-concept-overview).
+Se si preferisce, è possibile creare Graph connettore di rete personalizzato. Per ulteriori informazioni sulla creazione Graph connettori, vedere [Panoramica dell'API di Microsoft Search in Microsoft Graph](/graph/search-concept-overview).
 
 ## <a name="how-do-i-manage-my-connections"></a>Come si gestiscono le connessioni?
 
-È possibile gestire le connessioni dalla [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/) Per ulteriori informazioni sulla gestione delle connessioni, vedere: [Gestire le connessioni](manage-connector.md).
+È possibile gestire le connessioni dalla [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) nell'Microsoft 365 [di amministrazione.](https://admin.microsoft.com/) Per ulteriori informazioni sulla gestione delle connessioni, vedere: [Gestire le connessioni](manage-connector.md).
 
-## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori Graph?
+## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>Quali sono i requisiti di licenza e le condizioni di utilizzo per Graph connettori?
 
-È necessaria una licenza valida di Microsoft 365 o Office 365 e una quota di connettori Graph sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dei connettori nei risultati della ricerca.
+È necessaria una licenza Microsoft 365 o Office 365 valida e una quota di connettori Graph sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dai connettori nei risultati della ricerca.
 
 Per altre informazioni, vedi [Requisiti di licenza e prezzi](licensing.md) e Condizioni per [l'uso.](terms-of-use.md)
 
 ## <a name="what-are-the-preview-features"></a>Quali sono le funzionalità di anteprima?
 
-Anche se i connettori di Microsoft Graph e le API di Microsoft Search sono ora disponibili in genere, sono disponibili diverse funzionalità in anteprima.
+Anche se i connettori microsoft Graph e le API di Microsoft Search sono ora disponibili in genere, sono disponibili diverse funzionalità in anteprima.
 
 L'insieme di connettori e funzionalità in anteprima include:
 
-* [Connettore DevOps di Azure](azure-devops-connector.md)
+* [Azure DevOps connettore](azure-devops-connector.md)
 * [Connettore Salesforce](salesforce-connector.md)
 * [Connettore ServiceNow con](servicenow-connector.md) autorizzazioni di ricerca che utilizzano ACL di origine
 * [Gestisci cluster dei risultati](result-cluster.md)
@@ -121,7 +121,7 @@ Esistono molti modi per personalizzare e configurare i risultati della ricerca. 
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Come è possibile cercare i dati del connettore da un'applicazione personalizzata?
 
-Dopo l'indicizzazione dei dati personalizzati, gli sviluppatori possono [eseguire query su tali dati.](/graph/search-concept-custom-types) È possibile visualizzare i dati in qualsiasi applicazione. Per ulteriori informazioni, vedere [Panoramica dell'API di Microsoft Search in Microsoft Graph.](/graph/search-concept-overview)
+Dopo l'indicizzazione dei dati personalizzati, gli sviluppatori possono [eseguire query su tali dati.](/graph/search-concept-custom-types) È possibile visualizzare i dati in qualsiasi applicazione. Per ulteriori informazioni, vedere [Panoramica dell'API di Microsoft Search in Microsoft Graph](/graph/search-concept-overview).
 
 ## <a name="how-do-i-customize-search-results"></a>Come si personalizzano i risultati della ricerca?
 

@@ -1,5 +1,5 @@
 ---
-title: Connettore di Azure DevOps Graph per Microsoft Search
+title: Azure DevOps Graph connettore per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore di Azure DevOps Graph per Microsoft Search
-ms.openlocfilehash: 9352f619e0a48bc2dac8441107f87f725211ab13
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurare il connettore Azure DevOps Graph per Microsoft Search
+ms.openlocfilehash: bfe04a022360a968424b673ad03ba05f27c8c333
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031315"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720953"
 ---
 <!---Previous ms.author: shgrover --->
 
-# <a name="azure-devops-graph-connector-preview"></a>Connettore di Azure DevOps Graph (anteprima)
+# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connettore (anteprima)
 
-Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio DevOps di Azure. Dopo aver configurato il connettore e il contenuto di indicizzazione da Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
+Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio Azure DevOps locale. Dopo aver configurato il connettore e il contenuto dell'Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
 
 > [!NOTE]
-> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) per comprendere le istruzioni generali per la configurazione dei connettori Graph.
+> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore di Azure DevOps Graph. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Azure DevOps Graph.
+Questo articolo è per tutti gli utenti che configurano, esere e monitorano un Azure DevOps Graph connettore. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Azure DevOps Graph rete.
 
 >[!IMPORTANT]
->Il connettore DevOps di Azure supporta solo il servizio cloud Azure DevOps. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore.
+>Il connettore Azure DevOps supporta solo il Azure DevOps cloud. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore.
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -52,11 +52,11 @@ instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettersi all'istanza di Azure DevOps, [](/azure/devops/organizations/accounts/create-organization) è necessario il nome dell'organizzazione di Azure DevOps, il relativo ID app e il segreto client per l'autenticazione OAuth.
+Per connettersi all'istanza Azure DevOps, è necessario [](/azure/devops/organizations/accounts/create-organization) il nome dell'Azure DevOps, l'ID app e il segreto client per l'autenticazione OAuth.
 
 ### <a name="register-an-app"></a>Registrare un'app
 
-Registrare un'app in Azure DevOps in modo che l'app Microsoft Search possa accedere all'istanza. Per altre informazioni, vedi la documentazione di Azure DevOps su come [registrare un'app.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
+Registra un'app in Azure DevOps in modo che l'app Microsoft Search possa accedere all'istanza. Per altre informazioni, vedi la Azure DevOps su come [registrare un'app.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
 
 La tabella seguente fornisce indicazioni su come compilare il modulo di registrazione dell'app:
 
@@ -64,20 +64,23 @@ Campi obbligatori | Descrizione | Valore consigliato
 --- | --- | ---
 | Nome società         | Nome della società. | Utilizzare un valore appropriato   |
 | Nome applicazione     | Valore univoco che identifica l'applicazione che si sta autorizzando.    | Microsoft Search     |
-| Sito Web dell'applicazione  | URL dell'applicazione che richiederà l'accesso all'istanza di Azure DevOps durante la configurazione del connettore. (Obbligatorio).  | https://<span>gcs.office.</span> com/
+| Sito Web dell'applicazione  | URL dell'applicazione che richiederà l'accesso all'istanza Azure DevOps durante l'installazione del connettore. (Obbligatorio).  | https://<span>gcs.office.</span> com/
 | URL richiamata autorizzazione        | URL di richiamata obbligatorio a cui il server di autorizzazione reindirizza. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Ambiti autorizzati | Ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identità (lettura), Elementi di lavoro (lettura), Gruppi di variabili (lettura), Progetto e team (lettura), Grafico (lettura)|
+| Ambiti autorizzati | Ambito di accesso per l'applicazione | Selezionare gli ambiti seguenti: Identità (lettura), Elementi di lavoro (lettura), Gruppi di variabili (lettura), Project e team (lettura), Graph (lettura)|
+
+>[!IMPORTANT]
+>Gli ambiti autorizzati selezionati per l'app devono corrispondere agli ambiti esattamente come indicato in precedenza. Se si omette uno degli ambiti autorizzati nell'elenco o si aggiunge un altro ambito, l'autorizzazione avrà esito negativo.
 
 Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID app** e il **segreto client** che verranno usati per configurare il connettore.
 
 >[!NOTE]
->Per revocare l'accesso a qualsiasi app registrata in Azure DevOps, passare a Impostazioni utente nella parte superiore destra dell'istanza di Azure DevOps. Selezionare Profilo e quindi Autorizzazioni nella sezione Sicurezza del riquadro laterale. Passa il mouse su un'app OAuth autorizzata per visualizzare il pulsante Revoca nell'angolo dei dettagli dell'app.
+>Per revocare l'accesso a qualsiasi app registrata in Azure DevOps, vai a Impostazioni utente nella parte superiore destra dell'Azure DevOps istanza. Selezionare Profilo e quindi Autorizzazioni nella sezione Sicurezza del riquadro laterale. Passa il mouse su un'app OAuth autorizzata per visualizzare il pulsante Revoca nell'angolo dei dettagli dell'app.
 
 ### <a name="connection-settings"></a>Impostazioni di connessione
 
 Dopo aver registrato l'app Microsoft Search con Azure DevOps, puoi completare il passaggio delle impostazioni di connessione. Immetti il nome dell'organizzazione, l'ID app e il segreto client.
 
-![Impostazioni applicazione di connessione](media/ADO_Connection_settings_2.png)
+![Applicazione di connessione Impostazioni](media/ADO_Connection_settings_2.png)
 
 ### <a name="configure-data-select-projects-and-fields"></a>Configurare i dati: selezionare progetti e campi
 
@@ -95,7 +98,7 @@ Selezionare quindi i campi che si desidera indicizzare e visualizzare in antepri
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-Il connettore DevOps di Azure supporta le autorizzazioni di ricerca visibili solo agli utenti  **con accesso a questa origine dati** o a **Tutti**. Se si sceglie Solo gli utenti con accesso a questa origine **dati,** i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali utenti in base alle autorizzazioni per utenti o gruppi a livello di organizzazione, progetto o percorso area in Azure DevOps. Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
+Il connettore Azure DevOps supporta le autorizzazioni di ricerca visibili solo agli utenti con  **accesso a questa origine dati** o a **Tutti**. Se si sceglie Solo gli utenti con accesso a questa origine **dati,** i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali utenti in base alle autorizzazioni per utenti o gruppi a livello di organizzazione, Project o percorso area in Azure DevOps. Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 
@@ -107,12 +110,19 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
 
-Il connettore DevOps di Azure supporta le pianificazioni di aggiornamento sia per le ricerche per indicizzazione complete che per le ricerche per indicizzazione incrementali.
+Il connettore Azure DevOps supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali.
 La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
+
+>[!TIP]
+>**Tipo di risultato predefinito**
+>* Il Azure DevOps registra automaticamente un [tipo di risultato](./customize-search-page.md#step-2-create-the-result-types) dopo la pubblicazione del connettore. Il tipo di risultato utilizza un layout dei [risultati](./customize-results-layout.md) generato dinamicamente in base ai campi selezionati nel passaggio 3. 
+>* È possibile gestire il tipo di risultati accedendo a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nell'Microsoft 365 di [amministrazione.](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `AzureDevOps` sarà denominato: "AzureDevOpsDefault"
+>* È inoltre possibile scegliere di creare un tipo di risultato personalizzato, se necessario.
+
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
