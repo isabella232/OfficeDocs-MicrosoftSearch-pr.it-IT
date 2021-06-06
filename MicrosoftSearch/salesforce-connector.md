@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph Salesforce per Microsoft Search
-ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720989"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774090"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -131,7 +131,7 @@ Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionat
 
 In questo video è possibile visualizzare il processo di autenticazione nell'istanza di Salesforce, sincronizzare le identità non di Azure Active Directory con le identità di Azure Active Directory e applicare le appropriate limitazione per motivi di sicurezza agli elementi di Salesforce.
 
-> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 

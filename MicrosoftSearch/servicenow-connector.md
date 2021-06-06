@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph ServiceNow per Microsoft Search
-ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720968"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774081"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -212,7 +212,7 @@ Se si è scelto di inserire un ACL dall'istanza di ServiceNow e si è selezionat
 
 Nel video seguente viene illustrato come utilizzare il connettore Servicenow per indicizzare gli articoli della Knowledge Base, definire le autorizzazioni dei criteri utente e sincronizzare senza problemi le modifiche tra ServiceNow e l'indice di Microsoft Search.
 
-> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
