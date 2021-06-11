@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph ServiceNow per Microsoft Search
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853815"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879309"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -64,15 +64,15 @@ Indicizzare e supportare le autorizzazioni dei criteri utente | kb_uc_can_read_m
 
 Per autenticare e sincronizzare il contenuto da ServiceNow, scegliere **uno dei tre** metodi supportati: 
  
-1. Autenticazione di base 
-1. ServiceNow OAuth (scelta consigliata)
-1. Azure AD OpenID Connessione
+- Autenticazione di base 
+- ServiceNow OAuth (scelta consigliata)
+- Azure AD OpenID Connessione
 
-### <a name="basic-authentication"></a>Autenticazione di base
+## <a name="step-31-basic-authentication"></a>Passaggio 3.1: Autenticazione di base
 
 Immettere il nome utente e la password dell'account ServiceNow con **ruolo knowledge** per eseguire l'autenticazione nell'istanza.
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>Passaggio 3.2: ServiceNow OAuth
 
 Per usare ServiceNow OAuth per l'autenticazione, un amministratore di ServiceNow deve effettuare il provisioning di un endpoint nell'istanza serviceNow, in modo che l'app Microsoft Search possa accedervi. Per ulteriori informazioni, vedere [Create an endpoint for clients to access the instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) nella documentazione ServiceNow.
 
@@ -91,19 +91,19 @@ Durata token di accesso | Numero di secondi in cui un token di accesso è valido
 
 Immettere l'ID client e il segreto client per connettersi all'istanza. Dopo la connessione, utilizzare una credenziale dell'account ServiceNow per autenticare l'autorizzazione per la ricerca per indicizzazione. L'account deve avere almeno **un ruolo** di conoscenza. Fare riferimento alla tabella all'inizio del [passaggio 3: impostazioni](#step-3-connection-settings) di connessione per fornire l'accesso in lettura a più record della tabella ServiceNow e indicizzare le autorizzazioni per i criteri utente.
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connessione
+## <a name="step-33-azure-ad-openid-connect"></a>Passaggio 3.3: Azure AD OpenID Connessione
 
 Per usare Azure AD OpenID Connessione per l'autenticazione, seguire la procedura seguente.
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Passaggio 3.a: Registrare una nuova applicazione in Azure Active Directory
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>Passaggio 3.3.1: Registrare una nuova applicazione in Azure Active Directory
 
 Per informazioni sulla registrazione di una nuova applicazione in Azure Active Directory, vedere [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application). Selezionare la directory organizzativa del tenant singolo. Uri di reindirizzamento non necessario. Dopo la registrazione, annotare l'ID applicazione (client) e l'ID directory (tenant).
 
-## <a name="step-3b-create-a-client-secret"></a>Passaggio 3.b: Creare un segreto client
+### <a name="step-332-create-a-client-secret"></a>Passaggio 3.3.2: Creare un segreto client
 
 Per informazioni sulla creazione di un segreto client, vedere [Creazione di un segreto client.](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) Prendere nota del segreto client.
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>Passaggio 3.c: Recuperare l'identificatore dell'oggetto entità servizio
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>Passaggio 3.3.3: Recuperare l'identificatore dell'oggetto entità servizio
 
 Seguire i passaggi per recuperare l'identificatore dell'oggetto entità servizio
 
@@ -137,7 +137,7 @@ ID applicazione (ID client) | ID univoco dell'applicazione registrata nel passag
 Segreto client | Chiave privata dell'applicazione (dal passaggio 3.b). Consideralo come una password.
 ID entità servizio | Identità per l'applicazione in esecuzione come servizio. (dal passaggio 3.c)
 
-## <a name="step-3d-register-servicenow-application"></a>Passaggio 3.d: Registrare l'applicazione ServiceNow
+### <a name="step-334-register-servicenow-application"></a>Passaggio 3.3.4: Registrare l'applicazione ServiceNow
 
 L'istanza ServiceNow richiede la configurazione seguente:
 
@@ -169,7 +169,7 @@ L'istanza ServiceNow richiede la configurazione seguente:
 
 5. Selezionare Invia e aggiorna il modulo Entità OAuth OIDC.
 
-## <a name="step-3e-create-a-servicenow-account"></a>Passaggio 3.e: Creare un account ServiceNow
+### <a name="step-335-create-a-servicenow-account"></a>Passaggio 3.3.5: Creare un account ServiceNow
 
 Fare riferimento alle istruzioni per creare un account ServiceNow, [creare un utente in ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
@@ -182,7 +182,7 @@ Solo accesso al servizio Web | Selezionato
 
 Tutti gli altri valori possono essere lasciati per impostazione predefinita.
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>Passaggio 3.6: Abilitare il ruolo Conoscenza per l'account ServiceNow
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>Passaggio 3.3.6: Abilitare il ruolo Knowledge Base per l'account ServiceNow
 
 Accedere all'account ServiceNow creato con l'ID entità ServiceNow come ID utente e assegnare il ruolo knowledge. Le istruzioni per assegnare un ruolo a un account ServiceNow sono disponibili qui, [assegnare un ruolo a un utente](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html). Fare riferimento alla tabella all'inizio del [passaggio 3: impostazioni](#step-3-connection-settings) di connessione per fornire l'accesso in lettura a più record della tabella ServiceNow e indicizzare le autorizzazioni per i criteri utente.
 
@@ -267,4 +267,4 @@ PROD | Europa | 20.54.41.208/30, 51.105.159.88/30
 PROD | Asia Pacifico | 52.139.188.212/30, 20.43.146.44/30 
 
 
-Se hai altri problemi o vuoi fornire feedback, scrivici aka.ms/TalkToGraphConnectors
+Se hai altri problemi o vuoi inviare commenti e suggerimenti, scrivici [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
