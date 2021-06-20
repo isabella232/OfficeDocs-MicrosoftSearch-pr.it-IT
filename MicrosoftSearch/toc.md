@@ -11,29 +11,32 @@
 ## [Posizioni](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Domande e risposte](manage-qas.md)
-# Connettori
-## [Panoramica](connectors-overview.md)
-## [Raccolta connettori](connectors-gallery.md)
-## Configurare i connettori Microsoft
-### [Panoramica delle impostazioni](configure-connector.md)
-### [Configurare l'agente del connettore Graph](on-prem-agent.md)
-### [Eseguire il mapping delle identità non Azure Active Directory (anteprima)](map-non-aad.md)
-### [Eseguire il mapping delle identità di Azure Active Directory (anteprima)](map-aad.md)
-### Informazioni specifiche del connettore
-#### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-#### [Azure DevOps (preview)](azure-devops-connector.md)
-#### [SQL di Azure e Microsoft SQL Server](MSSQL-connector.md)
-#### [Siti Web aziendali](enterprise-web-connector.md)
-#### [Condivisione file](fileshare-connector.md)
-#### [MediaWiki](mediawiki-connector.md)
-#### [SQL Oracle](OracleSQL-connector.md)
-#### [Salesforce (anteprima)](salesforce-connector.md)
-#### [ServiceNow](servicenow-connector.md)
-## Gestire le connessioni
-### [Monitorare le connessioni](manage-connector.md)
-### [Visualizzare i dettagli della connessione ed errori](connector-details-errors.md)
-## [Licenze](licensing.md)
-## [Condizioni d'uso](terms-of-use.md)
+# Origini dati
+## Connettori Graph
+### [Panoramica](connectors-overview.md)
+### [Raccolta connettori](connectors-gallery.md)
+### Configurare i connettori Microsoft
+#### [Panoramica delle impostazioni](configure-connector.md)
+#### [Configurare l'agente del connettore Graph](on-prem-agent.md)
+#### [Eseguire il mapping delle identità non Azure Active Directory (anteprima)](map-non-aad.md)
+#### [Eseguire il mapping delle identità di Azure Active Directory (anteprima)](map-aad.md)
+#### Informazioni specifiche del connettore
+##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+##### [Azure DevOps (preview)](azure-devops-connector.md)
+##### [SQL di Azure e Microsoft SQL Server](MSSQL-connector.md)
+##### [Siti Web aziendali](enterprise-web-connector.md)
+##### [Condivisione file](fileshare-connector.md)
+##### [MediaWiki](mediawiki-connector.md)
+##### [SQL Oracle](OracleSQL-connector.md)
+##### [Salesforce (anteprima)](salesforce-connector.md)
+##### [ServiceNow](servicenow-connector.md)
+### Gestire le connessioni
+#### [Monitorare le connessioni](manage-connector.md)
+#### [Visualizzare i dettagli della connessione ed errori](connector-details-errors.md)
+### [Licenze](licensing.md)
+### [Condizioni d'uso](terms-of-use.md)
+## Connettori Federazione
+### [Dynamics 365](manage-dynamics365.md)
 # Personalizzare e configurare
 ## [Gestire le tipologie di verticali e i tipi di risultati](customize-search-page.md)
 ## [Gestire i layout dei risultati della ricerca](customize-results-layout.md)
