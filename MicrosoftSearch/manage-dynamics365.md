@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Gestire la modalità di visualizzazione del contenuto di Dynamics 365 nei risultati della ricerca
-ms.openlocfilehash: 8818d2e6a412feb167c67f465f485b23e868a12a
-ms.sourcegitcommit: be989950a7b63281c2348cfd9e6cc13e79b7c067
+ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
+ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53021855"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53067929"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Ricerca federativa dynamics 365 (anteprima)
 
@@ -51,7 +51,9 @@ Se si fa clic o si tocca un risultato, viene aperto Dynamics 365 e vengono visua
 
 :::image type="content" alt-text="Screenshot della pagina dei dettagli in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-Indipendentemente da dove gli utenti avviano la ricerca, l'esperienza sarà coerente e consentirà loro di trovare rapidamente i risultati di Dynamics 365 più pertinenti. Per una dimostrazione, vedere il video di [Microsoft Build 2021.](https://youtu.be/TH9QUkQoEJM)
+Indipendentemente da dove gli utenti avviano la ricerca, l'esperienza sarà coerente e consentirà loro di trovare rapidamente i risultati di Dynamics 365 più pertinenti. Per una dimostrazione, vedere il video di Microsoft Build 2021.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
 
 ## <a name="supported-query-patterns"></a>Modelli di query supportati
 
