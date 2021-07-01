@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955619"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230917"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Il connettore Graph indicizza il contenuto specificato in Microsoft Search. Per 
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL e Microsoft SQL Server Graph Azure. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore SQL e Microsoft SQL Server Graph Azure. Questo articolo include anche informazioni [sulle limitazioni per](#limitations) i connettori di Microsoft SQL Server azure SQL.
+Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph connettore. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore SQL Azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni per](#limitations) il server Microsoft SQL e i connettori SQL Azure.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -220,6 +220,7 @@ Di seguito è riportato un errore comune rilevato durante la configurazione del 
 I SQL connettori hanno queste limitazioni nella versione di anteprima:
 
 - Microsoft SQL Server connettore: il database locale deve essere SQL Server versione 2008 o successiva.
+
 - La Microsoft 365 e la sottoscrizione di Azure (che ospita il database di Azure SQL) devono trovarsi nello stesso Azure Active Directory.
 - Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 - L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

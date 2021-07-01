@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph Salesforce per Microsoft Search
-ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774090"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230935"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Connettore Graph Salesforce (anteprima)
 
-Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search.
+Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search client.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
@@ -77,9 +77,9 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
   > [!div class="mx-imgBorder"]
   > ![Selezionare il criterio token di aggiornamento denominato "Il token di aggiornamento è valido fino alla revoca"](media/salesforce-connector/oauthpolicies.png)
 
-È ora possibile utilizzare [l'interfaccia di amministrazione di M365](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph rete.
+È ora possibile utilizzare Amministrazione Microsoft 365 [Center](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph connettore.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -150,7 +150,7 @@ Affinamento consente di definire le proprietà che possono essere successivament
 Il connettore Salesforce supporta solo le pianificazioni di aggiornamento per le ricerche per indicizzazione complete attualmente.
 
 >[!IMPORTANT]
->Una ricerca per indicizzazione completa consente di trovare gli oggetti eliminati e gli utenti precedentemente sincronizzati con l'indice di Microsoft Search.
+>Una ricerca per indicizzazione completa consente di trovare gli oggetti eliminati e gli utenti precedentemente sincronizzati con l'Microsoft Search indice.
 
 La pianificazione consigliata è di una settimana per una ricerca per indicizzazione completa.
 
