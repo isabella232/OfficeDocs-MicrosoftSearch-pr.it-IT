@@ -7,30 +7,30 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 04/09/2021
+ms.date: 07/02/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Esaminare i report di utilizzo di Microsoft Search
-ms.openlocfilehash: 17645d86e315538305a28bad51ea1a41dcc37dcb
-ms.sourcegitcommit: d62849b00f2b65b493ab54be50c3e7c94430f057
+description: Esaminare i Microsoft Search di utilizzo
+ms.openlocfilehash: 83a2d895ac251affdd5e1c9ea3b0d0fffcecc5a4
+ms.sourcegitcommit: 36a699554bfe9debdb9a33e942597cceb575666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754665"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53285559"
 ---
-# <a name="microsoft-search-usage-reports"></a>Report sull'utilizzo di Microsoft Search
+# <a name="microsoft-search-usage-reports"></a>Microsoft Search Report di utilizzo
 
 I report sull'utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate [](./make-content-easy-to-find.md) da questi report consentono di semplificare l'individuazione e l'azione del contenuto che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
 
 > [!IMPORTANT]
-> I report di utilizzo di Microsoft Search sono attualmente in anteprima
+> Microsoft Search report di utilizzo sono attualmente in anteprima
 
-I [report di utilizzo di Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) includono grafici e tabelle generati da ricerche eseguite da Home page di SharePoint e Office.com caselle di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo da richiedere tempo per accumulare i dati cronologici.
+I [Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo includono grafici e tabelle generati dalle ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle Bing di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo da richiedere tempo per accumulare i dati cronologici.
 
-Una versione precedente di questa pagina includeva i dati delle ricerche eseguite per Microsoft Search in Bing in Bing.com. Tali dati verranno integrati in questi report a breve, ma per il momento è comunque possibile visualizzarli facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali di Bing e la distribuzione **delle impression.**
+Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali Bing e **la distribuzione delle impression**. Questo collegamento e la pagina precedente verranno rimossi a breve.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard dei report di utilizzo della ricerca](media/usage-reports/usage_reports_v2.png)
@@ -41,8 +41,8 @@ Una versione precedente di questa pagina includeva i dati delle ricerche eseguit
 |:-----|:-----|
 |Query Volume|Questo report mostra il numero di query di ricerca eseguite. Utilizzare questo report per identificare le tendenze del volume delle query di ricerca e per determinare i periodi di attività di ricerca elevata e bassa.|
 |Principali query|Questo report mostra le query di ricerca maggiormente eseguite. Una query viene aggiunta al report quando la ricerca viene eseguita almeno tre volte con un clic su un risultato. Utilizzare questo report per comprendere i tipi di informazioni che gli utenti stanno cercando.|
-|Query abbandonate|Questo report mostra le query di ricerca più popolari che ricevono un click-through basso. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore Graph è l'azione giusta.|
-|Query senza risultati|Questo report mostra le query di ricerca frequenti che non hanno restituito alcun risultato. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore Graph è l'azione giusta.|
+|Query abbandonate|Questo report mostra le query di ricerca più popolari che ricevono un click-through basso. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore di Graph è l'azione giusta.|
+|Query senza risultati|Questo report mostra le query di ricerca frequenti che non hanno restituito alcun risultato. Utilizzarlo per identificare le query di ricerca che potrebbero risultare insoddisfacenti per gli utenti e per migliorare le possibilità di individuazione del contenuto. È quindi possibile determinare se la creazione di una risposta, ad esempio un segnalibro, o l'inserimento di nuovo contenuto tramite un connettore di Graph è l'azione giusta.|
 
 >[!NOTE]
 >Esiste attualmente un problema noto in cui le query soddisfatte da una risposta come bookmark vengono conteggiate come query abbandonate.
@@ -51,9 +51,9 @@ Una versione precedente di questa pagina includeva i dati delle ricerche eseguit
 
 Quando si passa alla pagina dei report di utilizzo, tutti i report sono disponibili per la visualizzazione. È possibile utilizzare il filtro data per selezionare un giorno o un mese specifico da visualizzare.
 
-Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio di calcolo di Excel. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
+Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
 
-Per visualizzare le query principali di Bing e i report di distribuzione delle impression, fare clic sul collegamento nella pagina.
+Per visualizzare Bing principali query e report di distribuzione delle impression, fare clic sul collegamento nella pagina.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -63,18 +63,14 @@ La visualizzazione calendario, oggi, nei report di utilizzo di Microsoft Search 
 
 Le tabelle query principali, abbandonate e non riuscite mostrano i risultati del giorno o del mese scelto.
 
-**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via... come i report delle query principali di Bing?**
+**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via... ad esempio Bing report di query principali?**
 
 Stiamo valutando questo tipo di aggregazione e semplificando il filtro degli intervalli di dati per le versioni future di questi report.
 
 **Perché non è possibile visualizzare una suddivisione dei report di utilizzo da diverse app (origini)?**
 
-Attualmente, il filtro in base all'origine non è disponibile. I report combinano le ricerche da SharePoint Home e Office.com. La prossima versione includerà il filtro origine in modo da poter visualizzare le metriche specifiche per ogni applicazione.
+Attualmente, il filtro in base all'origine non è disponibile. I report combinano le ricerche SharePoint Home e Office.com. La prossima versione includerà il filtro origine in modo da poter visualizzare le metriche specifiche per ogni applicazione.
 
 **Quali altri filtri per i report di utilizzo sono disponibili?**
 
 Stiamo lavorando a filtri aggiuntivi che consentono di dare un senso all'utilizzo della ricerca a un livello più granulare dell'organizzazione. Ad esempio, sarà possibile visualizzare il volume di query per una specifica area geografica o reparto.
-
-**Perché i report di Microsoft Search in Bing si trova in una pagina separata?**
-
-La modernizzazione della ricerca nelle applicazioni di Office 365 a Microsoft Search ci ha richiesto di partecipare a sistemi disparati in precedenza, inclusa la generazione di report. Questa operazione richiede tempo e abbiamo ritenuto più importante ottenere questi report ora anziché attendere fino a quando non è stato possibile completare l'integrazione dei dati di Bing. Una volta completata l'integrazione, i dati di tutti gli endpoint di ricerca verranno inclusi negli stessi report.
