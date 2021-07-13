@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori microsoft Graph per Microsoft Search
-ms.openlocfilehash: 4bcfb871fabae07270611762d2112a6e72d4762b
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: 87645e32e274eb166d6ba008c4ac720667105a1f
+ms.sourcegitcommit: 52129e0129a201ec056903b2461d012fda6d3636
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230890"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383484"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -38,10 +38,6 @@ Questo articolo consente agli Microsoft 365 di individuare le risorse disponibil
 * [Come è possibile cercare i dati del connettore da un'applicazione personalizzata?](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [Come si personalizzano i risultati della ricerca?](#how-do-i-customize-search-results)
 * [Quali sono le limitazioni del connettore](#what-are-the-connector-limitations)
-
-<!---Modify to another note that is more accurate after rollout completion--->
-> [!IMPORTANT]
-> Microsoft Graph connettori e api Microsoft Search sono ora disponibili in generale. Le prime implementazioni saranno destinate ai clienti configurati per il rilascio mirato. Se si desidera utilizzare un connettore di Graph nel tenant, gli utenti e gli amministratori devono acconsentire esplicitamente a [Rilascio mirato.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
