@@ -1,5 +1,5 @@
 ---
-title: Connettore grafico siti Web aziendali per Microsoft Search
+title: Enterprise siti Web Graph connettore per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,32 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore grafico dei siti Web dell'organizzazione per Microsoft Search
-ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
-ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
+description: Configurare il connettore Enterprise web Graph per Microsoft Search
+ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
+ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51951022"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419896"
 ---
 <!---Previous ms.author: monaray --->
 
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="enterprise-websites-graph-connector"></a>Connettore grafico siti Web aziendali
+# <a name="enterprise-websites-graph-connector"></a>Enterprise siti Web Graph connettore
 
-Il connettore Grafico siti Web aziendali consente all'organizzazione di indicizzare articoli e contenuti dai relativi siti Web **interni.** Dopo aver configurato il connettore e sincronizzato il contenuto dal sito Web, gli utenti finali possono cercare tale contenuto da qualsiasi client Microsoft Search.
+Il Enterprise web Graph consente all'organizzazione di indicizzare articoli e contenuti dai relativi siti Web **interni.** Dopo aver configurato il connettore e sincronizzato il contenuto dal sito Web, gli utenti finali possono cercare tale contenuto da qualsiasi client Microsoft Search client.
 
 > [!NOTE]
-> Leggere [**l'articolo Configurare il connettore Graph**](configure-connector.md) per comprendere le istruzioni generali per la configurazione dei connettori graph.
+> Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore di siti Web Enterprise. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore di siti Web Enterprise. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per chiunque configura, esegue e monitora un connettore Enterprise siti Web. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Enterprise siti Web. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -49,29 +49,30 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettersi all'origine dati, è necessario compilare l'URL radice del sito Web, selezionare un'origine di ricerca per indicizzazione e il tipo di autenticazione che si desidera utilizzare: Nessuna, Autenticazione di base o OAuth 2.0 con [Azure Active Directory (Azure AD).](/azure/active-directory/) Dopo aver completato queste informazioni, selezionare Test Connection per verificare le impostazioni.
+Per connettersi all'origine dati, compilare l'URL radice del sito Web, selezionare un'origine di ricerca per indicizzazione e il tipo di autenticazione che si desidera utilizzare: Nessuna, Autenticazione di base o OAuth 2.0 con [Azure Active Directory (Azure AD)](/azure/active-directory/). Dopo aver completato queste informazioni, selezionare Test Connection per verificare le impostazioni.
 
 ### <a name="url"></a>URL
 
 Utilizzare il campo URL per specificare la radice del sito Web di cui si desidera eseguire la ricerca per indicizzazione. Il connettore di siti Web aziendali utilizzerà questo URL come punto di partenza e seguirà tutti i collegamenti di questo URL per la ricerca per indicizzazione.
 
-> [!NOTE]
-> Se nel sito di cui si desidera eseguire la ricerca per indicizzazione è definita una mappa del sito, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella mappa del sito. Se non è definita alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione approfondita di tutti i collegamenti trovati nell'URL radice del sito.
+### <a name="crawl-websites-listed-in-the-sitemap"></a>Eseguire la ricerca per indicizzazione dei siti Web elencati nella sitemap
+
+Se selezionato, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella sitemap. Se non è selezionata o non viene trovata alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione completa di tutti i collegamenti trovati nell'URL radice del sito.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot del riquadro Impostazioni connessione per Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>Modalità ricerca per indicizzazione: cloud o locale
 
 La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, sia cloud che locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
 
-Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente connettore Graph. Per ulteriori informazioni, vedere [Agente connettore grafico.](./on-prem-agent.md)
+Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente Graph connettore. Per ulteriori informazioni, vedere [Graph connector agent](./on-prem-agent.md).
 
-Per i siti Web locali, selezionare Agente come  modalità di ricerca per indicizzazione e nel campo Agente locale scegliere l'agente connettore Graph installato e configurato in precedenza.   
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Connection Settings pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+Per i siti Web locali, selezionare Agente come  modalità di ricerca per indicizzazione e nel campo Agente locale scegliere l'agente connettore di Graph installato e configurato in precedenza.   
 
 ### <a name="authentication"></a>Autenticazione
 
-L'autenticazione di base richiede un nome utente e una password. Creare questo account bot utilizzando l'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com)
+L'autenticazione di base richiede un nome utente e una password. Crea questo account bot usando il interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com)
 
 OAuth 2.0 con [Azure AD](/azure/active-directory/) richiede un ID risorsa, un ID client e un segreto client. OAuth 2.0 funziona solo con la modalità Cloud.
 
@@ -82,7 +83,7 @@ Per ulteriori informazioni, vedere [Authorize access to Azure Active Directory w
 
 Per ottenere i valori per la risorsa, client_id e client_secret, passare a Usare il codice di autorizzazione per richiedere un **token** di accesso nella pagina Web dell'URL di reindirizzamento.
 
-Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con la piattaforma di identità Microsoft.](/azure/active-directory/develop/quickstart-register-app)
+Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con il Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Passaggio 3a: Aggiungere URL da escludere (Restrizioni facoltative per la ricerca per indicizzazione)
 
@@ -106,11 +107,11 @@ Nella schermata **Gestisci schema** è possibile modificare gli attributi dello 
 
 ## <a name="step-6-manage-search-permissions"></a>Passaggio 6: Gestire le autorizzazioni di ricerca
 
-Il connettore per siti Web aziendali supporta solo le autorizzazioni di ricerca visibili a **Tutti**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
+Il connettore Enterprise web web supporta solo le autorizzazioni di ricerca visibili a **Tutti**. I dati indicizzati vengono visualizzati nei risultati della ricerca ed è visibile a tutti gli utenti dell'organizzazione.
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 
-Il connettore per siti Web aziendali supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
+Il connettore Enterprise web web supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -138,4 +139,4 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
 
 ## <a name="limitations"></a>Limitazioni
 
-Il connettore per siti Web aziendali non supporta la ricerca di dati **nelle pagine Web dinamiche.** Esempi di queste pagine Web sono presenti in sistemi di gestione del contenuto come [Confluence](https://www.atlassian.com/software/confluence) e [Unily](https://www.unily.com/) o in database che archiviano il contenuto del sito Web.
+Il connettore Enterprise siti Web non supporta la ricerca di dati nelle **pagine Web dinamiche.** Esempi di queste pagine Web sono presenti in sistemi di gestione del contenuto come [Confluence](https://www.atlassian.com/software/confluence) e [Unily](https://www.unily.com/) o in database che archiviano il contenuto del sito Web.
