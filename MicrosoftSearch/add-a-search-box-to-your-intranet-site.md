@@ -13,22 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: Ottenere suggerimenti di ricerca pertinenti e trovare risultati di lavoro più velocemente aggiungendo una casella di ricerca di Microsoft Search al sito o alla pagina Intranet.
-ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
-ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
+description: Ottenere suggerimenti di ricerca pertinenti e trovare risultati di lavoro più velocemente aggiungendo una Microsoft Search di ricerca al sito o alla pagina Intranet.
+ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52247766"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449062"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Aggiungere una casella di ricerca al sito Intranet
 
-Per consentire agli utenti di accedere facilmente ai risultati dell'organizzazione, aggiungere una casella di ricerca di Microsoft Search Bing a qualsiasi sito o pagina Intranet. Ecco alcuni dei vantaggi:
+Per consentire agli utenti di accedere facilmente ai risultati dell'organizzazione, aggiungere un Microsoft Search nella Bing di ricerca a qualsiasi sito o pagina Intranet. Ecco alcuni dei vantaggi:
 
 - Una casella di ricerca nel portale SharePoint intranet offre un punto di ingresso attendibile e familiare per iniziare la ricerca
 - Supporta tutti i principali Web browser, tra cui Google Chrome e Microsoft Edge
 - Vengono visualizzati solo i suggerimenti di ricerca dell'organizzazione, i suggerimenti Web non vengono mai inclusi
-- Consente agli utenti di accedere a una pagina dei Bing di lavoro, che esclude gli annunci e i risultati Web
+- Porta gli utenti a un Microsoft Search in Bing risultati di lavoro, che esclude annunci e risultati Web
 - Puoi controllare l'aspetto e il comportamento della casella di ricerca, inclusa la possibilità di impostare gli utenti su un verticale predefinito o personalizzato che hai creato
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Aggiungere una casella di ricerca a una pagina Intranet
@@ -108,11 +108,11 @@ Per garantire una facile integrazione tra le app line-of-business o i siti Intra
 
 Utilizzare l'opzione verticale in bfbSearchBoxConfig per definire il verticale desiderato. Ad esempio, se si desidera che gli utenti atterrino sempre sul verticale Siti, uno dei verticali predefiniti, utilizzare il valore "Site-sites".
 
-![Screenshot della pagina dei risultati di lavoro in Microsoft Search in Bing i risultati verticali dei siti e l'URL](media/sites-vertical-esb.png)
+:::image type="content" alt-text="Screenshot of work results page on Microsoft Search in Bing showing the Sites vertical results and URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 Per i verticali personalizzati, usa l'hash alla fine dell'URL. È possibile trovare questi valori eseguendo una ricerca dalla pagina di lavoro in Bing, facendo clic su un'etichetta verticale e copiando il valore dopo il simbolo del numero (#).
 
-![Screenshot della pagina dei risultati di lavoro in Microsoft Search in Bing che mostra un URL e risultati verticali di presentazione personalizzati](media/custom-vertical-esb.png)
+:::image type="content" alt-text="Screenshot della pagina dei risultati di lavoro Microsoft Search in Bing che mostra un URL e risultati verticali di presentazione personalizzati." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>Usare un iFrame per incorporare una casella di ricerca
 
@@ -124,4 +124,4 @@ Se non è possibile incorporare uno script nel sito, usare un iFrame per aggiung
 
 ## <a name="inprivate-mode-and-conditional-access"></a>Modalità InPrivate e Accesso condizionale
 
-Una casella di ricerca incorporata verrà disabilitata se la pagina o il sito viene aperto in una finestra InPrivate. Inoltre, con il supporto dell'accesso condizionale di Azure AD in Microsoft Edge, Bing.com non supporta l'accesso AAD quando si usa la modalità InPrivate. Per ulteriori informazioni sull'accesso condizionale in Edge, vedere [Microsoft Edge e Accesso condizionale](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 
+Una casella di ricerca incorporata verrà disabilitata se la pagina o il sito viene aperto in una finestra InPrivate. Inoltre, con il supporto dell'accesso condizionale di Azure AD in Microsoft Edge, Bing.com non supporta l'accesso AAD quando si usa la modalità InPrivate. Per ulteriori informazioni sull'accesso condizionale in Edge, vedere [Microsoft Edge e Accesso condizionale](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge). 

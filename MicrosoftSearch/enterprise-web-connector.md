@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Enterprise web Graph per Microsoft Search
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419896"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449047"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -31,7 +31,7 @@ Il Enterprise web Graph consente all'organizzazione di indicizzare articoli e co
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore Enterprise siti Web. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Enterprise siti Web. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per chiunque configura, esegue e monitora un connettore Enterprise siti Web. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Enterprise siti Web. In questo articolo sono inoltre incluse informazioni sulla risoluzione [dei problemi](#troubleshooting).
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ Utilizzare il campo URL per specificare la radice del sito Web di cui si desider
 
 Se selezionato, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella sitemap. Se non è selezionata o non viene trovata alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione completa di tutti i collegamenti trovati nell'URL radice del sito.
 
+### <a name="dynamic-site-configuration"></a>Configurazione dinamica del sito
+
+Se il sito Web contiene contenuto dinamico, ad esempio pagine Web presenti in sistemi di gestione del contenuto come Confluence o Unily, è possibile abilitare un crawler dinamico. Per attivarla, selezionare Abilita ricerca **per indicizzazione per siti dinamici.** Il crawler attenderà il rendering del contenuto dinamico prima di iniziare la ricerca per indicizzazione.
+
 > [!div class="mx-imgBorder"]
-> ![Screenshot del riquadro Impostazioni connessione per Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Screenshot del riquadro Impostazioni connessione per Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
+
+1. **DOM Ready**: immettere l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
+1. **Intestazioni da aggiungere**: specificare le intestazioni HTTP che il crawler deve includere quando si invia l'URL Web specifico. È possibile impostare più intestazioni per siti Web diversi. Ti consigliamo di includere i valori del token di autenticazione.
+1. **Intestazioni da ignorare:** specificare eventuali intestazioni non necessarie che devono essere escluse dalle richieste di ricerca per indicizzazione dinamiche.
+
+> [!NOTE]
+> La ricerca per indicizzazione dinamica è supportata solo per la modalità di ricerca per indicizzazione agente.
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>Modalità ricerca per indicizzazione: cloud o locale
 
@@ -136,7 +149,3 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
 
 * Gli errori 6001-6013 si verificano quando l'origine dati non è raggiungibile a causa di un problema di rete o quando l'origine dati stessa viene eliminata, spostata o rinominata. Verificare se i dettagli dell'origine dati forniti sono ancora validi.
 * Gli errori 6021-6024 si verificano quando l'origine dati contiene contenuto non testuale nella pagina o quando la pagina non è html. Controllare l'origine dati e aggiungere questa pagina nell'elenco di esclusione o ignorare l'errore.
-
-## <a name="limitations"></a>Limitazioni
-
-Il connettore Enterprise siti Web non supporta la ricerca di dati nelle **pagine Web dinamiche.** Esempi di queste pagine Web sono presenti in sistemi di gestione del contenuto come [Confluence](https://www.atlassian.com/software/confluence) e [Unily](https://www.unily.com/) o in database che archiviano il contenuto del sito Web.
