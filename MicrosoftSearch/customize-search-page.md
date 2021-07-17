@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
-ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
+ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
+ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314020"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463227"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -135,7 +135,7 @@ Ad esempio, se si desidera creare un verticale "Ticket" in cui un utente conness
 
 In questo modo i risultati della ricerca verranno ristretti per visualizzare solo gli elementi in cui l'assegnatare è l'utente che esegue la ricerca.
 
-[La risorsa profilo](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) espone le proprietà come raccolte. Ad esempio, le informazioni relative agli indirizzi di posta elettronica vengono esposte tramite la raccolta di posta elettronica, le posizioni lavorative come raccolta posizioni e così via. Tutte le proprietà disponibili nel profilo utente, che hanno AAD come tipo di origine, vengono esposte come variabili di query.
+[La risorsa profilo](/graph/api/resources/profile?view=graph-rest-beta) espone le proprietà come raccolte. Ad esempio, le informazioni relative agli indirizzi di posta elettronica vengono esposte tramite la raccolta di posta elettronica, le posizioni lavorative come raccolta posizioni e così via. Tutte le proprietà disponibili nel profilo utente, che hanno AAD come tipo di origine, vengono esposte come variabili di query.
 
 Considera un utente che ha 3 indirizzi di posta elettronica disponibili nella raccolta di posta elettronica, come illustrato di seguito.
 
