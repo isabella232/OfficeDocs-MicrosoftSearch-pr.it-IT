@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph Salesforce per Microsoft Search
-ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230935"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529378"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Connettore Graph Salesforce (anteprima)
+# <a name="salesforce-graph-connector"></a>Connettore di Graph Salesforce
 
-Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search client.
+Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead, Casi e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search client.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
@@ -105,13 +105,20 @@ La prima volta che si tenta di accedere con queste impostazioni, verrà visualiz
 Verifica che la connessione sia stata eseguita correttamente cercando un banner verde che indica "Connessione riuscita" come illustrato nella schermata seguente.
 
   > [!div class="mx-imgBorder"]
-  > ![Screenshot dell'accesso riuscito. Il banner verde "Connessione riuscita" si trova sotto il campo per l'URL dell'istanza di Salesforce](media/salesforce-connector/sf5.png)
+  > ![Screenshot dell'accesso riuscito. Il banner verde "Connessione riuscita" si trova sotto il campo per l'URL dell'istanza di Salesforce](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
-## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
+## <a name="step-4-select-properties"></a>Passaggio 4: Selezionare le proprietà
+
+Selezionare gli oggetti Salesforce che si desidera che il connettore eserviti la ricerca per indicizzazione e che includa nei risultati della ricerca. Se l'opzione Contatto è selezionata, verrà selezionato automaticamente anche Account.
+
+>[!NOTE]
+>Se per un profilo è impostata la sicurezza a livello di campo (FLS, Field Level Security), il connettore non ingestirà tale campo per i profili nell'organizzazione Salesforce. Di conseguenza, gli utenti non saranno in grado di cercare valori per tali campi e non verranno visualizzati nei risultati.
+
+## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
 Dovrai scegliere quali utenti potranno visualizzare i risultati della ricerca da questa origine dati. Se si consente solo a determinati utenti di Azure Active Directory (Azure AD) o non di Azure AD di visualizzare i risultati della ricerca, assicurarsi di mappare le identità.
 
-### <a name="step-4a-select-permissions"></a>Passaggio 4.a: Selezionare le autorizzazioni
+### <a name="step-5a-select-permissions"></a>Passaggio 5.a: Selezionare le autorizzazioni
 
 Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli elenchi di controllo di accesso possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
 
@@ -123,7 +130,7 @@ Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di
 
 Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionato "non-AAD" per il tipo di identità, vedere Eseguire il mapping delle identità [non di Azure AD](map-non-aad.md) per istruzioni sul mapping delle identità.
 
-### <a name="step-4b-map-aad-identities"></a>Passaggio 4.b: Mappare le identità AAD
+### <a name="step-5b-map-aad-identities"></a>Passaggio 5.b: Mappare le identità AAD
 
 Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionato "AAD" per il tipo di identità, vedere Eseguire il mapping delle identità di [Azure AD](map-aad.md) per istruzioni sul mapping delle identità. Per informazioni su come configurare Azure AD SSO per Salesforce, vedere questa [esercitazione.](/azure/active-directory/saas-apps/salesforce-tutorial)
 
@@ -133,11 +140,11 @@ In questo video è possibile visualizzare il processo di autenticazione nell'ist
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
-## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
+## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
 È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, la presenza di alcune etichette di proprietà migliorerà la pertinenza della ricerca e garantirà risultati di ricerca migliori per gli utenti finali. Per impostazione predefinita, ad alcune etichette come "Title", "URL", "CreatedBy" e "LastModifiedBy" sono già state assegnate proprietà di origine.
 
-## <a name="step-6-manage-schema"></a>Passaggio 6: Gestire lo schema
+## <a name="step-7-manage-schema"></a>Passaggio 7: Gestire lo schema
 
 È possibile selezionare le proprietà di origine da indicizzare in modo che siano visualizzate nei risultati della ricerca. Per impostazione predefinita, la connessione guidata seleziona uno schema di ricerca basato su un set di proprietà di origine. È possibile modificarlo selezionando le caselle di controllo per ogni proprietà e attributo nella pagina dello schema di ricerca. Gli attributi dello schema di ricerca includono Search, Query, Retrieve e Refine.
 Affinamento consente di definire le proprietà che possono essere successivamente utilizzate come criteri di affinamento ricerca personalizzati o filtri nell'esperienza di ricerca.  
@@ -145,7 +152,7 @@ Affinamento consente di definire le proprietà che possono essere successivament
 > [!div class="mx-imgBorder"]
 > ![Selezionare lo schema per ogni proprietà di origine. Le opzioni sono Query, Search, Retrieve e Refine](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
+## <a name="step-8-set-the-refresh-schedule"></a>Passaggio 8: Impostare la pianificazione dell'aggiornamento
 
 Il connettore Salesforce supporta solo le pianificazioni di aggiornamento per le ricerche per indicizzazione complete attualmente.
 
@@ -154,9 +161,15 @@ Il connettore Salesforce supporta solo le pianificazioni di aggiornamento per le
 
 La pianificazione consigliata è di una settimana per una ricerca per indicizzazione completa.
 
-## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
+## <a name="step-9-review-connection"></a>Passaggio 9: esaminare la connessione
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
+
+>[!TIP]
+>**Tipo di risultato predefinito**
+>* Il connettore Salesforce registra automaticamente un [tipo di risultato](./customize-search-page.md#step-2-create-the-result-types) dopo la pubblicazione del connettore. Il tipo di risultato utilizza un layout dei [risultati](./customize-results-layout.md) generato dinamicamente in base ai campi selezionati nel passaggio 3.
+>* È possibile gestire il tipo di risultati passando a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nella interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `Salesforce` sarà denominato: "SalesforceDefault"
+>* È inoltre possibile scegliere di creare un tipo di risultato personalizzato, se necessario.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

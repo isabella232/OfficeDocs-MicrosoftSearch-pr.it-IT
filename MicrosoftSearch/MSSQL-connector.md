@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
+ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230917"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590262"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,10 @@ Questo articolo è per tutti gli utenti che configurano, esere e monitorano un c
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installare l'Graph connettore (necessario solo per il connettore Microsoft SQL Server locale)
 
-Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)  
+Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)
+
+>[!NOTE]
+>Se si utilizza l'autenticazione Windows durante la configurazione del connettore Microsoft SQL Server Graph, l'utente con cui si sta tentando di accedere deve disporre dei diritti di accesso interattivo per il computer in cui è installato l'agente connettore di Graph. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso.
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
@@ -220,7 +223,6 @@ Di seguito è riportato un errore comune rilevato durante la configurazione del 
 I SQL connettori hanno queste limitazioni nella versione di anteprima:
 
 - Microsoft SQL Server connettore: il database locale deve essere SQL Server versione 2008 o successiva.
-
 - La Microsoft 365 e la sottoscrizione di Azure (che ospita il database di Azure SQL) devono trovarsi nello stesso Azure Active Directory.
 - Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 - L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.
