@@ -13,25 +13,25 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore di Graph ServiceNow per Microsoft Search
-ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
-ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
+ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879309"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534132"
 ---
 <!---Previous ms.author: kam1 --->
 
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph Connector
 
-Con Microsoft Graph Connector for ServiceNow, l'organizzazione può indicizzare gli articoli della Knowledge Base visibili a tutti gli utenti o con restrizioni con autorizzazioni per i criteri utente all'interno dell'organizzazione. Dopo aver configurato il connettore e il contenuto dell'indice da ServiceNow, gli utenti finali possono cercare tali articoli da qualsiasi client Microsoft Search.  
+Con Microsoft Graph Connector for ServiceNow, l'organizzazione può indicizzare gli articoli della Knowledge Base visibili a tutti gli utenti o con restrizioni con autorizzazioni per i criteri utente all'interno dell'organizzazione. Dopo aver configurato il connettore e il contenuto dell'indice da ServiceNow, gli utenti finali possono cercare tali articoli da qualsiasi client Microsoft Search client.  
 
 Questo articolo è per Microsoft 365 amministratori o chiunque configura, esegue e monitora un connettore di Graph ServiceNow. Integra le istruzioni generali fornite nell'articolo [Set up your Graph connector.](configure-connector.md) Se non è già stato fatto, leggere l'intero articolo Configurare il connettore Graph per comprendere il processo di configurazione generale.
 
 Ogni passaggio del processo di installazione è elencato di seguito insieme a una nota che indica che è necessario seguire le [](#troubleshooting) istruzioni di configurazione generali o altre istruzioni che si applicano solo al connettore di Graph ServiceNow, incluse informazioni su Risoluzione dei problemi e [limitazioni.](#limitations)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'Microsoft 365 di amministrazione.
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365.
 Seguire le istruzioni generali per l'installazione.
 
 ## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione.
@@ -82,10 +82,10 @@ Campo | Descrizione | Valore consigliato
 --- | --- | ---
 Nome | Valore univoco che identifica l'applicazione per cui è necessario l'accesso OAuth. | Microsoft Search
 ID client | ID univoco generato automaticamente e di sola lettura per l'applicazione. L'istanza usa l'ID client quando richiede un token di accesso. | ND
-Segreto client | Con questa stringa segreta condivisa, l'istanza ServiceNow e Microsoft Search autorizzano le comunicazioni tra loro. | Seguire le procedure consigliate per la sicurezza trattando il segreto come password.
+Segreto client | Con questa stringa segreta condivisa, l'istanza ServiceNow e Microsoft Search le comunicazioni tra loro. | Seguire le procedure consigliate per la sicurezza trattando il segreto come password.
 URL di reindirizzamento | URL di richiamata obbligatorio a cui il server di autorizzazione reindirizza. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL contenente l'immagine per il logo dell'applicazione. | ND
-Attivazione | Selezionare la casella di controllo per rendere attivo il Registro di sistema dell'applicazione. | Impostato su attivo
+Attivo | Selezionare la casella di controllo per rendere attivo il Registro di sistema dell'applicazione. | Impostato su attivo
 Durata token di aggiornamento | Numero di secondi in cui un token di aggiornamento è valido. Per impostazione predefinita, i token di aggiornamento scadono tra 100 giorni (8.640.000 secondi). | 31.536.000 (1 anno)
 Durata token di accesso | Numero di secondi in cui un token di accesso è valido. | 43.200 (12 ore)
 
@@ -165,7 +165,7 @@ L'istanza ServiceNow richiede la configurazione seguente:
    Applicazione | Globale
    Attestazione utente | sub
    User, campo | ID utente
-   Abilitare la verifica delle attestazioni JTI | Disattivato
+   Abilitare la verifica delle attestazioni JTI | Disabilitato
 
 5. Selezionare Invia e aggiorna il modulo Entità OAuth OIDC.
 

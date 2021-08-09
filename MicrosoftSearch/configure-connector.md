@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Panoramica dell'installazione Graph connettori da Microsoft
-ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Panoramica della configurazione per i connettori Graph di Microsoft
+ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720944"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533322"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica dell'installazione Graph connettori da Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica della configurazione per i connettori Graph di Microsoft 
 
-In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da Parte di **Microsoft** nell'Microsoft 365 [di amministrazione.](https://admin.microsoft.com) Il processo si compone delle seguenti fasi:  
+In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da **Microsoft** nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Il processo si compone delle seguenti fasi:  
 <!---Add links to each section in the doc--->
 
-1. [Aggiungere un connettore Graph nell'Microsoft 365 di amministrazione](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [Aggiungere un connettore di Graph nell'interfaccia di amministrazione di Microsoft 365.](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Assegnare un nome alla connessione](#step-2-name-the-connection)
 3. [Configurare le impostazioni di connessione](#step-3-configure-the-connection-settings)
 4. [Gestire le autorizzazioni di ricerca](#step-4-manage-search-permissions)
 5. [Assegnare etichette di proprietà](#step-5-assign-property-labels)
 6. [Gestire lo schema](#step-6-manage-schema)
-7. [Impostazioni di aggiornamento](#step-7-refresh-settings)
+7. [Aggiornare le impostazioni.](#step-7-refresh-settings)
 8. [Verificare la connessione](#step-8-review-connection)
 
 In questo articolo sono inoltre incluse informazioni sulla risoluzione dei problemi, sulle limitazioni e sui passaggi successivi:
@@ -51,11 +51,11 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
 Completare la procedura seguente per configurare uno qualsiasi dei connettori di Graph Microsoft:
 
-1. Accedi al tuo account amministratore [nell'Microsoft 365 di amministrazione](https://admin.microsoft.com).
+1. Accedi al tuo account amministratore nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
 
 2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi selezionare Ricerca **& intelligence**. Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
@@ -138,7 +138,7 @@ Attributo dello schema di ricerca | Funzione | Esempio
 RICERCA | Rende possibile la ricerca del contenuto di testo di una proprietà. Il contenuto delle proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituisce le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
 QUERY | Cerca una corrispondenza per una determinata proprietà in base a una query. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o verbatim. |  Se è possibile eseguire query sulla proprietà **Title,** la query **Title: Enterprise** è supportata.
 RETRIEVE | Solo le proprietà recuperabili possono essere utilizzate nel tipo di risultato e visualizzate nel risultato della ricerca. |
-AFFINAMENTO RICERCA | L'opzione di affinamento ricerca può essere utilizzata come nella pagina dei risultati di Microsoft Search. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'impostazione della connessione
+AFFINAMENTO RICERCA | L'opzione di affinamento può essere utilizzata come nella Microsoft Search dei risultati. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'impostazione della connessione
 
 Per tutti i connettori ad eccezione del connettore condivisione file, i tipi personalizzati devono essere impostati manualmente. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La connessione guidata seleziona automaticamente uno schema di ricerca in base al set di proprietà di origine scelto. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina dello schema di ricerca.
 

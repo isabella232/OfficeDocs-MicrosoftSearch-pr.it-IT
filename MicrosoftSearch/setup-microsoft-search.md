@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare Microsoft Search per la prima volta.
-ms.openlocfilehash: 98499c2df1d8d732cdc1961116cafaaffeb4c5d6
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031666"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534123"
 ---
 # <a name="set-up-microsoft-search"></a>Configurare Microsoft Search
 
-Microsoft Search offre un'interfaccia intuitiva che consente agli utenti di trovare informazioni come file e documenti, siti interni e strumenti aziendali, persone e gruppi, posizioni e indicazioni stradali, conversazioni e risposte. A tale scopo, accede in modo sicuro a tutte le origini dati, inclusi i messaggi di posta elettronica, i file, i file di SharePoint, il contenuto di OneDrive e altre risorse condivise. Con Microsoft Search in Bing puoi ottenere risultati di ricerca anche da Internet.
+Microsoft Search fornisce un'interfaccia intuitiva per aiutare gli utenti a trovare informazioni come file e documenti, siti interni e strumenti aziendali, persone e gruppi, posizioni e indicazioni stradali, conversazioni e risposte. A tale scopo, accede in modo sicuro a tutte le origini dati, inclusi messaggi di posta elettronica, file, SharePoint file, OneDrive contenuto e altre risorse condivise. Con Microsoft Search in Bing è possibile ottenere risultati di ricerca anche da Internet.
 
 Per altre informazioni sulle funzionalità di Microsoft Search, vedere [Panoramica di Microsoft Search](overview-microsoft-search.md).
 
 ## <a name="get-started"></a>Introduzione
 
-Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Non è necessaria alcuna configurazione, ma è possibile migliorare l'esperienza complessiva di Microsoft Search tramite alcune attività amministrative di base.
+Microsoft Search viene attivato per impostazione predefinita in Microsoft 365 per tutte le app Microsoft che lo supportano. Non è necessaria alcuna configurazione, ma è possibile migliorare l'esperienza Microsoft Search tramite alcune attività amministrative di base.
 
 È possibile gestire Microsoft Search dall'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, andare a **Impostazioni**  >  [**Ricerca & intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
+1. In interfaccia di amministrazione di Microsoft 365, andare **a** Impostazioni ricerca &  >  [**intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 Gli amministratori devono considerare alcuni aspetti che possono rendere l'esperienza di Microsoft Search più efficiente e intuitiva nell'organizzazione.
 
@@ -51,13 +51,13 @@ Gli amministratori della ricerca influiscono direttamente sull'esperienza di ric
 Microsoft Search offre agli amministratori strumenti utili per creare un'esperienza di ricerca solida per gli utenti. In Microsoft Search, gli amministratori hanno tre diversi contenuti di ricerca che possono creare per una migliore esperienza di ricerca e per migliorare la "trovabilità" del contenuto:
 
 I segnalibri sono il tipo di risposta più comunemente utilizzato. Promuovono i migliori risultati possibili per le query degli utenti fino all'inizio dei risultati della ricerca e consentono agli utenti di trovare facilmente ciò che stanno cercando.
-Contenuto informativo disponibile per tutti gli utenti; ad esempio, informazioni sulla società, guida per le app di Windows e Office e così via. Contenuto che gli utenti dell'organizzazione in genere ricercano nel proprio lavoro quotidiano. Le ricerche correlate al lavoro includono benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e assistenza dei servizi IT.
+Contenuto informativo disponibile per tutti gli utenti; ad esempio, informazioni sulla società, guida per Windows e Office app e così via. Contenuto che gli utenti dell'organizzazione in genere ricercano nel proprio lavoro quotidiano. Le ricerche correlate al lavoro includono benefit dei dipendenti, report su orari e spese, invio di ordini di acquisto e assistenza dei servizi IT.
 
 Per la creazione e la gestione delle risposte, vedere [Plan your content.](plan-your-content.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per ulteriori informazioni su come gli utenti utilizzeranno Microsoft Search, vedere gli articoli seguenti:
+Per altre informazioni su come gli utenti useranno Microsoft Search, vedere gli articoli seguenti:
 
 - [Trovare le informazioni necessarie con Microsoft Search in Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Area risorse di Office 365](https://support.office.com/office-training-center)

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Gestire la modalità di visualizzazione del contenuto di Dynamics 365 nei risultati della ricerca
-ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
-ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
+ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53067929"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533652"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Ricerca federativa dynamics 365 (anteprima)
 

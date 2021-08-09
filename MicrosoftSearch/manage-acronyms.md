@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare e aggiornare le risposte degli acronimi in Microsoft Search
-ms.openlocfilehash: 013510da28599f41c9dc4bf74da99efa2f6c3e97
-ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
+ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408715"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532921"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gestire le risposte degli acronimi in Microsoft Search
 
@@ -27,7 +27,7 @@ Le organizzazioni non hanno sempre un singolo riferimento per la terminologia st
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
-Gli utenti di Microsoft Search possono ottenere le definizioni con gli acronimi in [Bing,](https://Bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)e [Office 365.](https://Office.com) Nella casella **Di ricerca** gli utenti immettono query come negli esempi seguenti:
+Microsoft Search utenti possono ottenere le definizioni con gli acronimi in [Bing,](https://Bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)e [Office 365](https://Office.com). Nella casella **Di ricerca** gli utenti immettono query come negli esempi seguenti:
 
 - *Cos'è* DNN
 - *Definire* DNN
@@ -45,27 +45,27 @@ Il risultato include tutti i significati di DNN presenti all'interno dell'organi
 
 ## <a name="set-up-acronyms-answers"></a>Configurare le risposte acronimi
 
-Nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com)passare [**ad Acronimi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)e quindi selezionare **Aggiungi acronimo.**
+Nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare [**ad Acronimi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)e quindi selezionare **Aggiungi acronimo**.
 
-Microsoft Search esegue una query su due origini dati per fornire agli acronimi le risposte alle ricerche degli utenti:
+Microsoft Search query su due origini dati per fornire agli acronimi le risposte alle ricerche degli utenti:
 
 1. **Admin-curated**. Fornito dagli amministratori IT [nell'interfaccia di amministrazione.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)
 2. **System-curated**. Individuato da Microsoft Search dalla posta elettronica e dai documenti degli utenti, nonché dai dati disponibili pubblicamente all'interno dell'organizzazione.
 
 ### <a name="set-up-admin-curated-acronyms"></a>Configurare acronimi curati dall'amministratore
 
-Gli amministratori della ricerca possono aggiungere acronimi nella [scheda Acronimi](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) nell'interfaccia di [amministrazione di Microsoft Search.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) È possibile aggiungere acronimi da qualsiasi sito o archivio interno all'interfaccia di amministrazione. Questi acronimi possono essere aggiunti allo **stato Published** o **Draft:**
+Gli amministratori della ricerca possono aggiungere acronimi nella scheda [Acronimi](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) [nell'Microsoft Search di amministrazione.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) È possibile aggiungere acronimi da qualsiasi sito o archivio interno all'interfaccia di amministrazione. Questi acronimi possono essere aggiunti allo **stato Published** o **Draft:**
 
 **Stato pubblicato**. Gli acronimi sono disponibili per gli utenti dell'organizzazione tramite Microsoft Search.
 
 > [!NOTE]
-> Potrebbero essere necessario fino a tre giorni perché gli acronimi aggiunti allo stato Published diventino disponibili in Microsoft Search.
+> Potrebbero essere necessario fino a tre giorni prima che gli acronimi aggiunti allo stato Published diventino disponibili in Microsoft Search.
 
-**Stato bozza**. Se si desidera esaminare un acronimo prima di renderlo disponibile in Microsoft Search, è possibile aggiungere l'acronimo in stato Bozza. Gli acronimi nello stato Bozza non verranno visualizzati nei risultati della ricerca. Sarà necessario spostare l'acronimo allo stato Published per renderlo visualizzato nei risultati della ricerca.
+**Stato bozza**. Se vuoi rivedere un acronimo prima di renderlo disponibile in Microsoft Search, puoi aggiungere l'acronimo in stato Bozza. Gli acronimi nello stato Bozza non verranno visualizzati nei risultati della ricerca. Sarà necessario spostare l'acronimo allo stato Published per renderlo visualizzato nei risultati della ricerca.
 
-**Stato escluso**. Se si desidera impedire la visualizzazione di un acronimo in Microsoft Search, utilizzare **Exclude an acronym** per aggiungerlo. Per impedire l'esclusione di un acronimo, è necessario eliminare l'acronimo escluso e aggiungerlo o verificare che sia presente nell'elenco pubblicato.
+**Stato escluso**. Se vuoi impedire la visualizzazione di un acronimo Microsoft Search, usa **Exclude an acronym** per aggiungerlo. Per impedire l'esclusione di un acronimo, è necessario eliminare l'acronimo escluso e aggiungerlo o verificare che sia presente nell'elenco pubblicato.
 
-È possibile aggiungere gli acronimi singolarmente o importarli in blocco in un file CSV. Caricare un file CSV con i campi mostrati nella tabella seguente:
+È possibile aggiungere gli acronimi singolarmente o importarli in blocco in un file CSV. Upload un file CSV con i campi mostrati nella tabella seguente:
 
 | Acronimo (Obbligatorio) | Sta per (Obbligatorio) | URL | Descrizione  | Stato (obbligatorio) | Last Modified | Last Modified By | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
@@ -85,17 +85,17 @@ Gli amministratori della ricerca possono aggiungere acronimi nella [scheda Acron
 
 - **Draft**. Aggiunge l'acronimo allo stato Draft.
 - **Published**. Aggiunge l'acronimo allo stato Published e lo rende disponibile in Microsoft Search.
-- **Escluso**. Aggiunge l'acronimo allo stato Excluded e ne impedisce la visualizzazione in Microsoft Search.
+- **Escluso**. Aggiunge l'acronimo allo stato Excluded e ne impedisce la visualizzazione Microsoft Search.
 
 ### <a name="system-curated-acronyms"></a>Acronimi curati dal sistema
 
-Potrebbe essere una sfida per gli amministratori aggiungere a Answers tutti gli acronimi utilizzati all'interno di un'organizzazione. Questa funzionalità può trovare acronimi di cui gli amministratori della ricerca non sono nemmeno a conoscenza. A tale scopo, Microsoft Search individua e cura anche gli acronimi da queste origini:
+Potrebbe essere una sfida per gli amministratori aggiungere a Answers tutti gli acronimi utilizzati all'interno di un'organizzazione. Questa funzionalità può trovare acronimi di cui gli amministratori della ricerca non sono nemmeno a conoscenza. A tale scopo, Microsoft Search individua e cura gli acronimi da queste origini:
 
 - Messaggi di posta elettronica degli utenti
 - Documenti in [SharePoint,](https://products.office.com/sharepoint/collaboration) [Microsoft OneDrive]( https://onedrive.live.com/about/)e [Microsoft OneNote](https://www.onenote.com/)
 - Documenti pubblici all'interno dell'organizzazione a cui gli utenti hanno accesso in SharePoint, OneDrive o OneNote
 
-Microsoft Search garantisce che solo gli utenti con accesso e autorizzazioni a un documento possano visualizzare gli acronimi individuati da esso. Quando viene trovato un acronimo nella cassetta postale di un utente, solo tale utente può vedere tale acronimo.
+Microsoft Search che solo gli utenti con accesso e autorizzazioni a un documento possano visualizzare gli acronimi individuati da esso. Quando viene trovato un acronimo nella cassetta postale di un utente, solo tale utente può vedere tale acronimo.
 
 > [!NOTE]
 > Non è necessaria alcuna configurazione per gli acronimi curati dal sistema.
@@ -106,23 +106,23 @@ Microsoft Search garantisce che solo gli utenti con accesso e autorizzazioni a u
 
 **A:** La classificazione dei risultati può variare da persona a persona in quanto i risultati sono personalizzati per ogni utente. Nessuna di queste categorie avrà sempre la precedenza sull'altra.
 
-**D: Quanto tempo è necessario per la visibilità degli acronimi curati dall'amministratore in Microsoft Search dopo la pubblicazione?**
+**D: Quanto tempo è necessario per la visibilità degli acronimi curati dall'amministratore Microsoft Search dopo la pubblicazione?**
 
-**A:**  L'aggiunta di acronimi allo stato Published richiede fino a un giorno per diventare disponibili in Microsoft Search.
+**A:**  È necessario un giorno prima che gli acronimi aggiunti allo stato Published diventino disponibili in Microsoft Search.
 
 **D: In che modo gli utenti attivano le risposte agli acronimi?**
 
-**A:** Per ottenere risposte con acronimi, gli utenti devono immettere modelli di query specifici in una casella di ricerca di [Bing,](https://bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)o [Office 365.](https://Office.com) 
+**A**: Per ottenere risposte con acronimi, gli utenti devono immettere modelli di query specifici in una casella [Bing,](https://bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)o [Office 365](https://Office.com) **ricerca.**
 
 **D: Quanto tempo è necessario per visualizzare gli acronimi curati dal sistema dopo aver ricevuto o inviato un nuovo messaggio di posta elettronica o un nuovo documento?**
 
-**A:** Gli acronimi trovati in un nuovo messaggio di posta elettronica o in un nuovo documento possono richiedere fino a sette giorni per essere visualizzati nei risultati di Microsoft Search.
+**A:** Gli acronimi trovati in un nuovo messaggio di posta elettronica o in un nuovo documento possono essere visualizzati fino a sette giorni Microsoft Search risultati.
 
 **D: Cosa succede quando un acronimo viene escluso e pubblicato?**
 
 **A:** L'acronimo escluso ha la priorità e impedisce la visualizzazione dell'acronimo pubblicato nei risultati della ricerca. Non elimina o rimuove l'acronimo pubblicato.
 
-**D: Quanto tempo è necessario per escludere un acronimo dai risultati di Microsoft Search?**
+**D: Quanto tempo è necessario per escludere un acronimo dai Microsoft Search risultati?**
 
 **A**: Un acronimo escluso non viene più visualizzato nei risultati della ricerca fino a un giorno.
 

@@ -12,76 +12,76 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Esaminare e agire sui commenti e suggerimenti degli utenti in Microsoft Search
-ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
-ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
+description: Esaminare e agire in base al feedback degli utenti in Microsoft Search
+ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48996793"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532890"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
-La creazione di una grande esperienza di ricerca per gli utenti è una partnership tra Microsoft e l'amministratore della ricerca. Il feedback degli utenti consente di valutare continuamente il prodotto e di sintonizzarlo per la migliore esperienza. Alcuni commenti e suggerimenti, tuttavia, sono indirizzati al meglio dall'utente.
+La creazione di un'esperienza di ricerca ottimale per gli utenti è una partnership tra Microsoft e l'amministratore della ricerca. Il feedback degli utenti ci consente di valutare continuamente il prodotto e ottimizzarlo per un'esperienza ottimale. Alcuni commenti e suggerimenti, tuttavia, sono meglio indirizzati dall'utente.
 
-Ora vengono offerti strumenti che consentono di controllare e gestire i commenti e suggerimenti che gli utenti stanno fornendo nell'esperienza di ricerca.
+Sono ora disponibili strumenti che consentono di esaminare e gestire il feedback fornito dagli utenti sull'esperienza di ricerca.
 
-## <a name="how-users-submit-feedback"></a>Come gli utenti inviano commenti e suggerimenti
+## <a name="how-users-submit-feedback"></a>Modalità di invio del feedback da parte degli utenti
 
-Poiché gli utenti dell'organizzazione utilizzano la ricerca Microsoft, possono avere un feedback sull'esperienza. Quando si fa clic su un collegamento di commenti e suggerimenti nella pagina dei risultati, è possibile categorizzare i commenti e includere commenti aggiuntivi.
+Poiché gli utenti dell'organizzazione usano Microsoft Search, possono ricevere commenti e suggerimenti sull'esperienza. Quando fanno clic su un collegamento di feedback nella pagina dei risultati, possono categorizzare il proprio feedback e includere commenti aggiuntivi.
 
 ![Modulo di feedback globale](media/feedback/feedback-global-dialog.png)
 
-Gli utenti hanno anche la possibilità di inviare la propria query e altre informazioni di diagnostica, insieme alla categoria e ai commenti, a Microsoft. Per [ulteriori](https://privacy.microsoft.com/en-US/privacystatement) informazioni, vedere privacy e modalità di protezione dei dati. I dati di diagnostica contengono le informazioni più importanti che Microsoft deve utilizzare per il miglioramento del prodotto.
+Gli utenti hanno anche la possibilità di inviare la query e altre informazioni di diagnostica, insieme alla categoria e ai commenti, a Microsoft. [Altre informazioni](https://privacy.microsoft.com/en-US/privacystatement) sulla privacy e su come proteggiamo questi dati. I dati di diagnostica contengono le informazioni più importanti che Microsoft deve usare per il miglioramento del prodotto.
 
-La maggior parte dei commenti e suggerimenti viene visualizzata nella sezione [commenti e suggerimenti](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) dell'interfaccia di amministrazione di Microsoft Search. I commenti e suggerimenti inviati con il suggerimento di una categoria di **collegamento interno** vengono visualizzati come segnalibro consigliato nella sezione [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e possono essere visualizzati filtrando lo stato **suggerito** .
+La maggior parte degli invii di feedback viene visualizzata nella [sezione Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) dell'Microsoft Search di amministrazione. I commenti inviati con la categoria I **want to suggest an internal link** vengono visualizzati come segnalibri suggeriti nella sezione [Bookmarks](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e possono essere visualizzati filtrando lo **stato Suggerito.**
 
-## <a name="review-feedback"></a>Esaminare i commenti e suggerimenti
+## <a name="review-feedback"></a>Commenti e suggerimenti
 
-Nella pagina [Commenti](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) e suggerimenti è possibile esaminare ed esportare i commenti e suggerimenti inviati dagli utenti dell'organizzazione negli ultimi 30 giorni. Dopo che un utente ha inviato commenti e suggerimenti, verrà visualizzato nell'elenco entro 20 minuti. È possibile utilizzare il pulsante Aggiorna per assicurarsi di esaminare i dati più recenti
+Nella pagina [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) è possibile esaminare ed esportare il feedback inviato da persone dell'organizzazione negli ultimi 30 giorni. Una volta che un utente invia il feedback, verrà visualizzato in questo elenco entro 20 minuti. È possibile utilizzare il pulsante Aggiorna per verificare di avere a che fare con i dati più aggiornati
 
-Utilizzando un filtro, è possibile visualizzare commenti e suggerimenti per i tipi di risposta specifici. È inoltre possibile filtrare in base all'origine e all'intervallo di date.
+Utilizzando un filtro, è possibile visualizzare il feedback per tipi di risposta specifici. È inoltre possibile filtrare in base all'origine e all'intervallo di date.
 
 È possibile utilizzare la casella di ricerca sopra l'elenco dei commenti e suggerimenti per cercare commenti e suggerimenti su una query specifica.
 
-Nell'elenco dei commenti e suggerimenti, la colonna Verbatim indica i commenti e suggerimenti dell'utente. Per leggerlo, fare clic sulla query per aprire il riquadro **Dettagli** .
+Nell'elenco dei commenti e suggerimenti, la colonna Verbatim indica anche il feedback dell'utente che include un commento o un suggerimento. Per leggerla, fare clic sulla query per aprire il **riquadro** Dettagli.
 
-## <a name="update-feedback-state"></a>Aggiornare lo stato di commenti e suggerimenti
+## <a name="update-feedback-state"></a>Aggiornare lo stato di feedback
 
-Quando il feedback arriva, sarà in un *nuovo* stato e rimarrà lì fino a quando non verrà modificato in *risolto* o *duplicato*.
+Quando arriva il feedback, sarà in uno stato *Nuovo* e rimarrà lì fino a quando non lo cambi in *Risolto* o *Duplicato.*
 
 Per modificare questo stato:
 
-1. Accanto alla query, selezionare **altre opzioni** (tre punti verticali).
-1. Scegliere **Contrassegna come risolvito** o **Segna come Duplica** dal menu.
-1. L'elenco verrà aggiornato e mostrerà lo stato di aggiornamento.
+1. Accanto alla query, selezionare **Altre opzioni** (tre punti verticali).
+1. Scegliere Contrassegna **come risolto o** Contrassegna **come duplicato dal menu.**
+1. L'elenco verrà aggiornato e verrà visualizzato lo stato aggiornato.
 
-È inoltre possibile aggiornare lo stato per più elementi, basta selezionarli e quindi selezionare altre opzioni dopo uno qualsiasi di questi elementi.
+Puoi anche aggiornare lo stato per più elementi, selezionarli e quindi selezionare Altre opzioni accanto a uno qualsiasi di questi elementi.
 
-## <a name="export-feedback"></a>Commenti e suggerimenti per l'esportazione
+## <a name="export-feedback"></a>Esportare commenti e suggerimenti
 
-Se si desidera condividere i commenti di ricerca con altri utenti o conservarli per più di 30 giorni, fare clic su **Esporta.** Un file. csv denominato commenti e suggerimenti con la data, ad esempio "Feedbacks_10_31_2020.csv", verrà scaricato automaticamente.
+Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Verrà .csv automaticamente un file denominato Feedback con la data, ad esempio "Feedbacks_10_31_2020.csv".
 
-## <a name="send-user-feedback-to-microsoft"></a>Inviare commenti e suggerimenti per gli utenti a Microsoft
+## <a name="send-user-feedback-to-microsoft"></a>Inviare commenti e suggerimenti degli utenti a Microsoft
 
-Per impostazione predefinita, tutti i commenti e suggerimenti degli utenti vengono inviati a Microsoft e oltre all'utente. Per interrompere l'invio di commenti e suggerimenti a Microsoft, fare clic su **Gestisci impostazioni** e deselezionare la casella **di controllo Invia automaticamente Commenti utente a Microsoft** . Per rendere effettive le modifiche, è possibile richiedere fino a 24 ore.
+Per impostazione predefinita, tutti i commenti e suggerimenti degli utenti vengono inviati a Microsoft e vengono aggiunte all'utente. Per interrompere l'invio di commenti e suggerimenti a Microsoft, fare clic **su Gestisci impostazioni** e deselezionare la casella di controllo Invia **automaticamente feedback utente a Microsoft.** L'applicazione di questa modifica può richiedere fino a 24 ore.
 
-Se si è deciso di non inviare automaticamente commenti e suggerimenti a Microsoft, è comunque possibile inviare singoli commenti a Microsoft.
+Se si è deciso di non inviare automaticamente commenti e suggerimenti a Microsoft, è comunque possibile inviare singoli commenti e suggerimenti a Microsoft.
 
-1. Selezionare il feedback che si desidera condividere.
-1. Nella barra delle azioni, selezionare altro (tre punti) e fare clic su **Invia commenti e suggerimenti a Microsoft**.
+1. Seleziona il feedback che vuoi condividere.
+1. Nella barra delle azioni seleziona Altro (tre puntini) e fai clic **su Invia feedback a Microsoft.**
 
-1. Lo stato della colonna inviato a Microsoft verrà modificato in sospeso. Quando il feedback viene inviato, verrà modificato in Sì.
+1. Lo stato nella colonna Inviato a Microsoft verrà modificato in In sospeso. Quando il feedback viene inviato, verrà modificato in Sì.
 
-Se si condividono commenti e suggerimenti automaticamente o manualmente, non vengono mai incluse query e altre informazioni di diagnostica per gli utenti che hanno scelto di non includere queste informazioni.
+Se condividi il feedback automaticamente o manualmente, non include mai query e altre informazioni di diagnostica per gli utenti che hanno scelto di non includere queste informazioni.
 
-## <a name="suggestions-on-how-to-use-feedback"></a>Suggerimenti su come utilizzare il feedback
+## <a name="suggestions-on-how-to-use-feedback"></a>Suggerimenti su come usare il feedback
 
-Come amministratore della ricerca, è necessario comprendere le principali persone dell'organizzazione e i tipi di contenuto in cui le persone in genere interagiscono e cercano. Con questa comprensione, è possibile utilizzare i commenti e suggerimenti per apportare miglioramenti mirati all'esperienza di ricerca degli utenti.
+L'amministratore della ricerca deve comprendere i principali utenti dell'organizzazione e i tipi di contenuto con cui gli utenti interagiscono e ricercano in genere. Grazie a questa conoscenza, puoi usare il feedback per apportare miglioramenti mirati all'esperienza di ricerca degli utenti.
 
-1. "Non ho trovato quello che cercavo" e il feedback simile può essere utilizzato per identificare gli utenti di contenuto desidera, ma non è attualmente incluso nell'indice di ricerca. La determinazione di questo richiede spesso indagini e inferenze in base alla comprensione degli utenti. Una volta trovato, decidere quali metodi di inclusione del contenuto sarebbero più adatti:
-    1. I segnalibri sono utili per le origini di contenuto con una pagina di destinazione di alta qualità e una varietà limitata di termini di ricerca, in modo che la community degli utenti ottenga un risultato di alta qualità dal segnalibro e possa quindi trovare in modo efficiente quello che stanno cercando.
-    1. Q&A sono utili per le risposte individuali che sono piuttosto frequenti, ma non cambiano.
-    1. I connettori sono utili per le origini di contenuto con una vasta gamma di contenuti e una vasta gamma di termini di ricerca.
-1. "I risultati sono stati troppo lunghi per caricare" & "ho trovato un problema" possono essere indicatori di un problema più ampio. La ricerca di questo feedback giornaliero può essere di aiuto e, se sono presenti più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di commenti e suggerimenti è importante anche per Microsoft ed è un ottimo motivo per riportare tutti i commenti e suggerimenti.
-1. "Si desidera suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il primo pensiero dovrebbe essere un segnalibro. Se il segnalibro ottiene un utilizzo elevato, è possibile prendere in considerazione la possibilità di portare contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.
+1. "Non ho trovato quello che cercavo" e un feedback simile può essere usato per identificare il contenuto desiderato dagli utenti, ma non è attualmente incluso nell'indice di ricerca. La determinazione di questo spesso richiede indagini e inferenza in base alla comprensione degli utenti. Una volta trovato, decidi quali metodi di inclusione del contenuto sarebbero più appropriati:
+    1. I segnalibri sono utili per le origini di contenuto con una pagina di destinazione di alta qualità e una varietà limitata di termini di ricerca, in modo che la community di utenti otterrà un risultato di alta qualità dal segnalibro e potrà quindi trovare in modo efficiente ciò che sta cercando.
+    1. D&A sono utili per singole risposte abbastanza frequenti, ma che non cambiano.
+    1. I connettori sono utili per le origini di contenuto con un'ampia gamma di contenuti e un'ampia varietà di termini di ricerca.
+1. "I risultati hanno richiesto troppo tempo per caricarsi" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
+1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ha un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.

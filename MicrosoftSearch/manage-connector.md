@@ -1,5 +1,5 @@
 ---
-title: Gestire i connettori di Microsoft Graph per Microsoft Search
+title: Gestire i connettori Graph Microsoft per Microsoft Search
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Gestire i connettori di Microsoft Graph per Microsoft Search.
-ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
-ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
+description: Gestire Microsoft Graph Connectors per Microsoft Search.
+ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52325169"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532909"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,11 +28,11 @@ Per accedere e gestire i connettori, è necessario essere designati come amminis
 
 ## <a name="connection-operations"></a>Operazioni di connessione
 
-Passare alla scheda [Connettori nell'interfaccia](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) di amministrazione di [Microsoft 365.](https://admin.microsoft.com)
+Passare alla [scheda Connettori nella](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com)
 
-Per ogni tipo di connettore, l'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com) supporta le operazioni illustrate nella tabella seguente:
+Per ogni tipo di connettore, [il interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) supporta le operazioni illustrate nella tabella seguente:
 
-Operazione | Connettori di Graph Microsoft | Connettori partner o grafico
+Operazione | Connettori di Graph Microsoft | Partner o Graph connettori
 --- | --- | ---
 Aggiungere una connessione | :heavy_check_mark: (Vedere Panoramica [dell'installazione](configure-connector.md)) | :x: (Fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
@@ -41,7 +41,7 @@ Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Monitorare lo stato della connessione
 
-Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** della pagina **Microsoft Search.** Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
+Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** pagina Microsoft Search connessione. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
 Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
@@ -51,7 +51,7 @@ Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
 * **Paused**. Le ricerche per indicizzazione vengono sospese dagli amministratori tramite l'opzione di sospensione. La ricerca per indicizzazione successiva viene eseguita solo quando viene ripresa manualmente. Tuttavia, i dati di questa connessione continuano a essere ricercabili.
 
-* **Operazione non riuscita.** Si è verificato un errore critico nella connessione. Questo errore richiede un intervento manuale. L'amministratore deve eseguire l'azione appropriata in base al messaggio di errore visualizzato. I dati indicizzati fino a quando non si è verificato l'errore sono ricercabili.
+* **Con errori**. Si è verificato un errore critico nella connessione. Questo errore richiede un intervento manuale. L'amministratore deve eseguire l'azione appropriata in base al messaggio di errore visualizzato. I dati indicizzati fino a quando non si è verificato l'errore sono ricercabili.
 
 * **Eliminazione non riuscita.** L'eliminazione della connessione non è riuscita. A seconda del motivo dell'errore, è possibile che i dati siano ancora indicizzati, che la quota degli elementi venga ancora utilizzata e che le ricerche per indicizzazione siano ancora in esecuzione per la connessione. Si consiglia di provare a eliminare di nuovo la connessione in questo stato.
 
@@ -62,16 +62,16 @@ La quota di indice e l'utilizzo disponibili vengono visualizzati nella pagina di
 ![Barra di utilizzo quota indice](media/quota_utilization.png)
  
 >[!NOTE]
->Durante il periodo di anteprima, a ogni organizzazione che provava i connettori Graph è stata fornita una quota fissa gratuita di un massimo di 2 milioni di elementi in tutte le connessioni. Con la disponibilità generale dei connettori Graph, la quota gratuita scadrà il 1° aprile 2021 per le organizzazioni che hanno utilizzato i connettori Graph in anteprima.
->I connettori Microsoft Graph etichettati come ["Anteprima"](./connectors-overview.md) non verranno inclusi nella quota di indice totale addebitata per l'organizzazione. Tuttavia, verrà conteggiato per il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni di elementi che l'organizzazione può indicizzare tra le connessioni. ogni connessione è limitata a 700.000 elementi. 
+>Durante il periodo di anteprima, a ogni organizzazione che prova Graph connettori è stata fornita una quota fissa gratuita di un massimo di 2 milioni di elementi in tutte le connessioni. Con Graph disponibili in genere, la quota gratuita scadrà il 1° aprile 2021 per le organizzazioni che hanno utilizzato Graph connettori in anteprima.
+>I connettori Graph microsoft etichettati come ["Anteprima"](./connectors-overview.md) non verranno inclusi nella quota di indice totale addebitata per l'organizzazione. Tuttavia, verrà conteggiato per il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni di elementi che l'organizzazione può indicizzare tra le connessioni. ogni connessione è limitata a 700.000 elementi. 
 
 La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo della quota da parte dell'organizzazione:
 
 Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
-Alta | 80-89%
-Critico | 90%-99%
+Alto | 80-89%
+Critiche | 90%-99%
 Full | 100%
 
 <!-- 

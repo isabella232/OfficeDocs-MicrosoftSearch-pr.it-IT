@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: 614fa241f353533b1c1e181904eb961fd55d0dfa
-ms.sourcegitcommit: ea784081bc9c3ae7981a87a493d3a74503859dda
+ms.openlocfilehash: 94161d3ac53ca72a9f8298674a53fdaa0a80caaf5ca3802d47ea693043a30530
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52306071"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533933"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Domande frequenti
@@ -29,9 +29,9 @@ Ecco un elenco delle domande più comuni.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La comprensione avanzata delle query è supportata?
 
-Sì, Microsoft Search analizza lo scopo delle query da frasi più grandi. Questa funzionalità usa l'intelligenza artificiale per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sulle loro finalità di ricerca. Ad esempio, quando un utente cerca altre informazioni su come modificare la *password,* estraiamo le parole meno importanti dalla query e il trigger in base a quelle rilevanti, ad esempio *cambia password.*
+Sì, Microsoft Search analizza lo scopo della query da frasi più grandi. Questa funzionalità usa l'intelligenza artificiale per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sulle loro finalità di ricerca. Ad esempio, quando un utente cerca altre informazioni su come modificare la *password,* estraiamo le parole meno importanti dalla query e il trigger in base a quelle rilevanti, ad esempio *cambia password.*
   
-Questa funzionalità non sostituisce le parole chiave impostate [nell'Microsoft 365 di amministrazione.](https://admin.microsoft.com)
+Questa funzionalità non sostituisce le parole chiave impostate nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
   
 ## <a name="can-you-search-for-files-on-premises"></a>È possibile cercare file in locale?
 
@@ -59,4 +59,4 @@ I dettagli sono disponibili nelle pagine [del Centro protezione per Office 365](
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Gli utenti guest possono sfruttare Microsoft Search nell'organizzazione?
 
-Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti saranno in grado di eseguire operazioni di ricerca su documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non otterrà l'esperienza completa, personalizzata di Microsoft Search e potrebbe essere necessario sfruttare la casella di ricerca nella pagina anziché la casella unificata di Microsoft Search nell'intestazione.
+Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti saranno in grado di eseguire operazioni di ricerca su documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non riceveranno l'esperienza completa, personalizzata e Microsoft Search e potrebbe essere necessario utilizzare la casella di ricerca nella pagina anziché la casella di Microsoft Search unificata nell'intestazione.

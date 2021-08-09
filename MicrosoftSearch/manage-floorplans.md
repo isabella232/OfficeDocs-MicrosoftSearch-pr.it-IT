@@ -1,5 +1,5 @@
 ---
-title: Gestire i piani di piano
+title: Gestire le planimetrie
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
@@ -11,161 +11,161 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: La caratteristica planimetria di Microsoft Search aiuta gli utenti a trovare persone, uffici e altre amenità all'interno di un edificio.
-ms.openlocfilehash: c1a3c30f98408a6d98f34c41f4132bcca0bd316e
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: Le planimetrie sono disponibili in Microsoft Search consente agli utenti di trovare persone, uffici e altri servizi all'interno di un edificio.
+ms.openlocfilehash: 6ca32db0afafe328d872b87c2ba7ebf5bee40148ae8aea089e097a3b6ec4dedf
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422920"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533718"
 ---
-# <a name="manage-floor-plans"></a>Gestire i piani di piano
+# <a name="manage-floor-plans"></a>Gestire le planimetrie
 
-Planimetrie nella Guida di **Microsoft Search** gli utenti possono trovare persone e sale riunioni all'interno di un edificio. Planimetrie rispondere alle seguenti domande:
+Le planimetrie in **Microsoft Search** aiutare gli utenti a trovare persone e sale riunioni all'interno di un edificio. Le planimetrie rispondano alle domande seguenti:
 
-- Dove si trova Allan DeYoung ' s Office?
+- Dov'è l'ufficio di Allan Deyoung?
 - Edificio 2 piano 3
-- Trovare 2/11173
+- Trova 11173/02/2
 
-## <a name="add-floor-plans"></a>Aggiungere piani di piano
+## <a name="add-floor-plans"></a>Aggiungere planimetrie
 
-Seguire questa procedura per configurare le risposte ai piani di piano in **Microsoft Search**.
+Seguire questa procedura per configurare le risposte alle planimetrie in **Microsoft Search**.
 
-### <a name="step-1-determine-your-building-codes"></a>Passaggio 1: determinare i codici di costruzione
+### <a name="step-1-determine-your-building-codes"></a>Passaggio 1: Determinare i codici predefiniti
 
-I codici predefiniti vengono utilizzati come parte di una posizione di Office dell'utente. Questi codici vengono utilizzati per l'aggiornamento dei profili utente. Si supponga che l'organizzazione disponga di un edificio in questa posizione: *Building 2, 350 5th Avenue, New York City, NY 10016*
+I codici predefiniti vengono utilizzati come parte della sede dell'utente. Questi codici verranno utilizzati per l'aggiornamento dei profili utente. Supponiamo che l'organizzazione abbia un edificio in questa posizione: *Building 2, 350 5th Avenue, New York City, NY 10016*
 
-Di seguito sono riportati alcuni esempi validi per il codice di questo edificio: 2, B2, Building2, Building 2 o NYCB2. Ogni edificio deve disporre di un codice univoco.
+Ecco alcuni esempi per il codice di questo edificio: 2, B2, Building2, Building 2 o NYCB2. Ogni edificio deve avere un codice univoco.
 
-### <a name="step-2-review-your-floor-plans"></a>Passaggio 2: esaminare le planimetrie
+### <a name="step-2-review-your-floor-plans"></a>Passaggio 2: rivedere le planimetrie
 
-I file planimetrici devono essere in formato DWG; I file DWG possono contenere etichette di testo. Quando un'etichetta di testo contrassegna una stanza, viene definita etichetta della sala. Il file DWG deve disporre **di almeno 10 sale** contrassegnate con etichette. Di seguito sono riportati alcuni esempi di file DWG con tipi di etichette diversi:
+I file delle planimetrie devono essere in formato DWG; I file DWG possono contenere etichette di testo. Quando un'etichetta di testo contrassegna una sala, viene definita etichetta di sala. Il file DWG deve avere **almeno 10 sale** contrassegnate con etichette. Ecco alcuni esempi di file DWG con diversi tipi di etichetta:
 
-|**Etichette di testo incluse le etichette delle sale**|**Etichette di testo ma senza etichette sala**|**Nessuna etichetta di testo**|
+|**Etichette di testo che includono etichette sala**|**Etichette di testo ma nessuna etichetta sala**|**Nessuna etichetta di testo**|
 |:-----:|:-----:|:-----:|
 |![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
-Per informazioni sulla visualizzazione e l'aggiornamento dei file DWG, vedere la sezione [FAQ](#frequently-asked-questions) .
+Per informazioni [sulla visualizzazione](#frequently-asked-questions) e sull'aggiornamento dei file DWG, vedere la sezione Domande frequenti.
 
-### <a name="step-3-update-office-locations-on-user-profiles"></a>Passaggio 3: aggiornare i percorsi di Office nei profili utente
+### <a name="step-3-update-office-locations-on-user-profiles"></a>Passaggio 3: Aggiornare le posizioni degli uffici nei profili utente
 
-L'ubicazione dell'ufficio di un utente è una combinazione di un codice edilizio e di un'etichetta sala. Ad esempio, se il codice di costruzione è *2* e l'etichetta della sala è *1173*, la posizione di Office sarebbe *2/1173*.
+La sede di un utente è una combinazione di un codice di edificio e di un'etichetta di sala. Ad esempio, se il codice dell'edificio è *2* e l'etichetta della sala è *1173,* la posizione dell'ufficio sarà *2/1173*.
 
-Aggiungere o aggiornare le posizioni di Office per ogni utente dell'organizzazione. È possibile modificare il percorso di Office nel profilo utente nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) oppure cambiare in Active Directory locale per la sincronizzazione in Azure Active Directory. *PhysicalDeliveryOfficeName* è il campo utilizzato per la posizione di Office. Se le etichette delle chat room non includono i numeri di piano, vedere le domande frequenti sui suggerimenti.
+Aggiungere o aggiornare le posizioni di office per ogni utente dell'organizzazione. È possibile modificare la posizione dell'ufficio nel profilo utente nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) oppure modificare Active Directory locale per la sincronizzazione con Azure Active Directory. *PhysicalDeliveryOfficeName è* il campo utilizzato per la posizione dell'ufficio. Se le etichette delle chat room non includono numeri di piano, vedere le domande frequenti per suggerimenti.
 
-In questo esempio, l'ufficio di Allan è nella sala 1173 al piano 1 dell'edificio 2.
+In questo esempio, l'ufficio di Allan si trova nella sala 1173 al piano 1 dell'edificio 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
 
 > [!NOTE]
-> Per visualizzare le posizioni di Office aggiornate durante la ricerca di planimetrie, è necessario aggiornare le posizioni di Office per **almeno 10 persone** su ogni piano.
+> Per visualizzare le posizioni degli uffici aggiornate durante la ricerca delle planimetrie, è necessario aggiornare le posizioni degli uffici per almeno **10** persone su ogni piano.
 
-### <a name="step-4-verify-office-location"></a>Passaggio 4: verificare la posizione di Office
+### <a name="step-4-verify-office-location"></a>Passaggio 4: Verificare la posizione dell'ufficio
 
-Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizione dell'ufficio venga visualizzata correttamente. Se le posizioni sono appena aggiornate, potrebbe essere necessario attendere fino a **72 ore** affinché gli aggiornamenti vengano visualizzati nei risultati della ricerca.
+Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizione dell'ufficio sia visualizzata correttamente. Se le posizioni sono state appena aggiornate, potrebbe essere necessario attendere fino a **72 ore** prima che gli aggiornamenti vengano visualizzati nei risultati della ricerca.
 
 ![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
 
-### <a name="step-5-add-building-locations"></a>Passaggio 5: aggiungere percorsi di compilazione
+### <a name="step-5-add-building-locations"></a>Passaggio 5: Aggiungere posizioni di edificio
 
-Planimetrie utilizza le [posizioni](manage-locations.md) per definire gli edifici. Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com)accedere a [**percorsi**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immettere il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessari.
+Le planimetrie [del piano utilizzano Posizioni](manage-locations.md) per definire gli edifici. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immetti il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessario.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
-Per ulteriori informazioni sulle posizioni, vedere [Manage locations](manage-locations.md)
+Per ulteriori dettagli sulle posizioni, vedere [Manage Locations](manage-locations.md)
 
-### <a name="step-6-gather-and-organize-office-locations"></a>Passaggio 6: raccogliere e organizzare percorsi di Office
+### <a name="step-6-gather-and-organize-office-locations"></a>Passaggio 6: Raccogliere e organizzare le posizioni degli uffici
 
-Prima di poter utilizzare planimetrie, le posizioni di Office devono essere indicizzate. Si tratta di un'operazione di una tantum che può richiedere fino a 48 ore per il completamento. Il tempo totale dipenderà dalle dimensioni dell'organizzazione.
+Prima di poter utilizzare le planimetrie, è necessario indicizzare le posizioni degli uffici. Si tratta di un'operazione una sola volta che può richiedere fino a 48 ore per il completamento. Il tempo totale dipende dalle dimensioni dell'organizzazione.
 
-In interfaccia di [Amministrazione](https://admin.microsoft.com), vai a [**planimetrie**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), quindi seleziona **inizia**. Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
+[Nell'interfaccia di](https://admin.microsoft.com)amministrazione passare [**a Piani di**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)piano e quindi selezionare **Introduzione.** Se non viene visualizzato questo avviso, questo passaggio è già stato completato per l'organizzazione
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
-### <a name="step-7-upload-floor-plans"></a>Passaggio 7: caricare planimetrie
+### <a name="step-7-upload-floor-plans"></a>Passaggio 7: Upload piani
 
-1. Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), [**andare a planimetrie**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
-2. Selezionare un edificio nell'elenco a discesa e quindi fare clic su **Avanti**. Se l'edificio non è elencato, tornare indietro e [aggiungere le posizioni degli edifici](#step-5-add-building-locations).
-3. Selezionare **Carica file**e quindi scegliere la planimetria da caricare.
-4. Al termine del caricamento, è necessario immettere il numero di piano rappresentato nel file planimetria. Quindi, scegliere **Avanti**.
-5. Optional Se il tuo piano ha ali o zone, Inserisci quel dettaglio.
-6. Verrà visualizzata una schermata di revisione in cui viene elencato il numero di percorsi di Office mappati alle planimetrie. Selezionare **Dettagli** per assicurarsi che il mapping sia corretto.
-    - Se non sono stati mappati utenti o non si è soddisfatti del mapping, selezionare **continua mapping**. Per la pubblicazione, selezionare **Ignora e pubblica**.
-7. Immettere il codice predefinito per la planimetria. Il codice di costruzione può essere trovato nella proprietà posizione di Office degli utenti. Ad esempio, se l'ubicazione dell'ufficio di un utente è **2/1173**, il codice di costruzione è **2**.
-8. Nella schermata Revisione, ripetere il passaggio 6 per assicurarsi che il mapping sia corretto.
-9. Optional Esaminare e identificare i modelli di posizione per tutti i piani di pavimento caricati e quindi selezionare **Avanti**.
-10. Nella schermata Revisione, ripetere il passaggio 6 per assicurarsi che il mapping sia corretto.
-11. Quando si è pronti, selezionare **pubblica** per rendere disponibile la planimetria in **Microsoft Search**.
+1. [Nell'interfaccia di amministrazione](https://admin.microsoft.com)passare a Piani di [**piano**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
+2. Selezionare un edificio nell'elenco a discesa e selezionare **Avanti.** Se l'edificio non è elencato, tornare indietro e [aggiungere posizioni dell'edificio.](#step-5-add-building-locations)
+3. Selezionare **Upload file** e quindi scegliere la planimetria da caricare.
+4. Al termine del caricamento, è necessario immettere il numero di piano rappresentato nel file della planimetria. Quindi, scegliere **Avanti**.
+5. (Facoltativo) Se il pavimento ha ali o zone, immettere tale dettaglio.
+6. Verrà visualizzata una schermata di revisione che elenca il numero di sedi di uffici mappate alle planimetrie. Selezionare **Dettagli** per verificare che il mapping sia corretto.
+    - Se nessun utente è mappato o non si è soddisfatti del mapping, selezionare **Continua mapping**. Per pubblicare, selezionare **Ignora e pubblica**.
+7. Immettere il codice dell'edificio per questa planimetria. Il codice dell'edificio è disponibile nella proprietà della sede dell'utente. Ad esempio, se la sede di un utente è **2/1173,** il codice di edificio è **2**.
+8. Nella schermata di revisione ripetere il passaggio 6 per verificare che il mapping sia corretto.
+9. (Facoltativo) Esaminare e identificare i modelli di posizione per tutte le planimetrie caricate e quindi selezionare **Avanti.**
+10. Nella schermata di revisione ripetere il passaggio 6 per verificare che il mapping sia corretto.
+11. Quando si è pronti, selezionare **Pubblica** per rendere disponibile la planimetria in **Microsoft Search**.
 
 > [!NOTE]
-> **Sono necessarie 48 ore per la pubblicazione delle planimetrie.** Dopo di che gli utenti visualizzeranno un piano di base simile a quello riportato di seguito quando eseguono la ricerca di un ufficio del collega.
+> **La pubblicazione delle planimetrie di piano richiede 48 ore.** Dopo di che gli utenti potranno visualizzare i risultati di una planimetria simile a quella riportata di seguito quando ricercano l'ufficio di un collega.
 
 ![floorplans-officelocation.png](media/floorplans-officelocation.png)
 
-### <a name="step-8-optional-specify-location-patterns"></a>Passaggio 8: (facoltativo) specificare i modelli di posizione
+### <a name="step-8-optional-specify-location-patterns"></a>Passaggio 8: (facoltativo) Specificare i modelli di posizione
 
-Dopo aver caricato una planimetria, le etichette di testo verranno confrontate con le posizioni di Office nei profili degli utenti. Se sono presenti meno di 10 corrispondenze, viene visualizzata la schermata **specifica percorsi percorso** . I modelli di posizione vengono utilizzati per estrarre le informazioni relative a pavimento, ala e sala dalle posizioni di Office.
+Dopo aver caricato una planimetria, le etichette di testo verranno confrontate con le posizioni dell'ufficio nei profili degli utenti. Se sono presenti meno di 10 corrispondenze, viene visualizzata la **schermata Specifica modelli** di posizione. I modelli di posizione vengono utilizzati per estrarre informazioni su pavimento, ala e sala dalle posizioni degli uffici.
 
 ![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
 
-È richiesta solo la sala, il piano e l'ala sono facoltativi ed è possibile ignorare le posizioni in base alle esigenze.
+Solo la sala è necessaria, il pavimento e l'ala sono facoltativi ed è possibile saltare le posizioni in base alle esigenze.
 
-## <a name="edit-floor-plans"></a>Modificare i piani di piano
+## <a name="edit-floor-plans"></a>Modificare le planimetrie
 
-Per aggiornare una planimetria esistente, selezionare la planimetria che si desidera modificare e quindi fare clic su **modifica**. Apportare le modifiche e salvarle.
+Per aggiornare una planimetria esistente, selezionare la planimetria che si desidera modificare e quindi scegliere **Modifica**. Apportare le modifiche e salvarle.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 |**Passaggio**|**Messaggio di errore**|**Type**|**Azione**|
 |:-----|:-----|:-----|:-----|
-|Caricare planimetrie|Impossibile leggere CC_1. dwg. Ricaricare o eliminare la planimetria.|Error|Provare a caricare di nuovo il file. Se non funziona, eliminare il file e riprovare.|
-|Caricare planimetrie|Sono disponibili due file denominati CC_1. dwg. Si prega di eliminare uno di essi o di ricaricare con un altro nome.|Error|Se il nome del file non è corretto, rendere il nome del file univoco aggiungendo informazioni su piano o ala e quindi caricare di nuovo il file. Se è stato aggiunto per sbaglio lo stesso file due volte basta eliminarlo.|
-|Caricare planimetrie|Nessun dato trovato.|Error|Controllare il file per assicurarsi che sia quello corretto e quindi caricarlo di nuovo oppure eliminarlo.|
-|Caricare planimetrie|I riferimenti esterni sono mancanti in questo file. Caricare CC_1_furniture. DWG o eliminare il file.|Avviso|Caricare i file di riferimento esterni o eliminare.|
-|Caricare planimetrie|Non è stato possibile leggere i numeri o i tag delle sale nel file DWG. Eliminare il file.|Avviso|Controllare il file DWG per assicurarsi che i dati siano inclusi e quindi eliminare il file e riprovare.|
-|Collegamento tra percorsi di Office|Nessuna posizione di Office trovata in Azure Active Directory. Aggiungere i dati della posizione ad Azure Active Directory prima di impostare piani di base.|Error|[Aggiornare le posizioni di Office nei profili utente](#step-3-update-office-locations-on-user-profiles) |
+|Upload piani|Impossibile leggere CC_1.dwg. Ricaricare o eliminare la planimetria.|Error|Provare a caricare di nuovo il file. Se non funziona, eliminare il file e riprovare.|
+|Upload piani|Esistono due file denominati CC_1.dwg. Eliminarne uno o caricarlo di nuovo con un altro nome.|Error|Se il nome del file non è corretto, rendi univoco il nome del file aggiungendo informazioni sul piano o sull'ala e quindi carica di nuovo il file. Se lo stesso file è stato aggiunto accidentalmente due volte, è sufficiente eliminarlo.|
+|Upload piani|Nessun dato trovato.|Error|Controlla il file per assicurarti che sia quello corretto e quindi caricalo di nuovo o eliminalo.|
+|Upload piani|Riferimenti esterni mancanti in questo file. Caricare CC_1_furniture.dwg o eliminare questo file.|Avviso|Upload file di riferimento esterni o eliminare.|
+|Upload piani|Impossibile leggere i numeri di sala o i tag nel file DWG. Eliminare questo file.|Avviso|Controllare il file DWG per verificare che i dati siano inclusi, quindi eliminare il file e riprovare.|
+|Collegare le posizioni dell'ufficio|Nessuna posizione dell'ufficio trovata in Azure Active Directory. Aggiungere i dati sulla posizione Azure Active Directory prima di configurare le planimetrie.|Error|[Aggiornare le posizioni degli uffici nei profili utente](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**D:** Come visualizzare e modificare i file DWG?
+**D:** Come si visualizzano e modificano i file DWG?
 
-**A:** Utilizzare una o più delle seguenti opzioni per visualizzare i file DWG:
+**A:** Utilizzare una delle opzioni seguenti per visualizzare i file DWG:
 
-- Caricare il file in SharePoint e aprirlo.
-- Aprire il file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) o [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
-- Caricare il file nel [Visualizzatore online di Autodesk](https://viewer.autodesk.com/).
+- Upload il file da SharePoint e aprirlo.
+- Aprire il file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) o in [Autodesk DWG TrueView.](https://www.autodesk.com/products/dwg)
+- Upload il file in [Visualizzatore online di Autodesk.](https://viewer.autodesk.com/)
 
-**D:** Come si aggiungono le etichette di testo alle sale non contrassegnate?
+**D:** Come si aggiungono etichette di testo alle sale non contrassegnate?
 
-**A:** Aprire il file DWG in un editor e [aggiungere le etichette della sala](https://knowledge.autodesk.com/support/autocad-map-3d/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/MAP3D-Learn/files/GUID-4854F184-6279-4E0C-9487-34A4759017F6-htm.html).
+**A:** Aprire il file DWG in un editor e [aggiungere etichette di sala](https://knowledge.autodesk.com/support/autocad-map-3d/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/MAP3D-Learn/files/GUID-4854F184-6279-4E0C-9487-34A4759017F6-htm.html).
 
-**D:** Come creare o modificare file DWG a scopo di testing?
+**D:** Come si creano o si modificano i file DWG a scopo di test?
 
-**A:** Creare un file DWG in Microsoft Visio, Autodesk AutoCAD o qualsiasi altro editor DWG. Verificare che 10 o più sale siano etichettate nel file.
+**A:** Crea un file DWG in Microsoft Visio, Autodesk AutoCAD o in qualsiasi altro editor DWG. Assicurati che nel file siano etichettate 10 o più sale.
 
 **D:** Qual è il formato migliore per le etichette di testo nei file DWG?
 
-**A:** Per ottenere risultati ottimali, le etichette di testo devono contenere numeri di piano e numeri di stanza. Negli esempi riportati di seguito viene utilizzato 2 o SC per il codice di costruzione.
+**A:** Per ottenere risultati ottimali, le etichette di testo devono contenere numeri di piano e numeri di sala. Negli esempi seguenti viene utilizzato 2 o SC per il codice di compilazione.
 <!-- markdownlint-disable no-inline-html -->
-|Tipi di etichetta sala|Piano|Room|Etichetta di testo di esempio|Posizione di Office (codice di costruzione/etichetta di testo)|
+|Tipi di etichette sala|Floor|Room|Etichetta di testo di esempio|Office percorso (codice di compilazione/etichetta di testo)|
 |:-----|:-----|:-----|:-----|:-----|
-|Ha il piano e il numero della sala|1 |173|1173|2/1173|
+|Ha piano e numero di sala|1|173|1173|2/1173|
 || 21|45|21045|2/21045|
-||23|100K|23-100K|2/23-100K|
-||1 |G06-07|1G06-07|2/1G06-07|
-||2 |1024A|02.1024 a|2/02.1024 a|
-||2 |1024A|02.1024 a|2/02.1024 a|
-||2 |105,01|2105,01|2/2105.01|
-|Contiene codice di costruzione, piano e numero di sala|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
-||2 |128A|22128A|2/22128A<br/>22128A|
-||1 |B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
-||2 |45|SC2045|SC/SC2045<br/>SC2045|
+||23|100K|23-100K|23/02/100.00|
+||1|G06-07|1G06-07|2/1G06-07|
+||2|1024A|02.1024A|2/02.1024A|
+||2|1024A|02.1024A|2/02.1024A|
+||2|105.01|2105.01|2/2105.01|
+|Ha codice di edificio, piano e numero di sala|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
+||2|128A|22128A|2/22128A<br/>22128A|
+||1|B2-11|21-B2-11|21/2/2-B2-11<br/>21-B2-11|
+||2|45|SC2045|SC/SC2045<br/>SC2045|
 
-**D:** È possibile utilizzare un file DWG che non include I numeri di piano?
+**D:** Posso usare un file DWG che non include i numeri di piano?
 
-**A:** Sì, è possibile. Quando si aggiornano le posizioni di Office nel profilo di Azure Active Directory dell'utente, includere il numero di piano come parte del numero di stanza, anche se non è presente nel file DWG. Dopo aver caricato il file, viene visualizzata la schermata Specifica percorso modelli che consente di indicare entrambi i valori.
+**A:** Sì, è possibile. Quando si aggiornano le posizioni degli uffici nel profilo Azure Active Directory dell'utente, includere il numero di piano come parte del numero di sala, anche se non è presente nel file DWG. Dopo aver caricato il file, verrà visualizzata la schermata Specifica modelli di posizione e potrai indicare entrambi i valori.
 
-Ad esempio, un file DWG che include numeri di stanza, ma senza numeri di piano, può essere simile al seguente:
+Ad esempio, un file DWG che include numeri di sala, ma nessun numero di piano, può essere simile al seguente:
 
 ![floorplans-nofloors.png](media/floorplans-nofloors.png)
 
-La posizione di Office nel profilo dell'utente deve essere 2/1175, dove ' 2' è il codice dell'edificio,' 1' è il numero di piano è 175' è il numero della sala.
+La posizione dell'ufficio nel profilo dell'utente deve essere 2/1175, dove "2" è il codice dell'edificio, "1" è il numero del piano e "175" è il numero della sala.

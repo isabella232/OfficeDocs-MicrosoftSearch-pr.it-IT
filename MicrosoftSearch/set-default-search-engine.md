@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Informazioni su come impostare Bing come motore di ricerca predefinito dell'organizzazione con Microsoft Search.
-ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031756"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534195"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Impostare Bing come motore di ricerca predefinito
   
@@ -42,11 +42,11 @@ Ogni dominio gestito dal controller deve ottenere una cartella separata. Per cop
 4. Applicare l'oggetto Criteri di gruppo risultante collegandolo al dominio appropriato.
 
 
-## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Google Chrome in Windows 10, versione 1507 o successiva
+## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Google Chrome in Windows 10 versione 1507 o successiva
 
 Gli utenti non potranno modificare il motore di ricerca predefinito dopo aver impostato il criterio.
   
-Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX dalla Guida [di Google Chrome Enterprise.](https://support.google.com/chrome/a/answer/187202)
+Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX da [Google Chrome Enterprise Guida.](https://support.google.com/chrome/a/answer/187202)
   
 Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione seguente: **%systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
   

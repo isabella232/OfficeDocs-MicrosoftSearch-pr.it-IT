@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Ottenere suggerimenti di ricerca pertinenti e trovare risultati di lavoro più velocemente aggiungendo una Microsoft Search di ricerca al sito o alla pagina Intranet.
-ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449062"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533394"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Aggiungere una casella di ricerca al sito Intranet
 

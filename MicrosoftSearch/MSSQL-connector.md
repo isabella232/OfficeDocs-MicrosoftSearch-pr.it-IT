@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
-ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
+ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590262"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533510"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,7 @@ Questo articolo è per tutti gli utenti che configurano, esere e monitorano un c
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installare l'Graph connettore (necessario solo per il connettore Microsoft SQL Server locale)
 
-Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)
+Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)
 
 >[!NOTE]
 >Se si utilizza l'autenticazione Windows durante la configurazione del connettore Microsoft SQL Server Graph, l'utente con cui si sta tentando di accedere deve disporre dei diritti di accesso interattivo per il computer in cui è installato l'agente connettore di Graph. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso.
@@ -124,7 +124,7 @@ Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connetto
 | ------------ | ------------ | ------------ |
 | Data e ora | data <br> datetime <br> datetime2 <br> smalldatetime | datetime |
 | Numero esatto | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Numero esatto | bit | boolean |
+| Numero esatto | bit | booleano |
 | Numero approssimativo | float <br> real | double |
 | Stringa di caratteri | char <br> varchar <br> text | stringa |
 | Stringhe di caratteri Unicode | nchar <br> nvarchar <br> ntext | stringa |

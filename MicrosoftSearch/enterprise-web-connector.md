@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Enterprise web Graph per Microsoft Search
-ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449047"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533081"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -79,7 +79,7 @@ Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
 
 La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, sia cloud che locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
 
-Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente Graph connettore. Per ulteriori informazioni, vedere [Graph connector agent](./on-prem-agent.md).
+Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente Graph connettore. Per ulteriori informazioni, vedere [Graph connector agent](./graph-connector-agent.md).
 
 Per i siti Web locali, selezionare Agente come  modalità di ricerca per indicizzazione e nel campo Agente locale scegliere l'agente connettore di Graph installato e configurato in precedenza.   
 

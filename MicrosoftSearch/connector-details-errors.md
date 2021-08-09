@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli ed errori dei connettori
-ms.openlocfilehash: 6b1368818668c94a92f575609e953effe6cf21c1
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: b3fe584447191476d4100d5be9d5f23ca641d31a69d71f4e25698735190e78ed
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031306"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533268"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "51031306"
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratore della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning del ruolo di amministratore della ricerca.
 
-Passare alla scheda [Connettori nell'interfaccia](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) di amministrazione di [Microsoft 365.](https://admin.microsoft.com)
+Passare alla [scheda Connettori nella](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com)
 
 È possibile visualizzare i dettagli della connessione e gli errori quando si fa clic sulla connessione nella [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).  
 
@@ -61,14 +61,14 @@ Codice di errore | Messaggio di errore | Soluzione
 1001 | Impossibile aggiornare i dati, perché l'origine dati sta limitando il connettore. | Per annullare la limitazione dell'origine dati, verificare se i relativi limiti di scala possono essere aumentati o attendere fino a quando non si verifica un'ora meno pesante del giorno.
 1002 | Impossibile eseguire l'autenticazione con l'origine dati. Verificare che le credenziali associate all'origine dati siano corrette. | Fare **clic su** Modifica per aggiornare le credenziali di autenticazione.
 1003 | L'account associato al connettore non dispone dell'autorizzazione per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
-1004 | Impossibile raggiungere il gateway dati locale. Verificare che il servizio gateway sia in esecuzione e che i dettagli del gateway siano aggiornati nella configurazione della connessione. | Controllare il computer con il gateway, aprire l'applicazione gateway Power BI e verificare che il gateway sia in esecuzione. Verificare che il gateway utilizzi lo stesso account amministratore di Microsoft Search, quindi verificare che tutti i dettagli del gateway siano tutti aggiornati nella configurazione della connessione.
+1004 | Impossibile raggiungere il gateway dati locale. Verificare che il servizio gateway sia in esecuzione e che i dettagli del gateway siano aggiornati nella configurazione della connessione. | Controllare il computer con il gateway, aprire l'applicazione Power BI Gateway e verificare che il gateway sia in esecuzione. Verificare che il gateway utilizzi lo stesso account amministratore Microsoft Search, quindi verificare che tutti i dettagli del gateway siano tutti aggiornati nella configurazione della connessione.
 1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare **clic su** Modifica per aggiornare le credenziali di autenticazione.
 1006 | La versione del gateway non è aggiornata e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [Installare un gateway](/data-integration/gateway/service-gateway-install) dati locale per scaricare e installare la versione più recente del gateway Power BI nel computer contenente il gateway.
-1007 | Nessuna licenza di Power BI valida rilevata. Per eseguire questa ricerca per indicizzazione è necessaria una licenza di Power BI valida. | Per eseguire questa ricerca per indicizzazione è necessaria una licenza di Power BI valida. Verificare che l'organizzazione abbia una licenza valida. In caso contrario, riprovare. In caso contrario, ottenere una licenza e riprovare.
+1007 | Nessuna licenza Power BI valida rilevata. Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. | Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. Verificare che l'organizzazione abbia una licenza valida. In caso contrario, riprovare. In caso contrario, ottenere una licenza e riprovare.
 1008 | L'utilizzo totale della quota del tenant ha raggiunto il limite. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1009 | L'utilizzo totale della quota per la connessione ha raggiunto il limite. | Prova a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1010 | L'utilizzo totale della quota per l'indicizzazione di gruppi non Azure AD ha raggiunto il limite di 100.000. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
-1011 | L'agente [connettore Graph](on-prem-agent.md) non è raggiungibile o offline. | 
+1011 | L Graph [connettore non](graph-connector-agent.md) è raggiungibile o offline. | 
 1012 | Autenticazione della connessione non riuscita a causa di una modalità di autenticazione non supportata. | Modificare la connessione per aggiornare le impostazioni di autenticazione per la connessione.
 2001 | L'indicizzazione viene limitato a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga cancellata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere la documentazione specifica del connettore.

@@ -1,5 +1,5 @@
 ---
-title: Gestione della casella di ricerca nei siti di SharePoint
+title: Gestione della casella di ricerca nei SharePoint siti
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,24 +11,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Come personalizzare l'esperienza della casella di ricerca nei siti di SharePoint
-ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Come personalizzare l'esperienza della casella di ricerca SharePoint siti
+ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031360"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533582"
 ---
-# <a name="search-box-settings-on-sharepoint-sites"></a>Impostazioni della casella di ricerca nei siti di SharePoint
+# <a name="search-box-settings-on-sharepoint-sites"></a>Impostazioni della casella di ricerca SharePoint siti
 
-Uno dei diversi modi in cui Microsoft Search può essere personalizzato nei siti di SharePoint è personalizzare il funzionamento della casella di ricerca nella barra di spostamento della famiglia di prodotti nei siti di SharePoint in base alle proprie esigenze.
+Uno dei diversi modi Microsoft Search personalizzare i siti di SharePoint è quello di personalizzare il funzionamento della casella di ricerca nella barra di spostamento della famiglia di SharePoint in base alle proprie esigenze.
 
-Per altre opzioni di personalizzazione, vedere Modifica della pagina dei risultati di Microsoft Search per aggiungere [verticali,](customize-search-page.md)tipi di risultati e layout personalizzati e [Creazione di una pagina dei risultati di ricerca personalizzata.](create-search-results-pages.md)
+Per altre opzioni di personalizzazione, vedere [Changing the Microsoft Search results page to add custom verticals, result types and layouts](customize-search-page.md)e Creating a custom search results [page.](create-search-results-pages.md)
 
 > [!NOTE]
 > La casella di ricerca della barra di spostamento della famiglia di prodotti non è disponibile per tutti i clienti in questo momento, ma queste opzioni possono comunque essere impostate ora e diventeranno effettive quando saranno disponibili.
 
-Per le attività elencate di seguito, si utilizzerà PowerShell con le estensioni di PowerShell PnP di SharePoint. Puoi installare e altre informazioni su come iniziare [qui](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). Per accedere al sito o alla raccolta siti, utilizzare questo comando:
+Per le attività elencate di seguito, si userà PowerShell con SharePoint powershell PnP. Puoi installare e altre informazioni su come iniziare [qui](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps). Per accedere al sito o alla raccolta siti, utilizzare questo comando:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Modifica dell'ambito della ricerca
 
-Quando si crea un nuovo sito in SharePoint Online oggi e si digita nella casella di ricerca, viene visualizzata la pagina dei risultati di Microsoft Search. Questa pagina mostra i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca fino all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
+Quando si crea un nuovo sito in SharePoint Online oggi e si digita nella casella di ricerca, viene visualizzata la pagina dei Microsoft Search risultati. Questa pagina mostra i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca fino all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
 
 L'ambito utilizzato dalla casella di ricerca, per impostazione predefinita, dipende dal tipo di sito.
 
@@ -84,11 +84,11 @@ Esistono diversi punti da considerare:
 
 * Questa impostazione si applica solo alla casella di ricerca nella barra di spostamento della famiglia di prodotti. Non si applica alle caselle di ricerca presenti nella pagina o alle caselle di ricerca nelle pagine classiche.
 
-* Dopo aver disabilitato la casella di ricerca nella barra di spostamento, se si desidera utilizzare la funzionalità di ricerca nel sito, sarà necessario fornirla manualmente utilizzando una web part personalizzata o un'estensione di SharePoint Framework.
+* Dopo aver disabilitato la casella di ricerca nella barra di spostamento, se si desidera utilizzare la funzionalità di ricerca nel sito, sarà necessario fornirla manualmente utilizzando una web part personalizzata o un'estensione SharePoint Framework ricerca.
 
-* Questa soluzione rimuoverà la casella di ricerca anche dagli elenchi e dalle raccolte per il sito. La soluzione di ricerca personalizzata dovrà prendere in considerazione le ricerche contestuali per elenchi e raccolte di SharePoint, oltre alla ricerca a livello di sito.
+* Questa soluzione rimuoverà la casella di ricerca anche dagli elenchi e dalle raccolte per il sito. La soluzione di ricerca personalizzata dovrà prendere in considerazione le ricerche contestuali per SharePoint elenchi e raccolte, oltre alla ricerca a livello di sito.
 
-* Se si applica l'impostazione al sito radice del dominio, anche la pagina iniziale di SharePoint smetterà di visualizzare la casella di ricerca.
+* Se si applica l'impostazione al sito radice del dominio, anche la pagina iniziale SharePoint verrà interrotta la visualizzazione della casella di ricerca.
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>Modifica del suggerimento visualizzato nella casella di ricerca
 

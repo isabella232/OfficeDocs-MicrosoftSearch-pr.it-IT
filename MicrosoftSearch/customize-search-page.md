@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
-ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
+ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463227"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533066"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -180,8 +180,8 @@ L'operatore "|" deve essere utilizzato per la risoluzione delle variabili multiv
 
 | #         | Sintassi |  Valore restituito  |
 | --------- | ------ | --- |
-| 1     | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
-| 2  | MyProperty:{Profile.emails}   |    {Profile.emails} Questa operazione non verrà risolta perché i messaggi di posta elettronica sono un oggetto.|
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} Questa operazione non verrà risolta perché i messaggi di posta elettronica sono un oggetto.|
 | 3     | {? MyProperty:{Profile.emails}}  |  Questa operazione non verrà risolta perché i messaggi di posta elettronica sono un oggetto. Il "?" l'operatore ignora le variabili di query che non vengono risolte. Questa variabile verrà rimossa quando viene passata più avanti nello stack di query.   |
 | 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 

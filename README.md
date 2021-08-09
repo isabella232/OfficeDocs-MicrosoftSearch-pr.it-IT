@@ -1,19 +1,19 @@
-# <a name="contributing"></a>Contribuisce
+# <a name="contributing"></a>Contribuire
 
-Questo progetto si compiace di contributi e suggerimenti.  La maggior parte dei contributi richiede l'accettazione di un contratto di licenza per i collaboratori (CLA) che dichiara di avere il diritto e, effettivamente, di concederci i diritti di usare il proprio contributo. Per informazioni dettagliate, https://cla.microsoft.comvisitare.
+Questo progetto accoglie con favore i contributi e i suggerimenti.  La maggior parte dei contributi richiede che tu accetti un Contratto di licenza per i collaboratori (CLA) che dichiara di avere il diritto di e in realtà di concederci i diritti per usare il tuo contributo. Per informazioni dettagliate, visitare https://cla.microsoft.com .
 
-Quando si invia una richiesta di pull, un CLA-bot determinerà automaticamente se è necessario fornire un CLA e decorare il PR in modo appropriato (ad esempio, etichetta, commento). Basta seguire le istruzioni fornite dal bot. Sarà necessario eseguire questa operazione una sola volta in tutti i repo usando la CIA.
+Quando invii una richiesta pull, un CLA-bot determinerà automaticamente se è necessario fornire un CLA e decorare le relazioni in modo appropriato (ad esempio, etichetta, commento). Segui semplicemente le istruzioni fornite dal bot. Dovrai eseguire questa operazione una sola volta in tutti i repository usando il nostro CLA.
 
 Il progetto ha adottato il [Codice di comportamento di Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Per ulteriori informazioni, vedere le [domande frequenti sul Codice di comportamento](https://opensource.microsoft.com/codeofconduct/faq/) oppure contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) per eventuali dubbi o commenti.
 
 # <a name="legal-notices"></a>Note legali
 
-Microsoft e qualsiasi contributore concede una licenza alla documentazione Microsoft e ad altri contenuti di questo repository sotto la [licenza pubblica internazionale Creative Commons attribution 4,0](https://creativecommons.org/licenses/by/4.0/legalcode), vedere il file di [licenza](LICENSE) e concedere una licenza a qualsiasi codice nel repository sotto la [licenza mit](https://opensource.org/licenses/MIT), vedere il file di [codice della licenza](LICENSE-CODE) .
+Microsoft e tutti i collaboratori ti concedono una licenza per la documentazione Microsoft e altri contenuti in questo repository nella Licenza pubblica internazionale [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), vedi il file [LICENSE](LICENSE) e concedi una licenza a qualsiasi codice nel repository sotto licenza [MIT](https://opensource.org/licenses/MIT), vedi il file [LICENSE-CODE.](LICENSE-CODE)
 
-Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui viene fatto riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o negli altri paesi.
-Le licenze per questo progetto non consentono di utilizzare i nomi, i loghi o i marchi di Microsoft.
-Le linee guida relative ai marchi generali di Microsoft http://go.microsoft.com/fwlink/?LinkID=254653sono disponibili all'indirizzo.
+Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui si fa riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o in altri paesi.
+Le licenze per questo progetto non concedono all'utente diritti di utilizzo di nomi, logo o marchi Microsoft.
+Le linee guida generali per i marchi di Microsoft sono disponibili all'indirizzo http://go.microsoft.com/fwlink/?LinkID=254653 .
 
-Le informazioni sulla privacy sono reperibili all'indirizzohttps://privacy.microsoft.com/en-us
+Le informazioni sulla privacy sono disponibili all'indirizzo https://privacy.microsoft.com/en-us
 
-Microsoft e tutti i collaboratori predispongono tutti gli altri diritti, sia in base ai rispettivi diritti d'autore, brevetti o marchi, sia per implicazione, preclusione o altro.
+Microsoft e tutti i collaboratori si riservano tutti gli altri diritti, in base ai rispettivi copyright, brevetti o marchi, per implicazione, estoppel o altro.

@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gestire la modalità Power BI i report e i dati nei risultati di ricerca
-ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
-ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
+ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547701"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533619"
 ---
 # <a name="manage-power-bi-answers"></a>Gestire Power BI risposte
 
-Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search ha aggiunto il supporto per i dashboard e i report Power BI utenti. Ecco alcuni dei vantaggi della Power BI ricerca:
+Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search ha aggiunto il supporto per i dashboard e i report Power BI dati. Ecco alcuni dei vantaggi della Power BI ricerca:
 
 * **Facile da usare:** Questa esperienza di ricerca avanzata consente agli utenti di trovare facilmente e rapidamente Power BI dashboard e report all'interno dell'organizzazione.
 * **Contenuto più ricco:** Per rendere Power BI risultati di ricerca più utili, includono informazioni chiave come il tipo di contenuto, ovvero dashboard o report, e il team o la persona a cui è proprietario.
@@ -31,7 +31,7 @@ Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari pe
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
-Gli utenti di Microsoft Search possono trovare Power BI risultati eseguendo una ricerca dalla casella Windows ricerca, SharePoint, Office 365 e Bing. Gli utenti possono cercare report e dashboard con query come queste:
+Microsoft Search utenti possono trovare Power BI risultati eseguendo una ricerca dalla casella di ricerca Windows, SharePoint, Office 365 e Bing. Gli utenti possono cercare report e dashboard con query come queste:
 
 * Power BI informazioni`<topic>`
 * Power BI per`<topic>`
@@ -69,7 +69,7 @@ Power BI i risultati sono abilitati per l'organizzazione per impostazione predef
 
 **D: Verrà visualizzata la pagina dei Power BI dei risultati della ricerca se non si dispone di una licenza Power BI licenza?**
 
-**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la Power BI dei risultati della ricerca non verrà visualizzata nei risultati di Microsoft Search.
+**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la pagina dei risultati Power BI ricerca non verrà visualizzata nei Microsoft Search ricerca.
 
 **D: Verranno visualizzati Power BI risultati di ricerca a cui non è possibile accedere?**
 

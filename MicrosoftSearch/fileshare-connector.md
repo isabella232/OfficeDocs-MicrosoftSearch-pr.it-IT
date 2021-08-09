@@ -1,5 +1,5 @@
 ---
-title: Connettore graph di condivisione file per Microsoft Search
+title: Connettore Graph condivisione file per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,28 +13,28 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Configurare il connettore Grafico condivisione file per Microsoft Search
-ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurare il connettore di Graph file per Microsoft Search
+ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031612"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533026"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Connettore Grafico condivisione file
+# <a name="file-share-graph-connector"></a>Connettore di Graph file
 
-Il connettore Grafico condivisione file consente agli utenti dell'organizzazione di cercare condivisioni file di Windows locali.
+Il connettore Graph condivisione file consente agli utenti dell'organizzazione di cercare condivisioni Windows file locali.
 
 > [!NOTE]
-> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) per comprendere il processo generale di configurazione dei connettori Graph.
+> Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup process.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
-### <a name="install-the-graph-connector-agent"></a>Installare l'agente connettore Graph
+### <a name="install-the-graph-connector-agent"></a>Installare l'agente Graph connettore
 
-Per indicizzare le condivisioni file di Windows, è necessario installare e registrare l'agente connettore Graph. Per [ulteriori informazioni, vedere Install the Graph connector agent.](on-prem-agent.md)  
+Per indicizzare le Windows file condivisioni file, è necessario installare e registrare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)  
 
 ### <a name="content-requirements"></a>Requisiti del contenuto
 
@@ -46,7 +46,7 @@ Per indicizzare le condivisioni file di Windows, è necessario installare e regi
 
 La dimensione massima supportata per il file è 100 MB. I file che superano i 100 MB non vengono indicizzati. Il limite massimo di dimensioni post-elaborazione è 4 MB. L'elaborazione si interrompe quando le dimensioni di un file raggiungono i 4 MB. Di conseguenza, alcune frasi presenti nel file potrebbero non funzionare per la ricerca.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nell'interfaccia di amministrazione di Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Nella pagina **Connetti a origine dati** selezionare Condivisione **file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account utente [di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
+Nella pagina **Connessione'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
 
 ### <a name="preserve-last-access-time"></a>Mantenere l'ora dell'ultimo accesso
 

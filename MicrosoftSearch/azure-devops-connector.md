@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Azure DevOps Graph per Microsoft Search
-ms.openlocfilehash: bfe04a022360a968424b673ad03ba05f27c8c333
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720953"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533345"
 ---
 <!---Previous ms.author: shgrover --->
 
 # <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connettore (anteprima)
 
-Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio Azure DevOps locale. Dopo aver configurato il connettore e il contenuto dell'Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
+Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio Azure DevOps locale. Dopo aver configurato il connettore e il contenuto dell'indice da Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
@@ -38,7 +38,7 @@ Questo articolo è per tutti gli utenti che configurano, esere e monitorano un A
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore di Graph nell'Microsoft 365 di amministrazione
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -120,7 +120,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 >[!TIP]
 >**Tipo di risultato predefinito**
 >* Il Azure DevOps registra automaticamente un [tipo di risultato](./customize-search-page.md#step-2-create-the-result-types) dopo la pubblicazione del connettore. Il tipo di risultato utilizza un layout dei [risultati](./customize-results-layout.md) generato dinamicamente in base ai campi selezionati nel passaggio 3. 
->* È possibile gestire il tipo di risultati accedendo a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nell'Microsoft 365 di [amministrazione.](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `AzureDevOps` sarà denominato: "AzureDevOpsDefault"
+>* È possibile gestire il tipo di risultati passando a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nella interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `AzureDevOps` sarà denominato: "AzureDevOpsDefault"
 >* È inoltre possibile scegliere di creare un tipo di risultato personalizzato, se necessario.
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
