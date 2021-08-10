@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori microsoft Graph per Microsoft Search
-ms.openlocfilehash: a7f2fe8b5278df9368c3036895450a74ad7eae8a644aedc147fb16dd0efdd46e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
+ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533183"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57801958"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -103,7 +103,7 @@ L'insieme di connettori e funzionalità in anteprima include:
 * [Azure DevOps connettore](azure-devops-connector.md)
 * [Connettore Salesforce](salesforce-connector.md)
 * [Connettore ServiceNow con](servicenow-connector.md) autorizzazioni di ricerca che utilizzano ACL di origine
-* [Gestisci cluster dei risultati](result-cluster.md)
+* [Gestire filtri personalizzati](custom-filters.md)
 * [Più connessioni in verticale](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Come si personalizzano e si configurano i risultati della ricerca?
