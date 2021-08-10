@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore di Graph file per Microsoft Search
-ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
+ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533026"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823016"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -64,7 +64,27 @@ Nella pagina **Connessione'origine** dati selezionare **Condivisione file** e sp
 
 Quando il connettore tenta di eseguire la ricerca per indicizzazione di un file, il campo "Ora ultimo accesso" nei relativi metadati viene aggiornato. Se si dipende da tale campo per qualsiasi soluzione di archiviazione e backup e non si desidera aggiornarlo quando il connettore vi accede, è possibile configurare questa opzione nella **pagina Impostazioni** avanzate.
 
-## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
+## <a name="step-4-limits-for-file-indexing"></a>Passaggio 4: Limiti per l'indicizzazione dei file
+
+Durante la configurazione di una connessione condivisione file, l'amministratore potrebbe limitare l'indicizzazione di file e cartelle. Esistono diversi modi per farlo:
+
+#### <a name="based-on-file-types"></a>In base ai tipi di file
+
+Solo il contenuto testuale di questi formati è indicizzato: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLSX, XLT, XLXM, XML, XPS. Per i file multimediali e i file che non appartengono a questo formato, gli unici metadati vengono indicizzati.
+
+#### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>In base alla data dell'ultima modifica o al numero di giorni dall'ultima modifica
+
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>Percorso di rete completo di file/cartella o espressione regolare per limitare l'indicizzazione 
+
+Nel percorso di rete utilizzare il carattere di escape ( \\ ) prima di caratteri speciali come \\ . Esempio: per il percorso \\ \\ CONTOSO FILE \\ \\ SHAREDFOLDER, il modo corretto per l'input è \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+
+Le regole per la scrittura di espressioni regolari sono disponibili [qui](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+
+L'amministratore potrebbe anche avere la possibilità di concedere un'eccezione alla regola limite. La priorità della regola di eccezione sostituisce le regole limite. In modo analogo, l'eccezione può essere definita fornendo il percorso cartella/file per gli elementi che si desidera includere nell'indicizzazione.
+
+![Limiti ed eccezioni](media/file-connector/ExclusionRule.png)
+
+## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
 È possibile limitare l'autorizzazione alla ricerca di qualsiasi file basato sugli elenchi di controllo di accesso condivisi o sugli elenchi di controllo di accesso NTFS (New Technology File System), selezionando l'opzione desiderata nella pagina Gestisci autorizzazioni **di** ricerca. Gli account utente e i gruppi forniti in questi elenchi di controllo di accesso devono essere gestiti da Active Directory (AD). Se si utilizza qualsiasi altro sistema per la gestione degli account utente, è possibile selezionare l'opzione "tutti", che consente agli utenti di cercare tutti i file senza restrizioni di accesso. Tuttavia, quando gli utenti tentano di aprire il file, vengono applicati i controlli di accesso impostati nell'origine.
 
@@ -74,22 +94,22 @@ Tieni presente che le finestre per impostazione predefinita forniscono l'autoriz
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
+## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a>Passaggio 6: Gestire lo schema
+## <a name="step-7-manage-schema"></a>Passaggio 7: Gestire lo schema
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
+## <a name="step-8-choose-refresh-settings"></a>Passaggio 8: Scegliere le impostazioni di aggiornamento
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
+## <a name="step-9-review-connection"></a>Passaggio 9: esaminare la connessione
 
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
