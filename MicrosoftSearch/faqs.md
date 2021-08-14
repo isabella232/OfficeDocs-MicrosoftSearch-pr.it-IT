@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
-ms.openlocfilehash: 94161d3ac53ca72a9f8298674a53fdaa0a80caaf5ca3802d47ea693043a30530
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 84f53755625e65328f8ffe8aabf78f93a9a36a22
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533933"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235870"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Domande frequenti
@@ -29,13 +29,13 @@ Ecco un elenco delle domande più comuni.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La comprensione avanzata delle query è supportata?
 
-Sì, Microsoft Search analizza lo scopo della query da frasi più grandi. Questa funzionalità usa l'intelligenza artificiale per imparare le frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sulle loro finalità di ricerca. Ad esempio, quando un utente cerca altre informazioni su come modificare la *password,* estraiamo le parole meno importanti dalla query e il trigger in base a quelle rilevanti, ad esempio *cambia password.*
+Sì, Microsoft Search analizza lo scopo della query da frasi più grandi. Questa funzionalità usa l'IA per apprendere frasi superflue comuni che gli utenti aggiungono alle query che non influiscono sulle finalità di ricerca. Ad esempio, quando un utente cerca altre informazioni su come modificare la *password,* estraiamo le parole meno importanti dalla query e il trigger in base a quelle rilevanti, ad esempio cambia *password.*
   
 Questa funzionalità non sostituisce le parole chiave impostate nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
   
 ## <a name="can-you-search-for-files-on-premises"></a>È possibile cercare file in locale?
 
-Sì. È possibile eseguire ricerche nei SharePoint [locali](http://sharepoint.com/) se si dispone di una distribuzione ibrida di SharePoint.
+Sì. È possibile eseguire ricerche [](http://sharepoint.com/) nei SharePoint locali se si dispone di una distribuzione ibrida di SharePoint.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Come si fa a impostare Bing come motore di ricerca predefinito per gli utenti dell'organizzazione?
 
@@ -47,7 +47,7 @@ Ecco le istruzioni per impostare il motore di ricerca predefinito, la home page 
 
 ## <a name="how-are-my-search-results-protected"></a>In che modo vengono protetti i risultati della ricerca?
 
-È necessaria [Azure Active Directory'autenticazione](/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Le query di ricerca vengono de-identificate [](https://Bing.com) e i log sono separati dal traffico di Bing pubblico quando si utilizza Microsoft Search in Bing.
+È necessaria [Azure Active Directory](/azure/active-directory/) autenticazione per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Quando si Microsoft Search in Bing, le query di ricerca vengono de-identificate e i log sono separati dal traffico di [ricerca](https://Bing.com) Bing pubblico.
 
 ## <a name="can-i-search-across-federated-organizations"></a>È possibile eseguire ricerche nelle organizzazioni federate?
 
@@ -57,6 +57,12 @@ No.
 
 I dettagli sono disponibili nelle pagine [del Centro protezione per Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
-## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Gli utenti guest possono sfruttare Microsoft Search nell'organizzazione?
+## <a name="can-guest-users-access-microsoft-search-in-my-organization"></a>Gli utenti guest possono accedere Microsoft Search all'interno dell'organizzazione?
 
-Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti saranno in grado di eseguire operazioni di ricerca su documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non riceveranno l'esperienza completa, personalizzata e Microsoft Search e potrebbe essere necessario utilizzare la casella di ricerca nella pagina anziché la casella di Microsoft Search unificata nell'intestazione.
+Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti possono cercare documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non otterrà l'esperienza Microsoft Search completa e personalizzata e potrebbe essere necessario utilizzare la casella di ricerca nella pagina anziché la casella Microsoft Search unificata nell'intestazione.
+
+## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Come si attiva o Microsoft Search Bing di attivazione o disattivazione?
+
+Per la maggior parte delle organizzazioni, incluse le organizzazioni e l'istruzione, Microsoft Search in Bing è disponibile per impostazione predefinita. Per attivare Microsoft Search in Bing, passare [alla](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) pagina Configurazioni nell'interfaccia di amministrazione di Microsoft 365. In Microsoft Search in Bing impostazioni scegliere  Modifica impostazioni e attivare Consenti all'organizzazione di **Microsoft Search in Bing**. L'applicazione di questa modifica richiede fino a 24 ore.
+
+Se questa impostazione è disattivata, gli utenti non otterrà risultati interni durante la ricerca Bing, Windows ricerca o in Microsoft Edge. La disattivazione Microsoft Search in Bing non interrompe né impedisce l'aggiunta di contenuto interno all'indice di ricerca. Disabilita solo i Bing di ingresso da Microsoft Search. Per trovare risposte e risultati interni, gli utenti dovranno usare altri punti di ingresso, ad esempio SharePoint Online o un Office 365 app.

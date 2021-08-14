@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agente in-prem
-ms.openlocfilehash: a17ad4637f7618a6f1109fb5de177c9a673a4fa6b791711e807107676749ccc5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534225"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235939"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agente connettore microsoft Graph
 
-L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente Graph microsoft* Graph. Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
+L'utilizzo di connettori in ingresso richiede l'installazione del software dell'agente Graph *Microsoft.* Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
 
 ## <a name="installation"></a>Installazione
 
-Scaricare la versione più recente dell'agente Graph connettore e [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) installare il software utilizzando l'installazione guidata. Utilizzando la configurazione consigliata del computer descritto di seguito, il software può gestire fino a tre connessioni. Qualsiasi connessione oltre tale limite potrebbe compromettere le prestazioni di tutte le connessioni nell'agente.
+Scaricare la versione più recente dell'agente Graph connettore e [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) installare il software utilizzando l'installazione guidata. Usando la configurazione consigliata del computer descritto di seguito, il software può gestire fino a tre connessioni. Qualsiasi connessione oltre tale limite potrebbe compromettere le prestazioni di tutte le connessioni nell'agente.
 
 Configurazione consigliata:
 
@@ -153,7 +153,7 @@ Se l'installazione non riesce, controllare i registri di installazione eseguendo
 
 Se l'accesso all'app di configurazione ha esito negativo con l'errore "Accesso non riuscito. Fare clic sul pulsante Accedi per riprovare." anche dopo la riuscita dell'autenticazione del browser, aprire services.msc e verificare se GcaHostService è in esecuzione. In caso contrario, avviarlo manualmente.
 
-Se il servizio non viene avviato con l'errore "Il servizio non è stato avviato a causa di un errore di accesso", verificare se l'account virtuale NT Service\GcaHostService dispone dell'autorizzazione per accedere come servizio nel computer. Controlla [questo collegamento per](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) istruzioni. Se l'opzione per aggiungere un utente o un gruppo è disattivata in Criteri locali\Assegnazione diritti utente, significa che l'utente che tenta di aggiungere questo account non dispone dei privilegi di amministratore su questo computer o che è presente un criterio di gruppo che ha la sostituzione. I criteri di gruppo devono essere aggiornati per consentire al servizio host di accedere come servizio.
+Se il servizio non viene avviato con l'errore "Il servizio non è stato avviato a causa di un errore di accesso", verificare se l'account virtuale NT Service\GcaHostService dispone dell'autorizzazione per accedere come servizio nel computer. Controlla [questo collegamento per](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) istruzioni. Se l'opzione per aggiungere un utente o un gruppo è disattivata in Criteri locali\Assegnazione diritti utente, significa che l'utente che tenta di aggiungere questo account non dispone di privilegi di amministratore su questo computer o che è presente un criterio di gruppo che ha la sostituzione. I criteri di gruppo devono essere aggiornati per consentire al servizio host di accedere come servizio.
 
 ### <a name="connection-failure"></a>Errore di connessione
 

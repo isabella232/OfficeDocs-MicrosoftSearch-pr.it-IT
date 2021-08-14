@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Enterprise web Graph per Microsoft Search
-ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Configurare il connettore Enterprise siti Web Graph per Microsoft Search
+ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235932"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -31,7 +31,7 @@ Il Enterprise web Graph consente all'organizzazione di indicizzare articoli e co
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore Enterprise siti Web. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore Enterprise siti Web. In questo articolo sono inoltre incluse informazioni sulla risoluzione [dei problemi](#troubleshooting).
+Questo articolo è per chiunque configura, esegue e monitora un connettore Enterprise siti Web. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Enterprise siti Web. In questo articolo sono inoltre incluse informazioni sulla risoluzione [dei problemi](#troubleshooting).
 
 <!---## Before you get started-->
 
@@ -49,13 +49,13 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettersi all'origine dati, compilare l'URL radice del sito Web, selezionare un'origine di ricerca per indicizzazione e il tipo di autenticazione che si desidera utilizzare: Nessuna, Autenticazione di base o OAuth 2.0 con [Azure Active Directory (Azure AD)](/azure/active-directory/). Dopo aver completato queste informazioni, selezionare Test Connection per verificare le impostazioni.
+Per connettersi all'origine dati, compilare l'URL radice del sito Web, selezionare un'origine di ricerca per indicizzazione e il tipo di autenticazione che si desidera utilizzare: Nessuna, Autenticazione di base o OAuth 2.0 [con Azure Active Directory (Azure AD)](/azure/active-directory/). Dopo aver completato queste informazioni, selezionare Test Connection per verificare le impostazioni.
 
 ### <a name="url"></a>URL
 
 Utilizzare il campo URL per specificare la radice del sito Web di cui si desidera eseguire la ricerca per indicizzazione. Il connettore di siti Web aziendali utilizzerà questo URL come punto di partenza e seguirà tutti i collegamenti di questo URL per la ricerca per indicizzazione.
 
-### <a name="crawl-websites-listed-in-the-sitemap"></a>Eseguire la ricerca per indicizzazione dei siti Web elencati nella sitemap
+### <a name="crawl-websites-listed-in-the-sitemap"></a>Eseguire la ricerca per indicizzazione di siti Web elencati nella sitemap
 
 Se selezionato, il connettore eseguirà la ricerca per indicizzazione solo degli URL elencati nella sitemap. Se non è selezionata o non viene trovata alcuna mappa del sito, il connettore eseguirà una ricerca per indicizzazione completa di tutti i collegamenti trovati nell'URL radice del sito.
 
@@ -64,11 +64,11 @@ Se selezionato, il connettore eseguirà la ricerca per indicizzazione solo degli
 Se il sito Web contiene contenuto dinamico, ad esempio pagine Web presenti in sistemi di gestione del contenuto come Confluence o Unily, è possibile abilitare un crawler dinamico. Per attivarla, selezionare Abilita ricerca **per indicizzazione per siti dinamici.** Il crawler attenderà il rendering del contenuto dinamico prima di iniziare la ricerca per indicizzazione.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot del riquadro Impostazioni connessione per Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Screenshot of Connection Impostazioni pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
 
-1. **DOM Ready**: immettere l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
+1. **DOM Ready**: immetti l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
 1. **Intestazioni da aggiungere**: specificare le intestazioni HTTP che il crawler deve includere quando si invia l'URL Web specifico. È possibile impostare più intestazioni per siti Web diversi. Ti consigliamo di includere i valori del token di autenticazione.
 1. **Intestazioni da ignorare:** specificare eventuali intestazioni non necessarie che devono essere escluse dalle richieste di ricerca per indicizzazione dinamiche.
 
@@ -77,7 +77,7 @@ Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>Modalità ricerca per indicizzazione: cloud o locale
 
-La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, sia cloud che locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
+La modalità di ricerca per indicizzazione determina il tipo di siti Web che si desidera indicizzare, cloud o locale. Per i siti Web cloud, selezionare **Cloud** come modalità di ricerca per indicizzazione.
 
 Inoltre, il connettore ora supporta la ricerca per indicizzazione di siti Web locali. Per accedere ai dati locali, è innanzitutto necessario installare e configurare l'agente Graph connettore. Per ulteriori informazioni, vedere [Graph connector agent](./graph-connector-agent.md).
 
@@ -108,7 +108,7 @@ Il connettore verifica se esiste un file robots.txt per il sito radice e, se ne 
 
 ### <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
-Facoltativamente, è possibile creare **un** elenco di esclusione per escludere alcuni URL dalla ricerca per indicizzazione se tale contenuto è sensibile o non vale la pena eseguire la ricerca per indicizzazione. Per creare un elenco di esclusione, sfogliare l'URL radice. Puoi aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
+Facoltativamente, è  possibile creare un elenco di esclusione per escludere alcuni URL dalla ricerca per indicizzazione se tale contenuto è sensibile o non vale la pena eseguire la ricerca per indicizzazione. Per creare un elenco di esclusione, sfogliare l'URL radice. Puoi aggiungere gli URL esclusi all'elenco durante il processo di configurazione.
 
 ## <a name="step-4-assign-property-labels"></a>Passaggio 4: Assegnare etichette di proprietà
 
@@ -138,7 +138,7 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
  Codice di errore dettagliato | Messaggio di errore
  --- | ---
  6001 | Il sito che si sta provando a indicizzare non è raggiungibile
- 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata in base robots.txt configurazione.
+ 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata da in base robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul lato client (ad eccezione di HTTP 404, 408), fare riferimento ai codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Impossibile trovare la pagina di origine che si sta provando a indicizzare. (Errore HTTP 404)

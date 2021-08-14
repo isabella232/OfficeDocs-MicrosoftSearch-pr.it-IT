@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Configurare il connettore di Graph file per Microsoft Search
-ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
-ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
+description: Configurare il connettore Graph condivisione file per Microsoft Search
+ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235903"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Connettore di Graph file
+# <a name="file-share-graph-connector"></a>Connettore Graph file
 
 Il connettore Graph condivisione file consente agli utenti dell'organizzazione di cercare condivisioni Windows file locali.
 
@@ -34,7 +34,7 @@ Il connettore Graph condivisione file consente agli utenti dell'organizzazione d
 
 ### <a name="install-the-graph-connector-agent"></a>Installare l'agente Graph connettore
 
-Per indicizzare le Windows file condivisioni file, è necessario installare e registrare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)  
+Per indicizzare le condivisioni Windows file, è necessario installare e registrare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)  
 
 ### <a name="content-requirements"></a>Requisiti del contenuto
 
@@ -70,7 +70,7 @@ Durante la configurazione di una connessione condivisione file, l'amministratore
 
 #### <a name="based-on-file-types"></a>In base ai tipi di file
 
-Solo il contenuto testuale di questi formati è indicizzato: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLSX, XLT, XLXM, XML, XPS. Per i file multimediali e i file che non appartengono a questo formato, gli unici metadati vengono indicizzati.
+Solo il contenuto testuale di questi formati è indicizzato: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. Per i file multimediali e i file che non appartengono a questo formato, gli unici metadati vengono indicizzati.
 
 #### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>In base alla data dell'ultima modifica o al numero di giorni dall'ultima modifica
 
@@ -86,7 +86,7 @@ L'amministratore potrebbe anche avere la possibilità di concedere un'eccezione 
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
-È possibile limitare l'autorizzazione alla ricerca di qualsiasi file basato sugli elenchi di controllo di accesso condivisi o sugli elenchi di controllo di accesso NTFS (New Technology File System), selezionando l'opzione desiderata nella pagina Gestisci autorizzazioni **di** ricerca. Gli account utente e i gruppi forniti in questi elenchi di controllo di accesso devono essere gestiti da Active Directory (AD). Se si utilizza qualsiasi altro sistema per la gestione degli account utente, è possibile selezionare l'opzione "tutti", che consente agli utenti di cercare tutti i file senza restrizioni di accesso. Tuttavia, quando gli utenti tentano di aprire il file, vengono applicati i controlli di accesso impostati nell'origine.
+È possibile limitare l'autorizzazione alla ricerca di qualsiasi file basato su Share Access Control Lists o New Technology File System (NTFS) Access Control Lists selezionando l'opzione desiderata nella pagina Gestisci autorizzazioni **di** ricerca. Gli account utente e i gruppi forniti in questi elenchi di controllo di accesso devono essere gestiti da Active Directory (AD). Se si utilizza qualsiasi altro sistema per la gestione degli account utente, è possibile selezionare l'opzione "tutti", che consente agli utenti di cercare tutti i file senza restrizioni di accesso. Tuttavia, quando gli utenti tentano di aprire il file, vengono applicati i controlli di accesso impostati nell'origine.
 
 Tieni presente che le finestre per impostazione predefinita forniscono l'autorizzazione "Lettura" a "Tutti" in Condividi ACL quando una cartella viene condivisa in rete. Per estensione, se si sceglie Condividi ACL in **Gestisci** autorizzazioni di ricerca, gli utenti saranno in grado di cercare tutti i file. Se si desidera limitare l'accesso, rimuovere l'accesso "Lettura" per "Tutti" nelle condivisioni file e fornire l'accesso solo agli utenti e ai gruppi desiderati. Il connettore legge quindi queste restrizioni di accesso e le applica alla ricerca.
 

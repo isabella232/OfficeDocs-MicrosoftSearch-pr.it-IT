@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli ed errori dei connettori
-ms.openlocfilehash: b3fe584447191476d4100d5be9d5f23ca641d31a69d71f4e25698735190e78ed
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235952"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -63,12 +63,12 @@ Codice di errore | Messaggio di errore | Soluzione
 1003 | L'account associato al connettore non dispone dell'autorizzazione per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
 1004 | Impossibile raggiungere il gateway dati locale. Verificare che il servizio gateway sia in esecuzione e che i dettagli del gateway siano aggiornati nella configurazione della connessione. | Controllare il computer con il gateway, aprire l'applicazione Power BI Gateway e verificare che il gateway sia in esecuzione. Verificare che il gateway utilizzi lo stesso account amministratore Microsoft Search, quindi verificare che tutti i dettagli del gateway siano tutti aggiornati nella configurazione della connessione.
 1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare **clic su** Modifica per aggiornare le credenziali di autenticazione.
-1006 | La versione del gateway non è aggiornata e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [Installare un gateway](/data-integration/gateway/service-gateway-install) dati locale per scaricare e installare la versione più recente del gateway Power BI nel computer contenente il gateway.
+1006 | La versione del gateway non è aggiornata e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) to download and install the latest version of the Power BI gateway on the machine containing the gateway.
 1007 | Nessuna licenza Power BI valida rilevata. Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. | Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. Verificare che l'organizzazione abbia una licenza valida. In caso contrario, riprovare. In caso contrario, ottenere una licenza e riprovare.
 1008 | L'utilizzo totale della quota del tenant ha raggiunto il limite. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1009 | L'utilizzo totale della quota per la connessione ha raggiunto il limite. | Prova a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1010 | L'utilizzo totale della quota per l'indicizzazione di gruppi non Azure AD ha raggiunto il limite di 100.000. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
-1011 | L Graph [connettore non](graph-connector-agent.md) è raggiungibile o offline. | 
+1011 | L'Graph [connettore non](graph-connector-agent.md) è raggiungibile o offline. | 
 1012 | Autenticazione della connessione non riuscita a causa di una modalità di autenticazione non supportata. | Modificare la connessione per aggiornare le impostazioni di autenticazione per la connessione.
 2001 | L'indicizzazione viene limitato a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga cancellata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere la documentazione specifica del connettore.

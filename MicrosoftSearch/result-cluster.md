@@ -1,8 +1,8 @@
 ---
 title: Cluster di risultati dei connettori
-ms.author: manusi
-author: manusi
-manager: ruppala
+ms.author: masingh
+author: maheshsinghania
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli dell'esperienza del cluster di risultati dei connettori
-ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235899"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph dei risultati dei connettori
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Panoramica del cluster di risultati Graph connettori di rete (anteprima)  
+## <a name="overview-of-the-graph-connectors-result-cluster"></a>Panoramica del cluster di risultati Graph connettori di rete  
 
 Con i cluster di risultati dei connettori di Graph, le aziende possono cercare contenuto da origini dati di terze parti nella visualizzazione predefinita, la scheda **Tutti,** in SharePoint, Office.com e Microsoft Search in Bing.
 
@@ -35,28 +35,27 @@ Per garantire l'individuazione del contenuto dai verticali di ricerca, ti consig
 
 La frequenza di visualizzazione di un cluster di risultati varia in base a fattori quali il numero di verticali di ricerca da configurare e il tipo di contenuto. Interagendo o ignorando un cluster di risultati, gli utenti forniranno implicitamente suggerimenti che ne modificano l'attivazione nel tempo.
 
-L'esperienza dei risultati della ricerca per gli elementi dei connettori mostrati nel cluster di risultati [utilizza](./customize-search-page.md#create-your-own-result-type) i tipi di risultati definiti dall'utente. Se non è configurato alcun tipo di risultato, viene [utilizzato un layout generato](./customize-search-page.md#default-search-result-layout) dal sistema. 
+L'esperienza dei risultati della ricerca per gli elementi dei connettori mostrati nel cluster di risultati [utilizza](./customize-search-page.md#create-your-own-result-type) i tipi di risultati definiti dall'utente. Se non è configurato alcun tipo di risultato, viene [utilizzato un layout generato](./customize-search-page.md#default-search-result-layout) dal sistema.
 
-È consigliabile utilizzare la proprietà "title" come titolo del risultato della ricerca e la proprietà "content" come descrizione della ricerca. In questo modo gli utenti potranno ottenere la migliore esperienza attivando in modo accurato il cluster di risultati e i risultati più rilevanti nel cluster. 
+È consigliabile utilizzare la proprietà "title" come titolo del risultato della ricerca e la proprietà "content" come descrizione della ricerca. In questo modo sarà possibile offrire agli utenti la migliore esperienza possibile attivando in modo accurato il cluster di risultati e i risultati più pertinenti nel cluster.
 
-## <a name="enable-result-clusters"></a>Abilitare i cluster di risultati
+I cluster di risultati vengono visualizzati al centro della pagina nel verticale Tutti. Ad esempio, di seguito viene visualizzato un cluster di risultati da un verticale "MediaWiki".
+
+![Esempio di cluster di risultati MediaWiki](media/result-cluster/result-cluster-example.png)
+
+## <a name="result-clusters-default-settings"></a>Impostazioni predefinite dei cluster di risultati
   
-L'esperienza del cluster di risultati è disattivata per impostazione predefinita.  
+L'esperienza del cluster di risultati è attivata per impostazione predefinita.  
 
-Seguire questa procedura per attivare l'esperienza a livello di organizzazione:
+Se si desidera disabilitarlo, eseguire la procedura seguente per disattivare l'esperienza a livello di organizzazione:
 
 1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Verticali**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-2. Selezionare il **verticale Tutti,** quindi abilitare **Mostra risultati connettore**. 
+1. Selezionare il **verticale Tutti,** quindi abilitare **Nascondi i risultati del connettore.**
 
+Seguire questa procedura per disattivare l'esperienza a SharePoint sito:
 
-Seguire questa procedura per attivare l'esperienza a livello SharePoint sito:
-
-1. Nel sito SharePoint in cui si desidera ottenere l'esperienza del cluster di risultati, passare a **Impostazioni**.
+1. Vai a **Impostazioni** nel sito SharePoint sito
 2. Vai a **Informazioni sito** Visualizza tutte le impostazioni > **del sito.**
 3. Passare alla sezione Microsoft Search, quindi selezionare **Configura Microsoft Search per questa raccolta siti.**
 4. Nel riquadro di spostamento passare a **Esperienza personalizzata,** quindi selezionare **Verticali.**
-5. Selezionare il **verticale Tutti,** quindi abilitare **Mostra risultati connettore**.
-
-## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>Visualizzare l'esperienza del cluster di risultati dopo che è stato abilitato
-
-Una volta attivata l'esperienza del cluster di risultati, possono essere necessario fino a 12 ore prima di poterla visualizzare. Se si desidera che l'esperienza sia immediata, è possibile aggiungere *cacheClear=true* all'URL in SharePoint e Office.
+5. Selezionare il **verticale Tutti,** quindi abilitare **Nascondi i risultati del connettore.**

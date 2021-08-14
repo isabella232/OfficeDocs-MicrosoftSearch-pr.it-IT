@@ -17,7 +17,7 @@
 ### [Raccolta connettori](connectors-gallery.md)
 ### Configurare i connettori Microsoft
 #### [Panoramica delle impostazioni](configure-connector.md)
-#### [Configurare l'agente del connettore Graph](on-prem-agent.md)
+#### [Configurare l'agente del connettore Graph](graph-connector-agent.md)
 #### [Eseguire il mapping delle identità non Azure Active Directory](map-non-aad.md)
 #### [Eseguire il mapping delle identità di Azure AD](map-aad.md)
 #### Informazioni specifiche del connettore

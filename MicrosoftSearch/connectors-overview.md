@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori microsoft Graph per Microsoft Search
-ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
-ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
+ms.openlocfilehash: 8b7c4545022765a5e903f2ba98490dae0cd40e85
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57801958"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235859"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori Graph Microsoft
+# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori microsoft Graph
 
 [Microsoft Search](./overview-microsoft-search.md) indicizza tutti i [dati Microsoft 365](https://www.microsoft.com/microsoft-365) per renderli ricercabili per gli utenti. Con i connettori Graph Microsoft, l'organizzazione può indicizzare i dati di terze parti in modo che appaino Microsoft Search risultati. Questa funzionalità espande i tipi di origini di contenuto disponibili per la ricerca nelle app di produttività Microsoft 365 e nell'ecosistema Microsoft più ampio. I dati di terze parti possono essere ospitati in locale o nel cloud pubblico o privato.
 
@@ -74,7 +74,7 @@ Microsoft fornisce 9 connettori e i partner dell'ecosistema hanno creato più di
 * [Salesforce (anteprima)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-La [raccolta di Graph](https://www.microsoft.com/microsoft-search/connectors) microsoft contiene una breve descrizione di ognuno di questi connettori. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e gli altri articoli nella sezione Installazione dei connettori da parte di Microsoft che si applicano all'origine dati.
+La [raccolta di Graph](https://www.microsoft.com/microsoft-search/connectors) microsoft contiene una breve descrizione di ognuno di questi connettori. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e qualsiasi altro articolo nella sezione Installazione dei connettori da parte di Microsoft che si applicano all'origine dati.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graph connettori dai nostri partner
 
@@ -96,7 +96,7 @@ Per altre informazioni, vedi [Requisiti di licenza e prezzi](licensing.md) e Con
 
 ## <a name="what-are-the-preview-features"></a>Quali sono le funzionalità di anteprima?
 
-Anche se i connettori Graph Microsoft e le API di Microsoft Search sono ora disponibili in genere, sono disponibili diverse funzionalità in anteprima.
+Anche se i connettori Graph Microsoft e le API Microsoft Search sono ora disponibili in generale, sono disponibili diverse funzionalità in anteprima.
 
 L'insieme di connettori e funzionalità in anteprima include:
 

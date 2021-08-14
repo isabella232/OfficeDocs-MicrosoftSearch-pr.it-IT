@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare segnalibri e modi per modificare in blocco i risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533804"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235960"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -33,12 +33,12 @@ Un segnalibro ideale include quattro elementi chiave:
     - Meglio: il menu della mensa di questa settimana. Non è troppopromise o sembra un annuncio.
     - Evita: non credere a cosa verrà visualizzato il menu della mensa questa settimana. Usa cliché clickbait che suonano come un annuncio.
 2. Descrizione **sintetica,** di circa 300 caratteri, che riepiloga lo scopo o la funzionalità della risorsa collegata.
-3. Raccolta di parole **chiave che** consentono alle persone di trovare il segnalibro durante la ricerca. Consigliamo almeno cinque parole chiave. Includere anche le varianti che gli utenti dell'organizzazione potrebbero usare, ad esempio menu da pranzo, menu per il pranzo e menu di caffè potrebbero essere tutte varianti per il menu della mensa.
+3. Raccolta di parole **chiave che** consentono alle persone di trovare il segnalibro durante la ricerca. Consigliamo almeno cinque parole chiave. Includere anche le varianti che gli utenti dell'organizzazione potrebbero usare, ad esempio, menu da pranzo, menu per il pranzo e menu di caffè potrebbero essere tutte varianti per il menu della mensa.
 4. Un set utile di **categorie che** semplificano l'ordinamento e il filtro dei segnalibri nell'interfaccia di amministrazione. Gli utenti non vedono mai le categorie assegnate.
 
 ## <a name="create-bookmark-answers"></a>Creare risposte ai segnalibri
 
-Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare a [Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere come si desidera creare nuovi segnalibri:
+Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare [a Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere come si desidera creare nuovi segnalibri:
 
 - Aggiungere segnalibri
 - Importare SharePoint risultati
@@ -54,15 +54,11 @@ Gli amministratori e gli editor di ricerca possono aggiungere segnalibri nel int
 - **Bozza:** i segnalibri salvati come bozze non sono disponibili per gli utenti. Utilizzare questo stato se si desidera rivedere o aggiornare i segnalibri prima di pubblicarli.
 - **Pianificato**: segnalibri che verranno pubblicati alla data e all'ora specificate.
 
-Puoi usare l'estensione del browser Microsoft Search creator di contenuto per aggiungere facilmente segnalibri. Per installare l'estensione del browser, passare al sito che si desidera aggiungere come segnalibro e fare clic su Aggiungi nell'estensione.
-Installare l'estensione per Edge e Chrome:
-
-- Per Chromium Edge o Chrome: vai all'archivio [Web Chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e aggiungi l'estensione.
-- For legacy Edge: go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and add the extension.
+Puoi usare l'estensione del browser Microsoft Search creator di contenuto per aggiungere facilmente segnalibri. Basta passare al sito che si desidera aggiungere come segnalibro e fare clic su Aggiungi nell'estensione. Per installare l'estensione per Microsoft Edge o Google Chrome, vai all'archivio [Web Chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) e aggiungilo al browser.
 
 ### <a name="import-sharepoint-results"></a>Importare SharePoint risultati
 
-Se l'organizzazione ha configurato i risultati alzati di livello in SharePoint, è possibile importare titoli, URL e descrizioni dai risultati alzati di livello per il tenant in Microsoft Search e rendere il contenuto importato disponibile per gli utenti. Nella maggior parte dei casi, l'importazione SharePoint risultati richiede solo pochi minuti. Se si importa un numero elevato di risultati, potrebbero essere necessario fino a 48 ore. Si tratta di un modo semplice per popolare rapidamente i risultati della ricerca e renderlo più efficace per gli utenti. È consigliabile usare i risultati alzati di SharePoint come riferimento per comprendere come assegnare un nome e creare risultati di ricerca pertinenti.
+Se l'organizzazione ha configurato i risultati alzati di livello in SharePoint, è possibile importare titoli, URL e descrizioni dai Risultati alzati di livello per il tenant in Microsoft Search e rendere disponibile il contenuto importato agli utenti. Nella maggior parte dei casi, l'importazione SharePoint risultati richiede solo pochi minuti. Se si importa un numero elevato di risultati, potrebbero essere necessario fino a 48 ore. Si tratta di un modo semplice per popolare rapidamente i risultati della ricerca e renderlo più efficace per gli utenti. È consigliabile usare i risultati alzati di SharePoint come riferimento per comprendere come assegnare un nome e creare risultati di ricerca pertinenti.
 
 ### <a name="add-default-and-suggested-bookmarks"></a>Aggiungere segnalibri predefiniti e suggeriti
 
@@ -106,7 +102,7 @@ Per evitare errori di duplicazione da segnalibro a segnalibro:
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Pubblicare o rivedere i segnalibri consigliati
 
-Per ridurre il lavoro manuale necessario per aggiungere segnalibri, Microsoft Search valutare i collegamenti SharePoint'organizzazione e consigliare i segnalibri. È possibile esaminarli prima di pubblicarli o impostarli per la pubblicazione automatica. Non è necessaria alcuna configurazione per i segnalibri consigliati, sono abilitati e impostati per la pubblicazione automatica per impostazione predefinita. Per modificare queste impostazioni in qualsiasi momento, seleziona **Gestisci segnalibri** per aprire il pannello Impostazioni segnalibro.
+Per ridurre lo sforzo manuale necessario per aggiungere segnalibri, Microsoft Search valutare i collegamenti SharePoint'organizzazione e consigliare i segnalibri. È possibile esaminarli prima di pubblicarli o impostarli per la pubblicazione automatica. Non è necessaria alcuna configurazione per i segnalibri consigliati, sono abilitati e impostati per la pubblicazione automatica per impostazione predefinita. Per modificare queste impostazioni in qualsiasi momento, seleziona **Gestisci segnalibri** per aprire il pannello Impostazioni segnalibro.
 
 ![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal](media/bookmarks-recommendedsettings.png)
 
@@ -138,7 +134,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **A**: I segnalibri eliminati vengono immediatamente rimossi dai risultati del lavoro.
 
-**D: Si consiglia Microsoft Search segnalibri da siti in tutte le lingue?**
+**D: È consigliabile Microsoft Search segnalibri da siti in tutte le lingue?**
 
 **A:** Sì, Microsoft Search è possibile consigliare segnalibri da qualsiasi sito SharePoint interno, indipendentemente dalla lingua.
 
@@ -152,7 +148,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Come viene gestito l'accesso a un segnalibro consigliato?**
 
-**A**: Un motore di accesso progettato da Microsoft determina se l'URL del segnalibro è accessibile a un determinato utente e mostrerà solo il segnalibro consigliato al gruppo di destinatari corretto. Tuttavia, se l'URL viene modificato o l'impostazione Gruppi viene modificata, il motore di accesso progettato verrà disabilitato.
+**A**: Un motore di accesso progettato da Microsoft determina se l'URL del segnalibro è accessibile a un determinato utente e mostrerà solo il segnalibro consigliato al gruppo di destinatari corretto. Tuttavia, se l'URL viene modificato o viene modificata l'impostazione Gruppi, il motore di accesso progettato verrà disabilitato.
 
 **D: Cosa succede se non viene eseguita alcuna azione sui segnalibri consigliati aggiunti all'elenco Consigliato?**
 

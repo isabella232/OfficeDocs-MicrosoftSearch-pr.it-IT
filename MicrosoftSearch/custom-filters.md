@@ -12,18 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire filtri personalizzati
-ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 256cf9748aa3050aacf48c3562f6f84b4ba2e460
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235928"
 ---
 # <a name="manage-custom-filters"></a>Gestire filtri personalizzati
 
-È possibile utilizzare i filtri per personalizzare l'Microsoft Search personalizzata. I filtri consentono agli utenti di perfezionare rapidamente il set di risultati della query di ricerca.
+Puoi usare i filtri per personalizzare l'esperienza Microsoft Search personalizzata. I filtri consentono agli utenti di perfezionare rapidamente il set di risultati della query di ricerca.
 
 È possibile creare un filtro personalizzato all'interno di un verticale in base a una proprietà di connessione. Ad esempio, è possibile creare un filtro **Published On** per la connessione ServiceNow all'interno di un verticale.
+
+> [!NOTE]
+> I filtri personalizzati sono attualmente in anteprima per amministratori e utenti finali in Targeted Release. Per ulteriori informazioni sull'anteprima, vedere [Funzionalità di anteprima dei connettori.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="create-a-filter-in-an-organizational-level-vertical"></a>Creare un filtro in un verticale a livello di organizzazione
 
