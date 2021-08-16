@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica della configurazione per i connettori Graph di Microsoft
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340088"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -32,11 +32,12 @@ In questo articolo viene illustrato il processo di base necessario per configura
 1. [Aggiungere un connettore di Graph nell'interfaccia di amministrazione di Microsoft 365.](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Assegnare un nome alla connessione](#step-2-name-the-connection)
 3. [Configurare le impostazioni di connessione](#step-3-configure-the-connection-settings)
-4. [Gestire le autorizzazioni di ricerca](#step-4-manage-search-permissions)
-5. [Assegnare etichette di proprietà](#step-5-assign-property-labels)
-6. [Gestire lo schema](#step-6-manage-schema)
-7. [Aggiornare le impostazioni.](#step-7-refresh-settings)
-8. [Verificare la connessione](#step-8-review-connection)
+4. [Selezionare le proprietà](#step-4-select-properties)
+5. [Gestire le autorizzazioni di ricerca](#step-5-manage-search-permissions)
+6. [Assegnare etichette di proprietà](#step-6-assign-property-labels)
+7. [Gestire lo schema](#step-7-manage-schema)
+8. [Aggiornare le impostazioni.](#step-8-refresh-settings)
+9. [Verificare la connessione](#step-9-review-connection)
 
 In questo articolo sono inoltre incluse informazioni sulla risoluzione dei problemi, sulle limitazioni e sui passaggi successivi:
 
@@ -45,7 +46,7 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 * [Passaggi successivi](#next-steps)
 
 > [!NOTE]
-> Il processo di installazione è simile per tutti i connettori Graph da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+> Il processo di configurazione è simile per tutti Graph connettori da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 <!---## Before you get started-->
 
@@ -57,7 +58,7 @@ Completare la procedura seguente per configurare uno qualsiasi dei connettori di
 
 1. Accedi al tuo account amministratore nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
 
-2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi selezionare Ricerca **& intelligence**. Selezionare la [scheda Connettori](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
+2. Nel riquadro di spostamento selezionare **Impostazioni** e quindi selezionare **Ricerca & intelligence.** Selezionare la [scheda Origini dati](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
 
 3. Selezionare **+Aggiungi** e quindi selezionare l'origine dati desiderata dal menu delle opzioni disponibili.
 
@@ -65,7 +66,7 @@ Completare la procedura seguente per configurare uno qualsiasi dei connettori di
    > ![Le origini dati disponibili includono: ADLS Gen2, siti Web di Enterprise, server Microsoft SQL, Azure SQL, database di Oracle SQL, ServiceNow, Condivisione file, Azure DevOps e MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> È possibile aggiungere un massimo di dieci Graph connessioni a ogni tenant.
+> È possibile aggiungere un massimo di dieci Graph a ogni tenant.
 
 ## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
@@ -74,24 +75,33 @@ Specificare questi attributi:
 * Nome (obbligatorio)
 * ID connessione (obbligatorio)
 * Descrizione (facoltativo)
+* Selezionare la casella di controllo (obbligatorio)
 
 L'ID di connessione crea proprietà implicite per il connettore. Deve contenere solo caratteri alfanumerici e un massimo di 32 caratteri.
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Il processo di configurazione delle impostazioni di connessione varia in base al tipo di origine dati. Vedere le informazioni specifiche del connettore per il tipo di origine dati che si desidera aggiungere al tenant per completare questo passaggio del processo di installazione.  
+Il processo di configurazione delle impostazioni di connessione varia in base al tipo di origine dati. Vedere le [informazioni specifiche del](/microsoftsearch/servicenow-connector#step-31-basic-authentication) connettore per il tipo di origine dati che si desidera aggiungere al tenant per completare questo passaggio del processo di installazione.  
 
 Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
-## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
+## <a name="step-4-select-properties"></a>Passaggio 4: Selezionare le proprietà
 
-Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione possono accedere a ogni elemento di dati.  
+È possibile scegliere le proprietà che verranno indicizzate da Microsoft Search. 
 
-Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo [gli ACL di Azure Active Directory (Azure AD).](/azure/active-directory/)
+La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries.](https://go.microsoft.com/fwlink/?linkid=2151447) 
 
-Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non azure AD.  
+## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
-## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
+Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione possono accedere a ogni elemento.  
+
+Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo [Azure Active Directory (Azure AD).](/azure/active-directory/)
+
+Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non di Azure AD.  
+
+La selezione di tutti gli utenti consente a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati.
+
+## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
 Puoi assegnare etichette semantiche alle proprietà di origine nella pagina "Assegna etichette di proprietà". Le etichette sono tag noti forniti da Microsoft che forniscono un significato semantico. Consentono a Microsoft di integrare i dati del connettore in Microsoft 365 esperienze quali la ricerca avanzata, le schede utente, l'individuazione intelligente e altro ancora.  
 
@@ -101,21 +111,21 @@ Etichetta | Descrizione
 --- | ---  
 **title** | Titolo dell'elemento che si desidera visualizzare nella ricerca e in altre esperienze
 **url** | URL di destinazione dell'elemento nel sistema di origine
-**createdBy** | Nome della persona che ha creato l'elemento
-**lastModifiedBy** | Nome della persona che ha modificato l'elemento più di recente
-**authors** | Nome delle persone che hanno partecipato/collaborato all'elemento
-**createdDateTime** | Quando è stato creato l'elemento
-**lastModifiedDateTime** | Quando è stato modificato l'elemento più di recente
-**fileName** | Nome dell'elemento del file
-**fileExtension** | Tipo di elemento di file, ad esempio .pdf o .word
+**Creato da** | Nome della persona che ha creato l'elemento
+**Autore ultima modifica** | Nome della persona che ha modificato l'elemento più di recente
+**Autori** | Nome delle persone che hanno partecipato/collaborato all'elemento
+**Data creazione** | Quando è stato creato l'elemento
+**Data ultima modifica** | Quando è stato modificato l'elemento più di recente
+**Nome file** | Nome dell'elemento file
+**Estensione del file** | Tipo di elemento di file, ad esempio .pdf o .word
 
 Le proprietà di questa pagina sono pre-selezionate in base all'origine dati, ma è possibile modificare questa selezione se esiste una proprietà diversa più adatta per una determinata etichetta.  
 
 Il titolo **dell'etichetta** è l'etichetta più importante. È consigliabile **assegnare** una proprietà a questa etichetta per consentire alla connessione di partecipare all'esperienza [del cluster di risultati.](result-cluster.md)
 
-Il mapping errato delle etichette causerà un peggioramento dell'esperienza di ricerca. È possibile che ad alcune etichette non sia assegnata una proprietà.  
+Il mapping errato delle etichette causerà un peggioramento dell'esperienza di ricerca. Per alcune etichette non è possibile assegnare una proprietà.  
 
-## <a name="step-6-manage-schema"></a>Passaggio 6: Gestire lo schema
+## <a name="step-7-manage-schema"></a>Passaggio 7: Gestire lo schema
 
 ### <a name="content-property"></a>Content, proprietà
 
@@ -158,7 +168,7 @@ Per tutti i connettori ad eccezione del connettore condivisione file, i tipi per
 > [!NOTE]
 > Dopo aver creato una connessione, **non è possibile** modificare lo schema. A tale scopo, è necessario eliminare la connessione e crearne una nuova.
 
-## <a name="step-7-refresh-settings"></a>Passaggio 7: aggiornare le impostazioni
+## <a name="step-8-refresh-settings"></a>Passaggio 8: aggiornare le impostazioni
 
 L'intervallo di aggiornamento determina la frequenza di sincronizzazione dei dati tra l'origine dati e Microsoft Search. Ogni tipo di origine dati dispone di un set diverso di pianificazioni di aggiornamento ottimali in base alla frequenza di modifica dei dati e al tipo di modifiche.
 
@@ -181,7 +191,7 @@ Gli aggiornamenti incrementali sono molto più veloci rispetto agli aggiornament
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
+## <a name="step-9-review-connection"></a>Passaggio 9: esaminare la connessione
 
 È possibile esaminare l'intera configurazione e modificare le impostazioni in base alle esigenze prima di completare la connessione. **Assicurarsi di leggere le informazioni specifiche del connettore per l'origine dati, se non è già stata eseguita.** Selezionare **Fine aggiornamento** quando si è pronti per completare la connessione.
 
@@ -200,7 +210,7 @@ Leggere le informazioni specifiche del connettore per l'origine dati.
 <!---Insert limitations for this data source-->
 Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
 
-Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare Graph connettore.
+Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare connettore Graph connettore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

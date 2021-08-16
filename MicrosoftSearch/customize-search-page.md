@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 440b9afbbeb4c4cd86b2b9f67443e644c36ce042
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340079"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
-È possibile creare verticali di ricerca e tipi di risultati per personalizzare i risultati della ricerca visualizzati dagli utenti durante la ricerca in Microsoft [SharePoint,](https://sharepoint.com/)Microsoft Office e [Microsoft Search](https://office.com)in [Bing](https://bing.com). I verticali facilitano agli utenti l'individuazione delle informazioni di cui dispongono dell'autorizzazione per la visualizzazione. Ad esempio, è possibile creare un verticale di ricerca per i dati di analisi di marketing da software di terze parti per gli utenti del reparto marketing. È inoltre possibile definire tipi di risultati e personalizzare il layout per questi dati.  
+È possibile creare verticali di ricerca e tipi di risultati per personalizzare i risultati di ricerca visualizzati dagli utenti durante la ricerca in Microsoft [SharePoint,](https://sharepoint.com/)Microsoft Office e [Microsoft Search](https://office.com)in [Bing](https://bing.com). I verticali facilitano agli utenti l'individuazione delle informazioni che sono autorizzati a visualizzare. Ad esempio, è possibile creare un verticale di ricerca per i dati di analisi di marketing da software di terze parti per gli utenti del reparto marketing. È inoltre possibile definire tipi di risultati e personalizzare il layout per questi dati.  
 
 È possibile creare verticali e tipi di risultati a questi livelli:
 
 - **Livello** dell'organizzazione: quando si aggiunge un verticale a livello di organizzazione, questo viene visualizzato nella pagina dei risultati di ricerca quando gli utenti eseere una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) [Office](https://office.com)o [Bing](https://bing.com).
-- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare eventi imprevisti di *gravità 1* direttamente dal sito SharePoint del loro reparto.
+- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare eventi imprevisti di *gravità 1* direttamente dal sito SharePoint del proprio reparto.
 
 ## <a name="search-verticals-explained"></a>Verticali di ricerca spiegati
 
@@ -39,7 +39,7 @@ Nella parte superiore della pagina Microsoft Search risultati è presente una ri
 Un verticale di ricerca può ora visualizzare i risultati da più origini connettore. In questo modo si garantisce una maggiore flessibilità nella progettazione della pagina dei risultati di ricerca. L'esperienza amministrativa esistente della configurazione verticale consente di selezionare più connessioni nel passaggio "Origine contenuto".
 Se nomini in modo accurato il maggior numero possibile di etichette semantiche, questa esperienza sarà migliorata. È possibile aggiungere etichette semantiche al momento della definizione e dell'inserimento dello schema.
 
-[Ecco](configure-connector.md#step-5-assign-property-labels) altre informazioni su come creare e gestire le etichette semantiche.
+[Ecco](configure-connector.md#step-6-assign-property-labels) altre informazioni su come creare e gestire le etichette semantiche.
 
 > [!NOTE]
 > Più connessioni in un verticale sono attualmente in anteprima. Per ulteriori informazioni sull'anteprima, vedere [Funzionalità di anteprima dei connettori.](connectors-overview.md#what-are-the-preview-features)
@@ -66,7 +66,7 @@ Per aggiungere un verticale, è necessario eseguire tre passaggi di base:
 Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definire il nome, l'origine di contenuto e l'ambito del contenuto verticale in cui eseguire la ricerca. Il verticale viene creato in uno stato disabilitato. Lo abiliterai in un secondo momento.
 
 È possibile utilizzare un set limitato di linguaggio [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) per restringere l'ambito. In questa pagina sono elencate le proprietà disponibili. Ti consigliamo di usare parole chiave a testo libero e restrizioni di proprietà con operatori booleani per la creazione di KQL.
-KQL supporta inoltre l'uso di variabili [di query](#profile-query-variables) di profilo per ottimizzare i risultati sotto il verticale.
+KQL supporta inoltre l'utilizzo di variabili [di query](#profile-query-variables) di profilo per ottimizzare i risultati sotto il verticale.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Creare un verticale a livello di organizzazione
 
@@ -81,7 +81,7 @@ Per creare il verticale Microsoft Search in [SharePoint](https://sharepoint.com/
 2. Selezionare **Informazioni sito** e quindi Visualizza tutte le impostazioni del **sito.**
 3. Cercare la sezione **Microsoft Search** e quindi selezionare Configura Microsoft Search **per questa raccolta siti.**
 4. Nel riquadro di spostamento passare a **Esperienza personalizzata** e quindi selezionare la **scheda** Verticali.
-5. Per aggiungere una verticale, selezionare **Aggiungi**.
+5. Per aggiungere un verticale, selezionare **Aggiungi**.
   In caso contrario, per modificare un verticale, selezionarlo nell'elenco.
 
 Tenere presente che i verticali vengono creati in uno stato disabilitato. Devono essere abilitati prima che gli utenti possano vederli.
@@ -120,7 +120,7 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>PASSAGGIO 3: Visualizzare il verticale dopo che è stato abilitato
 
-Dopo aver abilitato il verticale, saranno necessario alcune ore prima di poterlo visualizzare. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear=true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) visualizzare immediatamente il verticale. Ad [Bing](https://bing.com), aggiungi **&features=uncachedVerticals** all'URL verticale di lavoro per visualizzare immediatamente i verticali.
+Dopo aver abilitato il verticale, saranno necessario alcune ore prima di poterlo visualizzare. Se non si desidera attendere dopo l'abilitazione, è possibile aggiungere **cacheClear=true** all'URL in [SharePoint](https://sharepoint.com/) e [Office](https://office.com) per visualizzare immediatamente il verticale. Ad [Bing](https://bing.com), aggiungi **&features=uncachedVerticals** all'URL verticale di lavoro per visualizzare immediatamente i verticali.
 
 > [!NOTE]
 > I verticali aggiunti non saranno visibili SharePoint [e](https://sharepoint.com/) [Office](https://office.com) visualizzati dai Web browser per dispositivi mobili.
@@ -133,11 +133,11 @@ Ad esempio, se si desidera creare un verticale "Ticket" in cui un utente conness
 
 **AssignedTo:{Profile.accounts.userPrincipalName}**
 
-In questo modo i risultati della ricerca verranno ristretti per visualizzare solo gli elementi in cui l'assegnatare è l'utente che esegue la ricerca.
+In questo modo i risultati della ricerca verranno ristretti in modo da visualizzare solo gli elementi in cui l'assegnatare è l'utente che esegue la ricerca.
 
 [La risorsa profilo](/graph/api/resources/profile?view=graph-rest-beta) espone le proprietà come raccolte. Ad esempio, le informazioni relative agli indirizzi di posta elettronica vengono esposte tramite la raccolta di posta elettronica, le posizioni lavorative come raccolta posizioni e così via. Tutte le proprietà disponibili nel profilo utente, che hanno AAD come tipo di origine, vengono esposte come variabili di query.
 
-Considera un utente che ha 3 indirizzi di posta elettronica disponibili nella raccolta di posta elettronica, come illustrato di seguito.
+Prendere in considerazione un utente con 3 indirizzi di posta elettronica disponibili nella raccolta di posta elettronica, come illustrato di seguito.
 
 ```json
 "emails": [{ 
@@ -180,7 +180,7 @@ L'operatore "|" deve essere utilizzato per la risoluzione delle variabili multiv
 
 | #         | Sintassi |  Valore restituito  |
 | --------- | ------ | --- |
-| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 1     | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} Questa operazione non verrà risolta perché i messaggi di posta elettronica sono un oggetto.|
 | 3     | {? MyProperty:{Profile.emails}}  |  Questa operazione non verrà risolta perché i messaggi di posta elettronica sono un oggetto. Il "?" l'operatore ignora le variabili di query che non vengono risolte. Questa variabile verrà rimossa quando viene passata più avanti nello stack di query.   |
 | 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
@@ -197,9 +197,9 @@ Ecco un elenco dei problemi comuni che potresti riscontrare e delle azioni per r
 
 |Errore  |Azione  |
 |---------|---------|
-| Viene visualizzato un messaggio di errore "Si è verificato un problema" sulla verticale. | Per completare l'installazione sono necessari sia i tipi verticali che i tipi di risultati. Assicurarsi di aver creato entrambi per la stessa origine di contenuto. |
+| Viene visualizzato un messaggio di errore "Si è verificato un problema" sulla verticale. | Per completare l'installazione sono necessari sia i tipi di risultati che verticali. Assicurarsi di aver creato entrambi per la stessa origine di contenuto. |
 | Il layout dei risultati non è visualizzato, anche se ne è stato creato uno. | L'operazione richiede alcuni minuti perché queste impostazioni vengono in genere memorizzate nella cache. Attendere alcuni minuti e riprovare.        |
-| Non viene visualizzata alcuna origine di contenuto nella pagina del tipo di risultato o verticale. | Assicurarsi di aver configurato i connettori e i dati indicizzati.   |
+| Non viene visualizzata alcuna origine di contenuto nella pagina verticale o tipo di risultato. | Assicurarsi di aver configurato i connettori e i dati indicizzati.   |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
