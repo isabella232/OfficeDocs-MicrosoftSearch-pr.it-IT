@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Agente in-prem
-ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
+ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340097"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58363242"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agente connettore microsoft Graph
 
-L'utilizzo di connettori in ingresso richiede l'installazione del software dell'agente Graph *Microsoft.* Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
+L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente* Graph microsoft Graph. Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
 
 ## <a name="installation"></a>Installazione
 
@@ -92,7 +92,7 @@ I dettagli dell'autenticazione possono essere forniti utilizzando un segreto cli
 Esistono tre semplici passaggi per l'utilizzo dell'autenticazione basata su certificato:
 
 1. Creare o ottenere un certificato
-2. Upload il certificato al portale di Azure
+2. Upload il certificato nel portale di Azure
 3. Assegnare il certificato all'agente
 
 ##### <a name="step-1-get-a-certificate"></a>Passaggio 1: Ottenere un certificato
@@ -141,15 +141,17 @@ Se hai usato lo script di esempio per generare un certificato, il file PFX è di
 
 6. Fai clic con il pulsante destro del mouse sul certificato e seleziona **Tutte le attività** Gestisci  >  **chiavi** private Opzione.
 
-7. Nella finestra di dialogo delle autorizzazioni seleziona l'opzione aggiungi. Nella finestra di dialogo di selezione dell'utente, scrivi: **NT Service\GcaHostService** e fai clic su **OK.** Non fare clic sul **pulsante Controlla** nomi.
+7. Nella finestra di dialogo delle autorizzazioni seleziona l'opzione aggiungi. Viene visualizzata una nuova finestra. Seleziona l'opzione "Posizioni" in essa. Selezionare il computer in cui è installato l'agente nell'elenco delle posizioni visualizzate e fare clic su **OK.**
 
-8. Fare clic su ok nella finestra di dialogo delle autorizzazioni. Il computer agente è ora configurato per l'agente per generare token usando il certificato.
+8. Nella finestra di dialogo di selezione dell'utente, scrivi: **NT Service\GcaHostService** e fai clic su **OK.** Non fare clic sul **pulsante Controlla** nomi.
+
+9. Fare clic su ok nella finestra di dialogo delle autorizzazioni. Il computer agente è ora configurato per l'agente per generare token usando il certificato.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="installation-failure"></a>Errore di installazione
 
-Se l'installazione non riesce, controllare i registri di installazione eseguendo: msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log". Se gli errori non sono risolvibili, contattare il supporto MicrosoftGraphConnectorsFeedback@service.microsoft.com con i registri.
+Se l'installazione non riesce, controllare i registri di installazione eseguendo: msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log". Se gli errori non sono risolvibili, contattare il supporto MicrosoftGraphConnectorsFeedback@service.microsoft.com con i registri.
 
 ### <a name="registration-failure"></a>Errore di registrazione
 
@@ -159,6 +161,6 @@ Se il servizio non viene avviato con l'errore "Il servizio non è stato avviato 
 
 ### <a name="connection-failure"></a>Errore di connessione
 
-Se l'azione "Test connection" ha esito negativo durante la creazione della connessione con l'errore "Please check username/password and the datasource path" anche quando il nome utente e la password specificati sono corretti, verificare che l'account utente abbia diritti di accesso interattivo al computer in cui è installato l'agente connettore di Graph. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso. Verificare inoltre che l'origine dati e il computer agente siano nella stessa rete.
+Se l'azione "Verifica connessione" non riesce durante la creazione della connessione con l'errore "Controlla nome utente/password e percorso origine dati" anche quando il nome utente e la password specificati sono corretti, verificare che l'account utente abbia diritti di accesso interattivo al computer in cui è installato l'agente connettore di Graph. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso. Verificare inoltre che l'origine dati e il computer agente siano nella stessa rete.
 
 Se una connessione non riesce con l'errore "1011: L'agente connettore di Graph non è raggiungibile o offline", accedere al computer in cui è installato l'agente e avviare l'applicazione agente se non è già in esecuzione. Se la connessione continua a non riuscire, verificare che il certificato o il segreto client fornito all'agente durante la registrazione non sia scaduto e abbia le autorizzazioni necessarie.
