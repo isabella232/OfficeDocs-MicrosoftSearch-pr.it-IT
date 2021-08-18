@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Gestire la modalità di visualizzazione del contenuto di Dynamics 365 nei risultati della ricerca
-ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
+ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533652"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380034"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Ricerca federativa dynamics 365 (anteprima)
 
@@ -25,7 +25,7 @@ Per rendere più Microsoft Search, stiamo introducendo la federazione Microsoft 
 * Dati che non possono uscire dai limiti del sistema
 * Dati sensibili archiviati in locale che l'organizzazione non desidera indicizzare nel cloud
 
-I dati a cui si accede tramite una connessione di ricerca federata non vengono indicizzati Microsoft Search. Inoltre, utilizzando i connettori predefiniti di Microsoft, è facile configurare le connessioni di ricerca federate. Il connettore Dynamics 365 è attualmente in anteprima. Se vuoi partecipare all'anteprima, contattaci [all'indirizzo aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview).
+I dati a cui si accede tramite una connessione di ricerca federata non vengono indicizzati Microsoft Search. Inoltre, utilizzando i connettori predefiniti di Microsoft, è facile configurare le connessioni di ricerca federate. Il connettore Dynamics 365 è attualmente in anteprima. Se vuoi partecipare all'anteprima, contattaci [all'indirizzo aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Per l'intervallo di tempo di [rilascio, vedere Microsoft Search roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
 
 ## <a name="dynamics-365-federation-connector"></a>Connettore di federazione dynamics 365
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 è una linea di applicazioni aziendali intelligenti proge
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
-Le risposte di Dynamics 365 vengono visualizzate nei risultati della ricerca in tutti i Microsoft Search canvas, tra cui SharePoint Online, Bing e Office.
+Le risposte di Dynamics 365 vengono visualizzate nei risultati della ricerca in Microsoft Search canvas, tra cui SharePoint Online, Bing e Office.
 
 :::image type="content" alt-text="Screenshot delle risposte di Dynamics 365 su SharePoint, Bing e Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
@@ -68,7 +68,7 @@ Le query in linguaggio naturale e nome prodotto sono supportate quando si usa Mi
 * Chiamata telefonica ad alta priorità
 * Contatti mancanti messaggi di posta elettronica
 
-I modelli di nome prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
+I modelli dei nomi di prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
 
 * D365
 * Dynamics 365
@@ -83,7 +83,7 @@ I modelli di nome prodotto supportano un intervallo di applicazioni Dynamics 365
 
 Con questa semplice configurazione, è possibile abilitare l'esperienza di ricerca della federazione dynamics 365 per gli utenti dell'organizzazione.
 
-1. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [Origini dati](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
+1. Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [Origini dati](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
 
 2. Nella sezione App e servizi Microsoft, in Microsoft Dynamics 365, selezionare **Gestisci** per aprire il pannello di Microsoft Dynamics 365.
 
@@ -97,6 +97,6 @@ Con questa semplice configurazione, è possibile abilitare l'esperienza di ricer
 
 7. Selezionare **Salva per** completare la configurazione della connessione.
 
-:::image type="content" alt-text="Screenshot of Dynamics 365 set-up panel in the interfaccia di amministrazione di Microsoft 365" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Screenshot del pannello di configurazione di Dynamics 365 nella interfaccia di amministrazione di Microsoft 365" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 Al termine dell'installazione, le risposte e il verticale di Dynamics 365 verranno visualizzati solo per gli utenti con una licenza dynamics 365 valida e l'accesso all'ambiente Dynamics 365 connesso. In qualsiasi momento, è possibile tornare a queste impostazioni e modificare l'ambiente dell'endpoint di connessione o disattivare la connessione.
