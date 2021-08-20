@@ -12,16 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Gestire Microsoft Graph Connectors per Microsoft Search.
-ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Gestire i connettori Graph Microsoft per Microsoft Search.
+ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
+ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532909"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408209"
 ---
-<!-- markdownlint-disable no-inline-html -->
-
 # <a name="monitor-your-connections"></a>Monitorare le connessioni
 
 Per accedere e gestire i connettori, è necessario essere designati come amministratore della ricerca per il tenant. Contattare l'amministratore tenant per eseguire il provisioning del ruolo di amministratore della ricerca.
@@ -36,12 +34,12 @@ Operazione | Connettori di Graph Microsoft | Partner o Graph connettori
 --- | --- | ---
 Aggiungere una connessione | :heavy_check_mark: (Vedere Panoramica [dell'installazione](configure-connector.md)) | :x: (Fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
-Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
+Modificare una connessione pubblicata | :heavy_check_mark: Nome e Descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Nome<br></br> :heavy_check_mark: Descrizione
 Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Monitorare lo stato della connessione
 
-Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** pagina Microsoft Search connessione. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
+Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** Microsoft Search pagina. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
 Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
@@ -59,28 +57,20 @@ Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
 La quota di indice e l'utilizzo disponibili vengono visualizzati nella pagina di destinazione dei connettori.
 
-![Barra di utilizzo quota indice](media/quota_utilization.png)
- 
->[!NOTE]
->Durante il periodo di anteprima, a ogni organizzazione che prova Graph connettori è stata fornita una quota fissa gratuita di un massimo di 2 milioni di elementi in tutte le connessioni. Con Graph disponibili in genere, la quota gratuita scadrà il 1° aprile 2021 per le organizzazioni che hanno utilizzato Graph connettori in anteprima.
->I connettori Graph microsoft etichettati come ["Anteprima"](./connectors-overview.md) non verranno inclusi nella quota di indice totale addebitata per l'organizzazione. Tuttavia, verrà conteggiato per il numero massimo di 10 connessioni che è possibile configurare per l'organizzazione e il numero massimo di 7 milioni di elementi che l'organizzazione può indicizzare tra le connessioni. ogni connessione è limitata a 700.000 elementi. 
+:::image type="content" alt-text="Barra di utilizzo della quota dell'indice." source="media/quota_utilization.png" lightbox="media/quota_utilization.png":::
 
 La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo della quota da parte dell'organizzazione:
 
 Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
-Alto | 80-89%
+Alta | 80-89%
 Critiche | 90%-99%
 Full | 100%
 
-<!-- 
-![Quota utilization levels](media/connectors-quota-utilization-levels.png)
--->
-
 Con ogni connessione verrà visualizzato anche il numero di elementi indicizzati. Il numero di elementi indicizzati da ogni connessione contribuisce alla quota totale disponibile per l'organizzazione.
 
-Quando viene superata la quota di indice per l'organizzazione, verranno influenzate tutte le connessioni attive e tali connessioni funzioneranno nello **stato limite superato.** In questo stato, le connessioni attive  
+Quando viene superata la quota di indice per l'organizzazione, tutte le connessioni attive verranno influenzate e tali connessioni funzioneranno nello **stato limite superato.** In questo stato, le connessioni attive  
 
 * Non sarà possibile aggiungere nuovi elementi.
 
@@ -90,6 +80,6 @@ Per risolvere il problema, è possibile eseguire una delle operazioni seguenti:
 
 * Per informazioni su come acquistare la quota di indice per l'organizzazione, vedere [Requisiti di licenza e prezzi.](licensing.md)
 
-* Identificare le connessioni con troppo contenuto ingerito e aggiornarle in modo da indicizzare un numero minore di elementi per creare spazio per la quota. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di inserimento che comporta un numero minore di elementi.
+* Identificare le connessioni con troppi contenuti inseriti e aggiornarle in modo da indicizzare un numero minore di elementi per creare spazio per la quota. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di inserimento che comporta un numero minore di elementi.
 
-* Eliminare definitivamente una o più connessioni
+* Eliminare definitivamente una o più connessioni.
