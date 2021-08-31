@@ -1,0 +1,81 @@
+## YamlMime:Hub
+title: Microsoft Search documentazione dell'amministratore
+summary: Gestire Microsoft Search per aumentare la produttività offrendo risultati di ricerca più pertinenti per l'organizzazione.
+metadata:
+  title: Microsoft Search documentazione
+  description: Microsoft Search aumentare la produttività e risparmiare tempo offrendo risultati di ricerca più pertinenti per l'organizzazione.
+  ms.service: mssearch
+  ms.topic: landing-page
+  author: jeffkizn
+  ms.author: jeffkizn
+  ms.date: 05/29/2020
+highlightedContent:
+  items:
+    - title: Informazioni su Microsoft Search
+      itemType: overview
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/'
+    - title: Microsoft Search roadmap
+      itemType: reference
+      url: 'https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Search'
+    - title: Risorse relative all’adozione
+      itemType: get-started
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/#adoption'
+    - title: Microsoft Search su YouTube
+      itemType: video
+      url: 'https://www.youtube.com/channel/UC-d4Q5pvRf6IVJuWY8wpAFw/'
+additionalContent:
+  sections:
+    - title: Amministrazione
+      items:
+        - title: Microsoft Search per l'amministratore
+          links:
+            - text: Panoramica generale
+              url: overview-microsoft-search.md
+            - text: Configurare Microsoft Search
+              url: setup-microsoft-search.md
+            - text: Domande frequenti
+              url: faqs.md
+        - title: Ottenere informazioni dettagliate dagli utenti
+          links:
+            - text: Report sull'utilizzo della ricerca
+              url: usage-reports.md
+            - text: Visualizzare i commenti e suggerimenti degli utenti
+              url: manage-feedback.md
+        - title: Fornire risposte
+          links:
+            - text: Gestire i segnalibri
+              url: manage-bookmarks.md
+            - text: Gestire gli acronimi
+              url: manage-acronyms.md
+            - text: Gestire le planimetrie
+              url: manage-floorplans.md
+            - text: Gestire le posizioni
+              url: manage-locations.md
+            - text: Gestire Power BI
+              url: manage-powerbi.md
+            - text: Gestire le domande&A
+              url: manage-qas.md
+        - title: Gestire le origini dati
+          links:
+            - text: Graph Panoramica dei connettori
+              url: connectors-overview.md
+            - text: Configurazione Graph connettori
+              url: configure-connector.md
+            - text: Gestione dei connettori federativi
+              url: manage-dynamics365.md
+        - title: Personalizzare l'esperienza utente finale
+          links:
+            - text: Gestire le tipologie di verticali e i tipi di risultati
+              url: customize-search-page.md
+            - text: Personalizzare il layout SERP
+              url: customize-results-layout.md
+            - text: Gestire i filtri
+              url: custom-filters.md
+            - text: Gestire i cluster di risultati
+              url: result-cluster.md
+        - title: Client di ricerca
+          links:
+            - text: Informazioni Microsoft Search in SharePoint
+              url: get-started-search-in-sharepoint-online.md
+            - text: Informazioni Microsoft Search in Bing
+              url: security-for-search.md
