@@ -6,14 +6,14 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Gestire la modalità di visualizzazione del contenuto di Dynamics 365 nei risultati della ricerca
-ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470231"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702031"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Ricerca federativa dynamics 365 (anteprima)
 
@@ -68,7 +68,7 @@ Le query in linguaggio naturale e nome prodotto sono supportate quando si usa Mi
 * Chiamata telefonica ad alta priorità
 * Contatti mancanti messaggi di posta elettronica
 
-I modelli di nome prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
+I modelli dei nomi di prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
 
 * D365
 * Dynamics 365

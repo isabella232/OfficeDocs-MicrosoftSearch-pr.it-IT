@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Enterprise siti Web Graph per Microsoft Search
-ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+description: Configurare il connettore Enterprise web Graph per Microsoft Search
+ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469979"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702166"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -104,7 +104,7 @@ Esistono due modi per impedire la ricerca per indicizzazione delle pagine: non c
 
 ### <a name="support-for-robotstxt"></a>Supporto per robots.txt
 
-Il connettore verifica se esiste un file robots.txt per il sito radice e, se ne esiste uno, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
+Il connettore verifica se esiste un file robots.txt per il sito radice e, se esistente, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
 
 ### <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
@@ -124,7 +124,7 @@ Il connettore Enterprise web web supporta solo le autorizzazioni di ricerca visi
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 
-Il Enterprise web connector supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
+Il connettore Enterprise web web supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -138,7 +138,7 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
  Codice di errore dettagliato | Messaggio di errore
  --- | ---
  6001 | Il sito che si sta provando a indicizzare non è raggiungibile
- 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata in base robots.txt configurazione.
+ 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata da in base robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul lato client (ad eccezione di HTTP 404, 408), fare riferimento ai codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Impossibile trovare la pagina di origine che si sta provando a indicizzare. (Errore HTTP 404)

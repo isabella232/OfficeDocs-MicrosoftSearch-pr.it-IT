@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+description: Configurare il connettore azure SQL e Microsoft SQL Graph per Microsoft Search.
+ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701436"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470006"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Il connettore Graph indicizza il contenuto specificato in Microsoft Search. Per 
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo per il connettore SQL azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni per](#limitations) il server Microsoft SQL e i connettori SQL Azure.
+Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph connettore. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo per il connettore di SQL Azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni](#limitations) per il server Microsoft SQL e i connettori SQL Azure.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -39,7 +39,7 @@ Questo articolo è per tutti gli utenti che configurano, esere e monitorano un c
 Per accedere ai dati di terze parti locali, è necessario installare e configurare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)
 
 >[!NOTE]
->Se si utilizza l'autenticazione Windows durante la configurazione del connettore Microsoft SQL Server Graph, l'utente con cui si sta tentando di accedere deve disporre dei diritti di accesso interattivo per il computer Graph cui è installato l'agente connettore. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso.
+>Se si utilizza l'autenticazione Windows durante la configurazione del connettore di Microsoft SQL Server Graph, l'utente con cui si sta tentando di accedere deve disporre dei diritti di accesso interattivo per il computer Graph cui è installato l'agente connettore. Fare riferimento alla documentazione relativa [alla gestione dei criteri di accesso](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) per controllare i diritti di accesso.
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
@@ -121,7 +121,7 @@ L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. N
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
 
-Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori di SQL Ms e Azure SQL. La tabella riepiloga inoltre il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati Graph microsoft Graph per l'indicizzazione, fare riferimento alla documentazione relativa ai [tipi di risorse delle proprietà.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori SQL ms e Azure SQL. La tabella riepiloga inoltre il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati Graph microsoft Graph per l'indicizzazione, fare riferimento alla documentazione relativa ai [tipi di risorse delle proprietà.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Categoria | Tipo di dati di origine | Tipo di dati di indicizzazione |
 | ------------ | ------------ | ------------ |
@@ -172,7 +172,7 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Passaggio 3b: ricerca per indicizzazione incrementale (facoltativo)
 
-In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tutte le colonne in cui si desidera selezionare le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una SQL query per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tutte le colonne in cui si desidera selezionare le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completa con un'eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi completi della ricerca per](#step-3a-full-crawl-required) indicizzazione per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere l'immagine seguente come esempio.
 

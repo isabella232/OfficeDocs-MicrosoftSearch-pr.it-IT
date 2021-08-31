@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare e agire in base al feedback degli utenti in Microsoft Search
-ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
-ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
+ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528984"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702013"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
@@ -85,5 +85,5 @@ L'amministratore della ricerca deve comprendere le persone principali dell'organ
     1. I segnalibri sono utili per le origini di contenuto con una pagina di destinazione di alta qualità e una varietà limitata di termini di ricerca, in modo che la community di utenti otterrà un risultato di alta qualità dal segnalibro e potrà quindi trovare in modo efficiente ciò che sta cercando.
     1. D&A sono utili per singole risposte abbastanza frequenti, ma che non cambiano.
     1. I connettori sono utili per le origini di contenuto con un'ampia gamma di contenuti e un'ampia varietà di termini di ricerca.
-1. "I risultati hanno richiesto troppo tempo per caricarsi" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
-1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ottiene un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.
+1. "I risultati hanno richiesto troppo tempo per il caricamento" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
+1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ha un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.

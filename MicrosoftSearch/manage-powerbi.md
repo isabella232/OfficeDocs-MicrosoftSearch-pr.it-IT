@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gestire la modalità Power BI i report e i dati nei risultati di ricerca
-ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470258"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702004"
 ---
 # <a name="manage-power-bi-answers"></a>Gestire Power BI risposte
 
@@ -46,9 +46,9 @@ Sostituire negli esempi precedenti con le informazioni che si stanno cercando, a
 
 ## <a name="turn-power-bi-search-on-or-off"></a>Attivare o Power BI ricerca
 
-Power BI i risultati sono abilitati per l'organizzazione per impostazione predefinita. L Power BI admin può disabilitarli in qualsiasi momento. Nel portale Power BI di amministrazione passare a Impostazioni tenant e disabilitare l'impostazione Usa ricerca **globale per** Power BI impostazioni. Per ulteriori informazioni, vedere [Administering Power BI nel portale di amministrazione.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+Power BI i risultati sono abilitati per l'organizzazione per impostazione predefinita. L Power BI admin può disabilitarli in qualsiasi momento. Nel portale di Power BI, passare a Impostazioni tenant e disabilitare **l'impostazione** Usa ricerca globale per Power BI. Per ulteriori informazioni, vedere [Administering Power BI nel portale di amministrazione.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare Power BI o disattivare le risposte." border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare o Power BI risposte." border="true":::
 
 > [!NOTE]
 > Quando si usa Microsoft Search, la query di ricerca e i risultati restituiti da Power BI possono essere elaborati in un'area geografica diversa da quella in cui si trovano i dati Power BI tenant.
@@ -69,7 +69,7 @@ Power BI i risultati sono abilitati per l'organizzazione per impostazione predef
 
 **D: Verrà visualizzata la pagina dei Power BI dei risultati della ricerca se non si dispone di una licenza Power BI ricerca?**
 
-**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la pagina dei risultati Power BI ricerca non verrà visualizzata nei Microsoft Search ricerca.
+**A:** No. Se un utente di ricerca non ha una licenza Power BI, la Power BI dei risultati della ricerca non verrà visualizzata nei Microsoft Search ricerca.
 
 **D: Verranno visualizzati i Power BI di ricerca a cui non è possibile accedere?**
 

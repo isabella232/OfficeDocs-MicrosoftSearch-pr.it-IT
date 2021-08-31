@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Passaggi su come eseguire il mapping delle identità non AAD
-ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701959"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470306"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Mappare le identità non di Azure AD  
 
@@ -26,7 +26,7 @@ Questo articolo illustra i passaggi per eseguire il mapping delle identità non 
 Questi passaggi sono rilevanti solo per gli amministratori della ricerca che configurano un connettore [ServiceNow](servicenow-connector.md) o [Salesforce](salesforce-connector.md) da Parte di Microsoft con autorizzazioni di ricerca per "Solo gli utenti con accesso a questa origine dati" e il tipo di identità "Non-AAD".
 
 >[!NOTE]
->Se si sta configurando un  connettore Salesforce e si seleziona Solo gli utenti con accesso a questa origine dati e tipo di identità **AAD** nella schermata delle autorizzazioni di ricerca, fare riferimento all'articolo [Mappare](map-aad.md) le identità di Azure AD per la procedura su come eseguire il mapping delle identità di Azure AD.  
+>Se si sta configurando un  connettore Salesforce e si seleziona Solo le persone con accesso a questa origine dati e tipo di identità **AAD** nella schermata delle autorizzazioni di ricerca, fare riferimento all'articolo [Mappare](map-aad.md) le identità di Azure AD per la procedura su come eseguire il mapping delle identità di Azure AD.  
 
 ## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Passaggi per il mapping delle proprietà non di Azure AD
 

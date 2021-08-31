@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare segnalibri e modi per modificare in blocco i risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470240"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702058"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -124,7 +124,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Quanto tempo è necessario per la visibilità di un segnalibro Microsoft Search dopo la pubblicazione?**
 
-**A:**  Un segnalibro è disponibile in Microsoft Search immediatamente dopo la pubblicazione.
+**A:**  Un segnalibro è disponibile in Microsoft Search subito dopo la pubblicazione.
 
 **D: Quanto tempo è necessario per la visualizzazione di un segnalibro consigliato?**
 
@@ -136,7 +136,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Si consiglia Microsoft Search segnalibri da siti in tutte le lingue?**
 
-**A:** Sì, Microsoft Search è possibile consigliare segnalibri da qualsiasi sito SharePoint interno, indipendentemente dalla lingua.
+**A**: Sì, Microsoft Search è possibile consigliare segnalibri da qualsiasi sito SharePoint interno, indipendentemente dalla lingua.
 
 **D: È possibile interrompere la visualizzazione dei segnalibri consigliati nei risultati della ricerca?**
 
@@ -156,4 +156,4 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Dove si trova l'ID app per un'app Power?**
 
-**A**: passare al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A**: accedere al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

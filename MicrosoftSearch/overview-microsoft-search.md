@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Ottieni una panoramica dell'Microsoft Search, dei vantaggi e delle app che supportano Microsoft Search.
-ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701941"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470333"
 ---
 # <a name="overview-of-microsoft-search"></a>Panoramica di Microsoft Search
 
@@ -68,9 +68,9 @@ Gli amministratori possono creare un'esperienza Microsoft Search per gli utenti.
 
 ## <a name="what-content-is-searched"></a>Contenuto in cui viene ricercato
 
-Microsoft Search mostra il contenuto archiviato dall'organizzazione in Microsoft 365 o indicizzato tramite connettori. Microsoft Search non esegue ricerche tra tenant o mostra i risultati del contenuto condiviso da altre organizzazioni. Se l'organizzazione ha configurato un ambiente SharePoint ibrido utilizzando la ricerca ibrida cloud, Microsoft Search restituisce i risultati della ricerca sia dal contenuto SharePoint online che da quello locale, inclusi eventuali contenuti esterni connessi all'ambiente SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search mostra il contenuto archiviato dall'organizzazione in Microsoft 365 o indicizzato tramite connettori. Microsoft Search non esegue la ricerca tra tenant o mostra i risultati del contenuto condiviso da altre organizzazioni. Se l'organizzazione ha configurato un ambiente SharePoint ibrido utilizzando la ricerca ibrida cloud, Microsoft Search restituisce i risultati della ricerca sia dal contenuto SharePoint online che da quello locale, inclusi eventuali contenuti esterni connessi all'ambiente SharePoint Server. [Altre informazioni sugli ambienti di ricerca ibridi](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Gli utenti otterrà gli stessi risultati di ricerca ottenuti da altre posizioni e otterrà anche risultati da Internet.
+Gli utenti otterrà gli stessi risultati della ricerca ottenuti da altre posizioni e otterrà anche risultati da Internet.
 
 ## <a name="how-microsoft-search-works"></a>Funzionamento Microsoft Search
 

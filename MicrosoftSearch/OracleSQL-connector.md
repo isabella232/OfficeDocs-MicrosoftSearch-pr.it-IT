@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore di SQL Graph Oracle per Microsoft Search.
-ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701427"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470015"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -30,7 +30,7 @@ Il connettore SQL Graph Oracle consente all'organizzazione di individuare e indi
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore di SQL Graph Oracle. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore di SQL Graph Oracle. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -50,7 +50,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente del connettore Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
+Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente del connettore di Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
 
 Per il connettore SQL Oracle, è necessario specificare il nome host, la porta e il servizio (database) insieme al metodo di autenticazione, al nome utente e alla password preferiti.
 
@@ -81,7 +81,7 @@ L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. N
 * **AllowedUsers**: Questa opzione consente di specificare l'elenco degli ID utente che potranno accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco degli utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
 * **AllowedGroups**: Questa opzione consente di specificare il gruppo di utenti che potranno accedere ai risultati della ricerca. Nell'esempio seguente, i gruppi sales-team@contoso.com possono accedere solo al record con OrderId = 12.
 * **DeniedUsers**: Questa opzione consente di specificare l'elenco degli utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non hanno accesso al record con OrderId = 13, mentre tutti gli altri utenti hanno accesso a questo record.
-* **DeniedGroups**: Questa opzione consente di specificare il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
+* **DeniedGroups**: Questa opzione consente di specificare il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
 
 ![Dati di esempio che mostrano OrderTable e AclTable con proprietà di esempio.](media/MSSQL-ACL1.png)
 
@@ -137,7 +137,7 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Passaggio 3b: ricerca per indicizzazione incrementale (facoltativo)
 
-In questo passaggio facoltativo, fornire una SQL query per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tra le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tra le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completa con un'eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi completi della ricerca per](#step-3a-full-crawl-required) indicizzazione per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere l'immagine seguente come esempio.
 
@@ -190,5 +190,5 @@ Di seguito è riportato un elenco degli errori comuni rilevati durante la config
 Il connettore SQL Oracle presenta queste limitazioni nella versione di anteprima:
 
 * Il database locale deve eseguire Oracle Database versione 11g o successiva.
-* Gli ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
+* Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 * L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

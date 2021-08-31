@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore Graph condivisione file per Microsoft Search
-ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702148"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -58,7 +58,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Nella pagina **Connessione a origine** dati selezionare Condivisione **file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
+Nella pagina **Connessione'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
 
 ### <a name="preserve-last-access-time"></a>Mantenere l'ora dell'ultimo accesso
 

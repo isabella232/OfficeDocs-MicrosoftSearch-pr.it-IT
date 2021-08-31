@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare i Microsoft Search di utilizzo
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701454"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470391"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Report di utilizzo
 
@@ -53,7 +53,7 @@ Quando si passa alla pagina dei report di utilizzo, tutti i report sono disponib
 
 Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
 
-Per visualizzare Bing query principali e i report di distribuzione delle impression, fare clic sul collegamento nella pagina.
+Per visualizzare Bing principali query e report di distribuzione delle impression, fare clic sul collegamento nella pagina.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

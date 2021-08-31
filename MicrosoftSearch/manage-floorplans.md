@@ -6,18 +6,18 @@ manager: tonytha
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Le planimetrie sono disponibili in Microsoft Search consente agli utenti di trovare persone, uffici e altri servizi all'interno di un edificio.
-ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470024"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702022"
 ---
 # <a name="manage-floor-plans"></a>Gestire le planimetrie
 
@@ -131,7 +131,7 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 **A:** Utilizzare una delle opzioni seguenti per visualizzare i file DWG:
 
 - Upload il file da SharePoint e aprirlo.
-- Aprire il file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) o in [Autodesk DWG TrueView.](https://www.autodesk.com/products/dwg)
+- Aprire il file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) o [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
 - Upload il file in [Visualizzatore online di Autodesk.](https://viewer.autodesk.com/)
 
 **D:** Come si aggiungono etichette di testo alle sale non contrassegnate?

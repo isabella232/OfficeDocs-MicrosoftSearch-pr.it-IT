@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
-ms.openlocfilehash: 701604798115091c7c7a286d3b6e97dea08e9453
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639589"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702175"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -33,8 +33,8 @@ C'è una riga di schede nella parte superiore della pagina dei Microsoft Search 
 
 È possibile creare verticali e tipi di risultati a due livelli:
 
-- **Livello dell'organizzazione:** un verticale creato a livello di organizzazione viene visualizzato nella pagina dei [](https://office.com)risultati di ricerca quando gli utenti esere esere in cerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) Office o [Bing](https://bing.com).
-- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare eventi imprevisti di *gravità 1* direttamente dal sito SharePoint del loro reparto.
+- **Livello** dell'organizzazione: un verticale creato a livello di organizzazione viene visualizzato nella pagina dei risultati di ricerca quando gli utenti esere in una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) [Office](https://office.com)o [Bing](https://bing.com).
+- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare gli eventi imprevisti di *gravità 1* direttamente dal sito di SharePoint del loro reparto.
 
 ### <a name="multiple-connections-in-a-vertical"></a>Più connessioni in verticale
 
@@ -44,7 +44,7 @@ Se nomini in modo accurato il maggior numero possibile di *etichette semantiche,
 [Ecco](configure-connector.md#step-6-assign-property-labels) altre informazioni su come creare e gestire le etichette semantiche.
 
 > [!NOTE]
-> Le connessioni multiple in una funzionalità verticale sono attualmente in anteprima. Per ulteriori informazioni, vedere [Funzionalità di anteprima dei connettori](connectors-overview.md#what-are-the-preview-features).
+> Le connessioni multiple in una funzionalità verticale sono attualmente in anteprima. Per ulteriori informazioni, vedere [Funzionalità di anteprima dei connettori.](connectors-overview.md#what-are-the-preview-features)
 
 È possibile aggiungere una connessione come origine contenuto in un'unica verticale. Non è possibile utilizzare connessioni in più verticali.
 
@@ -75,7 +75,7 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Creare un verticale a livello di organizzazione
 
-Per creare una verticale Microsoft Search in SharePoint home, Office o Bing, attenersi alla seguente procedura:
+Per creare un verticale Microsoft Search in SharePoint home, Office o Bing, attenersi alla seguente procedura:
 
 1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Verticali**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Seleziona **Aggiungi** per iniziare.  
@@ -124,7 +124,7 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>Passaggio 3: visualizzare il verticale dopo che è stato abilitato
 
-Dopo aver abilitato il verticale, si verifica un ritardo di alcune ore prima di poterlo visualizzare. Tuttavia, puoi aggiungere `cacheClear=true` all'URL in SharePoint e Office per visualizzare immediatamente il verticale. Ad Bing, `&features=uncachedVerticals` accodare a `Work vertical URL` per visualizzare immediatamente il verticale.
+Dopo aver abilitato il verticale, si verifica un ritardo di alcune ore prima di poterlo visualizzare. Tuttavia, puoi aggiungere `cacheClear=true` all'URL in SharePoint e Office per visualizzare immediatamente il verticale. Ad Bing, `&features=uncachedVerticals` accoda `Work vertical URL` all'oggetto per visualizzare immediatamente il verticale.
 
 > [!NOTE]
 > I verticali aggiunti non sono visibili SharePoint]( https://sharepoint.com/) e [Office](https://office.com) visualizzati dai Web browser per dispositivi mobili.

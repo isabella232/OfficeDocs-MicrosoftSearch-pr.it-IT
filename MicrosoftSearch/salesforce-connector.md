@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurare il connettore di Graph Salesforce per Microsoft Search
-ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701868"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -29,7 +29,7 @@ Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore Graph Salesforce. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di Graph Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
+Questo articolo è per chiunque configura, esegue e monitora un connettore di Graph Salesforce. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di Graph Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
 
 >[!IMPORTANT]
 >Il connettore di Graph Salesforce attualmente supporta Estate '19 o versione successiva.
@@ -63,7 +63,7 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
       > [!div class="mx-imgBorder"]
       > ![Sezione API nell'istanza di Salesforce dopo che l'amministratore ha immesso tutte le configurazioni necessarie elencate in precedenza.](media/salesforce-connector/sf1.png)
 
-- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configura il Impostazioni di connessione per il connettore Graph nel portale di amministrazione di Microsoft 365.
+- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configura il Impostazioni di connessione per il connettore di Graph nel portale di amministrazione di Microsoft 365.
 
   > [!div class="mx-imgBorder"]
   > ![Risultati restituiti dalla sezione API nell'istanza di Salesforce dopo che l'amministratore ha inviato tutte le configurazioni necessarie. La chiave consumer si trova nella parte superiore della colonna sinistra e Consumer Secret è in cima alla colonna destra.](media/salesforce-connector/clientsecret.png)
@@ -77,7 +77,7 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
   > [!div class="mx-imgBorder"]
   > ![Selezionare il criterio token di aggiornamento denominato "Il token di aggiornamento è valido fino alla revoca".](media/salesforce-connector/oauthpolicies.png)
 
-È ora possibile utilizzare il [Amministrazione Microsoft 365 center](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph connettore.
+È ora possibile utilizzare Amministrazione Microsoft 365 [Center](https://admin.microsoft.com/) per completare il resto del processo di configurazione per il connettore Graph connettore.
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
@@ -120,7 +120,7 @@ Dovrai scegliere quali utenti potranno visualizzare i risultati della ricerca da
 
 ### <a name="step-5a-select-permissions"></a>Passaggio 5.a: Selezionare le autorizzazioni
 
-Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli elenchi di controllo di accesso possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non Azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
+Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli ACL possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non Azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
 
 >[!NOTE]
 >Se usi un provider di identità di terze parti come ID ping o secureAuth, devi selezionare "non-AAD" come tipo di identità.
@@ -136,13 +136,13 @@ Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionat
 
 ### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>Applicare il mapping degli utenti per sincronizzare le identità di Salesforce con le identità di Azure AD
 
-In questo video è possibile visualizzare il processo di autenticazione nell'istanza di Salesforce, sincronizzare le identità non Azure Active Directory con le identità di Azure Active Directory e applicare le appropriate limitazione per motivi di sicurezza agli elementi di Salesforce.
+In questo video è possibile visualizzare il processo per l'autenticazione nell'istanza di Salesforce, sincronizzare le identità non Azure Active Directory con le identità di Azure Active Directory e applicare le appropriate limitazione per motivi di sicurezza agli elementi di Salesforce.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
-È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, la presenza di alcune etichette di proprietà migliorerà la pertinenza della ricerca e garantirà risultati di ricerca migliori per gli utenti finali. Per impostazione predefinita, ad alcune etichette come "Title", "URL", "CreatedBy" e "LastModifiedBy" sono già state assegnate proprietà di origine.
+È possibile assegnare una proprietà di origine a ogni etichetta scegliendo un menu di opzioni. Anche se questo passaggio non è obbligatorio, la presenza di alcune etichette di proprietà migliorerà la pertinenza della ricerca e garantirà risultati di ricerca migliori per gli utenti finali. Per impostazione predefinita, ad alcune etichette come "Title", "URL", "CreatedBy" e "LastModifiedBy" sono già state assegnate proprietà di origine.
 
 ## <a name="step-7-manage-schema"></a>Passaggio 7: Gestire lo schema
 
@@ -168,7 +168,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 >[!TIP]
 >**Tipo di risultato predefinito**
 >* Il connettore Salesforce registra automaticamente un [tipo di risultato](./customize-search-page.md#step-2-create-result-types) dopo la pubblicazione del connettore. Il tipo di risultato utilizza un layout dei [risultati](./customize-results-layout.md) generato dinamicamente in base ai campi selezionati nel passaggio 3.
->* È possibile gestire il tipo di risultato passando a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nella interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `Salesforce` sarà denominato: "SalesforceDefault"
+>* È possibile gestire il tipo di risultati passando a [**Tipi di risultati**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) nella interfaccia di amministrazione di Microsoft 365 . [](https://admin.microsoft.com) Il tipo di risultato predefinito verrà denominato `ConnectionId` "Default". Ad esempio, se l'ID di connessione è , il layout dei risultati `Salesforce` sarà denominato: "SalesforceDefault"
 >* È inoltre possibile scegliere di creare un tipo di risultato personalizzato, se necessario.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
