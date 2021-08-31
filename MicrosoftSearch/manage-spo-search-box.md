@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Come personalizzare l'esperienza della casella di ricerca SharePoint siti
-ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533582"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701977"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Impostazioni della casella di ricerca SharePoint siti
 
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Modifica dell'ambito della ricerca
 
-Quando si crea un nuovo sito in SharePoint Online oggi e si digita nella casella di ricerca, viene visualizzata la pagina dei Microsoft Search risultati. Questa pagina mostra i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca fino all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
+Quando si crea un nuovo sito in SharePoint Online oggi e si digita nella casella di ricerca, viene visualizzata la pagina dei Microsoft Search risultati. Questa pagina mostra i risultati del sito corrente per impostazione predefinita e consente di espandere l'ambito della ricerca all'hub a cui è associato il sito corrente (se presente) o all'intera organizzazione.
 
 L'ambito utilizzato dalla casella di ricerca, per impostazione predefinita, dipende dal tipo di sito.
 

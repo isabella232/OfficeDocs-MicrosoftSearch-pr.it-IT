@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
-ms.openlocfilehash: 5e9d88fc08458e928e52988124ee94c60829c7bb71ed13f8534b71ca08e2d50c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532876"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701995"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
@@ -28,7 +28,7 @@ Posizione consente agli utenti di trovare indirizzi e individuare gli edifici de
 
 ### <a name="add-or-edit-a-single-location"></a>Aggiungere o modificare una singola posizione
 
-1. Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. Nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. Per aggiungere una nuova posizione, selezionare **Aggiungi**.
 1. Per modificare una posizione, selezionarla nell'elenco di posizioni pertinenti.
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.

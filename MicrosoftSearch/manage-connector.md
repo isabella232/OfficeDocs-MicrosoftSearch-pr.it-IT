@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Gestire i connettori Graph Microsoft per Microsoft Search.
-ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
-ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
+description: Gestire Microsoft Graph Connectors per Microsoft Search.
+ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408209"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702049"
 ---
 # <a name="monitor-your-connections"></a>Monitorare le connessioni
 
@@ -34,12 +34,12 @@ Operazione | Connettori di Graph Microsoft | Partner o Graph connettori
 --- | --- | ---
 Aggiungere una connessione | :heavy_check_mark: (Vedere Panoramica [dell'installazione](configure-connector.md)) | :x: (Fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
-Modificare una connessione pubblicata | :heavy_check_mark: Nome e Descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Nome<br></br> :heavy_check_mark: Descrizione
+Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
 Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Monitorare lo stato della connessione
 
-Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** Microsoft Search pagina. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
+Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** nella pagina **Microsoft Search.** Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
 Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
@@ -64,7 +64,7 @@ La barra di utilizzo delle quote indicherà diversi stati in base all'utilizzo d
 Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
-Alta | 80-89%
+Alto | 80-89%
 Critiche | 90%-99%
 Full | 100%
 

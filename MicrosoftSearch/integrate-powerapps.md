@@ -6,27 +6,27 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: Includere app basate su browser nei risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532958"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702103"
 ---
-# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Integrare Power Apps nei Microsoft Search preferiti
+# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Integrare Power Apps in Microsoft Search segnalibri
    
-Aiutare gli utenti a completare attività, come l'immissione di periodi di ferie o le spese di reporting, integrando microsoft [Power Apps](https://products.office.com/business/microsoft-powerapps) esistente nei segnalibri Microsoft Search preferiti. Le Power Apps vengono visualizzate all'interno del risultato di un segnalibro, eliminando la necessità di passare a un sito diverso o aprire uno strumento separato, risparmiando tempi e fatica.
+Aiutare gli utenti a completare attività, ad esempio l'immissione di periodi di ferie o le spese di reporting, integrando microsoft [Power Apps](https://products.office.com/business/microsoft-powerapps) esistente nei segnalibri Microsoft Search preferiti. Le Power Apps vengono visualizzate all'interno del risultato di un segnalibro, eliminando la necessità di passare a un sito diverso o aprire uno strumento separato, risparmiando tempi e fatica.
   
 ## <a name="what-are-power-apps"></a>Cosa sono Power Apps?
 
-[Power Apps](https://products.office.com/business/microsoft-powerapps) è un servizio che consente di creare app aziendali che vengono eseguite in un browser o in un telefono o tablet senza alcuna esperienza di codifica necessaria. Ulteriori informazioni:
+[Power Apps](https://products.office.com/business/microsoft-powerapps) è un servizio che consente di creare app aziendali che vengono eseguite in un browser o in un telefono o un tablet senza alcuna esperienza di codifica necessaria. Ulteriori informazioni:
   
 - [Formazione guidata](/learn/browse/?products=powerapps)
     
@@ -54,4 +54,4 @@ Aiutare gli utenti a completare attività, come l'immissione di periodi di ferie
     
 7. Selezionare **Pubblica**.
     
-Quando un utente Microsoft Search ricerca [](https://Bing.com) Bing ricerca di una delle parole chiave del segnalibro o delle parole chiave riservate, l'app Power App verrà visualizzata nel risultato del segnalibro.
+Quando un utente Microsoft Search ricerca [](https://Bing.com) Bing ricerca di una delle parole chiave del segnalibro o delle parole chiave riservate, l'app Power app verrà visualizzata nel risultato del segnalibro.

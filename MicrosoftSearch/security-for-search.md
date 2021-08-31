@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Proteggere i dati dell'azienda e gli utenti finali fornendo informazioni agli utenti autorizzati con Microsoft Search in Bing
-ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532678"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701859"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sicurezza e privacy per Microsoft Search in Bing
 
@@ -35,11 +35,11 @@ Gli utenti possono accedere a Microsoft Search solo con un account aziendale o d
 
 ## <a name="single-sign-on"></a>Single Sign-On
 
-Se un utente è già autenticato con l'account aziendale o dell'istituto di istruzione in un altro servizio, ad esempio Outlook o SharePoint, verrà automaticamente eseguito l'accesso allo stesso account aziendale o dell'istituto di istruzione quando passa a Bing nello stesso browser. Inoltre, quando l'utente esce dal proprio account aziendale o dell'istituto di istruzione, verrà automaticamente disconnesso da altri servizi Microsoft Office nello stesso browser.
+Se un utente è già autenticato con il proprio account aziendale o dell'istituto di istruzione in un altro servizio, ad esempio Outlook o SharePoint, verrà automaticamente eseguito l'accesso allo stesso account aziendale o dell'istituto di istruzione quando passa a Bing nello stesso browser. Inoltre, quando l'utente esce dal proprio account aziendale o dell'istituto di istruzione, verrà automaticamente disconnesso da altri servizi Microsoft Office nello stesso browser.
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Comunica con il cloud Microsoft dal browser
 
-Quando un utente accede con il proprio account aziendale o dell'istituto di istruzione, Bing le raccolte client necessarie verranno scaricate nel browser per abilitare i Microsoft Search risultati. Quindi, quando esegue la ricerca, il codice nel browser chiama Office 365 cloud per ottenere risultati di lavoro. A tale scopo, Microsoft Search un'API dedicata che viene gestita in conformità agli obiettivi di controllo di SSAE 18 SOC2 Tipo 1. Ciò significa che i risultati del lavoro e i dati di lavoro non fluiranno attraverso sistemi Bing soggetti a obiettivi di controllo dell'elaborazione dei dati meno stringenti rispetto ai risultati del lavoro stessi quando vengono elaborati in Office 365 Core Online Services.
+Quando un utente accede con il proprio account aziendale o dell'istituto di istruzione, Bing le raccolte client necessarie verranno scaricate nel browser per abilitare Microsoft Search risultati. Quindi, quando esegue una ricerca, il codice nel browser chiama Office 365 cloud per ottenere risultati di lavoro. A tale scopo, Microsoft Search un'API dedicata che viene gestita in conformità agli obiettivi di controllo di SSAE 18 SOC2 Tipo 1. Ciò significa che i risultati del lavoro e i dati di lavoro non fluiranno attraverso sistemi Bing soggetti a obiettivi di controllo dell'elaborazione dei dati meno stringenti rispetto ai risultati del lavoro stessi quando vengono elaborati in Office 365 Core Online Services.
   
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -56,7 +56,7 @@ Poiché le ricerche sul luogo di lavoro potrebbero essere riservate, Microsoft S
 
 ### <a name="logging"></a>Registrazione
 
-- Tutti i log di ricerca di Bing.com relativi a Microsoft Search in Bing traffico vengono dissociati dall'identità aziendale.
+- Tutti i log di ricerca di Bing.com relativi a Microsoft Search nel traffico Bing vengono dissociati dall'identità aziendale.
 - Se viene soddisfatto un set di restrizioni o soglie di frequenza che ci danno la certezza che la query non sia specifica di una determinata organizzazione, la query verrà trattata come descritto nella sezione Ricerca e intelligenza artificiale dell'Informativa sulla [privacy.](https://privacy.microsoft.com/privacystatement) Ad esempio, tali query verranno utilizzate per modellare e formare le funzionalità pubbliche, ad esempio il controllo automatico o le ricerche correlate.
 - Le query che non soddisfano la serie di restrizioni o soglie di frequenza verranno archiviate separatamente dal traffico pubblico non di Microsoft Search.
 
@@ -68,4 +68,4 @@ La pubblicità mostrata su Bing.com in relazione alle ricerche sul luogo di lavo
 
 Il post di blog del [21 maggio 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) di Microsoft riflette il nostro impegno per la conformità al GDPR e il modo in cui Microsoft aiuta le aziende e le organizzazioni a rispettare i propri obblighi di conformità al GDPR. Ulteriori dettagli sono disponibili nelle domande frequenti sul Centro [protezione Microsoft.](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)
 
-Microsoft Search query eseguite sulle risorse interne di un cliente e sui risultati restituiti sono considerati dati del cliente e, di conseguenza, soddisfano anche gli impegni del processore descritti nell'articolo 28, come illustrato nelle domande frequenti sul [Centro](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)protezione. Per quanto riguarda le query di Microsoft Search che vengono Bing pubbliche, Microsoft è conforme agli obblighi del GDPR come controllore dei dati.
+Microsoft Search query eseguite sulle risorse interne di un cliente e sui risultati restituiti sono considerati dati del cliente e, di conseguenza, soddisfano anche gli impegni del processore descritti nell'articolo 28, come illustrato nelle domande frequenti sul [Centro](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)protezione. Per quanto riguarda le query da Microsoft Search che vanno a servizi pubblici Bing, Microsoft è conforme agli obblighi del GDPR come controllore dei dati.

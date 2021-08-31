@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Dettagli ed errori dei connettori
-ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701382"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -63,8 +63,8 @@ Codice di errore | Messaggio di errore | Soluzione
 1003 | L'account associato al connettore non dispone dell'autorizzazione per accedere all'elemento. |  Verificare che l'account appropriato abbia accesso all'elemento che si desidera indicizzare.
 1004 | Impossibile raggiungere il gateway dati locale. Verificare che il servizio gateway sia in esecuzione e che i dettagli del gateway siano aggiornati nella configurazione della connessione. | Controllare il computer con il gateway, aprire l'applicazione Power BI Gateway e verificare che il gateway sia in esecuzione. Verificare che il gateway utilizzi lo stesso account amministratore Microsoft Search, quindi verificare che tutti i dettagli del gateway siano tutti aggiornati nella configurazione della connessione.
 1005 | Le credenziali associate a questa origine dati sono scadute. Rinnovare le credenziali e aggiornare la connessione. | Fare **clic su** Modifica per aggiornare le credenziali di autenticazione.
-1006 | La versione del gateway non è aggiornata e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) to download and install the latest version of the Power BI gateway on the machine containing the gateway.
-1007 | Nessuna licenza Power BI valida rilevata. Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. | Per eseguire questa ricerca per indicizzazione è Power BI una licenza valida. Verificare che l'organizzazione abbia una licenza valida. In caso contrario, riprovare. In caso contrario, ottenere una licenza e riprovare.
+1006 | La versione del gateway non è aggiornata e non supporta più questo connettore. Sarà necessario aggiornare il gateway. | Visitare [Installare un gateway](/data-integration/gateway/service-gateway-install) dati locale per scaricare e installare la versione più recente del gateway di Power BI nel computer contenente il gateway.
+1007 | Nessuna licenza Power BI stata rilevata. È necessaria una licenza di Power BI valida per eseguire questa ricerca per indicizzazione. | È necessaria una licenza di Power BI valida per eseguire questa ricerca per indicizzazione. Verificare che l'organizzazione abbia una licenza valida. In caso contrario, riprovare. In caso contrario, ottenere una licenza e riprovare.
 1008 | L'utilizzo totale della quota del tenant ha raggiunto il limite. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1009 | L'utilizzo totale della quota per la connessione ha raggiunto il limite. | Prova a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1010 | L'utilizzo totale della quota per l'indicizzazione di gruppi non Azure AD ha raggiunto il limite di 100.000. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.

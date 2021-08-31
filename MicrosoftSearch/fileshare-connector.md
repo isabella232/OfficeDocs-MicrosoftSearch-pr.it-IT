@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore Graph condivisione file per Microsoft Search
-ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235903"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469952"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Connettore Graph file
+# <a name="file-share-graph-connector"></a>Connettore Graph condivisione file
 
 Il connettore Graph condivisione file consente agli utenti dell'organizzazione di cercare condivisioni Windows file locali.
 
@@ -34,7 +34,7 @@ Il connettore Graph condivisione file consente agli utenti dell'organizzazione d
 
 ### <a name="install-the-graph-connector-agent"></a>Installare l'agente Graph connettore
 
-Per indicizzare le condivisioni Windows file, è necessario installare e registrare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)  
+Per indicizzare le Windows file condivisioni file, è necessario installare e registrare l'agente Graph connettore. Per [ulteriori informazioni, vedere Install the Graph connector agent.](graph-connector-agent.md)  
 
 ### <a name="content-requirements"></a>Requisiti del contenuto
 
@@ -58,7 +58,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Nella pagina **Connessione'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
+Nella pagina **Connessione a origine** dati selezionare Condivisione **file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
 
 ### <a name="preserve-last-access-time"></a>Mantenere l'ora dell'ultimo accesso
 
@@ -82,7 +82,7 @@ Le regole per la scrittura di espressioni regolari sono disponibili [qui](https:
 
 L'amministratore potrebbe anche avere la possibilità di concedere un'eccezione alla regola limite. La priorità della regola di eccezione sostituisce le regole limite. In modo analogo, l'eccezione può essere definita fornendo il percorso cartella/file per gli elementi che si desidera includere nell'indicizzazione.
 
-![Limiti ed eccezioni](media/file-connector/ExclusionRule.png)
+![Limiti ed eccezioni.](media/file-connector/ExclusionRule.png)
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
@@ -92,7 +92,7 @@ Tieni presente che le finestre per impostazione predefinita forniscono l'autoriz
 
 È possibile scegliere Condividi ACL solo se il percorso di condivisione specificato segue il formato di percorso UNC. Puoi creare un percorso in formato UNC andando a "Condivisione avanzata" in "Condivisione".
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 

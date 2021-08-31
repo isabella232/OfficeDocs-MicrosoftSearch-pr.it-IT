@@ -8,32 +8,32 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare i Microsoft Search di utilizzo
-ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533116"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701454"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Report di utilizzo
 
-I report sull'utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate [](./make-content-easy-to-find.md) da questi report consentono di semplificare l'individuazione e l'azione del contenuto che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
+I report di utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate [](./make-content-easy-to-find.md) da questi report consentono di semplificare l'individuazione e l'azione del contenuto che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
 
 > [!IMPORTANT]
 > Microsoft Search report di utilizzo sono attualmente in anteprima
 
-I [Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo includono grafici e tabelle generati dalle ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle Bing di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo da richiedere tempo per accumulare i dati cronologici.
+I [Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo includono grafici e tabelle generati da ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle caselle di Bing ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo che sia necessario del tempo per accumulare i dati cronologici.
 
-Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali Bing e **la distribuzione delle impression**. Questo collegamento e la pagina precedente verranno rimossi a breve.
+Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali e la distribuzione delle **impression** di Bing. Questo collegamento e la pagina precedente verranno rimossi a breve.
 
 > [!div class="mx-imgBorder"]
-> ![Dashboard dei report di utilizzo della ricerca](media/usage-reports/usage_reports_v2.png)
+> ![Dashboard dei report di utilizzo della ricerca.](media/usage-reports/usage_reports_v2.png)
 
 ## <a name="overview-of-search-reports"></a>Panoramica dei report di ricerca
 
@@ -53,7 +53,7 @@ Quando si passa alla pagina dei report di utilizzo, tutti i report sono disponib
 
 Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
 
-Per visualizzare Bing principali query e report di distribuzione delle impression, fare clic sul collegamento nella pagina.
+Per visualizzare Bing query principali e i report di distribuzione delle impression, fare clic sul collegamento nella pagina.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -63,7 +63,7 @@ La visualizzazione calendario, oggi, nei report di utilizzo di Microsoft Search 
 
 Le tabelle query principali, abbandonate e non riuscite mostrano i risultati del giorno o del mese scelto.
 
-**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via... ad esempio Bing report di query principali?**
+**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via... ad esempio Bing principali report di query?**
 
 Stiamo valutando questo tipo di aggregazione e semplificando il filtro degli intervalli di dati per le versioni future di questi report.
 

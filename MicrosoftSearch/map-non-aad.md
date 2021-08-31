@@ -6,22 +6,22 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Passaggi su come eseguire il mapping delle identità non AAD
-ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533569"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701959"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Mappare le identità non di Azure AD  
 
-Questo articolo illustra i passaggi per il mapping delle identità non di Azure AD alle identità di Azure AD in modo che gli utenti dell'elenco di controllo di accesso (ACL) con identità non Azure AD possano visualizzare i risultati della ricerca dei connettori nell'ambito di tali identità.
+Questo articolo illustra i passaggi per eseguire il mapping delle identità non di Azure AD alle identità di Azure AD in modo che gli utenti dell'elenco di controllo di accesso (ACL) con identità non Azure AD possano visualizzare i risultati della ricerca dei connettori nell'ambito.
 
 Questi passaggi sono rilevanti solo per gli amministratori della ricerca che configurano un connettore [ServiceNow](servicenow-connector.md) o [Salesforce](salesforce-connector.md) da Parte di Microsoft con autorizzazioni di ricerca per "Solo gli utenti con accesso a questa origine dati" e il tipo di identità "Non-AAD".
 
@@ -71,7 +71,7 @@ Di seguito sono riportati alcuni esempi di formule con output di espressioni reg
 | {0}.{1} @contoso.com  | firstname | lastname |firstname.lastname@contoso.com
 | {0}@domain.com                 | userid                 |             |userid@domain.com
 
-Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizzare un'anteprima di 5 utenti casuali dell'origine dati con i rispettivi mapping utente applicati. L'output dell'anteprima include il valore delle proprietà utente non di Azure AD selezionate nel passaggio 2 per tali utenti e l'output della formula finale fornita nel passaggio 3 per tale utente. Indica inoltre se l'output della formula può essere risolto in un utente di Azure AD nel tenant tramite un'icona "Operazione riuscita" o "Operazione non riuscita".  
+Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizzare un'anteprima di 5 utenti casuali dall'origine dati con i rispettivi mapping utente applicati. L'output dell'anteprima include il valore delle proprietà utente non di Azure AD selezionate nel passaggio 2 per tali utenti e l'output della formula finale fornita nel passaggio 3 per tale utente. Indica inoltre se l'output della formula può essere risolto in un utente di Azure AD nel tenant tramite un'icona "Operazione riuscita" o "Operazione non riuscita".  
 
 >[!NOTE]
 >È comunque possibile procedere con la creazione della connessione se uno o più mapping utente hanno lo stato "Non riuscito" dopo aver fatto clic su **Anteprima.** L'anteprima mostra 5 utenti casuali e i relativi mapping dall'origine dati. Se il mapping specificato non esegue il mapping di tutti gli utenti, è possibile che si verifichi questo caso.
@@ -80,7 +80,7 @@ Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizz
 
 Vedi lo snapshot seguente per un esempio di mapping non Azure AD.
 
-![Snapshot di esempio su come compilare la pagina di mapping non di Azure AD](media/non-aad-mapping.png)
+![Snapshot di esempio di come compilare la pagina di mapping non di Azure AD.](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>Limitazioni  
 

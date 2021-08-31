@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare il connettore Enterprise siti Web Graph per Microsoft Search
-ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235932"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469979"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -64,11 +64,11 @@ Se selezionato, il connettore eseguirà la ricerca per indicizzazione solo degli
 Se il sito Web contiene contenuto dinamico, ad esempio pagine Web presenti in sistemi di gestione del contenuto come Confluence o Unily, è possibile abilitare un crawler dinamico. Per attivarla, selezionare Abilita ricerca **per indicizzazione per siti dinamici.** Il crawler attenderà il rendering del contenuto dinamico prima di iniziare la ricerca per indicizzazione.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Connection Impostazioni pane for Enterprise Web connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Screenshot of Connection Impostazioni pane for Enterprise Web connector.](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
 
-1. **DOM Ready**: immetti l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
+1. **DOM Ready**: immettere l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
 1. **Intestazioni da aggiungere**: specificare le intestazioni HTTP che il crawler deve includere quando si invia l'URL Web specifico. È possibile impostare più intestazioni per siti Web diversi. Ti consigliamo di includere i valori del token di autenticazione.
 1. **Intestazioni da ignorare:** specificare eventuali intestazioni non necessarie che devono essere escluse dalle richieste di ricerca per indicizzazione dinamiche.
 
@@ -96,7 +96,7 @@ Per ulteriori informazioni, vedere [Authorize access to Azure Active Directory w
 
 Per ottenere i valori per la risorsa, client_id e client_secret, passare a Usare il codice di autorizzazione per richiedere un **token** di accesso nella pagina Web dell'URL di reindirizzamento.
 
-Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con il Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
+Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con](/azure/active-directory/develop/quickstart-register-app)il Microsoft Identity Platform .
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Passaggio 3a: Aggiungere URL da escludere (Restrizioni facoltative per la ricerca per indicizzazione)
 
@@ -124,7 +124,7 @@ Il connettore Enterprise web web supporta solo le autorizzazioni di ricerca visi
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 
-Il connettore Enterprise web web supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
+Il Enterprise web connector supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -138,7 +138,7 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
  Codice di errore dettagliato | Messaggio di errore
  --- | ---
  6001 | Il sito che si sta provando a indicizzare non è raggiungibile
- 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata da in base robots.txt configurazione.
+ 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata in base robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul lato client (ad eccezione di HTTP 404, 408), fare riferimento ai codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Impossibile trovare la pagina di origine che si sta provando a indicizzare. (Errore HTTP 404)

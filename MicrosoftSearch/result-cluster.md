@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Dettagli dell'esperienza del cluster di risultati dei connettori
-ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235899"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701931"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph dei risultati dei connettori
 
@@ -41,7 +41,7 @@ L'esperienza dei risultati della ricerca per gli elementi dei connettori mostrat
 
 I cluster di risultati vengono visualizzati al centro della pagina nel verticale Tutti. Ad esempio, di seguito viene visualizzato un cluster di risultati da un verticale "MediaWiki".
 
-![Esempio di cluster di risultati MediaWiki](media/result-cluster/result-cluster-example.png)
+![Esempio di cluster di risultati MediaWiki.](media/result-cluster/result-cluster-example.png)
 
 ## <a name="result-clusters-default-settings"></a>Impostazioni predefinite dei cluster di risultati
   
@@ -54,8 +54,8 @@ Se si desidera disabilitarlo, eseguire la procedura seguente per disattivare l'e
 
 Seguire questa procedura per disattivare l'esperienza a SharePoint sito:
 
-1. Vai a **Impostazioni** nel sito SharePoint sito
+1. Passare a **Impostazioni** nel sito SharePoint locale
 2. Vai a **Informazioni sito** Visualizza tutte le impostazioni > **del sito.**
-3. Passare alla sezione Microsoft Search, quindi selezionare **Configura Microsoft Search per questa raccolta siti.**
+3. Passare alla sezione Microsoft Search e quindi selezionare Configura Microsoft Search **per questa raccolta siti.**
 4. Nel riquadro di spostamento passare a **Esperienza personalizzata,** quindi selezionare **Verticali.**
 5. Selezionare il **verticale Tutti,** quindi abilitare **Nascondi i risultati del connettore.**

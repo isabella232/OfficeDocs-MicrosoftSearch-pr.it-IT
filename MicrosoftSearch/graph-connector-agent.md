@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Agente in-prem
-ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
-ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
+ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58363242"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469961"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agente connettore microsoft Graph
 
-L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente* Graph microsoft Graph. Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
+L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente Graph microsoft* Graph. Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
 
 ## <a name="installation"></a>Installazione
 
@@ -92,7 +92,7 @@ I dettagli dell'autenticazione possono essere forniti utilizzando un segreto cli
 Esistono tre semplici passaggi per l'utilizzo dell'autenticazione basata su certificato:
 
 1. Creare o ottenere un certificato
-2. Upload il certificato nel portale di Azure
+2. Upload il certificato al portale di Azure
 3. Assegnare il certificato all'agente
 
 ##### <a name="step-1-get-a-certificate"></a>Passaggio 1: Ottenere un certificato
@@ -123,7 +123,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. Apri **Registrazione app** e seleziona Certificati e **segreti** nel riquadro di spostamento. Copiare l'identificazione personale del certificato.
 
-:::image type="content" alt-text="Elenco di certificati con identificazione personale quando è selezionato Certificati e segreti nel riquadro sinistro" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="Elenco di certificati con identificazione personale quando è selezionata l'opzione Certificati e segreti nel riquadro sinistro." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### <a name="step-3-assign-the-certificate-to-the-agent"></a>Passaggio 3: Assegnare il certificato all'agente
 

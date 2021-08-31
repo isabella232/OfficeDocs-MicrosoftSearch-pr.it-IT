@@ -1,5 +1,5 @@
 ---
-title: Connettore SQL e Microsoft SQL Server Graph azure per Microsoft Search
+title: Connettore SQL e Microsoft SQL Server Graph Azure per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -7,30 +7,30 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
-ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
-ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406946"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701436"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Connettori SQL e Microsoft SQL Server Graph Azure
 
-Il connettore Microsoft SQL Server o Azure SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database SQL Server locale o da un database ospitato nell'istanza di Azure SQL nel cloud.
-Il connettore Graph indicizza il contenuto specificato Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con questi SQL, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
+Il connettore Microsoft SQL Server o azure SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database di SQL Server locale o da un database ospitato nell'istanza di Azure SQL nel cloud.
+Il connettore Graph indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con questi SQL, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo per il connettore di SQL Azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni](#limitations) per il server Microsoft SQL e i connettori SQL Azure.
+Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo per il connettore SQL azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni per](#limitations) il server Microsoft SQL e i connettori SQL Azure.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -73,7 +73,7 @@ Per aggiungere l'app registrata al database SQL di Azure, devi:
 
 ### <a name="connection-settings"></a>Impostazioni di connessione
 
-Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
+Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessario configurare il server di database che si desidera sotto ricerca per indicizzazione e l'agente locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
 
 > [!NOTE]
 > - Il database deve essere SQL Server versione 2008 o successiva perché il connettore Microsoft SQL Server sia in grado di connettersi.
@@ -89,7 +89,7 @@ Per una sicurezza aggiunta, è possibile configurare le regole del firewall IP p
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-Per eseguire ricerche nel contenuto del database, è necessario specificare SQL query quando si configura il connettore. Queste SQL devono assegnare un nome a tutte le colonne del database che si desidera indicizzare, ovvero le proprietà di origine, inclusi gli eventuali join SQL che devono essere eseguiti per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare elenchi di controllo di accesso (ACL) all'interno SQL query quando si configura il connettore.
+Per eseguire ricerche nel contenuto del database, è necessario specificare SQL query quando si configura il connettore. Queste SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ovvero le proprietà di origine, inclusi gli eventuali join SQL che devono essere eseguiti per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare gli elenchi di controllo di accesso (ACL) all'interno SQL query quando si configura il connettore.
 
 ## <a name="step-3a-full-crawl-required"></a>Passaggio 3a: ricerca per indicizzazione completa (obbligatorio)
 
@@ -98,11 +98,11 @@ In questo passaggio viene configurata la query SQL che esegue una ricerca per in
 > [!Tip]
 > Per ottenere tutte le colonne necessarie, è possibile unire più tabelle.
 
-![Script che mostra OrderTable e AclTable con proprietà di esempio](media/MSSQL-fullcrawl.png)
+![Script che mostra OrderTable e AclTable con proprietà di esempio.](media/MSSQL-fullcrawl.png)
 
-### <a name="select-data-columns-required-and-acl-columns-optional"></a>Selezionare le colonne di dati (obbligatorie) e le colonne ACL (facoltativo)
+### <a name="select-data-columns-required-and-acl-columns-optional"></a>Selezionare colonne di dati (obbligatorie) e colonne ACL (facoltativo)
 
-Nell'esempio viene illustrata una selezione di cinque colonne di dati che contengono i dati per la ricerca: OrderId, OrderTitle, OrderDesc, CreatedDateTime e IsDeleted. Per impostare le autorizzazioni di visualizzazione per ogni riga di dati, è possibile selezionare le colonne ACL seguenti: AllowedUsers, AllowedGroups, DeniedUsers e DeniedGroups. Per tutte queste colonne di dati sono disponibili anche le opzioni **Query**, **Search** o **Retrieve**.
+Nell'esempio viene illustrata una selezione di cinque colonne di dati che contengono i dati per la ricerca: OrderId, OrderTitle, OrderDesc, CreatedDateTime e IsDeleted. Per impostare le autorizzazioni di visualizzazione per ogni riga di dati, è possibile selezionare le colonne ACL seguenti: AllowedUsers, AllowedGroups, DeniedUsers e DeniedGroups. Tutte queste colonne di dati dispongono inoltre delle opzioni **Query,** **Ricerca** o **Recupera.**
 
 Selezionare le colonne di dati come illustrato in questa query di esempio: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -115,9 +115,9 @@ L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. N
 - **AllowedUsers**: Questa colonna specifica l'elenco degli ID utente che possono accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco degli utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
 - **AllowedGroups**: Questa colonna specifica il gruppo di utenti che potranno accedere ai risultati della ricerca. Nell'esempio seguente, i gruppi sales-team@contoso.com possono accedere solo al record con OrderId = 12.
 - **DeniedUsers**: Questa colonna specifica l'elenco di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non hanno accesso al record con OrderId = 13, mentre tutti gli altri utenti hanno accesso a questo record.
-- **DeniedGroups**: Questa colonna specifica il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
+- **DeniedGroups**: Questa colonna specifica il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
 
-![Dati di esempio che mostrano OrderTable e AclTable con proprietà di esempio](media/MSSQL-ACL1.png)
+![Dati di esempio che mostrano OrderTable e AclTable con proprietà di esempio.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
 
@@ -137,7 +137,7 @@ Per qualsiasi altro tipo di dati attualmente non supportato direttamente, è nec
 
 ### <a name="watermark-required"></a>Filigrana (obbligatorio)
 
-Per evitare l'sovraccarico del database, il connettore esegue il batch e riprende le query di ricerca per indicizzazione completa con una colonna filigrana di ricerca per indicizzazione completa. Utilizzando il valore della colonna watermark, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. Essenzialmente, questo meccanismo controlla l'aggiornamento dei dati per le ricerche per indicizzazione complete.
+Per evitare l'sovraccarico del database, il connettore esegue in batch e riprende le query di ricerca per indicizzazione completa con una colonna filigrana di ricerca per indicizzazione completa. Utilizzando il valore della colonna watermark, ogni batch successivo viene recuperato e l'esecuzione di query viene ripresa dall'ultimo checkpoint. Essenzialmente, questo meccanismo controlla l'aggiornamento dei dati per le ricerche per indicizzazione complete.
 
 Creare frammenti di codice di query per filigrane come illustrato negli esempi seguenti:
 
@@ -146,7 +146,7 @@ Creare frammenti di codice di query per filigrane come illustrato negli esempi s
 
 Nella configurazione illustrata nell'immagine seguente, `CreatedDateTime` è la colonna filigrana selezionata. Per recuperare il primo batch di righe, specificare il tipo di dati della colonna filigrana. In questo caso, il tipo di dati è `DateTime` .
 
-![Configurazione colonna filigrana](media/MSSQL-watermark.png)
+![Configurazione della colonna filigrana.](media/MSSQL-watermark.png)
 
 La prima query recupera il primo **numero N** di righe utilizzando: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). Dopo il recupero del primo batch, il valore più alto restituito nel batch viene salvato come checkpoint se le righe sono `CreatedDateTime` ordinate in ordine crescente. Un esempio è 1 marzo 2019 03:00:00. Il batch successivo di **N** righe viene quindi recuperato utilizzando "CreatedDateTime > March 1, 2019 03:00:00" nella query.
 
@@ -154,11 +154,11 @@ La prima query recupera il primo **numero N** di righe utilizzando: "CreatedDate
 
 Per escludere le righe eliminate in modo recidiva nel database dall'indicizzazione, specificare il nome e il valore della colonna di eliminazione recidiva che indica che la riga è stata eliminata.
 
-![Impostazioni di eliminazione recidiva: "Colonna di eliminazione recidiva" e "Valore della colonna di eliminazione recidiva che indica una riga eliminata"](media/MSSQL-softdelete.png)
+![Impostazioni di eliminazione recidiva: "Colonna di eliminazione recidiva" e "Valore della colonna di eliminazione recidiva che indica una riga eliminata".](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Ricerca per indicizzazione completa: gestire le autorizzazioni di ricerca
 
-Selezionare **Gestisci autorizzazioni** per scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query SQL ricerca per indicizzazione completa.
+Selezionare **Gestisci autorizzazioni** per scegliere le varie colonne di controllo di accesso (ACL) che specificano il meccanismo di controllo di accesso. Selezionare il nome di colonna specificato nella query di ricerca per indicizzazione SQL completa.
 
 Ogni colonna ACL deve essere una colonna multivalore. Questi valori ID multipli possono essere separati da separatori, ad esempio punto e virgola (;), virgola (,) e così via. È necessario specificare questo separatore nel campo **separatore** di valori.
 
@@ -168,11 +168,11 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 - **Azure Active Directory (AAD):** in Azure AD, ogni utente o gruppo ha un ID oggetto simile a 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'.
 - ID di sicurezza di **Active Directory (AD):** in un'installazione di Active Directory locale, ogni utente e gruppo dispone di un identificatore di sicurezza univoco non modificabile simile a 'S-1-5-21-3878594291-2115959936-132693609-65242'.
 
-![Impostazioni delle autorizzazioni di ricerca per configurare gli elenchi di controllo di accesso](media/MSSQL-ACL2.png)
+![Impostazioni delle autorizzazioni di ricerca per configurare gli elenchi di controllo di accesso.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Passaggio 3b: ricerca per indicizzazione incrementale (facoltativo)
 
-In questo passaggio facoltativo fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tutte le colonne in cui si desidera selezionare le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tutte le colonne in cui si desidera selezionare le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completa con un'eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi completi della ricerca per](#step-3a-full-crawl-required) indicizzazione per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere l'immagine seguente come esempio.
 
@@ -220,13 +220,13 @@ Di seguito è riportato un errore comune rilevato durante la configurazione del 
 | Passaggio di configurazione | Messaggio di errore | Possibili motivi |
 | ------------ | ------------ | ------------ |
 | Ricerca per indicizzazione completa | `Error from database server: A transport level error has occurred when receiving results from the server.` | Questo errore si verifica a causa di problemi di rete. È consigliabile controllare i registri di rete utilizzando [Network Monitor Microsoft](https://www.microsoft.com/download/details.aspx?id=4865) e contattare il supporto tecnico Microsoft. |
-| Ricerca per indicizzazione completa | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | I caratteri non alfanumerici (come i caratteri di sottolineatura) non sono consentiti nei nomi di colonna nella clausola SELECT. Utilizzare alias per rinominare le colonne e rimuovere caratteri non alfanumerici (esempio: SELECT column_name AS columnName). |
+| Ricerca per indicizzazione completa | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | I caratteri non alfanumerici ,come i caratteri di sottolineatura, non sono consentiti nei nomi di colonna nella clausola SELECT. Utilizzare alias per rinominare le colonne e rimuovere caratteri non alfanumerici (esempio: SELECT column_name AS columnName). |
 
 ## <a name="limitations"></a>Limitazioni
 
-I SQL connettori hanno queste limitazioni nella versione di anteprima:
+I SQL connettori hanno queste limitazioni nella versione di anteprima:The SQL connectors have these limitations in the preview release:
 
 - Microsoft SQL Server connettore: il database locale deve essere SQL Server versione 2008 o successiva.
-- La Microsoft 365 e la sottoscrizione di Azure (che ospita il database SQL Azure) devono trovarsi nello stesso Azure Active Directory.
+- La Microsoft 365 e la sottoscrizione di Azure (che ospita il database di Azure SQL) devono trovarsi nello stesso Azure Active Directory.
 - Gli ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
-- L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti esistenti come collegamenti all'interno delle colonne del database.
+- L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

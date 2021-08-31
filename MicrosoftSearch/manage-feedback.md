@@ -11,26 +11,25 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: Esaminare e agire in base al feedback degli utenti in Microsoft Search
-ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
+ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532890"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528984"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
 La creazione di un'esperienza di ricerca ottimale per gli utenti è una partnership tra Microsoft e l'amministratore della ricerca. Il feedback degli utenti ci consente di valutare continuamente il prodotto e ottimizzarlo per un'esperienza ottimale. Alcuni commenti e suggerimenti, tuttavia, sono meglio indirizzati dall'utente.
 
-Sono ora disponibili strumenti che consentono di esaminare e gestire il feedback fornito dagli utenti sull'esperienza di ricerca.
+Microsoft offre ora strumenti che consentono di esaminare e gestire il feedback fornito dagli utenti sull'esperienza di ricerca.
 
 ## <a name="how-users-submit-feedback"></a>Modalità di invio del feedback da parte degli utenti
 
-Poiché gli utenti dell'organizzazione usano Microsoft Search, possono ricevere commenti e suggerimenti sull'esperienza. Quando fanno clic su un collegamento di feedback nella pagina dei risultati, possono categorizzare il proprio feedback e includere commenti aggiuntivi.
+Poiché gli utenti dell'organizzazione Microsoft Search, possono avere feedback sull'esperienza. Quando fanno clic su un collegamento di feedback nella pagina dei risultati, possono categorizzare il proprio feedback e includere commenti aggiuntivi.
 
-![Modulo di feedback globale](media/feedback/feedback-global-dialog.png)
+![Modulo di feedback globale.](media/feedback/feedback-global-dialog.png)
 
 Gli utenti hanno anche la possibilità di inviare la query e altre informazioni di diagnostica, insieme alla categoria e ai commenti, a Microsoft. [Altre informazioni](https://privacy.microsoft.com/en-US/privacystatement) sulla privacy e su come proteggiamo questi dati. I dati di diagnostica contengono le informazioni più importanti che Microsoft deve usare per il miglioramento del prodotto.
 
@@ -45,6 +44,9 @@ Utilizzando un filtro, è possibile visualizzare il feedback per tipi di rispost
 È possibile utilizzare la casella di ricerca sopra l'elenco dei commenti e suggerimenti per cercare commenti e suggerimenti su una query specifica.
 
 Nell'elenco dei commenti e suggerimenti, la colonna Verbatim indica anche il feedback dell'utente che include un commento o un suggerimento. Per leggerla, fare clic sulla query per aprire il **riquadro** Dettagli.
+
+>[!NOTE]
+>Durante l'implementazione iniziale nelle esperienze di ricerca di amministratori e utenti finali, potrebbero essere necessario fino a due settimane prima che gli elementi di feedback vengano visualizzati nel portale di amministrazione.
 
 ## <a name="update-feedback-state"></a>Aggiornare lo stato di feedback
 
@@ -77,11 +79,11 @@ Se condividi il feedback automaticamente o manualmente, non include mai query e 
 
 ## <a name="suggestions-on-how-to-use-feedback"></a>Suggerimenti su come usare il feedback
 
-L'amministratore della ricerca deve comprendere i principali utenti dell'organizzazione e i tipi di contenuto con cui gli utenti interagiscono e ricercano in genere. Grazie a questa conoscenza, puoi usare il feedback per apportare miglioramenti mirati all'esperienza di ricerca degli utenti.
+L'amministratore della ricerca deve comprendere le persone principali dell'organizzazione e i tipi di contenuto con cui gli utenti interagiscono e ricercano in genere. Grazie a questa conoscenza, puoi usare il feedback per apportare miglioramenti mirati all'esperienza di ricerca degli utenti.
 
 1. "Non ho trovato quello che cercavo" e un feedback simile può essere usato per identificare il contenuto desiderato dagli utenti, ma non è attualmente incluso nell'indice di ricerca. La determinazione di questo spesso richiede indagini e inferenza in base alla comprensione degli utenti. Una volta trovato, decidi quali metodi di inclusione del contenuto sarebbero più appropriati:
     1. I segnalibri sono utili per le origini di contenuto con una pagina di destinazione di alta qualità e una varietà limitata di termini di ricerca, in modo che la community di utenti otterrà un risultato di alta qualità dal segnalibro e potrà quindi trovare in modo efficiente ciò che sta cercando.
     1. D&A sono utili per singole risposte abbastanza frequenti, ma che non cambiano.
     1. I connettori sono utili per le origini di contenuto con un'ampia gamma di contenuti e un'ampia varietà di termini di ricerca.
 1. "I risultati hanno richiesto troppo tempo per caricarsi" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
-1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ha un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.
+1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ottiene un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.

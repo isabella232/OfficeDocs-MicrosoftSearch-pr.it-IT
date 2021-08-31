@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Informazioni su come impostare Bing come motore di ricerca predefinito dell'organizzazione con Microsoft Search.
-ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534195"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701904"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Impostare Bing come motore di ricerca predefinito
   
@@ -46,7 +46,7 @@ Ogni dominio gestito dal controller deve ottenere una cartella separata. Per cop
 
 Gli utenti non potranno modificare il motore di ricerca predefinito dopo aver impostato il criterio.
   
-Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX da [Google Chrome Enterprise Guida.](https://support.google.com/chrome/a/answer/187202)
+Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX dalla Guida di [Google Chrome Enterprise .](https://support.google.com/chrome/a/answer/187202)
   
 Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione seguente: **%systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
   
@@ -89,7 +89,7 @@ Editor del Registro di sistema di Windows, versione 5.00
   
 Fare doppio clic sul file creato e seguire la procedura per importare il file. Dopo la corretta importazione, dovrebbe essere visualizzato il seguente messaggio:
   
-![Messaggio importazione completata dell'Editor del Registro di sistema](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Messaggio di importazione dell'editor del Registro di sistema completato.](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 ### <a name="step-2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>Passaggio 2: Aprire la Console Gestione criteri di gruppo (gpmc.msc) e passare alla modifica di un criterio esistente o crearne uno nuovo
 
@@ -98,7 +98,7 @@ Fare doppio clic sul file creato e seguire la procedura per importare il file. D
 3. Passare a **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
 4. Da questa chiave, assicurarsi di selezionare DefaultScope.
 
-    ![Visualizzatore Registro di sistema con DefaultScope selezionato](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Browser del Registro di sistema con DefaultScope selezionato.](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. Selezionare tutte le sottochiavi che contengono il GUID di Microsoft Search in Bing e ogni valore della chiave, ad eccezione dei percorsi per i profili utente. Scorrere verso il basso per selezionare altri elementi.
 6. Fare clic su Fine per completare la configurazione.
 

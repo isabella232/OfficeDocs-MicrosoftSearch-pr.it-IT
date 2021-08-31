@@ -7,22 +7,22 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurare il connettore di Graph Jira di Atlante per Microsoft Search
-ms.openlocfilehash: 6023e8ec4539bd37358a3e801ef81947fe9f87ff38736344347d5634d0527753
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533690"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702094"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Connettore jira Graph Atlante (anteprima)
 
-Il connettore jira Graph atlante consente all'organizzazione di indicizzare i problemi di Jira. Dopo aver configurato il connettore e il contenuto di indicizzazione dal sito jira, gli utenti finali possono cercare tali elementi in Microsoft Search.
+Il connettore di Graph Jira di Atlante consente all'organizzazione di indicizzare i problemi di Jira. Dopo aver configurato il connettore e il contenuto dell'indice dal sito jira, gli utenti finali possono cercare tali elementi in Microsoft Search.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
@@ -30,7 +30,7 @@ Il connettore jira Graph atlante consente all'organizzazione di indicizzare i pr
 Questo articolo è per chiunque configura, esegue e monitora un connettore jira Graph Atlante. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore jira Graph Atlante.
 
 >[!IMPORTANT]
->Il connettore Graph Jira di Atlante supporta solo le istanze ospitate nel cloud di Jira. Le versioni di Jira Server e Jira Data Center non sono supportate da questo connettore.
+>Il connettore di Graph Jira di Atlante supporta solo le istanze ospitate nel cloud di Jira. Le versioni di Jira Server e Jira Data Center non sono supportate da questo connettore.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 È necessario essere l'amministratore del tenant M365 dell'organizzazione e l'amministratore del sito Jira dell'organizzazione.
@@ -42,13 +42,13 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
-Per connettersi al sito di Jira, utilizzare l'URL del sito di Jira. L'URL di un sito cloud di Jira in genere è simile a *https://<organization_name>.atlassian.net/*. È possibile scegliere Autenticazione di base o OAuth 2.0 (scelta consigliata) per eseguire l'autenticazione nel sito di Jira.
+Per connettersi al sito di Jira, utilizzare l'URL del sito jira. L'URL di un sito cloud jira in genere è simile a *https://<organization_name>.atlassian.net/*. È possibile scegliere Autenticazione di base o OAuth 2.0 (scelta consigliata) per eseguire l'autenticazione nel sito di Jira.
 
 ### <a name="basic-auth"></a>Autenticazione di base
 Immetti il nome utente dell'account (in genere l'ID di posta elettronica) e il token API per l'autenticazione tramite l'autenticazione di base. Per altre informazioni sulla generazione di un token API, fai riferimento alla documentazione di Atlassian su come gestire i token API per il [tuo account di Atlassian.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 ### <a name="oauth-20"></a>OAuth 2.0
-Registra un'app in Atlassian Jira in modo che l'app Microsoft Search possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione del supporto di Atlassian su come [abilitare OAuth 2.0.](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
+Registra un'app in Atlassian Jira in modo che l'app Microsoft Search possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione del supporto atlante su come [abilitare OAuth 2.0.](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
 
 I passaggi seguenti forniscono indicazioni su come registrare l'app:
 
@@ -79,16 +79,16 @@ Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID
 
 Selezionare i campi che si desidera indicizzare e visualizzare in anteprima i dati in questi campi prima di procedere. Alcuni campi sono già selezionati per impostazione predefinita e non possono essere rimossi.
 
-Il connettore di Graph Atlante jira può indicizzare sia i campi problema predefiniti che i campi dei problemi creati personalizzati.
+Il connettore di Graph Atlante jira può indicizzare sia i campi di problema predefiniti che i campi dei problemi creati personalizzati.
 
 > [!NOTE]
 > Se un campo personalizzato creato selezionato non è presente in alcuni tipi di problema jira, il campo verrà ingerito come *NULL* (vuoto).
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-Il connettore jira Graph atlante supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con accesso **a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini. In Atlassian Jira, le autorizzazioni di sicurezza vengono definite utilizzando schemi di autorizzazione di progetto contenenti gruppi a livello di sito e ruoli di progetto. La sicurezza a livello di problema può essere definita anche utilizzando schemi di autorizzazione a livello di problema.
+Il connettore di Graph Atlante jira supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con accesso **a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini. In Atlassian Jira, le autorizzazioni di sicurezza vengono definite utilizzando schemi di autorizzazione di progetto contenenti gruppi a livello di sito e ruoli di progetto. La sicurezza a livello di problema può essere definita anche utilizzando schemi di autorizzazione a livello di problema.
 
-Se si sceglie **Solo** gli utenti con accesso a questa origine dati, è necessario scegliere ulteriormente se il sito di Jira dispone di utenti di cui è stato eseguito il provisioning di Azure Active Directory (AAD) o utenti non AAD.
+Se si **sceglie** Solo gli utenti con accesso a questa origine dati, è necessario scegliere ulteriormente se il sito di Jira dispone di utenti di cui è stato eseguito il provisioning di Azure Active Directory (AAD) o utenti non AAD.
 
 Per identificare l'opzione adatta all'organizzazione:
 
@@ -109,7 +109,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
 
-Il connettore jira Graph atlante supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali.
+Il connettore jira Graph atlante supporta le pianificazioni di aggiornamento sia per le ricerche per indicizzazione complete che per le ricerche per indicizzazione incrementali.
 La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione

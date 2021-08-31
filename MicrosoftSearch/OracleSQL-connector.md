@@ -7,30 +7,30 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurare il connettore di SQL Graph Oracle per Microsoft Search.
-ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701427"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-graph-connector"></a>Connettore SQL Graph Oracle
 
-Il connettore SQL Graph Oracle consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
+Il connettore SQL Graph Oracle consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore di SQL Graph Oracle. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per chiunque configura, esegue e monitora un connettore di SQL Graph Oracle. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -66,7 +66,7 @@ In questo passaggio viene configurata la query SQL che esegue una ricerca per in
 > [!Tip]
 > Per ottenere tutte le colonne necessarie, è possibile unire più tabelle.
 
-![Script che mostra OrderTable e AclTable con proprietà di esempio](media/MSSQL-fullcrawl.png)
+![Script che mostra OrderTable e AclTable con proprietà di esempio.](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Selezionare colonne di dati (obbligatorie) e colonne ACL (facoltativo)
 
@@ -78,12 +78,12 @@ Per gestire l'accesso ai risultati della ricerca, è possibile specificare una o
 
 L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. Nell'elenco seguente vengono illustrati i quattro **meccanismi di controllo di accesso**.
 
-* **AllowedUsers**: Questa opzione consente di specificare l'elenco degli ID utente che potranno accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco di utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
+* **AllowedUsers**: Questa opzione consente di specificare l'elenco degli ID utente che potranno accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco degli utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
 * **AllowedGroups**: Questa opzione consente di specificare il gruppo di utenti che potranno accedere ai risultati della ricerca. Nell'esempio seguente, i gruppi sales-team@contoso.com possono accedere solo al record con OrderId = 12.
 * **DeniedUsers**: Questa opzione consente di specificare l'elenco degli utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non hanno accesso al record con OrderId = 13, mentre tutti gli altri utenti hanno accesso a questo record.
 * **DeniedGroups**: Questa opzione consente di specificare il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
 
-![Dati di esempio che mostrano OrderTable e AclTable con proprietà di esempio](media/MSSQL-ACL1.png)
+![Dati di esempio che mostrano OrderTable e AclTable con proprietà di esempio.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
 
@@ -111,7 +111,7 @@ Creare frammenti di codice di query per filigrane come illustrato negli esempi s
 
 Nella configurazione illustrata nell'immagine seguente, `CreatedDateTime` è la colonna filigrana selezionata. Per recuperare il primo batch di righe, specificare il tipo di dati della colonna filigrana. In questo caso, il tipo di dati è `DateTime` .
 
-![Configurazione colonna filigrana](media/MSSQL-watermark.png)
+![Configurazione della colonna filigrana.](media/MSSQL-watermark.png)
 
 La prima query recupera il primo **numero N** di righe utilizzando: "CreatedDateTime > January 1, 1753 00:00:00" (min value of DateTime data type). Dopo il recupero del primo batch, il valore più alto restituito nel batch viene salvato come checkpoint se le righe sono `CreatedDateTime` ordinate in ordine crescente. Un esempio è 1 marzo 2019 03:00:00. Il batch successivo di **N** righe viene quindi recuperato utilizzando "CreatedDateTime > March 1, 2019 03:00:00" nella query.
 
@@ -119,7 +119,7 @@ La prima query recupera il primo **numero N** di righe utilizzando: "CreatedDate
 
 Per escludere le righe eliminate in modo recidiva nel database dall'indicizzazione, specificare il nome e il valore della colonna di eliminazione recidiva che indica che la riga è stata eliminata.
 
-![Impostazioni di eliminazione recidiva: "Colonna di eliminazione recidiva" e "Valore della colonna di eliminazione recidiva che indica una riga eliminata"](media/MSSQL-softdelete.png)
+![Impostazioni di eliminazione recidiva: "Colonna di eliminazione recidiva" e "Valore della colonna di eliminazione recidiva che indica una riga eliminata".](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Ricerca per indicizzazione completa: gestire le autorizzazioni di ricerca
 
@@ -133,11 +133,11 @@ I tipi di ID seguenti sono supportati per l'utilizzo come ACL:
 * **Azure Active Directory (AAD):** in Azure AD, ogni utente o gruppo ha un ID oggetto simile a 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b'
 * ID di sicurezza di **Active Directory (AD):** in un'installazione di Active Directory locale, ogni utente e gruppo dispone di un identificatore di sicurezza univoco non modificabile simile a 'S-1-5-21-3878594291-2115959936-132693609-65242'.
 
-![Impostazioni delle autorizzazioni di ricerca per configurare gli elenchi di controllo di accesso](media/MSSQL-ACL2.png)
+![Impostazioni delle autorizzazioni di ricerca per configurare gli elenchi di controllo di accesso.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Passaggio 3b: ricerca per indicizzazione incrementale (facoltativo)
 
-In questo passaggio facoltativo fornire una query SQL per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tra le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
+In questo passaggio facoltativo, fornire una SQL query per eseguire una ricerca per indicizzazione incrementale del database. Con questa query, il connettore SQL determina eventuali modifiche apportate ai dati dopo l'ultima ricerca per indicizzazione incrementale. Come nella ricerca per indicizzazione completa, selezionare tra le opzioni **Query**, **Cerca** o **Recupera**. Specificare lo stesso set di colonne ACL specificato nella query di ricerca per indicizzazione completa.
 
 I componenti nell'immagine seguente sono simili ai componenti di ricerca per indicizzazione completa con un'eccezione. In questo caso, "ModifiedDateTime" è la colonna della filigrana selezionata. Esaminare i [passaggi completi della ricerca per](#step-3a-full-crawl-required) indicizzazione per informazioni su come scrivere la query di ricerca per indicizzazione incrementale e vedere l'immagine seguente come esempio.
 
@@ -161,7 +161,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 Il connettore di SQL Oracle supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. È consigliabile impostare entrambe le opzioni.
 
-Una pianificazione di ricerca per indicizzazione completa trova le righe eliminate precedentemente sincronizzate con l'indice Microsoft Search e tutte le righe spostate dal filtro di sincronizzazione. Quando ci si connette per la prima volta al database, viene eseguita una ricerca per indicizzazione completa per sincronizzare tutte le righe recuperate dalla query di ricerca per indicizzazione completa. Per sincronizzare nuove righe e apportare aggiornamenti, è necessario pianificare ricerche per indicizzazione incrementali.
+Una pianificazione di ricerca per indicizzazione completa trova le righe eliminate precedentemente sincronizzate con l'indice Microsoft Search ed eventuali righe spostate fuori dal filtro di sincronizzazione. Quando ci si connette per la prima volta al database, viene eseguita una ricerca per indicizzazione completa per sincronizzare tutte le righe recuperate dalla query di ricerca per indicizzazione completa. Per sincronizzare nuove righe e apportare aggiornamenti, è necessario pianificare ricerche per indicizzazione incrementali.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -190,5 +190,5 @@ Di seguito è riportato un elenco degli errori comuni rilevati durante la config
 Il connettore SQL Oracle presenta queste limitazioni nella versione di anteprima:
 
 * Il database locale deve eseguire Oracle Database versione 11g o successiva.
-* Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
+* Gli ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 * L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

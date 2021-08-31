@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare segnalibri e modi per modificare in blocco i risultati dei segnalibri per Microsoft Search
-ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235960"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470240"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -38,7 +38,7 @@ Un segnalibro ideale include quattro elementi chiave:
 
 ## <a name="create-bookmark-answers"></a>Creare risposte ai segnalibri
 
-Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare [a Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere come si desidera creare nuovi segnalibri:
+Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare a [Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere come si desidera creare nuovi segnalibri:
 
 - Aggiungere segnalibri
 - Importare SharePoint risultati
@@ -58,7 +58,7 @@ Puoi usare l'estensione del browser Microsoft Search creator di contenuto per ag
 
 ### <a name="import-sharepoint-results"></a>Importare SharePoint risultati
 
-Se l'organizzazione ha configurato i risultati alzati di livello in SharePoint, è possibile importare titoli, URL e descrizioni dai Risultati alzati di livello per il tenant in Microsoft Search e rendere disponibile il contenuto importato agli utenti. Nella maggior parte dei casi, l'importazione SharePoint risultati richiede solo pochi minuti. Se si importa un numero elevato di risultati, potrebbero essere necessario fino a 48 ore. Si tratta di un modo semplice per popolare rapidamente i risultati della ricerca e renderlo più efficace per gli utenti. È consigliabile usare i risultati alzati di SharePoint come riferimento per comprendere come assegnare un nome e creare risultati di ricerca pertinenti.
+Se l'organizzazione ha configurato i risultati alzati di livello in SharePoint, è possibile importare titoli, URL e descrizioni dai risultati alzati di livello per il tenant in Microsoft Search e rendere disponibile il contenuto importato agli utenti. Nella maggior parte dei casi, l'importazione SharePoint risultati richiede solo pochi minuti. Se si importa un numero elevato di risultati, potrebbero essere necessario fino a 48 ore. Si tratta di un modo semplice per popolare rapidamente i risultati della ricerca e renderlo più efficace per gli utenti. È consigliabile usare i risultati alzati di SharePoint come riferimento per comprendere come assegnare un nome e creare risultati di ricerca pertinenti.
 
 ### <a name="add-default-and-suggested-bookmarks"></a>Aggiungere segnalibri predefiniti e suggeriti
 
@@ -104,7 +104,7 @@ Per evitare errori di duplicazione da segnalibro a segnalibro:
 
 Per ridurre lo sforzo manuale necessario per aggiungere segnalibri, Microsoft Search valutare i collegamenti SharePoint'organizzazione e consigliare i segnalibri. È possibile esaminarli prima di pubblicarli o impostarli per la pubblicazione automatica. Non è necessaria alcuna configurazione per i segnalibri consigliati, sono abilitati e impostati per la pubblicazione automatica per impostazione predefinita. Per modificare queste impostazioni in qualsiasi momento, seleziona **Gestisci segnalibri** per aprire il pannello Impostazioni segnalibro.
 
-![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal](media/bookmarks-recommendedsettings.png)
+![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal.](media/bookmarks-recommendedsettings.png)
 
 Se i segnalibri consigliati sono abilitati, il motore di raccomandazione valuterà SharePoint siti dell'organizzazione per identificare i collegamenti a traffico elevato. Dopo un periodo di valutazione iniziale, i segnalibri consigliati verranno pubblicati automaticamente o aggiunti all'elenco dei segnalibri suggeriti. Il ciclo successivo, ovvero un periodo di valutazione di 30 giorni seguito dalla pubblicazione automatica o dall'aggiunta di segnalibri suggeriti, inizierà.
 
@@ -124,7 +124,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Quanto tempo è necessario per la visibilità di un segnalibro Microsoft Search dopo la pubblicazione?**
 
-**A:**  Un segnalibro è disponibile in Microsoft Search subito dopo la pubblicazione.
+**A:**  Un segnalibro è disponibile in Microsoft Search immediatamente dopo la pubblicazione.
 
 **D: Quanto tempo è necessario per la visualizzazione di un segnalibro consigliato?**
 
@@ -134,7 +134,7 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **A**: I segnalibri eliminati vengono immediatamente rimossi dai risultati del lavoro.
 
-**D: È consigliabile Microsoft Search segnalibri da siti in tutte le lingue?**
+**D: Si consiglia Microsoft Search segnalibri da siti in tutte le lingue?**
 
 **A:** Sì, Microsoft Search è possibile consigliare segnalibri da qualsiasi sito SharePoint interno, indipendentemente dalla lingua.
 
@@ -156,4 +156,4 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Dove si trova l'ID app per un'app Power?**
 
-**A**: accedere al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A**: passare al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Panoramica della configurazione per i connettori Graph di Microsoft
-ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340088"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701877"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "58340088"
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica della configurazione per i connettori Graph di Microsoft 
 
-In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da **Microsoft** nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Il processo si compone delle seguenti fasi:  
+In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph **da Microsoft** nel interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com) Il processo si compone delle seguenti fasi:  
 <!---Add links to each section in the doc--->
 
 1. [Aggiungere un connettore di Graph nell'interfaccia di amministrazione di Microsoft 365.](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
@@ -46,7 +46,7 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 * [Passaggi successivi](#next-steps)
 
 > [!NOTE]
-> Il processo di configurazione è simile per tutti Graph connettori da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+> Il processo di configurazione è simile per tutti i connettori Graph microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 <!---## Before you get started-->
 
@@ -66,7 +66,7 @@ Completare la procedura seguente per configurare uno qualsiasi dei connettori di
    > ![Le origini dati disponibili includono: ADLS Gen2, siti Web di Enterprise, server Microsoft SQL, Azure SQL, database di Oracle SQL, ServiceNow, Condivisione file, Azure DevOps e MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> È possibile aggiungere un massimo di dieci Graph a ogni tenant.
+> È possibile aggiungere un massimo di dieci Graph connessioni a ogni tenant.
 
 ## <a name="step-2-name-the-connection"></a>Passaggio 2: assegnare un nome alla connessione
 
@@ -89,13 +89,13 @@ Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [I
 
 È possibile scegliere le proprietà che verranno indicizzate da Microsoft Search. 
 
-La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati in base Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447). 
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
 Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione possono accedere a ogni elemento.  
 
-Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo [Azure Active Directory (Azure AD).](/azure/active-directory/)
+Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo gli ACL [di Azure Active Directory (Azure AD).](/azure/active-directory/)
 
 Altri connettori come [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non di Azure AD.  
 
@@ -148,7 +148,7 @@ Attributo dello schema di ricerca | Funzione | Esempio
 RICERCA | Rende possibile la ricerca del contenuto di testo di una proprietà. Il contenuto delle proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituisce le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
 QUERY | Cerca una corrispondenza per una determinata proprietà in base a una query. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o verbatim. |  Se è possibile eseguire query sulla proprietà **Title,** la query **Title: Enterprise** è supportata.
 RETRIEVE | Solo le proprietà recuperabili possono essere utilizzate nel tipo di risultato e visualizzate nel risultato della ricerca. |
-AFFINAMENTO RICERCA | L'opzione di affinamento può essere utilizzata come nella Microsoft Search dei risultati. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'impostazione della connessione
+AFFINAMENTO RICERCA | L'opzione di affinamento può essere utilizzata come nella Microsoft Search dei risultati. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'installazione della connessione
 
 Per tutti i connettori ad eccezione del connettore condivisione file, i tipi personalizzati devono essere impostati manualmente. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La connessione guidata seleziona automaticamente uno schema di ricerca in base al set di proprietà di origine scelto. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina dello schema di ricerca.
 
@@ -210,7 +210,7 @@ Leggere le informazioni specifiche del connettore per l'origine dati.
 <!---Insert limitations for this data source-->
 Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
 
-Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare connettore Graph connettore.
+Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare Graph connettore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

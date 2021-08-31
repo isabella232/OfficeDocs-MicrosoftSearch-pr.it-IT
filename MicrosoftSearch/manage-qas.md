@@ -6,23 +6,23 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Trovare e aggiornare le risposte singolarmente o usare gli strumenti Microsoft Search disponibili per modificare le domande&come tutte contemporaneamente.
-ms.openlocfilehash: 2e54169a6196ec78bd96b33aa1ba71fc498b6ff13d8d872ad06ca0db1d9fc2c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Trova e aggiorna le risposte singolarmente o usa gli strumenti Microsoft Search disponibili per modificare le domande&come tutte contemporaneamente.
+ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532867"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701986"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
-Creare domande e risposte è simile alla creazione di segnalibri. D&Consente di rispondere alle domande dell'utente invece di fornire semplicemente un collegamento a una pagina Web. È inoltre possibile formattare la risposta in formato RTF. Se un segnalibro e un&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come i segnalibri, l'&domande e risposte viene aggiornato immediatamente dopo l'aggiunta o la modifica di un&domande e risposte.
+Creare domande e risposte è simile alla creazione di segnalibri. D&Consente di rispondere alle domande dell'utente invece di fornire semplicemente un collegamento a una pagina Web. È inoltre possibile formattare la risposta in formato RTF. Se un segnalibro e un&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come i segnalibri, l'&Q viene aggiornato immediatamente dopo l'aggiunta o la modifica di una domanda&A.
 
 ## <a name="add-or-edit-a-single-qa"></a>Aggiungere o modificare una singola domanda con risposta
 
@@ -69,9 +69,9 @@ Gli amministratori possono utilizzare le funzionalità di importazione ed esport
 
 Utilizzare la Importazione/Esportazione per:
 
-- Aggiungere domande&in blocco - Aggiungere i dettagli nel file di&un file modello e quindi importarlo.
+- Aggiungere in blocco domande&as - Aggiungere i dettagli nel file modello Q&A e quindi importarlo.
 - Modifica in blocco Q&As - Export Q&As to a .csv file, edit the Q&A details in the exported file, and then import the file.
-- Eseguire il backup di domande&as - Esportare domande&in un file .csv file.
+- Eseguire il backup di domande&as - Esportare domande&come in un file .csv file.
 
 Per importare o esportare domande&come:
 
@@ -79,7 +79,7 @@ Per importare o esportare domande&come:
 Selezionare **Esporta** per scaricare tutte le domande&come in un file .csv file.
 1. Nel riquadro destro selezionare l'opzione per l'importazione utilizzando un .csv file. Scarica il file modello per ottenere un elenco dei campi e dei dettagli obbligatori.
 1. Aggiungere o modificare domande&dettagli A nel file modello e salvarli nel computer.
-1. Nel riquadro **Importa domande&A** selezionare Sfoglia e quindi selezionare il .csv file che si desidera importare. 
+1. Nel riquadro **Importa domande&A** selezionare Sfoglia e quindi selezionare il file .csv file che si desidera importare. 
 1. Selezionare **Importa**.
 
 Suggerimenti importanti per i file di modello:

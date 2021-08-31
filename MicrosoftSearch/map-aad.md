@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Passaggi su come mappare le identità AAD
-ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532809"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470297"
 ---
 # <a name="map-your-azure-ad-identities"></a>Eseguire il mapping della propria identità Azure AD   
 
-Questo articolo illustra i passaggi per eseguire il mapping delle identità di Azure AD a un identificatore univoco per l'origine dati (identità non di Azure AD) in modo che gli utenti dell'elenco di controllo di accesso (ACL) con identità non Azure AD possano visualizzare i risultati della ricerca del connettore nell'ambito di tali identità.
+Questo articolo illustra i passaggi per eseguire il mapping delle identità di Azure AD a un identificatore univoco per l'origine dati (identità non di Azure AD) in modo che gli utenti dell'elenco di controllo di accesso (ACL) con identità non Azure AD possano visualizzare i risultati della ricerca del connettore nell'ambito.
 
 Questi passaggi sono rilevanti solo per gli amministratori della ricerca che configurano un connettore [Salesforce](salesforce-connector.md) da Parte di Microsoft con autorizzazioni di ricerca per "Solo le persone con accesso a questa origine dati" e il tipo di identità "AAD". I passaggi seguenti illustrano come mappare le proprietà utente di Azure AD agli ID federativi **degli utenti.**
 
@@ -49,7 +49,7 @@ Di seguito sono riportati alcuni esempi di formule con output di espressioni reg
 | {0}.{1} @contoso.com  | firstname | lastname |firstname.lastname@contoso.com
 | {0}@domain.com                 | userid                 |             |userid@domain.com
 
-Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizzare un'anteprima di 5 utenti casuali dell'origine dati con i rispettivi mapping utente applicati. L'output dell'anteprima include il valore delle proprietà utente di Azure AD selezionate nel passaggio 1 per tali utenti e l'output della formula finale fornita nel passaggio 2 per tale utente. Indica inoltre se l'output della formula può essere risolto in un utente di Azure AD nel tenant tramite un'icona "Operazione riuscita" o "Operazione non riuscita".  
+Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizzare un'anteprima di 5 utenti casuali dall'origine dati con i rispettivi mapping utente applicati. L'output dell'anteprima include il valore delle proprietà utente di Azure AD selezionate nel passaggio 1 per tali utenti e l'output della formula finale fornita nel passaggio 2 per tale utente. Indica inoltre se l'output della formula può essere risolto in un utente di Azure AD nel tenant tramite un'icona "Operazione riuscita" o "Operazione non riuscita".  
 
 >[!NOTE]
 >È comunque possibile procedere con la creazione della connessione se uno o più mapping utente hanno lo stato "Non riuscito" dopo aver fatto clic su **Anteprima.** L'anteprima mostra 5 utenti casuali e i relativi mapping dall'origine dati. Se il mapping specificato non esegue il mapping di tutti gli utenti, è possibile che si verifichi questo caso.
@@ -58,7 +58,7 @@ Dopo aver fornito la formula,  è possibile fare clic su Anteprima per visualizz
 
 Vedi lo snapshot seguente per un esempio di mapping di Azure AD.
 
-![Snapshot di esempio su come compilare la pagina di mapping di Azure AD](media/aad-mapping.png)
+![Snapshot di esempio di come compilare la pagina di mapping di Azure AD.](media/aad-mapping.png)
 
 ## <a name="limitations"></a>Limitazioni  
 

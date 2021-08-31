@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Ridenominazione Microsoft Search nella struttura di spostamento dell'amministratore in Ricerca & intelligence
-ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: a2dc33751e8888a57c60c3d9a88694ecefd8313d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533969"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701922"
 ---
 # <a name="search--intelligence"></a>Ricerca & intelligence
 
@@ -38,4 +38,4 @@ Il futuro inizia con questa ridenominazione di Search & Intelligence che verrà 
 
 ## <a name="no-change-in-the-brand"></a>Nessuna modifica del marchio
 
-La modifica della struttura di spostamento non rappresenta una modifica al prodotto Microsoft Search e/o al marchio ed è progettata per fornire una posizione per il consolidamento futuro di prodotti e tecnologie correlati.
+La modifica dello spostamento non rappresenta una modifica al prodotto Microsoft Search e/o al marchio ed è progettata per fornire una posizione per il consolidamento futuro di prodotti e tecnologie correlati.
