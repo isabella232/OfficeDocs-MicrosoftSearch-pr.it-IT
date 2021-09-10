@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Usando schede adattive, crea un layout per visualizzare i risultati di ricerca personalizzati
 ms.openlocfilehash: 44808d1dba8d765ba67fcd0c3dcf6f186a0b774c
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702185"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973467"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Creare un layout per personalizzare i risultati della ricerca
@@ -172,7 +172,7 @@ Prima di iniziare, è consigliabile eseguire alcune operazioni e alcune operazio
 ### <a name="do"></a>Operazione da eseguire
 
 - Modificare un modello per fornire il collegamento al logo nel layout se si usano collegamenti statici per i logo e non per le proprietà dei risultati.
-- Convalidare il layout dei risultati per gli scenari in cui non vengono restituiti dati per una proprietà dei risultati usata nel file JSON dei risultati. Utilizzare la `$when` condizione per nascondere un elemento se la proprietà non contiene dati.  
+- Convalidare il layout dei risultati per gli scenari in cui non vengono restituiti dati per una proprietà del risultato usata nel file JSON dei risultati. Utilizzare la `$when` condizione per nascondere un elemento se la proprietà non contiene dati.  
 - Verificare che i tipi di dati della `$when` condizione e della proprietà del risultato corrispondano. Ad esempio, non confrontare `Number` con `Text` nella `$when` condizione.  
 - Quando progetti un layout dei risultati, pensa ai requisiti del tema.  
 - Assicurati che `Textblock`   l'elemento sia in grado di gestire il contenuto dinamico. A tale scopo, `wrap` è possibile utilizzare le proprietà `maxLines` dell'elemento e .

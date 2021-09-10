@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Le planimetrie sono disponibili in Microsoft Search consente agli utenti di trovare persone, uffici e altri servizi all'interno di un edificio.
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702022"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973717"
 ---
 # <a name="manage-floor-plans"></a>Gestire le planimetrie
 
@@ -67,7 +67,7 @@ Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizi
 
 ### <a name="step-5-add-building-locations"></a>Passaggio 5: Aggiungere posizioni di edificio
 
-Le planimetrie [del piano utilizzano Posizioni](manage-locations.md) per definire gli edifici. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immetti il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessario.
+Le planimetrie [del piano utilizzano Posizioni](manage-locations.md) per definire gli edifici. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immetti il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessario.
 
 ![floorplans-locations.png.](media/floorplans-locations.png)
 
@@ -115,14 +115,14 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-|**Passaggio**|**Messaggio di errore**|**Type**|**Azione**|
+|**Passaggio**|**Messaggio di errore**|**Tipo**|**Azione**|
 |:-----|:-----|:-----|:-----|
-|Upload piani|Impossibile leggere CC_1.dwg. Ricaricare o eliminare la planimetria.|Error|Provare a caricare di nuovo il file. Se non funziona, eliminare il file e riprovare.|
-|Upload piani|Esistono due file denominati CC_1.dwg. Eliminarne uno o caricarlo di nuovo con un altro nome.|Error|Se il nome del file non è corretto, rendi univoco il nome del file aggiungendo informazioni sul piano o sull'ala e quindi carica di nuovo il file. Se lo stesso file è stato aggiunto accidentalmente due volte, è sufficiente eliminarlo.|
-|Upload piani|Nessun dato trovato.|Error|Controlla il file per assicurarti che sia quello corretto e quindi caricalo di nuovo o eliminalo.|
+|Upload piani|Impossibile leggere CC_1.dwg. Ricaricare o eliminare la planimetria.|Errore|Provare a caricare di nuovo il file. Se non funziona, eliminare il file e riprovare.|
+|Upload piani|Esistono due file denominati CC_1.dwg. Eliminarne uno o caricarlo di nuovo con un altro nome.|Errore|Se il nome del file non è corretto, rendi univoco il nome del file aggiungendo informazioni sul piano o sull'ala e quindi carica di nuovo il file. Se lo stesso file è stato aggiunto accidentalmente due volte, è sufficiente eliminarlo.|
+|Upload piani|Nessun dato trovato.|Errore|Controlla il file per assicurarti che sia quello corretto e quindi caricalo di nuovo o eliminalo.|
 |Upload piani|Riferimenti esterni mancanti in questo file. Caricare CC_1_furniture.dwg o eliminare questo file.|Avviso|Upload file di riferimento esterni o eliminare.|
 |Upload piani|Impossibile leggere i numeri di sala o i tag nel file DWG. Eliminare questo file.|Avviso|Controllare il file DWG per verificare che i dati siano inclusi, quindi eliminare il file e riprovare.|
-|Collegare le posizioni dell'ufficio|Nessuna posizione dell'ufficio trovata in Azure Active Directory. Aggiungere i dati sulla posizione Azure Active Directory prima di configurare le planimetrie.|Error|[Aggiornare le posizioni degli uffici nei profili utente](#step-3-update-office-locations-on-user-profiles) |
+|Collegare le posizioni dell'ufficio|Nessuna posizione dell'ufficio trovata in Azure Active Directory. Aggiungere i dati sulla posizione Azure Active Directory prima di configurare le planimetrie.|Errore|[Aggiornare le posizioni degli uffici nei profili utente](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -152,13 +152,13 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 || 21|45|21045|2/21045|
 ||23|100K|23-100K|23/02/100.00|
 ||1|G06-07|1G06-07|2/1G06-07|
-||2 |1024A|02.1024A|2/02.1024A|
-||2 |1024A|02.1024A|2/02.1024A|
-||2 |105.01|2105.01|2/2105.01|
+||2|1024A|02.1024A|2/02.1024A|
+||2|1024A|02.1024A|2/02.1024A|
+||2|105.01|2105.01|2/2105.01|
 |Ha codice di edificio, piano e numero di sala|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
-||2 |128A|22128A|2/22128A<br/>22128A|
+||2|128A|22128A|2/22128A<br/>22128A|
 ||1|B2-11|21-B2-11|21/2/2-B2-11<br/>21-B2-11|
-||2 |45|SC2045|SC/SC2045<br/>SC2045|
+||2|45|SC2045|SC/SC2045<br/>SC2045|
 
 **D:** Posso usare un file DWG che non include i numeri di piano?
 

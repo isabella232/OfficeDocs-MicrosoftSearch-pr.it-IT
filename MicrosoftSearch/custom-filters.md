@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Gestire i filtri per l'utilizzo nel SERP
 ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702194"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973460"
 ---
 # <a name="manage-filters"></a>Gestire i filtri
 
@@ -75,5 +75,5 @@ I filtri configurati per i verticali nell'ambito dell'organizzazione saranno dis
 - Si è limitati a un totale di 50 filtri.
 - Non è possibile modificare l'ordine dei filtri predefiniti.
 - I filtri non sono supportati per OneDrive contenuto. I valori di filtro corrispondenti ai risultati della OneDrive non verranno visualizzati nei filtri.
-- I valori di filtro personalizzati mostreranno le opzioni SharePoint contenuto e non dal contenuto di One Drive.Ad esempio, se si crea un filtro personalizzato per il contenuto di "Autore" e SharePoint contiene solo i risultati di un autore, "Amy" e il contenuto di OneDrive contiene solo i risultati di un autore denominato "John", il filtro personalizzato Autore mostrerà "Amy" come unica opzione.
+- I valori di filtro personalizzati mostreranno le opzioni SharePoint contenuto e non dal contenuto di One Drive.Ad esempio, se si crea un filtro personalizzato per il contenuto di "Autore" e SharePoint contiene risultati solo da un autore, "Amy" e il contenuto di OneDrive contiene solo i risultati di un autore denominato "John", il filtro personalizzato Autore mostrerà "Amy" come unica opzione.
 - Un valore di filtro visualizzato per SharePoint contenuto verrà applicato OneDrive contenuto quando usato.

@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare i Microsoft Search di utilizzo
-ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470391"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973733"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Report di utilizzo
 
@@ -28,9 +28,9 @@ I report di utilizzo della ricerca consentono di acquisire una maggiore comprens
 > [!IMPORTANT]
 > Microsoft Search report di utilizzo sono attualmente in anteprima
 
-I [Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo includono grafici e tabelle generati da ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle caselle di Bing ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo che sia necessario del tempo per accumulare i dati cronologici.
+I [report](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo Microsoft Search includono grafici e tabelle generati da ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle Bing di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo che sia necessario del tempo per accumulare i dati cronologici.
 
-Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali e la distribuzione delle **impression** di Bing. Questo collegamento e la pagina precedente verranno rimossi a breve.
+Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali Bing e la distribuzione **delle impression**. Questo collegamento e la pagina precedente verranno rimossi a breve.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard dei report di utilizzo della ricerca.](media/usage-reports/usage_reports_v2.png)
@@ -51,9 +51,9 @@ Una versione precedente di questa pagina includeva i dati delle ricerche eseguit
 
 Quando si passa alla pagina dei report di utilizzo, tutti i report sono disponibili per la visualizzazione. È possibile utilizzare il filtro data per selezionare un giorno o un mese specifico da visualizzare.
 
-Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
+Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se hai selezionato gli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
 
-Per visualizzare Bing principali query e report di distribuzione delle impression, fare clic sul collegamento nella pagina.
+Per visualizzare Bing query principali e i report di distribuzione delle impression, fare clic sul collegamento nella pagina.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

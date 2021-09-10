@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gestire la modalità Power BI i report e i dati nei risultati di ricerca
 ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702004"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973714"
 ---
 # <a name="manage-power-bi-answers"></a>Gestire Power BI risposte
 
-Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search ha aggiunto il supporto per i dashboard e i report Power BI dati. Ecco alcuni dei vantaggi della ricerca Power BI ricerca:
+Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search ha aggiunto il supporto per i dashboard e i report Power BI. Ecco alcuni dei vantaggi della ricerca Power BI ricerca:
 
 * **Facile da usare:** Questa esperienza di ricerca avanzata consente agli utenti di trovare facilmente e rapidamente Power BI dashboard e report all'interno dell'organizzazione.
 * **Contenuto più ricco:** Per rendere Power BI risultati di ricerca più utili, includono informazioni chiave come il tipo di contenuto, ovvero dashboard o report, e il team o la persona a cui è proprietario.
@@ -46,12 +46,12 @@ Sostituire negli esempi precedenti con le informazioni che si stanno cercando, a
 
 ## <a name="turn-power-bi-search-on-or-off"></a>Attivare o Power BI ricerca
 
-Power BI i risultati sono abilitati per l'organizzazione per impostazione predefinita. L Power BI admin può disabilitarli in qualsiasi momento. Nel portale di Power BI, passare a Impostazioni tenant e disabilitare **l'impostazione** Usa ricerca globale per Power BI. Per ulteriori informazioni, vedere [Administering Power BI nel portale di amministrazione.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+Power BI i risultati sono abilitati per l'organizzazione per impostazione predefinita. L Power BI admin può disabilitarli in qualsiasi momento. Nel portale Power BI di amministrazione passare a Impostazioni tenant e disabilitare l'impostazione Usa ricerca **globale per** Power BI. Per ulteriori informazioni, vedere [Administering Power BI nel portale di amministrazione.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare o Power BI risposte." border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare o disattivare Power BI risposte." border="true":::
 
 > [!NOTE]
-> Quando si usa Microsoft Search, la query di ricerca e i risultati restituiti da Power BI possono essere elaborati in un'area geografica diversa da quella in cui si trovano i dati Power BI tenant.
+> Quando si usa Microsoft Search, la query di ricerca e i risultati restituiti da Power BI possono essere elaborati in un'area geografica diversa da quella in cui si trovano i dati del tenant di Power BI.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -69,7 +69,7 @@ Power BI i risultati sono abilitati per l'organizzazione per impostazione predef
 
 **D: Verrà visualizzata la pagina dei Power BI dei risultati della ricerca se non si dispone di una licenza Power BI ricerca?**
 
-**A:** No. Se un utente di ricerca non ha una licenza Power BI, la Power BI dei risultati della ricerca non verrà visualizzata nei Microsoft Search ricerca.
+**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la pagina dei Power BI dei risultati della ricerca non verrà visualizzata nei Microsoft Search ricerca.
 
 **D: Verranno visualizzati i Power BI di ricerca a cui non è possibile accedere?**
 

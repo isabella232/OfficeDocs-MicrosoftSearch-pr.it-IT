@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: Configurare il connettore di Graph Azure Data Lake Archiviazione Gen2 per Microsoft Search
 ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701400"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973472"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connettore Archiviazione Gen2 Graph Archiviazione Azure Data Lake
+# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connettore Graph Azure Data Lake Archiviazione Gen2
 
 Il connettore di Graph Azure Data Lake Archiviazione Gen2 consente agli utenti dell'organizzazione di cercare i file archiviati negli account Archiviazione BLOB di [Azure](/azure/storage/blobs/storage-blobs-introduction) e [Azure Data Lake Gen 2 Archiviazione.](/azure/storage/blobs/data-lake-storage-introduction)
 
@@ -31,7 +31,7 @@ Il connettore di Graph Azure Data Lake Archiviazione Gen2 consente agli utenti d
 
 Questo articolo è per chiunque configura, esegue e monitora un connettore Azure Data Lake Archiviazione Gen2. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Azure Data Lake Archiviazione Gen2. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
 
-Nell'articolo viene utilizzato *Archiviazione di Azure* come termine generico per Azure [Blob Archiviazione](/azure/storage/blobs/storage-blobs-introduction) e Azure Data Lake [Gen 2 Archiviazione](/azure/storage/blobs/data-lake-storage-introduction).
+Nell'articolo viene utilizzato *Archiviazione di Azure* come termine generico per [Azure Blob Archiviazione](/azure/storage/blobs/storage-blobs-introduction) e Azure Data Lake Gen [2 Archiviazione](/azure/storage/blobs/data-lake-storage-introduction).
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365
 
@@ -45,7 +45,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Immettere la stringa di connessione di archiviazione principale. Questa stringa è necessaria per consentire l'accesso all'account di archiviazione. Per trovare la stringa di connessione, passare al [portale di Azure](https://ms.portal.azure.com/#home) e passare alla sezione Chiavi dell'account Archiviazione di Azure pertinente. 
+Immettere la stringa di connessione di archiviazione principale. Questa stringa è necessaria per consentire l'accesso all'account di archiviazione. Per trovare la stringa di connessione, passare al [portale di Azure](https://ms.portal.azure.com/#home) e passare alla sezione **Chiavi** dell'account Archiviazione di Azure pertinente.
 
 Se si preferisce non fornire **AccountKey** (un parametro nella stringa di connessione di archiviazione principale), concedere l'accesso al servizio connettori di Graph per i ruoli seguenti:
 
@@ -58,9 +58,9 @@ Passa alla scheda **Controllo di** accesso del tuo account Archiviazione di Azur
 * **ID app di** prima parte: 56c1da01-2129-48f7-9355-af6d59d42766
 * **First Party App Name:** Graph Connector Service
 
-### <a name="storage-account-and-queue-notifications-optional"></a>Archiviazione notifiche di account e code (facoltativo)
+### <a name="storage-account-and-queue-notifications-optional"></a>Archiviazione di account e code (facoltativo)
 
-Il supporto per elaborare le modifiche in tempo reale nel Graph connettori potrebbe essere aggiunto in futuro. In tal caso, monitoreremo le notifiche di modifica Archiviazione di Azure archiviate in una coda. Dovrai creare una coda nello stesso account del tuo account Archiviazione di Azure account.
+Il supporto per elaborare le modifiche in tempo reale nel Graph connettori potrebbe essere aggiunto in futuro. In tal caso, verranno monitorate le Archiviazione di Azure di modifica archiviate in una coda. Dovrai creare una coda nello stesso account del Archiviazione di Azure account.
 
 Dopo aver creato una coda, passare alla **scheda Eventi** nella pagina della coda per configurare **Sottoscrizione evento.** Scegliere tutti gli eventi BLOB che la coda riceverà e connettere la coda all Archiviazione di Azure account.
 
@@ -76,9 +76,9 @@ Nella schermata **Gestisci schema** è possibile modificare gli attributi dello 
 
 ### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
 
-Puoi scegliere di inserire gli elenchi di controllo di accesso (ACL) dal tuo account [azure Data Lake Gen 2 Archiviazione.](/azure/storage/blobs/data-lake-storage-introduction) Quando vengono impostate queste autorizzazioni di ricerca, il contenuto della ricerca viene tagliato in base alle autorizzazioni dell'utente che ha eseguito [l'accesso Azure Active Directory](/azure/active-directory/). In alternativa, è possibile scegliere di rendere tutto il contenuto indicizzato dall'account di archiviazione visibile a tutti gli utenti dell'organizzazione. In questo caso, tutti gli utenti dell'organizzazione avranno accesso a tutti i dati nell'account di archiviazione.
+È possibile scegliere di inserire gli elenchi di controllo di accesso (ACL) dall'account Archiviazione [Azure Data Lake Gen 2.](/azure/storage/blobs/data-lake-storage-introduction) Quando vengono impostate queste autorizzazioni di ricerca, il contenuto della ricerca viene tagliato in base alle autorizzazioni dell'utente che ha eseguito [l'accesso Azure Active Directory](/azure/active-directory/). In alternativa, è possibile scegliere di rendere tutto il contenuto indicizzato dall'account di archiviazione visibile a tutti gli utenti dell'organizzazione. In questo caso, tutti gli utenti dell'organizzazione avranno accesso a tutti i dati nell'account di archiviazione.
 
-Il connettore Graph Di Azure Data Lake Archiviazione Gen2 supporta le autorizzazioni di ricerca visibili a **Tutti** o Solo gli utenti con accesso a **questa origine dati.** I dati indicizzati visualizzati nei risultati della ricerca potrebbero essere visibili agli utenti dell'organizzazione che hanno accesso a ogni elemento.
+Il connettore di Graph Azure Data Lake Archiviazione Gen2 supporta le autorizzazioni di ricerca visibili a **Tutti** o Solo gli utenti con accesso **a questa origine dati.** I dati indicizzati visualizzati nei risultati della ricerca potrebbero essere visibili agli utenti dell'organizzazione che hanno accesso a ogni elemento.
 
 ### <a name="azure-blob-storage"></a>Archiviazione BLOB di Azure
 

@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
-description: Informazioni sui metodi e i processi che consentono di implementare correttamente Microsoft Search'organizzazione
+description: Informazioni sui metodi e sui processi che consentono di implementare correttamente Microsoft Search'organizzazione
 ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701886"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973806"
 ---
 # <a name="user-adoption-guide"></a>Guida all'adozione da parte degli utenti
 
@@ -28,7 +28,7 @@ Per implementare e garantire la corretta adozione di Microsoft Search all'intern
   
 ## <a name="stage-1-stakeholders"></a>Fase 1: parti interessate
 
-Per garantire un'implementazione senza problemi e aumentare l'adozione da parte degli utenti di Microsoft Search, identificare le persone che possono aiutare a supportare e guidare il processo.
+Per garantire un'implementazione senza problemi e aumentare l'adozione da parte degli Microsoft Search, identificare le persone che possono supportare e guidare il processo.
   
 La tabella mostra la gerarchia del team e il contributo di ogni persona. 
   
@@ -49,7 +49,7 @@ Per garantire l'adozione da parte degli utenti, è fondamentale determinare e de
   
 ### <a name="understand-what-your-users-need-and-want"></a>Comprendere le necessità e le necessità degli utenti
   
-Quando si tratta di trovare informazioni e ottenere risposte, conoscere le esigenze e i punti di difficoltà dell'utente è fondamentale. Puoi usare metodi quantitativi, [](https://Office.com) come i dati di Office 365 e [SharePoint](https://products.office.com/sharepoint/collaboration) di ricerca, o metodi qualitativi, come sondaggi e gruppi di interesse per gli utenti per ottenere questi dati. In questo modo è possibile determinare quando, dove e Microsoft Search valore.
+Quando si tratta di trovare informazioni e ottenere risposte, conoscere le esigenze e i punti di difficoltà dell'utente è fondamentale. Puoi usare metodi quantitativi, [](https://Office.com) come i dati di Office 365 e [SharePoint](https://products.office.com/sharepoint/collaboration) di ricerca, o metodi qualitativi, come sondaggi e gruppi di interesse per gli utenti per ottenere questi dati. Ciò consente di determinare quando, dove e come Microsoft Search valore.
   
 Per vari ruoli e team all'interno dell'organizzazione, prendere in considerazione:
   
@@ -59,7 +59,7 @@ Per vari ruoli e team all'interno dell'organizzazione, prendere in considerazion
     
 - Cosa gli utenti vorrebbero vedere quando si tratta di cercare informazioni.
     
-- Come si applicano i vantaggi Microsoft Search'organizzazione. Per ulteriori informazioni, vedere [Microsoft Search Overview](overview-microsoft-search.md).
+- Come si applicano i Microsoft Search all'organizzazione. Per ulteriori informazioni, vedere [Microsoft Search Overview](overview-microsoft-search.md).
     
 Scegliere gli scenari utente che avranno il maggiore impatto positivo per gli utenti.
   
@@ -77,7 +77,7 @@ Per soddisfare gli obiettivi di implementazione e mostrare un impatto positivo p
     
 ## <a name="stage-3-readiness"></a>Fase 3: preparazione
 
-Investire tempo nella preparazione dell'Microsoft Search'implementazione avrà un impatto positivo per l'organizzazione. Microsoft fornisce un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Kit di</a> adozione che contiene un modello di messaggio di posta elettronica di annuncio, contenuto visivo leggero creato per la condivisione nei siti di comunicazione interni e una presentazione di formazione. C'è anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">centro risorse Microsoft Search</a> dove è possibile trovare altre risorse di formazione e adozione progettate per contribuire a Microsoft Search'implementazione corretta.
+Investire tempo nella preparazione dell'Microsoft Search'implementazione avrà un impatto positivo per l'organizzazione. Microsoft fornisce un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Kit di</a> adozione che contiene un modello di messaggio di posta elettronica di annuncio, contenuto visivo leggero creato per la condivisione nei siti di comunicazione interni e una presentazione di formazione. C'è anche un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">centro Microsoft Search</a> risorse dove è possibile trovare altre risorse di formazione e adozione progettate per contribuire a Microsoft Search'implementazione corretta.
   
 ### <a name="product-and-content-readiness"></a>Preparazione di prodotti e contenuti
   
@@ -85,19 +85,19 @@ Gli amministratori influenzano direttamente l'esperienza di ricerca per gli uten
   
 Per ulteriori informazioni, vedere [Set up Microsoft Search](setup-microsoft-search.md).
   
-Gli editori sono esperti in materia che aiutano a gestire segnalibri e domande&come nelle aree di competenza. Gli editor devono creare contenuto che si rivolge agli scenari utente identificati in precedenza.
+Gli editori sono esperti in materia che aiutano a gestire segnalibri e domande&nelle aree di competenza. Gli editor devono creare contenuto che si rivolge agli scenari utente identificati in precedenza.
   
 Per ulteriori informazioni, vedere [Plan your content](plan-your-content.md).
   
 ### <a name="signing-in"></a>Accesso
   
-Microsoft Search utenti devono accedere a [Bing](https://Bing.com) con un account aziendale o dell'istituto di istruzione. Per rendere l'accesso il più semplice possibile per gli utenti:
+Microsoft Search gli utenti devono accedere a [Bing](https://Bing.com) con un account aziendale o dell'istituto di istruzione. Per rendere l'accesso il più semplice possibile per gli utenti:
   
 - Per assicurarsi che [Azure Active Directory](/azure/active-directory/) configurazioni siano impostate correttamente, fare in modo che alcuni utenti tenino di accedere. Per ulteriori informazioni, vedere [Test single sign-on](test-single-sign-on.md).
     
 - Imposta le impostazioni predefinite del browser per i dispositivi gestiti dall'azienda su Bing. Per ulteriori informazioni, vedere [Set default browser](/deployedge/edge-default-browser).
     
-- Distribuire le estensioni di ricerca [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) utenti di [Google Chrome](https://www.google.com) tramite Criteri di gruppo. Per ulteriori informazioni, vedere [Microsoft Search Overview](overview-microsoft-search.md).
+- Distribuire le estensioni di ricerca [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) utenti [di Google Chrome](https://www.google.com) tramite Criteri di gruppo. Per ulteriori informazioni, vedere [Microsoft Search Overview](overview-microsoft-search.md).
     
 ### <a name="draft-communications"></a>Bozze di comunicazioni
   
@@ -115,17 +115,17 @@ Iniziare a pianificare comunicazioni ed eventi per l'organizzazione:
     
 - Condividere la documentazione self-help sull'uso di Microsoft Search.
     
-Tutte le comunicazioni devono informare gli utenti su come possono accedere a Bing [per](https://Bing.com) trovare risultati di lavoro.
+Tutte le comunicazioni dovrebbero informare gli utenti su come possono accedere a Bing [per](https://Bing.com) trovare risultati di lavoro.
   
 ### <a name="engage-partner-teams"></a>Coinvolgere i team partner
   
 Come parte integrante di [Microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search conforme alle linee guida GDPR e Tier-C. A seconda dell'organizzazione, potrebbe essere necessario condividere informazioni sulle Microsoft Search con i team di privacy e sicurezza. Per altre informazioni, vedere [Sicurezza e privacy per Microsoft Search in Bing](security-for-search.md).
   
-Assicurati che l'help desk conosca le funzionalità e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per l'accesso, in modo che possano supportare in modo più efficace gli utenti. Per ulteriori informazioni, vedere [Learn about Microsoft Search in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) and [FAQs](faqs.md).
+Assicurati che l'help desk conosca le funzionalità e le funzionalità di Microsoft Search, nonché i requisiti degli utenti per accedere, in modo che possano supportare in modo più efficace gli utenti. Per ulteriori informazioni, vedere [Learn about Microsoft Search in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) and [FAQs](faqs.md).
   
 ### <a name="evaluate-with-pilot-users"></a>Valutare con gli utenti pilota
   
-Iniziare con un piccolo gruppo di utenti per valutare l'impatto delle Microsoft Search e raccogliere feedback tempestivi. In questo modo è possibile modificare il contenuto, aggiornare le comunicazioni e impostare le aspettative per l'implementazione generale. Gli utenti esperti della ricerca o gli early adopter sono ottimi candidati a questo scopo.
+Iniziare con un piccolo gruppo di utenti per valutare l'impatto delle Microsoft Search e raccogliere il feedback iniziale. In questo modo è possibile modificare il contenuto, aggiornare le comunicazioni e impostare le aspettative per l'implementazione generale. Gli utenti esperti della ricerca o gli early adopter sono ottimi candidati a questo scopo.
   
 Per trovare utenti pilota:
   
@@ -141,7 +141,7 @@ Chiedere agli utenti pilota di fornire input usando le opzioni di feedback in Mi
   
 Domande del sondaggio da porre: 
   
-- Sai come accedere e usare Microsoft Search?
+- Si comprende come accedere e usare Microsoft Search?
     
 - Funziona come previsto?
     
@@ -175,7 +175,7 @@ Creare entusiasmo nell'organizzazione riguardo Microsoft Search:
     
 ### <a name="ongoing-communication"></a>Comunicazione in corso
   
-Per le prime settimane e mesi, mantenere un ritmo di comunicazioni per incoraggiare l'interazione con Microsoft Search. In questo modo gli utenti vengono informati e vengono coinvolti nuovi utenti. Ogni comunicazione dovrebbe spiegare perché Microsoft Search può essere utile per il proprio lavoro.
+Per le prime settimane e mesi, mantenere un ritmo di comunicazioni per incoraggiare l'interazione con Microsoft Search. In questo modo gli utenti vengono informati e vengono coinvolti nuovi utenti. Ogni comunicazione deve spiegare perché Microsoft Search può essere utile per il proprio lavoro.
   
 Invia comunicazioni in corso che evidenziano funzionalità e ricerche da provare, nonché storie di successo degli utenti.
   

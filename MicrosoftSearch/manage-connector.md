@@ -1,5 +1,5 @@
 ---
-title: Gestire i connettori Graph Microsoft per Microsoft Search
+title: Gestire Microsoft Graph Connectors per Microsoft Search
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Gestire Microsoft Graph Connectors per Microsoft Search.
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702049"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973491"
 ---
 # <a name="monitor-your-connections"></a>Monitorare le connessioni
 
@@ -34,12 +34,12 @@ Operazione | Connettori di Graph Microsoft | Partner o Graph connettori
 --- | --- | ---
 Aggiungere una connessione | :heavy_check_mark: (Vedere Panoramica [dell'installazione](configure-connector.md)) | :x: (Fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
-Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
+Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: pianificazione dell'aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
 Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Monitorare lo stato della connessione
 
-Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** nella pagina **Microsoft Search.** Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
+Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** Microsoft Search. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
 Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 
@@ -65,7 +65,7 @@ Stato | Livelli di utilizzo delle quote
 --- | --- 
 Normale | 0-79%
 Alto | 80-89%
-Critiche | 90%-99%
+Critico | 90%-99%
 Full | 100%
 
 Con ogni connessione verrà visualizzato anche il numero di elementi indicizzati. Il numero di elementi indicizzati da ogni connessione contribuisce alla quota totale disponibile per l'organizzazione.
@@ -80,6 +80,6 @@ Per risolvere il problema, è possibile eseguire una delle operazioni seguenti:
 
 * Per informazioni su come acquistare la quota di indice per l'organizzazione, vedere [Requisiti di licenza e prezzi.](licensing.md)
 
-* Identificare le connessioni con troppi contenuti inseriti e aggiornarle in modo da indicizzare un numero minore di elementi per creare spazio per la quota. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di inserimento che comporta un numero minore di elementi.
+* Identificare le connessioni con troppo contenuto ingerito e aggiornarle in modo da indicizzare un numero minore di elementi per creare spazio per la quota. Per aggiornare la connessione, è necessario eliminare e creare una nuova connessione con un nuovo filtro di inserimento che comporta un numero minore di elementi.
 
 * Eliminare definitivamente una o più connessioni.

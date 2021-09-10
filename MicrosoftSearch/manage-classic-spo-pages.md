@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: Utilizzo Microsoft Search pagine SharePoint classiche
 ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702040"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973790"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>Pagine classiche e Microsoft Search
 
-SharePoint siti creati prima dei siti moderni utilizzano una casella di ricerca classica e un'esperienza di risultati di ricerca classica. Verrà implementazione di una funzionalità che consente alle pagine classiche predefinite di iniziare a usare l'esperienza di ricerca moderna che usa Microsoft Search, che fornisce risultati personalizzati con maggiore pertinenza.
+SharePoint siti creati prima dei siti moderni utilizzano una casella di ricerca classica e un'esperienza di risultati di ricerca classica. Verrà implementazione di una funzionalità che consente alle pagine classiche predefinite di iniziare a usare l'esperienza di ricerca moderna che usa Microsoft Search, che fornisce risultati personalizzati con maggiore rilevanza.
 
-L'uso di Microsoft Search è consigliato per tutti i siti, incluso il classico, ma se i siti classici utilizzano pagine master personalizzate e/o se è stata personalizzata l'esperienza dei risultati di ricerca classica, queste personalizzazioni verranno rilevate automaticamente e non si passa a Microsoft Search.
+L'utilizzo di Microsoft Search è consigliato per tutti i siti, incluso il classico, ma se i siti classici utilizzano pagine master personalizzate e/o se è stata personalizzata l'esperienza dei risultati di ricerca classica, queste personalizzazioni verranno rilevate automaticamente e non si passa a Microsoft Search.
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Siti classici che passano automaticamente a Microsoft Search
 

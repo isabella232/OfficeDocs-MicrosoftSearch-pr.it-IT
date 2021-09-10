@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Risposte ad alcune domande frequenti sulla ricerca di contenuti nell'organizzazione e su Microsoft Search
 ms.openlocfilehash: 8b4de717ab63af8842dc86135748e551ff386a2a
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702157"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973701"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Domande frequenti
@@ -35,7 +35,7 @@ Questa funzionalità non sostituisce le parole chiave impostate nella [interfacc
   
 ## <a name="can-you-search-for-files-on-premises"></a>È possibile cercare file in locale?
 
-Sì. È possibile eseguire ricerche [](http://sharepoint.com/) nei SharePoint locali se si dispone di una distribuzione ibrida di SharePoint.
+Sì. È possibile cercare file di [SharePoint](http://sharepoint.com/) locali se si dispone di una distribuzione ibrida di SharePoint.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Come si fa a impostare Bing come motore di ricerca predefinito per gli utenti dell'organizzazione?
 
@@ -47,7 +47,7 @@ Ecco le istruzioni per impostare il motore di ricerca predefinito, la home page 
 
 ## <a name="how-are-my-search-results-protected"></a>In che modo vengono protetti i risultati della ricerca?
 
-È necessaria [Azure Active Directory'autenticazione](/azure/active-directory/) per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Quando si Microsoft Search in Bing, le query di ricerca vengono de-identificate e i log sono separati dal traffico di [Bing](https://Bing.com) pubblico.
+È necessaria [Azure Active Directory](/azure/active-directory/) autenticazione per accedere ai risultati dal cloud attendibile. Gli utenti autenticati visualizzano solo i risultati della ricerca per i contenuti a cui hanno accesso. Quando si Microsoft Search in Bing, le query di ricerca vengono de-identificate e i log sono separati dal traffico di [Bing](https://Bing.com) pubblico.
 
 ## <a name="can-i-search-across-federated-organizations"></a>È possibile eseguire ricerche nelle organizzazioni federate?
 
@@ -55,14 +55,14 @@ No.
 
 ## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Dove è possibile ottenere informazioni su Office 365 sicurezza, conformità e privacy?
 
-I dettagli sono disponibili nelle pagine [del Centro protezione per Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
+I dettagli sono disponibili nelle pagine del Centro protezione [per Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
 ## <a name="can-guest-users-access-microsoft-search-in-my-organization"></a>Gli utenti guest possono accedere Microsoft Search all'interno dell'organizzazione?
 
-Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti possono cercare documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non otterrà l'esperienza Microsoft Search completa e personalizzata e potrebbe essere necessario utilizzare la casella di ricerca nella pagina anziché la casella Microsoft Search unificata nell'intestazione.
+Microsoft 365 collaborazione con persone esterne all'organizzazione tramite [l'accesso guest.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Questi utenti possono cercare documenti, siti, gruppi, elenchi e raccolte. Tuttavia, gli utenti guest non otterrà l'esperienza Microsoft Search completa e personalizzata e potrebbe essere necessario utilizzare la casella di ricerca nella pagina anziché la casella di Microsoft Search unificata nell'intestazione.
 
-## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Come si attiva o Microsoft Search in Bing attivare o disattivare l'accesso?
+## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Come si attiva o Microsoft Search Bing in modalità di attivazione o disattivazione?
 
-Per la maggior parte delle organizzazioni, incluse le organizzazioni e l'istruzione, Microsoft Search in Bing è disponibile per impostazione predefinita. Per attivare Microsoft Search in Bing, passare [alla](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) pagina Configurazioni nell'interfaccia di amministrazione di Microsoft 365. In Microsoft Search in Bing impostazioni scegliere Modifica  impostazioni e attivare Consenti all'organizzazione di usare Microsoft Search **in Bing**. L'applicazione di questa modifica richiede fino a 24 ore.
+Per la maggior parte delle organizzazioni, incluse le organizzazioni e l'istruzione, Microsoft Search in Bing è disponibile per impostazione predefinita. Per attivare Microsoft Search in Bing, passare [alla](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) pagina Configurazioni nella interfaccia di amministrazione di Microsoft 365. In Microsoft Search in Bing impostazioni scegliere Modifica  impostazioni e attivare Consenti all'organizzazione di usare Microsoft Search **in Bing**. L'applicazione di questa modifica richiede fino a 24 ore.
 
-Se questa impostazione è disattivata, gli utenti non otterrà risultati interni durante la ricerca Bing, Windows ricerca o in Microsoft Edge. La disattivazione Microsoft Search in Bing non interrompe o impedisce l'aggiunta di contenuto interno all'indice di ricerca. Disabilita solo i Bing di ingresso a Microsoft Search. Per trovare risposte e risultati interni, gli utenti dovranno usare altri punti di ingresso, ad esempio SharePoint Online o un Office 365 app.
+Se questa impostazione è disattivata, gli utenti non otterrà risultati interni durante la ricerca Bing, Windows ricerca o in Microsoft Edge. La disattivazione Microsoft Search in Bing non arresta o impedisce l'aggiunta di contenuto interno all'indice di ricerca. Disabilita solo i Bing di ingresso a Microsoft Search. Per trovare risposte e risultati interni, gli utenti dovranno usare altri punti di ingresso, ad esempio SharePoint Online o un Office 365 app.

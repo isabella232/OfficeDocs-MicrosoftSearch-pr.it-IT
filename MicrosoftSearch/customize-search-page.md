@@ -1,5 +1,5 @@
 ---
-title: Personalizzare la Microsoft Search pagina
+title: Personalizzare la Microsoft Search personalizzata
 ms.author: jeffkizn
 author: jypal
 manager: jeffkizn
@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702175"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973490"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
@@ -33,8 +33,8 @@ C'è una riga di schede nella parte superiore della pagina dei Microsoft Search 
 
 È possibile creare verticali e tipi di risultati a due livelli:
 
-- **Livello** dell'organizzazione: un verticale creato a livello di organizzazione viene visualizzato nella pagina dei risultati di ricerca quando gli utenti esere in una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) [Office](https://office.com)o [Bing](https://bing.com).
-- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare gli eventi imprevisti di *gravità 1* direttamente dal sito di SharePoint del loro reparto.
+- **Livello dell'organizzazione:** un verticale creato a livello di organizzazione viene visualizzato nella pagina dei [](https://office.com)risultati di ricerca quando gli utenti esere in una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) Office o [Bing](https://bing.com).
+- **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare eventi imprevisti di *gravità 1* direttamente dal sito SharePoint del proprio reparto.
 
 ### <a name="multiple-connections-in-a-vertical"></a>Più connessioni in verticale
 
@@ -44,7 +44,7 @@ Se nomini in modo accurato il maggior numero possibile di *etichette semantiche,
 [Ecco](configure-connector.md#step-6-assign-property-labels) altre informazioni su come creare e gestire le etichette semantiche.
 
 > [!NOTE]
-> Le connessioni multiple in una funzionalità verticale sono attualmente in anteprima. Per ulteriori informazioni, vedere [Funzionalità di anteprima dei connettori.](connectors-overview.md#what-are-the-preview-features)
+> Le connessioni multiple in una funzionalità verticale sono attualmente in anteprima. Per ulteriori informazioni, vedere [Funzionalità di anteprima dei connettori](connectors-overview.md#what-are-the-preview-features).
 
 È possibile aggiungere una connessione come origine contenuto in un'unica verticale. Non è possibile utilizzare connessioni in più verticali.
 
@@ -181,12 +181,12 @@ Considerare un utente che ha tre indirizzi di posta elettronica disponibili nell
 
 - Per risolvere tutti i valori dell'attributo address, utilizzare la sintassi di espansione multivalore. La query verrà risolta in `{|MyProperty:{Profile.emails.address}}` *((MyProperty:"Megan.Bowen@contoso \. com")* o *(MyProperty: "meganb@hotmail \. com")* o *(MyProperty:"meganb@outlook \. com")).*
 
-Utilizzare l'operatore "|" per risolvere variabili multivalore. Vedi la tabella seguente per altri esempi di espansione dei profili.
+Utilizzare l'operatore "|" per risolvere le variabili multivalore. Vedi la tabella seguente per altri esempi di espansione dei profili.
 
 | #         | Sintassi |  Valore restituito  |
 | --------- | ------ | --- |
 | 1    | MyProperty:{Profile.emails.address}  |   "Megan \. Bowen@contoso.com"  |
-| 2  | MyProperty:{Profile.emails}   |    {Profile.emails} Questa operazione non verrà risolta perché *i messaggi di posta* elettronica sono un oggetto.|
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} Questa operazione non verrà risolta perché *i messaggi di posta* elettronica sono un oggetto.|
 | 3     | {? MyProperty:{Profile.emails}}  |  Questa operazione non verrà risolta perché *i messaggi di posta* elettronica sono un oggetto. Il "?" l'operatore ignora le variabili di query che non vengono risolte. Questa variabile verrà rimossa quando viene passata più avanti nello stack di query.   |
 | 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") o (MyProperty:"non-official") o (MyProperty:"personal"))    |
 

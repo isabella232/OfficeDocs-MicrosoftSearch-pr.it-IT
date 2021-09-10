@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: Come personalizzare l'esperienza della casella di ricerca SharePoint siti
 ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701977"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973787"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Impostazioni della casella di ricerca SharePoint siti
 
 Uno dei diversi modi Microsoft Search personalizzare i siti di SharePoint è quello di personalizzare il funzionamento della casella di ricerca nella barra di spostamento della famiglia di SharePoint in base alle proprie esigenze.
 
-Per altre opzioni di personalizzazione, vedere [Changing the Microsoft Search results page to add custom verticals, result types and layouts](customize-search-page.md)e Creating a custom search results [page.](create-search-results-pages.md)
+Per altre opzioni di personalizzazione, [vedere Changing the Microsoft Search results page to add custom verticals, result types and layouts](customize-search-page.md)e [Creating a custom search results page](create-search-results-pages.md).
 
 > [!NOTE]
 > La casella di ricerca della barra di spostamento della famiglia di prodotti non è disponibile per tutti i clienti in questo momento, ma queste opzioni possono comunque essere impostate ora e diventeranno effettive quando saranno disponibili.

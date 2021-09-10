@@ -9,11 +9,11 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: Gestire la modalità di visualizzazione del contenuto di Dynamics 365 nei risultati della ricerca
 ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702031"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973644"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Ricerca federativa dynamics 365 (anteprima)
 
@@ -25,7 +25,7 @@ Per rendere più Microsoft Search, stiamo introducendo la federazione Microsoft 
 * Dati che non possono uscire dai limiti del sistema
 * Dati sensibili archiviati in locale che l'organizzazione non desidera indicizzare nel cloud
 
-I dati a cui si accede tramite una connessione di ricerca federata non vengono indicizzati in Microsoft Search. Inoltre, utilizzando i connettori predefiniti di Microsoft, è facile configurare le connessioni di ricerca federate. Il connettore Dynamics 365 è attualmente in anteprima. Se vuoi partecipare all'anteprima, contattaci [all'indirizzo aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Per l'intervallo di tempo di [rilascio, vedere Microsoft Search roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
+I dati a cui si accede tramite una connessione di ricerca federata non vengono indicizzati Microsoft Search. Inoltre, utilizzando i connettori predefiniti di Microsoft, è facile configurare le connessioni di ricerca federate. Il connettore Dynamics 365 è attualmente in anteprima. Se vuoi partecipare all'anteprima, contattaci [all'indirizzo aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Per l'intervallo di tempo di [rilascio, vedere Microsoft Search roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search).
 
 ## <a name="dynamics-365-federation-connector"></a>Connettore di federazione dynamics 365
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 è una linea di applicazioni aziendali intelligenti proge
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
-Le risposte di Dynamics 365 vengono visualizzate nei risultati di ricerca in Microsoft Search canvas, tra cui SharePoint Online, Bing e Office.
+Le risposte di Dynamics 365 vengono visualizzate nei risultati di ricerca in tutti i Microsoft Search canvas, tra cui SharePoint Online, Bing e Office.
 
 :::image type="content" alt-text="Screenshot delle risposte di Dynamics 365 su SharePoint, Bing e Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
@@ -57,7 +57,7 @@ Indipendentemente da dove gli utenti avviano la ricerca, l'esperienza sarà coer
 
 ## <a name="supported-query-patterns"></a>Modelli di query supportati
 
-Le query in linguaggio naturale e nome prodotto sono supportate quando si usa Microsoft Search per trovare i risultati di Dynamics 365. Inoltre, per le query di Dynamics 365 non viene distinzione tra maiuscole e minuscole. Utilizzare modelli di linguaggio naturale per trovare contatti, account e opportunità, in base al nome o alla posizione del cliente, e altre query utilizzate di frequente. Ecco alcuni esempi:
+Entrambe le query in linguaggio naturale e nome prodotto sono supportate quando si usa Microsoft Search per trovare i risultati di Dynamics 365. Inoltre, per le query di Dynamics 365 non viene distinzione tra maiuscole e minuscole. Utilizzare modelli di linguaggio naturale per trovare contatti, account e opportunità, in base al nome o alla posizione del cliente, e altre query utilizzate di frequente. Ecco alcuni esempi:
 
 * Who è il contatto per Contoso
 * Opportunità aperte per Contoso
@@ -68,7 +68,7 @@ Le query in linguaggio naturale e nome prodotto sono supportate quando si usa Mi
 * Chiamata telefonica ad alta priorità
 * Contatti mancanti messaggi di posta elettronica
 
-I modelli dei nomi di prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
+I modelli di nome prodotto supportano un intervallo di applicazioni Dynamics 365 e attiveranno i risultati di Dynamics 365 indipendentemente dalla posizione in cui vengono visualizzati in una query:
 
 * D365
 * Dynamics 365
@@ -83,7 +83,7 @@ I modelli dei nomi di prodotto supportano un intervallo di applicazioni Dynamics
 
 Con questa semplice configurazione, è possibile abilitare l'esperienza di ricerca della federazione dynamics 365 per gli utenti dell'organizzazione.
 
-1. Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [Origini dati](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
+1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [Origini dati](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors).
 
 2. Nella sezione App e servizi Microsoft, in Microsoft Dynamics 365, selezionare **Gestisci** per aprire il pannello di Microsoft Dynamics 365.
 

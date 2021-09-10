@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: Includere app basate su browser nei risultati dei segnalibri per Microsoft Search
 ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702103"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973741"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Integrare Power Apps in Microsoft Search segnalibri
    
-Aiutare gli utenti a completare attività, ad esempio l'immissione di periodi di ferie o le spese di reporting, integrando microsoft [Power Apps](https://products.office.com/business/microsoft-powerapps) esistente nei segnalibri Microsoft Search preferiti. Le Power Apps vengono visualizzate all'interno del risultato di un segnalibro, eliminando la necessità di passare a un sito diverso o aprire uno strumento separato, risparmiando tempi e fatica.
+Aiutare gli utenti a completare attività, come l'immissione di periodi di ferie o le spese di reporting, integrando [microsoft Power Apps](https://products.office.com/business/microsoft-powerapps) esistente nei segnalibri Microsoft Search preferiti. Le Power Apps vengono visualizzate all'interno del risultato di un segnalibro, eliminando la necessità di passare a un sito diverso o aprire uno strumento separato, risparmiando tempi e fatica.
   
 ## <a name="what-are-power-apps"></a>Cosa sono Power Apps?
 
@@ -54,4 +54,4 @@ Aiutare gli utenti a completare attività, ad esempio l'immissione di periodi di
     
 7. Selezionare **Pubblica**.
     
-Quando un utente Microsoft Search ricerca [](https://Bing.com) Bing ricerca di una delle parole chiave del segnalibro o delle parole chiave riservate, l'app Power app verrà visualizzata nel risultato del segnalibro.
+Quando un utente Microsoft Search autorizzato [](https://Bing.com) cerca Bing parole chiave o parole chiave riservate del segnalibro, l'app Power app verrà visualizzata nel risultato del segnalibro.

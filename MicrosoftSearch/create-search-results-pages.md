@@ -9,26 +9,26 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: Creare la propria pagina dei risultati di ricerca per un sito SharePoint Online
 ms.openlocfilehash: df99287dbdd9a82c1a8bc66b39e67a37fcb22da8
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702203"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973782"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>Creare una pagina dei risultati di ricerca personalizzata in SharePoint Online
 
-Un modo per personalizzare l'esperienza di ricerca in SharePoint è creare una pagina dei risultati di ricerca personalizzata per un sito. In questo modo è possibile utilizzare una pagina creata anziché l'impostazione predefinita Microsoft Search pagina dei risultati. In questo modo è possibile ottenere maggiore flessibilità sull'aspetto dell'esperienza dei risultati di ricerca per gli utenti.
+Un modo per personalizzare l'esperienza di ricerca in SharePoint è creare una pagina dei risultati di ricerca personalizzata per un sito. In questo modo è possibile utilizzare una pagina creata, anziché l'impostazione predefinita Microsoft Search pagina dei risultati. In questo modo è possibile ottenere maggiore flessibilità sull'aspetto dell'esperienza dei risultati di ricerca per gli utenti.
 
 >[!NOTE]
-> Per apportare modifiche alla pagina dei Microsoft Search predefinita, vedere [Personalizzare la pagina dei risultati di ricerca.](customize-search-page.md)
+> Per apportare modifiche alla pagina dei Microsoft Search predefinita, vedere [Personalizzare la pagina dei risultati della ricerca.](customize-search-page.md)
 
-Con una pagina dei risultati personalizzata è possibile creare una nuova pagina che può essere utilizzata per controllare il layout e la progettazione dei risultati di ricerca per supportare le esigenze dell'organizzazione. È possibile utilizzare qualsiasi web part incorporata, web part di ricerca open source della community di modelli e procedure di SharePoint, nonché qualsiasi web part personalizzata sviluppata con SharePoint Framework.
+Con una pagina dei risultati personalizzata è possibile creare una nuova pagina che può essere utilizzata per controllare il layout e la progettazione dei risultati di ricerca per supportare le esigenze dell'organizzazione. È possibile utilizzare qualsiasi web part incorporata, web part di ricerca open source della community di modelli e procedure di SharePoint, nonché qualsiasi web part personalizzata sviluppata tramite SharePoint Framework.
 
 ## <a name="configure-a-results-page"></a>Configurare una pagina dei risultati
 
 Per configurare una pagina dei risultati personalizzata in SharePoint Online, eseguire la procedura seguente:
 
-1. Passare al sito in cui si desidera configurare una pagina dei risultati personalizzata e passare a Raccolta siti Impostazioni > siti Impostazioni > **ricerca Impostazioni**.
+1. Passare al sito in cui si desidera configurare una pagina dei risultati personalizzata e passare a Raccolta siti Impostazioni > Impostazioni > **ricerca Impostazioni**.
 
 2. In Ricerca Impostazioni deselezionare Usa le stesse impostazioni della pagina dei risultati dell'elemento **padre,** scegliere Invia **query a** una pagina dei risultati personalizzata e specificare un valore per URL pagina **risultati:**. Salvare quindi le modifiche. L'URL utilizzato qui deve essere per la pagina creata per l'utilizzo come pagina dei risultati personalizzata.
 

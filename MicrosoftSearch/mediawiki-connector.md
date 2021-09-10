@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurare il connettore di Graph MediaWiki per Microsoft Search
 ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701950"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973496"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -85,6 +85,6 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 Il connettore MediaWiki presenta queste limitazioni nella versione di anteprima:
 
 * Supporta solo wiki basati sul cloud.
-* Supporta solo Basic o OAuth 2.0 con autenticazione Azure Active Directory o Azure.
+* Supporta solo Basic o OAuth 2.0 con Azure Active Directory o l'autenticazione di Azure.
 * Non supporta la selezione dello spazio dei nomi per l'indicizzazione. Indicizza solo gli spazi dei nomi Main, Category e File.
 * Non supporta gli elenchi di controllo di accesso (ACL). Di conseguenza, le pagine indicizzate sono visibili a tutti gli utenti dell'organizzazione.

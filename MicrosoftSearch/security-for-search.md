@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Proteggere i dati dell'azienda e gli utenti finali fornendo informazioni agli utenti autorizzati con Microsoft Search in Bing
 ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701859"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973503"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sicurezza e privacy per Microsoft Search in Bing
 
@@ -29,7 +29,7 @@ Microsoft Search in Bing richieste vengono effettuate tramite HTTPS. La connessi
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Autenticazione e autorizzazione con Azure Active Directory
 
-L'autenticazione Microsoft Search in Bing è associata a Azure Active Directory. Quando Microsoft Search utenti passano a Bing, l'intestazione Bing mostra le opzioni di accesso per un account Microsoft, nonché un account aziendale o dell'istituto di istruzione. Se Bing non è in grado di determinare se un utente è un partecipante idoneo, gli utenti possono passare alla pagina Esplora [Microsoft Search, dove](https://www.bing.com/business/explore) verranno reindirizzati automaticamente alla pagina di accesso dell'organizzazione.
+L'autenticazione Microsoft Search in Bing è associata a Azure Active Directory. Quando Microsoft Search utenti passano a Bing, nell'intestazione Bing verranno mostrate le opzioni di accesso per un account Microsoft, nonché un account aziendale o dell'istituto di istruzione. Se Bing non è in grado di determinare se un utente è un partecipante idoneo, gli utenti possono passare alla pagina Esplora [Microsoft Search, dove](https://www.bing.com/business/explore) verranno reindirizzati automaticamente alla pagina di accesso dell'organizzazione.
 
 Gli utenti possono accedere a Microsoft Search solo con un account aziendale o dell'istituto di istruzione e con le stesse credenziali usate per accedere ai servizi di Office 365, ad esempio SharePoint o Outlook. Non è possibile accedere a Microsoft Search con un account Microsoft personale.
 
@@ -39,7 +39,7 @@ Se un utente è già autenticato con il proprio account aziendale o dell'istitut
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Comunica con il cloud Microsoft dal browser
 
-Quando un utente accede con il proprio account aziendale o dell'istituto di istruzione, Bing le raccolte client necessarie verranno scaricate nel browser per abilitare Microsoft Search risultati. Quindi, quando esegue una ricerca, il codice nel browser chiama Office 365 cloud per ottenere risultati di lavoro. A tale scopo, Microsoft Search un'API dedicata che viene gestita in conformità agli obiettivi di controllo di SSAE 18 SOC2 Tipo 1. Ciò significa che i risultati del lavoro e i dati di lavoro non fluiranno attraverso sistemi Bing soggetti a obiettivi di controllo dell'elaborazione dei dati meno stringenti rispetto ai risultati del lavoro stessi quando vengono elaborati in Office 365 Core Online Services.
+Quando un utente accede con l'account aziendale o dell'istituto di istruzione, Bing scarica le raccolte client necessarie nel browser per abilitare i risultati Microsoft Search lavoro. Quindi, quando esegue una ricerca, il codice nel browser chiama Office 365 cloud per ottenere risultati di lavoro. A tale scopo, Microsoft Search un'API dedicata che viene gestita in conformità agli obiettivi di controllo di SSAE 18 SOC2 Tipo 1. Ciò significa che i risultati del lavoro e i dati di lavoro non fluiranno attraverso sistemi Bing soggetti a obiettivi di controllo dell'elaborazione dei dati meno stringenti rispetto ai risultati del lavoro stessi quando vengono elaborati in Office 365 Core Online Services.
   
 ## <a name="permissions"></a>Autorizzazioni
 

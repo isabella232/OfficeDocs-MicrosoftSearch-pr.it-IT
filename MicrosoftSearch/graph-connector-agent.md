@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: Agente in-prem
 ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702139"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973479"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agente connettore microsoft Graph
 
-L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente Graph Microsoft.* Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
+L'utilizzo di connettori in ingresso richiede l'installazione del software *dell'agente* Graph microsoft Graph. Consente il trasferimento sicuro dei dati tra i dati locali e le API del connettore. In questo articolo viene illustrata l'installazione e la configurazione dell'agente.
 
 ## <a name="installation"></a>Installazione
 
@@ -55,7 +55,7 @@ Innanzitutto, accedi e tieni presente che il privilegio minimo necessario per l'
 
 1. Passare al portale [di Azure e](https://portal.azure.com) accedere con le credenziali di amministratore per il tenant.
 
-2. Passare a **Azure Active Directory**  ->  **registrazioni dell'app** dal riquadro di spostamento e selezionare **Nuova registrazione.**
+2. Passare a **Azure Active Directory**  ->  **app dal** riquadro di spostamento e selezionare Nuova **registrazione.**
 
 3. Fornisci un nome per l'app e seleziona **Registra.**
 
@@ -92,7 +92,7 @@ I dettagli dell'autenticazione possono essere forniti utilizzando un segreto cli
 Esistono tre semplici passaggi per l'utilizzo dell'autenticazione basata su certificato:
 
 1. Creare o ottenere un certificato
-2. Upload il certificato nel portale di Azure
+2. Upload il certificato al portale di Azure
 3. Assegnare il certificato all'agente
 
 ##### <a name="step-1-get-a-certificate"></a>Passaggio 1: Ottenere un certificato

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Esaminare e agire in base al feedback degli utenti in Microsoft Search
 ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702013"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973693"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
@@ -27,7 +27,7 @@ Microsoft offre ora strumenti che consentono di esaminare e gestire il feedback 
 
 ## <a name="how-users-submit-feedback"></a>Modalità di invio del feedback da parte degli utenti
 
-Poiché gli utenti dell'organizzazione Microsoft Search, possono avere feedback sull'esperienza. Quando fanno clic su un collegamento di feedback nella pagina dei risultati, possono categorizzare il proprio feedback e includere commenti aggiuntivi.
+Poiché gli utenti dell'organizzazione usano Microsoft Search, possono ricevere commenti e suggerimenti sull'esperienza. Quando fanno clic su un collegamento di feedback nella pagina dei risultati, possono categorizzare il proprio feedback e includere commenti aggiuntivi.
 
 ![Modulo di feedback globale.](media/feedback/feedback-global-dialog.png)
 
@@ -62,7 +62,7 @@ Puoi anche aggiornare lo stato per più elementi, selezionarli e quindi selezion
 
 ## <a name="export-feedback"></a>Esportare commenti e suggerimenti
 
-Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Verrà .csv automaticamente un file denominato Feedback con la data, ad esempio "Feedbacks_10_31_2020.csv".
+Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Verrà .csv automaticamente un file denominato Feedbacks con la data, ad esempio "Feedbacks_10_31_2020.csv".
 
 ## <a name="send-user-feedback-to-microsoft"></a>Inviare commenti e suggerimenti degli utenti a Microsoft
 
@@ -85,5 +85,5 @@ L'amministratore della ricerca deve comprendere le persone principali dell'organ
     1. I segnalibri sono utili per le origini di contenuto con una pagina di destinazione di alta qualità e una varietà limitata di termini di ricerca, in modo che la community di utenti otterrà un risultato di alta qualità dal segnalibro e potrà quindi trovare in modo efficiente ciò che sta cercando.
     1. D&A sono utili per singole risposte abbastanza frequenti, ma che non cambiano.
     1. I connettori sono utili per le origini di contenuto con un'ampia gamma di contenuti e un'ampia varietà di termini di ricerca.
-1. "I risultati hanno richiesto troppo tempo per il caricamento" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
-1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ha un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.
+1. "I risultati hanno richiesto troppo tempo per caricarsi" & "È stato rilevato un problema" potrebbero essere indicatori di un problema più ampio. La ricerca di questo feedback ogni giorno può essere utile e, se vengono visualizzati più casi, è possibile verificare l'esperienza di ricerca per se stessi e aprire un caso di supporto con Microsoft, se necessario. Questo tipo di feedback è importante anche per Microsoft ed è un ottimo motivo per inviarci tutti i commenti e suggerimenti.
+1. "Voglio suggerire un collegamento interno" può essere valutato per essere aggiunto come segnalibri o contenuto connesso. Il tuo primo pensiero dovrebbe essere un segnalibro; se il segnalibro ottiene un utilizzo elevato, è possibile prendere in considerazione l'utilizzo di contenuto tramite un connettore per consentire un'esperienza di ricerca ancora più ricca.

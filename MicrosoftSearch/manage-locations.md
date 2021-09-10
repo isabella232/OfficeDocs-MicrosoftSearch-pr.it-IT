@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Nel corso del tempo, potrebbe essere necessario aggiornare lo stato e il contenuto di una posizione per fare in modo che rimanga pertinente.
 ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701995"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973722"
 ---
 # <a name="manage-locations"></a>Gestire le posizioni
 
@@ -28,7 +28,7 @@ Posizione consente agli utenti di trovare indirizzi e individuare gli edifici de
 
 ### <a name="add-or-edit-a-single-location"></a>Aggiungere o modificare una singola posizione
 
-1. Nella [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. Per aggiungere una nuova posizione, selezionare **Aggiungi**.
 1. Per modificare una posizione, selezionarla nell'elenco di posizioni pertinenti.
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
@@ -57,7 +57,7 @@ Scaricare il file modello per un elenco di campi obbligatori e i dettagli.
 Ecco alcuni punti importanti riguardanti il file modello:
 
 - Non modificare i dati in questi campi: *Id*, *Data ultima modifica* e *Autore ultima modifica*
-- Se si include *l'ID* di un percorso esistente, questo verrà sostituito con le informazioni nel file di importazione.
+- Se includi *l'ID* di un percorso esistente, questo verrà sostituito con le informazioni nel file di importazione.
 - Se esiste un percorso esistente con lo stesso nome, il percorso verrà aggiornato con le informazioni nel file di importazione.
 - Non tutti i campi nel file modello sono obbligatori e i campi obbligatori variano a seconda dello stato della posizione.
 - In base al *campo Stato,* le posizioni verranno salvate come bozza, suggerite, pianificate o verranno pubblicate automaticamente.

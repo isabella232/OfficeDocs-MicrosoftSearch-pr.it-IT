@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurare il connettore Enterprise web Graph per Microsoft Search
 ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702166"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973514"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -68,7 +68,7 @@ Se il sito Web contiene contenuto dinamico, ad esempio pagine Web presenti in si
 
 Oltre alla casella di controllo, sono disponibili tre campi facoltativi:
 
-1. **DOM Ready**: immettere l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
+1. **DOM Ready**: immetti l'elemento DOM che il crawler deve usare come segnale che il contenuto è completamente sottoposto a rendering e che la ricerca per indicizzazione deve iniziare.
 1. **Intestazioni da aggiungere**: specificare le intestazioni HTTP che il crawler deve includere quando si invia l'URL Web specifico. È possibile impostare più intestazioni per siti Web diversi. Ti consigliamo di includere i valori del token di autenticazione.
 1. **Intestazioni da ignorare:** specificare eventuali intestazioni non necessarie che devono essere escluse dalle richieste di ricerca per indicizzazione dinamiche.
 
@@ -104,7 +104,7 @@ Esistono due modi per impedire la ricerca per indicizzazione delle pagine: non c
 
 ### <a name="support-for-robotstxt"></a>Supporto per robots.txt
 
-Il connettore verifica se esiste un file robots.txt per il sito radice e, se esistente, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
+Il connettore verifica se esiste un file robots.txt per il sito radice e, se ne esiste uno, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
 
 ### <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
@@ -138,7 +138,7 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
  Codice di errore dettagliato | Messaggio di errore
  --- | ---
  6001 | Il sito che si sta provando a indicizzare non è raggiungibile
- 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata da in base robots.txt configurazione.
+ 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata in base robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul lato client (ad eccezione di HTTP 404, 408), fare riferimento ai codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Impossibile trovare la pagina di origine che si sta provando a indicizzare. (Errore HTTP 404)

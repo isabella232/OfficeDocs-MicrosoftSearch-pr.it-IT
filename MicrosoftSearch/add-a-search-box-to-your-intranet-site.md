@@ -13,22 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: Ottenere suggerimenti di ricerca pertinenti e trovare i risultati di lavoro più velocemente aggiungendo una Microsoft Search casella di ricerca al sito o alla pagina Intranet.
+description: Ottenere suggerimenti di ricerca pertinenti e trovare risultati di lavoro più velocemente aggiungendo una Microsoft Search di ricerca al sito o alla pagina Intranet.
 ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701409"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973798"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Aggiungere una casella di ricerca al sito Intranet
 
 Per consentire agli utenti di accedere facilmente ai risultati dell'organizzazione, aggiungere un Microsoft Search nella Bing di ricerca a qualsiasi sito o pagina Intranet. Ecco alcuni dei vantaggi:
 
-- Una casella di ricerca nel portale SharePoint o Intranet offre un punto di ingresso familiare e attendibile per iniziare la ricerca
+- Una casella di ricerca nel portale SharePoint intranet offre un punto di ingresso familiare e attendibile per iniziare la ricerca
 - Supporta tutti i principali Web browser, tra cui Google Chrome e Microsoft Edge
 - Vengono visualizzati solo i suggerimenti di ricerca dell'organizzazione, i suggerimenti Web non vengono mai inclusi
-- Porta gli utenti a un Microsoft Search in Bing risultati di lavoro, che esclude annunci e risultati Web
+- Porta gli utenti a una Microsoft Search nella Bing dei risultati di lavoro, che esclude gli annunci e i risultati Web
 - Puoi controllare l'aspetto e il comportamento della casella di ricerca, inclusa la possibilità di impostare gli utenti su un verticale predefinito o personalizzato che hai creato
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Aggiungere una casella di ricerca a una pagina Intranet
@@ -110,7 +110,7 @@ Utilizzare l'opzione verticale in bfbSearchBoxConfig per definire il verticale d
 
 :::image type="content" alt-text="Screenshot of work results page on Microsoft Search in Bing showing the Sites vertical results and URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
-Per i verticali personalizzati, usa l'hash alla fine dell'URL. È possibile trovare questi valori eseguendo una ricerca dalla pagina di lavoro in Bing, facendo clic su un'etichetta verticale e copiando il valore dopo il simbolo del numero (#).
+Per i verticali personalizzati, usa l'hash alla fine dell'URL. È possibile trovare questi valori eseguendo una ricerca dalla pagina di lavoro in Bing, facendo clic su un'etichetta verticale e copiando il valore dopo il simbolo di numero (#).
 
 :::image type="content" alt-text="Screenshot della pagina dei risultati di lavoro Microsoft Search in Bing che mostra un URL e risultati verticali di presentazione personalizzati." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 

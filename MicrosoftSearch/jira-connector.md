@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore di Graph Jira di Atlante per Microsoft Search
+description: Configurare il connettore Graph Jira di Atlante per Microsoft Search
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702094"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973779"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Connettore jira Graph Atlante (anteprima)
 
@@ -79,7 +79,7 @@ Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID
 
 Selezionare i campi che si desidera indicizzare e visualizzare in anteprima i dati in questi campi prima di procedere. Alcuni campi sono già selezionati per impostazione predefinita e non possono essere rimossi.
 
-Il connettore di Graph Atlante jira può indicizzare sia i campi di problema predefiniti che i campi dei problemi creati personalizzati.
+Il connettore di Graph Atlante jira può indicizzare sia i campi problema predefiniti che i campi dei problemi creati personalizzati.
 
 > [!NOTE]
 > Se un campo personalizzato creato selezionato non è presente in alcuni tipi di problema jira, il campo verrà ingerito come *NULL* (vuoto).
@@ -109,7 +109,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
 
-Il connettore jira Graph atlante supporta le pianificazioni di aggiornamento sia per le ricerche per indicizzazione complete che per le ricerche per indicizzazione incrementali.
+Il connettore jira Graph atlante supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali.
 La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
