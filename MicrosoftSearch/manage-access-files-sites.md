@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Panoramica del modo in cui gli amministratori possono garantire che l'accesso a siti e file sia adeguatamente limitato all'interno dell'organizzazione.
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973819"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375845"
 ---
 # <a name="manage-access-to-files-and-sites"></a>Gestire l'accesso a file e siti
 
@@ -54,7 +54,7 @@ Per garantire che i documenti e i messaggi di posta elettronica siano etichettat
 
 ### <a name="sites-and-files-between-groups"></a>Siti e file tra gruppi
 
-Per limitare la condivisione di file e siti tra gruppi, ad esempio un team finanziario che gestisce progetti riservati con un team di marketing, è possibile definire e implementare criteri di barriera delle informazioni. Queste barriere impediscono anche altri aspetti della comunicazione e della collaborazione in Microsoft Teams, SharePoint e OneDrive. Per informazioni dettagliate, [vedere Learn about information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers).
+Per limitare la condivisione di file e siti tra gruppi, ad esempio un team finanziario che gestisce progetti riservati con un team di marketing, è possibile definire e implementare criteri di barriera delle informazioni. Queste barriere impediscono anche altri aspetti della comunicazione e della collaborazione in Microsoft Teams, SharePoint e OneDrive. Per informazioni dettagliate, [vedere Learn about information barriers in Microsoft 365.](/microsoft-365/compliance/information-barriers)
 
 ## <a name="get-access-insights"></a>Ottenere informazioni dettagliate sull'accesso
 

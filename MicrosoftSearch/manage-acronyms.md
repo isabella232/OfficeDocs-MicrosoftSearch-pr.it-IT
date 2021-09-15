@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Creare e aggiornare le risposte degli acronimi in Microsoft Search
 ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973709"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375852"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gestire le risposte degli acronimi in Microsoft Search
 
@@ -27,7 +27,7 @@ Le organizzazioni non hanno sempre un singolo riferimento per la terminologia st
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
-Microsoft Search utenti possono ottenere le definizioni con gli acronimi in [Bing,](https://Bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook sul web, Outlook Mobile (Android) e Teams Mobile (iOS e Android). Nella casella **Di ricerca** gli utenti immettono query come negli esempi seguenti:
+Microsoft Search utenti possono ottenere le definizioni con gli acronimi in [Bing,](https://Bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365, Outlook sul web,](https://Office.com)Outlook Mobile (Android) e Teams Mobile (iOS e Android). Nella casella **Di ricerca** gli utenti immettono query come negli esempi seguenti:
 
 - *Cos'è* DNN
 - *Definire* DNN
@@ -65,7 +65,7 @@ Gli amministratori della ricerca possono aggiungere acronimi nella scheda [Acron
 
 **Stato escluso**. Se vuoi impedire la visualizzazione di un acronimo in Microsoft Search, usa **Exclude an acronym** per aggiungerlo. Per impedire l'esclusione di un acronimo, è necessario eliminare l'acronimo escluso e aggiungerlo o verificare che sia presente nell'elenco pubblicato.
 
-È possibile aggiungere gli acronimi singolarmente o importarli in blocco in un file CSV. Upload un file CSV con i campi riportati nella tabella seguente:
+È possibile aggiungere gli acronimi singolarmente o importarli in blocco in un file CSV. Upload un file CSV con i campi mostrati nella tabella seguente:
 
 | Acronimo (Obbligatorio) | Sta per (Obbligatorio) | URL | Descrizione  | Stato (obbligatorio) | Last Modified | Last Modified By | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
@@ -89,7 +89,7 @@ Gli amministratori della ricerca possono aggiungere acronimi nella scheda [Acron
 
 ### <a name="system-curated-acronyms"></a>Acronimi curati dal sistema
 
-Potrebbe essere una sfida per gli amministratori aggiungere a Answers tutti gli acronimi utilizzati all'interno di un'organizzazione. Questa funzionalità può trovare acronimi di cui gli amministratori della ricerca non sono nemmeno a conoscenza. Per eseguire questa operazione, Microsoft Search individua e cura anche gli acronimi da queste origini:
+Potrebbe essere una sfida per gli amministratori aggiungere a Answers tutti gli acronimi utilizzati all'interno di un'organizzazione. Questa funzionalità può trovare acronimi di cui gli amministratori della ricerca non sono nemmeno a conoscenza. Per eseguire questa operazione, Microsoft Search individua e cura anche gli acronimi di queste origini:
 
 - Messaggi di posta elettronica degli utenti
 - Documenti in [SharePoint,](https://products.office.com/sharepoint/collaboration) [Microsoft OneDrive]( https://onedrive.live.com/about/)e [Microsoft OneNote](https://www.onenote.com/)
@@ -120,13 +120,13 @@ Microsoft Search che solo gli utenti con accesso e autorizzazioni a un documento
 
 **D: Quanto tempo è necessario per visualizzare gli acronimi curati dal sistema dopo aver ricevuto o inviato un nuovo messaggio di posta elettronica o un nuovo documento?**
 
-**A:** Gli acronimi trovati in un nuovo messaggio di posta elettronica o in un nuovo documento possono richiedere fino a sette giorni per Microsoft Search risultati.
+**A:** Gli acronimi trovati in un nuovo messaggio di posta elettronica o in un nuovo documento possono essere visualizzati fino a sette giorni Microsoft Search risultati.
 
 **D: Cosa succede quando un acronimo viene escluso e pubblicato?**
 
 **A:** L'acronimo escluso ha la priorità e impedisce la visualizzazione dell'acronimo pubblicato nei risultati della ricerca. Non elimina o rimuove l'acronimo pubblicato.
 
-**D: Quanto tempo è necessario per escludere un acronimo Microsoft Search risultati?**
+**D: Quanto tempo è necessario per escludere un acronimo dai Microsoft Search risultati?**
 
 **A:** L'interruzione della visualizzazione di un acronimo escluso nei risultati della ricerca richiede fino a un giorno.
 

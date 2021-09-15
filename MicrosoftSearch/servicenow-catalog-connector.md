@@ -1,5 +1,5 @@
 ---
-title: ServiceNow Catalogo Graph connettore per Microsoft Search
+title: ServiceNow Catalog Graph connettore per Microsoft Search
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 description: Configurare il connettore di Graph ServiceNow per Microsoft Search
 ms.openlocfilehash: c46388a086f563eec36dbd7e5492d8065b1ae296
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973448"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376051"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="servicenow-catalog-graph-connector-preview"></a>ServiceNow Catalog Graph Connector (anteprima)
 
-Con Microsoft Graph Connector for ServiceNow, l'organizzazione può utilizzare elementi del catalogo visibili a tutti gli utenti o limitati con autorizzazioni di criteri utente all'interno dell'organizzazione. [](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) Dopo aver configurato il connettore e indicizzare il contenuto da ServiceNow, gli utenti finali possono cercare tali elementi del catalogo da qualsiasi client Microsoft Search client.
+Con Microsoft Graph Connector for ServiceNow, l'organizzazione può utilizzare elementi del catalogo visibili a tutti gli utenti o con restrizioni con autorizzazioni per i criteri utente all'interno dell'organizzazione. [](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) Dopo aver configurato il connettore e indicizzare il contenuto da ServiceNow, gli utenti finali possono cercare tali elementi di catalogo da qualsiasi client Microsoft Search.
 
 >[!NOTE]
 >ServiceNow Catalog Graph Connector è in anteprima. Se si desidera ottenere l'accesso anticipato per provarlo, iscriversi utilizzando [<b>questo modulo. </b>](https://forms.office.com/r/QyYwQQY2EX)  
@@ -55,7 +55,7 @@ Indicizzare e supportare le autorizzazioni dei criteri utente | sc_cat_item_user
 | | sys_user_grmember | Lettura dell'appartenenza a un gruppo di utenti
 | | user_criteria | Autorizzazioni per la lettura dei criteri utente
 
-È possibile **creare e assegnare un ruolo per** l'account di servizio utilizzato per connettersi a Microsoft Search. [Informazioni su come assegnare il ruolo per gli account ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) L'accesso in lettura alle tabelle può essere assegnato al ruolo creato. Per informazioni sull'impostazione dell'accesso in lettura ai record di tabella, vedere [Securing Table Records.](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls) 
+È possibile **creare e assegnare un ruolo per** l'account di servizio utilizzato per connettersi con Microsoft Search. [Informazioni su come assegnare il ruolo per gli account ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) L'accesso in lettura alle tabelle può essere assegnato al ruolo creato. Per informazioni sull'impostazione dell'accesso in lettura ai record di tabella, vedere [Securing Table Records.](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls) 
 
 
 >[!NOTE]
@@ -201,7 +201,7 @@ Il connettore ServiceNow supporta le autorizzazioni di ricerca visibili a **Tutt
 
 ServiceNow Catalog Graph Connector supporta le autorizzazioni dei criteri utente predefinite senza script avanzati. Quando il connettore rileva un criterio utente con script avanzato, tutti i dati che utilizzano tali criteri utente non verranno visualizzati nei risultati della ricerca.
 
-Se si **sceglie** Solo gli utenti con accesso a questa origine dati, è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di cui è stato eseguito il provisioning Azure Active Directory (AAD) o utenti non AAD.
+Se si sceglie Solo gli utenti con accesso a questa origine **dati,** è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di cui è stato eseguito il provisioning Azure Active Directory (AAD) o utenti non AAD.
 
 Per identificare l'opzione adatta all'organizzazione:
 
@@ -243,7 +243,7 @@ ServiceNow Catalog Graph connector presenta le limitazioni seguenti nella versio
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 Dopo aver pubblicato la connessione, personalizzando la pagina dei risultati, è possibile esaminare lo stato nella **scheda Origini** dati nell'interfaccia [di amministrazione.](https://admin.microsoft.com) Per informazioni su come apportare aggiornamenti ed eliminazioni, vedere [Manage your connector](manage-connector.md).
 Di seguito sono riportati i passaggi per la risoluzione dei problemi più comuni.
-### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. Impossibile eseguire l'accesso a causa di un'Sign-On ServiceNow abilitata per single Sign-On
+### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. Impossibile eseguire l'accesso a causa di un'istanza serviceNow abilitata Sign-On single-service
 
 Se l'organizzazione ha abilitato Single Sign-On (SSO) a ServiceNow, potrebbe verificarsi un problema di accesso con l'account di servizio. Puoi visualizzare l'accesso basato su <em> `login.do` </em> nome utente e password aggiungendo l'URL dell'istanza serviceNow. Esempio. `https://<your-organization-domain>.service-now.com./login.do` 
 
@@ -252,8 +252,8 @@ Se l'organizzazione ha abilitato Single Sign-On (SSO) a ServiceNow, potrebbe ver
 #### <a name="21-check-table-access-permissions"></a>2.1. Controllare le autorizzazioni di accesso alle tabelle
 Se viene visualizzata una risposta non consentita o non autorizzata nello stato di connessione, verificare se l'account di servizio ha richiesto l'accesso alle tabelle menzionate nel [passaggio 3: impostazioni di connessione](#step-3-connection-settings). Verificare se tutte le colonne delle tabelle dispongono dell'accesso in lettura.
 
-#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Verificare se l'istanza serviceNow è dietro il firewall
-Graph Il connettore potrebbe non essere in grado di raggiungere l'istanza di ServiceNow se è dietro un firewall di rete. Sarà necessario consentire esplicitamente l'accesso al Graph Connector. È possibile trovare l'intervallo di indirizzi IP pubblici Graph Connector Service nella tabella seguente. In base all'area del tenant, aggiungerlo all'elenco consenti rete di istanze serviceNow.
+#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Verificare se l'istanza di ServiceNow è dietro il firewall
+Graph Il connettore potrebbe non essere in grado di raggiungere l'istanza di ServiceNow se è dietro un firewall di rete. Sarà necessario consentire esplicitamente l'accesso Graph Connector. È possibile trovare l'intervallo di indirizzi IP pubblici Graph Connector Service nella tabella seguente. In base all'area del tenant, aggiungerlo all'elenco consenti rete di istanze serviceNow.
 
  Ambiente | Area geografica | Intervallo
 --- | --- | ---

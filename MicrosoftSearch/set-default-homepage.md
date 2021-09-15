@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Informazioni su come impostare Bing come home page predefinita per la società con Microsoft Search.
 ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973698"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376045"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Impostare Bing.com come home page predefinita
 

@@ -12,25 +12,25 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore azure SQL e Microsoft SQL Graph per Microsoft Search.
+description: Configurare il connettore SQL Azure e Microsoft SQL Graph per Microsoft Search.
 ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973515"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375883"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Connettori SQL e Microsoft SQL Server Graph Azure
 
-Il connettore Microsoft SQL Server o Azure SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database SQL Server locale o da un database ospitato nell'istanza di Azure SQL nel cloud.
-Il connettore Graph indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con questi SQL, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
+Il connettore di Microsoft SQL Server o azure SQL Graph consente all'organizzazione di individuare e indicizzare i dati da un database SQL Server locale o da un database ospitato nell'istanza di Azure SQL nel cloud.
+Il connettore Graph indicizza il contenuto specificato Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con questi SQL, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo per il connettore di SQL Azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni per](#limitations) il server Microsoft SQL e i connettori SQL Azure.
+Questo articolo è per tutti coloro che configurano, esere e monitorano un connettore SQL Azure e Microsoft SQL server Graph. Integra il processo di installazione generale e mostra le istruzioni valide solo per il connettore SQL Azure e Microsoft SQL server Graph. Questo articolo include anche informazioni [sulle limitazioni](#limitations) per il server Microsoft SQL e i connettori SQL Azure.
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -63,7 +63,7 @@ Dopo aver completato la registrazione dell'app e aver preso nota del nome dell'a
 
 Per aggiungere l'app registrata al database SQL di Azure, devi:
 
-- Accedere al database di azure SQL
+- Accedere al database di Azure SQL
 - Aprire una nuova finestra di query
 - Creare un nuovo utente eseguendo il comando 'CREATE USER [nome app] FROM EXTERNAL PROVIDER'
 - Aggiungere l'utente al ruolo eseguendo il comando 'exec sp_addrolemember 'db_datareader', [nome app]' o 'ALTER ROLE db_datareader ADD MEMBER [nome app]'
@@ -77,9 +77,9 @@ Per connettere il connettore Microsoft SQL Server a un'origine dati, è necessar
 
 > [!NOTE]
 > - Il database deve essere SQL Server versione 2008 o successiva perché il connettore Microsoft SQL Server sia in grado di connettersi.
-> - Il connettore grafico SQL azure consente solo l'inserimento da un'istanza di Azure SQL nello stesso [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) di Microsoft 365. Il flusso di dati tra tenant non è supportato.
+> - Il connettore SQL grafico di Azure consente solo l'inserimento da un'istanza di Azure SQL nello stesso [tenant](/azure/active-directory/develop/quickstart-create-new-tenant) di Microsoft 365. Il flusso di dati tra tenant non è supportato.
 
-Per il connettore SQL Azure, è necessario specificare solo il nome del server o l'indirizzo IP a cui si desidera connettersi. Il connettore SQL Azure supporta solo l'Azure Active Directory OIDC (Open ID Connect) per connettersi al database.
+Per il connettore SQL Azure, è necessario specificare solo il nome del server o l'indirizzo IP a cui si desidera connettersi. Il connettore SQL Azure supporta solo l Azure Active Directory'autenticazione Open ID connect (OIDC) per connettersi al database.
 
 Per una sicurezza aggiunta, è possibile configurare le regole del firewall IP per il SQL Server o il database di Azure. Per ulteriori informazioni sulla configurazione delle regole del firewall IP, fare riferimento alla documentazione relativa alle [regole del firewall IP.](/azure/azure-sql/database/firewall-configure) Aggiungere i seguenti intervalli IP client nelle impostazioni del firewall.
 
@@ -89,7 +89,7 @@ Per una sicurezza aggiunta, è possibile configurare le regole del firewall IP p
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-Per eseguire ricerche nel contenuto del database, è necessario specificare SQL query quando si configura il connettore. Queste SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ovvero le proprietà di origine, inclusi gli eventuali join SQL che devono essere eseguiti per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare elenchi di controllo di accesso (ACL) all'interno SQL query quando si configura il connettore.
+Per eseguire ricerche nel contenuto del database, è necessario specificare SQL query quando si configura il connettore. Queste SQL devono assegnare un nome a tutte le colonne di database che si desidera indicizzare, ovvero le proprietà di origine, inclusi gli eventuali join SQL che devono essere eseguiti per ottenere tutte le colonne. Per limitare l'accesso ai risultati della ricerca, è necessario specificare gli elenchi di controllo di accesso (ACL) all'interno SQL query quando si configura il connettore.
 
 ## <a name="step-3a-full-crawl-required"></a>Passaggio 3a: ricerca per indicizzazione completa (obbligatorio)
 
@@ -112,7 +112,7 @@ Per gestire l'accesso ai risultati della ricerca, è possibile specificare una o
 
 L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. Nell'elenco seguente vengono illustrati i quattro **meccanismi di controllo di accesso**.
 
-- **AllowedUsers**: Questa colonna specifica l'elenco degli ID utente che possono accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco di utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
+- **AllowedUsers**: Questa colonna specifica l'elenco degli ID utente che possono accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco degli utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
 - **AllowedGroups**: Questa colonna specifica il gruppo di utenti che potranno accedere ai risultati della ricerca. Nell'esempio seguente, i gruppi sales-team@contoso.com possono accedere solo al record con OrderId = 12.
 - **DeniedUsers**: Questa colonna specifica l'elenco di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non hanno accesso al record con OrderId = 13, mentre tutti gli altri utenti hanno accesso a questo record.
 - **DeniedGroups**: Questa colonna specifica il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
@@ -121,7 +121,7 @@ L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. N
 
 ### <a name="supported-data-types"></a>Tipi di dati supportati
 
-Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori SQL ms e Azure SQL. La tabella riepiloga inoltre il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati Graph microsoft Graph per l'indicizzazione, fare riferimento alla documentazione relativa ai [tipi di risorse delle proprietà.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Nella tabella seguente sono riepilogati SQL tipi di dati supportati nei connettori di SQL Ms e Azure SQL. La tabella riepiloga inoltre il tipo di dati di indicizzazione per il tipo di dati SQL supportato. Per ulteriori informazioni sui tipi di dati supportati Graph microsoft Graph per l'indicizzazione, fare riferimento alla documentazione relativa ai [tipi di risorse delle proprietà.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Categoria | Tipo di dati di origine | Tipo di dati di indicizzazione |
 | ------------ | ------------ | ------------ |
@@ -227,6 +227,6 @@ Di seguito è riportato un errore comune rilevato durante la configurazione del 
 I SQL connettori hanno queste limitazioni nella versione di anteprima:
 
 - Microsoft SQL Server connettore: il database locale deve essere SQL Server versione 2008 o successiva.
-- La Microsoft 365 e la sottoscrizione di Azure (che ospita il database SQL Azure) devono trovarsi nello stesso Azure Active Directory.
+- La Microsoft 365 e la sottoscrizione di Azure (che ospita il database di Azure SQL) devono trovarsi nello stesso Azure Active Directory.
 - Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 - L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore servicenow Knowledge Graph per Microsoft Search
+description: Configurare il connettore di knowledge Graph ServiceNow per Microsoft Search
 ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973461"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376046"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -31,9 +31,9 @@ Con Microsoft Graph Connector for ServiceNow, l'organizzazione può indicizzare 
 
 [![Gestione delle autorizzazioni di ricerca in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
-Questo articolo è per Microsoft 365 amministratori o chiunque configura, esegue e monitora un connettore Graph ServiceNow Knowledge Base. Integra le istruzioni generali fornite nell'articolo [Set up your Graph connector.](configure-connector.md) Se non è già stato fatto, leggere l'intero articolo Configurare il connettore Graph per comprendere il processo di configurazione generale.
+Questo articolo è per Microsoft 365 amministratori o chiunque configura, esegue e monitora un connettore serviceNow Knowledge Graph. Integra le istruzioni generali fornite [nell'articolo Set up your Graph connector.](configure-connector.md) Se non è già stato fatto, leggere l'intero articolo Configurare il connettore Graph per comprendere il processo di configurazione generale.
 
-Ogni passaggio del processo di installazione è elencato di seguito insieme a una nota che indica che è necessario seguire le [](#troubleshooting) istruzioni di configurazione generali o altre istruzioni che si applicano solo al connettore di Graph ServiceNow, incluse informazioni su Risoluzione dei problemi e [limitazioni.](#limitations)  
+Ogni passaggio del processo di installazione è elencato di seguito insieme a una nota che indica che è necessario seguire [](#troubleshooting) le istruzioni di configurazione generali o altre istruzioni che si applicano solo al connettore di Graph ServiceNow, incluse informazioni su Risoluzione dei problemi e [limitazioni.](#limitations)  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Passaggio 1: Aggiungere un connettore Graph nella interfaccia di amministrazione di Microsoft 365.
 Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
@@ -49,9 +49,9 @@ Insieme a questo URL, è necessario un **account** di servizio per configurare l
 **Funzionalità** | **Tabelle necessarie per l'accesso in lettura** | **Descrizione**
 --- | --- | ---
 Indicizzare gli articoli della Knowledge Base disponibili per <em>tutti gli utenti</em> | kb_knowledge | Per la ricerca per indicizzazione di articoli della Knowledge Base
-Indicizzare e supportare le autorizzazioni dei criteri utente | kb_uc_can_read_mtom | Who possibile leggere questa Knowledge Base
-| | kb_uc_can_contribute_mtom | Who contribuire a questa knowledge base
-| | kb_uc_cannot_read_mtom | Who non è in grado di leggere questa Knowledge Base
+Indicizzare e supportare le autorizzazioni dei criteri utente | kb_uc_can_read_mtom | Who può leggere questa Knowledge Base
+| | kb_uc_can_contribute_mtom | Who può contribuire a questa knowledge base
+| | kb_uc_cannot_read_mtom | Who leggere questa Knowledge Base
 | | kb_uc_cannot_contribute_mtom | Who non può contribuire a questa Knowledge Base
 | | sys_user | Lettura tabella utenti
 | | sys_user_has_role | Leggere le informazioni sui ruoli degli utenti
@@ -59,7 +59,7 @@ Indicizzare e supportare le autorizzazioni dei criteri utente | kb_uc_can_read_m
 | | user_criteria | Autorizzazioni per la lettura dei criteri utente
 | | kb_knowledge_base | Leggere le informazioni della Knowledge Base
 
-È possibile **creare e assegnare un ruolo per** l'account di servizio utilizzato per connettersi a Microsoft Search. [Informazioni su come assegnare il ruolo per gli account ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) L'accesso in lettura alle tabelle può essere assegnato al ruolo creato. Per informazioni sull'impostazione dell'accesso in lettura ai record di tabella, vedere [Securing Table Records.](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls) 
+È possibile **creare e assegnare un ruolo per** l'account di servizio utilizzato per connettersi con Microsoft Search. [Informazioni su come assegnare il ruolo per gli account ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) L'accesso in lettura alle tabelle può essere assegnato al ruolo creato. Per informazioni sull'impostazione dell'accesso in lettura ai record di tabella, vedere [Securing Table Records.](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls) 
 
 
 >[!NOTE]
@@ -193,9 +193,9 @@ Usa ID applicazione come ID client (dal passaggio 3.a) e Segreto client (dal pas
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Passaggio 4: Selezionare le proprietà e filtrare i dati
 
-In questo passaggio è possibile aggiungere o rimuovere le proprietà disponibili dall'origine dati ServiceNow. Microsoft 365 sono già state selezionate alcune proprietà per impostazione predefinita.
+In questo passaggio è possibile aggiungere o rimuovere le proprietà disponibili dall'origine dati ServiceNow. Microsoft 365 ha già selezionato alcune proprietà per impostazione predefinita.
 
-Con una stringa di query ServiceNow è possibile specificare le condizioni per la sincronizzazione degli articoli. È come una clausola **Where** in un'istruzione **SQL Select.** Ad esempio, è possibile scegliere di indicizzare solo gli articoli pubblicati e attivi. Per informazioni sulla creazione di una stringa di query personalizzata, vedere [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
+Con una stringa di query ServiceNow è possibile specificare le condizioni per la sincronizzazione degli articoli. È come una **clausola Where** in un'istruzione **SQL Select.** Ad esempio, è possibile scegliere di indicizzare solo gli articoli pubblicati e attivi. Per informazioni sulla creazione di una stringa di query personalizzata, vedere [Generate an encoded query string using a filter](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 Utilizzare il pulsante Anteprima risultati per verificare i valori di esempio delle proprietà selezionate e del filtro query.
 
@@ -205,7 +205,7 @@ Il connettore ServiceNow supporta le autorizzazioni di ricerca visibili a **Tutt
 
 ServiceNow Graph Connector supporta le autorizzazioni predefinite per i criteri utente senza script avanzati. Quando il connettore rileva un criterio utente con script avanzato, tutti i dati che utilizzano tali criteri utente non verranno visualizzati nei risultati della ricerca.
 
-Se si **sceglie** Solo gli utenti con accesso a questa origine dati, è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di cui è stato eseguito il provisioning Azure Active Directory (AAD) o utenti non AAD.
+Se si sceglie Solo gli utenti con accesso a questa origine **dati,** è necessario scegliere ulteriormente se l'istanza di ServiceNow dispone di utenti di cui è stato eseguito il provisioning di Azure Active Directory (AAD) o utenti non AAD.
 
 Per identificare l'opzione adatta all'organizzazione:
 
@@ -256,8 +256,8 @@ Se l'organizzazione ha abilitato Single Sign-On (SSO) a ServiceNow, potrebbe ver
 #### <a name="21-check-table-access-permissions"></a>2.1. Controllare le autorizzazioni di accesso alle tabelle
 Se viene visualizzata una risposta non consentita o non autorizzata nello stato di connessione, verificare se l'account di servizio ha richiesto l'accesso alle tabelle menzionate nel [passaggio 3: impostazioni di connessione](#step-3-connection-settings). Verificare se tutte le colonne delle tabelle dispongono dell'accesso in lettura.
 
-#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Verificare se l'istanza serviceNow è dietro il firewall
-Graph Il connettore potrebbe non essere in grado di raggiungere l'istanza di ServiceNow se è dietro un firewall di rete. Sarà necessario consentire esplicitamente l'accesso al Graph Connector. È possibile trovare l'intervallo di indirizzi IP pubblici Graph Connector Service nella tabella seguente. In base all'area del tenant, aggiungerlo all'elenco consenti rete di istanze serviceNow.
+#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Verificare se l'istanza di ServiceNow è dietro il firewall
+Graph Il connettore potrebbe non essere in grado di raggiungere l'istanza di ServiceNow se è dietro un firewall di rete. Sarà necessario consentire esplicitamente l'accesso Graph Connector. È possibile trovare l'intervallo di indirizzi IP pubblici Graph Connector Service nella tabella seguente. In base all'area del tenant, aggiungerlo all'elenco consenti rete di istanze serviceNow.
 
 **Ambiente** | **Area** | **Range**
 --- | --- | ---

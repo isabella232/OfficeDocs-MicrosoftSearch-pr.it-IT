@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Informazioni su come impostare Bing come motore di ricerca predefinito dell'organizzazione con Microsoft Search.
 ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973706"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376016"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Impostare Bing come motore di ricerca predefinito
   
@@ -30,7 +30,7 @@ Anche se si imposta Bing come motore di ricerca predefinito, Microsoft Edge cons
   
 Per i file ADMX più recenti per varie versioni di Windows, vedere [Come creare e gestire l'archivio centrale per i modelli amministrativi di Criteri di gruppo in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Se non è possibile trovare l'impostazione descritta in questa sezione all'interno di Console Gestione Criteri di gruppo, scaricare l'ADMX appropriato e copiarli nell'archivio centrale. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione seguente: **%systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
+Se non è possibile trovare l'impostazione descritta in questa sezione all'interno di Console Gestione Criteri di gruppo, scaricare l'ADMX appropriato e copiarli nell'archivio centrale. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione **seguente: %systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
   
 Ogni dominio gestito dal controller deve ottenere una cartella separata. Per copiare il file ADMX dal prompt dei comandi, usare il comando seguente:
   
@@ -46,9 +46,9 @@ Ogni dominio gestito dal controller deve ottenere una cartella separata. Per cop
 
 Gli utenti non potranno modificare il motore di ricerca predefinito dopo aver impostato il criterio.
   
-Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX dalla Guida di [Google Chrome Enterprise .](https://support.google.com/chrome/a/answer/187202)
+Chrome include un proprio set di impostazioni di Criteri di gruppo che può essere scaricato sotto forma di file ADMX da [Google Chrome Enterprise Guida.](https://support.google.com/chrome/a/answer/187202)
   
-Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione seguente: **%systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
+Copiare il file modello in un archivio centrale per i file ADMX nel controller di dominio. Per ulteriori informazioni, vedere [Editing Domain-Based GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). L'archivio centrale nel controller è una cartella con la convenzione di denominazione **seguente: %systemroot%\sysvol<\\ dominio \> \policies\PolicyDefinitions**
   
 Ogni dominio gestito dal controller deve ottenere una cartella separata. Per copiare il file ADMX dal prompt dei comandi, usare il comando seguente:
   

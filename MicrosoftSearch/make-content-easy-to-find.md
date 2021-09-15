@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 description: Creare segnalibri, posizioni, domande e risposte per facilitare la ricerca del contenuto dell'organizzazione.
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973725"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375857"
 ---
 # <a name="make-content-easy-to-find"></a>Facilitare la ricerca del contenuto
 
 Microsoft Search aiuta gli utenti a trovare contenuto pertinente. Costituisce un modo sicuro per cercare contenuto intranet e Web. Questo tipo di integrazione nel Web e nelle organizzazioni è offerto solo da Microsoft. Con Microsoft Search, gli amministratori della ricerca possono sfruttare la propria conoscenza di un'organizzazione per consentire agli utenti di trovare facilmente contenuto pertinente. 
 
 ## <a name="components-that-find-content"></a>Componenti che trovano contenuto
-In Microsoft Search, gli amministratori creano [segnalibri,](manage-bookmarks.md) [PowerApps,](integrate-powerapps.md)domande&[](manage-locations.md) [A](manage-qas.md)e Posizioni che semplificano la ricerca del contenuto. Ognuno dei componenti della ricerca include un titolo, un URL e un set di parole chiave di attivazione.
+In Microsoft Search, gli amministratori creano [segnalibri,](manage-bookmarks.md) [PowerApps,](integrate-powerapps.md)domande [](manage-locations.md) [&A](manage-qas.md)e Posizioni che semplificano la ricerca del contenuto. Ognuno dei componenti della ricerca include un titolo, un URL e un set di parole chiave di attivazione.
 
 ## <a name="bookmarks"></a>Segnalibri
 È possibile creare [segnalibri](manage-bookmarks.md) in pochi passaggi. Ogni segnalibro include un titolo, URL e un set di parole chiave di attivazione. Un segnalibro può avere diverse parole chiave e diversi segnalibri possono condividere la stessa parola chiave. Tuttavia, le parole chiave riservate non possono essere condivise. Quando si crea o si modifica un segnalibro, l'indice di ricerca viene aggiornato e il segnalibro è immediatamente disponibile per gli utenti.
@@ -35,7 +35,7 @@ Se l'organizzazione **ha alzato di** livello i risultati impostati in [SharePoin
 Gli amministratori della ricerca possono creare facilmente contenuti di ricerca usando le estensioni del browser. Per aggiungere il sito come segnalibro, installare l'estensione del browser. Passare quindi al sito e aggiungerlo come segnalibro. Per ulteriori informazioni, vedere [Manage bookmarks.](manage-bookmarks.md)
 
 Attualmente, le estensioni del browser sono disponibili [per Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) e [Google Chrome:](https://www.google.com) 
-- Per scaricare l'estensione Edge, passare al [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Per scaricare l'estensione Edge, passare alla [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
 - Per scaricare l'estensione Chrome, vai [all'archivio Web chrome.](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)
 
 ## <a name="powerapps"></a>PowerApps
@@ -50,7 +50,7 @@ Con [PowerApps](integrate-powerapps.md)puoi creare app aziendali che vengono ese
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Aggiungere una PowerApp a un segnalibro
 
 1. Trova [l'ID dell'app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) PowerApp che vuoi aggiungere.
-1. Nell'Microsoft 365 [di amministrazione,](https://admin.microsoft.com)passare a **Impostazioni**  >  **Microsoft Search**. 
+1. Nell'Microsoft 365 di [amministrazione](https://admin.microsoft.com)passare a **Impostazioni**  >  **Microsoft Search**. 
 1. Aggiungere un segnalibro o trovare un segnalibro esistente a cui si vuole aggiungere una PowerApp.
 1. In **Impostazioni segnalibro** selezionare **Power App.** Selezionare quindi **Aggiungi un'app Power.**
 1. Immetti **l'ID app**. L'altezza e la larghezza vengono regolate automaticamente. [I segnalibri](manage-bookmarks.md) possono supportare sia l'orientamento verticale che quello orizzontale, ma attualmente le dimensioni non possono essere modificate. Per semplificare il test, l'anteprima dei segnalibri mostra una PowerApp completamente funzionante.
@@ -58,7 +58,7 @@ Con [PowerApps](integrate-powerapps.md)puoi creare app aziendali che vengono ese
 
 ## <a name="qa"></a>Domande e risposte
 
-La creazione [di un&domande e](manage-qas.md) risposte è simile alla creazione di [segnalibri](manage-bookmarks.md). Con domande&A, puoi fornire risposte alle domande degli utenti invece di un semplice collegamento alla pagina Web. È possibile formattare le risposte in formato RTF utilizzando gli strumenti disponibili. Se un segnalibro e una domanda&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come i segnalibri, l'&domande e risposte viene aggiornato immediatamente dopo l'aggiunta o la modifica di una domanda&A. 
+La creazione [di un&domande e](manage-qas.md) risposte è simile alla creazione di [segnalibri.](manage-bookmarks.md) Con domande&A, puoi fornire risposte alle domande degli utenti invece di un semplice collegamento alla pagina Web. È possibile formattare le risposte in formato RTF utilizzando gli strumenti disponibili. Se un segnalibro e un&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come i segnalibri, l'&domande e risposte viene aggiornato immediatamente dopo l'aggiunta o la modifica di una domanda&A. 
 
 ### <a name="supported-html-tags"></a>Tag HTML supportati
 
@@ -88,9 +88,9 @@ I tag non supportati vengono ignorati o visualizzati come testo. Assicurarsi di 
 
 ## <a name="locations"></a>Posizioni
 
-Con [Percorsi](manage-locations.md), gli utenti possono trovare gli indirizzi e individuare gli edifici dell'organizzazione. La **funzionalità Posizioni** offre una posizione accurata per uffici, campus ed edifici, nonché indicazioni stradali e spostamenti. Per ottenere risultati ottimali, gli amministratori devono aggiungere tutte le posizioni importanti delle organizzazioni a Microsoft Search. A [differenza di Bookmarks](manage-bookmarks.md) [e Q&A](manage-qas.md), l'indice Locations non viene aggiornato immediatamente. La visualizzazione di posizioni nuove o modificate nei risultati di ricerca può richiedere diverse ore.
+Con [Percorsi](manage-locations.md), gli utenti possono trovare gli indirizzi e individuare gli edifici dell'organizzazione. La **funzionalità Posizioni** offre una posizione accurata per uffici, campus ed edifici, nonché indicazioni stradali e spostamenti. Per ottenere risultati ottimali, gli amministratori devono aggiungere tutte le posizioni importanti delle organizzazioni a Microsoft Search. A [differenza di Bookmarks](manage-bookmarks.md) e [Q&A](manage-qas.md), l'indice Locations non viene aggiornato immediatamente. La visualizzazione di posizioni nuove o modificate nei risultati di ricerca può richiedere diverse ore.
 
-## <a name="get-started"></a>Per iniziare
+## <a name="get-started"></a>Introduzione
 Per scoprire cosa serve agli utenti e semplificare l'individuazione di tali informazioni, provare alcuni di questi metodi:
 
 - Usare i log di ricerca intranet per determinare i siti e le pagine con maggior traffico.
@@ -119,7 +119,7 @@ Chiedere agli utenti di suggerire risorse a cui aggiungere un segnalibro. Chiede
 Per aggiungere o modificare segnalibri singoli o in blocco [,](manage-bookmarks.md) [domande&A](manage-qas.md)e [Posizioni](manage-locations.md), eseguire la procedura descritta nelle sezioni seguenti. 
 
 ### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Aggiungere o modificare un singolo segnalibro, domande&A o un componente di posizione
-1. Nell'Microsoft 365 [di amministrazione,](https://admin.microsoft.com)passare a **Impostazioni**  >  **Microsoft Search**. Selezionare la scheda denominata del componente. La **scheda Segnalibri** è selezionata per impostazione predefinita.
+1. Nell'Microsoft 365 di [amministrazione](https://admin.microsoft.com)passare a **Impostazioni**  >  **Microsoft Search**. Selezionare la scheda denominata del componente. La **scheda Segnalibri** è selezionata per impostazione predefinita.
 1. Per aggiungere un componente, selezionare **Aggiungi nuovo**. 
 1. Per modificare un componente, selezionare il segnalibro nell'elenco dei componenti pertinenti. 
 1. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
@@ -183,7 +183,7 @@ Un esempio è un segnalibro per un sito per l'invio delle ore. Se **l'ora** del 
 Se si desidera che gli utenti trovino set di contenuti correlati durante la ricerca di un termine specifico, assegnare la stessa parola chiave a tutto il contenuto correlato. Un esempio è la ricerca di processi e strumenti per le modifiche dello stato di vita. Per raggruppare le risposte sull'aggiornamento di vantaggi, informazioni fiscali e modifiche al nome e all'alias, includere una parola chiave come **il matrimonio.**
 
 ### <a name="search-settings"></a>Impostazioni ricerca
-Con le impostazioni di ricerca, puoi personalizzare il contenuto e scegliere come destinazione gruppi specifici di utenti. Queste Microsoft Search impostazioni controllano quando viene visualizzato un risultato di ricerca e chi può vederlo:
+Con le impostazioni di ricerca, puoi personalizzare il contenuto e scegliere come destinazione gruppi specifici di utenti. Queste Microsoft Search controllano quando viene visualizzato un risultato di ricerca e chi può vederlo:
 
 - **Date**. Per controllare quando il contenuto è disponibile o non disponibile, impostare una data di inizio e una data di fine. Ad esempio, il materiale sensibile al tempo viene visualizzato nei risultati della ricerca quando è rilevante.
 - **Paese o area geografica**. Puoi selezionare paesi o aree geografiche, in modo che solo gli utenti di tali posizioni vedano determinati contenuti. Ad esempio, le informazioni specifiche del paese vengono visualizzate solo nei risultati della ricerca in tali paesi.
@@ -193,7 +193,7 @@ Con le impostazioni di ricerca, puoi personalizzare il contenuto e scegliere com
 
 ## <a name="test-your-content"></a>Testare il contenuto
 Dopo aver creato [segnalibri](manage-bookmarks.md) e [domande&A,](manage-qas.md)verificare i risultati seguenti:
-- Viene visualizzato il segnalibro o il&A corretto.
+- Viene visualizzato il segnalibro o la domanda&A.
 - Tutto il contenuto raggruppato con parole chiave viene visualizzato come pianificato.
 - Nelle risposte alla ricerca non viene visualizzato alcun elemento imprevisto.
 - Il segnalibro o la&A contiene informazioni sufficienti.
@@ -209,7 +209,7 @@ Le informazioni importanti come [Segnalibri](manage-bookmarks.md) e [Domande&A](
 
 ## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Ottenere informazioni dettagliate su segnalibri, domande&A e posizioni
 
-Microsoft Search viene illustrato il numero [di](manage-bookmarks.md)segnalibri, domande&[A](manage-qas.md)e [Posizioni](manage-locations.md) pubblicati, pianificati o suggeriti. Il [Insights dashboard mostra](./usage-reports.md) i totali di segnalibro, domande&A e posizione per stato:
+Microsoft Search viene illustrato il numero [di](manage-bookmarks.md)segnalibri, domande&[](manage-locations.md) [A](manage-qas.md)e Posizioni pubblicati, pianificati o suggeriti. Il [Insights dashboard mostra](./usage-reports.md) i totali di segnalibro, domande&A e posizione per stato:
 
 - **Pubblicato**: il numero di risultati pubblicati che sono disponibili per gli utenti.
 - **Programmato**: il numero di risultati programmati nella pipeline di pubblicazione.
@@ -225,6 +225,6 @@ Un numero basso di ricerche potrebbe indicare insoddisfazione dell'utente. Gli u
 
 ### <a name="analyze-impressions-by-result-type"></a>Analizzare le impression in base al tipo di risultato
 
-Grafici di facile lettura nella  scheda di distribuzione impression nel dashboard Insights [le](./usage-reports.md) impression in vari fotogrammi di tempo. La sequenza temporale mostra il numero giornaliero di impression per un tipo di risultato. Con questi grafici, è possibile determinare quale tipo di risultato viene utilizzato più frequentemente o raramente. L'uso poco frequenti di un determinato tipo di risultato non significa necessariamente che il tipo di risultato non sia corretto. ma indica unicamente il modo in cui gli utenti usano il risultato della ricerca.
+I grafici di facile lettura  nella scheda di distribuzione impression nel dashboard Insights [mostrano](./usage-reports.md) le impression in vari fotogrammi di tempo. La sequenza temporale mostra il numero giornaliero di impression per un tipo di risultato. Con questi grafici, è possibile determinare quale tipo di risultato viene utilizzato più frequentemente o raramente. L'uso poco frequenti di un determinato tipo di risultato non significa necessariamente che il tipo di risultato non sia corretto. ma indica unicamente il modo in cui gli utenti usano il risultato della ricerca.
 
  Se un determinato tipo di risultati è preferito dagli utenti, è possibile creare più risultati di ricerca dello stesso tipo. Per verificare che le parole chiave siano appropriate, esaminare le parole chiave dei tipi di risultati con un utilizzo basso. Questo report consente di visualizzare anche le modifiche apportate al comportamento dell'utente nel tempo.

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Dettagli dell'esperienza del cluster di risultati dei connettori
 ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973485"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376064"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph dei risultati dei connettori
 
@@ -54,8 +54,8 @@ Se si desidera disabilitarlo, eseguire la procedura seguente per disattivare l'e
 
 Seguire questa procedura per disattivare l'esperienza a SharePoint sito:
 
-1. Passare a **Impostazioni** nel sito SharePoint locale
+1. Passare a **Impostazioni** nel sito SharePoint sito
 2. Vai a **Informazioni sito** Visualizza tutte le impostazioni > **del sito.**
-3. Passare alla sezione Microsoft Search e quindi selezionare Configura Microsoft Search **per questa raccolta siti.**
+3. Passare alla sezione Microsoft Search, quindi selezionare Configura Microsoft Search **per questa raccolta siti.**
 4. Nel riquadro di spostamento passare a **Esperienza personalizzata,** quindi selezionare **Verticali.**
 5. Selezionare il **verticale Tutti,** quindi abilitare **Nascondi i risultati del connettore.**

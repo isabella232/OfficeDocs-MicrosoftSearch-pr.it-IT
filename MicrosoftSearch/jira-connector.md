@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Graph Jira di Atlante per Microsoft Search
+description: Configurare il connettore di Graph Jira di Atlante per Microsoft Search
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973779"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375890"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Connettore jira Graph Atlante (anteprima)
 
@@ -79,14 +79,14 @@ Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID
 
 Selezionare i campi che si desidera indicizzare e visualizzare in anteprima i dati in questi campi prima di procedere. Alcuni campi sono già selezionati per impostazione predefinita e non possono essere rimossi.
 
-Il connettore di Graph Atlante jira può indicizzare sia i campi problema predefiniti che i campi dei problemi creati personalizzati.
+Il connettore di Graph Atlante jira può indicizzare sia i campi di problema predefiniti che i campi dei problemi creati personalizzati.
 
 > [!NOTE]
 > Se un campo personalizzato creato selezionato non è presente in alcuni tipi di problema jira, il campo verrà ingerito come *NULL* (vuoto).
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-Il connettore di Graph Atlante jira supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con accesso **a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini. In Atlassian Jira, le autorizzazioni di sicurezza vengono definite utilizzando schemi di autorizzazione di progetto contenenti gruppi a livello di sito e ruoli di progetto. La sicurezza a livello di problema può essere definita anche utilizzando schemi di autorizzazione a livello di problema.
+Il connettore di ricerca Di Jira Graph atlante supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con accesso **a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini. In Atlassian Jira, le autorizzazioni di sicurezza vengono definite utilizzando schemi di autorizzazione di progetto contenenti gruppi a livello di sito e ruoli di progetto. La sicurezza a livello di problema può essere definita anche utilizzando schemi di autorizzazione a livello di problema.
 
 Se si **sceglie** Solo gli utenti con accesso a questa origine dati, è necessario scegliere ulteriormente se il sito di Jira dispone di utenti di cui è stato eseguito il provisioning di Azure Active Directory (AAD) o utenti non AAD.
 

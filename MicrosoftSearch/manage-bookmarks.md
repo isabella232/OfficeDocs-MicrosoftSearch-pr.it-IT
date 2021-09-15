@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Creare e aggiornare segnalibri e modi per modificare in blocco i risultati dei segnalibri per Microsoft Search
 ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973730"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375849"
 ---
 # <a name="manage-bookmarks"></a>Gestire i segnalibri
 
@@ -38,7 +38,7 @@ Un segnalibro ideale include quattro elementi chiave:
 
 ## <a name="create-bookmark-answers"></a>Creare risposte ai segnalibri
 
-Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), passare a [Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegliere come si desidera creare nuovi segnalibri:
+Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/), vai a [Segnalibri](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) e scegli come vuoi creare nuovi segnalibri:
 
 - Aggiungere segnalibri
 - Importare SharePoint risultati
@@ -50,7 +50,7 @@ Nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.co
 
 Gli amministratori e gli editor di ricerca possono aggiungere segnalibri nel interfaccia di amministrazione di Microsoft 365 pubblicarli o salvarli nella bozza. La pubblicazione di un segnalibro aggiorna immediatamente l'indice di ricerca, rendendolo immediatamente individuabile per gli utenti. È inoltre possibile pianificare un segnalibro specificando la data e l'ora di pubblicazione.
 
-- **Published**: i segnalibri sono disponibili per gli utenti dell'organizzazione Microsoft Search.
+- **Published**: i segnalibri sono disponibili per gli utenti dell'organizzazione tramite Microsoft Search.
 - **Bozza:** i segnalibri salvati come bozze non sono disponibili per gli utenti. Utilizzare questo stato se si desidera rivedere o aggiornare i segnalibri prima di pubblicarli.
 - **Pianificato**: segnalibri che verranno pubblicati alla data e all'ora specificate.
 
@@ -156,4 +156,4 @@ Un segnalibro può avere più parole chiave e condividere la stessa parola chiav
 
 **D: Dove si trova l'ID app per un'app Power?**
 
-**A**: passare al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A**: accedere al sito Power Apps e visualizzare il riquadro Dettagli per l'app. Altre informazioni su [come ottenere un ID app](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

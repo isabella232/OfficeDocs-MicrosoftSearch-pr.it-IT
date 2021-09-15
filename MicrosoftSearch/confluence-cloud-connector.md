@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 description: Configurare il connettore di Graph Confluence Cloud per Microsoft Search
 ms.openlocfilehash: baf6139257c8bf8e40bc997e2a408efb4fc2549f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973445"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375991"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="confluence-cloud-graph-connector-preview"></a>Confluence Cloud Graph Connector (Anteprima)
 
-Confluence Cloud Graph connettore consente all'organizzazione di indicizzare i contenuti di confluenza. Dopo aver configurato i dati del connettore e dell'indice dal sito Confluence, gli utenti finali possono cercare tali contenuti in Microsoft Search.
+Confluence Cloud Graph connettore consente all'organizzazione di indicizzare il contenuto di confluenza. Dopo aver configurato i dati del connettore e dell'indice dal sito Confluence, gli utenti finali possono cercare tali contenuti in Microsoft Search.
 
 >[!NOTE]
 >Confluence Cloud Graph Connector è in anteprima. Se si desidera ottenere l'accesso anticipato per provarlo, iscriversi utilizzando [<b>questo modulo. </b>](https://forms.office.com/r/duLxv8Nf8U)  
 
-Questo articolo è per Microsoft 365 amministratori o chiunque configura, esegue e monitora un connettore Graph Confluence Cloud. Integra le istruzioni generali fornite nell'articolo [Set up your Graph connector.](configure-connector.md) Se non è già stato fatto, leggere l'intero articolo Configurare il connettore Graph per comprendere il processo di configurazione generale.
+Questo articolo è per Microsoft 365 amministratori o chiunque configura, esegue e monitora un connettore Graph Confluence Cloud. Integra le istruzioni generali fornite nell'articolo [Configurare il Graph connettore.](configure-connector.md) Se non è già stato fatto, leggere l'intero articolo Configurare il connettore Graph per comprendere il processo di configurazione generale.
 
 Ogni passaggio del processo di installazione è elencato di seguito insieme a una nota che indica che è necessario seguire le [](#troubleshooting) istruzioni di configurazione generali o altre istruzioni che si applicano solo al connettore di Graph Confluence Cloud, incluse informazioni su Risoluzione dei problemi e [limitazioni.](#limitations)
 
@@ -50,7 +50,7 @@ Per connettersi al sito confluenza, utilizzare l'URL del sito. Un URL del sito c
 Immetti il nome utente dell'account (in genere l'ID di posta elettronica) e il token API per l'autenticazione tramite l'autenticazione di base. Per altre informazioni sulla generazione di un token API, fai riferimento alla documentazione di Atlassian su come gestire i token API per il [tuo account di Atlassian.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 ### <a name="oauth-20"></a>OAuth 2.0
-Registra un'app in Confluence Cloud in modo che l Microsoft Search app possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione del supporto atlante su come [abilitare OAuth 2.0.](https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
+Registra un'app in Confluence Cloud in modo che l'app Microsoft Search possa accedere all'istanza. Per ulteriori informazioni, vedere la documentazione del supporto atlante su come [abilitare OAuth 2.0.](https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
 
 I passaggi seguenti forniscono indicazioni su come registrare l'app:
 
@@ -65,15 +65,15 @@ Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Passaggio 4: Selezionare le proprietà e filtrare i dati
 
-In questo passaggio è possibile aggiungere o rimuovere le proprietà disponibili dall'origine dati Confluence. Microsoft 365 sono già state selezionate alcune proprietà per impostazione predefinita.
+In questo passaggio è possibile aggiungere o rimuovere le proprietà disponibili dall'origine dati Confluence. Microsoft 365 ha già selezionato alcune proprietà per impostazione predefinita.
 
-Con una stringa CQL (Confluence Query Language), è possibile specificare le condizioni per la sincronizzazione delle pagine. È come una clausola **Where** in un'istruzione **SQL Select.** Ad esempio, è possibile scegliere di indicizzare solo le pagine modificate negli ultimi due anni. Per informazioni sulla creazione di una stringa di query personalizzata, vedere [Ricerca avanzata tramite CQL.](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/) Per impostazione predefinita, tutti i blog e le pagine verranno indicizzati dal connettore.
+Con una stringa CQL (Confluence Query Language), è possibile specificare le condizioni per la sincronizzazione delle pagine. È come una **clausola Where** in un'istruzione **SQL Select.** Ad esempio, è possibile scegliere di indicizzare solo le pagine modificate negli ultimi due anni. Per informazioni sulla creazione di una stringa di query personalizzata, vedere [Ricerca avanzata tramite CQL.](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/) Per impostazione predefinita, tutti i blog e le pagine verranno indicizzati dal connettore.
 
 Usa il pulsante dei risultati di anteprima per verificare i valori di esempio delle proprietà selezionate e della stringa CQL.
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
-Confluence Cloud Graph supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con **accesso a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini.
+Confluence Cloud Graph connector supporta le autorizzazioni di ricerca visibili a  **Tutti** o Solo gli utenti con **accesso a questa origine dati.** Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti. Se si sceglie **Solo gli utenti con accesso** a questa origine dati, i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali origini.
 
 In Confluence Cloud, le autorizzazioni di sicurezza per utenti e gruppi vengono definite utilizzando le autorizzazioni di spazio e le restrizioni di pagina. Confluence Cloud Graph Connector applica le autorizzazioni di spazio se non sono presenti restrizioni di pagina. Le restrizioni a livello di pagina, se presenti, avranno la precedenza sulle autorizzazioni per lo spazio.
 

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Dettagli ed errori dei connettori
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973795"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375997"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -68,7 +68,7 @@ Codice di errore | Messaggio di errore | Soluzione
 1008 | L'utilizzo totale della quota del tenant ha raggiunto il limite. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1009 | L'utilizzo totale della quota per la connessione ha raggiunto il limite. | Prova a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
 1010 | L'utilizzo totale della quota per l'indicizzazione di gruppi non Azure AD ha raggiunto il limite di 100.000. | Prova a eliminare una connessione per liberare parte della quota o a modificare i filtri di inserimento per ottenere meno dati. Se il problema persiste, contattare il supporto tecnico Microsoft.
-1011 | L Graph [connettore non](graph-connector-agent.md) è raggiungibile o offline. | 
+1011 | L'Graph [connettore non](graph-connector-agent.md) è raggiungibile o offline. | 
 1012 | Autenticazione della connessione non riuscita a causa di una modalità di autenticazione non supportata. | Modificare la connessione per aggiornare le impostazioni di autenticazione per la connessione.
 2001 | L'indicizzazione viene limitato a causa di un numero elevato di aggiornamenti nella coda. A seconda della coda, il completamento degli aggiornamenti può richiedere del tempo. | Attendere che la coda venga cancellata.
 2002 | Indicizzazione non riuscita a causa della formattazione degli elementi non supportata. | Per ulteriori informazioni, vedere la documentazione specifica del connettore.

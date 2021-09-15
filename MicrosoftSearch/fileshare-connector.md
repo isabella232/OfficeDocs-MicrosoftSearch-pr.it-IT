@@ -1,5 +1,5 @@
 ---
-title: Connettore Graph condivisione file per Microsoft Search
+title: Connettore di condivisione Graph file per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Configurare il connettore di Graph file per Microsoft Search
+description: Configurare il connettore Graph condivisione file per Microsoft Search
 ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973497"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375938"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Connettore di Graph file
+# <a name="file-share-graph-connector"></a>Connettore Graph file
 
 Il connettore Graph condivisione file consente agli utenti dell'organizzazione di cercare condivisioni Windows file locali.
 
@@ -58,7 +58,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Nella pagina **Connessione'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente connettore Graph installato in precedenza. Immettere le credenziali per un account utente [di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
+Nella pagina **Connessione all'origine** dati selezionare **Condivisione file** e specificare il nome, l'ID di connessione e la descrizione. Nella pagina successiva specificare il percorso della condivisione file e selezionare l'agente del connettore Graph installato in precedenza. Immettere le credenziali per un account [utente di Microsoft Windows](https://microsoft.com/windows) con accesso in lettura a tutti i file nella condivisione file.
 
 ### <a name="preserve-last-access-time"></a>Mantenere l'ora dell'ultimo accesso
 

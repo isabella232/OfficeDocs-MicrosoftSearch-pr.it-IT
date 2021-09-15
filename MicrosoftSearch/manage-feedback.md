@@ -17,7 +17,7 @@ ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334522"
+ms.locfileid: "59375478"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
@@ -62,7 +62,7 @@ Puoi anche aggiornare lo stato per più elementi, selezionarli e quindi selezion
 
 ## <a name="export-feedback"></a>Esportare commenti e suggerimenti
 
-Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Un .csv denominato Feedback con la data, ad esempio "Feedbacks_10_31_2020.csv", verrà scaricato automaticamente.
+Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Verrà .csv automaticamente un file denominato Feedback con la data, ad esempio "Feedbacks_10_31_2020.csv".
 
 ## <a name="send-user-feedback-to-microsoft"></a>Inviare commenti e suggerimenti degli utenti a Microsoft
 

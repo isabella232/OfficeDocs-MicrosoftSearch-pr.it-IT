@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 description: Configurare il connettore Azure DevOps Graph per Microsoft Search
 ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973473"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375877"
 ---
 <!---Previous ms.author: shgrover --->
 
 # <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connettore (anteprima)
 
-Il connettore Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio Azure DevOps locale. Dopo aver configurato il connettore e il contenuto di indicizzazione Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
+Il Azure DevOps Graph consente all'organizzazione di indicizzare gli elementi di lavoro nell'istanza del servizio Azure DevOps locale. Dopo aver configurato il connettore e indicizzare il contenuto da Azure DevOps, gli utenti finali possono cercare tali elementi in Microsoft Search.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per tutti gli utenti che configurano, esere e monitorano un Azure DevOps Graph connettore. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Azure DevOps Graph connettore.
+Questo articolo è per chiunque configura, esegue e monitora un Azure DevOps Graph connettore. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore Azure DevOps Graph connettore.
 
 >[!IMPORTANT]
 >Il connettore Azure DevOps supporta solo il Azure DevOps cloud. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 e TFS 2013 non sono supportati da questo connettore.
@@ -56,7 +56,7 @@ Per connettersi all'istanza Azure DevOps, è necessario il [](/azure/devops/orga
 
 ### <a name="register-an-app"></a>Registrare un'app
 
-Registra un'app in Azure DevOps in modo che l'app Microsoft Search possa accedere all'istanza. Per altre informazioni, vedi la Azure DevOps su come [registrare un'app.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
+Registra un'app in Azure DevOps in modo che l Microsoft Search app possa accedere all'istanza. Per altre informazioni, vedi la Azure DevOps su come [registrare un'app.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
 
 La tabella seguente fornisce indicazioni su come compilare il modulo di registrazione dell'app:
 
@@ -80,7 +80,7 @@ Durante la registrazione dell'app con i dettagli sopra riportati, ottieni **l'ID
 
 Dopo aver registrato l'app Microsoft Search con Azure DevOps, puoi completare il passaggio delle impostazioni di connessione. Immetti il nome dell'organizzazione, l'ID app e il segreto client.
 
-![Connection Application Impostazioni.](media/ADO_Connection_settings_2.png)
+![Applicazione di connessione Impostazioni.](media/ADO_Connection_settings_2.png)
 
 ### <a name="configure-data-select-projects-and-fields"></a>Configurare i dati: selezionare progetti e campi
 
@@ -98,7 +98,7 @@ Selezionare quindi i campi che si desidera indicizzare e visualizzare in antepri
 
 ## <a name="step-4-manage-search-permissions"></a>Passaggio 4: Gestire le autorizzazioni di ricerca
 
-Il connettore Azure DevOps supporta le autorizzazioni di ricerca visibili solo agli utenti con  **accesso a questa origine dati** o a **Tutti**. Se si sceglie Solo gli utenti con accesso a questa origine **dati,** i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali utenti in base alle autorizzazioni per utenti o gruppi a livello di organizzazione, Project o percorso area in Azure DevOps. Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
+Il connettore Azure DevOps supporta le autorizzazioni di ricerca visibili solo agli utenti con accesso a  **questa origine dati** o a **Tutti**. Se si sceglie Solo gli utenti con accesso a questa origine **dati,** i dati indicizzati verranno visualizzati nei risultati della ricerca per gli utenti che hanno accesso a tali utenti in base alle autorizzazioni per utenti o gruppi a livello di organizzazione, Project o percorso area in Azure DevOps. Se si sceglie **Tutti**, i dati indicizzati verranno visualizzati nei risultati della ricerca per tutti gli utenti.
 
 ## <a name="step-5-assign-property-labels"></a>Passaggio 5: Assegnare etichette di proprietà
 
@@ -110,7 +110,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
 
-Il connettore Azure DevOps supporta le pianificazioni di aggiornamento sia per le ricerche per indicizzazione complete che per le ricerche per indicizzazione incrementali.
+Il connettore Azure DevOps supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali.
 La pianificazione consigliata è un'ora per una ricerca per indicizzazione incrementale e un giorno per una ricerca per indicizzazione completa.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione

@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurare il connettore Enterprise web Graph per Microsoft Search
+description: Configurare il connettore Enterprise siti Web Graph per Microsoft Search
 ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973514"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375950"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -96,7 +96,7 @@ Per ulteriori informazioni, vedere [Authorize access to Azure Active Directory w
 
 Per ottenere i valori per la risorsa, client_id e client_secret, passare a Usare il codice di autorizzazione per richiedere un **token** di accesso nella pagina Web dell'URL di reindirizzamento.
 
-Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con](/azure/active-directory/develop/quickstart-register-app)il Microsoft Identity Platform .
+Per ulteriori informazioni, vedere [Guida introduttiva: Registrare un'applicazione con il Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Passaggio 3a: Aggiungere URL da escludere (Restrizioni facoltative per la ricerca per indicizzazione)
 
@@ -104,7 +104,7 @@ Esistono due modi per impedire la ricerca per indicizzazione delle pagine: non c
 
 ### <a name="support-for-robotstxt"></a>Supporto per robots.txt
 
-Il connettore verifica se esiste un file robots.txt per il sito radice e, se ne esiste uno, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
+Il connettore verifica se esiste un file robots.txt per il sito radice e, se esistente, seguirà e rispetterà le indicazioni stradali trovate all'interno di tale file. Se non si desidera che il connettore esegua la ricerca per indicizzazione di determinate pagine o directory nel sito, è possibile chiamare tali pagine o directory nelle dichiarazioni "Non consentire" nel file robots.txt.
 
 ### <a name="add-urls-to-exclude"></a>Aggiungere URL da escludere
 
@@ -124,7 +124,7 @@ Il connettore Enterprise web web supporta solo le autorizzazioni di ricerca visi
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Passaggio 7: Impostare la pianificazione dell'aggiornamento
 
-Il connettore Enterprise web web supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
+Il connettore Enterprise siti Web supporta solo un aggiornamento completo. Ciò significa che il connettore esererà una ricerca per indicizzazione di tutto il contenuto del sito Web durante ogni aggiornamento. Per assicurarsi che il connettore sia in grado di eseguire la ricerca per indicizzazione del contenuto, è consigliabile impostare un intervallo di pianificazione dell'aggiornamento di grandi dimensioni. È consigliabile un aggiornamento pianificato tra una e due settimane.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -138,7 +138,7 @@ Durante la lettura del contenuto del sito Web, la ricerca per indicizzazione pot
  Codice di errore dettagliato | Messaggio di errore
  --- | ---
  6001 | Il sito che si sta provando a indicizzare non è raggiungibile
- 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata in base robots.txt configurazione.
+ 6005 | La pagina di origine che si sta provando a indicizzare è stata bloccata da in base robots.txt configurazione.
  6008 | Impossibile risolvere il DNS
  6009 | Per tutti gli errori sul lato client (ad eccezione di HTTP 404, 408), fare riferimento ai codici di errore HTTP 4xx per informazioni dettagliate.
  6013 | Impossibile trovare la pagina di origine che si sta provando a indicizzare. (Errore HTTP 404)

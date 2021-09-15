@@ -1,5 +1,5 @@
 ---
-title: Personalizzare la Microsoft Search personalizzata
+title: Personalizzare la Microsoft Search pagina
 ms.author: jeffkizn
 author: jypal
 manager: jeffkizn
@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: Aggiungere verticali di ricerca e personalizzare i risultati della ricerca
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973490"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375949"
 ---
 # <a name="customize-the-search-results-page"></a>Personalizzare la pagina dei risultati della ricerca
 
-È possibile *creare* verticali di ricerca e tipi di risultati per personalizzare i risultati di ricerca visualizzati dagli utenti durante la ricerca in Microsoft [SharePoint,](https://sharepoint.com/)Microsoft Office e [Microsoft Search](https://office.com)in [Bing](https://bing.com).  I verticali facilitano agli utenti l'individuazione delle informazioni che sono autorizzati a visualizzare.
+È possibile *creare* verticali di ricerca e tipi di risultati per personalizzare i risultati della ricerca visualizzati dagli utenti durante la ricerca in Microsoft [SharePoint,](https://sharepoint.com/)Microsoft Office e [Microsoft Search](https://office.com)in [Bing](https://bing.com).  I verticali facilitano agli utenti l'individuazione delle informazioni che sono autorizzati a visualizzare.
 
 Ad esempio, è possibile creare un verticale di ricerca per i dati di analisi di marketing da software di terze parti per gli utenti del reparto marketing. È inoltre possibile definire tipi di risultati e personalizzare il layout per questi dati.
 
@@ -33,7 +33,7 @@ C'è una riga di schede nella parte superiore della pagina dei Microsoft Search 
 
 È possibile creare verticali e tipi di risultati a due livelli:
 
-- **Livello dell'organizzazione:** un verticale creato a livello di organizzazione viene visualizzato nella pagina dei [](https://office.com)risultati di ricerca quando gli utenti esere in una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) Office o [Bing](https://bing.com).
+- **Livello** dell'organizzazione: un verticale creato a livello di organizzazione viene visualizzato nella pagina dei risultati di ricerca quando gli utenti esere esere in una ricerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) [Office](https://office.com)o [Bing](https://bing.com).
 - **Livello di** sito: ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare eventi imprevisti di *gravità 1* direttamente dal sito SharePoint del proprio reparto.
 
 ### <a name="multiple-connections-in-a-vertical"></a>Più connessioni in verticale
@@ -75,7 +75,7 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Creare un verticale a livello di organizzazione
 
-Per creare un verticale Microsoft Search in SharePoint home, Office o Bing, attenersi alla seguente procedura:
+Per creare una verticale Microsoft Search in SharePoint home page, Office o Bing, attenersi alla seguente procedura:
 
 1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Verticali**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Seleziona **Aggiungi** per iniziare.  
@@ -124,7 +124,7 @@ Dopo aver avviato la procedura guidata, vengono descritti i passaggi per definir
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>Passaggio 3: visualizzare il verticale dopo che è stato abilitato
 
-Dopo aver abilitato il verticale, si verifica un ritardo di alcune ore prima di poterlo visualizzare. Tuttavia, puoi aggiungere `cacheClear=true` all'URL in SharePoint e Office per visualizzare immediatamente il verticale. Ad Bing, `&features=uncachedVerticals` accoda `Work vertical URL` all'oggetto per visualizzare immediatamente il verticale.
+Dopo aver abilitato il verticale, si verifica un ritardo di alcune ore prima di poterlo visualizzare. Tuttavia, puoi `cacheClear=true` accodare all'URL in SharePoint e Office per visualizzare immediatamente il verticale. Ad Bing, `&features=uncachedVerticals` accoda a `Work vertical URL` per visualizzare immediatamente il verticale.
 
 > [!NOTE]
 > I verticali aggiunti non sono visibili SharePoint]( https://sharepoint.com/) e [Office](https://office.com) visualizzati dai Web browser per dispositivi mobili.
@@ -181,7 +181,7 @@ Considerare un utente che ha tre indirizzi di posta elettronica disponibili nell
 
 - Per risolvere tutti i valori dell'attributo address, utilizzare la sintassi di espansione multivalore. La query verrà risolta in `{|MyProperty:{Profile.emails.address}}` *((MyProperty:"Megan.Bowen@contoso \. com")* o *(MyProperty: "meganb@hotmail \. com")* o *(MyProperty:"meganb@outlook \. com")).*
 
-Utilizzare l'operatore "|" per risolvere le variabili multivalore. Vedi la tabella seguente per altri esempi di espansione dei profili.
+Utilizzare l'operatore "|" per risolvere variabili multivalore. Vedi la tabella seguente per altri esempi di espansione dei profili.
 
 | #         | Sintassi |  Valore restituito  |
 | --------- | ------ | --- |

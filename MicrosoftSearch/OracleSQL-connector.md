@@ -15,22 +15,22 @@ search.appverid:
 ROBOTS: NoIndex
 description: Configurare il connettore di SQL Graph Oracle per Microsoft Search.
 ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973502"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375878"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-graph-connector"></a>Connettore SQL Graph Oracle
 
-Il connettore SQL Graph Oracle consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore di SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
+Il connettore SQL Graph Oracle consente all'organizzazione di individuare e indicizzare i dati da un database Oracle locale. Il connettore indicizza il contenuto specificato in Microsoft Search. Per mantenere aggiornato l'indice con i dati di origine, supporta ricerche per indicizzazione periodiche complete e incrementali. Con il connettore SQL Oracle, è anche possibile limitare l'accesso ai risultati della ricerca per determinati utenti.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore di SQL Graph Oracle. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
+Questo articolo è per chiunque configura, esegue e monitora un connettore SQL Graph Oracle. Integra il processo di installazione generale e mostra le istruzioni che si applicano solo al connettore di SQL Graph Oracle. In questo articolo sono inoltre incluse informazioni sulla [risoluzione dei](#troubleshooting) problemi e [sulle limitazioni.](#limitations)
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
@@ -50,7 +50,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-3-configure-the-connection-settings"></a>Passaggio 3: Configurare le impostazioni di connessione
 
-Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente del connettore di Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
+Per connettere il connettore di SQL Oracle a un'origine dati, è necessario configurare il server di database di cui si desidera eseguire la ricerca per indicizzazione e l'agente del connettore Graph locale. È quindi possibile connettersi al database con il metodo di autenticazione richiesto.
 
 Per il connettore SQL Oracle, è necessario specificare il nome host, la porta e il servizio (database) insieme al metodo di autenticazione, al nome utente e alla password preferiti.
 
@@ -78,7 +78,7 @@ Per gestire l'accesso ai risultati della ricerca, è possibile specificare una o
 
 L'utilizzo di ogni colonna ACL nella query precedente è descritto di seguito. Nell'elenco seguente vengono illustrati i quattro **meccanismi di controllo di accesso**.
 
-* **AllowedUsers**: Questa opzione consente di specificare l'elenco degli ID utente che potranno accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco di utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
+* **AllowedUsers**: Questa opzione consente di specificare l'elenco degli ID utente che potranno accedere ai risultati della ricerca. Nell'esempio seguente, l'elenco degli utenti: john@contoso.com, keith@contoso.com e lisa@contoso.com avrebbe accesso solo a un record con OrderId = 12.
 * **AllowedGroups**: Questa opzione consente di specificare il gruppo di utenti che potranno accedere ai risultati della ricerca. Nell'esempio seguente, i gruppi sales-team@contoso.com possono accedere solo al record con OrderId = 12.
 * **DeniedUsers**: Questa opzione consente di specificare l'elenco degli utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente, gli utenti john@contoso.com e keith@contoso.com non hanno accesso al record con OrderId = 13, mentre tutti gli altri utenti hanno accesso a questo record.
 * **DeniedGroups**: Questa opzione consente di specificare il gruppo di utenti che **non** hanno accesso ai risultati della ricerca. Nell'esempio seguente i gruppi engg-team@contoso.com e pm-team@contoso.com non hanno accesso al record con OrderId = 15, mentre tutti gli altri utenti hanno accesso a questo record.  
@@ -159,9 +159,9 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 
 ## <a name="step-7-choose-refresh-settings"></a>Passaggio 7: Scegliere le impostazioni di aggiornamento
 
-Il connettore di SQL Oracle supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. È consigliabile impostare entrambe le opzioni.
+Il connettore SQL Oracle supporta le pianificazioni di aggiornamento per le ricerche per indicizzazione complete e incrementali. È consigliabile impostare entrambe le opzioni.
 
-Una pianificazione di ricerca per indicizzazione completa trova le righe eliminate precedentemente sincronizzate con l'indice Microsoft Search ed eventuali righe spostate fuori dal filtro di sincronizzazione. Quando ci si connette per la prima volta al database, viene eseguita una ricerca per indicizzazione completa per sincronizzare tutte le righe recuperate dalla query di ricerca per indicizzazione completa. Per sincronizzare nuove righe e apportare aggiornamenti, è necessario pianificare ricerche per indicizzazione incrementali.
+Una pianificazione di ricerca per indicizzazione completa consente di trovare le righe eliminate precedentemente sincronizzate con l'indice Microsoft Search ed eventuali righe spostate dal filtro di sincronizzazione. Quando ci si connette per la prima volta al database, viene eseguita una ricerca per indicizzazione completa per sincronizzare tutte le righe recuperate dalla query di ricerca per indicizzazione completa. Per sincronizzare nuove righe e apportare aggiornamenti, è necessario pianificare ricerche per indicizzazione incrementali.
 
 ## <a name="step-8-review-connection"></a>Passaggio 8: verificare la connessione
 
@@ -187,8 +187,8 @@ Di seguito è riportato un elenco degli errori comuni rilevati durante la config
 
 ## <a name="limitations"></a>Limitazioni
 
-Il connettore SQL Oracle presenta queste limitazioni nella versione di anteprima:
+Il connettore di SQL Oracle presenta queste limitazioni nella versione di anteprima:
 
 * Il database locale deve eseguire Oracle Database versione 11g o successiva.
-* Gli ACL sono supportati solo utilizzando un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
+* Gli ACL sono supportati solo tramite un nome dell'entità utente (UPN), Azure Active Directory (Azure AD) o la sicurezza di Active Directory.
 * L'indicizzazione di contenuto rtf all'interno di colonne di database non è supportata. Esempi di questo tipo di contenuto sono HTML, JSON, XML, BLOB e analisi di documenti presenti come collegamenti all'interno delle colonne del database.

@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 description: Configurare il connettore di Graph Salesforce per Microsoft Search
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973478"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376063"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector"></a>Connettore di Graph Salesforce
 
-Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead, Casi e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto dell'indice da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search client.
+Il connettore di Graph Salesforce consente all'organizzazione di indicizzare gli oggetti Contatti, Opportunità, Lead, Casi e Account nell'istanza di Salesforce. Dopo aver configurato il connettore e il contenuto di indicizzazione da Salesforce, gli utenti finali possono cercare tali elementi da qualsiasi client Microsoft Search client.
 
 > [!NOTE]
 > Leggere [**l'articolo Setup for your Graph connector**](configure-connector.md) to understand the general Graph connectors setup instructions.
 
-Questo articolo è per chiunque configura, esegue e monitora un connettore Graph Salesforce. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di Graph Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
+Questo articolo è per chiunque configura, esegue e monitora un connettore di Graph Salesforce. Integra il processo di configurazione generale e mostra le istruzioni che si applicano solo al connettore di Graph Salesforce. In questo articolo sono inoltre incluse informazioni [sulle limitazioni](#limitations).
 
 >[!IMPORTANT]
 >Il connettore di Graph Salesforce attualmente supporta Estate '19 o versione successiva.
@@ -63,7 +63,7 @@ Per connettersi all'istanza di Salesforce, è necessario l'URL dell'istanza di S
       > [!div class="mx-imgBorder"]
       > ![Sezione API nell'istanza di Salesforce dopo che l'amministratore ha immesso tutte le configurazioni necessarie elencate in precedenza.](media/salesforce-connector/sf1.png)
 
-- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configura il Impostazioni di connessione per il connettore Graph nel portale di amministrazione di Microsoft 365.
+- Copiare la chiave consumer e il segreto consumer. Queste informazioni verranno utilizzate come ID client e segreto client quando si configura il Impostazioni di connessione per il connettore di Graph nel portale di amministrazione di Microsoft 365.
 
   > [!div class="mx-imgBorder"]
   > ![Risultati restituiti dalla sezione API nell'istanza di Salesforce dopo che l'amministratore ha inviato tutte le configurazioni necessarie. La chiave consumer si trova nella parte superiore della colonna sinistra e Consumer Secret è in cima alla colonna destra.](media/salesforce-connector/clientsecret.png)
@@ -120,7 +120,7 @@ Dovrai scegliere quali utenti potranno visualizzare i risultati della ricerca da
 
 ### <a name="step-5a-select-permissions"></a>Passaggio 5.a: Selezionare le autorizzazioni
 
-Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli elenchi di controllo di accesso possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non Azure AD (utenti salesforce nativi con identità corrispondenti in Azure AD) o entrambe.
+Puoi scegliere di inserire elenchi di controllo di accesso (ACL) dall'istanza di Salesforce o consentire a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati. Gli ACL possono includere identità di Azure Active Directory (AAD) (utenti federati da Azure AD a Salesforce), identità non Azure AD (utenti salesforce nativi che hanno identità corrispondenti in Azure AD) o entrambi.
 
 >[!NOTE]
 >Se usi un provider di identità di terze parti come ID ping o secureAuth, devi selezionare "non-AAD" come tipo di identità.
@@ -136,13 +136,13 @@ Se si è scelto di inserire un ACL dall'istanza di Salesforce e si è selezionat
 
 ### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>Applicare il mapping degli utenti per sincronizzare le identità di Salesforce con le identità di Azure AD
 
-In questo video è possibile visualizzare il processo per l'autenticazione nell'istanza di Salesforce, sincronizzare le identità non Azure Active Directory con le identità di Azure Active Directory e applicare le appropriate limitazione per motivi di sicurezza agli elementi di Salesforce.
+In questo video è possibile visualizzare il processo di autenticazione nell'istanza di Salesforce, sincronizzare le identità non di Azure Active Directory con le identità di Azure Active Directory e applicare le trimming di sicurezza appropriate agli elementi di Salesforce.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-6-assign-property-labels"></a>Passaggio 6: Assegnare etichette di proprietà
 
-È possibile assegnare una proprietà di origine a ogni etichetta scegliendo un menu di opzioni. Anche se questo passaggio non è obbligatorio, la presenza di alcune etichette di proprietà migliorerà la pertinenza della ricerca e garantirà risultati di ricerca migliori per gli utenti finali. Per impostazione predefinita, ad alcune etichette come "Title", "URL", "CreatedBy" e "LastModifiedBy" sono già state assegnate proprietà di origine.
+È possibile assegnare una proprietà di origine a ogni etichetta scegliendo da un menu di opzioni. Anche se questo passaggio non è obbligatorio, la presenza di alcune etichette di proprietà migliorerà la pertinenza della ricerca e garantirà risultati di ricerca migliori per gli utenti finali. Per impostazione predefinita, ad alcune etichette come "Title", "URL", "CreatedBy" e "LastModifiedBy" sono già state assegnate proprietà di origine.
 
 ## <a name="step-7-manage-schema"></a>Passaggio 7: Gestire lo schema
 
@@ -157,7 +157,7 @@ Affinamento consente di definire le proprietà che possono essere successivament
 Il connettore Salesforce supporta solo le pianificazioni di aggiornamento per le ricerche per indicizzazione complete attualmente.
 
 >[!IMPORTANT]
->Una ricerca per indicizzazione completa consente di trovare gli oggetti eliminati e gli utenti precedentemente sincronizzati con l Microsoft Search indice.
+>Una ricerca per indicizzazione completa consente di trovare gli oggetti eliminati e gli utenti precedentemente sincronizzati con l'Microsoft Search di ricerca.
 
 La pianificazione consigliata è di una settimana per una ricerca per indicizzazione completa.
 
@@ -178,7 +178,7 @@ Seguire le istruzioni generali [per l'installazione](./configure-connector.md).
 ## <a name="limitations"></a>Limitazioni
 
 - Il connettore Graph non supporta attualmente la condivisione e la condivisione basata su apex in base al territorio tramite i gruppi personali di Salesforce.
-- Esiste un bug noto nell'API Salesforce utilizzata dal connettore di Graph, in cui le impostazioni predefinite private a livello di organizzazione per i lead non sono attualmente rispettate.  
+- È presente un bug noto nell'API Salesforce utilizzata dal connettore di Graph, in cui le impostazioni predefinite private a livello di organizzazione per i lead non sono attualmente rispettate.  
 - Se per un profilo è impostata la sicurezza a livello di campo (FLS, Field Level Security), il connettore di Graph non ingestirà tale campo per i profili nell'organizzazione Salesforce. Di conseguenza, gli utenti non saranno in grado di cercare valori per tali campi e non verranno visualizzati nei risultati.  
 - Nella schermata Gestisci schema questi nomi di proprietà standard comuni sono elencati una sola volta, le opzioni sono **Query,** **Cerca,** **Recupera** e Affina e si applicano a tutti o a nessuno.
     - Nome

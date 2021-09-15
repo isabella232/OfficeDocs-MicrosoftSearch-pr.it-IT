@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 description: Panoramica dei connettori microsoft Graph per Microsoft Search
 ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973523"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375985"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori Graph Microsoft
+# <a name="overview-of-microsoft-graph-connectors"></a>Panoramica dei connettori microsoft Graph
 
-[Microsoft Search](./overview-microsoft-search.md) indicizza tutti i [dati Microsoft 365](https://www.microsoft.com/microsoft-365) per renderli ricercabili per gli utenti. Con i connettori Graph Microsoft, l'organizzazione può indicizzare i dati di terze parti in modo che appaino nei Microsoft Search risultati. Questa funzionalità espande i tipi di origini di contenuto disponibili per la ricerca nelle app di produttività Microsoft 365 e nell'ecosistema Microsoft più ampio. I dati di terze parti possono essere ospitati in locale o nel cloud pubblico o privato.
+[Microsoft Search](./overview-microsoft-search.md) indicizza tutti i [dati Microsoft 365](https://www.microsoft.com/microsoft-365) per renderli ricercabili per gli utenti. Con i connettori Graph Microsoft, l'organizzazione può indicizzare i dati di terze parti in modo che appaino Microsoft Search risultati. Questa funzionalità espande i tipi di origini di contenuto disponibili per la ricerca nelle app di produttività Microsoft 365 e nell'ecosistema Microsoft più ampio. I dati di terze parti possono essere ospitati in locale o nel cloud pubblico o privato.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -32,7 +32,7 @@ Questo articolo consente agli Microsoft 365 di individuare le risorse disponibil
 
 * [Quali origini dati possono essere connesse Microsoft Search?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Come si gestiscono le connessioni?](#how-do-i-manage-my-connections)
-* [Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori Graph Microsoft?](#what-are-the-license-requirements-and-terms-of-use-for-connectors)
+* [Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori microsoft Graph?](#what-are-the-license-requirements-and-terms-of-use-for-connectors)
 * [Quali sono le funzionalità di anteprima?](#what-are-the-preview-features)
 * [Come si personalizzano e si configurano i risultati della ricerca?](#how-do-i-customize-and-configure-search-results)
 * [Come è possibile cercare i dati del connettore da un'applicazione personalizzata?](#how-do-i-search-my-connector-data-from-a-custom-application)
@@ -83,7 +83,7 @@ La [raccolta di Graph](https://www.microsoft.com/microsoft-search/connectors) mi
 
 La [raccolta di Graph](https://www.microsoft.com/microsoft-search/connectors) microsoft include una breve descrizione di ognuno dei connettori creati dai partner e un collegamento al sito Web di ogni partner. Per ulteriori informazioni, contattare direttamente ogni partner.
 
-### <a name="build-your-own-microsoft-graph-connector"></a>Creare un connettore Microsoft Graph personalizzato
+### <a name="build-your-own-microsoft-graph-connector"></a>Creare un connettore microsoft Graph personalizzato
 
 Se si preferisce, è possibile creare un connettore personalizzato. Per ulteriori informazioni sulla creazione di connettori, vedere [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart).
 
@@ -93,7 +93,7 @@ Se si preferisce, è possibile creare un connettore personalizzato. Per ulterior
 
 ## <a name="what-are-the-license-requirements-and-terms-of-use-for-connectors"></a>Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori?
 
-È necessaria una licenza Microsoft 365 o Office 365 valida e una quota di connettori sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dei connettori nei risultati della ricerca.
+È necessaria una licenza Microsoft 365 o Office 365 e una quota di connettori sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dei connettori nei risultati della ricerca.
 
 Per altre informazioni, vedi [Requisiti di licenza e prezzi](licensing.md) e Condizioni per [l'uso.](terms-of-use.md)
 

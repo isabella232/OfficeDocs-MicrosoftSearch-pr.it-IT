@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Panoramica della configurazione per i connettori Graph di Microsoft
 ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973530"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375884"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "58973530"
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica della configurazione per i connettori Graph di Microsoft 
 
-In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph **da Microsoft** nella interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com) Il processo si compone delle seguenti fasi:  
+In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da **Microsoft** nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Il processo si compone delle seguenti fasi:  
 <!---Add links to each section in the doc--->
 
 1. [Aggiungere un connettore di Graph nell'interfaccia di amministrazione di Microsoft 365.](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
@@ -46,7 +46,7 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 * [Passaggi successivi](#next-steps)
 
 > [!NOTE]
-> Il processo di configurazione è simile per tutti Graph connettori da Parte di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+> Il processo di installazione è simile per tutti Graph connettori da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 <!---## Before you get started-->
 
@@ -89,7 +89,7 @@ Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [I
 
 È possibile scegliere le proprietà che verranno indicizzate da Microsoft Search. 
 
-La query ServiceNow può essere utilizzata per filtrare i dati prima che siano indicizzati Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati in base Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries.](https://go.microsoft.com/fwlink/?linkid=2151447) 
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
@@ -97,7 +97,7 @@ Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione
 
 Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo gli ACL [di Azure Active Directory (Azure AD).](/azure/active-directory/)
 
-Altri connettori come [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog,](servicenow-catalog-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non azure AD.  
+Altri connettori come [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog,](servicenow-catalog-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non Azure AD.  
 
 La selezione di tutti gli utenti consente a tutti gli utenti dell'organizzazione di visualizzare i risultati della ricerca da questa origine dati.
 
@@ -210,7 +210,7 @@ Leggere le informazioni specifiche del connettore per l'origine dati.
 <!---Insert limitations for this data source-->
 Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
 
-Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare connettore Graph connettore.
+Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare Graph connettore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
