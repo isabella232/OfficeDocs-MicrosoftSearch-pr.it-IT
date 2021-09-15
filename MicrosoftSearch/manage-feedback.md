@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare e agire in base al feedback degli utenti in Microsoft Search
-ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.openlocfilehash: db2854205b3006328919e22bd69c11a075ffc15d
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973693"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334522"
 ---
 # <a name="managing-user-feedback"></a>Gestione dei commenti e suggerimenti degli utenti
 
@@ -62,11 +62,11 @@ Puoi anche aggiornare lo stato per più elementi, selezionarli e quindi selezion
 
 ## <a name="export-feedback"></a>Esportare commenti e suggerimenti
 
-Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Verrà .csv automaticamente un file denominato Feedbacks con la data, ad esempio "Feedbacks_10_31_2020.csv".
+Se vuoi condividere il feedback della ricerca con altri utenti o conservarli per più di 30 giorni, fai clic su **Esporta.** Un .csv denominato Feedback con la data, ad esempio "Feedbacks_10_31_2020.csv", verrà scaricato automaticamente.
 
 ## <a name="send-user-feedback-to-microsoft"></a>Inviare commenti e suggerimenti degli utenti a Microsoft
 
-Per impostazione predefinita, tutti i commenti e suggerimenti degli utenti vengono inviati a Microsoft e vengono aggiunte all'utente. Per interrompere l'invio di commenti e suggerimenti a Microsoft, fare clic **su Gestisci impostazioni** e deselezionare la casella di controllo Invia **automaticamente feedback utente a Microsoft.** L'applicazione di questa modifica può richiedere fino a 24 ore.
+Per impostazione predefinita, tutti i commenti e suggerimenti degli utenti vengono inviati a Microsoft oltre all'utente. Per interrompere l'invio di commenti e suggerimenti a Microsoft, fare clic **su Gestisci impostazioni** e deselezionare la casella di controllo Invia **automaticamente feedback utente a Microsoft.** L'applicazione di questa modifica può richiedere fino a 24 ore.
 
 Se si è deciso di non inviare automaticamente commenti e suggerimenti a Microsoft, è comunque possibile inviare singoli commenti e suggerimenti a Microsoft.
 

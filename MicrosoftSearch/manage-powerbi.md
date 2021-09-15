@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gestire la modalità Power BI i report e i dati nei risultati di ricerca
 ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973714"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334531"
 ---
 # <a name="manage-power-bi-answers"></a>Gestire Power BI risposte
 
-Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search ha aggiunto il supporto per i dashboard e i report Power BI. Ecco alcuni dei vantaggi della ricerca Power BI ricerca:
+Per facilitare agli utenti l'individuazione dei dati e dell'analisi necessari per prendere decisioni informate, Microsoft Search è stato aggiunto il supporto per i dashboard e i report Power BI dati. Ecco alcuni dei vantaggi della ricerca Power BI ricerca:
 
 * **Facile da usare:** Questa esperienza di ricerca avanzata consente agli utenti di trovare facilmente e rapidamente Power BI dashboard e report all'interno dell'organizzazione.
 * **Contenuto più ricco:** Per rendere Power BI risultati di ricerca più utili, includono informazioni chiave come il tipo di contenuto, ovvero dashboard o report, e il team o la persona a cui è proprietario.
 * **Protezione dei dati incorporata: Power BI** risultati verranno visualizzati solo per gli utenti che hanno accesso al dashboard o al report.
-* **Esperienza di ricerca unificata:** Per mantenere un'esperienza coerente, Power BI risultati sono coerenti in tutti i punti di ingresso della ricerca. Ovunque si eserciti la ricerca, si otterrà gli stessi risultati con lo stesso aspetto.
+* **Esperienza di ricerca unificata:** Per mantenere un'esperienza coerente, Power BI risultati sono coerenti in tutti i punti di ingresso di ricerca. Ovunque si eserciti la ricerca, si otterrà gli stessi risultati con lo stesso aspetto.
 
 ## <a name="what-users-experience"></a>Esperienza degli utenti
 
@@ -48,10 +48,10 @@ Sostituire negli esempi precedenti con le informazioni che si stanno cercando, a
 
 Power BI i risultati sono abilitati per l'organizzazione per impostazione predefinita. L Power BI admin può disabilitarli in qualsiasi momento. Nel portale Power BI di amministrazione passare a Impostazioni tenant e disabilitare l'impostazione Usa ricerca **globale per** Power BI. Per ulteriori informazioni, vedere [Administering Power BI nel portale di amministrazione.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare o disattivare Power BI risposte." border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot dell'impostazione per attivare Power BI o disattivare le risposte." border="true":::
 
 > [!NOTE]
-> Quando si usa Microsoft Search, la query di ricerca e i risultati restituiti da Power BI possono essere elaborati in un'area geografica diversa da quella in cui si trovano i dati del tenant di Power BI.
+> Quando si utilizza Microsoft Search, la query di ricerca e i risultati restituiti da Power BI possono essere elaborati in un'area geografica diversa da quella in cui si trovano i dati del tenant di Power BI.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -67,11 +67,11 @@ Power BI i risultati sono abilitati per l'organizzazione per impostazione predef
 
 **A:** No. La Power BI dei risultati della ricerca verrà visualizzata con un messaggio che informa gli utenti che non è attualmente disponibile per l'organizzazione.
 
-**D: Verrà visualizzata la pagina dei Power BI dei risultati della ricerca se non si dispone di una licenza Power BI ricerca?**
+**D: Verrà visualizzata la pagina dei Power BI dei risultati della ricerca se non si dispone di una licenza Power BI licenza?**
 
-**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la pagina dei Power BI dei risultati della ricerca non verrà visualizzata nei Microsoft Search ricerca.
+**A:** No. Se un utente di ricerca non dispone di una licenza Power BI, la pagina dei risultati Power BI ricerca non verrà visualizzata nei risultati Microsoft Search ricerca.
 
-**D: Verranno visualizzati i Power BI di ricerca a cui non è possibile accedere?**
+**D: Verranno visualizzati Power BI risultati di ricerca a cui non è possibile accedere?**
 
 **A:** No. Microsoft Search restituirà solo Power BI risultati a cui si ha accesso.
 

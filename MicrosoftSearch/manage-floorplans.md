@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Le planimetrie sono disponibili in Microsoft Search consente agli utenti di trovare persone, uffici e altri servizi all'interno di un edificio.
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973717"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334528"
 ---
 # <a name="manage-floor-plans"></a>Gestire le planimetrie
 
@@ -29,7 +29,7 @@ Le planimetrie in **Microsoft Search** aiutare gli utenti a trovare persone e sa
 
 ## <a name="add-floor-plans"></a>Aggiungere planimetrie
 
-Seguire questa procedura per configurare le risposte alle planimetrie in **Microsoft Search**.
+Seguire questa procedura per configurare le risposte ai piani del piano in **Microsoft Search**.
 
 ### <a name="step-1-determine-your-building-codes"></a>Passaggio 1: Determinare i codici predefiniti
 
@@ -51,7 +51,7 @@ Per informazioni [sulla visualizzazione](#frequently-asked-questions) e sull'agg
 
 La sede di un utente è una combinazione di un codice di edificio e di un'etichetta di sala. Ad esempio, se il codice dell'edificio è *2* e l'etichetta della sala è *1173,* la posizione dell'ufficio sarà *2/1173*.
 
-Aggiungere o aggiornare le posizioni di office per ogni utente dell'organizzazione. È possibile modificare la posizione dell'ufficio nel profilo utente nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) oppure modificare Active Directory locale per la sincronizzazione con Azure Active Directory. *PhysicalDeliveryOfficeName è* il campo utilizzato per la posizione dell'ufficio. Se le etichette delle chat room non includono numeri di piano, vedere le domande frequenti per suggerimenti.
+Aggiungere o aggiornare le posizioni di office per ogni utente dell'organizzazione. È possibile modificare la posizione dell'ufficio nel profilo utente [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) oppure modificare Active Directory locale per la sincronizzazione con Azure Active Directory. *PhysicalDeliveryOfficeName è* il campo utilizzato per la posizione dell'ufficio. Se le etichette delle chat room non includono numeri di piano, vedere le domande frequenti per suggerimenti.
 
 In questo esempio, l'ufficio di Allan si trova nella sala 1173 al piano 1 dell'edificio 2.
 ![floorplans-userlestview.png.](media/floorplans-userlistview.png)
@@ -67,7 +67,7 @@ Utilizzare **Microsoft Search** per trovare un utente e verificare che la posizi
 
 ### <a name="step-5-add-building-locations"></a>Passaggio 5: Aggiungere posizioni di edificio
 
-Le planimetrie [del piano utilizzano Posizioni](manage-locations.md) per definire gli edifici. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immetti il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessario.
+Le planimetrie [del piano utilizzano Posizioni](manage-locations.md) per definire gli edifici. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Posizioni**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)e quindi selezionare **Aggiungi**. Immetti il nome, l'indirizzo e le parole chiave per l'edificio. Aggiungere il numero di edifici necessario.
 
 ![floorplans-locations.png.](media/floorplans-locations.png)
 
@@ -94,7 +94,7 @@ Prima di poter utilizzare le planimetrie, è necessario indicizzare le posizioni
 8. Nella schermata di revisione ripetere il passaggio 6 per verificare che il mapping sia corretto.
 9. (Facoltativo) Esaminare e identificare i modelli di posizione per tutte le planimetrie caricate e quindi selezionare **Avanti.**
 10. Nella schermata di revisione ripetere il passaggio 6 per verificare che il mapping sia corretto.
-11. Quando si è pronti, selezionare **Pubblica** per rendere disponibile la planimetria in **Microsoft Search**.
+11. Quando si è pronti, selezionare **Pubblica** per rendere disponibile la planimetria in **Microsoft Search.**
 
 > [!NOTE]
 > **La pubblicazione delle planimetrie di piano richiede 48 ore.** Dopo di che gli utenti potranno vedere i risultati di una planimetria del piano simile a quello riportato di seguito quando ricercano l'ufficio di un collega.
@@ -132,7 +132,7 @@ Per aggiornare una planimetria esistente, selezionare la planimetria che si desi
 
 - Upload il file da SharePoint e aprirlo.
 - Aprire il file in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) o [Autodesk DWG TrueView](https://www.autodesk.com/products/dwg).
-- Upload il file in [Visualizzatore online di Autodesk.](https://viewer.autodesk.com/)
+- Upload il file al [visualizzatore online di Autodesk.](https://viewer.autodesk.com/)
 
 **D:** Come si aggiungono etichette di testo alle sale non contrassegnate?
 

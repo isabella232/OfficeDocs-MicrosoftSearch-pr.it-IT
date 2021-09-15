@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Gestire Microsoft Graph Connectors per Microsoft Search.
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973491"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334534"
 ---
 # <a name="monitor-your-connections"></a>Monitorare le connessioni
 
@@ -34,12 +34,12 @@ Operazione | Connettori di Graph Microsoft | Partner o Graph connettori
 --- | --- | ---
 Aggiungere una connessione | :heavy_check_mark: (Vedere Panoramica [dell'installazione](configure-connector.md)) | :x: (Fare riferimento all'esperienza utente dell'amministratore del partner o del connettore personalizzato)
 Eliminazione di una connessione | :heavy_check_mark: | :heavy_check_mark:
-Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: pianificazione dell'aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
+Modificare una connessione pubblicata | :heavy_check_mark: Nome e descrizione<br></br> :heavy_check_mark: Impostazioni di connessione<br></br> :heavy_check_mark: etichette di proprietà<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Pianificazione aggiornamento<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Descrizione
 Modificare una bozza di connessione | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Monitorare lo stato della connessione
 
-Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **della** Microsoft Search. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
+Dopo aver creato una connessione, il numero di elementi elaborati viene visualizzato nella scheda **Connettori** **nella** pagina Microsoft Search. Al termine della ricerca per indicizzazione completa iniziale, viene visualizzato l'avanzamento delle ricerche per indicizzazione incrementali periodiche. In questa pagina vengono fornite informazioni sulle operazioni quotidiane del connettore e una panoramica dei registri e della cronologia degli errori.
 
 Nella colonna Stato vengono visualizzati cinque **stati** per ogni connessione:
 

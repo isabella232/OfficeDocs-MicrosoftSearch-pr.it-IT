@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Trova e aggiorna le risposte singolarmente o usa gli strumenti Microsoft Search disponibili per modificare le domande&come tutte in una volta.
+description: Trovare e aggiornare le risposte singolarmente o usare gli strumenti Microsoft Search disponibili per modificare le domande&come tutte contemporaneamente.
 ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973738"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334525"
 ---
 # <a name="manage-qas"></a>Gestire le domande e risposte
 
-Creare domande e risposte è simile alla creazione di segnalibri. D&As consentono di rispondere alle domande dell'utente invece di fornire semplicemente un collegamento a una pagina Web. È inoltre possibile formattare la risposta in formato RTF. Se un segnalibro e una domanda&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Analogamente ai segnalibri, l'&domande e risposte viene aggiornato immediatamente dopo l'aggiunta o la modifica di una domanda&A.
+Creare domande e risposte è simile alla creazione di segnalibri. D&Consente di rispondere alle domande dell'utente invece di fornire semplicemente un collegamento a una pagina Web. È inoltre possibile formattare la risposta in formato RTF. Se un segnalibro e un&A condividono la stessa parola chiave, il risultato del segnalibro viene visualizzato per primo. Come i segnalibri, l'&domande e risposte viene aggiornato immediatamente dopo l'aggiunta o la modifica di una domanda&A.
 
 ## <a name="add-or-edit-a-single-qa"></a>Aggiungere o modificare una singola domanda con risposta
 
-1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), andare a [**Domande&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. Nella finestra [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), passare a [**Domande&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. Per aggiungere una domanda&A, selezionare **Aggiungi**.
 Per modificare una domanda con risposta, selezionarla nell'elenco di domande e risposte pertinente. Quando si aggiungono o modificano le informazioni, l'anteprima viene aggiornata automaticamente.
 1. Salvare le modifiche.
@@ -60,7 +60,7 @@ Gli amministratori della ricerca possono creare facilmente contenuti di ricerca 
 
 Attualmente, le estensioni del browser sono disponibili per Microsoft Edge e Chrome.
 
-- Per scaricare le estensioni per Edge (legacy), vai a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Per scaricare le estensioni per Edge (Legacy), vai a [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
 - Per scaricare le estensioni Chrome o Edge (Chromium), vai [all'archivio Web Chrome.](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)
 
 ## <a name="bulk-add-or-edit-qas"></a>Aggiungere o modificare in blocco le domande e risposte
@@ -79,7 +79,7 @@ Per importare o esportare domande&come:
 Selezionare **Esporta** per scaricare tutte le domande&come in un file .csv file.
 1. Nel riquadro destro selezionare l'opzione per l'importazione utilizzando un .csv file. Scarica il file modello per ottenere un elenco dei campi e dei dettagli obbligatori.
 1. Aggiungere o modificare domande&dettagli A nel file modello e salvarli nel computer.
-1. Nel riquadro **Importa domande&A** selezionare Sfoglia e quindi selezionare il file .csv da importare. 
+1. Nel riquadro **Importa domande&A** selezionare Sfoglia e quindi selezionare il .csv file che si desidera importare. 
 1. Selezionare **Importa**.
 
 Suggerimenti importanti per i file di modello:
