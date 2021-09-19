@@ -114,6 +114,8 @@
           href: security-for-search.md
         - name: Aggiungere una casella di ricerca al sito Intranet
           href: add-a-search-box-to-your-intranet-site.md
+        - name: Selezionare un'esperienza di ricerca dell'istituto di istruzione o di lavoro (anteprima)
+          href: select-work-school-search-experience.md
         - name: Impostare Microsoft Edge come browser predefinito
           href: /deployedge/edge-default-browser
         - name: Impostare Bing come motore di ricerca predefinito
