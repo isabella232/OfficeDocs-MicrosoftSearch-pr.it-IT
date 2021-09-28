@@ -7,30 +7,28 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/02/2021
+ms.date: 09/24/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Esaminare i Microsoft Search di utilizzo
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
+ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376010"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59940649"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Report di utilizzo
 
-I report di utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate [](./make-content-easy-to-find.md) da questi report consentono di semplificare l'individuazione e l'azione del contenuto che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
+I report di utilizzo della ricerca consentono di acquisire una maggiore comprensione del funzionamento della ricerca nell'organizzazione. Le informazioni dettagliate generate da questi report consentono di eseguire azioni che renderanno la ricerca un'esperienza più utile e piacevole per gli utenti.
 
 > [!IMPORTANT]
 > Microsoft Search report di utilizzo sono attualmente in anteprima
 
-I [report](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo Microsoft Search includono grafici e tabelle generati dalle ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle Bing di ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo che sia necessario del tempo per accumulare i dati cronologici.
-
-Una versione precedente di questa pagina includeva i dati delle ricerche eseguite solo per Microsoft Search in Bing in Bing.com. Questi dati sono ora integrati in questi report; è comunque possibile visualizzare la pagina precedente facendo clic sul collegamento nella parte inferiore della pagina per visualizzare le query principali e la distribuzione delle **impression** di Bing. Questo collegamento e la pagina precedente verranno rimossi a breve.
+I [Microsoft Search](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) di utilizzo includono grafici e tabelle generati da ricerche eseguite da SharePoint Home, Office.com e Microsoft Search nelle caselle di Bing ricerca. È possibile visualizzare i dati degli ultimi 31 giorni, al giorno o mensili per l'anno precedente. Questi report vengono semplicemente in fase di implementazione in modo che sia necessario del tempo per accumulare i dati cronologici.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard dei report di utilizzo della ricerca.](media/usage-reports/usage_reports_v2.png)
@@ -53,8 +51,6 @@ Quando si passa alla pagina dei report di utilizzo, tutti i report sono disponib
 
 Il download di un report consentirà di visualizzare i report da un intervallo di tempo più ampio. Fai clic sulla freccia di download e seleziona **ultimi 31 giorni** o **ultimi 12 mesi.** Il report viene scaricato come foglio Excel foglio di calcolo. Se è stato selezionato negli ultimi 31 giorni, il foglio di calcolo avrà una singola scheda per ogni giorno. Il download degli ultimi 12 mesi avrà una scheda per ogni mese.
 
-Per visualizzare Bing query principali e i report di distribuzione delle impression, fare clic sul collegamento nella pagina.
-
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 **Quando si selezionano gli ultimi 31 giorni o gli ultimi 12 mesi, perché è necessario scegliere un giorno o un mese specifico.**
@@ -63,7 +59,7 @@ La visualizzazione calendario, oggi, nei report di utilizzo di Microsoft Search 
 
 Le tabelle query principali, abbandonate e non riuscite mostrano i risultati del giorno o del mese scelto.
 
-**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via... ad esempio Bing principali report di query?**
+**Quando verranno visualizzati i dati aggregati per gli ultimi 7 giorni, gli ultimi 30 giorni e così via...?**
 
 Stiamo valutando questo tipo di aggregazione e semplificando il filtro degli intervalli di dati per le versioni future di questi report.
 
@@ -73,4 +69,4 @@ Attualmente, il filtro in base all'origine non è disponibile. I report combinan
 
 **Quali altri filtri per i report di utilizzo sono disponibili?**
 
-Stiamo lavorando a filtri aggiuntivi che consentono di dare un senso all'utilizzo della ricerca a un livello più granulare dell'organizzazione. Ad esempio, sarà possibile visualizzare il volume di query per una specifica area geografica o reparto.
+Stiamo lavorando su più filtri che aiuteranno a dare un senso all'utilizzo della ricerca a un livello più granulare dell'organizzazione. Ad esempio, sarà possibile visualizzare il volume di query per una specifica area geografica o reparto.
