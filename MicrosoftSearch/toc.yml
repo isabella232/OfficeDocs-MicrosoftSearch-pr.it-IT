@@ -110,6 +110,8 @@
           href: manage-classic-spo-pages.md
     - name: Microsoft Search in Bing
       items:
+        - name: Panoramica
+          href: overview-microsoft-search-bing.md
         - name: Sicurezza e privacy
           href: security-for-search.md
         - name: Aggiungere una casella di ricerca al sito Intranet
