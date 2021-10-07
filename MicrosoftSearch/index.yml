@@ -1,5 +1,5 @@
 ## YamlMime:Hub
-title: Microsoft Search documentazione dell'amministratore
+title: Microsoft Search dell'amministratore
 summary: Gestire Microsoft Search per aumentare la produttività offrendo risultati di ricerca più pertinenti per l'organizzazione.
 metadata:
   title: Microsoft Search documentazione
@@ -78,4 +78,4 @@ additionalContent:
             - text: Informazioni Microsoft Search in SharePoint
               url: get-started-search-in-sharepoint-online.md
             - text: Informazioni Microsoft Search in Bing
-              url: security-for-search.md
+              url: overview-microsoft-search-bing.md
