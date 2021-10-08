@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: Gestire i verticali di ricerca nella pagina dei risultati
-ms.openlocfilehash: 89887b6ce5391d2473692504efa3c0eb35407b48
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: 0396c1f67b22a77a39f78aa1f058ee4b2019a39c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127789"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238404"
 ---
 # <a name="manage-search-verticals"></a>Gestire i verticali di ricerca
 
@@ -26,8 +25,8 @@ I verticali di ricerca sono schede nella pagina dei risultati della ricerca che 
 
 È possibile gestire i verticali a due livelli:
 
-- **Livello** dell'organizzazione: nella pagina dei risultati di ricerca viene visualizzato un verticale a livello di organizzazione quando gli utenti esere esere in cerca dalla pagina iniziale di [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)e Microsoft Search in [Bing](https://bing.com)
-- **Livello di sito:** un verticale a livello di sito viene visualizzato nella pagina dei risultati di ricerca quando gli utenti eseere in un SharePoint sito. Ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare gli eventi imprevisti di gravità 1 direttamente dal sito SharePoint del loro reparto.
+- **Livello** dell'organizzazione: nella pagina dei risultati di ricerca viene visualizzato un verticale [a](https://sharepoint.com/) livello di organizzazione quando gli utenti esere in SharePoint pagina iniziale, [Microsoft Office](https://office.com)e Microsoft Search in [Bing](https://bing.com)
+- **Livello sito:** nella pagina dei risultati di ricerca viene visualizzato un verticale a livello di sito quando gli utenti esere in un sito SharePoint sito. Ad esempio, è possibile consentire ai dipendenti del servizio clienti di cercare gli eventi imprevisti di gravità 1 direttamente dal sito di SharePoint del SharePoint del proprio reparto.
 
 ## <a name="understanding-search-verticals"></a>Informazioni sui verticali di ricerca
 
@@ -41,7 +40,7 @@ Ulteriori opzioni di configurazione sono disponibili su verticali personalizzati
 
 L'esperienza di gestione verticale è guidata da una procedura guidata, in cui vengono descritti i passaggi per definire il nome, l'origine di contenuto e l'ambito del contenuto verticale in cui eseguire la ricerca. È possibile utilizzare un set limitato di linguaggio [KQL (Keyword Query Language)](#keyword-query-language-kql) per definire l'ambito della ricerca verticale per una determinata origine di contenuto.
 
-Di seguito sono riportati i passaggi per creare i verticali personalizzati Microsoft Search in [SharePoint home,](https://sharepoint.com/) [Office](https://office.com/)o [Bing](https://bing.com/).  
+Di seguito sono riportati i passaggi per creare i verticali personalizzati in Microsoft Search in [SharePoint home,](https://sharepoint.com/) [Office](https://office.com/)o [Bing](https://bing.com/).  
 
 ### <a name="manage-organization-level-verticals"></a>Gestire verticali a livello di organizzazione
 

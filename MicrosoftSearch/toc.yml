@@ -1,128 +1,131 @@
-- name: Piano per Microsoft Search
-  items:
-    - name: Panoramica
-      href: overview-microsoft-search.md
-    - name: Configurazione
-      href: setup-microsoft-search.md
-    - name: Gestire l'accesso a file e siti
-      href: manage-access-files-sites.md
-    - name: Domande frequenti
-      href: faqs.md
-- name: Ottenere informazioni
-  items:
-    - name: Visualizzare i report sull'uso
-      href: usage-reports.md
-    - name: Gestire i commenti e suggerimenti
-      href: manage-feedback.md
-- name: Fornire risposte
-  items:
-    - name: Pianificare i contenuti
-      href: plan-your-content.md
-    - name: Acronimi
-      href: manage-acronyms.md
-    - name: Segnalibri
-      href: manage-bookmarks.md
-    - name: Planimetrie piani
-      href: manage-floorplans.md
-    - name: Posizioni
-      href: manage-locations.md
-    - name: Power BI
-      href: manage-powerbi.md
-    - name: Domande e risposte
-      href: manage-qas.md
-- name: Origini dati
-  items:
-    - name: Connettori Graph
-      items:
-        - name: Panoramica
-          href: connectors-overview.md
-        - name: Raccolta connettori
-          href: connectors-gallery.md
-        - name: Configurare i connettori Microsoft
-          items:
-            - name: Panoramica delle impostazioni
-              href: configure-connector.md
-            - name: Configurare l'agente del connettore Graph
-              href: graph-connector-agent.md
-            - name: Eseguire il mapping delle identità non Azure Active Directory
-              href: map-non-aad.md
-            - name: Eseguire il mapping delle identità di Azure AD
-              href: map-aad.md
-            - name: Informazioni specifiche del connettore
-              items:
-                - name: Azure Data Lake Storage Gen2
-                  href: azure-data-lake-connector.md
-                - name: Azure DevOps (preview)
-                  href: azure-devops-connector.md
-                - name: SQL di Azure e Microsoft SQL Server
-                  href: MSSQL-connector.md
-                - name: Confluence Cloud (anteprima)
-                  href: confluence-cloud-connector.md
-                - name: Jira Cloud (anteprima)
-                  href: jira-connector.md
-                - name: Siti Web aziendali
-                  href: enterprise-web-connector.md
-                - name: Condivisione file
-                  href: fileshare-connector.md
-                - name: MediaWiki
-                  href: mediawiki-connector.md
-                - name: SQL Oracle
-                  href: OracleSQL-connector.md
-                - name: Salesforce
-                  href: salesforce-connector.md
-                - name: Catalogo ServiceNow (anteprima)
-                  href: servicenow-catalog-connector.md
-                - name: ServiceNow Knowledge
-                  href: servicenow-knowledge-connector.md
-        - name: Gestire le connessioni
-          items:
-            - name: Monitorare le connessioni
-              href: manage-connector.md
-            - name: Visualizzare i dettagli della connessione ed errori
-              href: connector-details-errors.md
-        - name: Licenze
-          href: licensing.md
-        - name: Condizioni d'uso
-          href: terms-of-use.md
-    - name: Connettori Federazione
-      items:
-        - name: Dynamics 365
-          href: manage-dynamics365.md
-- name: Personalizzare e configurare
-  items:
-    - name: Gestire le tipologie di verticali e i tipi di risultati
-      href: customize-search-page.md
-    - name: Gestire i layout dei risultati della ricerca
-      href: customize-results-layout.md
-    - name: Gestire i cluster dei risultati
-      href: result-cluster.md
-    - name: Gestire i filtri
-      href: custom-filters.md
-    - name: Microsoft Search in SharePoint
-      items:
-        - name: Panoramica
-          href: get-started-search-in-sharepoint-online.md
-        - name: Creare una pagina dei risultati della ricerca personalizzata
-          href: create-search-results-pages.md
-        - name: Gestire le impostazioni della casella di ricerca
-          href: manage-spo-search-box.md
-        - name: Usare Microsoft Search nelle pagine classiche
-          href: manage-classic-spo-pages.md
-    - name: Microsoft Search in Bing
-      items:
-        - name: Panoramica
-          href: overview-microsoft-search-bing.md
-        - name: Sicurezza e privacy
-          href: security-for-search.md
-        - name: Aggiungere una casella di ricerca al sito Intranet
-          href: add-a-search-box-to-your-intranet-site.md
-        - name: Selezionare un'esperienza di ricerca dell'istituto di istruzione o di lavoro (anteprima)
-          href: select-work-school-search-experience.md
-        - name: Impostare Microsoft Edge come browser predefinito
-          href: /deployedge/edge-default-browser
-        - name: Impostare Bing come motore di ricerca predefinito
-          href: set-default-search-engine.md
-        - name: Impostare Bing.com come home page predefinita
-          href: set-default-homepage.md
-        - name: Guida all'adozione da parte degli utenti
-          href: user-adoption-guide.md
+items:
+  - name: Piano per Microsoft Search
+    items:
+      - name: Panoramica
+        href: overview-microsoft-search.md
+      - name: Configurazione
+        href: setup-microsoft-search.md
+      - name: Gestire l'accesso a file e siti
+        href: manage-access-files-sites.md
+      - name: Domande frequenti
+        href: faqs.md
+  - name: Ottenere informazioni
+    items:
+      - name: Visualizzare i report sull'uso
+        href: usage-reports.md
+      - name: Gestire i commenti e suggerimenti
+        href: manage-feedback.md
+  - name: Fornire risposte
+    items:
+      - name: Pianificare i contenuti
+        href: plan-your-content.md
+      - name: Acronimi
+        href: manage-acronyms.md
+      - name: Segnalibri
+        href: manage-bookmarks.md
+      - name: Planimetrie piani
+        href: manage-floorplans.md
+      - name: Posizioni
+        href: manage-locations.md
+      - name: Power BI
+        href: manage-powerbi.md
+      - name: Domande e risposte
+        href: manage-qas.md
+  - name: Origini dati
+    items:
+      - name: Connettori Graph
+        items:
+          - name: Panoramica
+            href: connectors-overview.md
+          - name: Raccolta connettori
+            href: connectors-gallery.md
+          - name: Configurare i connettori Microsoft
+            items:
+              - name: Panoramica delle impostazioni
+                href: configure-connector.md
+              - name: Configurare l'agente del connettore Graph
+                href: graph-connector-agent.md
+              - name: Eseguire il mapping delle identità non Azure Active Directory
+                href: map-non-aad.md
+              - name: Eseguire il mapping delle identità di Azure AD
+                href: map-aad.md
+              - name: Informazioni specifiche del connettore
+                items:
+                  - name: Azure Data Lake Storage Gen2
+                    href: azure-data-lake-connector.md
+                  - name: Azure DevOps (preview)
+                    href: azure-devops-connector.md
+                  - name: SQL di Azure e Microsoft SQL Server
+                    href: MSSQL-connector.md
+                  - name: Confluence Cloud (anteprima)
+                    href: confluence-cloud-connector.md
+                  - name: Jira Cloud (anteprima)
+                    href: jira-connector.md
+                  - name: Siti Web aziendali
+                    href: enterprise-web-connector.md
+                  - name: Condivisione file
+                    href: fileshare-connector.md
+                  - name: MediaWiki
+                    href: mediawiki-connector.md
+                  - name: SQL Oracle
+                    href: OracleSQL-connector.md
+                  - name: Salesforce
+                    href: salesforce-connector.md
+                  - name: Catalogo ServiceNow (anteprima)
+                    href: servicenow-catalog-connector.md
+                  - name: ServiceNow Knowledge
+                    href: servicenow-knowledge-connector.md
+          - name: Gestire le connessioni
+            items:
+              - name: Monitorare le connessioni
+                href: manage-connector.md
+              - name: Visualizzare i dettagli della connessione ed errori
+                href: connector-details-errors.md
+          - name: Licenze
+            href: licensing.md
+          - name: Condizioni d'uso
+            href: terms-of-use.md
+      - name: Connettori Federazione
+        items:
+          - name: Dynamics 365
+            href: manage-dynamics365.md
+  - name: Personalizzare e configurare
+    items:
+      - name: Gestire i verticali
+        href: manage-verticals.md
+      - name: Gestire i tipi di risultati
+        href: manage-result-types.md
+      - name: Gestire i layout dei risultati della ricerca
+        href: customize-results-layout.md
+      - name: Gestire i cluster dei risultati
+        href: result-cluster.md
+      - name: Gestire i filtri
+        href: custom-filters.md
+      - name: Microsoft Search in SharePoint
+        items:
+          - name: Panoramica
+            href: get-started-search-in-sharepoint-online.md
+          - name: Creare una pagina dei risultati della ricerca personalizzata
+            href: create-search-results-pages.md
+          - name: Gestire le impostazioni della casella di ricerca
+            href: manage-spo-search-box.md
+          - name: Usare Microsoft Search nelle pagine classiche
+            href: manage-classic-spo-pages.md
+      - name: Microsoft Search in Bing
+        items:
+          - name: Panoramica
+            href: overview-microsoft-search-bing.md
+          - name: Sicurezza e privacy
+            href: security-for-search.md
+          - name: Aggiungere una casella di ricerca al sito Intranet
+            href: add-a-search-box-to-your-intranet-site.md
+          - name: Selezionare un'esperienza di ricerca dell'istituto di istruzione o di lavoro (anteprima)
+            href: select-work-school-search-experience.md
+          - name: Impostare Microsoft Edge come browser predefinito
+            href: /deployedge/edge-default-browser
+          - name: Impostare Bing come motore di ricerca predefinito
+            href: set-default-search-engine.md
+          - name: Impostare Bing.com come home page predefinita
+            href: set-default-homepage.md
+          - name: Guida all'adozione da parte degli utenti
+            href: user-adoption-guide.md

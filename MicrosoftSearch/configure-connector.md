@@ -1,5 +1,5 @@
 ---
-title: Configurare il connettore di Graph microsoft per Microsoft Search
+title: Configurare il connettore di Graph Microsoft per Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,20 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica della configurazione per i connettori Graph di Microsoft
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375884"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238440"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica della configurazione per i connettori Graph di Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Panoramica della configurazione per i connettori Graph di Microsoft
 
-In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph da **Microsoft** nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Il processo si compone delle seguenti fasi:  
+In questo articolo viene illustrato il processo di base necessario per configurare i connettori Graph **da Microsoft** nella interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com) Il processo si compone delle seguenti fasi:  
 <!---Add links to each section in the doc--->
 
 1. [Aggiungere un connettore di Graph nell'interfaccia di amministrazione di Microsoft 365.](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
@@ -46,7 +46,7 @@ In questo articolo sono inoltre incluse informazioni sulla risoluzione dei probl
 * [Passaggi successivi](#next-steps)
 
 > [!NOTE]
-> Il processo di installazione è simile per tutti Graph connettori da Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
+> Il processo di installazione è simile per tutti Graph connettori da Parte di Microsoft, ma non è esattamente lo stesso. **Oltre a leggere questo articolo, leggere le informazioni specifiche del connettore per l'origine dati.**  
 
 <!---## Before you get started-->
 
@@ -87,15 +87,15 @@ Per ulteriori informazioni sulla connessione a un'origine dati locale, vedere [I
 
 ## <a name="step-4-select-properties"></a>Passaggio 4: Selezionare le proprietà
 
-È possibile scegliere le proprietà che verranno indicizzate da Microsoft Search. 
+È possibile scegliere le proprietà che verranno indicizzate da Microsoft Search.
 
-La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati in base Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+La query ServiceNow può essere utilizzata per filtrare i dati prima di essere indicizzati Microsoft Search; in questo modo si ha un maggiore controllo sui dati che è possibile cercare. Per ulteriori informazioni sulle query ServiceNow, vedere [Learn about ServiceNow queries](https://go.microsoft.com/fwlink/?linkid=2151447).
 
 ## <a name="step-5-manage-search-permissions"></a>Passaggio 5: Gestire le autorizzazioni di ricerca
 
 Gli elenchi di controllo di accesso determinano quali utenti dell'organizzazione possono accedere a ogni elemento.  
 
-Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo gli ACL [di Azure Active Directory (Azure AD).](/azure/active-directory/)
+Alcuni connettori come [Microsoft SQL](MSSQL-connector.md) e Azure Data Lake [Archiviazione Gen2](azure-data-lake-connector.md) supportano in modo nativo [Azure Active Directory (Azure AD).](/azure/active-directory/)
 
 Altri connettori come [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog,](servicenow-catalog-connector.md) [Azure DevOps](azure-devops-connector.md)e [Salesforce](salesforce-connector.md) supportano la sincronizzazione di utenti e gruppi non Azure AD.  
 
@@ -116,7 +116,7 @@ Etichetta | Descrizione
 **Autori** | Nome delle persone che hanno partecipato/collaborato all'elemento
 **Data creazione** | Quando è stato creato l'elemento
 **Data ultima modifica** | Quando è stato modificato l'elemento più di recente
-**Nome file** | Nome dell'elemento file
+**Nome file** | Nome dell'elemento del file
 **Estensione del file** | Tipo di elemento di file, ad esempio .pdf o .word
 
 Le proprietà di questa pagina sono pre-selezionate in base all'origine dati, ma è possibile modificare questa selezione se esiste una proprietà diversa più adatta per una determinata etichetta.  
@@ -141,19 +141,18 @@ Se si seleziona una proprietà di contenuto, sarà possibile utilizzare la propr
 
 È possibile impostare gli attributi dello schema di ricerca per controllare la funzionalità di ricerca di ogni proprietà di origine. Uno schema di ricerca consente di determinare quali risultati vengono visualizzati nella pagina dei risultati di ricerca e quali informazioni possono essere visualizzate e a cui gli utenti finali possono accedere.
 
-Gli attributi dello schema di ricerca includono **opzioni query,** **ricerca,** **recupero** e **affinamento.** Nella tabella seguente sono elencati tutti gli attributi supportati da Microsoft Graph connettori e vengono illustrate le relative funzioni.
+Gli attributi dello schema di ricerca includono **opzioni query,** **ricerca,** **recupero** e **affinamento.** Nella tabella seguente sono elencati tutti gli attributi supportati dai connettori Graph Microsoft e vengono illustrate le relative funzioni.
 
 Attributo dello schema di ricerca | Funzione | Esempio
 --- | --- | ---
 RICERCA | Rende possibile la ricerca del contenuto di testo di una proprietà. Il contenuto delle proprietà è incluso nell'indice full-text. | Se la proprietà è **title**, una query per **Enterprise** restituisce le risposte che contengono la parola **Enterprise** in qualsiasi testo o titolo.
 QUERY | Cerca una corrispondenza per una determinata proprietà in base a una query. Il nome della proprietà può quindi essere specificato nella query a livello di programmazione o verbatim. |  Se è possibile eseguire query sulla proprietà **Title,** la query **Title: Enterprise** è supportata.
 RETRIEVE | Solo le proprietà recuperabili possono essere utilizzate nel tipo di risultato e visualizzate nel risultato della ricerca. |
-AFFINAMENTO RICERCA | L'opzione di affinamento ricerca può essere utilizzata come nella Microsoft Search dei risultati. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'installazione della connessione
+AFFINAMENTO RICERCA | L'opzione di affinamento della ricerca può essere utilizzata come nella Microsoft Search dei risultati. | Gli utenti dell'organizzazione possono [filtrare](custom-filters.md) in **base all'URL** nella pagina dei risultati di ricerca se la proprietà refine viene contrassegnata durante l'impostazione della connessione
 
 Per tutti i connettori ad eccezione del connettore condivisione file, i tipi personalizzati devono essere impostati manualmente. Per attivare le funzionalità di ricerca per ogni campo, è necessario uno schema di ricerca mappato a un elenco di proprietà. La connessione guidata seleziona automaticamente uno schema di ricerca in base al set di proprietà di origine scelto. È possibile modificare questo schema selezionando le caselle di controllo per ogni proprietà e attributo nella pagina dello schema di ricerca.
 
-> [!div class="mx-imgBorder"]
-> ![Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni Query, Search e Retrieve.](media/manageschema.png)
+:::image type="content" alt-text="Lo schema per un connettore può essere personalizzato aggiungendo o rimuovendo le funzioni Query, Search e Retrieve." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrizioni e suggerimenti per le impostazioni dello schema di ricerca
 
@@ -201,17 +200,17 @@ Passare all'elenco delle connessioni pubblicate nella **scheda Connettori** nell
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 <!---Insert troubleshooting recommendations for this data source-->
-Leggere le informazioni specifiche del connettore per l'origine dati. 
+Leggere le informazioni specifiche del connettore per l'origine dati.
 
 > [!NOTE]
 > Non tutti gli articoli specifici del connettore includono suggerimenti per la risoluzione dei problemi a questo punto.
 
 ## <a name="limitations"></a>Limitazioni
 <!---Insert limitations for this data source-->
-Per informazioni sulle limitazioni applicabili a tutte le origini dati, vedere [l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
+Per informazioni sulle limitazioni applicabili a tutte le origini dati, [vedere l'articolo Overview of Microsoft Graph connectors.](connectors-overview.md)
 
 Vedere le informazioni specifiche del connettore per l'origine dati per scoprire se si applicano altre limitazioni a quel particolare Graph connettore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver pubblicato la connessione, è necessario personalizzare la pagina dei risultati della ricerca. Per informazioni sulla personalizzazione dei risultati della ricerca, vedere [Personalizzare la pagina dei risultati della ricerca.](customize-search-page.md)
+Dopo aver pubblicato la connessione, è necessario personalizzare la pagina dei risultati di ricerca con verticali e tipi di risultati. Per informazioni sulla personalizzazione dei risultati di ricerca, è possibile esaminare come [gestire verticali](manage-verticals.md) e [tipi di risultati.](manage-result-types.md)

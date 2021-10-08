@@ -65,8 +65,10 @@ additionalContent:
               url: manage-dynamics365.md
         - title: Personalizzare l'esperienza utente finale
           links:
-            - text: Gestire le tipologie di verticali e i tipi di risultati
-              url: customize-search-page.md
+            - text: Gestire i verticali
+              url: manage-verticals.md
+            - text: Gestire i tipi di risultati
+              url: manage-result-types.md
             - text: Personalizzare il layout SERP
               url: customize-results-layout.md
             - text: Gestire i filtri

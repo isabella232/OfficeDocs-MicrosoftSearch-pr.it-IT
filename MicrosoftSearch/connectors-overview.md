@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica dei connettori microsoft Graph per Microsoft Search
-ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375985"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238395"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -76,8 +76,7 @@ Microsoft fornisce 9 connettori e i partner dell'ecosistema hanno creato più di
 * [ServiceNow Knowledge](servicenow-knowledge-connector.md)
 * [Catalogo ServiceNow (anteprima)](servicenow-catalog-connector.md)
 
-
-La [raccolta di Graph](https://www.microsoft.com/microsoft-search/connectors) microsoft contiene una breve descrizione di ognuno di questi connettori. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e qualsiasi altro articolo nella sezione Installazione dei connettori da parte di Microsoft che si applicano all'origine dati.
+La [raccolta Graph](https://www.microsoft.com/microsoft-search/connectors) microsoft Graph contiene una breve descrizione di ognuno di questi connettori. Se si è pronti per connettere una di queste origini dati [](configure-connector.md) al tenant, leggere la panoramica dell'installazione e gli altri articoli nella sezione Installazione dei connettori da Parte di Microsoft che si applicano all'origine dati.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graph connettori dai nostri partner
 
@@ -93,13 +92,13 @@ Se si preferisce, è possibile creare un connettore personalizzato. Per ulterior
 
 ## <a name="what-are-the-license-requirements-and-terms-of-use-for-connectors"></a>Quali sono i requisiti di licenza e le condizioni di utilizzo per i connettori?
 
-È necessaria una licenza Microsoft 365 o Office 365 e una quota di connettori sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dei connettori nei risultati della ricerca.
+È necessaria una licenza Microsoft 365 o Office 365 valida e una quota di connettori sufficiente per consentire agli utenti dell'organizzazione di visualizzare i dati dei connettori nei risultati della ricerca.
 
 Per altre informazioni, vedi [Requisiti di licenza e prezzi](licensing.md) e Condizioni per [l'uso.](terms-of-use.md)
 
 ## <a name="what-are-the-preview-features"></a>Quali sono le funzionalità di anteprima?
 
-Anche se i connettori Graph Microsoft e le API Microsoft Search sono ora disponibili in generale, sono disponibili diverse funzionalità in anteprima.
+Anche se i Graph microsoft Microsoft Search e le API sono ora disponibili in generale, sono disponibili diverse funzionalità in anteprima.
 
 L'insieme di connettori e funzionalità in anteprima include:
 
@@ -113,7 +112,7 @@ L'insieme di connettori e funzionalità in anteprima include:
 
 Esistono molti modi per personalizzare e configurare i risultati della ricerca. Per ulteriori informazioni, vedere gli articoli seguenti:
 
-* [Gestire le tipologie di verticali e i tipi di risultati](customize-search-page.md)
+* [Gestire verticali e](manage-verticals.md) [tipi di risultati](manage-result-types.md)
 * [Gestire i layout dei risultati della ricerca](customize-results-layout.md)
 * [Gestisci cluster dei risultati](result-cluster.md)
 * [Gestire filtri personalizzati](custom-filters.md)
